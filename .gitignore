@@ -1,0 +1,6 @@
+# This repo hosts miyarahub.com. Only the served tree and the README belong
+# here; everything else is ignored so nothing else can be added by accident.
+/*
+!/.gitignore
+!/docs/
+!/README.md

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectorPilot - Epson Projector Controller App | MiyaraHub Technologies</title>
+    <meta name="description" content="ProjectorPilot - the best Android controller for Epson projectors. Control power, picture settings, color modes, HDR, lens memory, keystone, lamp hours, and more over Wi-Fi. Works with Epson QB1000, LS12000, LS11000, LS9000, Home Cinema, Pro Cinema, and all networked Epson projectors.">
+    <meta name="keywords" content="Epson projector app, Epson projector remote control, Epson projector controller Android, projector remote app, Epson QB1000 app, Epson LS12000 controller, Epson LS11000 app, Epson LS9000 controller, Epson Pro Cinema app, Epson Home Cinema controller, Epson projector Wi-Fi control, projector lens control app, projector HDR settings, projector color mode app, PJLink projector app, Epson Web Control app, projector lamp hours tracker, projector keystone app, projector lens memory, projector focus zoom app, Epson projector picture settings, Epson projector HDMI switch, projector power control phone, home theater projector app, projector mounting position app, Epson HC 5050UB app, Epson HC 4010 controller, Epson HC 3800 app, Epson HC 2350 controller, Epson EB-PU2220B app, projector noise reduction, projector super resolution, projector frame interpolation, Epson projector gamma settings, projector color temperature app, projector RGB gain offset, Epson projector test patterns, projector edge blending app, projector OSD control, Epson projector D-pad remote, projector AMOLED dark theme, projector control Material You, ProjectorPilot, MiyaraHub">
+    <link rel="canonical" href="https://miyarahub.com/projector-pilot/">
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <meta property="og:title" content="ProjectorPilot - Epson Projector Controller">
+    <meta property="og:description" content="Full control of your Epson projector from your phone. Power, picture, lens, HDR, keystone, and more over Wi-Fi.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miyarahub.com/projector-pilot">
+    <meta property="og:image" content="https://miyarahub.com/assets/projector-pilot-icon.png">
+    <meta property="og:image:alt" content="App icon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProjectorPilot - Epson Projector Controller App">
+    <meta name="twitter:description" content="Full control of your Epson projector from your Android phone. Power, picture, lens, HDR, and more over Wi-Fi.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/projector-pilot-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/projector-pilot-icon.png">
+    <link rel="apple-touch-icon" href="/assets/projector-pilot-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#a78bfa; --accent-deep:#c4b5fd; --accent-soft:rgba(167,139,250,.12); --accent-star:rgba(167,139,250,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .status-hero{display:inline-flex; align-items:center; gap:.75rem; margin:.4rem 0 1.3rem; padding:.75rem 1.1rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft)}
+        .status-hero .ping{width:9px; height:9px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 4px var(--accent-soft),0 0 12px var(--accent); flex-shrink:0}
+        .status-hero .txt{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--star)}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:0}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#141024,#0d0a18); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.p-hero{grid-template-columns:1fr; gap:2.4rem}.device{order:-1}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .promo-frame{max-width:400px; margin:2.5rem auto 0; border-radius:12px; overflow:hidden; border:1px solid var(--line-strong); box-shadow:0 24px 70px rgba(0,0,0,.5)}
+        .promo-frame video{width:100%; display:block; background:#000}
+        .compat{display:grid; grid-template-columns:repeat(2,1fr); gap:1.4rem; margin-top:.5rem}
+        .compat .cc{border:1px solid var(--line-strong); border-radius:6px; background:rgba(15,26,44,.5); padding:1.4rem 1.6rem}
+        .compat .cc h4{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:1.1rem; margin-bottom:.7rem; color:var(--star)}
+        .compat .cc ul{list-style:none}
+        .compat .cc li{color:var(--muted); font-size:.92rem; padding:.28rem 0; display:flex; gap:.55rem; align-items:baseline}
+        .compat .cc li::before{content:'+'; color:var(--accent); font-family:'IBM Plex Mono',monospace}
+        .compat-note{color:var(--faint); font-size:.9rem; line-height:1.7; margin-top:1.6rem; max-width:82ch}
+        .compat-note strong{color:var(--muted)}
+        @media(max-width:720px){.compat{grid-template-columns:1fr}}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+        .legal strong{color:var(--muted)}
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ProjectorPilot",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "MultimediaApplication",
+      "description": "Premium mobile controller for Epson projectors. Power, picture settings, color modes, HDR, lens memory, keystone correction, lamp hours monitoring, and OSD navigation over Wi-Fi.",
+      "url": "https://miyarahub.com/projector-pilot/",
+      "author": {
+        "@type": "Organization",
+        "name": "MiyaraHub Technologies LLC",
+        "url": "https://miyarahub.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://miyarahub.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ProjectorPilot",
+          "item": "https://miyarahub.com/projector-pilot/"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="ProjectorPilot screenshot enlarged"></div>
+
+    <nav>
+        <a href="/" class="nav-brand"><img src="/assets/logo-square.jpg" alt="MiyaraHub logo"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="/" onclick="closeNav()">Home</a></li>
+            <li><a href="#screens" onclick="closeNav()">Screens</a></li>
+            <li><a href="#features" onclick="closeNav()">Features</a></li>
+            <li><a href="#security" onclick="closeNav()">Privacy</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/">MiyaraHub</a> / ProjectorPilot</div>
+            <div class="p-hero">
+                <div>
+                    <img class="ico" src="/assets/projector-pilot-icon.png" alt="ProjectorPilot app icon">
+                    <div class="kicker">ProjectorPilot</div>
+                    <h1>Your projector, in hand.<span class="stargl">&#10022;</span></h1>
+                    <p class="hero-sub">Full control of your Epson projector, right from your phone.</p>
+                    <p class="hero-lede">A premium mobile controller for Epson projectors. Full power, picture, lens, and HDR control. Color modes, keystone correction, lamp hours monitoring, lens memory presets, OSD navigation, and a beautiful dark theme - all from your phone over Wi-Fi.</p>
+                    <div class="status-hero">
+                        <span class="ping"></span>
+                        <span class="txt">In development - coming soon to Google Play</span>
+                    </div>
+                    <div class="platforms">
+                        <span class="pl-lbl">Coming to</span>
+                        <span class="pl">Android</span>
+                    </div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img src="screenshots/13_dashboard.png" alt="ProjectorPilot home dashboard for an Epson projector" onclick="openLightbox(this)" loading="lazy"></div>
+                    <div class="cap">The home dashboard</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Screens -->
+    <section id="screens" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Screenshots</div><h2 class="sec-title">See every screen.</h2><p class="sec-desc">A premium, purpose-built interface for projector enthusiasts. AMOLED dark theme, real-time data, intuitive navigation. Tap any to zoom.</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/02_control_top.png" alt="ProjectorPilot control panel - power, input, and A/V mute" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/03_control_dpad.png" alt="ProjectorPilot OSD navigation D-pad" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/04_picture_top.png" alt="ProjectorPilot picture settings - color mode and brightness" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/06_picture_hdr_rgb.png" alt="ProjectorPilot HDR and color space controls" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/07_lens_top.png" alt="ProjectorPilot lens control - shift, focus, and zoom" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/08_lens_bottom.png" alt="ProjectorPilot lens memory presets" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/10_info_bottom.png" alt="ProjectorPilot lamp hours and diagnostics" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/12_app_settings.png" alt="ProjectorPilot app settings and themes" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Features</div><h2 class="sec-title">Complete projector control in your hand.</h2><p class="sec-desc">ProjectorPilot connects to your Epson projector over Wi-Fi and gives you full control of every setting - from power and picture to lens and geometry - without touching the projector or hunting for the physical remote.</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">No. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> Power &amp; Input Control</h3><p>Power on from standby, switch HDMI inputs instantly, toggle A/V mute, and navigate the OSD with a virtual D-pad that auto-inverts for ceiling-mounted projectors.</p><div class="meta"><span>Power On/Off</span><span>HDMI Switch</span><span>A/V Mute</span><span>OSD D-Pad</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> Picture Settings</h3><p>Full control over color mode, brightness, contrast, saturation, tint, sharpness, gamma, color temperature, noise reduction, super resolution, and image processing mode.</p><div class="meta"><span>Color Mode</span><span>Brightness</span><span>Gamma</span><span>Sharpness</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 03</div><div class="body"><h3><span class="glyph">&#9670;</span> HDR &amp; Color Space</h3><p>Dynamic range selection (Auto, HDR10, HLG, SDR), color space control (Auto, BT.709, BT.2020), and per-channel RGB gain and offset adjustments for precise calibration.</p><div class="meta"><span>HDR10</span><span>HLG</span><span>BT.2020</span><span>RGB Gain/Offset</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 04</div><div class="body"><h3><span class="glyph">&#9678;</span> Lens Control &amp; Memory</h3><p>Motorized lens shift, focus, and zoom adjustment with real-time position display. Save and recall lens memory presets for different aspect ratios or screen positions.</p><div class="meta"><span>Lens Shift</span><span>Focus</span><span>Zoom</span><span>Memory Presets</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 05</div><div class="body"><h3><span class="glyph">&#9634;</span> Geometry &amp; Keystone</h3><p>Horizontal and vertical keystone correction, plus support for QuickCorner, Point Correction, Curved Surface, Corner Wall, and FreeForm correction methods.</p><div class="meta"><span>H/V Keystone</span><span>QuickCorner</span><span>Curved Surface</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 06</div><div class="body"><h3><span class="glyph">&#9881;</span> Status &amp; Monitoring</h3><p>Real-time lamp and laser hours tracking with replacement alerts. Error and warning status monitoring, device info, serial number, firmware version, and connection diagnostics.</p><div class="meta"><span>Lamp Hours</span><span>Error Monitor</span><span>Device Info</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 07</div><div class="body"><h3><span class="glyph">&#9788;</span> Motion &amp; Processing</h3><p>Frame interpolation control (Off, Low, Normal, High), noise reduction, super resolution enhancement, and Fine/Fast image processing mode selection.</p><div class="meta"><span>Frame Interpolation</span><span>Noise Reduction</span><span>Super Resolution</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> Themes &amp; Customization</h3><p>AMOLED dark theme for true blacks, light theme, and Material You (Device theme) support. Adjustable display scale for any screen size, including Samsung Galaxy S25+ compact layouts.</p><div class="meta"><span>AMOLED Dark</span><span>Material You</span><span>Display Scale</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Video -->
+    <section id="promo" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head" style="max-width:62ch; margin:0 auto; text-align:center">
+                <div class="kicker">Preview</div>
+                <h2 class="sec-title">Watch it in action.</h2>
+                <p class="sec-desc" style="margin:0 auto">See ProjectorPilot controlling a real Epson QB1000: power, picture settings, color modes, HDR, lens memory, keystone, and more.</p>
+            </div>
+            <div class="promo-frame">
+                <video autoplay muted loop playsinline controls>
+                    <source src="promo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section id="compatibility">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Compatibility</div><h2 class="sec-title">Works with your Epson projector.</h2><p class="sec-desc">ProjectorPilot supports all networked Epson projectors with PJLink and/or Web Control. Feature availability adapts automatically to your specific model.</p></div>
+            <div class="compat">
+                <div class="cc">
+                    <h4>Flagship &amp; Reference</h4>
+                    <ul>
+                        <li>Epson QB1000 (verified live)</li>
+                        <li>Epson Pro Cinema LS12000</li>
+                        <li>Epson Pro Cinema LS9000</li>
+                    </ul>
+                </div>
+                <div class="cc">
+                    <h4>Premium Home Cinema</h4>
+                    <ul>
+                        <li>Epson Home Cinema LS11000</li>
+                        <li>Epson Home Cinema 5050UB</li>
+                        <li>Epson Home Cinema 4010</li>
+                    </ul>
+                </div>
+                <div class="cc">
+                    <h4>Mid-Range Home Cinema</h4>
+                    <ul>
+                        <li>Epson Home Cinema 3800</li>
+                        <li>Epson Home Cinema 3200</li>
+                        <li>Epson Home Cinema 2350</li>
+                    </ul>
+                </div>
+                <div class="cc">
+                    <h4>Pro Installation</h4>
+                    <ul>
+                        <li>Epson EB-PU2220B / PU2120W</li>
+                        <li>Epson EB-L770U / L730U</li>
+                        <li>Epson EB-L260F / L265F</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="compat-note"><strong>PJLink standard:</strong> ProjectorPilot also provides baseline control (power, input, mute, lamp hours) for any PJLink-compatible projector from other manufacturers including NEC, Panasonic, Sony, BenQ, Christie, and Barco. Feature availability varies by model. The app auto-detects supported features on connection.</p>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">How it works</div><h2 class="sec-title">Direct network connection. No cloud required.</h2><p class="sec-desc">ProjectorPilot communicates directly with your projector over Wi-Fi using standard network protocols. Your data never touches an external server.</p></div>
+            <div class="steps">
+                <div class="step fade"><div class="n">1</div><h3>Add your projector</h3><p>Enter the IP address of your Epson projector. ProjectorPilot tests PJLink and Web Control connectivity, detects the model, and discovers all available features automatically.</p></div>
+                <div class="step fade"><div class="n">2</div><h3>Connect over Wi-Fi</h3><p>ProjectorPilot uses PJLink for standby detection and power control, plus the Epson Web Control API for full picture, lens, and settings control when powered on. Everything stays on your local network.</p></div>
+                <div class="step fade"><div class="n">3</div><h3>Take full control</h3><p>Adjust picture settings, switch inputs, control the motorized lens, manage keystone correction, monitor lamp hours, and navigate the OSD - all from one elegant app.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section id="security">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Security &amp; Privacy</div><h2 class="sec-title">Local only. No account. No cloud.</h2><p class="sec-desc">ProjectorPilot is designed with a privacy-first, local-only architecture. No cloud dependency, no user account, no data collection beyond crash reporting.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>No cloud relay</h4><p>All commands and status polling happen directly between your phone and your projector over your local Wi-Fi. Nothing leaves your network.</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>No account required</h4><p>No sign-up, no email, no MiyaraHub account needed. Open the app, enter your projector's IP address, and you're in control.</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>Minimal analytics</h4><p>Firebase Crashlytics for bug reports only. No personal data, no usage tracking, no ads. Your projector data never leaves your phone.</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>Local storage only</h4><p>Projector IP addresses, credentials, and app preferences are stored locally on your device using SharedPreferences. Nothing is synced to a server.</p></div></div>
+                <div class="p"><span class="g">&#9634;</span><div><h4>User-initiated actions only</h4><p>The app sends commands to your projector only on your explicit action. Nothing happens automatically or in the background without your knowledge.</p></div></div>
+                <div class="p"><span class="g">&#9788;</span><div><h4>Network permission only</h4><p>The only device permission ProjectorPilot requires is internet/network access, used exclusively to connect to your projector on your local Wi-Fi.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">FAQ</div><h2 class="sec-title">Frequently asked questions.</h2><p class="sec-desc">Everything you need to know about ProjectorPilot.</p></div>
+            <div class="faq">
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Is ProjectorPilot affiliated with Epson? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>No.</strong> ProjectorPilot is an independent, third-party application developed by MiyaraHub Technologies LLC. It is not created, endorsed, sponsored, or affiliated with Seiko Epson Corporation or any of its subsidiaries or affiliates in any way. "Epson" is a registered trademark of Seiko Epson Corporation. Our use of the name is purely to describe compatibility (nominative fair use).</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Which projectors are supported? <span class="arw">+</span></div><div class="a"><div class="a-in">ProjectorPilot works with all networked Epson projectors that support PJLink and/or Web Control. This includes most models from the past 10+ years - from the flagship QB1000 and LS12000 to mid-range Home Cinema and professional installation models. The app auto-detects available features on connection, so each user sees exactly what their projector supports. Baseline PJLink control also works with non-Epson projectors from NEC, Panasonic, Sony, and others.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">How does ProjectorPilot communicate with my projector? <span class="arw">+</span></div><div class="a"><div class="a-in">ProjectorPilot uses two protocols: PJLink (port 4352) for universal projector control including standby power-on, input switching, and lamp status; and the Epson Web Control API (port 80) with Digest authentication for rich settings control including picture, lens, keystone, HDR, and more. All communication happens directly on your local Wi-Fi network.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Can I control the motorized lens? <span class="arw">+</span></div><div class="a"><div class="a-in">Yes, on projectors with motorized lens systems. ProjectorPilot provides full lens shift (horizontal and vertical), focus, and zoom control with real-time position feedback. You can also save and recall lens memory presets for different aspect ratios, screen positions, or viewing setups. Lens controls are automatically hidden for models without motorized lenses.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Does it support HDR and wide color gamut? <span class="arw">+</span></div><div class="a"><div class="a-in">Yes. ProjectorPilot lets you control dynamic range settings (Auto, HDR10, HLG, SDR), color space (Auto, BT.709, BT.2020), and provides per-channel RGB gain and offset adjustments for precise color calibration. HDR features are shown only on models that support them.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Can I power on the projector from standby? <span class="arw">+</span></div><div class="a"><div class="a-in">Yes. ProjectorPilot uses PJLink to power on your projector even when it's in standby mode. As long as your projector is connected to your network (wired LAN recommended for standby wake), you can turn it on and off from your phone.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">How much does ProjectorPilot cost? <span class="arw">+</span></div><div class="a"><div class="a-in">ProjectorPilot is a <strong>one-time purchase at $4.99</strong>. No subscription, no ads, no in-app purchases. You buy it once and own it. Pricing may change before launch.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Which Android version is required? <span class="arw">+</span></div><div class="a"><div class="a-in">ProjectorPilot requires Android 5.0 (API 21) or higher. It is an Android-only app for now. iOS support may be added in a future release.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>Legal disclaimer &amp; trademark notice</h3>
+            <p>ProjectorPilot is an <strong>independent, third-party application</strong> developed and published by <strong>MiyaraHub Technologies LLC</strong>. It is <strong>not created by, affiliated with, endorsed by, sponsored by, or in any way officially connected with Seiko Epson Corporation</strong> or any of its subsidiaries or affiliates.</p>
+            <p>"Epson" is a registered trademark of Seiko Epson Corporation. "PJLink" is a registered trademark of Japan Business Machine and Information System Industries Association (JBMIA). All other trademarks referenced herein are the property of their respective owners.</p>
+            <p>References to these products on this page and within the app are made solely for the purpose of identifying compatibility and describing the app's functionality (nominative fair use). The trademark holders are not affiliated with MiyaraHub Technologies LLC and do not endorse this product.</p>
+            <p>ProjectorPilot communicates with Epson projectors using their network control interfaces (PJLink, Web Control API). Use of this app is at your own risk. MiyaraHub Technologies LLC is not responsible for any misconfiguration, image quality issues, or other problems arising from the use of this application.</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>Ready to take control of your projector?</h2>
+            <p>ProjectorPilot is coming soon to Google Play. Get notified at launch.</p>
+            <div class="cta-row" style="justify-content:center">
+                <a class="btn primary" href="/support/">Get notified / Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Dallas, TX. All rights reserved.<br>Independent software. Trademarks belong to their respective owners.</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/support/">Support</a></li>
+                <li><a href="/privacy.html">Privacy</a></li>
+                <li><a href="/terms.html">Terms</a></li>
+            </ul>
+        </div></div>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+</body>
+</html>

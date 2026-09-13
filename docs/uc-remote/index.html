@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC Remote - Unfolded Circle Remote Two &amp; Remote 3 Controller App | MiyaraHub Technologies</title>
+    <meta name="description" content="UC Remote - a premium native Android controller and companion app for the Unfolded Circle Remote Two and Remote 3. Run activities, swipe custom activity pages, control lights, climate, covers, switches and media players, watch live now-playing with album art, place home-screen widgets, and manage multiple remotes - all over your local network. No cloud, no account.">
+    <meta name="keywords" content="UC Remote, Unfolded Circle, Unfolded Circle Remote Two, Unfolded Circle Remote 3, Unfolded Circle app, Unfolded Circle controller, Unfolded Circle companion app, Unfolded Circle Android app, Remote Two controller, Remote 3 controller, smart home remote app, home theater remote app, activities controller, home automation controller Android, UC Remote widgets, Unfolded Circle home screen widget, media player controller, smart home controller app, MiyaraHub, MiyaraHub Technologies">
+    <link rel="canonical" href="https://miyarahub.com/uc-remote/">
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <meta property="og:title" content="UC Remote - Unfolded Circle Remote Two &amp; Remote 3 Controller">
+    <meta property="og:description" content="A premium native Android companion for the Unfolded Circle Remote Two and Remote 3. Activities, entities, media, widgets - all local, no cloud.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miyarahub.com/uc-remote">
+    <meta property="og:image" content="https://miyarahub.com/assets/uc-remote-icon.png">
+    <meta property="og:image:alt" content="UC Remote app icon">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UC Remote - Unfolded Circle Remote Two &amp; Remote 3 Controller">
+    <meta name="twitter:description" content="A premium native Android companion for the Unfolded Circle Remote Two and Remote 3. Activities, entities, media, widgets - all local, no cloud.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/uc-remote-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/uc-remote-icon.png">
+    <link rel="apple-touch-icon" href="/assets/uc-remote-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#ff6e40; --accent-deep:#ff8a63; --accent-soft:rgba(255,110,64,.12); --accent-star:rgba(255,110,64,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .rate-hero{display:inline-flex; align-items:center; gap:1rem; margin:1.3rem 0 1.5rem; padding:.85rem 1.2rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft)}
+        .rate-hero .big{font-family:'Fraunces',Georgia,serif; font-size:2.4rem; font-weight:600; color:var(--star); line-height:.85}
+        .rate-hero .stars{color:var(--accent); font-size:1.05rem; letter-spacing:.14em}
+        .rate-hero .lbl{font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:var(--muted); margin-top:.3rem}
+        .rate-hero .lbl a{color:var(--accent); text-decoration:none} .rate-hero .lbl a:hover{text-decoration:underline}
+        .store-row{display:flex; gap:.7rem; flex-wrap:wrap; margin-bottom:0}
+        .store-row .btn svg{fill:var(--accent)}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#0f1a2c,#0b1322); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.p-hero{grid-template-columns:1fr; gap:2.4rem}.device{order:-1}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "UC Remote",
+      "operatingSystem": "Android",
+      "applicationCategory": "UtilitiesApplication",
+      "description": "Premium native Android companion for the Unfolded Circle Remote Two and Remote 3. Run activities, control every entity type, watch live now-playing, place home-screen widgets, and manage multiple remotes over your local network.",
+      "url": "https://miyarahub.com/uc-remote/",
+      "author": {
+        "@type": "Organization",
+        "name": "MiyaraHub Technologies LLC",
+        "url": "https://miyarahub.com"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "36",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is UC Remote affiliated with Unfolded Circle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. UC Remote is an independent, third-party companion app developed by MiyaraHub Technologies LLC. It is not created, endorsed, sponsored, or affiliated with Unfolded Circle in any way."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which devices does UC Remote work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UC Remote works with the Unfolded Circle Remote Two and Remote 3 on your local network. If your remote is reachable on the same Wi-Fi as your phone, UC Remote can pair with it and mirror its activities, pages and entities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does UC Remote connect to my remote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Over your local Wi-Fi. After a one-time PIN pairing, UC Remote keeps a live event channel open to stay in sync with your remote's state and sends your commands directly. There is no cloud relay and no account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an account or an internet connection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No account, ever. UC Remote only needs your local network to reach your remote. Nothing leaves your Wi-Fi, and there is no cloud service to sign up for."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I control more than one remote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Pair as many Unfolded Circle remotes as you like and switch between them in a tap. Each remote keeps its own profiles, pages and entities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What platforms is UC Remote available on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UC Remote is a native app for Android phones and tablets, available on Google Play."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://miyarahub.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "UC Remote",
+          "item": "https://miyarahub.com/uc-remote/"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="UC Remote screenshot enlarged"></div>
+
+    <nav>
+        <a href="/" class="nav-brand"><img src="/assets/logo-square.jpg" alt="MiyaraHub logo"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="/" onclick="closeNav()">Home</a></li>
+            <li><a href="#screens" onclick="closeNav()">Screens</a></li>
+            <li><a href="#features" onclick="closeNav()">Features</a></li>
+            <li><a href="#security" onclick="closeNav()">Privacy</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/">MiyaraHub</a> / UC Remote</div>
+            <div class="p-hero">
+                <div>
+                    <img class="ico" src="/assets/uc-remote-icon.png" alt="UC Remote app icon">
+                    <div class="kicker">UC Remote</div>
+                    <h1>Your whole remote, in hand.<span class="stargl">&#10022;</span></h1>
+                    <p class="hero-lede">A premium native companion for the Unfolded Circle Remote Two and Remote 3. Run your activities, swipe through their custom pages, control every light, climate, cover, switch and media player, watch live now-playing with album art, and pin home-screen widgets - all over your own network. No ads. No subscriptions. No cloud.</p>
+                    <div class="rate-hero">
+                        <div class="big">5.0</div>
+                        <div>
+                            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="lbl">out of 5 &middot; 36 ratings on Google Play &middot; <a href="https://play.google.com/store/apps/details?id=com.ucremote.android" target="_blank" rel="noopener">Read the reviews &rarr;</a></div>
+                        </div>
+                    </div>
+                    <div class="store-row">
+                        <a class="btn store" href="https://play.google.com/store/apps/details?id=com.ucremote.android" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>Google Play</a>
+                    </div>
+                    <p style="font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.05em; color:var(--muted); margin-top:.95rem"><span style="color:var(--accent)">&#9679;</span> <b style="color:var(--star); font-weight:500">Free</b> download - no ads, no subscriptions, no in-app purchases.</p>
+                    <div class="platforms">
+                        <span class="pl-lbl">Available on</span>
+                        <span class="pl">Android</span>
+                    </div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img src="screenshots/activities.png" alt="UC Remote activities list - start and stop full activities in one tap" onclick="openLightbox(this)" loading="lazy"></div>
+                    <div class="cap">Run any activity, one tap</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Open Source -->
+    <section class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Open Source</div><h2 class="sec-title">Built by the community's biggest integration contributor.</h2><p class="sec-desc">UC Remote comes from Meir Miyara - the single largest custom-integration contributor to the Unfolded Circle community. The 45+ open-source integrations he builds and maintains - for AV receivers, media players, lighting, climate, and more - bring those devices to your remote, and UC Remote puts them all at your fingertips.</p></div>
+            <div class="cta-row">
+                <a class="btn store" href="https://github.com/mase1981" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>Meir on GitHub</a>
+                <a class="btn store" href="https://github.com/stars/mase1981/lists/unfolded-circle-integrations" target="_blank" rel="noopener">Explore the 45+ integrations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screens -->
+    <section id="screens">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">See every screen</div><h2 class="sec-title">A premium, purpose-built interface for your remote.</h2><p class="sec-desc">Real screenshots from UC Remote - dark by default, live data, and a layout designed for one-handed control. Tap any screen to enlarge.</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/remotes.png" alt="UC Remote - your paired Unfolded Circle remotes" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/activity-page-1.png" alt="UC Remote - a custom activity page" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/activity-page-3.png" alt="UC Remote - tailored activity control tiles" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/now-playing.png" alt="UC Remote - live now-playing with album art" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/light-control.png" alt="UC Remote - light control with brightness and color" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/entities.png" alt="UC Remote - full entity browser" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/settings.png" alt="UC Remote - settings and customization" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img src="screenshots/widget-2.png" alt="UC Remote - home-screen widgets" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Features</div><h2 class="sec-title">Your whole remote, in your hand.</h2><p class="sec-desc">UC Remote connects to your Unfolded Circle Remote Two or Remote 3 over Wi-Fi and mirrors everything it can do - activities, pages, entities and media - in a fast, native interface designed for the phone.</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">No. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> Activities, One Tap</h3><p>Start and stop full activities - Watch Shield TV, Xbox, PS5 - from a clean list. Your remote powers on the right gear and switches inputs; the app drops you straight into the controls for that activity.</p><div class="meta"><span>Start / Stop</span><span>Activity Groups</span><span>One-Tap</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> Beautiful Activity Pages</h3><p>Every activity carries its own custom pages. Swipe between a media now-playing view, a button remote, and tailored control tiles - laid out exactly as configured on your remote.</p><div class="meta"><span>Swipeable Pages</span><span>Custom Layouts</span><span>Button Tiles</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 03</div><div class="body"><h3><span class="glyph">&#9835;</span> Live Now-Playing</h3><p>Album art, title and artist, transport controls (previous, play / pause, next), plus source and sound-mode selectors for your media players - all updating live as things change.</p><div class="meta"><span>Album Art</span><span>Transport</span><span>Live State</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 04</div><div class="body"><h3><span class="glyph">&#9678;</span> Every Entity, Purpose-Built</h3><p>Lights with brightness and color, climate with setpoints, covers, switches, sensors and media players - each gets a control screen designed for it, with the right glyphs and actions, not a generic toggle.</p><div class="meta"><span>Lights</span><span>Climate</span><span>Covers</span><span>Sensors</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 05</div><div class="body"><h3><span class="glyph">&#9776;</span> Full Entity Browser</h3><p>Search and filter your entire setup - hundreds of entities - by type, whether lights, media players, switches or climate, and jump straight into any one of them.</p><div class="meta"><span>Search</span><span>Filter by Type</span><span>Quick Open</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 06</div><div class="body"><h3><span class="glyph">&#9636;</span> Multiple Remotes</h3><p>Pair more than one Unfolded Circle remote and switch between them instantly. Each remembers its own profiles, pages and entities, so a Theater remote and an Office remote stay completely separate.</p><div class="meta"><span>Multi-Remote</span><span>Fast Switch</span><span>Per-Remote Profiles</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 07</div><div class="body"><h3><span class="glyph">&#9638;</span> Home-Screen Widgets</h3><p>Drop Activities, Media Players, or Devices widgets right on your home screen, each pointed at a chosen remote, for one-tap control and live now-playing without even opening the app.</p><div class="meta"><span>Activities</span><span>Media</span><span>Devices</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 08</div><div class="body"><h3><span class="glyph">&#9788;</span> Themes Built In</h3><p>Light, Dark, and true-black AMOLED surfaces, plus a signature accent or your own custom color. Pick a look and the whole app repaints to match - on every screen.</p><div class="meta"><span>Light</span><span>Dark</span><span>AMOLED</span><span>Custom Accent</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 09</div><div class="body"><h3><span class="glyph">&#9670;</span> Local &amp; Direct</h3><p>UC Remote talks straight to your remote over your own Wi-Fi. A live event stream keeps state in sync and your commands go direct - PIN-paired, with no cloud relay and no account.</p><div class="meta"><span>Local Network</span><span>PIN-Paired</span><span>No Cloud</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes -->
+    <section id="themes">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Themes</div><h2 class="sec-title">Make it yours.</h2><p class="sec-desc">Pick a clean Light theme, a standard Dark, or true-black AMOLED for OLED screens - then set the signature accent or your own custom color. Every screen, on every page, repaints to match.</p></div>
+            <div class="plates">
+                <div class="plate"><div class="frame"><img src="screenshots/theme-light.png" alt="UC Remote - Light theme" onclick="openLightbox(this)" loading="lazy"></div><div class="cap">Light</div></div>
+                <div class="plate"><div class="frame"><img src="screenshots/theme-dark.png" alt="UC Remote - Dark theme" onclick="openLightbox(this)" loading="lazy"></div><div class="cap">Dark</div></div>
+                <div class="plate"><div class="frame"><img src="screenshots/theme-amoled.png" alt="UC Remote - AMOLED theme" onclick="openLightbox(this)" loading="lazy"></div><div class="cap">AMOLED</div></div>
+            </div>
+            <div class="sec-head" style="margin-top:3.5rem"><div class="kicker">Your accent, your color</div><h2 class="sec-title">It is your remote, in your shade.</h2><p class="sec-desc">The accent color is yours to set. Choose the signature orange or pick any custom color from a full color picker - and the whole app repaints to match. Every highlight, toggle, active tab, progress bar and control across every screen takes on your color.</p></div>
+            <div class="plates" style="grid-template-columns:repeat(3,1fr)">
+                <div class="plate"><div class="frame"><img src="screenshots/accent-color.png" alt="UC Remote - custom accent color picker" onclick="openLightbox(this)" loading="lazy"></div><div class="cap">Custom accent picker</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">How it works</div><h2 class="sec-title">Direct to your remote. No cloud required.</h2><p class="sec-desc">UC Remote pairs with your Unfolded Circle remote on your own Wi-Fi and talks to it directly, using the remote's own integration interface. Your setup never touches an external server.</p></div>
+            <div class="steps">
+                <div class="step fade"><div class="n">1</div><h3>Pair Your Remote</h3><p>Enter your Unfolded Circle Remote Two or Remote 3's IP address and the PIN it shows. UC Remote pairs securely and pulls in your profiles, pages, activities and entities.</p></div>
+                <div class="step fade"><div class="n">2</div><h3>Stay In Sync</h3><p>A live two-way connection streams state from the remote - what's on, what's playing - while your taps go straight back as commands. No polling lag, no cloud round-trip.</p></div>
+                <div class="step fade"><div class="n">3</div><h3>Control Everything</h3><p>Run activities, work the custom pages, drive every entity and media player, switch between multiple remotes, and pin widgets to your home screen - all from one app.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section id="security">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Security &amp; Privacy</div><h2 class="sec-title">Local only. No account. No cloud.</h2><p class="sec-desc">UC Remote is built privacy-first and local-only: no cloud dependency, no user account, and no data collection beyond crash reporting.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>No Cloud Relay</h4><p>Every command and the live state stream happen directly between your phone and your remote over your local Wi-Fi. Nothing leaves your network.</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>No Account Required</h4><p>No sign-up, no email, no MiyaraHub account. Pair with your remote's PIN and you're in control.</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>PIN-Paired Access</h4><p>Pairing exchanges a secure access token that is stored locally on your device and used only to talk to your remote.</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>Local Storage Only</h4><p>Remote addresses and app preferences are stored on your device. Nothing is synced to a server.</p></div></div>
+                <div class="p"><span class="g">&#9634;</span><div><h4>Your Actions Only</h4><p>Commands are sent only when you act. Nothing fires automatically or in the background without your knowledge.</p></div></div>
+                <div class="p"><span class="g">&#9776;</span><div><h4>Network Permission Only</h4><p>The only permission UC Remote needs is local network access, used solely to reach your remote on your Wi-Fi.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">FAQ</div><h2 class="sec-title">Frequently asked questions.</h2><p class="sec-desc">Everything you need to know about UC Remote.</p></div>
+            <div class="faq">
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Is UC Remote affiliated with Unfolded Circle? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>No.</strong> UC Remote is an independent, third-party companion app developed by MiyaraHub Technologies LLC. It is not created, endorsed, sponsored, or affiliated with Unfolded Circle in any way. "Unfolded Circle," "Remote Two," and "Remote 3" are trademarks of their respective owners; our use of these names is solely to describe compatibility.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Which devices does it work with? <span class="arw">+</span></div><div class="a"><div class="a-in">UC Remote works with the Unfolded Circle <strong>Remote Two</strong> and <strong>Remote 3</strong> on your local network. If your remote is reachable on the same Wi-Fi as your phone, UC Remote can pair with it and mirror its activities, pages and entities.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">How does it connect to my remote? <span class="arw">+</span></div><div class="a"><div class="a-in">Over your local Wi-Fi. After a one-time PIN pairing, UC Remote keeps a live event channel open to stay in sync with your remote's state and sends your commands directly. There is no cloud relay and no account - everything stays on your network.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Do I need an account or an internet connection? <span class="arw">+</span></div><div class="a"><div class="a-in">No account, ever. UC Remote only needs your local network to reach your remote - nothing leaves your Wi-Fi, and there is no cloud service to sign up for.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Can I control more than one remote? <span class="arw">+</span></div><div class="a"><div class="a-in">Yes. Pair as many Unfolded Circle remotes as you like and switch between them in a tap. Each remote keeps its own profiles, pages and entities.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">What platforms is UC Remote available on? <span class="arw">+</span></div><div class="a"><div class="a-in">UC Remote is a native app for <strong>Android</strong> phones and tablets, available on Google Play.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>Legal &amp; trademark notice</h3>
+            <p>UC Remote is an independent, third-party application developed and published by MiyaraHub Technologies LLC. It is not created by, affiliated with, endorsed by, sponsored by, or in any way officially connected with Unfolded Circle ApS or any of its subsidiaries or affiliates.</p>
+            <p>"Unfolded Circle," "Remote Two," "Remote 3," and all related product names and logos are trademarks or registered trademarks of their respective owners. All other trademarks referenced herein are the property of their respective owners.</p>
+            <p>References to these products on this page and within the app are made solely to identify compatibility and describe the app's functionality (nominative fair use). The trademark holders are not affiliated with MiyaraHub Technologies LLC and do not endorse this product.</p>
+            <p>UC Remote communicates with Unfolded Circle remotes using their local network integration interface. Use of this app is at your own risk. MiyaraHub Technologies LLC is not responsible for any misconfiguration or other problems arising from its use.</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>Built for the Unfolded Circle Remote Two &amp; Remote 3</h2>
+            <p>UC Remote is live on Google Play - premium, native, local-only control of your Unfolded Circle remote: activities, entities, media and widgets, all in one app.</p>
+            <div class="store-row" style="justify-content:center">
+                <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ucremote.android" target="_blank" rel="noopener">Google Play</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Dallas, TX. All rights reserved.<br>Independent software. Trademarks belong to their respective owners.</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/support/">Support</a></li>
+                <li><a href="/privacy.html">Privacy</a></li>
+                <li><a href="/terms.html">Terms</a></li>
+            </ul>
+        </div></div>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+</body>
+</html>

@@ -193,3 +193,9 @@ footer{border-top:1px solid var(--line); padding:2.5rem 0}
 }
 @media(max-width:460px){.plates{grid-template-columns:1fr}.cta-row{flex-direction:column; align-items:stretch}.btn{justify-content:center}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto !important}.fade{transition:none; opacity:1; transform:none}}
+/* hero h1 that carries the kicker, and the footer app index */
+.hero h1.hk{display:block; margin-top:0}
+.hero h1 .h1k{display:block; font-weight:400; line-height:1.62; margin-bottom:.4rem}
+.hero h1 .h1t{display:flex; align-items:flex-start; gap:.1em}
+img{height:auto}
+footer .foot-apps{max-width:1080px;margin:1.4rem auto 0;padding:1.1rem 1.75rem 0;border-top:1px solid rgba(176,198,232,.11);display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:baseline;font-size:.82rem;line-height:1.5}footer .foot-apps .fa-h{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0b8}footer .foot-apps a{color:#8fa0b8;text-decoration:none}footer .foot-apps a:hover{color:#eef2f8;text-decoration:underline}footer .foot-tm{max-width:1080px;margin:.7rem auto 0;padding:0 1.75rem 1.4rem;color:#607089;font-size:.76rem;line-height:1.6}footer .foot-tm a{color:#8fa0b8}

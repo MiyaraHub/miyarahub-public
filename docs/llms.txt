@@ -1,0 +1,39 @@
+# MiyaraHub Technologies
+
+> MiyaraHub Technologies LLC is a small, independent software studio owned and run by Meir Miyara. It builds native apps for iPhone, iPad, Android, macOS and Windows that control and monitor hardware people already own: AV receivers, NAS units, UPS systems, HDMI processors, projectors, network controllers and universal remotes, plus full-stack web and e-commerce builds. The apps talk to the hardware directly on the local network, are mostly one-time purchases, and carry no ads.
+
+MiyaraHub apps are independent. They are not affiliated with, endorsed by, or sponsored by the makers of the hardware and services they work with, and every trademark named on this site belongs to its owner.
+
+## Apps
+
+- [Almanox: Sun, Moon & Milky Way Planner App](https://miyarahub.com/almanox/): Almanox is an offline sun, moon and Milky Way planner for iPhone, iPad and Android: Tonight verdict, golden hour, dark-sky windows, shot planner. Coming soon.
+- [AVR Maestro: App for Denon & Marantz Receivers](https://miyarahub.com/avr-maestro/): AVR Maestro is an independent app for Denon and Marantz AV receivers on iPhone, iPad, Android, Mac and Windows. Zones, sound modes, Audyssey, HEOS.
+- [AVR Maestro MC: Remote App for Yamaha MusicCast](https://miyarahub.com/avr-maestro-mc/): AVR Maestro MC is an independent remote app for Yamaha MusicCast AV receivers, in development for iPhone, iPad and Android. Zones, Surround:AI, YPAO.
+- [Elan Audio Lab: Tube Amp E-Commerce Build](https://miyarahub.com/elan-audio-lab/): Elan Audio Lab is a full-stack e-commerce platform MiyaraHub built for a boutique tube amp brand: catalog, custom amp builder, checkout, iOS and Android.
+- [FuryPath: Controller App for HDFury Devices](https://miyarahub.com/fury-path/): FuryPath is an independent controller app for HDFury HDMI processors on iPhone, iPad, Android and Windows. EDID, HDR, Dolby Vision, CEC, JVC macros. $6.99.
+- [Network Deck: App for UniFi Network Controllers](https://miyarahub.com/network-deck/): Network Deck is an independent app for Ubiquiti UniFi controllers: live dashboards, clients, WiFi, VLANs, firewall, multi-site. In development for iOS, Android.
+- [NexusDeck: App for Audyssey Calibration Files](https://miyarahub.com/nexus-deck/): NexusDeck manages Audyssey calibration files and uploads .ady curves to Denon and Marantz receivers over Wi-Fi. Pre-release for iPhone, iPad and Android.
+- [ProjectorPilot: App for Epson Projectors](https://miyarahub.com/projector-pilot/): ProjectorPilot is an independent Android app for Epson projectors: power, picture, HDR, lens memory and keystone over Wi-Fi. In development for Google Play.
+- [Syno Manager: Monitoring App for Synology NAS](https://miyarahub.com/synology-manager/): Syno Manager is an independent app for Synology NAS on iPhone, iPad, Android, Mac and Windows. Storage, system health, Docker, cameras and files. $6.99.
+- [UC Remote: App for Unfolded Circle Remotes](https://miyarahub.com/uc-remote/): UC Remote is a free, independent Android app for the Unfolded Circle Remote Two and Remote 3. Activities, entities, now playing and widgets. No ads.
+- [UPSight: UPS Monitor App for CyberPower & Eaton](https://miyarahub.com/upsight/): UPSight monitors your UPS over SNMP and NUT on iPhone, iPad, Android, Mac and Windows. Battery, load, runtime and alerts for CyberPower, Eaton, APC. $4.99.
+
+## Almanox manual
+
+- [The Dark-Sky Finder - Find Certified Dark Skies | Almanox](https://miyarahub.com/almanox/dark-sky-finder/): Where do you drive to escape the light? Almanox ranks the nearest certified International Dark-Sky Places by distance, direction and Bortle class. Offline.
+- [Almanox Guide: How to Plan the Night Sky](https://miyarahub.com/almanox/guide/): The complete Almanox guide: read the Tonight verdict, plan the Milky Way core, line up a sun or moon shot, use the 500 rule, and find dark-sky places.
+- [Almanox Help & FAQ - Setup, Location, Pro & Troubleshooting](https://miyarahub.com/almanox/help/): Almanox help and FAQ. Getting started, setting your location, what Pro unlocks, the one-time price, offline use, backup and restore, and troubleshooting.
+- [Saved Locations - Plan Any Place in Almanox](https://miyarahub.com/almanox/locations/): How Almanox handles locations: use GPS, search a city or type coordinates, save the places you shoot, and every reading recomputes for where you stand.
+- [Milky Way Core & Dark-Sky Windows - The Almanox Manual](https://miyarahub.com/almanox/milky-way/): When the Milky Way core rises, how high it peaks, and the exact moonless window to shoot it. Computed on your device, offline, for exactly where you stand.
+- [Photo Calculators - 500 Rule, NPF & Hyperfocal | Almanox](https://miyarahub.com/almanox/photo-calculators/): The 500 rule, the stricter NPF rule, and depth of field with hyperfocal distance - computed live for your camera, lens and sensor, on-device in Almanox Pro.
+- [Settings, Themes & Alerts - Make Almanox Yours](https://miyarahub.com/almanox/settings/): Set up Almanox: Light, Dark and AMOLED surfaces, accent colours, reorder or hide tabs and cards, back up places and notes, and set sky alerts.
+- [The Shot Planner - Sun and Full Moon Alignments | Almanox](https://miyarahub.com/almanox/shot-planner/): Find the day the sun or full moon lines up with your foreground. Pick a body, an azimuth, and a window - Almanox lists each crossing with time and altitude.
+- [The Today Tab - Almanox's Sun & Moon Almanac](https://miyarahub.com/almanox/today/): How to read Almanox's Today tab: the sun-path arc, the twilight ladder, day length, the moon card with phase and moonrise/set, for your exact location.
+- [The Tonight Verdict - Almanox's 0-100 Night Sky Score](https://miyarahub.com/almanox/tonight-verdict/): How Almanox builds tonight's 0-100 sky score from darkness, moon interference, Milky Way height and cloud, and what Poor, Fair, Good and Excellent mean.
+
+## Company
+
+- [Home Theater, NAS and Network Apps](https://miyarahub.com/): MiyaraHub Technologies is an independent studio in Dallas, Texas, making native apps for AV receivers, NAS, UPS, HDMI processors and networks.
+- [Privacy Policy](https://miyarahub.com/privacy.html): How MiyaraHub Technologies LLC apps handle your data: data minimization, what we collect, third-party services, storage, your rights, and per-app details.
+- [App Support and Contact](https://miyarahub.com/support/): Get help with MiyaraHub apps such as AVR Maestro, Syno Manager, UPSight and FuryPath: email and Discord contact, what to include, refunds and common fixes.
+- [Terms of Service](https://miyarahub.com/terms.html): The terms for using MiyaraHub Technologies LLC apps and services: purchases, third-party integrations, local network access, warranties and liability.

@@ -164,15 +164,14 @@
     <loc>https://miyarahub.com/projector-pilot/</loc>
     <lastmod>2026-10-01</lastmod>
     <image:image><image:loc>https://miyarahub.com/assets/og/projector-pilot.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/13_dashboard.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/02_control_top.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/03_control_dpad.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/04_picture_top.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/06_picture_hdr_rgb.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/07_lens_top.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/08_lens_bottom.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/10_info_bottom.png</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/12_app_settings.png</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/01-dashboard.png</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/02-remote.png</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/03-picture.png</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/04-lens.png</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/05-scenes.png</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/06-settings.png</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/07-home-automation.png</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/projector-pilot/screenshots/08-home-assistant.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://miyarahub.com/support/</loc>

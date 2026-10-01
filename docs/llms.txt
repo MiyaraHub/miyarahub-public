@@ -13,7 +13,7 @@ MiyaraHub apps are independent. They are not affiliated with, endorsed by, or sp
 - [FuryPath: Controller App for HDFury Devices](https://miyarahub.com/fury-path/): FuryPath is an independent controller app for HDFury HDMI processors on iPhone, iPad, Android and Windows. EDID, HDR, Dolby Vision, CEC, JVC macros. $6.99.
 - [Network Deck: App for UniFi Network Controllers](https://miyarahub.com/network-deck/): Network Deck is an independent app for Ubiquiti UniFi controllers: live dashboards, clients, WiFi, VLANs, firewall, multi-site. In development for iOS, Android.
 - [NexusDeck: App for Audyssey Calibration Files](https://miyarahub.com/nexus-deck/): NexusDeck manages Audyssey calibration files and uploads .ady curves to Denon and Marantz receivers over Wi-Fi. Pre-release for iPhone, iPad and Android.
-- [ProjectorPilot: App for Epson Projectors](https://miyarahub.com/projector-pilot/): ProjectorPilot is an independent Android app for Epson projectors: power, picture, HDR, lens memory and keystone over Wi-Fi. In development for Google Play.
+- [Projector Pilot: App for Epson Projectors](https://miyarahub.com/projector-pilot/): Projector Pilot is an independent Android app for Epson projectors: power, picture, HDR, lens memory and keystone over Wi-Fi. In development for Google Play.
 - [Syno Manager: Monitoring App for Synology NAS](https://miyarahub.com/synology-manager/): Syno Manager is an independent app for Synology NAS on iPhone, iPad, Android, Mac and Windows. Storage, system health, Docker, cameras and files. $6.99.
 - [UC Remote: App for Unfolded Circle Remotes](https://miyarahub.com/uc-remote/): UC Remote is a free, independent Android app for the Unfolded Circle Remote Two and Remote 3. Activities, entities, now playing and widgets. No ads.
 - [UPSight: UPS Monitor App for CyberPower & Eaton](https://miyarahub.com/upsight/): UPSight monitors your UPS over SNMP and NUT on iPhone, iPad, Android, Mac and Windows. Battery, load, runtime and alerts for CyberPower, Eaton, APC. $4.99.
@@ -33,7 +33,7 @@ MiyaraHub apps are independent. They are not affiliated with, endorsed by, or sp
 
 ## Company
 
-- [Home Theater, NAS and Network Apps](https://miyarahub.com/): MiyaraHub Technologies is an independent studio in Dallas, Texas, making native apps for AV receivers, NAS, UPS, HDMI processors and networks.
+- [Home Theater, NAS and Network Apps](https://miyarahub.com/): MiyaraHub Technologies is an independent studio in Van Alstyne, Texas, making native apps for AV receivers, NAS, UPS, HDMI processors and networks.
 - [Privacy Policy](https://miyarahub.com/privacy.html): How MiyaraHub Technologies LLC apps handle your data: data minimization, what we collect, third-party services, storage, your rights, and per-app details.
 - [App Support and Contact](https://miyarahub.com/support/): Get help with MiyaraHub apps such as AVR Maestro, Syno Manager, UPSight and FuryPath: email and Discord contact, what to include, refunds and common fixes.
 - [Terms of Service](https://miyarahub.com/terms.html): The terms for using MiyaraHub Technologies LLC apps and services: purchases, third-party integrations, local network access, warranties and liability.

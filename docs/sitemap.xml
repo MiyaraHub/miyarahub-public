@@ -111,17 +111,18 @@
   </url>
   <url>
     <loc>https://miyarahub.com/fury-path/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <image:image><image:loc>https://miyarahub.com/assets/og/fury-path.png</image:loc></image:image>
     <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/device.jpg</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/p1_edid.jpg</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/p2_video.jpg</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/p3_hdr.jpg</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/p4_dv.jpg</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/p5_macros.jpg</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/p6_osd.jpg</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/p7_config.jpg</image:loc></image:image>
-    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/p8_settings.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/01_home.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/02_theme.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/03_devices.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/04_info.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/05_edid.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/06_hdr_avi.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/07_dv.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/08_cec_earc.jpg</image:loc></image:image>
+    <image:image><image:loc>https://miyarahub.com/fury-path/screenshots/store/desktop_info.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://miyarahub.com/</loc>

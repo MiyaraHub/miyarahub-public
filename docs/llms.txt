@@ -14,7 +14,7 @@ MiyaraHub apps are independent. They are not affiliated with, endorsed by, or sp
 - [Network Deck: App for UniFi Network Controllers](https://miyarahub.com/network-deck/): Network Deck is an independent app for UniFi controllers: live dashboards, clients, WiFi, VLANs, firewall, multi-site. Coming to iOS, Android, Mac and Windows.
 - [NexusDeck: App for Audyssey Calibration Files](https://miyarahub.com/nexus-deck/): NexusDeck manages Audyssey calibration files and uploads .ady curves to Denon and Marantz receivers over Wi-Fi. Pre-release for iOS, Android, Mac and Windows.
 - [Projector Pilot: App for Epson Projectors](https://miyarahub.com/projector-pilot/): Projector Pilot is an independent app for Epson projectors: power, picture, HDR, lens memory and keystone over Wi-Fi. Coming soon to every store.
-- [Syno Manager: Monitoring App for Synology NAS](https://miyarahub.com/synology-manager/): Syno Manager is an independent app for Synology NAS on iPhone, iPad, Android, Mac and Windows. Storage, system health, Docker, cameras and files. $6.99.
+- [Syno Manager: Monitoring App for Synology NAS](https://miyarahub.com/synology-manager/): Syno Manager is an independent app for Synology NAS on iPhone, iPad, Android, Mac and Windows. Storage, system health, Docker, cameras and files. $9.99.
 - [UC Remote: App for Unfolded Circle Remotes](https://miyarahub.com/uc-remote/): UC Remote is a free, independent Android app for the Unfolded Circle Remote Two and Remote 3. Activities, entities, now playing and widgets. No ads.
 - [UPSight: APC, CyberPower & Eaton UPS Monitor](https://miyarahub.com/upsight/): Monitor your network UPS from iPhone, Android, Mac or Windows. UPSight reads APC, CyberPower and Eaton network cards over SNMP, or NUT. Alerts included. $4.99.
 

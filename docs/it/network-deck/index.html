@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Deck: app per controller di rete UniFi - MiyaraHub</title>
+    <meta name="description" content="Network Deck è un'app indipendente per controller UniFi: dashboard in tempo reale, client, WiFi, VLAN, firewall, multi-sito. In arrivo su iOS, Android, Mac e Windows.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Network Deck: app per controller di rete UniFi">
+    <meta property="og:description" content="Network Deck è un'app indipendente per controller UniFi: dashboard in tempo reale, client, WiFi, VLAN, firewall, multi-sito. In arrivo su iOS, Android, Mac e Windows.">
+    <meta property="og:url" content="https://miyarahub.com/it/network-deck/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/network-deck.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Network Deck, an independent app for Ubiquiti UniFi network controllers, in development. Not affiliated with Ubiquiti Inc.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Network Deck: app per controller di rete UniFi">
+    <meta name="twitter:description" content="Network Deck è un'app indipendente per controller UniFi: dashboard in tempo reale, client, WiFi, VLAN, firewall, multi-sito. In arrivo su iOS, Android, Mac e Windows.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/network-deck.png">
+    <meta name="twitter:image:alt" content="Network Deck, an independent app for Ubiquiti UniFi network controllers, in development. Not affiliated with Ubiquiti Inc.">
+    <meta name="keywords" content="UniFi app, UniFi mobile app, UniFi Network mobile, UniFi controller app, Ubiquiti UniFi controller remote, UDM Pro app, UDM Pro SE app, UDM SE app, UniFi Cloud Gateway app, UniFi Dream Machine app, UDR app, UniFi OS app, UniFi Network 10 app, UniFi Controller v10 mobile, UniFi firewall mobile app, UniFi port control mobile, UniFi VLAN management app, UniFi WiFi management app, UniFi SSID mobile, UniFi client blocker app, UniFi PoE control app, UniFi switch port control, UniFi traffic rules mobile, UniFi port forward app, UniFi Teleport mobile, UniFi site-to-site VPN mobile, UniFi WireGuard app, UniFi IPsec mobile, UniFi IDS IPS mobile, UniFi DPI app, UniFi threat management mobile, UniFi content filter app, UniFi speed test mobile, UniFi site survey, UniFi topology app, UniFi alarms mobile, UniFi multi-site app, third party UniFi app, best UniFi mobile app, UniFi replacement app, UniFi OS local controller mobile, Network Deck, MiyaraHub">
+    <link rel="canonical" href="https://miyarahub.com/it/network-deck/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/network-deck/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/network-deck/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/network-deck/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/network-deck/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/network-deck/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/network-deck/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/network-deck/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/network-deck/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/network-deck/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/network-deck/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/network-deck/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/network-deck/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/network-deck/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/network-deck/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/network-deck/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/network-deck/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/network-deck/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/network-deck/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/network-deck/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/network-deck/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/network-deck/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/network-deck/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/network-deck/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/network-deck/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/network-deck/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/network-deck/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/network-deck/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/network-deck/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/network-deck/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/network-deck/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/network-deck/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/network-deck-icon.png">
+    <link rel="apple-touch-icon" href="/assets/network-deck-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#38bdf8; --accent-deep:#7dd3fc; --accent-soft:rgba(56,189,248,.12); --accent-star:rgba(56,189,248,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .price-hero{display:inline-flex; align-items:center; gap:.7rem; margin:1.4rem 0 .3rem; padding:.85rem 1.2rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft); font-family:'IBM Plex Mono',monospace; font-size:.76rem; letter-spacing:.05em; color:var(--star); line-height:1.4}
+        .price-hero .dot{color:var(--accent); font-size:.9rem; line-height:1}
+        .price-hero b{color:var(--accent); font-weight:500}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#0f1a2c,#0b1322); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.p-hero{grid-template-columns:1fr; gap:2.4rem}.device{order:-1}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .compat{display:grid; grid-template-columns:repeat(2,1fr); gap:1.4rem}
+        .compat .c{border:1px solid var(--line); border-radius:6px; padding:1.4rem 1.6rem; background:rgba(15,26,44,.4)}
+        .compat .c h4{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:1.12rem; margin-bottom:.8rem; display:flex; align-items:center; gap:.6rem; color:var(--star)}
+        .compat .c h4 .g{color:var(--accent); flex-shrink:0}
+        .compat .c ul{list-style:none}
+        .compat .c li{color:var(--muted); font-size:.9rem; padding:.28rem 0; display:flex; gap:.55rem; align-items:baseline}
+        .compat .c li::before{content:'+'; color:var(--accent); font-family:'IBM Plex Mono',monospace; flex-shrink:0}
+        .compat-note{color:var(--faint); font-size:.86rem; line-height:1.7; margin-top:1.6rem; max-width:82ch}
+        .compat-note strong{color:var(--muted)}
+        @media(max-width:720px){.compat{grid-template-columns:1fr}}
+        .a-in code{font-family:'IBM Plex Mono',monospace; font-size:.86em; color:var(--accent); background:var(--accent-soft); padding:.05rem .32rem; border-radius:3px}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+        .legal p strong{color:var(--muted)}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Piccolo studio software indipendente che realizza app native, piattaforme web e e-commerce full-stack, strumenti di sistema e monitoraggio, integrazioni di dispositivi e pipeline DevOps.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "it", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/network-deck/#webpage", "url": "https://miyarahub.com/network-deck/", "name": "Network Deck: app per controller di rete UniFi - MiyaraHub", "description": "Network Deck è un'app indipendente per controller UniFi: dashboard in tempo reale, client, WiFi, VLAN, firewall, multi-sito. In arrivo su iOS, Android, Mac e Windows.", "inLanguage": "it", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/network-deck.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/network-deck/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/network-deck/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/network-deck/#app", "name": "Network Deck", "description": "App mobile indipendente per i controller di rete Ubiquiti UniFi. Dashboard in tempo reale, gestione di client e dispositivi, controllo di WiFi e VLAN, policy di firewall e sicurezza, gestione delle porte, speed test e cambio rapido tra più siti. In sviluppo.", "url": "https://miyarahub.com/network-deck/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "UtilitiesApplication", "image": "https://miyarahub.com/assets/network-deck-icon.png", "screenshot": ["https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165250.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165300.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165306.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165327.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165340.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165543.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165606.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165639.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165651.png"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/network-deck/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Network Deck", "item": "https://miyarahub.com/network-deck/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/network-deck/#faq", "url": "https://miyarahub.com/network-deck/", "mainEntity": [{"@type": "Question", "name": "Network Deck è affiliata a Ubiquiti o UniFi?", "acceptedAnswer": {"@type": "Answer", "text": "No. Network Deck è un'applicazione indipendente di terze parti sviluppata da MiyaraHub Technologies LLC. Non è creata, approvata, sponsorizzata né affiliata in alcun modo a Ubiquiti Inc. «Ubiquiti», «UniFi», «UniFi OS», «UniFi Network», «UDM», «UDR», «UCG», «Teleport» e tutti i nomi di prodotto correlati sono marchi di Ubiquiti Inc. Usiamo questi nomi esclusivamente per indicare la compatibilità (uso nominativo corretto)."}}, {"@type": "Question", "name": "Quali controller UniFi sono supportati?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck supporta sia le console UniFi OS (UDM Pro / Pro SE, UCG, Dream Machine, UDR, Cloud Key Gen2 / Plus) sia i controller UniFi Network standalone con versione v10.x su Linux, Docker o Windows. All'accesso l'app riconosce automaticamente la piattaforma e adatta l'interfaccia agli endpoint che il tuo firmware espone davvero: le funzioni che non hai semplicemente non compaiono. Testata dal vivo su UDM Pro SE (UniFi OS 5.0.16) e su Network 10.2.105 standalone."}}, {"@type": "Question", "name": "Come comunica Network Deck con il mio controller?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck usa la stessa API locale dell'interfaccia web di UniFi Network: una combinazione dei classici endpoint /rest e /cmd (con autenticazione di sessione basata su cookie) e della più recente API di integrazione v2. Apre inoltre un WebSocket verso il controller per ricevere gli eventi in tempo reale. Tutta la comunicazione avviene direttamente tra il tuo telefono e il controller, sulla rete locale o tramite VPN."}}, {"@type": "Question", "name": "Mi serve un account cloud UniFi?", "acceptedAnswer": {"@type": "Answer", "text": "No. Network Deck usa solo l'autenticazione locale. Accedi con nome utente e password dell'amministratore locale UniFi (oppure con una chiave API). Se oggi il tuo controller è raggiungibile solo tramite il login cloud di ui.com, per usare Network Deck dovrai abilitare un account amministratore locale in Settings → Admins. Il controller non comunica mai con noi, e noi non comunichiamo mai con il cloud di Ubiquiti per tuo conto."}}, {"@type": "Question", "name": "Posso gestire regole firewall e port forward?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Network Deck offre uno stack firewall completo: policy (consenti / blocca / ispeziona), port forward con CRUD, regole e rotte di traffico, gruppi firewall, zone firewall (matrice di policy v2) e app / gruppi DPI. Tutto si attiva e disattiva direttamente dall'elenco, senza passare da una finestra all'altra."}}, {"@type": "Question", "name": "Supporta il multi-sito?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Se il tuo controller gestisce più siti, Network Deck mostra in alto un selettore di sito. Ogni funzione - dashboard, client, firewall, VPN - fa riferimento al sito selezionato. Si cambia con un tocco."}}, {"@type": "Question", "name": "Quanto costerà Network Deck?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck sarà un acquisto singolo da $4.99 su App Store, Google Play e Microsoft Store. Nessun abbonamento, nessuna pubblicità, nessun acquisto in-app. Il prezzo potrebbe cambiare prima del lancio pubblico."}}, {"@type": "Question", "name": "Posso usarla da remoto (fuori casa / ufficio)?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck si collega al nome host o all'IP che configuri. Se il tuo controller è raggiungibile tramite VPN, Tailscale, WireGuard o una porta inoltrata, l'app funziona anche da remoto. Ti consigliamo di usare una VPN o Tailscale invece di esporre direttamente il controller UniFi a internet."}}, {"@type": "Question", "name": "Quali piattaforme sono supportate?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck funziona su iOS (13 e successivi), Android (5.0 / API 21 e successivi), macOS e Windows. Sono supportati sia i layout per telefono sia quelli per tablet. L'app sarà lanciata contemporaneamente su App Store, Google Play e Microsoft Store."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="Schermata di Network Deck ingrandita"></div>
+
+    <nav>
+        <a href="/it/" class="nav-brand"><img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="Logo MiyaraHub"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Lingua">
+            <li><a href="/it/" onclick="closeNav()">Home</a></li>
+            <li><a href="#screens" onclick="closeNav()">Schermate</a></li>
+            <li><a href="#features" onclick="closeNav()">Funzioni</a></li>
+            <li><a href="#compatibility" onclick="closeNav()">Compatibilità</a></li>
+            <li><a href="#security" onclick="closeNav()">Privacy</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/it/">MiyaraHub</a> / Network Deck</div>
+            <div class="p-hero">
+                <div>
+                    <img decoding="async" width="192" height="192" class="ico" src="/assets/icons/network-deck-icon-192.png" alt="Icona dell'app Network Deck">
+                    <h1 class="hk"><span class="kicker h1k">Network Deck &middot; per i controller di rete UniFi</span><span class="h1t">La tua rete UniFi, a portata di mano.<span class="stargl">&#10022;</span></span></h1>
+                    <p class="hero-sub">Il pieno controllo della tua rete UniFi dal telefono.</p>
+                    <p class="hero-lede">Un'app mobile premium per i controller di rete Ubiquiti UniFi. Dashboard in tempo reale, gestione di client e dispositivi, controllo di WiFi e VLAN, policy firewall, controllo delle porte, VPN, speed test e passaggio tra più siti: tutto dal telefono, direttamente verso il tuo controller.</p>
+                    <div class="price-hero"><span class="dot">&#9679;</span><span>In sviluppo - <b>in arrivo</b> su App Store, Google Play e Microsoft Store</span></div>
+                    <div class="platforms">
+                        <span class="pl-lbl">In arrivo su</span>
+                        <span class="pl">iPhone</span><span class="pl">iPad</span><span class="pl">Android</span><span class="pl">macOS</span><span class="pl">Windows</span></div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img fetchpriority="high" decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165250.png" alt="Dashboard in tempo reale di Network Deck per un controller UniFi" onclick="openLightbox(this)"></div>
+                    <div class="cap">La dashboard in tempo reale</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Screens -->
+    <section id="screens" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Screenshot</div><h2 class="sec-title">Scopri ogni schermata.</h2><p class="sec-desc">Un'interfaccia premium, pensata apposta per gli amministratori UniFi. Tema scuro, dati in tempo reale, navigazione intuitiva: niente schede del browser. Tocca un'immagine per ingrandirla.</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165300.png" alt="Dashboard di Network Deck - statistiche e scorciatoie" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165306.png" alt="Topologia di rete in Network Deck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165327.png" alt="Dettaglio delle porte dello switch in Network Deck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165340.png" alt="Gestione dei dispositivi in Network Deck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165543.png" alt="Speed test in Network Deck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165606.png" alt="Filtro dei contenuti in Network Deck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165639.png" alt="Policy firewall in Network Deck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165651.png" alt="Zone firewall in Network Deck" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Funzioni</div><h2 class="sec-title">Il tuo controller UniFi, in tasca.</h2><p class="sec-desc">Network Deck dialoga direttamente con l'API locale del tuo controller UniFi, che sia UniFi OS (UDM Pro, Cloud Gateway, Dream Machine) o un controller UniFi Network standalone. Client, WiFi, firewall, porte, VPN e statistiche, senza aprire un browser.</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">N. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> Dashboard in tempo reale</h3><p>Stato dell'ISP, grafico della banda in tempo reale con finestra mobile di 60 campioni e schede personalizzabili: info di sistema, traffico DPI, allarmi, eventi, client principali, cronologia degli speed test e scorciatoie rapide. Layout a schede che puoi riordinare.</p><div class="meta"><span>Banda</span><span>Stato ISP</span><span>Traffico DPI</span><span>Client principali</span></div></div></div>
+                <div class="entry fade"><div class="no">N. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> Client &amp; dispositivi</h3><p>Elenco completo dei client con filtri WiFi / cablati / tutti e segnale in dBm a colpo d'occhio. Blocca, sblocca, disconnetti o dimentica in blocco. Dettaglio per client con cronologia, ripartizione DPI, IP fisso, gruppo utenti e autenticazione ospiti.</p><div class="meta"><span>Blocca / Disconnetti</span><span>Segnale dBm</span><span>IP fisso</span><span>Azioni di massa</span></div></div></div>
+                <div class="entry fade"><div class="no">N. 03</div><div class="body"><h3><span class="glyph">&#9678;</span> WiFi, VLAN &amp; controllo delle porte</h3><p>Crea, modifica ed elimina gli SSID (sicurezza, banda, ospiti, VLAN, PMF, roaming veloce). Gestisci le VLAN con DHCP, IPv6, mDNS, multicast e opzioni di isolamento. Controllo PoE per singola porta e configurazione delle radio degli AP (canale, potenza TX, larghezza, band steering, RSSI minimo).</p><div class="meta"><span>CRUD SSID</span><span>VLAN</span><span>Controllo PoE</span><span>Radio AP</span></div></div></div>
+                <div class="entry fade"><div class="no">N. 04</div><div class="body"><h3><span class="glyph">&#9672;</span> Firewall &amp; regole di traffico</h3><p>Policy (consenti / blocca / ispeziona), port forward, regole e rotte di traffico, gruppi firewall, zone firewall con la matrice di policy v2 e controlli per app / gruppi DPI, il tutto con interruttori di attivazione / disattivazione diretti. Nessun browser necessario.</p><div class="meta"><span>Policy</span><span>Port forward</span><span>Zone v2</span><span>DPI</span></div></div></div>
+                <div class="entry fade"><div class="no">N. 05</div><div class="body"><h3><span class="glyph">&#9670;</span> Sicurezza &amp; statistiche</h3><p>Attiva IPS / IDS e scegli la modalità, filtro dei contenuti per rete (lavoro / famiglia / personalizzato), ispezione SSL, blocco geo-IP con whitelist / blacklist dei paesi, scansione degli AP non autorizzati e cronologia delle minacce ricavata dagli allarmi del tuo controller.</p><div class="meta"><span>IPS / IDS</span><span>Geo-IP</span><span>Filtro contenuti</span><span>Ispezione SSL</span></div></div></div>
+                <div class="entry fade"><div class="no">N. 06</div><div class="body"><h3><span class="glyph">&#9680;</span> VPN &amp; Teleport</h3><p>Genera inviti ospite Teleport con scadenza di 24 ore. Crea tunnel site-to-site con IPsec, OpenVPN o WireGuard usando una chiave precondivisa. Attiva peer-to-peer e rilevamento dei dispositivi con un tocco.</p><div class="meta"><span>Teleport</span><span>WireGuard</span><span>IPsec</span><span>OpenVPN</span></div></div></div>
+                <div class="entry fade"><div class="no">N. 07</div><div class="body"><h3><span class="glyph">&#9636;</span> Speed test &amp; site survey</h3><p>Avvia lo speed test integrato del controller con polling ogni 2 secondi e cronologia completa. Site survey WiFi locale (Android): canale, segnale, sicurezza, più misurazioni di ping, jitter e perdita di pacchetti verso gli endpoint Cloudflare.</p><div class="meta"><span>Speed test</span><span>Site survey</span><span>Jitter / Perdita</span></div></div></div>
+                <div class="entry fade"><div class="no">N. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> Multi-sito &amp; eventi in tempo reale</h3><p>Passa da un sito all'altro con un tocco. Flusso di eventi WebSocket in tempo reale con buffer mobile di 200 voci, per vedere la rete reagire dal vivo. Topologia, allarmi, backup, amministratori e DNS sempre a portata di mano.</p><div class="meta"><span>Multi-sito</span><span>Eventi live</span><span>Topologia</span><span>Backup</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section id="compatibility" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Compatibilità</div><h2 class="sec-title">Funziona con il tuo controller UniFi.</h2><p class="sec-desc">Network Deck supporta sia le console UniFi OS sia i controller UniFi Network standalone. Riconosce automaticamente quali endpoint espone il tuo firmware e adatta l'interfaccia di conseguenza: le funzioni che non hai semplicemente non compaiono.</p></div>
+            <div class="compat">
+                <div class="c">
+                    <h4><span class="g">&#9673;</span> Console UniFi OS</h4>
+                    <ul>
+                        <li>UDM Pro SE (verificato)</li>
+                        <li>UDM Pro</li>
+                        <li>UDM / UDR</li>
+                        <li>UniFi Cloud Gateway (UCG)</li>
+                        <li>UniFi Dream Machine</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9635;</span> Controller standalone</h4>
+                    <ul>
+                        <li>UniFi Network 10.x (verificato)</li>
+                        <li>Self-hosted su Linux / Docker</li>
+                        <li>Cloud Key Gen2 / Plus</li>
+                        <li>UniFi Network Server (Windows)</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9678;</span> Autenticazione</h4>
+                    <ul>
+                        <li>Nome utente + password dell'amministratore locale</li>
+                        <li>Autenticazione a due fattori (TOTP)</li>
+                        <li>X-API-KEY per l'accesso programmatico</li>
+                        <li>Nessun account UniFi Cloud richiesto</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9670;</span> Piattaforme mobili</h4>
+                    <ul>
+                        <li>iOS 13 e successivi</li>
+                        <li>Android 5.0 (API 21) e successivi</li>
+                        <li>Layout per telefono e tablet</li>
+                        <li>Temi chiaro e scuro</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="compat-note"><strong>Tolleranza al firmware:</strong> Network Deck riconosce automaticamente gli endpoint esposti dal tuo controller e si adatta alle varianti JSON specifiche del firmware (nomi di campo diversi, conversioni di tipo, più formati per l'API di integrazione). Gli account sub-admin potrebbero ricevere un errore 401 su alcuni endpoint: è un limite di permessi del controller, non un limite dell'app.</p>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Come funziona</div><h2 class="sec-title">Diretta al tuo controller. Nessun relay cloud.</h2><p class="sec-desc">Network Deck dialoga direttamente con il tuo controller UniFi sulla rete locale (o tramite VPN). Le tue credenziali e i dati della tua rete non passano mai da un server MiyaraHub.</p></div>
+            <div class="steps">
+                <div class="step fade"><div class="n">1</div><h3>Aggiungi il tuo controller</h3><p>Inserisci il nome host o l'IP del controller, la porta (predefinita 443 per UniFi OS, 8443 per standalone) e le credenziali dell'amministratore locale. Network Deck riconosce automaticamente se usi UniFi OS o un controller standalone.</p></div>
+                <div class="step fade"><div class="n">2</div><h3>Autenticati in locale</h3><p>Accedi con nome utente e password dell'amministratore locale. L'autenticazione a due fattori è supportata end-to-end. Preferisci le chiavi API? Usa X-API-KEY per l'accesso programmatico e salta del tutto il flusso con i cookie.</p></div>
+                <div class="step fade"><div class="n">3</div><h3>Gestisci tutto a colpo d'occhio</h3><p>Guarda il grafico della banda in tempo reale, disconnetti un client indisciplinato, attiva una regola firewall, riavvia una porta PoE, invita un ospite Teleport o passa a un altro sito: ogni azione passa dal controller e aggiorna il flusso di eventi in tempo reale.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section id="security" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Sicurezza &amp; privacy</div><h2 class="sec-title">Solo locale. Nessun account. Nessun relay cloud.</h2><p class="sec-desc">Network Deck è progettata con un'architettura solo locale che mette la privacy al primo posto. Nessun account MiyaraHub, nessun relay cloud, nessuna raccolta di dati oltre ai report di arresto anomalo.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>Nessun relay cloud</h4><p>Tutti i comandi e i flussi in tempo reale passano direttamente tra il tuo telefono e il tuo controller, sul Wi-Fi locale o tramite VPN. Nulla passa da server esterni.</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>Autenticazione UniFi standard</h4><p>Usa le stesse credenziali dell'amministratore locale (o la chiave API) dell'interfaccia web di UniFi Network. Le credenziali sono salvate in iOS Keychain / Android Keystore sul dispositivo e non vengono mai trasmesse fuori dal dispositivo, se non al tuo controller.</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>Nessun account MiyaraHub</h4><p>Nessuna registrazione, nessuna email, nessun account MiyaraHub. Installa, punta l'app al tuo controller e sei dentro.</p></div></div>
+                <div class="p"><span class="g">&#9672;</span><div><h4>Analisi minime</h4><p>Firebase Crashlytics solo per le segnalazioni di errori. Nessun tracciamento dell'uso, nessuna pubblicità, nessuna vendita di dati. Gli errori di rete vengono registrati come non fatali per aiutarci a migliorare la compatibilità con i firmware, senza raccogliere la struttura della tua rete.</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>Permessi rispettati</h4><p>L'app opera entro i permessi del tuo account amministratore UniFi. I sub-admin vedono solo ciò che il controller consente loro di vedere. Nessuna escalation di privilegi, nessuna backdoor.</p></div></div>
+                <div class="p"><span class="g">&#9680;</span><div><h4>Solo permesso di rete</h4><p>L'unico permesso del dispositivo richiesto da Network Deck è l'accesso alla rete, usato esclusivamente per collegarsi al tuo controller UniFi sulla rete locale (o tramite VPN).</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">FAQ</div><h2 class="sec-title">Domande frequenti.</h2><p class="sec-desc">Tutto quello che c'è da sapere su Network Deck.</p></div>
+            <div class="faq">
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Network Deck è affiliata a Ubiquiti o UniFi? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>No.</strong> Network Deck è un'applicazione indipendente di terze parti sviluppata da MiyaraHub Technologies LLC. Non è creata, approvata, sponsorizzata né affiliata in alcun modo a Ubiquiti Inc. «Ubiquiti», «UniFi», «UniFi OS», «UniFi Network», «UDM», «UDR», «UCG», «Teleport» e tutti i nomi di prodotto correlati sono marchi di Ubiquiti Inc. Usiamo questi nomi esclusivamente per indicare la compatibilità (uso nominativo corretto).</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Quali controller UniFi sono supportati? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck supporta sia le console UniFi OS (UDM Pro / Pro SE, UCG, Dream Machine, UDR, Cloud Key Gen2 / Plus) sia i controller UniFi Network standalone con versione v10.x su Linux, Docker o Windows. All'accesso l'app riconosce automaticamente la piattaforma e adatta l'interfaccia agli endpoint che il tuo firmware espone davvero: le funzioni che non hai semplicemente non compaiono. Testata dal vivo su UDM Pro SE (UniFi OS 5.0.16) e su Network 10.2.105 standalone.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Come comunica Network Deck con il mio controller? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck usa la stessa API locale dell'interfaccia web di UniFi Network: una combinazione dei classici endpoint <code>/rest</code> e <code>/cmd</code> (con autenticazione di sessione basata su cookie) e della più recente API di integrazione v2. Apre inoltre un WebSocket verso il controller per ricevere gli eventi in tempo reale. Tutta la comunicazione avviene direttamente tra il tuo telefono e il controller, sulla rete locale o tramite VPN.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Mi serve un account cloud UniFi? <span class="arw">+</span></div><div class="a"><div class="a-in">No. Network Deck usa <strong>solo l'autenticazione locale</strong>. Accedi con nome utente e password dell'amministratore locale UniFi (oppure con una chiave API). Se oggi il tuo controller è raggiungibile solo tramite il login cloud di ui.com, per usare Network Deck dovrai abilitare un account amministratore locale in Settings &rarr; Admins. Il controller non comunica mai con noi, e noi non comunichiamo mai con il cloud di Ubiquiti per tuo conto.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Posso gestire regole firewall e port forward? <span class="arw">+</span></div><div class="a"><div class="a-in">Sì. Network Deck offre uno stack firewall completo: policy (consenti / blocca / ispeziona), port forward con CRUD, regole e rotte di traffico, gruppi firewall, zone firewall (matrice di policy v2) e app / gruppi DPI. Tutto si attiva e disattiva direttamente dall'elenco, senza passare da una finestra all'altra.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Supporta il multi-sito? <span class="arw">+</span></div><div class="a"><div class="a-in">Sì. Se il tuo controller gestisce più siti, Network Deck mostra in alto un selettore di sito. Ogni funzione - dashboard, client, firewall, VPN - fa riferimento al sito selezionato. Si cambia con un tocco.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Quanto costerà Network Deck? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck sarà un <strong>acquisto singolo da $4.99</strong> su App Store, Google Play e Microsoft Store. Nessun abbonamento, nessuna pubblicità, nessun acquisto in-app. Il prezzo potrebbe cambiare prima del lancio pubblico.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Posso usarla da remoto (fuori casa / ufficio)? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck si collega al nome host o all'IP che configuri. Se il tuo controller è raggiungibile tramite VPN, Tailscale, WireGuard o una porta inoltrata, l'app funziona anche da remoto. Ti consigliamo di usare una VPN o Tailscale invece di esporre direttamente il controller UniFi a internet.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Quali piattaforme sono supportate? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck funziona sia su <strong>iOS (13 e successivi)</strong> sia su <strong>Android (5.0 / API 21 e successivi)</strong>. Sono supportati sia i layout per telefono sia quelli per tablet. L'app sarà lanciata contemporaneamente su App Store, Google Play e Microsoft Store.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>Disclaimer legale &amp; avviso sui marchi</h3>
+            <p>Network Deck è un'<strong>applicazione indipendente di terze parti</strong> sviluppata e pubblicata da <strong>MiyaraHub Technologies LLC</strong>. <strong>Non è creata da, affiliata a, approvata da, sponsorizzata da né in alcun modo ufficialmente collegata a Ubiquiti Inc.</strong> o a nessuna delle sue controllate o affiliate.</p>
+            <p>«Ubiquiti», «UniFi», «UniFi OS», «UniFi Network», «UDM», «UDM Pro», «UCG», «UDR», «Dream Machine», «Cloud Key», «Teleport» e tutti i nomi di prodotto e i loghi correlati sono marchi o marchi registrati di Ubiquiti Inc., registrati negli Stati Uniti e in altri paesi. Tutti gli altri marchi citati nel presente documento sono di proprietà dei rispettivi titolari.</p>
+            <p>I riferimenti a questi prodotti in questa pagina e nell'app sono fatti esclusivamente per identificare la compatibilità e descrivere le funzionalità dell'app (uso nominativo corretto). I titolari dei marchi non sono affiliati a MiyaraHub Technologies LLC e non approvano questo prodotto.</p>
+            <p>Network Deck comunica con i controller UniFi tramite le loro API di rete locale documentate (REST, API di integrazione, WebSocket). L'uso di questa app è a tuo rischio. MiyaraHub Technologies LLC non è responsabile di configurazioni errate della rete, interruzioni o altri problemi derivanti dall'uso di questa applicazione. Segui sempre le best practice di Ubiquiti per firmware e sicurezza.</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>Pronto per un'esperienza mobile migliore con UniFi?</h2>
+            <p>Network Deck è in pieno sviluppo e sarà lanciata su App Store, Google Play e Microsoft Store. Ricevi una notifica al lancio.</p>
+            <div class="cta-row" style="justify-content:center">
+                <a class="btn primary" href="/it/support/">Avvisami al lancio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Van Alstyne, TX. Tutti i diritti riservati.</div>
+            <ul>
+                <li><a href="/it/">Home</a></li>
+                <li><a href="/it/support/">Assistenza</a></li>
+                <li><a href="/it/privacy.html">Privacy</a></li>
+                <li><a href="/it/terms.html">Termini</a></li>
+            </ul>
+        </div></div>
+        <div class="foot-apps" role="navigation" aria-label="App MiyaraHub"><span class="fa-h">App</span><a href="/it/avr-maestro/">AVR Maestro</a><a href="/it/synology-manager/">Syno Manager</a><a href="/it/upsight/">UPSight</a><a href="/it/fury-path/">FuryPath</a><a href="/it/uc-remote/">UC Remote</a><a href="/it/almanox/">Almanox</a><a href="/it/nexus-deck/">NexusDeck</a><a href="/it/avr-maestro-mc/">AVR Maestro MC</a><a href="/it/network-deck/">Network Deck</a><a href="/it/projector-pilot/">Projector Pilot</a><a href="/it/elan-audio-lab/">Elan Audio Lab</a><a href="/it/support/">Assistenza</a></div>
+    <p class="foot-tm">Le app MiyaraHub sono indipendenti e non sono affiliate, approvate né sponsorizzate dai produttori dell'hardware e dei servizi con cui funzionano. Tutti i marchi appartengono ai rispettivi proprietari. <a href="/it/#legal">Avviso sui marchi</a></p>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

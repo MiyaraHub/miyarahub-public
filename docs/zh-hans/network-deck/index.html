@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Deck：UniFi 网络控制器应用 - MiyaraHub</title>
+    <meta name="description" content="Network Deck 是一款适用于 UniFi 控制器的独立应用：实时仪表盘、客户端、WiFi、VLAN、防火墙、多站点。即将登陆 iOS、Android、Mac 和 Windows。">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Network Deck：UniFi 网络控制器应用">
+    <meta property="og:description" content="Network Deck 是一款适用于 UniFi 控制器的独立应用：实时仪表盘、客户端、WiFi、VLAN、防火墙、多站点。即将登陆 iOS、Android、Mac 和 Windows。">
+    <meta property="og:url" content="https://miyarahub.com/zh-hans/network-deck/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/network-deck.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Network Deck, an independent app for Ubiquiti UniFi network controllers, in development. Not affiliated with Ubiquiti Inc.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Network Deck：UniFi 网络控制器应用">
+    <meta name="twitter:description" content="Network Deck 是一款适用于 UniFi 控制器的独立应用：实时仪表盘、客户端、WiFi、VLAN、防火墙、多站点。即将登陆 iOS、Android、Mac 和 Windows。">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/network-deck.png">
+    <meta name="twitter:image:alt" content="Network Deck, an independent app for Ubiquiti UniFi network controllers, in development. Not affiliated with Ubiquiti Inc.">
+    <meta name="keywords" content="UniFi app, UniFi mobile app, UniFi Network mobile, UniFi controller app, Ubiquiti UniFi controller remote, UDM Pro app, UDM Pro SE app, UDM SE app, UniFi Cloud Gateway app, UniFi Dream Machine app, UDR app, UniFi OS app, UniFi Network 10 app, UniFi Controller v10 mobile, UniFi firewall mobile app, UniFi port control mobile, UniFi VLAN management app, UniFi WiFi management app, UniFi SSID mobile, UniFi client blocker app, UniFi PoE control app, UniFi switch port control, UniFi traffic rules mobile, UniFi port forward app, UniFi Teleport mobile, UniFi site-to-site VPN mobile, UniFi WireGuard app, UniFi IPsec mobile, UniFi IDS IPS mobile, UniFi DPI app, UniFi threat management mobile, UniFi content filter app, UniFi speed test mobile, UniFi site survey, UniFi topology app, UniFi alarms mobile, UniFi multi-site app, third party UniFi app, best UniFi mobile app, UniFi replacement app, UniFi OS local controller mobile, Network Deck, MiyaraHub">
+    <link rel="canonical" href="https://miyarahub.com/zh-hans/network-deck/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/network-deck/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/network-deck/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/network-deck/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/network-deck/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/network-deck/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/network-deck/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/network-deck/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/network-deck/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/network-deck/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/network-deck/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/network-deck/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/network-deck/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/network-deck/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/network-deck/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/network-deck/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/network-deck/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/network-deck/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/network-deck/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/network-deck/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/network-deck/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/network-deck/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/network-deck/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/network-deck/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/network-deck/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/network-deck/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/network-deck/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/network-deck/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/network-deck/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/network-deck/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/network-deck/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/network-deck/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/network-deck-icon.png">
+    <link rel="apple-touch-icon" href="/assets/network-deck-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#38bdf8; --accent-deep:#7dd3fc; --accent-soft:rgba(56,189,248,.12); --accent-star:rgba(56,189,248,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .price-hero{display:inline-flex; align-items:center; gap:.7rem; margin:1.4rem 0 .3rem; padding:.85rem 1.2rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft); font-family:'IBM Plex Mono',monospace; font-size:.76rem; letter-spacing:.05em; color:var(--star); line-height:1.4}
+        .price-hero .dot{color:var(--accent); font-size:.9rem; line-height:1}
+        .price-hero b{color:var(--accent); font-weight:500}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#0f1a2c,#0b1322); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.p-hero{grid-template-columns:1fr; gap:2.4rem}.device{order:-1}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .compat{display:grid; grid-template-columns:repeat(2,1fr); gap:1.4rem}
+        .compat .c{border:1px solid var(--line); border-radius:6px; padding:1.4rem 1.6rem; background:rgba(15,26,44,.4)}
+        .compat .c h4{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:1.12rem; margin-bottom:.8rem; display:flex; align-items:center; gap:.6rem; color:var(--star)}
+        .compat .c h4 .g{color:var(--accent); flex-shrink:0}
+        .compat .c ul{list-style:none}
+        .compat .c li{color:var(--muted); font-size:.9rem; padding:.28rem 0; display:flex; gap:.55rem; align-items:baseline}
+        .compat .c li::before{content:'+'; color:var(--accent); font-family:'IBM Plex Mono',monospace; flex-shrink:0}
+        .compat-note{color:var(--faint); font-size:.86rem; line-height:1.7; margin-top:1.6rem; max-width:82ch}
+        .compat-note strong{color:var(--muted)}
+        @media(max-width:720px){.compat{grid-template-columns:1fr}}
+        .a-in code{font-family:'IBM Plex Mono',monospace; font-size:.86em; color:var(--accent); background:var(--accent-soft); padding:.05rem .32rem; border-radius:3px}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+        .legal p strong{color:var(--muted)}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "一家小而独立的软件工作室，专注原生应用、全栈网站与电商平台、系统与监控工具、设备集成以及 DevOps 流水线。", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "zh-Hans", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/network-deck/#webpage", "url": "https://miyarahub.com/network-deck/", "name": "Network Deck：UniFi 网络控制器应用 - MiyaraHub", "description": "Network Deck 是一款适用于 UniFi 控制器的独立应用：实时仪表盘、客户端、WiFi、VLAN、防火墙、多站点。即将登陆 iOS、Android、Mac 和 Windows。", "inLanguage": "zh-Hans", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/network-deck.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/network-deck/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/network-deck/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/network-deck/#app", "name": "Network Deck", "description": "适用于 Ubiquiti UniFi 网络控制器的独立移动应用。实时仪表盘、客户端与设备管理、WiFi 和 VLAN 控制、防火墙与安全策略、端口管理、网速测试，以及多站点切换。开发中。", "url": "https://miyarahub.com/network-deck/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "UtilitiesApplication", "image": "https://miyarahub.com/assets/network-deck-icon.png", "screenshot": ["https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165250.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165300.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165306.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165327.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165340.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165543.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165606.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165639.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165651.png"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/network-deck/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "主页", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Network Deck", "item": "https://miyarahub.com/network-deck/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/network-deck/#faq", "url": "https://miyarahub.com/network-deck/", "mainEntity": [{"@type": "Question", "name": "Network Deck 与 Ubiquiti 或 UniFi 有关联吗？", "acceptedAnswer": {"@type": "Answer", "text": "没有。Network Deck 是由 MiyaraHub Technologies LLC 开发的独立第三方应用，并非由 Ubiquiti Inc. 创建，也未获其认可或赞助，与其没有任何关联。“Ubiquiti”“UniFi”“UniFi OS”“UniFi Network”“UDM”“UDR”“UCG”“Teleport”以及所有相关产品名称均为 Ubiquiti Inc. 的商标。我们使用这些名称纯粹是为了说明兼容性（指示性合理使用）。"}}, {"@type": "Question", "name": "支持哪些 UniFi 控制器？", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck 既支持 UniFi OS 主机（UDM Pro / Pro SE、UCG、Dream Machine、UDR、Cloud Key Gen2 / Plus），也支持运行在 Linux、Docker 或 Windows 上的 v10.x 独立 UniFi Network 控制器。连接时应用会自动识别你的平台，并根据固件实际开放的接口调整界面，没有的功能就不会显示。已在 UDM Pro SE（UniFi OS 5.0.16）和独立版 Network 10.2.105 上完成实机测试。"}}, {"@type": "Question", "name": "Network Deck 如何与我的控制器通信？", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck 使用与 UniFi Network 网页界面相同的本地 API，包括经典的 /rest 和 /cmd 接口（基于 Cookie 的会话认证），以及较新的 v2 集成 API。它还会与你的控制器建立 WebSocket 连接，以接收实时事件流。所有通信都在你的手机与控制器之间通过本地网络或 VPN 直接完成。"}}, {"@type": "Question", "name": "我需要 UniFi 云账号吗？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。Network Deck 只使用本地认证。使用你的 UniFi 本地管理员用户名和密码（或 API 密钥）登录即可。如果你的控制器目前只能通过 ui.com 云登录访问，则需要在“设置 → 管理员”中启用一个本地管理员账号才能使用 Network Deck。控制器不会与我们通信，我们也不会代你访问 Ubiquiti 的云服务。"}}, {"@type": "Question", "name": "我可以管理防火墙规则和端口转发吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。Network Deck 提供完整的防火墙功能：策略（允许 / 阻止 / 检测）、可增删改查的端口转发、流量规则与路由、防火墙分组、防火墙区域（v2 策略矩阵），以及 DPI 应用 / 分组。所有操作都可直接在列表中切换，无需反复弹窗点击。"}}, {"@type": "Question", "name": "支持多站点吗？", "acceptedAnswer": {"@type": "Answer", "text": "支持。如果你的控制器管理多个站点，Network Deck 会在顶部显示站点切换器。仪表盘、客户端、防火墙、VPN 等所有功能都作用于当前选中的站点，轻点一下即可切换。"}}, {"@type": "Question", "name": "Network Deck 的售价是多少？", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck 将在 App Store、Google Play 和 Microsoft Store 以 $4.99 的价格一次性买断。无订阅、无广告、无内购。价格可能在正式发布前调整。"}}, {"@type": "Question", "name": "可以远程使用吗（在家或办公室之外）？", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck 会连接你配置的任意主机名或 IP。只要你的控制器能通过 VPN、Tailscale、WireGuard 或端口转发访问，应用就能远程使用。我们建议使用 VPN 或 Tailscale，而不是把 UniFi 控制器直接暴露在互联网上。"}}, {"@type": "Question", "name": "支持哪些平台？", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck 可运行于 iOS（13 及以上）、Android（5.0 / API 21 及以上）、macOS 和 Windows，手机和平板布局均支持。应用将在 App Store、Google Play 和 Microsoft Store 同步上线。"}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="Network Deck 截图（放大）"></div>
+
+    <nav>
+        <a href="/zh-hans/" class="nav-brand"><img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub 标志"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="菜单"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="语言">
+            <li><a href="/zh-hans/" onclick="closeNav()">主页</a></li>
+            <li><a href="#screens" onclick="closeNav()">界面</a></li>
+            <li><a href="#features" onclick="closeNav()">功能</a></li>
+            <li><a href="#compatibility" onclick="closeNav()">兼容性</a></li>
+            <li><a href="#security" onclick="closeNav()">隐私</a></li>
+            <li><a href="#faq" onclick="closeNav()">常见问题</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/zh-hans/">MiyaraHub</a> / Network Deck</div>
+            <div class="p-hero">
+                <div>
+                    <img decoding="async" width="192" height="192" class="ico" src="/assets/icons/network-deck-icon-192.png" alt="Network Deck 应用图标">
+                    <h1 class="hk"><span class="kicker h1k">Network Deck &middot; 专为 UniFi 网络控制器打造</span><span class="h1t">你的 UniFi 网络，尽在掌握。<span class="stargl">&#10022;</span></span></h1>
+                    <p class="hero-sub">用手机全面掌控你的 UniFi 网络。</p>
+                    <p class="hero-lede">一款面向 Ubiquiti UniFi 网络控制器的高品质移动应用。实时仪表盘、客户端与设备管理、WiFi 和 VLAN 控制、防火墙策略、端口控制、VPN、网速测试和多站点切换，全部在手机上完成，直连你的控制器。</p>
+                    <div class="price-hero"><span class="dot">&#9679;</span><span>开发中 - <b>即将登陆</b> App Store、Google Play 和 Microsoft Store</span></div>
+                    <div class="platforms">
+                        <span class="pl-lbl">即将登陆</span>
+                        <span class="pl">iPhone</span><span class="pl">iPad</span><span class="pl">Android</span><span class="pl">macOS</span><span class="pl">Windows</span></div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img fetchpriority="high" decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165250.png" alt="Network Deck 的 UniFi 控制器实时仪表盘" onclick="openLightbox(this)"></div>
+                    <div class="cap">实时仪表盘</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Screens -->
+    <section id="screens" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">截图</div><h2 class="sec-title">每个界面一览无余。</h2><p class="sec-desc">为 UniFi 管理员量身打造的高品质界面。深色主题、实时数据、直观导航，无需再开浏览器标签页。点击任意图片可放大。</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165300.png" alt="Network Deck 仪表盘：统计数据与快捷入口" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165306.png" alt="Network Deck 网络拓扑" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165327.png" alt="Network Deck 交换机端口详情" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165340.png" alt="Network Deck 设备管理" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165543.png" alt="Network Deck 网速测试" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165606.png" alt="Network Deck 内容过滤" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165639.png" alt="Network Deck 防火墙策略" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165651.png" alt="Network Deck 防火墙区域" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">功能</div><h2 class="sec-title">你的 UniFi 控制器，随身携带。</h2><p class="sec-desc">Network Deck 直接与你的 UniFi 控制器的本地 API 通信，无论是 UniFi OS（UDM Pro、Cloud Gateway、Dream Machine）还是独立的 UniFi Network 控制器。客户端、WiFi、防火墙、端口、VPN 和各项洞察，无需打开浏览器即可查看。</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">No. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> 实时仪表盘</h3><p>ISP 健康状况、带 60 个采样点滚动窗口的实时带宽图表，以及可自定义的卡片：系统信息、DPI 流量、告警、事件、流量最高的客户端、网速测试历史和快捷入口。标签页布局可自由调整顺序。</p><div class="meta"><span>带宽</span><span>ISP 健康状况</span><span>DPI 流量</span><span>热门客户端</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> 客户端&amp;设备</h3><p>完整的客户端列表，支持 WiFi / 有线 / 全部筛选，信号强度 dBm 一目了然。可批量阻止、解除阻止、踢出或忘记客户端。每个客户端都有详情页，包含历史记录、DPI 明细、固定 IP、用户组和访客认证。</p><div class="meta"><span>阻止 / 踢出</span><span>信号 dBm</span><span>固定 IP</span><span>批量操作</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 03</div><div class="body"><h3><span class="glyph">&#9678;</span> WiFi、VLAN &amp;端口控制</h3><p>创建、编辑和删除 SSID（安全性、频段、访客、VLAN、PMF、快速漫游）。管理 VLAN，可切换 DHCP、IPv6、mDNS、组播和隔离选项。支持单端口 PoE 控制和 AP 射频配置（信道、TX 功率、频宽、频段引导、最小 RSSI）。</p><div class="meta"><span>SSID CRUD</span><span>VLAN</span><span>PoE 控制</span><span>AP 射频</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 04</div><div class="body"><h3><span class="glyph">&#9672;</span> 防火墙&amp;流量规则</h3><p>策略（允许 / 阻止 / 检测）、端口转发、流量规则与路由、防火墙分组、采用 v2 策略矩阵的防火墙区域，以及 DPI 应用 / 分组控制，全部支持行内启用 / 停用开关。无需浏览器。</p><div class="meta"><span>策略</span><span>端口转发</span><span>区域 v2</span><span>DPI</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 05</div><div class="body"><h3><span class="glyph">&#9670;</span> 安全&amp;洞察</h3><p>开关 IPS / IDS 并选择模式，按网络设置内容过滤（工作 / 家庭 / 自定义），SSL 检测，支持国家白名单 / 黑名单的 geo-IP 拦截，非法 AP 扫描，以及来自控制器告警的威胁历史。</p><div class="meta"><span>IPS / IDS</span><span>Geo-IP</span><span>内容过滤</span><span>SSL 检测</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 06</div><div class="body"><h3><span class="glyph">&#9680;</span> VPN &amp; Teleport</h3><p>生成有效期 24 小时的 Teleport 访客邀请。使用预共享密钥，通过 IPsec、OpenVPN 或 WireGuard 创建站点到站点隧道。轻点即可开关点对点连接和设备发现。</p><div class="meta"><span>Teleport</span><span>WireGuard</span><span>IPsec</span><span>OpenVPN</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 07</div><div class="body"><h3><span class="glyph">&#9636;</span> 网速测试&amp;站点勘测</h3><p>运行控制器内置的网速测试，每 2 秒轮询一次并保留完整历史。本地 WiFi 站点勘测（Android）：信道、信号、安全性，以及针对 Cloudflare 节点的 ping、抖动和丢包测量。</p><div class="meta"><span>网速测试</span><span>站点勘测</span><span>抖动 / 丢包</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> 多站点&amp;实时事件</h3><p>一键切换站点。实时 WebSocket 事件流带有 200 条滚动缓冲区，让你亲眼看着网络实时作出反应。拓扑、告警、备份、管理员和 DNS 都触手可及。</p><div class="meta"><span>多站点</span><span>实时事件</span><span>拓扑</span><span>备份</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section id="compatibility" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">兼容性</div><h2 class="sec-title">适配你的 UniFi 控制器。</h2><p class="sec-desc">Network Deck 同时支持 UniFi OS 主机和独立的 UniFi Network 控制器。它会自动识别你的固件开放了哪些接口，并相应调整界面，没有的功能就不会显示。</p></div>
+            <div class="compat">
+                <div class="c">
+                    <h4><span class="g">&#9673;</span> UniFi OS 主机</h4>
+                    <ul>
+                        <li>UDM Pro SE（已验证）</li>
+                        <li>UDM Pro</li>
+                        <li>UDM / UDR</li>
+                        <li>UniFi Cloud Gateway (UCG)</li>
+                        <li>UniFi Dream Machine</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9635;</span> 独立控制器</h4>
+                    <ul>
+                        <li>UniFi Network 10.x（已验证）</li>
+                        <li>自托管于 Linux / Docker</li>
+                        <li>Cloud Key Gen2 / Plus</li>
+                        <li>UniFi Network Server (Windows)</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9678;</span> 身份认证</h4>
+                    <ul>
+                        <li>本地管理员用户名 + 密码</li>
+                        <li>双重身份验证 (TOTP)</li>
+                        <li>使用 X-API-KEY 进行程序化访问</li>
+                        <li>无需 UniFi 云账号</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9670;</span> 移动平台</h4>
+                    <ul>
+                        <li>iOS 13 及以上</li>
+                        <li>Android 5.0 (API 21) 及以上</li>
+                        <li>手机和平板布局</li>
+                        <li>浅色和深色主题</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="compat-note"><strong>固件兼容性：</strong>Network Deck 会自动识别控制器开放的接口，并适应不同固件的 JSON 差异（字段名变动、类型转换、集成 API 的多种数据结构）。子管理员账号可能会遇到部分接口返回 401，这是控制器的权限限制，并非应用本身的限制。</p>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">工作方式</div><h2 class="sec-title">直连你的控制器，不经过云端中转。</h2><p class="sec-desc">Network Deck 通过本地网络（或你的 VPN）直接与 UniFi 控制器通信。你的凭据和网络数据绝不会经过 MiyaraHub 的服务器。</p></div>
+            <div class="steps">
+                <div class="step fade"><div class="n">1</div><h3>添加你的控制器</h3><p>输入控制器的主机名或 IP、端口（UniFi OS 默认 443，独立版默认 8443）以及本地管理员凭据。Network Deck 会自动判断你使用的是 UniFi OS 还是独立控制器。</p></div>
+                <div class="step fade"><div class="n">2</div><h3>本地认证</h3><p>使用本地管理员用户名和密码登录，全程支持双重身份验证。更喜欢 API 密钥？使用 X-API-KEY 进行程序化访问，完全跳过 Cookie 流程。</p></div>
+                <div class="step fade"><div class="n">3</div><h3>一览全局，轻松管理</h3><p>查看实时带宽图表，踢出捣乱的客户端，切换防火墙规则，重启 PoE 端口，邀请 Teleport 访客，或切换到另一个站点。每个操作都会与控制器往返同步，并更新实时事件流。</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section id="security" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">安全 &amp; 隐私</div><h2 class="sec-title">仅限本地。无需账号。没有云端中转。</h2><p class="sec-desc">Network Deck 采用隐私优先、纯本地的架构设计。无需 MiyaraHub 账号，无云端中转，除崩溃报告外不收集任何数据。</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>没有云端中转</h4><p>所有指令和实时数据流都在你的手机与控制器之间通过本地 Wi-Fi 或 VPN 直接传输，不经过任何外部服务器。</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>标准 UniFi 认证</h4><p>使用与 UniFi Network 网页界面相同的本地管理员凭据（或 API 密钥）。凭据存储在设备上的 iOS 钥匙串 / Android Keystore 中，除发送给你的控制器外，绝不会传出设备。</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>无需 MiyaraHub 账号</h4><p>无需注册，无需邮箱，也不需要 MiyaraHub 账号。安装后指向你的控制器，即可开始使用。</p></div></div>
+                <div class="p"><span class="g">&#9672;</span><div><h4>极简统计</h4><p>仅使用 Firebase Crashlytics 收集错误报告。不追踪使用情况，没有广告，也不出售数据。网络错误会以非致命错误记录，帮助我们改进固件兼容性，而不会收集你的网络布局。</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>尊重权限</h4><p>应用只在你的 UniFi 管理员账号权限范围内运行。子管理员只能看到控制器允许其查看的内容。无权限提升，无后门。</p></div></div>
+                <div class="p"><span class="g">&#9680;</span><div><h4>仅需网络权限</h4><p>Network Deck 唯一需要的设备权限是网络访问，仅用于连接你本地网络（或通过 VPN）中的 UniFi 控制器。</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">常见问题</div><h2 class="sec-title">常见问题。</h2><p class="sec-desc">关于 Network Deck，你需要知道的一切。</p></div>
+            <div class="faq">
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Network Deck 与 Ubiquiti 或 UniFi 有关联吗？<span class="arw">+</span></div><div class="a"><div class="a-in"><strong>没有。</strong>Network Deck 是由 MiyaraHub Technologies LLC 开发的独立第三方应用，并非由 Ubiquiti Inc. 创建，也未获其认可或赞助，与其没有任何关联。“Ubiquiti”“UniFi”“UniFi OS”“UniFi Network”“UDM”“UDR”“UCG”“Teleport”以及所有相关产品名称均为 Ubiquiti Inc. 的商标。我们使用这些名称纯粹是为了说明兼容性（指示性合理使用）。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">支持哪些 UniFi 控制器？<span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck 既支持 UniFi OS 主机（UDM Pro / Pro SE、UCG、Dream Machine、UDR、Cloud Key Gen2 / Plus），也支持运行在 Linux、Docker 或 Windows 上的 v10.x 独立 UniFi Network 控制器。连接时应用会自动识别你的平台，并根据固件实际开放的接口调整界面，没有的功能就不会显示。已在 UDM Pro SE（UniFi OS 5.0.16）和独立版 Network 10.2.105 上完成实机测试。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Network Deck 如何与我的控制器通信？<span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck 使用与 UniFi Network 网页界面相同的本地 API，包括经典的 <code>/rest</code> 和 <code>/cmd</code> 接口（基于 Cookie 的会话认证），以及较新的 v2 集成 API。它还会与你的控制器建立 WebSocket 连接，以接收实时事件流。所有通信都在你的手机与控制器之间通过本地网络或 VPN 直接完成。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">我需要 UniFi 云账号吗？<span class="arw">+</span></div><div class="a"><div class="a-in">不需要。Network Deck <strong>只使用本地认证</strong>。使用你的 UniFi 本地管理员用户名和密码（或 API 密钥）登录即可。如果你的控制器目前只能通过 ui.com 云登录访问，则需要在“设置 &rarr; 管理员”中启用一个本地管理员账号才能使用 Network Deck。控制器不会与我们通信，我们也不会代你访问 Ubiquiti 的云服务。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">我可以管理防火墙规则和端口转发吗？<span class="arw">+</span></div><div class="a"><div class="a-in">可以。Network Deck 提供完整的防火墙功能：策略（允许 / 阻止 / 检测）、可增删改查的端口转发、流量规则与路由、防火墙分组、防火墙区域（v2 策略矩阵），以及 DPI 应用 / 分组。所有操作都可直接在列表中切换，无需反复弹窗点击。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">支持多站点吗？<span class="arw">+</span></div><div class="a"><div class="a-in">支持。如果你的控制器管理多个站点，Network Deck 会在顶部显示站点切换器。仪表盘、客户端、防火墙、VPN 等所有功能都作用于当前选中的站点，轻点一下即可切换。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Network Deck 的售价是多少？<span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck 将在 App Store、Google Play 和 Microsoft Store 以 <strong>$4.99 的价格一次性买断</strong>。无订阅、无广告、无内购。价格可能在正式发布前调整。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">可以远程使用吗（在家或办公室之外）？<span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck 会连接你配置的任意主机名或 IP。只要你的控制器能通过 VPN、Tailscale、WireGuard 或端口转发访问，应用就能远程使用。我们建议使用 VPN 或 Tailscale，而不是把 UniFi 控制器直接暴露在互联网上。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">支持哪些平台？<span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck 可运行于 <strong>iOS（13 及以上）</strong>和 <strong>Android（5.0 / API 21 及以上）</strong>，手机和平板布局均支持。应用将在 App Store、Google Play 和 Microsoft Store 同步上线。</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>法律免责声明 &amp; 商标声明</h3>
+            <p>Network Deck 是由 <strong>MiyaraHub Technologies LLC</strong> 开发并发布的<strong>独立第三方应用</strong>。它<strong>并非由 Ubiquiti Inc. 创建，与其及其任何子公司或关联公司均无关联，未获其认可或赞助，也不存在任何官方联系。</strong></p>
+            <p>“Ubiquiti”“UniFi”“UniFi OS”“UniFi Network”“UDM”“UDM Pro”“UCG”“UDR”“Dream Machine”“Cloud Key”“Teleport”以及所有相关产品名称和徽标，均为 Ubiquiti Inc. 在美国和其他国家/地区注册的商标或注册商标。本文提及的所有其他商标均归其各自所有者所有。</p>
+            <p>本页及应用内提及这些产品，仅用于识别兼容性和说明应用功能（指示性合理使用）。商标持有者与 MiyaraHub Technologies LLC 没有关联，也不为本产品背书。</p>
+            <p>Network Deck 通过 UniFi 控制器公开的本地网络 API（REST、集成 API、WebSocket）与其通信。使用本应用的风险由你自行承担。对于因使用本应用而导致的任何网络配置错误、服务中断或其他问题，MiyaraHub Technologies LLC 概不负责。请始终遵循 Ubiquiti 的固件与安全最佳实践。</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>想要更好的 UniFi 移动体验？</h2>
+            <p>Network Deck 正在积极开发中，将在 App Store、Google Play 和 Microsoft Store 上线。上线时我们会第一时间通知你。</p>
+            <div class="cta-row" style="justify-content:center">
+                <a class="btn primary" href="/zh-hans/support/">上线时通知我</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Van Alstyne, TX。保留所有权利。</div>
+            <ul>
+                <li><a href="/zh-hans/">主页</a></li>
+                <li><a href="/zh-hans/support/">支持</a></li>
+                <li><a href="/zh-hans/privacy.html">隐私</a></li>
+                <li><a href="/zh-hans/terms.html">条款</a></li>
+            </ul>
+        </div></div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHub 应用"><span class="fa-h">应用</span><a href="/zh-hans/avr-maestro/">AVR Maestro</a><a href="/zh-hans/synology-manager/">Syno Manager</a><a href="/zh-hans/upsight/">UPSight</a><a href="/zh-hans/fury-path/">FuryPath</a><a href="/zh-hans/uc-remote/">UC Remote</a><a href="/zh-hans/almanox/">Almanox</a><a href="/zh-hans/nexus-deck/">NexusDeck</a><a href="/zh-hans/avr-maestro-mc/">AVR Maestro MC</a><a href="/zh-hans/network-deck/">Network Deck</a><a href="/zh-hans/projector-pilot/">Projector Pilot</a><a href="/zh-hans/elan-audio-lab/">Elan Audio Lab</a><a href="/zh-hans/support/">支持</a></div>
+    <p class="foot-tm">MiyaraHub 应用均为独立产品，与其所适配的硬件及服务的制造商之间不存在关联、认可或赞助关系。所有商标均归其各自所有者所有。<a href="/zh-hans/#legal">商标声明</a></p>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

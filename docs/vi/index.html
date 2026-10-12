@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng Rạp hát tại gia, NAS và Mạng - MiyaraHub Technologies</title>
+    <meta name="description" content="MiyaraHub Technologies là studio độc lập tại Van Alstyne, Texas, chuyên làm ứng dụng gốc cho receiver AV, NAS, UPS, bộ xử lý HDMI và mạng.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="MiyaraHub Technologies - Studio phần mềm độc lập">
+    <meta property="og:description" content="MiyaraHub Technologies là studio độc lập tại Van Alstyne, Texas, chuyên làm ứng dụng gốc cho receiver AV, NAS, UPS, bộ xử lý HDMI và mạng.">
+    <meta property="og:url" content="https://miyarahub.com/vi/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/miyarahub.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MiyaraHub Technologies, an independent software studio. Native apps for AV receivers, NAS, UPS, HDMI processors, projectors and networks.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MiyaraHub Technologies - Studio phần mềm độc lập">
+    <meta name="twitter:description" content="MiyaraHub Technologies là studio độc lập tại Van Alstyne, Texas, chuyên làm ứng dụng gốc cho receiver AV, NAS, UPS, bộ xử lý HDMI và mạng.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/miyarahub.png">
+    <meta name="twitter:image:alt" content="MiyaraHub Technologies, an independent software studio. Native apps for AV receivers, NAS, UPS, HDMI processors, projectors and networks.">
+    <meta name="keywords" content="MiyaraHub, MiyaraHub Technologies, Meir Miyara, software studio Van Alstyne, native app development, full-stack web development, e-commerce development, Flutter developer, AV control apps, NAS monitoring, UPS monitoring, device integration, DevOps, CI/CD, AVR Maestro, Syno Manager, UPSight, FuryPath, Almanox, Elan Audio Lab, UC Remote, NexusDeck, Network Deck, Projector Pilot">
+    <link rel="canonical" href="https://miyarahub.com/vi/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        /* MiyaraHub brand front - signature red accent (product pages keep their own hue) */
+        :root{ --accent:#e63946; --accent-deep:#ff4757; --accent-soft:rgba(230,57,70,.12); --accent-star:rgba(230,57,70,.34); }
+        /* hero brand banner */
+        .hero-banner{border:1px solid var(--line-strong); border-radius:8px; padding:6px; background:rgba(15,26,44,.5); box-shadow:0 24px 70px rgba(0,0,0,.45)}
+        .hero-banner img{width:100%; height:auto; display:block; border-radius:5px; aspect-ratio:16/9; object-fit:cover}
+        @media(max-width:900px){.hero-banner{max-width:520px}}
+        /* store strip */
+        .stores{padding:2.6rem 0}
+        .store-head{display:flex; align-items:baseline; gap:.9rem; flex-wrap:wrap; margin-bottom:1.3rem}
+        .store-head .t{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:1.25rem; letter-spacing:-.01em}
+        .store-row{display:flex; gap:.9rem; flex-wrap:wrap}
+        .store-row .btn{flex:1; min-width:200px; justify-content:center; padding:.95rem 1.2rem}
+        /* disciplines */
+        .disc{border-top:1px solid var(--line)}
+        .disc .row{display:grid; grid-template-columns:4.5rem 1fr auto; gap:1.5rem; padding:1.7rem 0; border-bottom:1px solid var(--line); align-items:start}
+        .disc .row .no{font-family:'IBM Plex Mono',monospace; font-size:.82rem; color:var(--accent); padding-top:.3rem}
+        .disc .row h3{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:1.35rem; letter-spacing:-.01em; margin-bottom:.35rem}
+        .disc .row p{color:var(--muted); font-size:.96rem; max-width:60ch}
+        .disc .row .tags{font-family:'IBM Plex Mono',monospace; font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--faint); text-align:right; white-space:nowrap; padding-top:.4rem}
+        @media(max-width:720px){.disc .row{grid-template-columns:1fr; gap:.4rem}.disc .row .no{padding-top:0}.disc .row .tags{text-align:left}}
+        /* per-app rating */
+        .rate{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.04em; color:var(--muted); margin-top:.45rem; display:flex; align-items:center; gap:.4rem}
+        .rate .st{color:var(--accent); letter-spacing:.05em}
+        .rate .ct{color:var(--faint)}
+        /* studio story */
+        .studio-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:3rem; align-items:start}
+        .studio-lede{font-family:'Fraunces',Georgia,serif; font-weight:400; font-size:clamp(1.3rem,2.6vw,1.75rem); line-height:1.35; letter-spacing:-.01em; color:var(--star); margin-bottom:1.3rem; text-wrap:balance}
+        .studio-body p{color:var(--muted); font-size:1rem; margin-bottom:1rem; max-width:56ch}
+        .studio-body p b{color:var(--star); font-weight:500}
+        .signals{border:1px solid var(--line-strong); border-radius:5px; background:linear-gradient(180deg,rgba(15,26,44,.7),rgba(11,19,34,.7)); padding:1.4rem 1.5rem; display:flex; flex-direction:column; gap:1rem}
+        .signal{display:flex; gap:.9rem; align-items:flex-start}
+        .signal .g{color:var(--accent); font-size:1rem; line-height:1.3; flex-shrink:0}
+        .signal h4{font-family:'Fraunces',serif; font-weight:500; font-size:1.02rem; margin-bottom:.1rem}
+        .signal p{color:var(--muted); font-size:.86rem}
+        .signal .stars{color:var(--accent); letter-spacing:.12em; font-size:.9rem}
+        @media(max-width:900px){.studio-grid{grid-template-columns:1fr; gap:2rem}}
+        /* legal */
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7; max-width:none}
+        .legal p + p{margin-top:.7rem}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Studio phần mềm độc lập nhỏ, chuyên xây dựng ứng dụng gốc, nền tảng web và thương mại điện tử full-stack, công cụ hệ thống và giám sát, tích hợp thiết bị cùng quy trình DevOps.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "vi", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/#webpage", "url": "https://miyarahub.com/", "name": "Ứng dụng Rạp hát tại gia, NAS và Mạng - MiyaraHub Technologies", "description": "MiyaraHub Technologies là studio độc lập tại Van Alstyne, Texas, chuyên làm ứng dụng gốc cho receiver AV, NAS, UPS, bộ xử lý HDMI và mạng.", "inLanguage": "vi", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/miyarahub.png", "width": 1200, "height": 630}, "about": {"@id": "https://miyarahub.com/#organization"}}]}</script>
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav>
+        <a href="/vi/" class="nav-brand"> <img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="Logo MiyaraHub"> <span class="nav-brand-text">MiyaraHub</span> </a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Ngôn ngữ">
+            <li><a href="#stores" onclick="closeNav()">Tải ứng dụng</a></li>
+            <li><a href="#build" onclick="closeNav()">Chúng tôi xây dựng gì</a></li>
+            <li><a href="#work" onclick="closeNav()">Sản phẩm</a></li>
+            <li><a href="#studio" onclick="closeNav()">Studio</a></li>
+            <li><a href="/vi/support/" onclick="closeNav()">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <h1 class="hk"><span class="kicker h1k">MiyaraHub Technologies &middot; Van Alstyne, TX</span><span class="h1t">Phần mềm đáng để sở hữu.<span class="stargl">&#10022;</span></span></h1>
+                    <p class="hero-sub">Một studio nhỏ, độc lập chuyên xây dựng ứng dụng gốc, nền tảng và những công cụ mà người dùng nâng cao thực sự muốn.</p>
+                    <p class="hero-lede">Từ ứng dụng điều khiển receiver đến cửa hàng thương mại điện tử, từ bảng điều khiển NAS đến bộ lập kế hoạch Ngân Hà - chúng tôi thiết kế và phát hành phần mềm chuyên dụng trên di động, máy tính để bàn và web. Gốc, chạy trên thiết bị và được làm để bền lâu.</p>
+                    <div class="cta-row">
+                        <a href="#stores" class="btn primary">Tải ứng dụng</a>
+                        <a href="#work" class="btn">Xem sản phẩm &rarr;</a>
+                    </div>
+                    <p class="coming"><span class="dot">&#10022;</span> Gốc &middot; trên thiết bị &middot; không đăng ký &middot; không quảng cáo</p>
+                </div>
+                <div class="hero-banner fade">
+                    <img fetchpriority="high" decoding="async" src="/assets/banner.jpg" alt="MiyaraHub Technologies - miyarahub.com" width="3072" height="1728">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Store strip -->
+    <section id="stores" class="stores sec-band">
+        <div class="wrap">
+            <div class="store-head">
+                <span class="kicker">Tải ứng dụng</span>
+                <span class="t">Mọi ứng dụng, trên các cửa hàng bạn vẫn dùng.</span>
+            </div>
+            <div class="store-row">
+                <a class="btn store" href="https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    App Store
+                </a>
+                <a class="btn store" href="https://play.google.com/store/apps/dev?id=5430508146048197775" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>
+                    Google Play
+                </a>
+                <a class="btn store" href="https://apps.microsoft.com/search/publisher?name=MiyaraHub+Technologies+LLC&amp;hl=en-US&amp;gl=US" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M11.4 3v8.4H3V3h8.4zM11.4 21H3v-8.4h8.4V21zM12.6 3H21v8.4h-8.4V3zM21 21h-8.4v-8.4H21V21z"/></svg>
+                    Microsoft Store
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What we build -->
+    <section id="build">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="kicker">Chúng tôi xây dựng gì</div>
+                <h2 class="sec-title">Một studio, sáu lĩnh vực.</h2>
+                <p class="sec-desc">Chúng tôi không phải xưởng chỉ làm một ứng dụng. Chúng tôi thiết kế, xây dựng và phát hành trên toàn bộ stack - và sở hữu mọi tầng, từ giao thức thiết bị đến thanh toán cửa hàng đến quy trình phát hành.</p>
+            </div>
+            <div class="disc">
+                <div class="row fade"><div class="no">Số 01</div><div><h3>Ứng dụng gốc</h3><p>Ứng dụng di động và máy tính để bàn xây dựng gốc bằng Flutter - một mã nguồn, cảm giác gốc thực sự trên iOS, iPad, Android, macOS và Windows.</p></div><div class="tags">iOS &middot; Android<br>Mac &middot; Win</div></div>
+                <div class="row fade"><div class="no">Số 02</div><div><h3>Web full-stack &amp; thương mại</h3><p>Nền tảng web và cửa hàng trọn gói - danh mục sản phẩm, thanh toán Square và PayPal, nội dung và backend serverless.</p></div><div class="tags">Web &middot; Thanh toán<br>Serverless</div></div>
+                <div class="row fade"><div class="no">Số 03</div><div><h3>Hệ thống &amp; giám sát</h3><p>Bảng điều khiển và công cụ quản lý cho phần cứng mà người dùng nâng cao vận hành - thiết bị NAS, hệ thống UPS, bộ điều khiển mạng và máy chủ.</p></div><div class="tags">NAS &middot; UPS<br>Mạng</div></div>
+                <div class="row fade"><div class="no">Số 04</div><div><h3>Tích hợp thiết bị</h3><p>Chúng tôi xây dựng các tích hợp gốc, gọn gàng cho thiết bị bạn sở hữu - dù giao thức có tài liệu hay không - và biến chúng thành điều khiển nhanh, đáng tin cậy. Hàng chục tích hợp và còn tiếp tục.</p></div><div class="tags">Giao thức<br>API</div></div>
+                <div class="row fade"><div class="no">Số 05</div><div><h3>DevOps &amp; phân phối</h3><p>Quy trình build tự động, quy trình phát hành đa nền tảng, bộ kiểm thử xác định và hạ tầng dưới dạng mã giúp phát hành đáng tin cậy.</p></div><div class="tags">CI/CD<br>Tự động hóa</div></div>
+                <div class="row fade"><div class="no">Số 06</div><div><h3>Rạp hát tại gia &amp; tự động hóa</h3><p>Điều khiển sâu, chuyên dụng cho receiver AV, máy chiếu, bộ xử lý HDMI và ngôi nhà kết nối - ứng dụng mà nhà sản xuất chưa bao giờ phát hành.</p></div><div class="tags">AV &middot; HDMI<br>Nhà thông minh</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected work -->
+    <section id="work" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="kicker">Sản phẩm tiêu biểu</div>
+                <h2 class="sec-title">Mọi thứ chúng tôi đã phát hành, và những gì sắp tới.</h2>
+                <p class="sec-desc">Toàn bộ danh mục - ứng dụng điều khiển và giám sát gốc, một dự án thương mại điện tử hoàn chỉnh, một trang tưởng niệm và nhiều thứ khác trên bàn làm việc. Điểm sao là mức trung bình thật của cửa hàng; chúng tôi không hiển thị cho đến khi một ứng dụng có đủ đánh giá để tính.</p>
+            </div>
+            <div class="catalogue">
+                <a href="/vi/avr-maestro/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/avr-maestro-icon-192.png" alt="Biểu tượng ứng dụng AVR Maestro"><div class="meta"><h3>AVR Maestro</h3><p>Ứng dụng điều khiển hàng đầu cho receiver AV Denon và Marantz - âm lượng, vùng, chế độ âm thanh, cảnh và hiệu chỉnh phòng.</p><div class="rate"><span class="st">&#9733;</span> 4.9 <span class="ct">&middot; 261 lượt đánh giá</span></div></div><div class="plats">Ứng dụng &middot; Android &middot; iOS, macOS, Windows sắp có</div></a>
+                <a href="/vi/synology-manager/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/syno-manager-icon-192.png" alt="Biểu tượng ứng dụng Syno Manager"><div class="meta"><h3>Syno Manager</h3><p>Giám sát và quản lý độc lập cho Synology NAS - lưu trữ, tình trạng hệ thống, tác vụ, tệp và hơn thế nữa.</p><div class="rate"><span class="st">&#9733;</span> 4.6 <span class="ct">&middot; 8 lượt đánh giá</span></div></div><div class="plats">Ứng dụng &middot; iOS &middot; Android &middot; macOS &middot; Windows</div></a>
+                <a href="/vi/upsight/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/upsight-icon-192.png" alt="Biểu tượng ứng dụng UPSight"><div class="meta"><h3>UPSight</h3><p>Giám sát UPS thời gian thực qua SNMP và NUT - pin, tải, thời gian chạy và sự kiện điện cho CyberPower, Eaton và hơn thế nữa.</p></div><div class="plats">Ứng dụng &middot; iOS &middot; Android &middot; macOS &middot; Windows</div></a>
+                <a href="/vi/fury-path/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/furypath-icon-192.png" alt="Biểu tượng ứng dụng FuryPath"><div class="meta"><h3>FuryPath</h3><p>Điều khiển bộ xử lý HDMI HDFury - thông tin tín hiệu trực tiếp, EDID, HDR, Dolby Vision, CEC và eARC, giao diện tùy chỉnh, tiện ích và điều khiển nhiều thiết bị qua Wi-Fi.</p></div><div class="plats">Ứng dụng &middot; iOS &middot; Android &middot; macOS &middot; Windows</div></a>
+                <a href="/vi/uc-remote/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/uc-remote-icon-192.png" alt="Biểu tượng ứng dụng UC Remote"><div class="meta"><h3>UC Remote <span class="pill">Miễn phí</span></h3><p>Ứng dụng đồng hành gốc cao cấp cho Unfolded Circle Remote Two và Remote 3, với hơn 50 tích hợp thiết bị.</p><div class="rate"><span class="st">&#9733;</span> 5.0 <span class="ct">&middot; 38 lượt đánh giá</span></div></div><div class="plats">Ứng dụng &middot; Android</div></a>
+                <a href="/vi/elan-audio-lab/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/elan-audio-lab-icon-192.png" alt="Biểu tượng ứng dụng Elan Audio Lab"><div class="meta"><h3>Elan Audio Lab <span class="pill">Nền tảng web</span> <span class="pill">Miễn phí</span></h3><p>Một dự án thương mại điện tử full-stack cho ampli đèn thủ công - danh mục, thanh toán Square và PayPal, báo giá, blog và trưng bày nghệ sĩ.</p></div><div class="plats">Web &middot; iOS &middot; Android</div></a>
+                <a href="/vi/almanox/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/almanox-icon-192.png" alt="Biểu tượng ứng dụng Almanox"><div class="meta"><h3>Almanox <span class="pill">Sắp ra mắt</span></h3><p>Tối nay có hợp để ngắm sao không? Nhận định một màn hình để lập kế hoạch mặt trời, mặt trăng và Ngân Hà - ngoại tuyến, mua một lần.</p></div><div class="plats">Ứng dụng &middot; iOS &middot; Android &middot; macOS &middot; Windows</div></a>
+                <a href="/vi/nexus-deck/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/nexusdeck-icon-192.png" alt="Biểu tượng ứng dụng NexusDeck"><div class="meta"><h3>NexusDeck <span class="pill">Bản tiền phát hành</span></h3><p>Trình quản lý tệp hiệu chỉnh Audyssey và Dirac cùng công cụ tải lên đường cong cho receiver Denon và Marantz - đồng hành cùng AVR Maestro.</p></div><div class="plats">Ứng dụng &middot; iOS &middot; Android &middot; macOS &middot; Windows</div></a>
+                <a href="/vi/avr-maestro-mc/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/avr-maestro-mc-icon-192.png" alt="Biểu tượng ứng dụng AVR Maestro MC"><div class="meta"><h3>AVR Maestro MC <span class="pill">Đang phát triển</span></h3><p>Người anh em của AVR Maestro, dành cho receiver Yamaha MusicCast - vùng, chương trình âm thanh, Surround:AI, chế độ tiệc và bộ chuyển đổi nhiều AVR.</p></div><div class="plats">Ứng dụng &middot; iOS &middot; Android &middot; macOS &middot; Windows</div></a>
+                <a href="/vi/network-deck/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/network-deck-icon-192.png" alt="Biểu tượng ứng dụng Network Deck"><div class="meta"><h3>Network Deck <span class="pill">Đang phát triển</span></h3><p>Bảng điều khiển trực tiếp của bên thứ ba cho bộ điều khiển mạng Ubiquiti UniFi - máy khách, WiFi và băng thông.</p></div><div class="plats">Ứng dụng &middot; iOS &middot; Android &middot; macOS &middot; Windows</div></a>
+                <a href="/vi/projector-pilot/" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/projector-pilot-icon-192.png" alt="Biểu tượng ứng dụng Projector Pilot"><div class="meta"><h3>Projector Pilot <span class="pill">Đã có trên Android</span></h3><p>Điều khiển nguồn, hình ảnh, HDR, chế độ màu và ống kính trên máy chiếu Epson.</p></div><div class="plats">Ứng dụng &middot; iOS &middot; Android &middot; macOS &middot; Windows</div></a>
+                <a href="https://razchalak.com" target="_blank" rel="noopener" class="prod fade"><img decoding="async" width="192" height="192" class="ico" src="/assets/icons/razchalak-icon-192.png" alt="Biểu tượng Raz Chalak Memorial"><div class="meta"><h3>Raz Chalak Memorial <span class="pill">Web &middot; Tùy chỉnh</span></h3><p>Một trang tưởng niệm tri ân Raz Chalak - dòng thời gian cuộc đời, thư viện ảnh, ký ức bằng giọng nói và sổ lưu bút, trên một hệ thống quản trị nhẹ.</p></div><div class="plats">Web &rarr;</div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio / who we are -->
+    <section id="studio">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="kicker">Studio</div>
+                <h2 class="sec-title">Studio nhỏ. Làm việc cẩn thận.</h2>
+            </div>
+            <div class="studio-grid">
+                <div class="studio-body">
+                    <p class="studio-lede">MiyaraHub Technologies là một LLC nhỏ, độc lập tại Van Alstyne, Texas, do Meir Miyara sở hữu và điều hành.</p>
+                    <p>Chúng tôi không phải nhà máy và không giả vờ như vậy. Chúng tôi là một nhóm nhỏ quan tâm đến việc làm đúng từng chi tiết - loại phần mềm bạn muốn có trên thiết bị của mình, điều khiển thiết bị của chính mình.</p>
+                    <p>Chúng tôi làm việc công khai, lắng nghe những người dùng ứng dụng của mình và sửa lỗi nhanh. Rất nhiều thứ trong mỗi bản phát hành bắt đầu từ tin nhắn của ai đó trong cộng đồng - và chúng tôi muốn điều đó cứ thế tiếp diễn.</p>
+                    <p>Chúng tôi sẽ không nói quá. Một số ứng dụng của chúng tôi đã hoàn thiện và đang phục vụ hàng nghìn người; một vài ứng dụng vẫn còn trên bàn làm việc, và chúng tôi sẽ nói rõ cái nào là cái nào. Điều chúng tôi hứa là nỗ lực trung thực, <b>phần mềm gốc, mặc định chạy trên thiết bị, và không đăng ký cho những thứ chạy trên phần cứng bạn đã sở hữu.</b></p>
+                </div>
+                <div class="signals fade">
+                    <div class="signal"><span class="g">&#9733;</span><div><h4>Được đánh giá cao</h4><p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p><p>Các ứng dụng đã có đánh giá của chúng tôi nằm trong khoảng 4.5 đến 5.0 sao trên các cửa hàng. Các đánh giá là thật và công khai - chúng tôi đọc từng cái.</p></div></div>
+                    <div class="signal"><span class="g">&#9673;</span><div><h4>Do cộng đồng định hướng</h4><p>Trình theo dõi vấn đề công khai, sửa lỗi nhanh và tính năng được định hình bởi yêu cầu của người dùng. Chúng tôi xây dựng cùng cộng đồng, không chỉ cho cộng đồng.</p></div></div>
+                    <div class="signal"><span class="g">&#9635;</span><div><h4>Độc lập</h4><p>Do chủ sở hữu điều hành, tự tài trợ và chịu trách nhiệm với những người dùng ứng dụng của chúng tôi - không phải nhà đầu tư hay nhà quảng cáo.</p></div></div>
+                    <div class="signal"><span class="g">&#9670;</span><div><h4>Giá hợp lý</h4><p>Chủ yếu là mua một lần. Không đăng ký hay quảng cáo cho phần mềm chạy hoàn toàn trên thiết bị của chính bạn.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach -->
+    <section id="approach" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="kicker">Cách chúng tôi làm việc</div>
+                <h2 class="sec-title">Vài điều chúng tôi không bao giờ nhượng bộ.</h2>
+            </div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">Số 01</div><div class="body"><h3><span class="glyph">&#9673;</span> Gốc, không phải web đóng gói</h3><p>Mọi ứng dụng đều được xây dựng gốc cho nền tảng của nó và giao tiếp trực tiếp với phần cứng của bạn - nhanh, phản hồi tốt và đáng tin cậy.</p><div class="meta"><span>Flutter</span><span>iOS</span><span>Android</span><span>Máy tính để bàn</span></div></div></div>
+                <div class="entry fade"><div class="no">Số 02</div><div class="body"><h3><span class="glyph">&#9635;</span> Mặc định chạy trên thiết bị</h3><p>Dữ liệu của bạn ở lại trên thiết bị và mạng của bạn. Chúng tôi không định tuyến thiết bị của bạn qua máy chủ của chúng tôi, và không thu thập những gì không cần.</p><div class="meta"><span>Mạng nội bộ</span><span>Không theo dõi</span></div></div></div>
+                <div class="entry fade"><div class="no">Số 03</div><div class="body"><h3><span class="glyph">&#9670;</span> Sở hữu mọi tầng</h3><p>Từ giao thức thiết bị đến thanh toán cửa hàng đến quy trình phát hành - chúng tôi xây dựng và duy trì toàn bộ stack, để mọi chi tiết đều đúng.</p><div class="meta"><span>Full-stack</span><span>Từ đầu đến cuối</span></div></div></div>
+                <div class="entry fade"><div class="no">Số 04</div><div class="body"><h3><span class="glyph">&#10022;</span> Trung thực về những gì đã sẵn sàng</h3><p>Đã ra mắt, đang beta hay còn trên bàn làm việc - chúng tôi nói rõ như vậy. Chúng tôi xây dựng thứ mình muốn dùng, và không bán thứ chưa có.</p><div class="meta"><span>Không nói quá</span><span>Cộng đồng là trên hết</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>Tìm ứng dụng cho thiết bị của bạn.</h2>
+            <p>Khám phá các ứng dụng của chúng tôi trên App Store, Google Play và Microsoft Store - hoặc liên hệ nếu bạn có ý tưởng riêng.</p>
+            <div class="cta-row" style="justify-content:center">
+                <a href="#stores" class="btn primary">Tải ứng dụng</a>
+                <a href="/vi/support/" class="btn">Liên hệ &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section id="legal" style="padding:3rem 0">
+        <div class="wrap">
+            <div class="legal">
+                <h3>Thông báo pháp lý &amp; thương hiệu</h3>
+                <p>MiyaraHub Technologies LLC xây dựng các ứng dụng độc lập của bên thứ ba. Ứng dụng của chúng tôi không do các nhà sản xuất phần cứng mà chúng hoạt động cùng tạo ra, và không có liên kết, sự chứng thực, tài trợ hay mối quan hệ chính thức nào với họ.</p>
+                <p>Denon, Marantz, HEOS, Sound United, Masimo, Audyssey, MultEQ, Dirac Live, IMAX Enhanced, Auro-3D, Dolby, Dolby Vision, Dolby Atmos, DTS:X, Yamaha, MusicCast, Onkyo, Pioneer, Synology, CyberPower, Eaton, APC, Tripp Lite, Vertiv, HDFury, JVC, Ubiquiti, UniFi, Epson, PJLink, NEC, Panasonic, Sony, BenQ, Christie, Barco, Unfolded Circle, Home Assistant, Square, PayPal, Apple, iPhone, iPad, Mac, App Store, Google Play, Android, Microsoft, Windows, cùng mọi tên sản phẩm, logo và thương hiệu khác được nhắc đến trên trang web này và trong ứng dụng của chúng tôi là nhãn hiệu hoặc nhãn hiệu đã đăng ký của chủ sở hữu tương ứng, chỉ được dùng để nhận diện. Việc sử dụng không hàm ý bất kỳ sự liên kết hay chứng thực nào.</p>
+                <p>&copy; 2026 MiyaraHub Technologies LLC. Bảo lưu mọi quyền. Xem <a href="/vi/privacy.html" style="color:var(--accent)">Chính sách quyền riêng tư</a> và <a href="/vi/terms.html" style="color:var(--accent)">Điều khoản dịch vụ</a> của chúng tôi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap">
+            <div class="foot">
+                <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Van Alstyne, TX. Bảo lưu mọi quyền.</div>
+                <ul>
+                    <li><a href="/vi/">Trang chủ</a></li>
+                    <li><a href="#work">Sản phẩm</a></li>
+                    <li><a href="/vi/support/">Liên hệ</a></li>
+                    <li><a href="/vi/privacy.html">Quyền riêng tư</a></li>
+                    <li><a href="/vi/terms.html">Điều khoản</a></li>
+                    <li><a href="#legal">Pháp lý</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-apps" role="navigation" aria-label="Ứng dụng MiyaraHub"><span class="fa-h">Ứng dụng</span><a href="/vi/avr-maestro/">AVR Maestro</a><a href="/vi/synology-manager/">Syno Manager</a><a href="/vi/upsight/">UPSight</a><a href="/vi/fury-path/">FuryPath</a><a href="/vi/uc-remote/">UC Remote</a><a href="/vi/almanox/">Almanox</a><a href="/vi/nexus-deck/">NexusDeck</a><a href="/vi/avr-maestro-mc/">AVR Maestro MC</a><a href="/vi/network-deck/">Network Deck</a><a href="/vi/projector-pilot/">Projector Pilot</a><a href="/vi/elan-audio-lab/">Elan Audio Lab</a><a href="/vi/support/">Hỗ trợ</a></div>
+    <p class="foot-tm">Các ứng dụng MiyaraHub là độc lập và không liên kết với, không được chứng thực hay tài trợ bởi các nhà sản xuất phần cứng và dịch vụ mà chúng làm việc cùng. Mọi thương hiệu đều thuộc về chủ sở hữu tương ứng. <a href="/vi/#legal">Thông báo về thương hiệu</a></p>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

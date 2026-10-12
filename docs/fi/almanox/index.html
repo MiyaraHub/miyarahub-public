@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanox: auringon, kuun &amp; Linnunradan suunnittelusovellus - MiyaraHub</title>
+    <meta name="description" content="Almanox on offline-toimiva auringon, kuun ja Linnunradan suunnittelusovellus iOS:lle, Androidille, Macille ja Windowsille: Tänä yönä -arvio, kultainen tunti, pimeän taivaan ikkunat ja kuvasuunnittelija.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fi_FI">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Almanox: auringon, kuun &amp; Linnunradan suunnittelusovellus">
+    <meta property="og:description" content="Almanox on offline-toimiva auringon, kuun ja Linnunradan suunnittelusovellus iOS:lle, Androidille, Macille ja Windowsille: Tänä yönä -arvio, kultainen tunti, pimeän taivaan ikkunat ja kuvasuunnittelija.">
+    <meta property="og:url" content="https://miyarahub.com/fi/almanox/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Almanox: auringon, kuun &amp; Linnunradan suunnittelusovellus">
+    <meta name="twitter:description" content="Almanox on offline-toimiva auringon, kuun ja Linnunradan suunnittelusovellus iOS:lle, Androidille, Macille ja Windowsille: Tänä yönä -arvio, kultainen tunti, pimeän taivaan ikkunat ja kuvasuunnittelija.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta name="twitter:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="keywords" content="astrophotography planner app, Milky Way planner, night sky planner, golden hour app, blue hour app, sun position app, moon phase app, moonrise moonset app, dark sky forecast app, stargazing app, astronomy planner, twilight calculator app, Milky Way core app, galactic core tracker, ISS pass app, ISS tracker, shot planner sun moon alignment, offline astronomy app, one-time purchase astronomy app, sun moon almanac app, night photography planner, offline map planner, eclipse forecast app, aurora forecast app, Kp index app, planets tonight app, home screen widgets, MiyaraHub, Almanox">
+    <link rel="canonical" href="https://miyarahub.com/fi/almanox/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/almanox/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/almanox/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/almanox/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/almanox/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/almanox/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/almanox/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/almanox/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/almanox/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/almanox/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/almanox/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/almanox/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/almanox/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/almanox/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/almanox/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/almanox/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/almanox/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/almanox/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/almanox/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/almanox/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/almanox/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/almanox/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/almanox/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/almanox/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/almanox/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/almanox/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/almanox/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/almanox/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/almanox/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/almanox/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/almanox/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/almanox/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/almanox-icon.png">
+    <link rel="apple-touch-icon" href="/assets/almanox-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root {
+            --ink: #070c16;
+            --ink-2: #0b1322;
+            --ink-3: #0f1a2c;
+            --star: #eef2f8;
+            --muted: #8fa0b8;
+            --faint: #607089;
+            --brass: #e6a552;
+            --brass-deep: #c9863a;
+            --brass-soft: rgba(230,165,82,0.12);
+            --line: rgba(176,198,232,0.11);
+            --line-strong: rgba(176,198,232,0.2);
+            /* twilight ladder - semantic, not the accent */
+            --tw-day: #f3b64d;
+            --tw-civil: #d98b46;
+            --tw-nautical: #3f6ea6;
+            --tw-astro: #26305a;
+            --tw-night: #0a1120;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: var(--ink);
+            color: var(--star);
+            line-height: 1.62;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* faint fixed star-field - no animated blobs */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background:
+                radial-gradient(1.2px 1.2px at 12% 22%, rgba(238,242,248,.35), transparent),
+                radial-gradient(1.2px 1.2px at 78% 14%, rgba(238,242,248,.28), transparent),
+                radial-gradient(1px 1px at 34% 62%, rgba(238,242,248,.22), transparent),
+                radial-gradient(1px 1px at 62% 78%, rgba(238,242,248,.20), transparent),
+                radial-gradient(1.4px 1.4px at 88% 54%, rgba(230,165,82,.30), transparent),
+                radial-gradient(1px 1px at 22% 84%, rgba(238,242,248,.18), transparent),
+                radial-gradient(1.1px 1.1px at 50% 8%, rgba(238,242,248,.24), transparent);
+            background-repeat: no-repeat;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(120% 80% at 50% -10%, rgba(63,110,166,.10) 0%, transparent 55%),
+                radial-gradient(90% 60% at 84% 8%, rgba(230,165,82,.05) 0%, transparent 50%);
+        }
+        a { color: inherit; }
+        ::selection { background: var(--brass-soft); color: var(--star); }
+
+        .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; }
+        .kicker {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            color: var(--brass);
+        }
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; }
+
+        /* rule */
+        .hr {
+            height: 1px;
+            background: var(--line);
+            border: 0;
+            width: 100%;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .85rem 1.75rem;
+            background: rgba(7,12,22,.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        .nav-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+        .nav-brand img { height: 30px; width: 30px; border-radius: 5px; }
+        .nav-brand-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 600;
+            letter-spacing: .01em;
+            color: var(--star);
+        }
+        .nav-links { display: flex; gap: 1.9rem; list-style: none; align-items: center; }
+        .nav-links a {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .74rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color .25s;
+        }
+        .nav-links a:hover { color: var(--brass); }
+        .nav-toggle {
+            display: none; background: none; border: none; cursor: pointer;
+            padding: .4rem; z-index: 101; flex-direction: column; gap: 5px;
+        }
+        .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--muted); transition: transform .3s, opacity .3s; }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+        /* HERO */
+        .hero { padding: 8.5rem 0 3.5rem; position: relative; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        .hero-coord {
+            margin-bottom: 1.5rem;
+            display: flex; gap: 1.2rem; flex-wrap: wrap;
+        }
+        .hero h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: clamp(3.4rem, 8vw, 6rem);
+            line-height: .95;
+            letter-spacing: -.02em;
+            margin: .4rem 0 .1rem;
+            display: flex; align-items: flex-start; gap: .1em;
+        }
+        .hero h1 .stargl { color: var(--brass); font-size: .34em; margin-top: .15em; line-height: 1; }
+        .hero-sub {
+            font-family: 'Fraunces', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+            color: var(--star);
+            opacity: .92;
+            margin: .1rem 0 1.4rem;
+            max-width: 30ch;
+        }
+        .hero-lede {
+            color: var(--muted);
+            font-size: 1.02rem;
+            max-width: 46ch;
+            margin-bottom: 1.8rem;
+        }
+        .cta-row { display: flex; gap: .9rem; flex-wrap: wrap; align-items: center; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+            padding: .8rem 1.3rem;
+            text-decoration: none;
+            border: 1px solid var(--line-strong);
+            border-radius: 3px;
+            color: var(--muted);
+            background: transparent;
+            transition: border-color .25s, color .25s, background .25s;
+        }
+        .btn.store { color: var(--star); border-color: rgba(230,165,82,.35); }
+        .btn.store svg { fill: var(--brass); }
+        .btn:hover { border-color: var(--brass); color: var(--brass); }
+        .btn.primary {
+            border-color: var(--brass);
+            color: var(--ink);
+            background: var(--brass);
+        }
+        .btn.primary:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--ink); }
+        .coming {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+            color: var(--faint); margin-top: 1.5rem;
+        }
+        .coming .dot { color: var(--brass); }
+
+        /* EPHEMERIS PANEL - the data-as-decoration anchor */
+        .ephem {
+            border: 1px solid var(--line-strong);
+            border-radius: 5px;
+            background: linear-gradient(180deg, rgba(15,26,44,.85), rgba(11,19,34,.85));
+            box-shadow: 0 24px 70px rgba(0,0,0,.45);
+            overflow: hidden;
+        }
+        .ephem-head {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(230,165,82,.05);
+        }
+        .ephem-head .t { font-family:'IBM Plex Mono',monospace; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+        .ephem-head .d { font-family:'IBM Plex Mono',monospace; font-size: .68rem; color: var(--faint); }
+        .ephem-body { display: grid; grid-template-columns: 1fr auto; }
+        .ephem-rows { padding: 1.1rem 1rem; display: flex; flex-direction: column; gap: .62rem; }
+        .erow { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-family:'IBM Plex Mono',monospace; }
+        .erow .lbl { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+        .erow .val { font-size: .86rem; color: var(--star); white-space: nowrap; }
+        .erow .val b { color: var(--brass); font-weight: 500; }
+        .erow.verdict { margin-top: .3rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+        .erow.verdict .lbl { color: var(--brass); }
+        .erow.verdict .score { font-family:'Fraunces',serif; font-size: 1.7rem; font-weight: 600; color: var(--star); line-height: 1; }
+        .erow.verdict .grade { font-size: .68rem; letter-spacing: .18em; color: var(--brass); }
+
+        /* twilight ladder */
+        .ladder { width: 74px; border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+        .ladder .seg { flex: 1; position: relative; display: flex; align-items: center; padding-left: .55rem; }
+        .ladder .seg span { font-family:'IBM Plex Mono',monospace; font-size: .56rem; letter-spacing: .06em; color: rgba(255,255,255,.82); text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+        .ladder .day { background: var(--tw-day); }
+        .ladder .civil { background: var(--tw-civil); }
+        .ladder .nautical { background: var(--tw-nautical); }
+        .ladder .astro { background: var(--tw-astro); }
+        .ladder .night { background: var(--tw-night); }
+        .ladder .night span, .ladder .nautical span, .ladder .astro span { color: rgba(238,242,248,.9); }
+
+        /* PLATES (screenshots) */
+        .plates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+            margin-top: 3.5rem;
+        }
+        .plate { text-align: center; }
+        .plate .frame {
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            padding: 5px;
+            background: rgba(15,26,44,.5);
+            transition: border-color .3s, transform .3s;
+        }
+        .plate .frame:hover { border-color: rgba(230,165,82,.5); transform: translateY(-4px); }
+        .plate img { width: 100%; display: block; border-radius: 3px; cursor: zoom-in; }
+        .plate .cap {
+            font-family:'IBM Plex Mono',monospace; font-size: .66rem; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--faint); margin-top: .7rem;
+        }
+        .plate .cap b { color: var(--brass); font-weight: 500; }
+
+        /* SECTIONS */
+        section { padding: 4.5rem 0; }
+        .sec-head { margin-bottom: 2.6rem; max-width: 40ch; }
+        .sec-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            line-height: 1.05;
+            letter-spacing: -.015em;
+            margin: .55rem 0 .8rem;
+            text-wrap: balance;
+        }
+        .sec-desc { color: var(--muted); font-size: 1.02rem; }
+        .sec-band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+        /* FEATURES - ledger entries */
+        .ledger { border-top: 1px solid var(--line); }
+        .entry {
+            display: grid;
+            grid-template-columns: 4.5rem 1fr;
+            gap: 1.5rem;
+            padding: 1.9rem 0;
+            border-bottom: 1px solid var(--line);
+            align-items: start;
+        }
+        .entry .no {
+            font-family:'IBM Plex Mono',monospace; font-size: .82rem; color: var(--brass);
+            letter-spacing: .05em; padding-top: .35rem;
+        }
+        .entry .body { }
+        .entry h3 {
+            font-family:'Fraunces',Georgia,serif; font-weight: 500; font-size: 1.4rem;
+            letter-spacing: -.01em; margin-bottom: .5rem; display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+        }
+        .entry h3 .glyph { color: var(--brass); flex-shrink: 0; }
+        .pro-tag {
+            font-family:'IBM Plex Mono',monospace; font-size: .6rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--brass);
+            border: 1px solid rgba(230,165,82,.4); border-radius: 2px; padding: .1rem .4rem;
+        }
+        .entry p { color: var(--muted); font-size: .98rem; max-width: 62ch; }
+        .entry .meta {
+            margin-top: .8rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
+            font-family:'IBM Plex Mono',monospace; font-size: .7rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint);
+        }
+        .entry .meta span::before { content: '+ '; color: var(--brass); }
+
+        /* HOW IT WORKS */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; }
+        .step .n {
+            font-family:'Fraunces',Georgia,serif; font-size: 3rem; font-weight: 400;
+            color: var(--brass); line-height: 1; margin-bottom: .6rem;
+            border-bottom: 1px solid var(--line); padding-bottom: .8rem;
+        }
+        .step h3 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.25rem; margin-bottom: .5rem; }
+        .step p { color: var(--muted); font-size: .95rem; }
+
+        /* PRIVACY - ruled list */
+        .priv { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+        .priv .p {
+            padding: 1.4rem 0; border-bottom: 1px solid var(--line);
+            display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start;
+        }
+        .priv .p .g { color: var(--brass); padding-top: .1rem; }
+        .priv .p h4 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.08rem; margin-bottom: .3rem; }
+        .priv .p h4 a { color: var(--star); text-decoration: none; transition: color .2s; }
+        .priv .p h4 a:hover { color: var(--brass); }
+        .priv .p p { color: var(--muted); font-size: .9rem; }
+
+        /* FAQ */
+        .faq { max-width: 800px; border-top: 1px solid var(--line); }
+        .qa { border-bottom: 1px solid var(--line); }
+        .q {
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            padding: 1.35rem 0; cursor: pointer; user-select: none;
+            font-family:'Fraunces',serif; font-weight: 500; font-size: 1.12rem;
+            transition: color .25s;
+        }
+        .q:hover { color: var(--brass); }
+        .q .arw { color: var(--brass); font-family:'IBM Plex Mono',monospace; font-size: .9rem; transition: transform .3s; flex-shrink: 0; }
+        .qa.open .q .arw { transform: rotate(45deg); }
+        .a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+        .qa.open .a { max-height: 460px; }
+        .a-in { padding: 0 0 1.35rem; color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 68ch; }
+        .a-in strong { color: var(--star); }
+
+        /* GLOSSARY */
+        .gloss { border-top: 1px solid var(--line); }
+        .gloss .row {
+            display: grid; grid-template-columns: 14rem 1fr; gap: 1.6rem;
+            padding: 1.3rem 0; border-bottom: 1px solid var(--line); align-items: baseline;
+        }
+        .gloss .term { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--star); }
+        .gloss .term .tag {
+            display: block; font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+            color: var(--brass); margin-bottom: .3rem; font-weight: 400;
+        }
+        .gloss .def { color: var(--muted); font-size: .96rem; max-width: 64ch; }
+        .gloss .def b { color: var(--star); font-weight: 500; }
+        @media (max-width: 720px) { .gloss .row { grid-template-columns: 1fr; gap: .4rem; } }
+
+        /* CTA */
+        .cta { text-align: center; padding: 5.5rem 0; }
+        .cta h2 { font-family:'Fraunces',serif; font-weight: 500; font-size: clamp(2rem,4.5vw,3rem); letter-spacing: -.02em; margin-bottom: .9rem; }
+        .cta p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; }
+
+        /* FOOTER */
+        footer { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+        .foot { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+        .foot .c { color: var(--faint); font-size: .82rem; line-height: 1.7; }
+        .foot .c b { font-family:'Fraunces',serif; color: var(--muted); font-weight: 500; }
+        .foot .c .legal { display:block; margin-top:.7rem; font-size:.72rem; line-height:1.6; color: var(--faint); opacity:.85; max-width: 62ch; }
+        .foot ul { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+        .foot a {
+            font-family:'IBM Plex Mono',monospace; font-size: .72rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color .25s;
+        }
+        .foot a:hover { color: var(--brass); }
+
+        /* fade-in */
+        .fade { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+        .fade.vis { opacity: 1; transform: none; }
+
+        /* lightbox */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(3,6,12,.94); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; backdrop-filter: blur(8px); }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.8); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+            .hero { padding-top: 7rem; }
+            .priv { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 720px) {
+            .nav-toggle { display: flex; }
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                flex-direction: column; gap: 0; align-items: stretch;
+                background: rgba(7,12,22,.97); backdrop-filter: blur(14px);
+                border-bottom: 1px solid var(--line); padding: .5rem 1.75rem;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+            .nav-links li:last-child { border-bottom: none; }
+            .plates { grid-template-columns: 1fr 1fr; }
+            .steps { grid-template-columns: 1fr; gap: 1.6rem; }
+            .entry { grid-template-columns: 1fr; gap: .5rem; }
+            .entry .no { padding-top: 0; }
+        }
+        @media (max-width: 460px) {
+            .plates { grid-template-columns: 1fr; }
+            .cta-row { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; }
+            .fade { transition: none; opacity: 1; transform: none; }
+        }
+        img{height:auto}
+        .foot-apps{max-width:1080px;margin:1.4rem auto 0;padding:1.1rem 1.75rem 0;border-top:1px solid rgba(176,198,232,.11);display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:baseline;font-size:.82rem;line-height:1.5}footer .foot-apps .fa-h{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0b8}footer .foot-apps a{color:#8fa0b8;text-decoration:none}footer .foot-apps a:hover{color:#eef2f8;text-decoration:underline}footer .foot-tm{max-width:1080px;margin:.7rem auto 0;padding:0 1.75rem 1.4rem;color:#607089;font-size:.76rem;line-height:1.6}footer .foot-tm a{color:#8fa0b8}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Pieni, itsenäinen ohjelmistotalo, joka rakentaa natiivisovelluksia, full-stack-verkko- ja verkkokauppa-alustoja, järjestelmä- ja valvontatyökaluja, laiteintegraatioita ja DevOps-putkia.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "fi", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/almanox/#webpage", "url": "https://miyarahub.com/almanox/", "name": "Almanox: auringon, kuun ja Linnunradan suunnittelusovellus - MiyaraHub", "description": "Almanox on offline-toimiva auringon, kuun ja Linnunradan suunnittelusovellus iOS:lle, Androidille, Macille ja Windowsille: Tänä yönä -arvio, kultainen tunti, pimeän taivaan ikkunat ja kuvasuunnittelija.", "inLanguage": "fi", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/almanox.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/almanox/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/almanox/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/almanox/#app", "name": "Almanox", "description": "Offline-toimiva auringon, kuun ja tähtivalokuvauksen suunnittelusovellus. Tänä yönä -arviopisteet, kultainen ja sininen tunti, hämärän porras, Linnunradan ytimen nousu ja lasku, pimeän taivaan ikkunat, kuun häiriö, auringon ja kuun kuvasuunnittelija, reaaliaikainen sää ja seuraava näkyvä ISS-ylilento. Tulossa pian.", "url": "https://miyarahub.com/almanox/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "LifestyleApplication", "image": "https://miyarahub.com/assets/almanox-icon.png", "screenshot": ["https://miyarahub.com/almanox/screenshots/01_tonight.jpg", "https://miyarahub.com/almanox/screenshots/03_today.jpg", "https://miyarahub.com/almanox/screenshots/02_milkyway.jpg", "https://miyarahub.com/almanox/screenshots/04_plan.jpg", "https://miyarahub.com/almanox/screenshots/05_locations.jpg", "https://miyarahub.com/almanox/screenshots/06_theme.jpg", "https://miyarahub.com/almanox/screenshots/07_features.jpg", "https://miyarahub.com/almanox/screenshots/07_light.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/almanox/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Etusivu", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Almanox", "item": "https://miyarahub.com/almanox/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/almanox/#faq", "url": "https://miyarahub.com/almanox/", "mainEntity": [{"@type": "Question", "name": "Onko Almanox tilaus?", "acceptedAnswer": {"@type": "Answer", "text": "Ei. Almanox on kertaostos hintaan $12.99. Ei tilausta, ei mainoksia, ei maksumuurin takana olevia päivityksiä. Osta kerran ja omista se App Storessa, Google Playssa tai Microsoft Storessa."}}, {"@type": "Question", "name": "Toimiiko se ilman yhteyttä?", "acceptedAnswer": {"@type": "Answer", "text": "Ydinalmanakka toimii kokonaan laitteellasi - aurinko, kuu, hämärä, Linnunrata, pimeän taivaan ikkunat, tähtikartta ja kuvasuunnittelija toimivat ilman yhteyttä. Reaaliaikaiset olosuhteet (sää, revontulet, ISS-ylilennot ja kartat) tarvitsevat yhteyden, kun käytät niitä."}}, {"@type": "Question", "name": "Mikä on ilmaista ja mikä Proa?", "acceptedAnswer": {"@type": "Answer", "text": "Ilmainen versio on antelias: täysi auringon ja kuun almanakka (auringonnousu ja -lasku, kultainen ja sininen tunti, hämärän porras, kuun vaihe), Tänä yönä -arviopisteet, reaaliaikainen pilvisyys- ja valosaastetieto, revontuliennuste, tämän illan planeetat, ISS-ylilennot, tähtikuvioiden tähtikartta, tähtisadekalenteri ja pimennyskalenteri, seuraavat 7 parasta yötä, hyvän yön pimeän taivaan hälytykset, kolme tallennettua sijaintia ja kaikki teemat missä tahansa värissä. Pro ($12.99, kertamaksu) avaa Linnunradan ytimen ennusteen, syvän taivaan kohteet, ajoretkikarttasuunnittelijan ja pimeän taivaan kohteiden etsimen, auringon ja kuun kuvasuunnittelijan, valokuvalaskurit, yksityiskohtaisen tuntiennusteen, AR-taivaanetsimen, aloitusnäytön widgetit, kultaisen tunnin ja mukautetut hälytykset, 60-night-ennusteen ja rajattoman määrän tallennettuja sijainteja."}}, {"@type": "Question", "name": "Millä laitteilla se toimii?", "acceptedAnswer": {"@type": "Answer", "text": "iPhonessa, iPadissa, Androidissa, Macissa ja Windowsissa, yhdestä kauniin yhtenäisestä suunnittelusta. Se mukautuu vaaleaan, tummaan ja aidosti mustaan AMOLED-tilaan, missä tahansa korostusvärissä - valikoiduissa sävyissä tai omalla valinnallasi."}}, {"@type": "Question", "name": "Tarvitsenko tilin?", "acceptedAnswer": {"@type": "Answer", "text": "Ei. Ei rekisteröitymistä, ei sähköpostia eikä MiyaraHub-kirjautumista. Lataa sovellus ja aloita suunnittelu. Sijaintiasi käytetään vain taivaasi laskemiseen, eikä sitä koskaan myydä, jaeta tai seurata."}}, {"@type": "Question", "name": "Miten Tänä yönä -pistemäärä lasketaan?", "acceptedAnswer": {"@type": "Answer", "text": "Valitse, mitä suunnittelet - Linnunrata, tähtien katselu, kuu, yömaisema tai revontulet - ja Almanox pisteyttää sen asteikolla 0-100 punnitsemalla todellisen astronomisen pimeyden tunnit, kuun häiriön, pilvisyyden ja sijaintisi valosaasteen. Se on nopea ja rehellinen arvio siitä, kannattaako tänä iltana lähteä ulos."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="Almanox-näyttökuva suurennettuna">
+    </div>
+
+    <!-- Nav -->
+    <nav>
+        <a href="/fi/" class="nav-brand"> <img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub-logo"> <span class="nav-brand-text">MiyaraHub</span> </a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Valikko">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Kieli">
+            <li><a href="/fi/" onclick="closeNav()">Etusivu</a></li>
+            <li><a href="#features" onclick="closeNav()">Ominaisuudet</a></li>
+            <li><a href="#plates" onclick="closeNav()">Näkymät</a></li>
+            <li><a href="/fi/almanox/guide/" onclick="closeNav()">Opas</a></li>
+            <li><a href="#how" onclick="closeNav()">Tapa</a></li>
+            <li><a href="#glossary" onclick="closeNav()">Sanasto</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <div class="kicker">Taivaan almanakka &middot; Maastopainos</div>
+                    <h1><span class="stargl">&#10022;</span>Almanox</h1>
+                    <p class="hero-sub">Onko tämä ilta hyvä tähtitaivaalle?</p>
+                    <p class="hero-lede">
+                        Yksi näkymä vastaa: Tänä yönä -arviopisteet, kultainen ja sininen tunti, Linnunradan ydin, pimeän taivaan ikkunat sekä auringon ja kuun kuvasuunnittelija. Laskettu laitteellasi. Ei tiliä, ei pilveä, ei tilausta.
+                    </p>
+                    <div class="cta-row">
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </span>
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>
+                            Google Play
+                        </span>
+                        <a href="#plates" class="btn">Katso näkymät</a>
+                    </div>
+                    <div class="coming"><span class="dot">&#9679;</span> Tulossa pian - iPhone, iPad, Android, Mac &amp; Windows</div>
+                </div>
+
+                <!-- Ephemeris readout: data as decoration -->
+                <aside class="ephem" aria-label="Esimerkki almanakkalukemasta">
+                    <div class="ephem-head">
+                        <span class="t">Tänä yönä &middot; Paikalliset efemeridit</span>
+                        <span class="d">33.42&deg;N 96.58&deg;W</span>
+                    </div>
+                    <div class="ephem-body">
+                        <div class="ephem-rows">
+                            <div class="erow"><span class="lbl">Auringonlasku</span><span class="val">20:14</span></div>
+                            <div class="erow"><span class="lbl">Kultainen tunti</span><span class="val"><b>19:31 - 20:14</b></span></div>
+                            <div class="erow"><span class="lbl">Astronominen pimeys</span><span class="val">21:44 - 05:02</span></div>
+                            <div class="erow"><span class="lbl">Kuu</span><span class="val">Uusi &middot; 2%</span></div>
+                            <div class="erow"><span class="lbl">MW-ydin &#8593;</span><span class="val"><b>22:58</b></span></div>
+                            <div class="erow verdict">
+                                <span class="lbl">Arvio</span>
+                                <span style="text-align:right"><span class="score">87</span><span class="val" style="color:var(--faint)">/100</span><br><span class="grade">EXCELLENT</span></span>
+                            </div>
+                        </div>
+                        <div class="ladder" aria-hidden="true">
+                            <div class="seg day"><span>DAY</span></div>
+                            <div class="seg civil"><span>CIV 20:41</span></div>
+                            <div class="seg nautical"><span>NAU 21:12</span></div>
+                            <div class="seg astro"><span>AST 21:44</span></div>
+                            <div class="seg night"><span>NIGHT</span></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Plates -->
+            <div class="plates" id="plates-hero">
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanoxin Tänä yönä -arvio - onko tämä ilta hyvä tähtitaivaalle" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Kuva I</b> &middot; Tänä yönä</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox Tänään - auringon rata, kultainen tunti ja kuun almanakka" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Kuva II</b> &middot; Almanakka</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox Linnunradan ydin ja pimeän taivaan ikkuna" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Kuva III</b> &middot; Linnunrata</figcaption>
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Rekisteri</div>
+                <h2 class="sec-title">Yksi näkymä, koko taivas</h2>
+                <p class="sec-desc">Tähtitiede, sää ja suunnittelumoottori yhdistettynä yhdeksi vastaukseksi. Almanakka ja taivaanlaskenta toimivat laitteellasi; reaaliaikaiset olosuhteet tulevat avoimista sää- ja karttapalveluista. Ei tiliä, ei mainoksia, ei tilausta.</p>
+            </div>
+            <div class="ledger">
+                <article class="entry">
+                    <div class="no">Nro 01</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9737;</span> Tämän yön arvio</h3>
+                        <p>Yksi 0-100-pistemäärä juuri sille, mitä suunnittelet - Linnunrata, tähtien katselu, kuu, yömaisema tai revontulet. Se punnitsee todellisen pimeyden tunnit, kuun häiriön, pilvisyyden ja taivaasi valosaasteen yhdeksi rehelliseksi vastaukseksi: onko tämä yö oikeasti hyvä?</p>
+                        <div class="meta"><span>Pisteet</span><span>Paras ikkuna</span><span>Pimeys</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 02</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9728;</span> Auringon &amp; kuun almanakka</h3>
+                        <p>Auringonnousu, auringonlasku, kultainen ja sininen tunti sekä koko hämärän porras siviilihämärästä astronomiseen. Kuun vaihe, valaistus sekä nousu ja lasku - kaikki elävän auringonradan kaaren kera.</p>
+                        <div class="meta"><span>Kultainen tunti</span><span>Hämärä</span><span>Kuun vaihe</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 03</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Linnunrata &amp; pimeä taivas <span class="pro-tag">Pro</span></h3>
+                        <p>Galaksin ytimen nousu, huippu ja lasku heikosta erinomaiseen ulottuvalla laatuarvosanalla sekä kuuttoman pimeän taivaan ikkunan ennuste, jotta tiedät tarkat kuvaamisen arvoiset tunnit.</p>
+                        <div class="meta"><span>Ytimen nousu/lasku</span><span>Pimeä ikkuna</span><span>Laatuarvosana</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 04</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9796;</span> Tämän illan planeetat</h3>
+                        <p>Mitkä planeetat ovat taivaalla juuri nyt, mihin katsoa, kuinka kirkkaita ne ovat ja mikä niiden nykyinen vaihe on - kaikki laskettuna laitteella täsmälleen sinun aikaasi ja paikkaasi varten.</p>
+                        <div class="meta"><span>Näkyvyys</span><span>Kirkkaus</span><span>Vaihe</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 05</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8982;</span> Kuvasuunnittelija <span class="pro-tag">Pro</span></h3>
+                        <p>Löydä tarkat päivät, jolloin aurinko tai täysikuu osuu valitsemaasi suuntaan. Atsimuutin ylitys ja usean päivän kohdistushaku sitä huippukuvaa varten - kaikki offline-tilassa.</p>
+                        <div class="meta"><span>Atsimuuttihaku</span><span>Kohdistukset</span><span>Usea päivä</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 06</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8983;</span> Offline-karttasuunnittelija <span class="pro-tag">Pro</span></h3>
+                        <p>Interaktiivinen kartta, joka tallentaa katsomasi ruudut välimuistiin, joten se toimii ilman signaalia maastossa. Pudota nasta ja näe sen suunta, etäisyys ja tarkka päivämäärä, jolloin aurinko tai kuu osuu sen taakse.</p>
+                        <div class="meta"><span>Offline-ruudut</span><span>Suunta &amp; etäisyys</span><span>Kohdistuspäivät</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 07</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9680;</span> Pimennykset</h3>
+                        <p>Auringon- ja kuunpimennykset laskettuna laitteella oikeista efemerideistä ja suodatettuna sijaintisi mukaan, joten lista näyttää vain ne, jotka voit oikeasti astua ulos katsomaan.</p>
+                        <div class="meta"><span>Aurinko &amp; kuu</span><span>Sijainnin mukaan suodatettu</span><span>Laitteella</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 08</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9729;</span> Taivaan reaaliaikaiset olosuhteet</h3>
+                        <p>Nykyinen lämpötila, pilvisyys ja selkeän taivaan kirkkausarvio jokaiselle tallennetulle sijainnille, haettuna reaaliaikaisesti Open-Meteosta - ilmainen, ei API-avainta. Yksityiskohtainen tuntiennuste on Pro-päivitys.</p>
+                        <div class="meta"><span>Pilvisyys</span><span>Kirkkaus</span><span>Sijainnin mukaan</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 09</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8779;</span> Revontuliennuste <span class="pro-tag">Pro</span></h3>
+                        <p>Reaaliaikainen Kp-indeksi NOAA:lta, geomagneettinen leveysasteesi ja selkeä arvio tälle yölle - sekä 24-hour Kp-kaista, jolta näet aktiivisuuden kasvavan ennen huippua.</p>
+                        <div class="meta"><span>Reaaliaikainen Kp-indeksi</span><span>Geomagneettinen lev.</span><span>24-hr kaista</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 10</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9954;</span> ISS-ylilennot</h3>
+                        <p>Kansainvälisen avaruusaseman seuraava näkyvä ylilento sijaintisi yllä, laskettuna laitteella reaaliaikaisesta ratatiedosta - nousuaika, suunta ja huippukorkeus.</p>
+                        <div class="meta"><span>Näkyvä ylilento</span><span>Suunta</span><span>Laitteella</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 11</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8862;</span> Aloitusnäytön widgetit</h3>
+                        <p>Widgetit, jotka päivittyvät itsestään taustalla, joten taivas pysyy ajan tasalla aloitusnäytölläsi vaikka sovellus olisi ollut suljettuna tuntikausia.</p>
+                        <div class="meta"><span>Automaattinen päivitys</span><span>Tausta</span><span>Aloitusnäyttö</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 12</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9673;</span> Kaunis ja sinun näköisesi</h3>
+                        <p>Kolme pintaa - vaalea, tumma ja aidosti musta AMOLED - ja mikä tahansa väri, valikoiduista korostussävyistä omaan tarkkaan sävyysi. Koko käyttöliittymä värjäytyy uudelleen, ei vain yksi korostus. Täysi ruudunlukijan tuki puhutuin yhteenvedoin taivaskartoille sekä dynaamisen tekstikoon tuki kauttaaltaan.</p>
+                        <div class="meta"><span>Light/Dark/AMOLED</span><span>Mikä tahansa korostus</span><span>Oma väri</span><span>Ruudunlukija</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 13</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Tähdistöt &amp; tähtikartta</h3>
+                        <p>Kaikki 88 tähdistöä ja kirkkaat tähdet kartoitettuna taivaallesi reaaliaikaisella, ilmaisella tähtikartalla - nimettynä ja laskettuna kokonaan laitteellasi, yhteyttä ei tarvita. Osoita ja tunnista -AR-taivaanetsin on Pro-päivitys.</p>
+                        <div class="meta"><span>88 kuviota</span><span>Tähtikartta</span><span>Offline</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nro 14</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9790;</span> Offline &amp; yksityinen</h3>
+                        <p>Tähtitiedemoottori toimii kokonaan laitteellasi. Ei rekisteröitymistä, ei tiliä, ei mainoksia, ei sijainnin keräämistä. Osta kerran ja omista - ei tilausta, koskaan.</p>
+                        <div class="meta"><span>Laitteella</span><span>Ei tiliä</span><span>Kertamaksu</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plates / Screens -->
+    <section id="plates">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Kuvat</div>
+                <h2 class="sec-title">Katso se toiminnassa</h2>
+                <p class="sec-desc">Jokainen näkymä lasketaan laitteellasi - tummana, AMOLED-tilassa tai vaaleana, valitsemassasi korostusvärissä. Kuvissa Android; sama sovellus toimii iPhonessa, iPadissa, Macissa ja Windowsissa.</p>
+            </div>
+            <div class="plates">
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox - Tänä yönä -arviopisteet" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Kuva 01</b> &middot; Tänä yönä</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox - Linnunrata ja pimeän taivaan ikkuna" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Kuva 02</b> &middot; Linnunrata</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox - Tänään, auringon ja kuun almanakka" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Kuva 03</b> &middot; Almanakka</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/04_plan.jpg" alt="Almanox - Kuvasuunnittelija" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Kuva 04</b> &middot; Suunnittelija</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/05_locations.jpg" alt="Almanox - Tallennetut pimeän taivaan sijainnit" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Kuva 05</b> &middot; Sijainnit</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/06_theme.jpg" alt="Almanox - Mikä tahansa korostusväri" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Kuva 06</b> &middot; Mikä tahansa väri</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/07_features.jpg" alt="Almanox - ilmainen tähtikartta, tämän illan planeetat ja ISS-ylilennot" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Kuva 07</b> &middot; Ilmaiset lisät</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1170" height="2532" src="/almanox/screenshots/07_light.jpg" alt="Almanox - Vaalea teema" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Kuva 07</b> &middot; Vaalea</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- How / Method -->
+    <section id="how" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Menetelmä</div>
+                <h2 class="sec-title">Kaikki laitteellasi, mitään ei pilvessä</h2>
+                <p class="sec-desc">Almanox ajaa täyttä tähtitiedemoottoria paikallisesti. Ei tiliä, ei rekisteröitymistä, ja se toimii signaali pois päältä - taivas on sama, onpa sinulla kenttää tai ei.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="n">1</div>
+                    <h3>Valitse paikkasi</h3>
+                    <p>Käytä nykyistä sijaintiasi tai tallenna paikat, joista kuvaat. Almanox laskee auringon, kuun ja taivaan täsmälleen siihen kohtaan, jossa seisot.</p>
+                </div>
+                <div class="step">
+                    <div class="n">2</div>
+                    <h3>Lue arvio</h3>
+                    <p>Yksi pistemäärä vastaa ainoaan olennaiseen kysymykseen - kannattaako tämä yö? Näe paras pimeän taivaan ikkuna, Linnunradan ydin ja se, kuinka paljon kuu on tiellä.</p>
+                </div>
+                <div class="step">
+                    <div class="n">3</div>
+                    <h3>Suunnittele kuva</h3>
+                    <p>Löydä tarkat päivät, jolloin aurinko tai täysikuu osuu suuntaasi, tavoita kultainen tunti ja saa hälytys ennen kuin taivas on valmis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section id="glossary" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Sanasto</div>
+                <h2 class="sec-title">Taivaan maastoopas</h2>
+                <p class="sec-desc">Sanat, joiden ympärille koko sovellus on rakennettu - ja miksi jokainen niistä on syy pitää Almanox taskussasi.</p>
+            </div>
+            <div class="gloss">
+                <div class="row"><div class="term"><span class="tag">Almanakka</span>Almanakka</div><div class="def">Päivä päivältä etenevä taulukko taivaasta - milloin aurinko ja kuu nousevat ja laskevat, kuun vaihe ja kuinka monta tuntia todellista pimeyttä saat. Almanox on <b>elävä almanakka juuri sinun paikallesi</b>, laskettuna uudelleen sijaintisi mukaan, ei yleinen painettu.</div></div>
+                <div class="row"><div class="term"><span class="tag">Paras valo</span>Kultainen tunti</div><div class="def">Hetki heti auringonnousun jälkeen ja ennen auringonlaskua, kun aurinko on matalalla ja valo muuttuu lämpimäksi ja pehmeäksi. Se on valo, jota useimmat maisema- ja muotokuvaajat odottavat - ja <b>Almanox kertoo tarkan alun ja lopun</b> tälle päivälle missä tahansa oletkin.</div></div>
+                <div class="row"><div class="term"><span class="tag">Sininen valo</span>Sininen tunti</div><div class="def">Lyhyt ikkuna ennen auringonnousua ja auringonlaskun jälkeen, kun aurinko on horisontin alapuolella ja koko taivas hehkuu syvän, tasaisen sinisenä. Parasta aikaa kaupunkimaisemille ja tunnelmallisille taivaille - se tulee ja menee nopeasti, joten <b>ajoituksella minuutilleen on väliä</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Kohti pimeää</span>Hämärän porras</div><div class="def">Pimeys saapuu kolmessa askeleessa - <b>siviili-, merenkulku- ja sitten astronominen</b> hämärä. Kun astronominen hämärä päättyy, taivas on vihdoin musta ja himmeät tähdet ilmestyvät. Se on hetki, jolloin tähtien katselijat ja tähtikuvaajat oikeasti aloittavat.</div></div>
+                <div class="row"><div class="term"><span class="tag">Galaksi</span>Linnunradan ydin</div><div class="def">Kirkas galaktinen keskusta - hehkuva, yksityiskohtainen osa, jota kaikki kuvaavat. Se on horisontin yläpuolella vain osan vuodesta ja osan yöstä. Almanox kertoo, <b>milloin ydin nousee, saavuttaa huippunsa ja laskee</b>, ja arvioi, miltä se näyttää.</div></div>
+                <div class="row"><div class="term"><span class="tag">Ikkuna</span>Pimeän taivaan ikkuna</div><div class="def">Yön jakso, jolloin <b>ei aurinko eikä kuu</b> huuhtele taivasta. Se on ainoa aika, jolloin syvän taivaan ja Linnunradan kuvat oikeasti onnistuvat, ja se siirtyy joka yö - mikä on juuri se asia, jonka käsin laskeminen on työlästä.</div></div>
+                <div class="row"><div class="term"><span class="tag">Kuun valo</span>Vaihe &amp; valaistus</div><div class="def">Kuinka suuri osa kuusta on valaistu, uudesta täyteen. Kirkas kuu <b>tulvii taivaan ja hukuttaa Linnunradan</b>; uusikuu jättää sen pilkkopimeäksi. Tämän illan kuun tunteminen on puoli voittoa jokaisessa yökuvauksessa.</div></div>
+                <div class="row"><div class="term"><span class="tag">Vastaus</span>Tänä yönä -arvio</div><div class="def">Sen mukaan, mitä suunnittelet - Linnunrata, tähtien katselu, kuu, yömaisema tai revontulet - Almanox punnitsee pimeyden tunnit, kuun häiriön, pilvisyyden ja valosaasteen <b>yhdeksi rehelliseksi 0-100-pistemääräksi</b>. Viiden asian ristiintarkistuksen sijaan vilkaiset yhtä lukua ja tiedät, kannattaako tänä iltana lähteä ulos.</div></div>
+                <div class="row"><div class="term"><span class="tag">Kohdistus</span>Auringon &amp; kuun linjaus</div><div class="def">Tarkat päivät, jolloin aurinko tai täysikuu nousee tai laskee <b>kohdistuneena maamerkin tai kompassisuunnan kanssa</b> - suunnittelu niiden huippukuvien takana, joissa täysikuu on sillan tai huipun takana. Almanox hakee tulevat päivät puolestasi.</div></div>
+                <div class="row"><div class="term"><span class="tag">Yläpuolella</span>ISS-ylilento</div><div class="def">Kun Kansainvälinen avaruusasema lentää yläpuolella niin kirkkaana, että sen näkee paljaalla silmällä - tasaisena, nopeasti liikkuvana valopisteenä. Almanox kertoo <b>seuraavan näkyvän ylilennon, sen suunnan ja kuinka korkealle se nousee</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Hahmot</span>Tähdistöt</div><div class="def">88 nimettyä tähtikuviota - Orion, Iso Karhu, Jousimies Linnunradan päällä. Almanox piirtää ne kaikki ja kirkkaat tähdet <b>todellisen taivaasi päälle</b> tähtikarttaan ja AR-etsimeen, jotta voit osoittaa ja nimetä sen, mitä katsot.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Ehdot</div>
+                <h2 class="sec-title">Yksityisyys suunnittelun lähtökohtana</h2>
+                <p class="sec-desc">Almanox on rakennettu pitämään asiansa omana tietonaan. Ei tiliä, ei mainoksia, ei sijainnin keräämistä - vain taivas, laskettuna laitteellasi.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4>Toimii offline-tilassa</h4><p>Tähtitiedemoottori toimii kokonaan puhelimellasi. Aurinko, kuu, hämärä, Linnunrata ja kuvasuunnittelija toimivat ilman yhteyttä.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4>Ei tiliä, koskaan</h4><p>Ei rekisteröitymistä, ei sähköpostia, ei MiyaraHub-kirjautumista. Lataa, avaa, ja olet jo suunnittelemassa - ei mitään luotavaa, ei mitään muistettavaa.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9738;</span><div><h4>Sijaintisi pysyy sinun</h4><p>Sijaintia käytetään vain taivaasi laskemiseen ja paikallisten olosuhteiden hakemiseen - sitä ei koskaan myydä eikä käytetä profilointiin. Sää haetaan anonyymisti Open-Meteosta, ilman tiliä tai avainta.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4>Kertaostos</h4><p>Osta kerran ja omista. Ei tilausta, ei toistuvia maksuja, ei maksumuurin takana olevia päivityksiä - päinvastoin kuin useimpien valokuvasovellusten hinnoittelu.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4>Ei mainoksia, ei tietojesi myyntiä</h4><p>Ei mainos-SDK:ta, ei mainosverkkoja, ei tietokauppiaita. Almanox käyttää anonyymiä, ensimmäisen osapuolen analytiikkaa nähdäkseen, mitä ominaisuuksia käytetään, sekä kaatumisraportointia, kun jokin hajoaa - koskaan sitomatta sitä henkilöllisyyteesi, koskaan myymättä.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9789;</span><div><h4>Yksi sovellus, kaikki laitteet</h4><p>Sama kaunis, offline-toimiva suunnittelija iPhonessa, iPadissa, Androidissa, Macissa ja Windowsissa - missä tahansa kuvaatkin.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Marginaalit</div>
+                <h2 class="sec-title">Usein kysyttyä</h2>
+                <p class="sec-desc">Kaikki, mitä Almanoxista tarvitsee tietää.</p>
+            </div>
+            <div class="faq">
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Onko Almanox tilaus?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in"><strong>Ei.</strong> Almanox on kertaostos hintaan $12.99. Ei tilausta, ei mainoksia, ei maksumuurin takana olevia päivityksiä. Osta kerran ja omista se App Storessa, Google Playssa tai Microsoft Storessa.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Toimiiko se ilman yhteyttä?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Ydinalmanakka toimii kokonaan laitteellasi - aurinko, kuu, hämärä, Linnunrata, pimeän taivaan ikkunat, tähtikartta ja kuvasuunnittelija toimivat ilman yhteyttä. Reaaliaikaiset olosuhteet (sää, revontulet, ISS-ylilennot ja kartat) tarvitsevat yhteyden, kun käytät niitä.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Mikä on ilmaista ja mikä Proa?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Ilmainen versio on antelias: täysi auringon ja kuun almanakka (auringonnousu ja -lasku, kultainen ja sininen tunti, hämärän porras, kuun vaihe), Tänä yönä -arviopisteet, reaaliaikainen pilvisyys- ja valosaastetieto, revontuliennuste, tämän illan planeetat, ISS-ylilennot, tähtikuvioiden tähtikartta, tähtisadekalenteri ja pimennyskalenteri, seuraavat 7 parasta yötä, hyvän yön pimeän taivaan hälytykset, kolme tallennettua sijaintia ja kaikki teemat missä tahansa värissä. Pro ($12.99, kertamaksu) avaa Linnunradan ytimen ennusteen, syvän taivaan kohteet, ajoretkikarttasuunnittelijan ja pimeän taivaan kohteiden etsimen, auringon ja kuun kuvasuunnittelijan, valokuvalaskurit, yksityiskohtaisen tuntiennusteen, AR-taivaanetsimen, aloitusnäytön widgetit, kultaisen tunnin ja mukautetut hälytykset, 60-night-ennusteen ja rajattoman määrän tallennettuja sijainteja.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Millä laitteilla se toimii?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">iPhonessa, iPadissa, Androidissa, Macissa ja Windowsissa, yhdestä kauniin yhtenäisestä suunnittelusta. Se mukautuu vaaleaan, tummaan ja aidosti mustaan AMOLED-tilaan, missä tahansa korostusvärissä - valikoiduissa sävyissä tai omalla valinnallasi.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Tarvitsenko tilin?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Ei. Ei rekisteröitymistä, ei sähköpostia eikä MiyaraHub-kirjautumista. Lataa sovellus ja aloita suunnittelu. Sijaintiasi käytetään vain taivaasi laskemiseen, eikä sitä koskaan myydä, jaeta tai seurata.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Miten Tänä yönä -pistemäärä lasketaan?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Valitse, mitä suunnittelet - Linnunrata, tähtien katselu, kuu, yömaisema tai revontulet - ja Almanox pisteyttää sen asteikolla 0-100 punnitsemalla todellisen astronomisen pimeyden tunnit, kuun häiriön, pilvisyyden ja sijaintisi valosaasteen. Se on nopea ja rehellinen arvio siitä, kannattaako tänä iltana lähteä ulos.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free vs Pro -->
+    <section id="pricing">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Ilmainen &amp; Pro</div>
+                <h2 class="sec-title">Antelias ilmainen sovellus ja yksi rehellinen päivitys</h2>
+                <p class="sec-desc">Kaikki, mitä tarvitset vastataksesi kysymykseen ”kannattaako tämä yö”, on ilmaista. Pro ($12.99, kertamaksu - ei tilausta) lisää syvälliset suunnittelutyökalut. Jokainen lukittu ominaisuus näyttää ensin aidon esimerkin.</p>
+            </div>
+            <div class="cmp-wrap">
+                <table class="cmp">
+                    <thead>
+                        <tr><th scope="col">Ominaisuus</th><th scope="col">Ilmainen</th><th scope="col">Pro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Auringon &amp; kuun almanakka (kultainen/sininen tunti, hämärä, vaihe)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Tänä yönä -arviopisteet (Linnunrata, tähtien katselu, kuu, revontulet)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Reaaliaikainen pilvisyys- &amp; valosaastetieto</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Pimeän taivaan ikkuna &amp; tämän yön paras ikkuna</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Revontuliennuste &amp; tämän illan planeetat</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>ISS-ylilennot</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Tähtikuvioiden tähtikartta (88 hahmoa)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Tähtisade- &amp; pimennyskalenteri</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Hyvän yön pimeän taivaan hälytykset</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Kaikki teemat &amp; korostukset, ei mainoksia, ei kirjautumista</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Linnunradan ytimen ennuste &amp; syvän taivaan kohteet</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Auringon &amp; kuun kuvasuunnittelija</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Valokuvalaskurit (500 / NPF / syväterävyys)</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Ajoretkikarttasuunnittelija &amp; pimeän taivaan kohteiden etsin</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Yksityiskohtainen tuntiennuste</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>AR-taivaanetsin</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Aloitusnäytön widgetit</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Kultaisen tunnin &amp; mukautetut hälytykset</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Parhaat yöt tulevina päivinä</td><td>7 yötä</td><td class="y">60 yötä</td></tr>
+                        <tr><td>Tallennetut sijainnit</td><td>3</td><td class="y">Rajaton</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <style>
+        #pricing .cmp-wrap { overflow-x: auto; margin-top: 1.6rem; border: 1px solid var(--line); border-radius: 14px; }
+        #pricing table.cmp { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 460px; }
+        #pricing .cmp th, #pricing .cmp td { text-align: left; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+        #pricing .cmp thead th { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); background: var(--ink-2); }
+        #pricing .cmp thead th:nth-child(2), #pricing .cmp thead th:nth-child(3),
+        #pricing .cmp tbody td:nth-child(2), #pricing .cmp tbody td:nth-child(3) { text-align: center; width: 5.5rem; }
+        #pricing .cmp thead th:nth-child(3) { color: var(--brass); }
+        #pricing .cmp tbody tr:last-child td { border-bottom: none; }
+        #pricing .cmp td.y { color: var(--brass); font-weight: 600; }
+        #pricing .cmp td.n { color: var(--faint); }
+        #pricing .cmp tbody td:first-child { color: var(--star); }
+    </style>
+
+    <!-- Guide -->
+    <section id="guide" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Maastoopas</div>
+                <h2 class="sec-title">Opi lukemaan taivasta</h2>
+                <p class="sec-desc">Täysi kuvitettu käsikirja - miten Tänä yönä -arvio muodostuu, miten suunnitellaan Linnunradan ydin, kohdistetaan auringon tai kuun kuva, lasketaan valokuvalaskut ja löydetään todella pimeät taivaat.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4><a href="/fi/almanox/tonight-verdict/">Tänä yönä -arvio</a></h4><p>Miten 0-100-pistemäärä yhdistää pimeyden, kuun, Linnunradan korkeuden ja pilvisyyden - ja mitä hyvä, kohtalainen ja heikko oikeasti tarkoittavat.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4><a href="/fi/almanox/milky-way/">Linnunrata &amp; pimeän taivaan ikkunat</a></h4><p>Galaksin ytimen nousu, huippukorkeus ja tarkka kuuton ikkuna sen kuvaamiseen, missä tahansa seisotkin.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9788;</span><div><h4><a href="/fi/almanox/shot-planner/">Kuvasuunnittelija</a></h4><p>Päivät, jolloin aurinko tai täysikuu osuu suuntaasi - auringonnousu kaaren takana, suunniteltuna päivälleen.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/fi/almanox/photo-calculators/">Valokuvalaskurit</a></h4><p>500-sääntö, tiukempi NPF-sääntö sekä syväterävyys ja hyperfokaalietäisyys juuri sinun kalustollesi.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4><a href="/fi/almanox/dark-sky-finder/">Pimeän taivaan etsin</a></h4><p>Lähimmät sertifioidut International Dark-Sky Places -kohteet etäisyyden mukaan järjestettynä, suunnan ja summittaisen ajomatkan kera.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/fi/almanox/settings/">Asetukset, teemat &amp; hälytykset</a></h4><p>Vaalea, tumma ja aidosti musta AMOLED, mikä tahansa korostusväri, järjestettävät kortit, yhden tiedoston varmuuskopio ja hälytykset ennen kuin valo koittaa.</p></div></div>
+            </div>
+            <div class="cta-row" style="justify-content:center;margin-top:2.4rem">
+                <a class="btn store" href="/fi/almanox/guide/">Lue koko opas</a>
+                <a class="btn" href="/fi/almanox/help/">Ohje &amp; FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap fade">
+            <div class="kicker" style="display:block;margin-bottom:1rem">&#10022; Selkeitä taivaita edessä</div>
+            <h2>Suunnittele seuraava selkeä yösi</h2>
+            <p>Almanox tulee pian iPhonelle, iPadille, Androidille, Macille ja Windowsille. Kertaostos, ei tilausta, täysin offline.</p>
+            <div class="cta-row" style="justify-content:center">
+                <span class="btn store" style="cursor:default">App Store &middot; pian</span>
+                <span class="btn store" style="cursor:default">Google Play &middot; pian</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap foot">
+            <div class="c">
+                &copy; 2026 MiyaraHub Technologies LLC &middot; Van Alstyne, Texas. Kaikki oikeudet pidätetään.<br> <b>Almanox</b> - auringon, kuun ja Linnunradan suunnittelija valokuvaajille ja tähtien katsojille.<br> <span class="legal">Almanox on MiyaraHub Technologies LLC:n itsenäinen sovellus, eikä mikään kolmas osapuoli ole siihen sidoksissa, suosittele sitä tai sponsoroi sitä. Reaaliaikaisen sään tarjoaa Open-Meteo ja paikkahaut OpenStreetMapin avustajat; pimeän taivaan ohjeistus perustuu julkisiin valosaastetietoaineistoihin. Kaikki mainitut tuotenimet ovat omistajiensa tavaramerkkejä.</span>
+            </div>
+            <ul>
+                <li><a href="/fi/">MiyaraHub</a></li>
+                <li><a href="/fi/privacy.html">Tietosuoja</a></li>
+                <li><a href="/fi/terms.html">Ehdot</a></li>
+                <li><a href="mailto:admin@miyarahub.com">Tuki</a></li>
+            </ul>
+        </div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHubin sovellukset"><span class="fa-h">Sovellukset</span><a href="/fi/avr-maestro/">AVR Maestro</a><a href="/fi/synology-manager/">Syno Manager</a><a href="/fi/upsight/">UPSight</a><a href="/fi/fury-path/">FuryPath</a><a href="/fi/uc-remote/">UC Remote</a><a href="/fi/almanox/">Almanox</a><a href="/fi/nexus-deck/">NexusDeck</a><a href="/fi/avr-maestro-mc/">AVR Maestro MC</a><a href="/fi/network-deck/">Network Deck</a><a href="/fi/projector-pilot/">Projector Pilot</a><a href="/fi/elan-audio-lab/">Elan Audio Lab</a><a href="/fi/support/">Tuki</a></div>
+    <p class="foot-tm">MiyaraHubin sovellukset ovat itsenäisiä, eivätkä niiden kanssa toimivien laitteiden ja palvelujen valmistajat ole niihin sidoksissa, suosittele niitä tai sponsoroi niitä. Kaikki tavaramerkit kuuluvat omistajilleen. <a href="/fi/#legal">Tavaramerkki-ilmoitus</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.fade').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+        });
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade:not(.vis)').forEach(el => io.observe(el));
+
+        function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+        function closeNav() {
+            document.getElementById('nav-menu').classList.remove('open');
+            document.getElementById('nav-toggle').classList.remove('open');
+        }
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+    </script>
+  <script defer src="/almanox/search.js"></script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

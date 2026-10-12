@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Deck: UniFi 네트워크 컨트롤러 앱 - MiyaraHub</title>
+    <meta name="description" content="Network Deck은 UniFi 컨트롤러를 위한 독립 앱입니다. 실시간 대시보드, 클라이언트, WiFi, VLAN, 방화벽, 멀티 사이트를 지원하며 iOS, Android, Mac, Windows로 출시 예정입니다.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Network Deck: UniFi 네트워크 컨트롤러 앱">
+    <meta property="og:description" content="Network Deck은 UniFi 컨트롤러를 위한 독립 앱입니다. 실시간 대시보드, 클라이언트, WiFi, VLAN, 방화벽, 멀티 사이트를 지원하며 iOS, Android, Mac, Windows로 출시 예정입니다.">
+    <meta property="og:url" content="https://miyarahub.com/ko/network-deck/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/network-deck.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Network Deck, an independent app for Ubiquiti UniFi network controllers, in development. Not affiliated with Ubiquiti Inc.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Network Deck: UniFi 네트워크 컨트롤러 앱">
+    <meta name="twitter:description" content="Network Deck은 UniFi 컨트롤러를 위한 독립 앱입니다. 실시간 대시보드, 클라이언트, WiFi, VLAN, 방화벽, 멀티 사이트를 지원하며 iOS, Android, Mac, Windows로 출시 예정입니다.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/network-deck.png">
+    <meta name="twitter:image:alt" content="Network Deck, an independent app for Ubiquiti UniFi network controllers, in development. Not affiliated with Ubiquiti Inc.">
+    <meta name="keywords" content="UniFi app, UniFi mobile app, UniFi Network mobile, UniFi controller app, Ubiquiti UniFi controller remote, UDM Pro app, UDM Pro SE app, UDM SE app, UniFi Cloud Gateway app, UniFi Dream Machine app, UDR app, UniFi OS app, UniFi Network 10 app, UniFi Controller v10 mobile, UniFi firewall mobile app, UniFi port control mobile, UniFi VLAN management app, UniFi WiFi management app, UniFi SSID mobile, UniFi client blocker app, UniFi PoE control app, UniFi switch port control, UniFi traffic rules mobile, UniFi port forward app, UniFi Teleport mobile, UniFi site-to-site VPN mobile, UniFi WireGuard app, UniFi IPsec mobile, UniFi IDS IPS mobile, UniFi DPI app, UniFi threat management mobile, UniFi content filter app, UniFi speed test mobile, UniFi site survey, UniFi topology app, UniFi alarms mobile, UniFi multi-site app, third party UniFi app, best UniFi mobile app, UniFi replacement app, UniFi OS local controller mobile, Network Deck, MiyaraHub">
+    <link rel="canonical" href="https://miyarahub.com/ko/network-deck/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/network-deck/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/network-deck/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/network-deck/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/network-deck/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/network-deck/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/network-deck/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/network-deck/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/network-deck/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/network-deck/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/network-deck/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/network-deck/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/network-deck/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/network-deck/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/network-deck/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/network-deck/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/network-deck/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/network-deck/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/network-deck/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/network-deck/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/network-deck/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/network-deck/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/network-deck/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/network-deck/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/network-deck/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/network-deck/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/network-deck/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/network-deck/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/network-deck/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/network-deck/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/network-deck/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/network-deck/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/network-deck-icon.png">
+    <link rel="apple-touch-icon" href="/assets/network-deck-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#38bdf8; --accent-deep:#7dd3fc; --accent-soft:rgba(56,189,248,.12); --accent-star:rgba(56,189,248,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .price-hero{display:inline-flex; align-items:center; gap:.7rem; margin:1.4rem 0 .3rem; padding:.85rem 1.2rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft); font-family:'IBM Plex Mono',monospace; font-size:.76rem; letter-spacing:.05em; color:var(--star); line-height:1.4}
+        .price-hero .dot{color:var(--accent); font-size:.9rem; line-height:1}
+        .price-hero b{color:var(--accent); font-weight:500}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#0f1a2c,#0b1322); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.p-hero{grid-template-columns:1fr; gap:2.4rem}.device{order:-1}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .compat{display:grid; grid-template-columns:repeat(2,1fr); gap:1.4rem}
+        .compat .c{border:1px solid var(--line); border-radius:6px; padding:1.4rem 1.6rem; background:rgba(15,26,44,.4)}
+        .compat .c h4{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:1.12rem; margin-bottom:.8rem; display:flex; align-items:center; gap:.6rem; color:var(--star)}
+        .compat .c h4 .g{color:var(--accent); flex-shrink:0}
+        .compat .c ul{list-style:none}
+        .compat .c li{color:var(--muted); font-size:.9rem; padding:.28rem 0; display:flex; gap:.55rem; align-items:baseline}
+        .compat .c li::before{content:'+'; color:var(--accent); font-family:'IBM Plex Mono',monospace; flex-shrink:0}
+        .compat-note{color:var(--faint); font-size:.86rem; line-height:1.7; margin-top:1.6rem; max-width:82ch}
+        .compat-note strong{color:var(--muted)}
+        @media(max-width:720px){.compat{grid-template-columns:1fr}}
+        .a-in code{font-family:'IBM Plex Mono',monospace; font-size:.86em; color:var(--accent); background:var(--accent-soft); padding:.05rem .32rem; border-radius:3px}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+        .legal p strong{color:var(--muted)}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "네이티브 앱, 풀스택 웹과 이커머스 플랫폼, 시스템 및 모니터링 도구, 기기 연동, DevOps 파이프라인을 만드는 작고 독립적인 소프트웨어 스튜디오입니다.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "ko", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/network-deck/#webpage", "url": "https://miyarahub.com/network-deck/", "name": "Network Deck: UniFi 네트워크 컨트롤러 앱 - MiyaraHub", "description": "Network Deck은 UniFi 컨트롤러를 위한 독립 앱입니다. 실시간 대시보드, 클라이언트, WiFi, VLAN, 방화벽, 멀티 사이트를 지원하며 iOS, Android, Mac, Windows로 출시 예정입니다.", "inLanguage": "ko", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/network-deck.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/network-deck/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/network-deck/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/network-deck/#app", "name": "Network Deck", "description": "Ubiquiti UniFi 네트워크 컨트롤러를 위한 독립 모바일 앱입니다. 실시간 대시보드, 클라이언트 및 기기 관리, WiFi와 VLAN 제어, 방화벽 및 보안 정책, 포트 관리, 속도 테스트, 멀티 사이트 전환을 지원합니다. 개발 중입니다.", "url": "https://miyarahub.com/network-deck/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "UtilitiesApplication", "image": "https://miyarahub.com/assets/network-deck-icon.png", "screenshot": ["https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165250.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165300.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165306.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165327.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165340.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165543.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165606.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165639.png", "https://miyarahub.com/network-deck/screenshots/Screenshot_20260422-165651.png"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/network-deck/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Network Deck", "item": "https://miyarahub.com/network-deck/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/network-deck/#faq", "url": "https://miyarahub.com/network-deck/", "mainEntity": [{"@type": "Question", "name": "Network Deck은 Ubiquiti 또는 UniFi와 제휴 관계인가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. Network Deck은 MiyaraHub Technologies LLC가 개발한 독립적인 서드파티 애플리케이션입니다. Ubiquiti Inc.가 만들거나 보증, 후원하지 않으며 어떠한 방식으로도 제휴하지 않습니다. \"Ubiquiti,\" \"UniFi,\" \"UniFi OS,\" \"UniFi Network,\" \"UDM,\" \"UDR,\" \"UCG,\" \"Teleport\" 및 관련 제품명은 모두 Ubiquiti Inc.의 상표입니다. 이러한 이름은 호환성을 설명하기 위한 목적으로만 사용합니다(지정적 공정 사용)."}}, {"@type": "Question", "name": "어떤 UniFi 컨트롤러를 지원하나요?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck은 UniFi OS 콘솔(UDM Pro / Pro SE, UCG, Dream Machine, UDR, Cloud Key Gen2 / Plus)과 Linux, Docker, Windows에서 v10.x로 실행되는 독립형 UniFi Network 컨트롤러를 모두 지원합니다. 연결할 때 플랫폼을 자동으로 감지하고, 펌웨어가 실제로 제공하는 엔드포인트에 맞춰 UI를 조정합니다. 지원되지 않는 기능은 아예 표시되지 않습니다. UDM Pro SE(UniFi OS 5.0.16)와 독립형 Network 10.2.105에서 실제로 테스트했습니다."}}, {"@type": "Question", "name": "Network Deck은 내 컨트롤러와 어떻게 통신하나요?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck은 UniFi Network 웹 UI와 동일한 로컬 API를 사용합니다. 쿠키 기반 세션 인증을 쓰는 기존 /rest 및 /cmd 엔드포인트와 최신 v2 통합 API를 함께 사용합니다. 또한 컨트롤러와 WebSocket 연결을 열어 실시간 이벤트를 받아옵니다. 모든 통신은 로컬 네트워크 또는 VPN을 통해 휴대폰과 컨트롤러 사이에서 직접 이루어집니다."}}, {"@type": "Question", "name": "UniFi 클라우드 계정이 필요한가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. Network Deck은 로컬 인증만 사용합니다. UniFi 로컬 관리자 사용자 이름과 비밀번호(또는 API 키)로 로그인하세요. 현재 컨트롤러에 ui.com 클라우드 로그인으로만 접속할 수 있다면, Network Deck을 사용하기 위해 Settings → Admins에서 로컬 관리자 계정을 활성화해야 합니다. 컨트롤러는 저희와 통신하지 않으며, 저희도 사용자를 대신해 Ubiquiti 클라우드와 통신하지 않습니다."}}, {"@type": "Question", "name": "방화벽 규칙과 포트 포워딩을 관리할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. Network Deck은 완전한 방화벽 기능을 갖추고 있습니다. 정책(허용 / 차단 / 검사), CRUD를 지원하는 포트 포워딩, 트래픽 규칙과 경로, 방화벽 그룹, 방화벽 영역(v2 정책 매트릭스), DPI 앱 / 그룹을 지원합니다. 모든 항목은 목록 화면에서 바로 켜고 끌 수 있어 대화 상자를 여러 번 누를 필요가 없습니다."}}, {"@type": "Question", "name": "멀티 사이트를 지원하나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 컨트롤러가 여러 사이트를 관리한다면 Network Deck 상단에 사이트 전환기가 표시됩니다. 대시보드, 클라이언트, 방화벽, VPN 등 모든 기능이 현재 선택한 사이트를 기준으로 동작하며, 한 번의 탭으로 전환할 수 있습니다."}}, {"@type": "Question", "name": "Network Deck의 가격은 얼마인가요?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck은 App Store, Google Play, Microsoft Store에서 $4.99에 한 번만 구매하는 방식입니다. 구독, 광고, 인앱 결제가 없습니다. 가격은 정식 출시 전에 변경될 수 있습니다."}}, {"@type": "Question", "name": "집이나 사무실 밖에서도 원격으로 사용할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck은 설정한 호스트 이름이나 IP로 연결합니다. VPN, Tailscale, WireGuard 또는 포트 포워딩으로 컨트롤러에 접속할 수 있다면 원격에서도 작동합니다. UniFi 컨트롤러를 인터넷에 직접 노출하기보다 VPN이나 Tailscale을 사용하시길 권장합니다."}}, {"@type": "Question", "name": "어떤 플랫폼을 지원하나요?", "acceptedAnswer": {"@type": "Answer", "text": "Network Deck은 iOS(13 이상), Android(5.0 / API 21 이상), macOS, Windows에서 실행됩니다. 휴대폰과 태블릿 레이아웃을 모두 지원합니다. 앱은 App Store, Google Play, Microsoft Store에 동시에 출시될 예정입니다."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="확대된 Network Deck 스크린샷"></div>
+
+    <nav>
+        <a href="/ko/" class="nav-brand"><img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub 로고"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="메뉴"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="언어">
+            <li><a href="/ko/" onclick="closeNav()">홈</a></li>
+            <li><a href="#screens" onclick="closeNav()">화면</a></li>
+            <li><a href="#features" onclick="closeNav()">기능</a></li>
+            <li><a href="#compatibility" onclick="closeNav()">호환성</a></li>
+            <li><a href="#security" onclick="closeNav()">개인정보 보호</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/ko/">MiyaraHub</a> / Network Deck</div>
+            <div class="p-hero">
+                <div>
+                    <img decoding="async" width="192" height="192" class="ico" src="/assets/icons/network-deck-icon-192.png" alt="Network Deck 앱 아이콘">
+                    <h1 class="hk"><span class="kicker h1k">Network Deck &middot; UniFi 네트워크 컨트롤러용</span><span class="h1t">내 UniFi 네트워크를 손안에.<span class="stargl">&#10022;</span></span></h1>
+                    <p class="hero-sub">휴대폰으로 UniFi 네트워크를 완벽하게 제어하세요.</p>
+                    <p class="hero-lede">Ubiquiti UniFi 네트워크 컨트롤러를 위한 프리미엄 모바일 앱입니다. 실시간 대시보드, 클라이언트 및 기기 관리, WiFi와 VLAN 제어, 방화벽 정책, 포트 제어, VPN, 속도 테스트, 멀티 사이트 전환까지 모두 휴대폰에서 컨트롤러에 직접 연결해 사용할 수 있습니다.</p>
+                    <div class="price-hero"><span class="dot">&#9679;</span><span>개발 중 - App Store, Google Play, Microsoft Store에 <b>곧 출시</b></span></div>
+                    <div class="platforms">
+                        <span class="pl-lbl">출시 예정 플랫폼</span>
+                        <span class="pl">iPhone</span><span class="pl">iPad</span><span class="pl">Android</span><span class="pl">macOS</span><span class="pl">Windows</span></div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img fetchpriority="high" decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165250.png" alt="UniFi 컨트롤러용 Network Deck 실시간 대시보드" onclick="openLightbox(this)"></div>
+                    <div class="cap">실시간 대시보드</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Screens -->
+    <section id="screens" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">스크린샷</div><h2 class="sec-title">모든 화면을 확인해 보세요.</h2><p class="sec-desc">UniFi 관리자를 위해 만든 프리미엄 인터페이스입니다. 다크 테마, 실시간 데이터, 직관적인 탐색을 제공해 브라우저 탭이 필요 없습니다. 이미지를 누르면 확대됩니다.</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165300.png" alt="Network Deck 대시보드 - 통계와 바로가기" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165306.png" alt="Network Deck 네트워크 토폴로지" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165327.png" alt="Network Deck 스위치 포트 상세" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165340.png" alt="Network Deck 기기 관리" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165543.png" alt="Network Deck 속도 테스트" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165606.png" alt="Network Deck 콘텐츠 필터링" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165639.png" alt="Network Deck 방화벽 정책" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/network-deck/screenshots/Screenshot_20260422-165651.png" alt="Network Deck 방화벽 영역" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">기능</div><h2 class="sec-title">내 UniFi 컨트롤러를 주머니 속에.</h2><p class="sec-desc">Network Deck은 UniFi OS(UDM Pro, Cloud Gateway, Dream Machine)이든 독립형 UniFi Network 컨트롤러이든 컨트롤러의 로컬 API와 직접 통신합니다. 브라우저를 열지 않고도 클라이언트, WiFi, 방화벽, 포트, VPN, 인사이트를 확인하고 관리하세요.</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">No. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> 실시간 대시보드</h3><p>ISP 상태, 최근 60개 샘플을 보여주는 실시간 대역폭 차트, 그리고 시스템 정보, DPI 트래픽, 알람, 이벤트, 상위 클라이언트, 속도 테스트 기록, 빠른 바로가기 등 원하는 대로 구성하는 카드를 제공합니다. 순서를 바꿀 수 있는 탭 레이아웃입니다.</p><div class="meta"><span>대역폭</span><span>ISP 상태</span><span>DPI 트래픽</span><span>상위 클라이언트</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> 클라이언트 &amp; 기기</h3><p>WiFi / 유선 / 전체 필터와 신호 dBm을 한눈에 볼 수 있는 전체 클라이언트 목록을 제공합니다. 차단, 차단 해제, 강제 연결 해제, 삭제를 일괄로 처리할 수 있습니다. 클라이언트별로 기록, DPI 분석, 고정 IP, 사용자 그룹, 게스트 인증까지 상세히 확인하세요.</p><div class="meta"><span>차단 / 강제 해제</span><span>신호 dBm</span><span>고정 IP</span><span>일괄 작업</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 03</div><div class="body"><h3><span class="glyph">&#9678;</span> WiFi, VLAN &amp; 포트 제어</h3><p>SSID(보안, 대역, 게스트, VLAN, PMF, 빠른 로밍)를 만들고, 수정하고, 삭제할 수 있습니다. DHCP, IPv6, mDNS, 멀티캐스트, 격리 옵션을 포함해 VLAN을 관리하세요. 포트별 PoE 제어와 AP 무선 설정(채널, TX 출력, 대역폭, 밴드 스티어링, 최소 RSSI)도 지원합니다.</p><div class="meta"><span>SSID CRUD</span><span>VLAN</span><span>PoE 제어</span><span>AP 무선</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 04</div><div class="body"><h3><span class="glyph">&#9672;</span> 방화벽 &amp; 트래픽 규칙</h3><p>정책(허용 / 차단 / 검사), 포트 포워딩, 트래픽 규칙과 경로, 방화벽 그룹, v2 정책 매트릭스를 갖춘 방화벽 영역, DPI 앱 / 그룹 제어를 모두 바로 켜고 끌 수 있습니다. 브라우저가 필요 없습니다.</p><div class="meta"><span>정책</span><span>포트 포워딩</span><span>Zones v2</span><span>DPI</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 05</div><div class="body"><h3><span class="glyph">&#9670;</span> 보안 &amp; 인사이트</h3><p>IPS / IDS를 켜고 모드를 선택하고, 네트워크별 콘텐츠 필터(업무 / 가족 / 사용자 지정), SSL 검사, 국가별 허용 / 차단 목록을 지원하는 지역 IP 차단, 불법 AP 검색을 사용할 수 있습니다. 컨트롤러 알람에서 가져온 위협 기록도 확인하세요.</p><div class="meta"><span>IPS / IDS</span><span>지역 IP</span><span>콘텐츠 필터</span><span>SSL 검사</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 06</div><div class="body"><h3><span class="glyph">&#9680;</span> VPN &amp; Teleport</h3><p>24시간 후 만료되는 Teleport 게스트 초대를 생성하세요. 사전 공유 키를 사용해 IPsec, OpenVPN, WireGuard 사이트 간 터널을 만들 수 있습니다. 피어 투 피어와 기기 검색도 한 번의 탭으로 켜고 끌 수 있습니다.</p><div class="meta"><span>Teleport</span><span>WireGuard</span><span>IPsec</span><span>OpenVPN</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 07</div><div class="body"><h3><span class="glyph">&#9636;</span> 속도 테스트 &amp; 사이트 서베이</h3><p>컨트롤러 내장 속도 테스트를 2초 간격 폴링으로 실행하고 전체 기록을 확인하세요. 로컬 WiFi 사이트 서베이(Android)는 채널, 신호, 보안 정보와 함께 Cloudflare 엔드포인트를 대상으로 핑, 지터, 패킷 손실을 측정합니다.</p><div class="meta"><span>속도 테스트</span><span>사이트 서베이</span><span>지터 / 손실</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> 멀티 사이트 &amp; 실시간 이벤트</h3><p>한 번의 탭으로 사이트를 전환하세요. 최근 200개 항목을 담는 버퍼를 갖춘 실시간 WebSocket 이벤트 스트림으로 네트워크의 반응을 실시간으로 지켜볼 수 있습니다. 토폴로지, 알람, 백업, 관리자, DNS도 모두 손쉽게 확인하세요.</p><div class="meta"><span>멀티 사이트</span><span>실시간 이벤트</span><span>토폴로지</span><span>백업</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section id="compatibility" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">호환성</div><h2 class="sec-title">내 UniFi 컨트롤러와 함께 작동합니다.</h2><p class="sec-desc">Network Deck은 UniFi OS 콘솔과 독립형 UniFi Network 컨트롤러를 모두 지원합니다. 펌웨어가 제공하는 엔드포인트를 자동으로 감지해 UI를 맞춰 주며, 지원되지 않는 기능은 아예 표시되지 않습니다.</p></div>
+            <div class="compat">
+                <div class="c">
+                    <h4><span class="g">&#9673;</span> UniFi OS 콘솔</h4>
+                    <ul>
+                        <li>UDM Pro SE (검증됨)</li>
+                        <li>UDM Pro</li>
+                        <li>UDM / UDR</li>
+                        <li>UniFi Cloud Gateway (UCG)</li>
+                        <li>UniFi Dream Machine</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9635;</span> 독립형 컨트롤러</h4>
+                    <ul>
+                        <li>UniFi Network 10.x (검증됨)</li>
+                        <li>Linux / Docker 자체 호스팅</li>
+                        <li>Cloud Key Gen2 / Plus</li>
+                        <li>UniFi Network Server (Windows)</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9678;</span> 인증</h4>
+                    <ul>
+                        <li>로컬 관리자 사용자 이름 + 비밀번호</li>
+                        <li>2단계 인증 (TOTP)</li>
+                        <li>프로그램 방식 접근을 위한 X-API-KEY</li>
+                        <li>UniFi 클라우드 계정 불필요</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9670;</span> 모바일 플랫폼</h4>
+                    <ul>
+                        <li>iOS 13 이상</li>
+                        <li>Android 5.0 (API 21) 이상</li>
+                        <li>휴대폰 및 태블릿 레이아웃</li>
+                        <li>라이트 및 다크 테마</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="compat-note"><strong>펌웨어 호환성:</strong> Network Deck은 컨트롤러가 제공하는 엔드포인트를 자동으로 감지하고, 펌웨어마다 다른 JSON 형식(필드 이름 변경, 자료형 변환, 통합 API의 다양한 응답 형태)에도 맞춰 동작합니다. 하위 관리자 계정에서는 일부 엔드포인트가 401을 반환할 수 있는데, 이는 앱의 한계가 아니라 컨트롤러의 권한 제한입니다.</p>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">사용 방법</div><h2 class="sec-title">컨트롤러에 직접 연결합니다. 클라우드 중계는 없습니다.</h2><p class="sec-desc">Network Deck은 로컬 네트워크(또는 VPN)를 통해 UniFi 컨트롤러와 직접 통신합니다. 사용자의 인증 정보와 네트워크 데이터는 MiyaraHub 서버를 거치지 않습니다.</p></div>
+            <div class="steps">
+                <div class="step fade"><div class="n">1</div><h3>컨트롤러 추가</h3><p>컨트롤러의 호스트 이름 또는 IP, 포트(UniFi OS는 기본 443, 독립형은 8443), 로컬 관리자 인증 정보를 입력하세요. Network Deck이 UniFi OS인지 독립형 컨트롤러인지 자동으로 감지합니다.</p></div>
+                <div class="step fade"><div class="n">2</div><h3>로컬 인증</h3><p>로컬 관리자 사용자 이름과 비밀번호로 로그인하세요. 2단계 인증을 전 과정에서 지원합니다. API 키를 선호하시나요? 프로그램 방식 접근용 X-API-KEY를 사용하면 쿠키 방식 로그인을 완전히 건너뛸 수 있습니다.</p></div>
+                <div class="step fade"><div class="n">3</div><h3>한눈에 관리</h3><p>실시간 대역폭 차트를 확인하고, 문제를 일으키는 클라이언트를 내보내고, 방화벽 규칙을 켜고 끄고, PoE 포트를 재시작하고, Teleport 게스트를 초대하고, 다른 사이트로 전환하세요. 모든 동작은 컨트롤러와 주고받으며 실시간 이벤트 스트림에 반영됩니다.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section id="security" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">보안 &amp; 개인정보</div><h2 class="sec-title">로컬 전용. 계정 없음. 클라우드 중계 없음.</h2><p class="sec-desc">Network Deck은 개인정보 보호를 최우선으로 하는 로컬 전용 구조로 설계되었습니다. MiyaraHub 계정도, 클라우드 중계도 없으며, 충돌 보고 외에는 어떤 데이터도 수집하지 않습니다.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>클라우드 중계 없음</h4><p>모든 명령과 실시간 스트림은 로컬 Wi-Fi 또는 VPN을 통해 휴대폰과 컨트롤러 사이에서 직접 이루어집니다. 외부 서버를 거치는 것은 없습니다.</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>표준 UniFi 인증</h4><p>UniFi Network 웹 UI와 같은 로컬 관리자 인증 정보(또는 API 키)를 사용합니다. 인증 정보는 기기의 iOS Keychain / Android Keystore에 저장되며, 컨트롤러 외에는 기기 밖으로 전송되지 않습니다.</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>MiyaraHub 계정 불필요</h4><p>가입도, 이메일도, MiyaraHub 계정도 필요 없습니다. 설치하고 컨트롤러만 지정하면 바로 사용할 수 있습니다.</p></div></div>
+                <div class="p"><span class="g">&#9672;</span><div><h4>최소한의 분석</h4><p>버그 보고용 Firebase Crashlytics만 사용합니다. 사용 추적도, 광고도, 데이터 판매도 없습니다. 네트워크 오류는 치명적이지 않은 오류로 기록되어, 사용자의 네트워크 구성을 수집하지 않고도 펌웨어 호환성을 개선하는 데 도움이 됩니다.</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>권한 준수</h4><p>앱은 UniFi 관리자 계정이 가진 권한 범위 안에서만 동작합니다. 하위 관리자는 컨트롤러가 허용하는 항목만 볼 수 있습니다. 권한 상승도, 백도어도 없습니다.</p></div></div>
+                <div class="p"><span class="g">&#9680;</span><div><h4>네트워크 권한만</h4><p>Network Deck에 필요한 기기 권한은 네트워크 접근뿐이며, 로컬 네트워크(또는 VPN)에서 UniFi 컨트롤러에 연결하는 용도로만 사용됩니다.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">FAQ</div><h2 class="sec-title">자주 묻는 질문.</h2><p class="sec-desc">Network Deck에 대해 알아야 할 모든 것.</p></div>
+            <div class="faq">
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Network Deck은 Ubiquiti 또는 UniFi와 제휴 관계인가요? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>아니요.</strong> Network Deck은 MiyaraHub Technologies LLC가 개발한 독립적인 서드파티 애플리케이션입니다. Ubiquiti Inc.가 만들거나 보증, 후원하지 않으며 어떠한 방식으로도 제휴하지 않습니다. "Ubiquiti," "UniFi," "UniFi OS," "UniFi Network," "UDM," "UDR," "UCG," "Teleport" 및 관련 제품명은 모두 Ubiquiti Inc.의 상표입니다. 이러한 이름은 호환성을 설명하기 위한 목적으로만 사용합니다(지정적 공정 사용).</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">어떤 UniFi 컨트롤러를 지원하나요? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck은 UniFi OS 콘솔(UDM Pro / Pro SE, UCG, Dream Machine, UDR, Cloud Key Gen2 / Plus)과 Linux, Docker, Windows에서 v10.x로 실행되는 독립형 UniFi Network 컨트롤러를 모두 지원합니다. 연결할 때 플랫폼을 자동으로 감지하고, 펌웨어가 실제로 제공하는 엔드포인트에 맞춰 UI를 조정합니다. 지원되지 않는 기능은 아예 표시되지 않습니다. UDM Pro SE(UniFi OS 5.0.16)와 독립형 Network 10.2.105에서 실제로 테스트했습니다.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Network Deck은 내 컨트롤러와 어떻게 통신하나요? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck은 UniFi Network 웹 UI와 동일한 로컬 API를 사용합니다. 쿠키 기반 세션 인증을 쓰는 기존 <code>/rest</code> 및 <code>/cmd</code> 엔드포인트와 최신 v2 통합 API를 함께 사용합니다. 또한 컨트롤러와 WebSocket 연결을 열어 실시간 이벤트를 받아옵니다. 모든 통신은 로컬 네트워크 또는 VPN을 통해 휴대폰과 컨트롤러 사이에서 직접 이루어집니다.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">UniFi 클라우드 계정이 필요한가요? <span class="arw">+</span></div><div class="a"><div class="a-in">아니요. Network Deck은 <strong>로컬 인증만</strong> 사용합니다. UniFi 로컬 관리자 사용자 이름과 비밀번호(또는 API 키)로 로그인하세요. 현재 컨트롤러에 ui.com 클라우드 로그인으로만 접속할 수 있다면, Network Deck을 사용하기 위해 Settings &rarr; Admins에서 로컬 관리자 계정을 활성화해야 합니다. 컨트롤러는 저희와 통신하지 않으며, 저희도 사용자를 대신해 Ubiquiti 클라우드와 통신하지 않습니다.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">방화벽 규칙과 포트 포워딩을 관리할 수 있나요? <span class="arw">+</span></div><div class="a"><div class="a-in">네. Network Deck은 완전한 방화벽 기능을 갖추고 있습니다. 정책(허용 / 차단 / 검사), CRUD를 지원하는 포트 포워딩, 트래픽 규칙과 경로, 방화벽 그룹, 방화벽 영역(v2 정책 매트릭스), DPI 앱 / 그룹을 지원합니다. 모든 항목은 목록 화면에서 바로 켜고 끌 수 있어 대화 상자를 여러 번 누를 필요가 없습니다.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">멀티 사이트를 지원하나요? <span class="arw">+</span></div><div class="a"><div class="a-in">네. 컨트롤러가 여러 사이트를 관리한다면 Network Deck 상단에 사이트 전환기가 표시됩니다. 대시보드, 클라이언트, 방화벽, VPN 등 모든 기능이 현재 선택한 사이트를 기준으로 동작하며, 한 번의 탭으로 전환할 수 있습니다.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Network Deck의 가격은 얼마인가요? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck은 App Store, Google Play, Microsoft Store에서 <strong>$4.99에 한 번만 구매</strong>하는 방식입니다. 구독, 광고, 인앱 결제가 없습니다. 가격은 정식 출시 전에 변경될 수 있습니다.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">집이나 사무실 밖에서도 원격으로 사용할 수 있나요? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck은 설정한 호스트 이름이나 IP로 연결합니다. VPN, Tailscale, WireGuard 또는 포트 포워딩으로 컨트롤러에 접속할 수 있다면 원격에서도 작동합니다. UniFi 컨트롤러를 인터넷에 직접 노출하기보다 VPN이나 Tailscale을 사용하시길 권장합니다.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">어떤 플랫폼을 지원하나요? <span class="arw">+</span></div><div class="a"><div class="a-in">Network Deck은 <strong>iOS(13 이상)</strong>와 <strong>Android(5.0 / API 21 이상)</strong> 모두에서 실행됩니다. 휴대폰과 태블릿 레이아웃을 모두 지원합니다. 앱은 App Store, Google Play, Microsoft Store에 동시에 출시될 예정입니다.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>법적 고지 &amp; 상표 안내</h3>
+            <p>Network Deck은 <strong>MiyaraHub Technologies LLC</strong>가 개발하고 배포하는 <strong>독립적인 서드파티 애플리케이션</strong>입니다. <strong>Ubiquiti Inc.</strong> 및 그 자회사나 계열사가 만들거나 제휴, 보증, 후원하지 않으며 어떠한 방식으로도 공식적인 관계가 없습니다.</p>
+            <p>"Ubiquiti," "UniFi," "UniFi OS," "UniFi Network," "UDM," "UDM Pro," "UCG," "UDR," "Dream Machine," "Cloud Key," "Teleport" 및 관련 제품명과 로고는 미국 및 기타 국가에 등록된 Ubiquiti Inc.의 상표 또는 등록 상표입니다. 여기에 언급된 기타 모든 상표는 각 소유자의 자산입니다.</p>
+            <p>이 페이지와 앱에서 이러한 제품을 언급하는 것은 호환성을 식별하고 앱의 기능을 설명하려는 목적(지칭적 공정 사용)에 한합니다. 상표 소유자는 MiyaraHub Technologies LLC와 제휴 관계가 없으며 이 제품을 보증하지 않습니다.</p>
+            <p>Network Deck은 UniFi 컨트롤러가 공개한 로컬 네트워크 API(REST, 통합 API, WebSocket)를 사용해 통신합니다. 이 앱의 사용에 따른 책임은 사용자에게 있습니다. MiyaraHub Technologies LLC는 이 애플리케이션을 사용하면서 발생하는 네트워크 설정 오류, 장애 또는 기타 문제에 대해 책임지지 않습니다. 항상 Ubiquiti의 펌웨어 및 보안 모범 사례를 따르세요.</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>더 나은 UniFi 모바일 환경을 만나볼 준비되셨나요?</h2>
+            <p>Network Deck은 활발히 개발 중이며 App Store, Google Play, Microsoft Store에 출시될 예정입니다. 출시되면 알림을 받아보세요.</p>
+            <div class="cta-row" style="justify-content:center">
+                <a class="btn primary" href="/ko/support/">출시 알림 받기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Van Alstyne, TX. 모든 권리 보유.</div>
+            <ul>
+                <li><a href="/ko/">홈</a></li>
+                <li><a href="/ko/support/">지원</a></li>
+                <li><a href="/ko/privacy.html">개인정보 보호</a></li>
+                <li><a href="/ko/terms.html">이용약관</a></li>
+            </ul>
+        </div></div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHub 앱"><span class="fa-h">앱</span><a href="/ko/avr-maestro/">AVR Maestro</a><a href="/ko/synology-manager/">Syno Manager</a><a href="/ko/upsight/">UPSight</a><a href="/ko/fury-path/">FuryPath</a><a href="/ko/uc-remote/">UC Remote</a><a href="/ko/almanox/">Almanox</a><a href="/ko/nexus-deck/">NexusDeck</a><a href="/ko/avr-maestro-mc/">AVR Maestro MC</a><a href="/ko/network-deck/">Network Deck</a><a href="/ko/projector-pilot/">Projector Pilot</a><a href="/ko/elan-audio-lab/">Elan Audio Lab</a><a href="/ko/support/">지원</a></div>
+    <p class="foot-tm">MiyaraHub 앱은 독립적으로 제작되었으며, 연동되는 하드웨어와 서비스의 제조사와 제휴, 보증, 후원 관계가 없습니다. 모든 상표는 해당 소유자에게 있습니다. <a href="/ko/#legal">상표 고지</a></p>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

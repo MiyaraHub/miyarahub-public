@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusDeck: app for Audyssey-kalibreringsfiler - MiyaraHub</title>
+    <meta name="description" content="NexusDeck administrerer Audyssey-kalibreringsfiler og laster opp .ady-kurver til Denon- og Marantz-mottakere over Wi-Fi. Forhåndsversjon for iOS, Android, Mac og Windows.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nb_NO">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="NexusDeck: app for Audyssey-kalibreringsfiler">
+    <meta property="og:description" content="NexusDeck administrerer Audyssey-kalibreringsfiler og laster opp .ady-kurver til Denon- og Marantz-mottakere over Wi-Fi. Forhåndsversjon for iOS, Android, Mac og Windows.">
+    <meta property="og:url" content="https://miyarahub.com/nb/nexus-deck/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/nexus-deck.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="NexusDeck, an independent manager for Audyssey calibration files for Denon and Marantz receivers, in pre-release. Not affiliated with Audyssey, Denon, Marantz or Sound United.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NexusDeck: app for Audyssey-kalibreringsfiler">
+    <meta name="twitter:description" content="NexusDeck administrerer Audyssey-kalibreringsfiler og laster opp .ady-kurver til Denon- og Marantz-mottakere over Wi-Fi. Forhåndsversjon for iOS, Android, Mac og Windows.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/nexus-deck.png">
+    <meta name="twitter:image:alt" content="NexusDeck, an independent manager for Audyssey calibration files for Denon and Marantz receivers, in pre-release. Not affiliated with Audyssey, Denon, Marantz or Sound United.">
+    <meta name="keywords" content="Audyssey calibration manager, Audyssey file manager, Audyssey curve upload, .ady file viewer, .oca file viewer, .mdat file viewer, REW measurement viewer, Audyssey file Android, Audyssey file iPhone, MultEQ Editor alternative, A1 Evo Acoustix library, ratbuddyssey alternative, Denon Audyssey upload app, Marantz Audyssey upload app, room correction file manager, AVR curve uploader, Cinema 30 calibration upload, Cinema 40 calibration upload, Cinema 50 calibration upload, X3800H calibration upload, X4800H calibration upload, X6800H calibration upload, Denon Speaker Preset upload, Marantz Speaker Preset upload, SPP1 SPP2 upload, Audyssey backup restore, .ady iPhone, .ady Android, .oca iPhone library, .oca Android library, REW MEQX import, FilterSet biquad coefficients, NexusDeck, MiyaraHub">
+    <link rel="canonical" href="https://miyarahub.com/nb/nexus-deck/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/nexus-deck/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/nexus-deck/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/nexus-deck/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/nexus-deck/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/nexus-deck/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/nexus-deck/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/nexus-deck/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/nexus-deck/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/nexus-deck/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/nexus-deck/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/nexus-deck/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/nexus-deck/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/nexus-deck/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/nexus-deck/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/nexus-deck/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/nexus-deck/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/nexus-deck/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/nexus-deck/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/nexus-deck/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/nexus-deck/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/nexus-deck/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/nexus-deck/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/nexus-deck/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/nexus-deck/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/nexus-deck/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/nexus-deck/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/nexus-deck/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/nexus-deck/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/nexus-deck/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/nexus-deck/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/nexus-deck/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/nexusdeck-icon.png">
+    <link rel="apple-touch-icon" href="/assets/nexusdeck-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#a78bfa; --accent-deep:#c4b5fd; --accent-soft:rgba(167,139,250,.12); --accent-star:rgba(167,139,250,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .status-hero{display:inline-flex; align-items:center; gap:.8rem; margin:1.4rem 0 .3rem; padding:.85rem 1.2rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft)}
+        .status-hero .dot{width:.6rem; height:.6rem; border-radius:50%; background:var(--accent); box-shadow:0 0 10px var(--accent); flex-shrink:0}
+        .status-hero .txt{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.04em; color:var(--star)}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#0f1a2c,#0b1322); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .device .cap b{color:var(--accent); font-weight:500}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+        @media(max-width:900px){.p-hero{grid-template-columns:1fr; gap:2.4rem}}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Et lite, uavhengig programvarestudio som bygger native apper, fullstack-nettløsninger og e-handelsplattformer, system- og overvåkingsverktøy, enhetsintegrasjoner og DevOps-pipelines.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "nb", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/nexus-deck/#webpage", "url": "https://miyarahub.com/nexus-deck/", "name": "NexusDeck: app for Audyssey-kalibreringsfiler - MiyaraHub", "description": "NexusDeck administrerer Audyssey-kalibreringsfiler og laster opp .ady-kurver til Denon- og Marantz-mottakere over Wi-Fi. Forhåndsversjon for iOS, Android, Mac og Windows.", "inLanguage": "nb", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/nexus-deck.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/nexus-deck/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/nexus-deck/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/nexus-deck/#app", "name": "NexusDeck", "description": "Uavhengig administrasjon av Audyssey-kalibreringsfiler og kurveopplasting for Denon- og Marantz AV-mottakere. Importer .ady, .oca, .mdat, .frd og REW-eksporter. Last opp .ady-kurver direkte til plasser for høyttalerpreset over Wi-Fi. Forhåndsversjon.", "url": "https://miyarahub.com/nexus-deck/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "MultimediaApplication", "image": "https://miyarahub.com/assets/nexusdeck-icon.png", "screenshot": ["https://miyarahub.com/nexus-deck/screenshots/device.jpg", "https://miyarahub.com/nexus-deck/screenshots/g1_library.jpg", "https://miyarahub.com/nexus-deck/screenshots/g2_chart.jpg", "https://miyarahub.com/nexus-deck/screenshots/g3_detail.jpg", "https://miyarahub.com/nexus-deck/screenshots/g4_eval.jpg", "https://miyarahub.com/nexus-deck/screenshots/g5_send.jpg", "https://miyarahub.com/nexus-deck/screenshots/g6_channels.jpg", "https://miyarahub.com/nexus-deck/screenshots/g7_settings.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/nexus-deck/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Hjem", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "NexusDeck", "item": "https://miyarahub.com/nexus-deck/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/nexus-deck/#faq", "url": "https://miyarahub.com/nexus-deck/", "mainEntity": [{"@type": "Question", "name": "Er NexusDeck tilknyttet Audyssey, Denon eller Marantz?", "acceptedAnswer": {"@type": "Answer", "text": "Nei. NexusDeck er en uavhengig tredjepartsapp utviklet av MiyaraHub Technologies LLC. Den er ikke laget av, godkjent av, sponset av eller tilknyttet Audyssey Laboratories, Denon, Marantz, Sound United, Masimo Corporation eller noen av deres datterselskaper. «Audyssey», «MultEQ», «Denon», «Marantz» og «REW» / «Room EQ Wizard» er varemerker som tilhører sine respektive eiere. Vi bruker disse navnene utelukkende for å beskrive kompatibilitet."}}, {"@type": "Question", "name": "Hvilke mottakere kan NexusDeck laste opp til?", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck laster opp til nettverkstilkoblede Denon- og Marantz AV-mottakere som støtter protokollen for binær kalibreringsopplasting på TCP-port 1256. Det dekker Cinema 30 / 40 / 50, AV10, X3800H, X4800H, X6800H og andre Audyssey MultEQ XT32-chassis fra de siste årene. NexusDeck oppdager automatisk chassismodell og kanaloppsett fra mottakeren og fra kalibreringsfilen du laster opp."}}, {"@type": "Question", "name": "Hvilke filformater importerer NexusDeck?", "acceptedAnswer": {"@type": "Answer", "text": "Audyssey .ady (eksporter fra MultEQ Editor), A1 Evo Acoustix .oca, REW .mdat (MEQX-måleeksport fra Room EQ Wizard, støtter flere posisjoner), .frd-responskurver og REW PEQ .txt-eksporter. I dag kan bare .ady-filer lastes opp til mottakeren; .oca / .mdat / .frd / .txt er kun til bibliotek og sammenligning. Import av Dirac Live-filtre og opplasting til chassiset støttes ikke i v1."}}, {"@type": "Question", "name": "Lager NexusDeck kalibreringskurver selv?", "acceptedAnswer": {"@type": "Answer", "text": "Nei - og det er med vilje. NexusDeck lagrer, blar i, sammenligner og laster opp kalibreringsfiler laget av andre verktøy (MultEQ Editor, A1 Evo Acoustix, REW, ratbuddyssey osv.). Selve målingen og kurvegenereringen skjer i de verktøyene; NexusDeck er administratoren og opplastingsløsningen på enheten."}}, {"@type": "Question", "name": "Er den eksisterende høyttalerpreseten min trygg?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Før hver opplasting leser NexusDeck tilbake det som ligger i målplassen for høyttalerpreset og lagrer det som en sikkerhetskopi i biblioteket ditt. Ett trykk gjenoppretter en hvilken som helst plass til en tidligere kalibrering. NexusDeck verifiserer også at opplastingen gikk rent gjennom ved å lese plassen på nytt etter at overføringen er ferdig."}}, {"@type": "Question", "name": "Hvordan kobles NexusDeck til mottakeren min?", "acceptedAnswer": {"@type": "Answer", "text": "Hvis du har AVR Maestro installert og koblet til mottakerne dine, leser NexusDeck listen over tilkoblede enheter automatisk via den delte appbeholderen - ingen ny paring, ingen dobbel IP-oppføring. Hvis du ikke har AVR Maestro, veileder NexusDecks paringsflyt deg gjennom å skrive inn mottakerens IP direkte."}}, {"@type": "Question", "name": "Hva koster NexusDeck?", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck er gratis å laste ned. Gratisnivået dekker all import til biblioteket, bla-funksjon og visualisering per kurve, pluss opptil 5 opplastinger totalt til plass 1 for høyttalerpreset (SPP1), slik at du kan prøve hele opplastingsløpet på din egen mottaker før du bestemmer deg. Ubegrenset opplasting, skriving til SPP2, sikkerhetskopiering og gjenoppretting av plasser, visningen for sammenligning av flere kurver, Veiledet gjennomgang og AVR Maestro-broen for overføring av enheter låses opp med ett engangskjøp i appen på $12.99. Ingen abonnement, ingen gjentakende fakturering, ingen reklame. Prisen kan endres før lansering."}}, {"@type": "Question", "name": "Hvilke Android- og iOS-versjoner kreves?", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck krever Android 7.0 (API 24) eller nyere, og iOS 14 eller nyere. Begge plattformene lanseres samtidig."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="NexusDeck forstørret"></div>
+
+    <nav>
+        <a href="/nb/" class="nav-brand"><img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub-logo"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Meny"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Språk">
+            <li><a href="/nb/" onclick="closeNav()">Hjem</a></li>
+            <li><a href="#screens" onclick="closeNav()">Skjermbilder</a></li>
+            <li><a href="#features" onclick="closeNav()">Funksjoner</a></li>
+            <li><a href="#how" onclick="closeNav()">Slik fungerer det</a></li>
+            <li><a href="#security" onclick="closeNav()">Personvern</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/nb/">MiyaraHub</a> / NexusDeck</div>
+            <div class="p-hero">
+                <div>
+                    <img decoding="async" width="192" height="192" class="ico" src="/assets/icons/nexusdeck-icon-192.png" alt="NexusDeck-appikon">
+                    <h1 class="hk"><span class="kicker h1k">NexusDeck &middot; for Audyssey-kalibreringsfiler</span><span class="h1t">Hver kalibrering, ett deck.<span class="stargl">&#10022;</span></span></h1>
+                    <p class="hero-sub">Den dedikerte administratoren av Audyssey-kalibreringsfiler og kurveopplasteren for Denon- og Marantz AV-mottakere.</p>
+                    <p class="hero-lede">Last opp <strong>Audyssey .ady</strong>-kalibreringer direkte til plasser for høyttalerpreset over Wi-Fi. Importer <strong>A1 Evo Acoustix .oca</strong>, <strong>REW .mdat</strong>, <strong>.frd</strong> og <strong>PEQ-eksporter</strong> til det lokale biblioteket ditt for å bla og sammenligne. Følgesvennen til <a href="/nb/avr-maestro/" style="color:var(--accent)">AVR Maestro</a>.</p>
+                    <div class="status-hero"><span class="dot"></span><span class="txt">Forhåndsversjon - kommer snart i App Store, Google Play og Microsoft Store</span></div>
+                    <div class="platforms">
+                        <span class="pl-lbl">Kommer til</span>
+                        <span class="pl">iPhone</span><span class="pl">iPad</span><span class="pl">Android</span><span class="pl">macOS</span><span class="pl">Windows</span></div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img fetchpriority="high" decoding="async" width="700" height="1244" src="/nexus-deck/screenshots/device.jpg" alt="NexusDeck kurvedetaljer med et fullt frekvensresponsdiagram for en Marantz Cinema 30-kalibrering" onclick="openLightbox(this)"></div>
+                    <div class="cap"><b>Forhåndsversjon</b> &middot; under utvikling</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <!-- Screens -->
+    <section id="screens" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Tidlig innblikk</div><h2 class="sec-title">Et første blikk på NexusDeck.</h2><p class="sec-desc">Tidlige skjermbilder fra forhåndsversjonen - kalibreringsbiblioteket, kurvedetaljer med fulle frekvensresponsdiagrammer, A/B-evaluering og opplasting til mottakeren med ett trykk. Trykk på et bilde for å zoome.</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g1_library.jpg" alt="NexusDeck kalibreringsbibliotek med en importert Cinema 30-kurve" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g2_chart.jpg" alt="NexusDeck kurvedetaljer med et fullt frekvensresponsdiagram" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g3_detail.jpg" alt="NexusDeck kurvedetaljer - format, mål og kanaler" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g4_eval.jpg" alt="NexusDeck konfigurasjoner for A/B-evaluering" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g5_send.jpg" alt="NexusDeck organiser og send en kalibrering til mottakeren" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g6_channels.jpg" alt="NexusDeck kurvevisning per kanal" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g7_settings.jpg" alt="NexusDeck innstillinger og tema" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Funksjoner</div><h2 class="sec-title">Alle kalibreringsfilformater i én app.</h2><p class="sec-desc">NexusDeck leser kalibreringsfilene verktøyene dine allerede lager, lar deg bla i biblioteket på telefonen og laster dem opp direkte til mottakeren - ingen laptop, ingen MultEQ Editor nødvendig for opplastingssteget.</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">Nr. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> Importer alle vanlige formater</h3><p>Innebygde parsere for Audyssey .ady, A1 Evo Acoustix .oca, REW .mdat (MEQX-eksport), .frd-responskurver og REW PEQ .txt-eksporter. Filer du har importert én gang, bufres i det lokale biblioteket ditt for alltid.</p><div class="meta"><span>.ady</span><span>.oca</span><span>.mdat</span><span>.frd</span><span>PEQ .txt</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> Lokalt kurvebibliotek</h3><p>Alt du noen gang har importert, på enheten. Gi målinger nytt navn, grupper søskenfiler fra .mdat med flere posisjoner, og referansetell delte filbyte slik at sletting frigjør diskplass først når ingen oppføringer refererer til dem. Lokal SQLite-lagring som overlever omstart og oppdateringer av appen.</p><div class="meta"><span>SQLite</span><span>Referansetelling</span><span>Gi nytt navn</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 03</div><div class="body"><h3><span class="glyph">&#9678;</span> Sammenlign kurver side om side</h3><p>Legg frekvensresponskurver fra en hvilken som helst kombinasjon av Audyssey-, A1 Evo Acoustix- og REW-importer oppå hverandre. Logaritmisk frekvensakse på X, nivå i dB på Y, gjennomsnitt av flere posisjoner og utjevningskontroller. Se nøyaktig hva som endret seg mellom kalibreringer.</p><div class="meta"><span>Overlegg</span><span>Log-frekvens</span><span>Utjevning</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 04</div><div class="body"><h3><span class="glyph">&#9634;</span> Last opp Audyssey direkte til mottakeren</h3><p>Send <strong>Audyssey .ady</strong>-filer rett til plass 1 eller 2 for høyttalerpreset på Denon- / Marantz-mottakeren din over Wi-Fi. Chassiset verifiserer opplastingen; NexusDeck melder tilbake om den ble lagret. Ingen kabel, ingen laptop, ingen MultEQ Editor nødvendig for opplastingssteget.</p><div class="meta"><span>Audyssey</span><span>Port 1256</span><span>SPP1 / SPP2</span><span>Bytekontrollert</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 05</div><div class="body"><h3><span class="glyph">&#9670;</span> Sikkerhetskopi &amp; gjenoppretting av plass</h3><p>Før hver opplasting leser NexusDeck tilbake det som ligger på chassiset og lagrer det som en sikkerhetskopi i biblioteket ditt. Gjenoppretting med ett trykk setter en hvilken som helst plass tilbake til en tidligere kalibrering. Mist aldri en fungerende konfigurasjon på grunn av en mislykket opplasting.</p><div class="meta"><span>Sikkerhetskopi før opplasting</span><span>Gjenoppretting med ett trykk</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 06</div><div class="body"><h3><span class="glyph">&#9881;</span> Veiledet gjennomgang</h3><p>Gå gjennom hver kanal i en importert måling og se responsen per kanal, målkurven, det anvendte filtersettet og den resulterende korrigerte responsen. Laget for de kalibreringsbesatte som vil forstå hva tallene betyr.</p><div class="meta"><span>Per kanal</span><span>Målkurve</span><span>FilterSet</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 07</div><div class="body"><h3><span class="glyph">&#9672;</span> Fungerer sammen med AVR Maestro</h3><p>Hvis du har AVR Maestro installert, leser NexusDeck automatisk listen over tilkoblede mottakere via plattformens delte beholder - ingen ny paring, ingen ny IP-oppføring, ingen dobbelt enhetsoppsett. De to appene fungerer som ett økosystem.</p><div class="meta"><span>App Group (iOS)</span><span>Content Provider (Android)</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> Deling i flere formater</h3><p>Motta .ady- / .oca- / .mdat-filer via iOS Share Sheet, Android-intents eller direkte filvelger. Eksporter en kalibreringsoppføring for å dele med venner, legge ut på AVS Forum eller sikkerhetskopiere utenfor enheten.</p><div class="meta"><span>Share Extension</span><span>Filvelger</span><span>Eksport</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Slik fungerer det</div><h2 class="sec-title">Fra målefil til mottaker i tre steg.</h2><p class="sec-desc">NexusDeck treffer akkurat der eksisterende verktøy lar deg stå fast: du har en kalibreringsfil på laptopen og ingen enkel måte å få den over på mottakeren uten å kjøre desktop-appen på nytt. NexusDeck tetter det gapet.</p></div>
+            <div class="steps">
+                <div class="step fade"><div class="n">1</div><h3>Importer filen din</h3><p>Åpne en Audyssey .ady fra MultEQ Editor, en .oca fra A1 Evo Acoustix, en .mdat fra REW eller en annen støttet fil. NexusDeck leser den, trekker ut responskurvene og legger den til i biblioteket ditt.</p></div>
+                <div class="step fade"><div class="n">2</div><h3>Bla og sammenlign</h3><p>Åpne en hvilken som helst oppføring i biblioteket for å se frekvensrespons kanal for kanal. Legg to eller flere kurver oppå hverandre for å se hva romkorrigeringen endret. Gi nytt navn, grupper eller slett oppføringer etter hvert som biblioteket vokser.</p></div>
+                <div class="step fade"><div class="n">3</div><h3>Last opp Audyssey til mottakeren</h3><p>For Audyssey .ady-filer: velg en plass for høyttalerpreset (1 eller 2), bekreft, og se NexusDeck strømme kalibreringen til Denon- eller Marantz-mottakeren over Wi-Fi. Chassiset verifiserer opplastingen; NexusDeck melder tilbake om den ble lagret. Importer av .oca / .mdat / .frd / .txt blir værende i biblioteket for å bla og sammenligne; opplasting av disse formatene til chassiset kommer i en senere versjon.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section id="security">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Sikkerhet &amp; personvern</div><h2 class="sec-title">Bare lokalt. Ingen konto. Ingen sky.</h2><p class="sec-desc">NexusDeck er bygget rundt den samme personvern-først-arkitekturen som AVR Maestro. Kalibreringsfilene dine blir på enheten din, mottakeren din blir på det lokale nettverket, og ingenting om oppsettet ditt sendes til MiyaraHub.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>Ingen skyrelé</h4><p>Kalibreringsopplastinger skjer direkte mellom telefonen og mottakeren over lokalt Wi-Fi (TCP-port 1256). Filer går aldri via en MiyaraHub-server.</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>Ingen konto nødvendig</h4><p>Ingen registrering, ingen e-post, ingen MiyaraHub-innlogging. Åpne appen, slipp inn den første kalibreringsfilen din, så er du i biblioteket.</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>Minimal diagnostikk</h4><p>Firebase Crashlytics kun for krasjrapporter og diagnostikkdata - slik at vi kan fikse feil du støter på. Ingen sporing av bruk, ingen reklame, ingen personalisering. Bryter for å melde seg av i Innstillinger.</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>Biblioteket ligger lokalt</h4><p>Kalibreringsbiblioteket ditt er en lokal SQLite-database pluss fillagring på enheten. Ingenting synkroniseres eller lastes opp til en MiyaraHub-server.</p></div></div>
+                <div class="p"><span class="g">&#9679;</span><div><h4>Kun opplastinger du selv starter</h4><p>En kurve når bare mottakeren når du uttrykkelig trykker Last opp og bekrefter plassen. Ingenting skjer automatisk, og chassiset leses tilbake for å verifisere det som faktisk ble skrevet.</p></div></div>
+                <div class="p"><span class="g">&#9672;</span><div><h4>Kun nettverkstillatelse</h4><p>Den eneste systemtillatelsen NexusDeck trenger er nettverkstilgang, som utelukkende brukes til å nå mottakeren din på det lokale Wi-Fi-nettverket.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">FAQ</div><h2 class="sec-title">Ofte stilte spørsmål.</h2><p class="sec-desc">Alt du trenger å vite om NexusDeck.</p></div>
+            <div class="faq">
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Er NexusDeck tilknyttet Audyssey, Denon eller Marantz? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Nei.</strong> NexusDeck er en uavhengig tredjepartsapp utviklet av MiyaraHub Technologies LLC. Den er ikke laget av, godkjent av, sponset av eller tilknyttet Audyssey Laboratories, Denon, Marantz, Sound United, Masimo Corporation eller noen av deres datterselskaper. «Audyssey», «MultEQ», «Denon», «Marantz» og «REW» / «Room EQ Wizard» er varemerker som tilhører sine respektive eiere. Vi bruker disse navnene utelukkende for å beskrive kompatibilitet.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Hvilke mottakere kan NexusDeck laste opp til? <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck laster opp til nettverkstilkoblede Denon- og Marantz AV-mottakere som støtter protokollen for binær kalibreringsopplasting på TCP-port 1256. Det dekker Cinema 30 / 40 / 50, AV10, X3800H, X4800H, X6800H og andre Audyssey MultEQ XT32-chassis fra de siste årene. NexusDeck oppdager automatisk chassismodell og kanaloppsett fra mottakeren og fra kalibreringsfilen du laster opp.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Hvilke filformater importerer NexusDeck? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Audyssey .ady</strong> (eksporter fra MultEQ Editor), <strong>A1 Evo Acoustix .oca</strong>, <strong>REW .mdat</strong> (MEQX-måleeksport fra Room EQ Wizard, støtter flere posisjoner), <strong>.frd</strong>-responskurver og REW <strong>PEQ .txt</strong>-eksporter. I dag kan bare <strong>.ady-filer lastes opp til mottakeren</strong>; .oca / .mdat / .frd / .txt er kun til bibliotek og sammenligning. Import av Dirac Live-filtre og opplasting til chassiset støttes ikke i v1.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Lager NexusDeck kalibreringskurver selv? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Nei - og det er med vilje.</strong> NexusDeck lagrer, blar i, sammenligner og laster opp kalibreringsfiler laget av andre verktøy (MultEQ Editor, A1 Evo Acoustix, REW, ratbuddyssey osv.). Selve målingen og kurvegenereringen skjer i de verktøyene; NexusDeck er administratoren og opplastingsløsningen på enheten.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Er den eksisterende høyttalerpreseten min trygg? <span class="arw">+</span></div><div class="a"><div class="a-in">Ja. Før hver opplasting leser NexusDeck tilbake det som ligger i målplassen for høyttalerpreset og lagrer det som en sikkerhetskopi i biblioteket ditt. Ett trykk gjenoppretter en hvilken som helst plass til en tidligere kalibrering. NexusDeck verifiserer også at opplastingen gikk rent gjennom ved å lese plassen på nytt etter at overføringen er ferdig.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Hvordan kobles NexusDeck til mottakeren min? <span class="arw">+</span></div><div class="a"><div class="a-in">Hvis du har AVR Maestro installert og koblet til mottakerne dine, leser NexusDeck listen over tilkoblede enheter automatisk via den delte appbeholderen - ingen ny paring, ingen dobbel IP-oppføring. Hvis du ikke har AVR Maestro, veileder NexusDecks paringsflyt deg gjennom å skrive inn mottakerens IP direkte.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Hva koster NexusDeck? <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck er <strong>gratis å laste ned</strong>. Gratisnivået dekker all import til biblioteket, bla-funksjon og visualisering per kurve, pluss <strong>opptil 5 opplastinger totalt til plass 1 for høyttalerpreset (SPP1)</strong>, slik at du kan prøve hele opplastingsløpet på din egen mottaker før du bestemmer deg. Ubegrenset opplasting, skriving til SPP2, sikkerhetskopiering og gjenoppretting av plasser, visningen for sammenligning av flere kurver, Veiledet gjennomgang og AVR Maestro-broen for overføring av enheter låses opp med et <strong>engangskjøp i appen på $12.99</strong>. Ingen abonnement, ingen gjentakende fakturering, ingen reklame. Prisen kan endres før lansering.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Hvilke Android- og iOS-versjoner kreves? <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck krever Android 7.0 (API 24) eller nyere, og iOS 14 eller nyere. Begge plattformene lanseres samtidig.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>Juridisk ansvarsfraskrivelse &amp; varemerkeopplysninger</h3>
+            <p>NexusDeck er en <strong>uavhengig tredjepartsapp</strong> utviklet og utgitt av <strong>MiyaraHub Technologies LLC</strong>. Den er <strong>ikke laget av, tilknyttet, godkjent av, sponset av eller på noen måte offisielt knyttet til Audyssey Laboratories, Denon, Marantz, Sound United, Masimo Corporation, REW (Room EQ Wizard) / John Mulcahy,</strong> eller noen av deres datterselskaper eller tilknyttede selskaper.</p>
+            <p>«Audyssey», «MultEQ», «Denon», «Marantz», «HEOS», «Room EQ Wizard», «REW», «MEQX» og alle tilhørende produktnavn og logoer er varemerker eller registrerte varemerker som tilhører sine respektive eiere. Alle andre varemerker som nevnes her, tilhører sine respektive eiere.</p>
+            <p>Henvisninger til disse produktene på denne siden og i appen er gjort utelukkende for å identifisere kompatibilitet med filformater og beskrive appens funksjonalitet (nominativ rimelig bruk). Varemerkeinnehaverne er ikke tilknyttet MiyaraHub Technologies LLC og anbefaler ikke dette produktet.</p>
+            <p>NexusDeck kommuniserer med Denon/Marantz-mottakere via deres nettverkskontrollgrensesnitt (HTTP, Telnet og protokollen for binær kalibreringsopplasting på TCP-port 1256). Bruk av denne appen skjer på eget ansvar. MiyaraHub Technologies LLC er ikke ansvarlig for feilkonfigurasjon, lydproblemer, tapte kalibreringer eller andre problemer som oppstår ved bruk av denne appen. Bekreft alltid at du har en sikkerhetskopi av den eksisterende høyttalerpreseten før du bruker en ny kalibrering.</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>Gjør deg klar til lansering.</h2>
+            <p>NexusDeck er i siste testfase før lansering. Denne siden oppdateres med lenker til App Store, Google Play og Microsoft Store så snart versjonen er godkjent.</p>
+            <div class="cta-row" style="justify-content:center">
+                <a class="btn primary" href="/nb/support/">Få beskjed / Kontakt</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Van Alstyne, TX. Med enerett.</div>
+            <ul>
+                <li><a href="/nb/">Hjem</a></li>
+                <li><a href="/nb/support/">Support</a></li>
+                <li><a href="/nb/privacy.html">Personvern</a></li>
+                <li><a href="/nb/terms.html">Vilkår</a></li>
+            </ul>
+        </div></div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHub-apper"><span class="fa-h">Apper</span><a href="/nb/avr-maestro/">AVR Maestro</a><a href="/nb/synology-manager/">Syno Manager</a><a href="/nb/upsight/">UPSight</a><a href="/nb/fury-path/">FuryPath</a><a href="/nb/uc-remote/">UC Remote</a><a href="/nb/almanox/">Almanox</a><a href="/nb/nexus-deck/">NexusDeck</a><a href="/nb/avr-maestro-mc/">AVR Maestro MC</a><a href="/nb/network-deck/">Network Deck</a><a href="/nb/projector-pilot/">Projector Pilot</a><a href="/nb/elan-audio-lab/">Elan Audio Lab</a><a href="/nb/support/">Support</a></div>
+    <p class="foot-tm">MiyaraHub-apper er uavhengige og er ikke tilknyttet, støttet eller sponset av produsentene av maskinvaren og tjenestene de fungerer med. Alle varemerker tilhører sine respektive eiere. <a href="/nb/#legal">Varemerkeerklæring</a></p>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanox: aplikace pro plánování slunce, měsíce &amp; Mléčné dráhy - MiyaraHub</title>
+    <meta name="description" content="Almanox je offline plánovač slunce, měsíce a Mléčné dráhy pro iOS, Android, Mac a Windows: hodnocení Tonight, zlatá hodinka, okna tmavé oblohy a plánovač záběrů.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Almanox: aplikace pro plánování slunce, měsíce &amp; Mléčné dráhy">
+    <meta property="og:description" content="Almanox je offline plánovač slunce, měsíce a Mléčné dráhy pro iOS, Android, Mac a Windows: hodnocení Tonight, zlatá hodinka, okna tmavé oblohy a plánovač záběrů.">
+    <meta property="og:url" content="https://miyarahub.com/cs/almanox/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Almanox: aplikace pro plánování slunce, měsíce &amp; Mléčné dráhy">
+    <meta name="twitter:description" content="Almanox je offline plánovač slunce, měsíce a Mléčné dráhy pro iOS, Android, Mac a Windows: hodnocení Tonight, zlatá hodinka, okna tmavé oblohy a plánovač záběrů.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta name="twitter:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="keywords" content="astrophotography planner app, Milky Way planner, night sky planner, golden hour app, blue hour app, sun position app, moon phase app, moonrise moonset app, dark sky forecast app, stargazing app, astronomy planner, twilight calculator app, Milky Way core app, galactic core tracker, ISS pass app, ISS tracker, shot planner sun moon alignment, offline astronomy app, one-time purchase astronomy app, sun moon almanac app, night photography planner, offline map planner, eclipse forecast app, aurora forecast app, Kp index app, planets tonight app, home screen widgets, MiyaraHub, Almanox">
+    <link rel="canonical" href="https://miyarahub.com/cs/almanox/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/almanox/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/almanox/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/almanox/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/almanox/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/almanox/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/almanox/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/almanox/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/almanox/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/almanox/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/almanox/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/almanox/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/almanox/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/almanox/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/almanox/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/almanox/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/almanox/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/almanox/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/almanox/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/almanox/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/almanox/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/almanox/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/almanox/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/almanox/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/almanox/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/almanox/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/almanox/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/almanox/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/almanox/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/almanox/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/almanox/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/almanox/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/almanox-icon.png">
+    <link rel="apple-touch-icon" href="/assets/almanox-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root {
+            --ink: #070c16;
+            --ink-2: #0b1322;
+            --ink-3: #0f1a2c;
+            --star: #eef2f8;
+            --muted: #8fa0b8;
+            --faint: #607089;
+            --brass: #e6a552;
+            --brass-deep: #c9863a;
+            --brass-soft: rgba(230,165,82,0.12);
+            --line: rgba(176,198,232,0.11);
+            --line-strong: rgba(176,198,232,0.2);
+            /* twilight ladder - semantic, not the accent */
+            --tw-day: #f3b64d;
+            --tw-civil: #d98b46;
+            --tw-nautical: #3f6ea6;
+            --tw-astro: #26305a;
+            --tw-night: #0a1120;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: var(--ink);
+            color: var(--star);
+            line-height: 1.62;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* faint fixed star-field - no animated blobs */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background:
+                radial-gradient(1.2px 1.2px at 12% 22%, rgba(238,242,248,.35), transparent),
+                radial-gradient(1.2px 1.2px at 78% 14%, rgba(238,242,248,.28), transparent),
+                radial-gradient(1px 1px at 34% 62%, rgba(238,242,248,.22), transparent),
+                radial-gradient(1px 1px at 62% 78%, rgba(238,242,248,.20), transparent),
+                radial-gradient(1.4px 1.4px at 88% 54%, rgba(230,165,82,.30), transparent),
+                radial-gradient(1px 1px at 22% 84%, rgba(238,242,248,.18), transparent),
+                radial-gradient(1.1px 1.1px at 50% 8%, rgba(238,242,248,.24), transparent);
+            background-repeat: no-repeat;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(120% 80% at 50% -10%, rgba(63,110,166,.10) 0%, transparent 55%),
+                radial-gradient(90% 60% at 84% 8%, rgba(230,165,82,.05) 0%, transparent 50%);
+        }
+        a { color: inherit; }
+        ::selection { background: var(--brass-soft); color: var(--star); }
+
+        .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; }
+        .kicker {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            color: var(--brass);
+        }
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; }
+
+        /* rule */
+        .hr {
+            height: 1px;
+            background: var(--line);
+            border: 0;
+            width: 100%;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .85rem 1.75rem;
+            background: rgba(7,12,22,.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        .nav-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+        .nav-brand img { height: 30px; width: 30px; border-radius: 5px; }
+        .nav-brand-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 600;
+            letter-spacing: .01em;
+            color: var(--star);
+        }
+        .nav-links { display: flex; gap: 1.9rem; list-style: none; align-items: center; }
+        .nav-links a {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .74rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color .25s;
+        }
+        .nav-links a:hover { color: var(--brass); }
+        .nav-toggle {
+            display: none; background: none; border: none; cursor: pointer;
+            padding: .4rem; z-index: 101; flex-direction: column; gap: 5px;
+        }
+        .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--muted); transition: transform .3s, opacity .3s; }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+        /* HERO */
+        .hero { padding: 8.5rem 0 3.5rem; position: relative; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        .hero-coord {
+            margin-bottom: 1.5rem;
+            display: flex; gap: 1.2rem; flex-wrap: wrap;
+        }
+        .hero h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: clamp(3.4rem, 8vw, 6rem);
+            line-height: .95;
+            letter-spacing: -.02em;
+            margin: .4rem 0 .1rem;
+            display: flex; align-items: flex-start; gap: .1em;
+        }
+        .hero h1 .stargl { color: var(--brass); font-size: .34em; margin-top: .15em; line-height: 1; }
+        .hero-sub {
+            font-family: 'Fraunces', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+            color: var(--star);
+            opacity: .92;
+            margin: .1rem 0 1.4rem;
+            max-width: 30ch;
+        }
+        .hero-lede {
+            color: var(--muted);
+            font-size: 1.02rem;
+            max-width: 46ch;
+            margin-bottom: 1.8rem;
+        }
+        .cta-row { display: flex; gap: .9rem; flex-wrap: wrap; align-items: center; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+            padding: .8rem 1.3rem;
+            text-decoration: none;
+            border: 1px solid var(--line-strong);
+            border-radius: 3px;
+            color: var(--muted);
+            background: transparent;
+            transition: border-color .25s, color .25s, background .25s;
+        }
+        .btn.store { color: var(--star); border-color: rgba(230,165,82,.35); }
+        .btn.store svg { fill: var(--brass); }
+        .btn:hover { border-color: var(--brass); color: var(--brass); }
+        .btn.primary {
+            border-color: var(--brass);
+            color: var(--ink);
+            background: var(--brass);
+        }
+        .btn.primary:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--ink); }
+        .coming {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+            color: var(--faint); margin-top: 1.5rem;
+        }
+        .coming .dot { color: var(--brass); }
+
+        /* EPHEMERIS PANEL - the data-as-decoration anchor */
+        .ephem {
+            border: 1px solid var(--line-strong);
+            border-radius: 5px;
+            background: linear-gradient(180deg, rgba(15,26,44,.85), rgba(11,19,34,.85));
+            box-shadow: 0 24px 70px rgba(0,0,0,.45);
+            overflow: hidden;
+        }
+        .ephem-head {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(230,165,82,.05);
+        }
+        .ephem-head .t { font-family:'IBM Plex Mono',monospace; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+        .ephem-head .d { font-family:'IBM Plex Mono',monospace; font-size: .68rem; color: var(--faint); }
+        .ephem-body { display: grid; grid-template-columns: 1fr auto; }
+        .ephem-rows { padding: 1.1rem 1rem; display: flex; flex-direction: column; gap: .62rem; }
+        .erow { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-family:'IBM Plex Mono',monospace; }
+        .erow .lbl { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+        .erow .val { font-size: .86rem; color: var(--star); white-space: nowrap; }
+        .erow .val b { color: var(--brass); font-weight: 500; }
+        .erow.verdict { margin-top: .3rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+        .erow.verdict .lbl { color: var(--brass); }
+        .erow.verdict .score { font-family:'Fraunces',serif; font-size: 1.7rem; font-weight: 600; color: var(--star); line-height: 1; }
+        .erow.verdict .grade { font-size: .68rem; letter-spacing: .18em; color: var(--brass); }
+
+        /* twilight ladder */
+        .ladder { width: 74px; border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+        .ladder .seg { flex: 1; position: relative; display: flex; align-items: center; padding-left: .55rem; }
+        .ladder .seg span { font-family:'IBM Plex Mono',monospace; font-size: .56rem; letter-spacing: .06em; color: rgba(255,255,255,.82); text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+        .ladder .day { background: var(--tw-day); }
+        .ladder .civil { background: var(--tw-civil); }
+        .ladder .nautical { background: var(--tw-nautical); }
+        .ladder .astro { background: var(--tw-astro); }
+        .ladder .night { background: var(--tw-night); }
+        .ladder .night span, .ladder .nautical span, .ladder .astro span { color: rgba(238,242,248,.9); }
+
+        /* PLATES (screenshots) */
+        .plates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+            margin-top: 3.5rem;
+        }
+        .plate { text-align: center; }
+        .plate .frame {
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            padding: 5px;
+            background: rgba(15,26,44,.5);
+            transition: border-color .3s, transform .3s;
+        }
+        .plate .frame:hover { border-color: rgba(230,165,82,.5); transform: translateY(-4px); }
+        .plate img { width: 100%; display: block; border-radius: 3px; cursor: zoom-in; }
+        .plate .cap {
+            font-family:'IBM Plex Mono',monospace; font-size: .66rem; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--faint); margin-top: .7rem;
+        }
+        .plate .cap b { color: var(--brass); font-weight: 500; }
+
+        /* SECTIONS */
+        section { padding: 4.5rem 0; }
+        .sec-head { margin-bottom: 2.6rem; max-width: 40ch; }
+        .sec-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            line-height: 1.05;
+            letter-spacing: -.015em;
+            margin: .55rem 0 .8rem;
+            text-wrap: balance;
+        }
+        .sec-desc { color: var(--muted); font-size: 1.02rem; }
+        .sec-band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+        /* FEATURES - ledger entries */
+        .ledger { border-top: 1px solid var(--line); }
+        .entry {
+            display: grid;
+            grid-template-columns: 4.5rem 1fr;
+            gap: 1.5rem;
+            padding: 1.9rem 0;
+            border-bottom: 1px solid var(--line);
+            align-items: start;
+        }
+        .entry .no {
+            font-family:'IBM Plex Mono',monospace; font-size: .82rem; color: var(--brass);
+            letter-spacing: .05em; padding-top: .35rem;
+        }
+        .entry .body { }
+        .entry h3 {
+            font-family:'Fraunces',Georgia,serif; font-weight: 500; font-size: 1.4rem;
+            letter-spacing: -.01em; margin-bottom: .5rem; display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+        }
+        .entry h3 .glyph { color: var(--brass); flex-shrink: 0; }
+        .pro-tag {
+            font-family:'IBM Plex Mono',monospace; font-size: .6rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--brass);
+            border: 1px solid rgba(230,165,82,.4); border-radius: 2px; padding: .1rem .4rem;
+        }
+        .entry p { color: var(--muted); font-size: .98rem; max-width: 62ch; }
+        .entry .meta {
+            margin-top: .8rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
+            font-family:'IBM Plex Mono',monospace; font-size: .7rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint);
+        }
+        .entry .meta span::before { content: '+ '; color: var(--brass); }
+
+        /* HOW IT WORKS */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; }
+        .step .n {
+            font-family:'Fraunces',Georgia,serif; font-size: 3rem; font-weight: 400;
+            color: var(--brass); line-height: 1; margin-bottom: .6rem;
+            border-bottom: 1px solid var(--line); padding-bottom: .8rem;
+        }
+        .step h3 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.25rem; margin-bottom: .5rem; }
+        .step p { color: var(--muted); font-size: .95rem; }
+
+        /* PRIVACY - ruled list */
+        .priv { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+        .priv .p {
+            padding: 1.4rem 0; border-bottom: 1px solid var(--line);
+            display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start;
+        }
+        .priv .p .g { color: var(--brass); padding-top: .1rem; }
+        .priv .p h4 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.08rem; margin-bottom: .3rem; }
+        .priv .p h4 a { color: var(--star); text-decoration: none; transition: color .2s; }
+        .priv .p h4 a:hover { color: var(--brass); }
+        .priv .p p { color: var(--muted); font-size: .9rem; }
+
+        /* FAQ */
+        .faq { max-width: 800px; border-top: 1px solid var(--line); }
+        .qa { border-bottom: 1px solid var(--line); }
+        .q {
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            padding: 1.35rem 0; cursor: pointer; user-select: none;
+            font-family:'Fraunces',serif; font-weight: 500; font-size: 1.12rem;
+            transition: color .25s;
+        }
+        .q:hover { color: var(--brass); }
+        .q .arw { color: var(--brass); font-family:'IBM Plex Mono',monospace; font-size: .9rem; transition: transform .3s; flex-shrink: 0; }
+        .qa.open .q .arw { transform: rotate(45deg); }
+        .a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+        .qa.open .a { max-height: 460px; }
+        .a-in { padding: 0 0 1.35rem; color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 68ch; }
+        .a-in strong { color: var(--star); }
+
+        /* GLOSSARY */
+        .gloss { border-top: 1px solid var(--line); }
+        .gloss .row {
+            display: grid; grid-template-columns: 14rem 1fr; gap: 1.6rem;
+            padding: 1.3rem 0; border-bottom: 1px solid var(--line); align-items: baseline;
+        }
+        .gloss .term { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--star); }
+        .gloss .term .tag {
+            display: block; font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+            color: var(--brass); margin-bottom: .3rem; font-weight: 400;
+        }
+        .gloss .def { color: var(--muted); font-size: .96rem; max-width: 64ch; }
+        .gloss .def b { color: var(--star); font-weight: 500; }
+        @media (max-width: 720px) { .gloss .row { grid-template-columns: 1fr; gap: .4rem; } }
+
+        /* CTA */
+        .cta { text-align: center; padding: 5.5rem 0; }
+        .cta h2 { font-family:'Fraunces',serif; font-weight: 500; font-size: clamp(2rem,4.5vw,3rem); letter-spacing: -.02em; margin-bottom: .9rem; }
+        .cta p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; }
+
+        /* FOOTER */
+        footer { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+        .foot { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+        .foot .c { color: var(--faint); font-size: .82rem; line-height: 1.7; }
+        .foot .c b { font-family:'Fraunces',serif; color: var(--muted); font-weight: 500; }
+        .foot .c .legal { display:block; margin-top:.7rem; font-size:.72rem; line-height:1.6; color: var(--faint); opacity:.85; max-width: 62ch; }
+        .foot ul { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+        .foot a {
+            font-family:'IBM Plex Mono',monospace; font-size: .72rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color .25s;
+        }
+        .foot a:hover { color: var(--brass); }
+
+        /* fade-in */
+        .fade { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+        .fade.vis { opacity: 1; transform: none; }
+
+        /* lightbox */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(3,6,12,.94); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; backdrop-filter: blur(8px); }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.8); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+            .hero { padding-top: 7rem; }
+            .priv { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 720px) {
+            .nav-toggle { display: flex; }
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                flex-direction: column; gap: 0; align-items: stretch;
+                background: rgba(7,12,22,.97); backdrop-filter: blur(14px);
+                border-bottom: 1px solid var(--line); padding: .5rem 1.75rem;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+            .nav-links li:last-child { border-bottom: none; }
+            .plates { grid-template-columns: 1fr 1fr; }
+            .steps { grid-template-columns: 1fr; gap: 1.6rem; }
+            .entry { grid-template-columns: 1fr; gap: .5rem; }
+            .entry .no { padding-top: 0; }
+        }
+        @media (max-width: 460px) {
+            .plates { grid-template-columns: 1fr; }
+            .cta-row { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; }
+            .fade { transition: none; opacity: 1; transform: none; }
+        }
+        img{height:auto}
+        .foot-apps{max-width:1080px;margin:1.4rem auto 0;padding:1.1rem 1.75rem 0;border-top:1px solid rgba(176,198,232,.11);display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:baseline;font-size:.82rem;line-height:1.5}footer .foot-apps .fa-h{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0b8}footer .foot-apps a{color:#8fa0b8;text-decoration:none}footer .foot-apps a:hover{color:#eef2f8;text-decoration:underline}footer .foot-tm{max-width:1080px;margin:.7rem auto 0;padding:0 1.75rem 1.4rem;color:#607089;font-size:.76rem;line-height:1.6}footer .foot-tm a{color:#8fa0b8}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Malé nezávislé softwarové studio, které vytváří nativní aplikace, full-stack webové a e-commerce platformy, systémové a monitorovací nástroje, integrace zařízení a DevOps pipeline.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "cs", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/almanox/#webpage", "url": "https://miyarahub.com/almanox/", "name": "Almanox: aplikace pro plánování slunce, měsíce & Mléčné dráhy - MiyaraHub", "description": "Almanox je offline plánovač slunce, měsíce a Mléčné dráhy pro iOS, Android, Mac a Windows: hodnocení Tonight, zlatá hodinka, okna tmavé oblohy a plánovač záběrů.", "inLanguage": "cs", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/almanox.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/almanox/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/almanox/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/almanox/#app", "name": "Almanox", "description": "Offline aplikace pro plánování slunce, měsíce a astrofotografie. Skóre hodnocení Tonight, zlatá a modrá hodinka, žebříček soumraku, východ a západ jádra Mléčné dráhy, okna tmavé oblohy, rušení měsícem, plánovač záběrů se sluncem a měsícem, živé počasí a další viditelný přelet ISS. Již brzy.", "url": "https://miyarahub.com/almanox/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "LifestyleApplication", "image": "https://miyarahub.com/assets/almanox-icon.png", "screenshot": ["https://miyarahub.com/almanox/screenshots/01_tonight.jpg", "https://miyarahub.com/almanox/screenshots/03_today.jpg", "https://miyarahub.com/almanox/screenshots/02_milkyway.jpg", "https://miyarahub.com/almanox/screenshots/04_plan.jpg", "https://miyarahub.com/almanox/screenshots/05_locations.jpg", "https://miyarahub.com/almanox/screenshots/06_theme.jpg", "https://miyarahub.com/almanox/screenshots/07_features.jpg", "https://miyarahub.com/almanox/screenshots/07_light.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/almanox/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Almanox", "item": "https://miyarahub.com/almanox/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/almanox/#faq", "url": "https://miyarahub.com/almanox/", "mainEntity": [{"@type": "Question", "name": "Je Almanox předplatné?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Almanox je jednorázový nákup za $12.99. Žádné předplatné, žádné reklamy, žádné placené aktualizace. Koupíte jednou a vlastníte ho v App Store, Google Play nebo Microsoft Store."}}, {"@type": "Question", "name": "Funguje to bez připojení?", "acceptedAnswer": {"@type": "Answer", "text": "Základní almanach běží výhradně ve vašem zařízení - slunce, měsíc, soumrak, Mléčná dráha, okna tmavé oblohy, hvězdná mapa i plánovač záběrů fungují bez připojení. Živé podmínky (počasí, polární záře, přelety ISS a mapy) připojení při použití potřebují."}}, {"@type": "Question", "name": "Co je zdarma a co je Pro?", "acceptedAnswer": {"@type": "Answer", "text": "Verze zdarma je štědrá: celý almanach slunce a měsíce (východ a západ slunce, zlatá a modrá hodinka, žebříček soumraku, fáze měsíce), skóre hodnocení Tonight, živý přehled oblačnosti a světelného znečištění, předpověď polární záře, dnešní planety, přelety ISS, hvězdná mapa souhvězdí, kalendář meteorických rojů a zatmění, příštích 7 nejlepších nocí, upozornění na dobré noci pro tmavou oblohu, tři uložená místa a všechny motivy v libovolné barvě. Pro ($12.99, jednorázově) odemyká předpověď jádra Mléčné dráhy, objekty hlubokého vesmíru, plánovač výjezdů na mapě a hledač míst tmavé oblohy, plánovač záběrů se sluncem a měsícem, fotografické kalkulačky, podrobnou hodinovou předpověď, AR hledač oblohy, widgety na domovskou obrazovku, upozornění na zlatou hodinku a vlastní upozornění, výhled na 60 nocí a neomezený počet uložených míst."}}, {"@type": "Question", "name": "Na kterých zařízeních běží?", "acceptedAnswer": {"@type": "Answer", "text": "Na iPhonu, iPadu, Androidu, Macu a Windows, ze stejného krásně jednotného designu. Přizpůsobí se světlému, tmavému i čistě černému AMOLED režimu, v libovolné akcentní barvě - z vybraných odstínů nebo vlastní volby."}}, {"@type": "Question", "name": "Potřebuji účet?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Žádná registrace, žádný e-mail, žádné přihlášení k MiyaraHub. Stáhněte aplikaci a začněte plánovat. Vaše poloha se používá jen k výpočtu vaší oblohy a nikdy se neprodává, nesdílí ani nesleduje."}}, {"@type": "Question", "name": "Jak se počítá skóre Tonight?", "acceptedAnswer": {"@type": "Answer", "text": "Vyberte, co plánujete - Mléčnou dráhu, pozorování hvězd, měsíc, noční krajinu nebo polární záři - a Almanox to ohodnotí 0-100 podle hodin skutečné astronomické tmy, rušení měsícem, oblačnosti a světelného znečištění vaší polohy. Je to rychlý a poctivý odhad, jestli dnešní noc stojí za cestu."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="Zvětšený snímek obrazovky Almanox">
+    </div>
+
+    <!-- Nav -->
+    <nav>
+        <a href="/cs/" class="nav-brand"> <img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="Logo MiyaraHub"> <span class="nav-brand-text">MiyaraHub</span> </a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Nabídka">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Jazyk">
+            <li><a href="/cs/" onclick="closeNav()">Domů</a></li>
+            <li><a href="#features" onclick="closeNav()">Funkce</a></li>
+            <li><a href="#plates" onclick="closeNav()">Obrazovky</a></li>
+            <li><a href="/cs/almanox/guide/" onclick="closeNav()">Průvodce</a></li>
+            <li><a href="#how" onclick="closeNav()">Metoda</a></li>
+            <li><a href="#glossary" onclick="closeNav()">Slovníček</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <div class="kicker">Nebeský almanach &middot; Terénní vydání</div>
+                    <h1><span class="stargl">&#10022;</span>Almanox</h1>
+                    <p class="hero-sub">Jsou dnes hvězdy dobré?</p>
+                    <p class="hero-lede">
+                        Odpoví jediná obrazovka - skóre hodnocení Tonight, zlatá a modrá hodinka, jádro Mléčné dráhy, okna tmavé oblohy a plánovač záběrů se sluncem a měsícem. Počítáno ve vašem zařízení. Bez účtu, bez cloudu, bez předplatného.
+                    </p>
+                    <div class="cta-row">
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </span>
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>
+                            Google Play
+                        </span>
+                        <a href="#plates" class="btn">Zobrazit obrazovky</a>
+                    </div>
+                    <div class="coming"><span class="dot">&#9679;</span> Již brzy - iPhone, iPad, Android, Mac &amp; Windows</div>
+                </div>
+
+                <!-- Ephemeris readout: data as decoration -->
+                <aside class="ephem" aria-label="Ukázkový výpis almanachu">
+                    <div class="ephem-head">
+                        <span class="t">Tonight &middot; Místní efemeridy</span>
+                        <span class="d">33.42&deg;N 96.58&deg;W</span>
+                    </div>
+                    <div class="ephem-body">
+                        <div class="ephem-rows">
+                            <div class="erow"><span class="lbl">Západ slunce</span><span class="val">20:14</span></div>
+                            <div class="erow"><span class="lbl">Zlatá hod.</span><span class="val"><b>19:31 - 20:14</b></span></div>
+                            <div class="erow"><span class="lbl">Astro tma</span><span class="val">21:44 - 05:02</span></div>
+                            <div class="erow"><span class="lbl">Měsíc</span><span class="val">Nov &middot; 2%</span></div>
+                            <div class="erow"><span class="lbl">Jádro MW &#8593;</span><span class="val"><b>22:58</b></span></div>
+                            <div class="erow verdict">
+                                <span class="lbl">Hodnocení</span>
+                                <span style="text-align:right"><span class="score">87</span><span class="val" style="color:var(--faint)">/100</span><br><span class="grade">EXCELLENT</span></span>
+                            </div>
+                        </div>
+                        <div class="ladder" aria-hidden="true">
+                            <div class="seg day"><span>DAY</span></div>
+                            <div class="seg civil"><span>CIV 20:41</span></div>
+                            <div class="seg nautical"><span>NAU 21:12</span></div>
+                            <div class="seg astro"><span>AST 21:44</span></div>
+                            <div class="seg night"><span>NIGHT</span></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Plates -->
+            <div class="plates" id="plates-hero">
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Hodnocení Tonight v Almanoxu - jsou dnes hvězdy dobré" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Tab. I</b> &middot; Tonight</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox Today - dráha slunce, zlatá hodinka a almanach měsíce" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Tab. II</b> &middot; Almanach</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Jádro Mléčné dráhy a okno tmavé oblohy v Almanoxu" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Tab. III</b> &middot; Mléčná dráha</figcaption>
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Rejstřík</div>
+                <h2 class="sec-title">Jedna obrazovka, celé nebe</h2>
+                <p class="sec-desc">Astronomie, počasí a plánovací jádro spojené do jediné odpovědi. Almanach a výpočty oblohy běží ve vašem zařízení; živé podmínky pocházejí z otevřených služeb počasí a map. Bez účtu, bez reklam, bez předplatného.</p>
+            </div>
+            <div class="ledger">
+                <article class="entry">
+                    <div class="no">Č. 01</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9737;</span> Hodnocení Tonight</h3>
+                        <p>Jediné skóre 0-100 přesně pro to, co plánujete - Mléčnou dráhu, pozorování hvězd, měsíc, noční krajinu nebo polární záři. Do jedné poctivé odpovědi zahrnuje hodiny skutečné tmy, rušení měsícem, oblačnost a světelné znečištění vaší oblohy: je dnešní noc opravdu dobrá?</p>
+                        <div class="meta"><span>Skóre</span><span>Nejlepší okno</span><span>Tma</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 02</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9728;</span> Almanach slunce &amp; měsíce</h3>
+                        <p>Východ a západ slunce, zlatá a modrá hodinka a celý žebříček soumraku od občanského po astronomický. Fáze měsíce, osvit a jeho východ a západ - vše se živým obloukem dráhy slunce.</p>
+                        <div class="meta"><span>Zlatá hodinka</span><span>Soumrak</span><span>Fáze měsíce</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 03</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Mléčná dráha &amp; tmavá obloha <span class="pro-tag">Pro</span></h3>
+                        <p>Východ, kulminace a západ jádra galaxie s hodnocením kvality od špatné po výbornou, plus předpověď bezměsíčného okna tmavé oblohy, abyste věděli, které hodiny stojí za focení.</p>
+                        <div class="meta"><span>Východ/západ jádra</span><span>Tmavé okno</span><span>Stupeň kvality</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 04</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9796;</span> Dnešní planety</h3>
+                        <p>Které planety jsou právě na obloze, kam se dívat, jak jsou jasné a v jaké jsou fázi - vše vypočítané ve vašem zařízení pro váš přesný čas a místo.</p>
+                        <div class="meta"><span>Viditelnost</span><span>Jasnost</span><span>Fáze</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 05</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8982;</span> Plánovač záběrů <span class="pro-tag">Pro</span></h3>
+                        <p>Najděte přesné dny, kdy se slunce nebo úplněk zarovná s vámi zvoleným směrem. Hledání průchodu azimutem a vícedenních zarovnání pro ten pravý záběr - vše offline.</p>
+                        <div class="meta"><span>Hledání azimutu</span><span>Zarovnání</span><span>Vícedenní</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 06</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8983;</span> Offline plánovač map <span class="pro-tag">Pro</span></h3>
+                        <p>Interaktivní mapa, která ukládá dlaždice, jež jste si prohlédli, takže funguje i bez signálu v terénu. Umístěte špendlík a uvidíte jeho azimut, vzdálenost a přesné datum, kdy se za ním zarovná slunce nebo měsíc.</p>
+                        <div class="meta"><span>Offline dlaždice</span><span>Azimut &amp; vzdálenost</span><span>Data zarovnání</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 07</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9680;</span> Zatmění</h3>
+                        <p>Zatmění Slunce a Měsíce počítaná ve vašem zařízení ze skutečných efemerid a filtrovaná podle vaší polohy, takže seznam ukazuje jen ta, která můžete skutečně vyjít ven a spatřit.</p>
+                        <div class="meta"><span>Sluneční &amp; měsíční</span><span>Podle polohy</span><span>Ve vašem zařízení</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 08</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9729;</span> Živé podmínky oblohy</h3>
+                        <p>Aktuální teplota, oblačnost a hodnocení průzračnosti jasné oblohy pro každé uložené místo, načítané živě z Open-Meteo - zdarma, bez klíče API. Podrobná hodinová předpověď je vylepšení Pro.</p>
+                        <div class="meta"><span>Oblačnost</span><span>Průzračnost</span><span>Podle místa</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 09</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8779;</span> Předpověď polární záře <span class="pro-tag">Pro</span></h3>
+                        <p>Živý index Kp od NOAA, vaše geomagnetická šířka a srozumitelné hodnocení pro dnešní noc - plus 24hodinový pás Kp, abyste viděli, jak aktivita narůstá, než vrcholí.</p>
+                        <div class="meta"><span>Živý index Kp</span><span>Geomagnetická šířka</span><span>24hodinový pás</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 10</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9954;</span> Přelety ISS</h3>
+                        <p>Další viditelný přelet Mezinárodní vesmírné stanice nad vaší polohou, počítaný ve vašem zařízení z živých orbitálních dat - čas východu, směr a maximální výška.</p>
+                        <div class="meta"><span>Viditelný přelet</span><span>Směr</span><span>Ve vašem zařízení</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 11</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8862;</span> Widgety na domovskou obrazovku</h3>
+                        <p>Widgety, které se na pozadí samy obnovují, takže obloha na domovské obrazovce zůstává aktuální, i když byla aplikace zavřená celé hodiny.</p>
+                        <div class="meta"><span>Automatické obnovení</span><span>Na pozadí</span><span>Domovská obrazovka</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 12</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9673;</span> Krásné a vaše</h3>
+                        <p>Tři povrchy - světlý, tmavý a čistě černý AMOLED - a libovolná barva, od vybraných akcentů po váš přesný vlastní odstín. Přebarví se celé rozhraní, ne jen jeden zvýrazněný prvek. Plná podpora čtečky obrazovky s mluvenými souhrny hvězdných map a podpora dynamického písma všude.</p>
+                        <div class="meta"><span>Světlý/Tmavý/AMOLED</span><span>Libovolný akcent</span><span>Vlastní barva</span><span>Čtečka obrazovky</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 13</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Souhvězdí &amp; hvězdná mapa</h3>
+                        <p>Všech 88 souhvězdí a jasné hvězdy namapované nad vaší oblohou v živé a bezplatné hvězdné mapě - pojmenované a počítané výhradně ve vašem zařízení, bez připojení. AR hledač oblohy, který stačí namířit a poznat, je vylepšení Pro.</p>
+                        <div class="meta"><span>88 obrazců</span><span>Hvězdná mapa</span><span>Offline</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Č. 14</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9790;</span> Offline &amp; soukromé</h3>
+                        <p>Astronomické jádro běží výhradně ve vašem zařízení. Bez registrace, bez účtu, bez reklam, bez sbírání polohy. Koupíte jednou a vlastníte - žádné předplatné, nikdy.</p>
+                        <div class="meta"><span>Ve vašem zařízení</span><span>Bez účtu</span><span>Jednorázově</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plates / Screens -->
+    <section id="plates">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Tabule</div>
+                <h2 class="sec-title">Podívejte se v akci</h2>
+                <p class="sec-desc">Každá obrazovka se počítá ve vašem zařízení - tmavá, AMOLED nebo světlá, v libovolné akcentní barvě. Zobrazeno na Androidu; stejná aplikace běží na iPhonu, iPadu, Macu a Windows.</p>
+            </div>
+            <div class="plates">
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox - skóre hodnocení Tonight" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Tab. 01</b> &middot; Tonight</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox - Mléčná dráha a okno tmavé oblohy" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Tab. 02</b> &middot; Mléčná dráha</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox - almanach slunce a měsíce Today" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Tab. 03</b> &middot; Almanach</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/04_plan.jpg" alt="Almanox - plánovač záběrů" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Tab. 04</b> &middot; Plánovač</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/05_locations.jpg" alt="Almanox - uložená místa tmavé oblohy" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Tab. 05</b> &middot; Místa</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/06_theme.jpg" alt="Almanox - libovolná akcentní barva" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Tab. 06</b> &middot; Libovolná barva</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/07_features.jpg" alt="Almanox - bezplatná hvězdná mapa, dnešní planety a přelety ISS" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Tab. 07</b> &middot; Bezplatné extra</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1170" height="2532" src="/almanox/screenshots/07_light.jpg" alt="Almanox - světlý motiv" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Tab. 07</b> &middot; Světlý</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- How / Method -->
+    <section id="how" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Metoda</div>
+                <h2 class="sec-title">Všechno ve vašem zařízení, nic v cloudu</h2>
+                <p class="sec-desc">Almanox spouští kompletní astronomické jádro lokálně. Bez účtu, bez registrace a funguje i bez signálu - obloha je stejná, ať máte čárky, nebo ne.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="n">1</div>
+                    <h3>Vyberte své místo</h3>
+                    <p>Použijte svou aktuální polohu nebo si uložte místa, odkud fotíte. Almanox spočítá slunce, měsíc a oblohu přesně pro místo, kde stojíte.</p>
+                </div>
+                <div class="step">
+                    <div class="n">2</div>
+                    <h3>Přečtěte si hodnocení</h3>
+                    <p>Jedno skóre odpoví na jedinou otázku, na které záleží - stojí dnešní noc za to? Uvidíte nejlepší okno tmavé oblohy, jádro Mléčné dráhy a jak moc překáží měsíc.</p>
+                </div>
+                <div class="step">
+                    <div class="n">3</div>
+                    <h3>Naplánujte záběr</h3>
+                    <p>Najděte přesné dny, kdy se slunce nebo úplněk zarovná s vaším směrem, zachyťte zlatou hodinku a dostaňte upozornění, než bude obloha připravená.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section id="glossary" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Slovníček</div>
+                <h2 class="sec-title">Terénní příručka k obloze</h2>
+                <p class="sec-desc">Slova, kolem nichž je celá aplikace postavená - a proč je každé z nich důvodem mít Almanox v kapse.</p>
+            </div>
+            <div class="gloss">
+                <div class="row"><div class="term"><span class="tag">Almanach</span>Almanach</div><div class="def">Tabulka oblohy den po dni - kdy slunce a měsíc vycházejí a zapadají, fáze měsíce a kolik hodin skutečné tmy dostanete. Almanox je <b>živý almanach přesně pro místo, kde stojíte</b>, přepočítaný pro vaši polohu, ne obecný tištěný.</div></div>
+                <div class="row"><div class="term"><span class="tag">Nejlepší světlo</span>Zlatá hodinka</div><div class="def">Úsek těsně po východu a před západem slunce, kdy je slunce nízko a světlo je teplé a jemné. Je to světlo, na které čeká většina krajinářských a portrétních fotografů - a <b>Almanox vám dá přesný začátek a konec</b> pro dnešek, kdekoli jste.</div></div>
+                <div class="row"><div class="term"><span class="tag">Modré světlo</span>Modrá hodinka</div><div class="def">Krátké okno před východem a po západu slunce, kdy je slunce pod obzorem a celá obloha září hlubokou, rovnoměrnou modří. Ideální čas na panoramata měst a náladové oblohy - přichází a odchází rychle, takže <b>na minutu přesné načasování záleží</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Do tmy</span>Žebříček soumraku</div><div class="def">Tma přichází ve třech krocích - <b>občanský, námořní a pak astronomický</b> soumrak. Když astronomický soumrak skončí, obloha je konečně černá a objeví se slabé hvězdy. To je okamžik, kdy pozorovatelé hvězd a astrofotografové skutečně začínají fotit.</div></div>
+                <div class="row"><div class="term"><span class="tag">Galaxie</span>Jádro Mléčné dráhy</div><div class="def">Jasný střed galaxie - zářící, detailní část, kterou všichni fotí. Nad obzorem je jen část roku a část noci. Almanox vám řekne, <b>kdy jádro vychází, kulminuje a zapadá</b>, a ohodnotí, jak dobře bude vypadat.</div></div>
+                <div class="row"><div class="term"><span class="tag">Okno</span>Okno tmavé oblohy</div><div class="def">Část noci, kdy oblohu <b>nevymývá ani slunce, ani měsíc</b>. Jen tehdy skutečně fungují záběry hlubokého vesmíru a Mléčné dráhy a mění se každou noc - což je přesně to, co je zdlouhavé počítat ručně.</div></div>
+                <div class="row"><div class="term"><span class="tag">Měsíční světlo</span>Fáze &amp; osvit</div><div class="def">Kolik měsíce je osvětleno, od novu po úplněk. Jasný měsíc <b>zaplaví oblohu a utopí Mléčnou dráhu</b>; nov ji nechá úplně tmavou. Znát dnešní měsíc je polovina úspěchu každého nočního focení.</div></div>
+                <div class="row"><div class="term"><span class="tag">Odpověď</span>Hodnocení Tonight</div><div class="def">Podle toho, co plánujete - Mléčnou dráhu, pozorování hvězd, měsíc, noční krajinu nebo polární záři - Almanox zváží hodiny tmy, rušení měsícem, oblačnost a světelné znečištění do <b>jednoho poctivého skóre 0-100</b>. Místo kontroly pěti věcí se podíváte na jedno číslo a víte, jestli dnešní noc stojí za cestu.</div></div>
+                <div class="row"><div class="term"><span class="tag">Zarovnání</span>Zarovnání slunce &amp; měsíce</div><div class="def">Přesné dny, kdy slunce nebo úplněk vychází či zapadá <b>zarovnaný s orientačním bodem nebo světovou stranou</b> - plánování za těmi hlavními záběry úplňku za mostem nebo štítem. Almanox za vás prohledá následující dny.</div></div>
+                <div class="row"><div class="term"><span class="tag">Nad hlavou</span>Přelet ISS</div><div class="def">Když Mezinárodní vesmírná stanice přelétá dost jasně na to, aby byla vidět okem - stálý, rychle se pohybující bod světla. Almanox vám dá <b>další viditelný přelet, jeho směr a jak vysoko vystoupá</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Obrazce</span>Souhvězdí</div><div class="def">88 pojmenovaných hvězdných obrazců - Orion, Velký vůz, Střelec nad Mléčnou dráhou. Almanox je nakreslí všechny i s jasnými hvězdami <b>nad vaší skutečnou oblohou</b>, v hvězdné mapě i v AR hledači, takže stačí zamířit a pojmenovat, na co se díváte.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Pojmy</div>
+                <h2 class="sec-title">Soukromí od základu</h2>
+                <p class="sec-desc">Almanox vznikl proto, aby si držel své. Žádný účet, žádné reklamy, žádné sbírání polohy - jen obloha vypočítaná ve vašem zařízení.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4>Funguje offline</h4><p>Astronomické jádro běží výhradně ve vašem telefonu. Slunce, měsíc, soumrak, Mléčná dráha i plánovač záběrů fungují bez jakéhokoli připojení.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4>Žádný účet, nikdy</h4><p>Žádná registrace, žádný e-mail, žádné přihlášení k MiyaraHub. Stáhnete, otevřete a plánujete - není co vytvářet ani si pamatovat.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9738;</span><div><h4>Vaše poloha zůstává vaše</h4><p>Poloha se používá jen k výpočtu vaší oblohy a načtení místních podmínek - nikdy se neprodává a nikdy se nepoužívá k profilování. Počasí přichází anonymně z Open-Meteo, bez účtu a bez klíče.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4>Jednorázový nákup</h4><p>Koupíte jednou a vlastníte. Žádné předplatné, žádné opakované platby, žádné placené aktualizace - pravý opak toho, jak se prodává většina fotografických aplikací.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4>Žádné reklamy, žádný prodej vašich dat</h4><p>Žádné reklamní SDK, žádné reklamní sítě, žádní obchodníci s daty. Almanox používá anonymní analytiku první strany, aby zjistil, které funkce se využívají, a hlášení pádů, když se něco pokazí - nikdy nespojené s vaší identitou, nikdy neprodávané.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9789;</span><div><h4>Jedna aplikace, každé zařízení</h4><p>Stejný krásný offline plánovač na iPhonu, iPadu, Androidu, Macu i Windows - kdekoli fotíte.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Poznámky na okraji</div>
+                <h2 class="sec-title">Často kladené otázky</h2>
+                <p class="sec-desc">Všechno, co potřebujete o Almanoxu vědět.</p>
+            </div>
+            <div class="faq">
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Je Almanox předplatné?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in"><strong>Ne.</strong> Almanox je jednorázový nákup za $12.99. Žádné předplatné, žádné reklamy, žádné placené aktualizace. Koupíte jednou a vlastníte ho v App Store, Google Play nebo Microsoft Store.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Funguje to bez připojení?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Základní almanach běží výhradně ve vašem zařízení - slunce, měsíc, soumrak, Mléčná dráha, okna tmavé oblohy, hvězdná mapa i plánovač záběrů fungují bez připojení. Živé podmínky (počasí, polární záře, přelety ISS a mapy) připojení při použití potřebují.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Co je zdarma a co je Pro?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Verze zdarma je štědrá: celý almanach slunce a měsíce (východ a západ slunce, zlatá a modrá hodinka, žebříček soumraku, fáze měsíce), skóre hodnocení Tonight, živý přehled oblačnosti a světelného znečištění, předpověď polární záře, dnešní planety, přelety ISS, hvězdná mapa souhvězdí, kalendář meteorických rojů a zatmění, příštích 7 nejlepších nocí, upozornění na dobré noci pro tmavou oblohu, tři uložená místa a všechny motivy v libovolné barvě. Pro ($12.99, jednorázově) odemyká předpověď jádra Mléčné dráhy, objekty hlubokého vesmíru, plánovač výjezdů na mapě a hledač míst tmavé oblohy, plánovač záběrů se sluncem a měsícem, fotografické kalkulačky, podrobnou hodinovou předpověď, AR hledač oblohy, widgety na domovskou obrazovku, upozornění na zlatou hodinku a vlastní upozornění, výhled na 60 nocí a neomezený počet uložených míst.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Na kterých zařízeních běží?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Na iPhonu, iPadu, Androidu, Macu a Windows, ze stejného krásně jednotného designu. Přizpůsobí se světlému, tmavému i čistě černému AMOLED režimu, v libovolné akcentní barvě - z vybraných odstínů nebo vlastní volby.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Potřebuji účet?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Ne. Žádná registrace, žádný e-mail, žádné přihlášení k MiyaraHub. Stáhněte aplikaci a začněte plánovat. Vaše poloha se používá jen k výpočtu vaší oblohy a nikdy se neprodává, nesdílí ani nesleduje.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Jak se počítá skóre Tonight?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Vyberte, co plánujete - Mléčnou dráhu, pozorování hvězd, měsíc, noční krajinu nebo polární záři - a Almanox to ohodnotí 0-100 podle hodin skutečné astronomické tmy, rušení měsícem, oblačnosti a světelného znečištění vaší polohy. Je to rychlý a poctivý odhad, jestli dnešní noc stojí za cestu.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free vs Pro -->
+    <section id="pricing">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Zdarma &amp; Pro</div>
+                <h2 class="sec-title">Štědrá aplikace zdarma a jedno poctivé vylepšení</h2>
+                <p class="sec-desc">Všechno, co potřebujete k odpovědi na otázku „stojí dnešní noc za to?“, je zdarma. Pro ($12.99, jednorázově - bez předplatného) přidává pokročilé plánovací nástroje. U každé zamčené funkce uvidíte nejdřív skutečnou ukázku.</p>
+            </div>
+            <div class="cmp-wrap">
+                <table class="cmp">
+                    <thead>
+                        <tr><th scope="col">Funkce</th><th scope="col">Zdarma</th><th scope="col">Pro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Almanach slunce &amp; měsíce (zlatá/modrá hodinka, soumrak, fáze)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Skóre hodnocení Tonight (Mléčná dráha, pozorování hvězd, měsíc, polární záře)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Živý přehled oblačnosti &amp; světelného znečištění</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Okno tmavé oblohy &amp; nejlepší okno dnes v noci</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Předpověď polární záře &amp; dnešní planety</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Přelety ISS</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Hvězdná mapa souhvězdí (88 obrazců)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Kalendář meteorických rojů &amp; zatmění</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Upozornění na dobré noci pro tmavou oblohu</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Všechny motivy &amp; akcenty, bez reklam, bez přihlášení</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Předpověď jádra Mléčné dráhy &amp; objekty hlubokého vesmíru</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Plánovač záběrů se sluncem &amp; měsícem</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Fotografické kalkulačky (500 / NPF / hloubka ostrosti)</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Plánovač výjezdů na mapě &amp; hledač míst tmavé oblohy</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Podrobná hodinová předpověď</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>AR hledač oblohy</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Widgety na domovské obrazovce</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Upozornění na zlatou hodinku &amp; vlastní upozornění</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Nejlepší noci dopředu</td><td>7 nocí</td><td class="y">60 nocí</td></tr>
+                        <tr><td>Uložená místa</td><td>3</td><td class="y">Neomezeně</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <style>
+        #pricing .cmp-wrap { overflow-x: auto; margin-top: 1.6rem; border: 1px solid var(--line); border-radius: 14px; }
+        #pricing table.cmp { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 460px; }
+        #pricing .cmp th, #pricing .cmp td { text-align: left; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+        #pricing .cmp thead th { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); background: var(--ink-2); }
+        #pricing .cmp thead th:nth-child(2), #pricing .cmp thead th:nth-child(3),
+        #pricing .cmp tbody td:nth-child(2), #pricing .cmp tbody td:nth-child(3) { text-align: center; width: 5.5rem; }
+        #pricing .cmp thead th:nth-child(3) { color: var(--brass); }
+        #pricing .cmp tbody tr:last-child td { border-bottom: none; }
+        #pricing .cmp td.y { color: var(--brass); font-weight: 600; }
+        #pricing .cmp td.n { color: var(--faint); }
+        #pricing .cmp tbody td:first-child { color: var(--star); }
+    </style>
+
+    <!-- Guide -->
+    <section id="guide" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Terénní příručka</div>
+                <h2 class="sec-title">Naučte se číst oblohu</h2>
+                <p class="sec-desc">Kompletní ilustrovaná příručka - jak se skládá hodnocení Tonight, jak naplánovat jádro Mléčné dráhy, nastavit záběr se sluncem či měsícem, spočítat fotografické výpočty a najít skutečně tmavou oblohu.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4><a href="/cs/almanox/tonight-verdict/">Hodnocení Tonight</a></h4><p>Jak skóre 0-100 slučuje tmu, měsíc, výšku Mléčné dráhy a oblačnost - a co ve skutečnosti znamená Dobré, Průměrné a Špatné.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4><a href="/cs/almanox/milky-way/">Mléčná dráha &amp; okna tmavé oblohy</a></h4><p>Východ jádra galaxie, maximální výška a přesné bezměsíčné okno pro focení, kdekoli stojíte.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9788;</span><div><h4><a href="/cs/almanox/shot-planner/">Plánovač záběrů</a></h4><p>Dny, kdy se slunce nebo úplněk zarovná s vaším směrem - záběr východu slunce za obloukem naplánovaný na den přesně.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/cs/almanox/photo-calculators/">Fotografické kalkulačky</a></h4><p>Pravidlo 500, přísnější pravidlo NPF a hloubka ostrosti s hyperfokální vzdáleností pro vaši přesnou výbavu.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4><a href="/cs/almanox/dark-sky-finder/">Hledač tmavé oblohy</a></h4><p>Nejbližší certifikovaná místa International Dark-Sky Places seřazená podle vzdálenosti, se směrem a přibližnou cestou.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/cs/almanox/settings/">Nastavení, motivy &amp; upozornění</a></h4><p>Světlý, tmavý a čistě černý AMOLED motiv, libovolná akcentní barva, přeskupitelné karty, záloha do jednoho souboru a upozornění dřív, než světlo nastane.</p></div></div>
+            </div>
+            <div class="cta-row" style="justify-content:center;margin-top:2.4rem">
+                <a class="btn store" href="/cs/almanox/guide/">Přečíst celého průvodce</a>
+                <a class="btn" href="/cs/almanox/help/">Nápověda &amp; FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap fade">
+            <div class="kicker" style="display:block;margin-bottom:1rem">&#10022; Jasná obloha před vámi</div>
+            <h2>Naplánujte svou další jasnou noc</h2>
+            <p>Almanox brzy vychází pro iPhone, iPad, Android, Mac a Windows. Jednorázový nákup, bez předplatného, zcela offline.</p>
+            <div class="cta-row" style="justify-content:center">
+                <span class="btn store" style="cursor:default">App Store &middot; brzy</span>
+                <span class="btn store" style="cursor:default">Google Play &middot; brzy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap foot">
+            <div class="c">
+                &copy; 2026 MiyaraHub Technologies LLC &middot; Van Alstyne, Texas. Všechna práva vyhrazena.<br> <b>Almanox</b> - plánovač slunce, měsíce a Mléčné dráhy pro fotografy a pozorovatele hvězd.<br> <span class="legal">Almanox je nezávislá aplikace společnosti MiyaraHub Technologies LLC a není spojena s žádnou třetí stranou, ani jí schválena či sponzorována. Živé počasí poskytuje Open-Meteo a vyhledávání míst přispěvatelé OpenStreetMap; doporučení pro tmavou oblohu vycházejí z veřejných datových sad světelného znečištění. Všechny zmíněné názvy produktů jsou ochranné známky svých příslušných vlastníků.</span>
+            </div>
+            <ul>
+                <li><a href="/cs/">MiyaraHub</a></li>
+                <li><a href="/cs/privacy.html">Soukromí</a></li>
+                <li><a href="/cs/terms.html">Podmínky</a></li>
+                <li><a href="mailto:admin@miyarahub.com">Podpora</a></li>
+            </ul>
+        </div>
+        <div class="foot-apps" role="navigation" aria-label="Aplikace MiyaraHub"><span class="fa-h">Aplikace</span><a href="/cs/avr-maestro/">AVR Maestro</a><a href="/cs/synology-manager/">Syno Manager</a><a href="/cs/upsight/">UPSight</a><a href="/cs/fury-path/">FuryPath</a><a href="/cs/uc-remote/">UC Remote</a><a href="/cs/almanox/">Almanox</a><a href="/cs/nexus-deck/">NexusDeck</a><a href="/cs/avr-maestro-mc/">AVR Maestro MC</a><a href="/cs/network-deck/">Network Deck</a><a href="/cs/projector-pilot/">Projector Pilot</a><a href="/cs/elan-audio-lab/">Elan Audio Lab</a><a href="/cs/support/">Podpora</a></div>
+    <p class="foot-tm">Aplikace MiyaraHub jsou nezávislé a nejsou spojeny s výrobci hardwaru a služeb, s nimiž spolupracují, ani jimi schváleny či sponzorovány. Všechny ochranné známky patří jejich příslušným vlastníkům. <a href="/cs/#legal">Upozornění k ochranným známkám</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.fade').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+        });
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade:not(.vis)').forEach(el => io.observe(el));
+
+        function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+        function closeNav() {
+            document.getElementById('nav-menu').classList.remove('open');
+            document.getElementById('nav-toggle').classList.remove('open');
+        }
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+    </script>
+  <script defer src="/almanox/search.js"></script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

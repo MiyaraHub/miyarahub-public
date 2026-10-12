@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanox：太阳、月亮 &amp; 银河规划应用 - MiyaraHub</title>
+    <meta name="description" content="Almanox 是一款适用于 iOS、Android、Mac 和 Windows 的离线太阳、月亮与银河规划应用：今晚评定、黄金时刻、暗夜窗口和拍摄规划器。">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Almanox：太阳、月亮 &amp; 银河规划应用">
+    <meta property="og:description" content="Almanox 是一款适用于 iOS、Android、Mac 和 Windows 的离线太阳、月亮与银河规划应用：今晚评定、黄金时刻、暗夜窗口和拍摄规划器。">
+    <meta property="og:url" content="https://miyarahub.com/zh-hans/almanox/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Almanox：太阳、月亮 &amp; 银河规划应用">
+    <meta name="twitter:description" content="Almanox 是一款适用于 iOS、Android、Mac 和 Windows 的离线太阳、月亮与银河规划应用：今晚评定、黄金时刻、暗夜窗口和拍摄规划器。">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta name="twitter:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="keywords" content="astrophotography planner app, Milky Way planner, night sky planner, golden hour app, blue hour app, sun position app, moon phase app, moonrise moonset app, dark sky forecast app, stargazing app, astronomy planner, twilight calculator app, Milky Way core app, galactic core tracker, ISS pass app, ISS tracker, shot planner sun moon alignment, offline astronomy app, one-time purchase astronomy app, sun moon almanac app, night photography planner, offline map planner, eclipse forecast app, aurora forecast app, Kp index app, planets tonight app, home screen widgets, MiyaraHub, Almanox">
+    <link rel="canonical" href="https://miyarahub.com/zh-hans/almanox/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/almanox/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/almanox/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/almanox/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/almanox/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/almanox/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/almanox/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/almanox/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/almanox/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/almanox/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/almanox/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/almanox/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/almanox/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/almanox/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/almanox/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/almanox/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/almanox/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/almanox/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/almanox/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/almanox/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/almanox/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/almanox/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/almanox/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/almanox/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/almanox/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/almanox/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/almanox/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/almanox/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/almanox/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/almanox/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/almanox/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/almanox/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/almanox-icon.png">
+    <link rel="apple-touch-icon" href="/assets/almanox-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root {
+            --ink: #070c16;
+            --ink-2: #0b1322;
+            --ink-3: #0f1a2c;
+            --star: #eef2f8;
+            --muted: #8fa0b8;
+            --faint: #607089;
+            --brass: #e6a552;
+            --brass-deep: #c9863a;
+            --brass-soft: rgba(230,165,82,0.12);
+            --line: rgba(176,198,232,0.11);
+            --line-strong: rgba(176,198,232,0.2);
+            /* twilight ladder - semantic, not the accent */
+            --tw-day: #f3b64d;
+            --tw-civil: #d98b46;
+            --tw-nautical: #3f6ea6;
+            --tw-astro: #26305a;
+            --tw-night: #0a1120;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: var(--ink);
+            color: var(--star);
+            line-height: 1.62;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* faint fixed star-field - no animated blobs */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background:
+                radial-gradient(1.2px 1.2px at 12% 22%, rgba(238,242,248,.35), transparent),
+                radial-gradient(1.2px 1.2px at 78% 14%, rgba(238,242,248,.28), transparent),
+                radial-gradient(1px 1px at 34% 62%, rgba(238,242,248,.22), transparent),
+                radial-gradient(1px 1px at 62% 78%, rgba(238,242,248,.20), transparent),
+                radial-gradient(1.4px 1.4px at 88% 54%, rgba(230,165,82,.30), transparent),
+                radial-gradient(1px 1px at 22% 84%, rgba(238,242,248,.18), transparent),
+                radial-gradient(1.1px 1.1px at 50% 8%, rgba(238,242,248,.24), transparent);
+            background-repeat: no-repeat;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(120% 80% at 50% -10%, rgba(63,110,166,.10) 0%, transparent 55%),
+                radial-gradient(90% 60% at 84% 8%, rgba(230,165,82,.05) 0%, transparent 50%);
+        }
+        a { color: inherit; }
+        ::selection { background: var(--brass-soft); color: var(--star); }
+
+        .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; }
+        .kicker {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            color: var(--brass);
+        }
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; }
+
+        /* rule */
+        .hr {
+            height: 1px;
+            background: var(--line);
+            border: 0;
+            width: 100%;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .85rem 1.75rem;
+            background: rgba(7,12,22,.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        .nav-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+        .nav-brand img { height: 30px; width: 30px; border-radius: 5px; }
+        .nav-brand-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 600;
+            letter-spacing: .01em;
+            color: var(--star);
+        }
+        .nav-links { display: flex; gap: 1.9rem; list-style: none; align-items: center; }
+        .nav-links a {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .74rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color .25s;
+        }
+        .nav-links a:hover { color: var(--brass); }
+        .nav-toggle {
+            display: none; background: none; border: none; cursor: pointer;
+            padding: .4rem; z-index: 101; flex-direction: column; gap: 5px;
+        }
+        .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--muted); transition: transform .3s, opacity .3s; }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+        /* HERO */
+        .hero { padding: 8.5rem 0 3.5rem; position: relative; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        .hero-coord {
+            margin-bottom: 1.5rem;
+            display: flex; gap: 1.2rem; flex-wrap: wrap;
+        }
+        .hero h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: clamp(3.4rem, 8vw, 6rem);
+            line-height: .95;
+            letter-spacing: -.02em;
+            margin: .4rem 0 .1rem;
+            display: flex; align-items: flex-start; gap: .1em;
+        }
+        .hero h1 .stargl { color: var(--brass); font-size: .34em; margin-top: .15em; line-height: 1; }
+        .hero-sub {
+            font-family: 'Fraunces', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+            color: var(--star);
+            opacity: .92;
+            margin: .1rem 0 1.4rem;
+            max-width: 30ch;
+        }
+        .hero-lede {
+            color: var(--muted);
+            font-size: 1.02rem;
+            max-width: 46ch;
+            margin-bottom: 1.8rem;
+        }
+        .cta-row { display: flex; gap: .9rem; flex-wrap: wrap; align-items: center; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+            padding: .8rem 1.3rem;
+            text-decoration: none;
+            border: 1px solid var(--line-strong);
+            border-radius: 3px;
+            color: var(--muted);
+            background: transparent;
+            transition: border-color .25s, color .25s, background .25s;
+        }
+        .btn.store { color: var(--star); border-color: rgba(230,165,82,.35); }
+        .btn.store svg { fill: var(--brass); }
+        .btn:hover { border-color: var(--brass); color: var(--brass); }
+        .btn.primary {
+            border-color: var(--brass);
+            color: var(--ink);
+            background: var(--brass);
+        }
+        .btn.primary:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--ink); }
+        .coming {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+            color: var(--faint); margin-top: 1.5rem;
+        }
+        .coming .dot { color: var(--brass); }
+
+        /* EPHEMERIS PANEL - the data-as-decoration anchor */
+        .ephem {
+            border: 1px solid var(--line-strong);
+            border-radius: 5px;
+            background: linear-gradient(180deg, rgba(15,26,44,.85), rgba(11,19,34,.85));
+            box-shadow: 0 24px 70px rgba(0,0,0,.45);
+            overflow: hidden;
+        }
+        .ephem-head {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(230,165,82,.05);
+        }
+        .ephem-head .t { font-family:'IBM Plex Mono',monospace; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+        .ephem-head .d { font-family:'IBM Plex Mono',monospace; font-size: .68rem; color: var(--faint); }
+        .ephem-body { display: grid; grid-template-columns: 1fr auto; }
+        .ephem-rows { padding: 1.1rem 1rem; display: flex; flex-direction: column; gap: .62rem; }
+        .erow { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-family:'IBM Plex Mono',monospace; }
+        .erow .lbl { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+        .erow .val { font-size: .86rem; color: var(--star); white-space: nowrap; }
+        .erow .val b { color: var(--brass); font-weight: 500; }
+        .erow.verdict { margin-top: .3rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+        .erow.verdict .lbl { color: var(--brass); }
+        .erow.verdict .score { font-family:'Fraunces',serif; font-size: 1.7rem; font-weight: 600; color: var(--star); line-height: 1; }
+        .erow.verdict .grade { font-size: .68rem; letter-spacing: .18em; color: var(--brass); }
+
+        /* twilight ladder */
+        .ladder { width: 74px; border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+        .ladder .seg { flex: 1; position: relative; display: flex; align-items: center; padding-left: .55rem; }
+        .ladder .seg span { font-family:'IBM Plex Mono',monospace; font-size: .56rem; letter-spacing: .06em; color: rgba(255,255,255,.82); text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+        .ladder .day { background: var(--tw-day); }
+        .ladder .civil { background: var(--tw-civil); }
+        .ladder .nautical { background: var(--tw-nautical); }
+        .ladder .astro { background: var(--tw-astro); }
+        .ladder .night { background: var(--tw-night); }
+        .ladder .night span, .ladder .nautical span, .ladder .astro span { color: rgba(238,242,248,.9); }
+
+        /* PLATES (screenshots) */
+        .plates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+            margin-top: 3.5rem;
+        }
+        .plate { text-align: center; }
+        .plate .frame {
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            padding: 5px;
+            background: rgba(15,26,44,.5);
+            transition: border-color .3s, transform .3s;
+        }
+        .plate .frame:hover { border-color: rgba(230,165,82,.5); transform: translateY(-4px); }
+        .plate img { width: 100%; display: block; border-radius: 3px; cursor: zoom-in; }
+        .plate .cap {
+            font-family:'IBM Plex Mono',monospace; font-size: .66rem; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--faint); margin-top: .7rem;
+        }
+        .plate .cap b { color: var(--brass); font-weight: 500; }
+
+        /* SECTIONS */
+        section { padding: 4.5rem 0; }
+        .sec-head { margin-bottom: 2.6rem; max-width: 40ch; }
+        .sec-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            line-height: 1.05;
+            letter-spacing: -.015em;
+            margin: .55rem 0 .8rem;
+            text-wrap: balance;
+        }
+        .sec-desc { color: var(--muted); font-size: 1.02rem; }
+        .sec-band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+        /* FEATURES - ledger entries */
+        .ledger { border-top: 1px solid var(--line); }
+        .entry {
+            display: grid;
+            grid-template-columns: 4.5rem 1fr;
+            gap: 1.5rem;
+            padding: 1.9rem 0;
+            border-bottom: 1px solid var(--line);
+            align-items: start;
+        }
+        .entry .no {
+            font-family:'IBM Plex Mono',monospace; font-size: .82rem; color: var(--brass);
+            letter-spacing: .05em; padding-top: .35rem;
+        }
+        .entry .body { }
+        .entry h3 {
+            font-family:'Fraunces',Georgia,serif; font-weight: 500; font-size: 1.4rem;
+            letter-spacing: -.01em; margin-bottom: .5rem; display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+        }
+        .entry h3 .glyph { color: var(--brass); flex-shrink: 0; }
+        .pro-tag {
+            font-family:'IBM Plex Mono',monospace; font-size: .6rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--brass);
+            border: 1px solid rgba(230,165,82,.4); border-radius: 2px; padding: .1rem .4rem;
+        }
+        .entry p { color: var(--muted); font-size: .98rem; max-width: 62ch; }
+        .entry .meta {
+            margin-top: .8rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
+            font-family:'IBM Plex Mono',monospace; font-size: .7rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint);
+        }
+        .entry .meta span::before { content: '+ '; color: var(--brass); }
+
+        /* HOW IT WORKS */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; }
+        .step .n {
+            font-family:'Fraunces',Georgia,serif; font-size: 3rem; font-weight: 400;
+            color: var(--brass); line-height: 1; margin-bottom: .6rem;
+            border-bottom: 1px solid var(--line); padding-bottom: .8rem;
+        }
+        .step h3 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.25rem; margin-bottom: .5rem; }
+        .step p { color: var(--muted); font-size: .95rem; }
+
+        /* PRIVACY - ruled list */
+        .priv { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+        .priv .p {
+            padding: 1.4rem 0; border-bottom: 1px solid var(--line);
+            display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start;
+        }
+        .priv .p .g { color: var(--brass); padding-top: .1rem; }
+        .priv .p h4 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.08rem; margin-bottom: .3rem; }
+        .priv .p h4 a { color: var(--star); text-decoration: none; transition: color .2s; }
+        .priv .p h4 a:hover { color: var(--brass); }
+        .priv .p p { color: var(--muted); font-size: .9rem; }
+
+        /* FAQ */
+        .faq { max-width: 800px; border-top: 1px solid var(--line); }
+        .qa { border-bottom: 1px solid var(--line); }
+        .q {
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            padding: 1.35rem 0; cursor: pointer; user-select: none;
+            font-family:'Fraunces',serif; font-weight: 500; font-size: 1.12rem;
+            transition: color .25s;
+        }
+        .q:hover { color: var(--brass); }
+        .q .arw { color: var(--brass); font-family:'IBM Plex Mono',monospace; font-size: .9rem; transition: transform .3s; flex-shrink: 0; }
+        .qa.open .q .arw { transform: rotate(45deg); }
+        .a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+        .qa.open .a { max-height: 460px; }
+        .a-in { padding: 0 0 1.35rem; color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 68ch; }
+        .a-in strong { color: var(--star); }
+
+        /* GLOSSARY */
+        .gloss { border-top: 1px solid var(--line); }
+        .gloss .row {
+            display: grid; grid-template-columns: 14rem 1fr; gap: 1.6rem;
+            padding: 1.3rem 0; border-bottom: 1px solid var(--line); align-items: baseline;
+        }
+        .gloss .term { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--star); }
+        .gloss .term .tag {
+            display: block; font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+            color: var(--brass); margin-bottom: .3rem; font-weight: 400;
+        }
+        .gloss .def { color: var(--muted); font-size: .96rem; max-width: 64ch; }
+        .gloss .def b { color: var(--star); font-weight: 500; }
+        @media (max-width: 720px) { .gloss .row { grid-template-columns: 1fr; gap: .4rem; } }
+
+        /* CTA */
+        .cta { text-align: center; padding: 5.5rem 0; }
+        .cta h2 { font-family:'Fraunces',serif; font-weight: 500; font-size: clamp(2rem,4.5vw,3rem); letter-spacing: -.02em; margin-bottom: .9rem; }
+        .cta p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; }
+
+        /* FOOTER */
+        footer { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+        .foot { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+        .foot .c { color: var(--faint); font-size: .82rem; line-height: 1.7; }
+        .foot .c b { font-family:'Fraunces',serif; color: var(--muted); font-weight: 500; }
+        .foot .c .legal { display:block; margin-top:.7rem; font-size:.72rem; line-height:1.6; color: var(--faint); opacity:.85; max-width: 62ch; }
+        .foot ul { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+        .foot a {
+            font-family:'IBM Plex Mono',monospace; font-size: .72rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color .25s;
+        }
+        .foot a:hover { color: var(--brass); }
+
+        /* fade-in */
+        .fade { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+        .fade.vis { opacity: 1; transform: none; }
+
+        /* lightbox */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(3,6,12,.94); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; backdrop-filter: blur(8px); }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.8); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+            .hero { padding-top: 7rem; }
+            .priv { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 720px) {
+            .nav-toggle { display: flex; }
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                flex-direction: column; gap: 0; align-items: stretch;
+                background: rgba(7,12,22,.97); backdrop-filter: blur(14px);
+                border-bottom: 1px solid var(--line); padding: .5rem 1.75rem;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+            .nav-links li:last-child { border-bottom: none; }
+            .plates { grid-template-columns: 1fr 1fr; }
+            .steps { grid-template-columns: 1fr; gap: 1.6rem; }
+            .entry { grid-template-columns: 1fr; gap: .5rem; }
+            .entry .no { padding-top: 0; }
+        }
+        @media (max-width: 460px) {
+            .plates { grid-template-columns: 1fr; }
+            .cta-row { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; }
+            .fade { transition: none; opacity: 1; transform: none; }
+        }
+        img{height:auto}
+        .foot-apps{max-width:1080px;margin:1.4rem auto 0;padding:1.1rem 1.75rem 0;border-top:1px solid rgba(176,198,232,.11);display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:baseline;font-size:.82rem;line-height:1.5}footer .foot-apps .fa-h{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0b8}footer .foot-apps a{color:#8fa0b8;text-decoration:none}footer .foot-apps a:hover{color:#eef2f8;text-decoration:underline}footer .foot-tm{max-width:1080px;margin:.7rem auto 0;padding:0 1.75rem 1.4rem;color:#607089;font-size:.76rem;line-height:1.6}footer .foot-tm a{color:#8fa0b8}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "一家小而独立的软件工作室，专注原生应用、全栈网站与电商平台、系统与监控工具、设备集成以及 DevOps 流水线。", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "zh-Hans", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/almanox/#webpage", "url": "https://miyarahub.com/almanox/", "name": "Almanox：太阳、月亮与银河规划应用 - MiyaraHub", "description": "Almanox 是一款适用于 iOS、Android、Mac 和 Windows 的离线太阳、月亮与银河规划应用：今晚评定、黄金时刻、暗夜窗口和拍摄规划器。", "inLanguage": "zh-Hans", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/almanox.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/almanox/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/almanox/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/almanox/#app", "name": "Almanox", "description": "离线的太阳、月亮和天文摄影规划应用。今晚评定分数、黄金时刻与蓝调时刻、暮光阶梯、银河核心升落、暗夜窗口、月光干扰、太阳和月亮拍摄规划器、实时天气，以及下一次可见的 ISS 过境。即将推出。", "url": "https://miyarahub.com/almanox/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "LifestyleApplication", "image": "https://miyarahub.com/assets/almanox-icon.png", "screenshot": ["https://miyarahub.com/almanox/screenshots/01_tonight.jpg", "https://miyarahub.com/almanox/screenshots/03_today.jpg", "https://miyarahub.com/almanox/screenshots/02_milkyway.jpg", "https://miyarahub.com/almanox/screenshots/04_plan.jpg", "https://miyarahub.com/almanox/screenshots/05_locations.jpg", "https://miyarahub.com/almanox/screenshots/06_theme.jpg", "https://miyarahub.com/almanox/screenshots/07_features.jpg", "https://miyarahub.com/almanox/screenshots/07_light.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/almanox/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "主页", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Almanox", "item": "https://miyarahub.com/almanox/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/almanox/#faq", "url": "https://miyarahub.com/almanox/", "mainEntity": [{"@type": "Question", "name": "Almanox 是订阅制吗？", "acceptedAnswer": {"@type": "Answer", "text": "不是。Almanox 是一次性购买，价格 $12.99。无订阅、无广告、更新不收费。买一次，即可在 App Store、Google Play 或 Microsoft Store 上永久拥有。"}}, {"@type": "Question", "name": "没有网络也能用吗？", "acceptedAnswer": {"@type": "Answer", "text": "核心星历功能完全在你的设备上运行：太阳、月亮、暮光、银河、暗夜窗口、星图和拍摄规划器都不需要联网。实时状况（天气、极光、ISS 过境和地图）在使用时需要联网。"}}, {"@type": "Question", "name": "哪些是免费的，哪些是 Pro？", "acceptedAnswer": {"@type": "Answer", "text": "免费版相当大方：完整的日月星历（日出/日落、黄金时刻与蓝调时刻、暮光阶梯、月相）、今晚评定分数、实时云量和光污染提示、极光预报、今晚的行星、ISS 过境、星座星图、流星雨和日月食日历、未来 7 个最佳夜晚、好夜晚暗夜提醒、三个已保存地点，以及任意颜色的所有主题。Pro（$12.99，一次性购买）则解锁银河核心预报、深空目标、驱车出行地图规划器和暗夜地点查找器、太阳和月亮拍摄规划器、摄影计算器、详细的逐小时预报、AR 寻星、主屏幕小组件、黄金时刻和自定义提醒、60 晚展望，以及无限数量的已保存地点。"}}, {"@type": "Question", "name": "支持哪些设备？", "acceptedAnswer": {"@type": "Answer", "text": "iPhone、iPad、Android、Mac 和 Windows，同一套精美一致的设计。它能适应浅色、深色和纯黑 AMOLED，强调色任你选：精选色调或自定义颜色。"}}, {"@type": "Question", "name": "需要账号吗？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。无需注册、无需邮箱，也没有 MiyaraHub 登录。下载应用，立刻开始规划。你的位置仅用于计算你的天空，绝不会被出售、共享或追踪。"}}, {"@type": "Question", "name": "今晚评分是怎么计算的？", "acceptedAnswer": {"@type": "Answer", "text": "选择你要规划的内容：银河、观星、月亮、夜景或极光，Almanox 会综合真正的天文黑夜时长、月光干扰、云量以及你所在位置的光污染，给出 0-100 的评分。这是一份快速而诚实的参考，告诉你今晚值不值得出门。"}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="Almanox 截图（放大）">
+    </div>
+
+    <!-- Nav -->
+    <nav>
+        <a href="/zh-hans/" class="nav-brand"> <img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub 标志"> <span class="nav-brand-text">MiyaraHub</span> </a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="菜单">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="语言">
+            <li><a href="/zh-hans/" onclick="closeNav()">主页</a></li>
+            <li><a href="#features" onclick="closeNav()">功能</a></li>
+            <li><a href="#plates" onclick="closeNav()">界面</a></li>
+            <li><a href="/zh-hans/almanox/guide/" onclick="closeNav()">指南</a></li>
+            <li><a href="#how" onclick="closeNav()">方式</a></li>
+            <li><a href="#glossary" onclick="closeNav()">词汇表</a></li>
+            <li><a href="#faq" onclick="closeNav()">常见问题</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <div class="kicker">天文年历 &middot; 实地版</div>
+                    <h1><span class="stargl">&#10022;</span>Almanox</h1>
+                    <p class="hero-sub">今晚适合看星星吗？</p>
+                    <p class="hero-lede">
+                        一个页面就能回答：今晚评定分数、黄金时刻与蓝调时刻、银河核心、暗夜窗口，以及太阳和月亮拍摄规划器。在你的设备上计算。无需账号，没有云端，无需订阅。
+                    </p>
+                    <div class="cta-row">
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </span>
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>
+                            Google Play
+                        </span>
+                        <a href="#plates" class="btn">查看界面</a>
+                    </div>
+                    <div class="coming"><span class="dot">&#9679;</span> 即将推出 - iPhone、iPad、Android、Mac &amp; Windows</div>
+                </div>
+
+                <!-- Ephemeris readout: data as decoration -->
+                <aside class="ephem" aria-label="星历读数示例">
+                    <div class="ephem-head">
+                        <span class="t">今晚 &middot; 本地星历</span>
+                        <span class="d">33.42&deg;N 96.58&deg;W</span>
+                    </div>
+                    <div class="ephem-body">
+                        <div class="ephem-rows">
+                            <div class="erow"><span class="lbl">日落</span><span class="val">20:14</span></div>
+                            <div class="erow"><span class="lbl">黄金时刻</span><span class="val"><b>19:31 - 20:14</b></span></div>
+                            <div class="erow"><span class="lbl">天文黑夜</span><span class="val">21:44 - 05:02</span></div>
+                            <div class="erow"><span class="lbl">月亮</span><span class="val">新月 &middot; 2%</span></div>
+                            <div class="erow"><span class="lbl">银河核心 &#8593;</span><span class="val"><b>22:58</b></span></div>
+                            <div class="erow verdict">
+                                <span class="lbl">评定</span>
+                                <span style="text-align:right"><span class="score">87</span><span class="val" style="color:var(--faint)">/100</span><br><span class="grade">EXCELLENT</span></span>
+                            </div>
+                        </div>
+                        <div class="ladder" aria-hidden="true">
+                            <div class="seg day"><span>DAY</span></div>
+                            <div class="seg civil"><span>CIV 20:41</span></div>
+                            <div class="seg nautical"><span>NAU 21:12</span></div>
+                            <div class="seg astro"><span>AST 21:44</span></div>
+                            <div class="seg night"><span>NIGHT</span></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Plates -->
+            <div class="plates" id="plates-hero">
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox 今晚评定：今晚适合看星星吗" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>图 I</b> &middot; 今晚</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox 今天：太阳轨迹、黄金时刻和月亮星历" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>图 II</b> &middot; 星历</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox 银河核心与暗夜窗口" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>图 III</b> &middot; 银河</figcaption>
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">总览</div>
+                <h2 class="sec-title">一个页面，整片星空</h2>
+                <p class="sec-desc">天文、天气和规划引擎融合成一个答案。星历和天空运算在你的设备上进行；实时状况来自开放的天气和地图服务。无需账号，没有广告，无需订阅。</p>
+            </div>
+            <div class="ledger">
+                <article class="entry">
+                    <div class="no">No. 01</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9737;</span> 今晚评定</h3>
+                        <p>针对你正在规划的内容，给出一个 0-100 的评分：银河、观星、月亮、夜景或极光。它把真正的黑暗时长、月光干扰、云量以及你所在夜空的光污染，融合成一个诚实的答案：今晚到底好不好？</p>
+                        <div class="meta"><span>评分</span><span>最佳时段</span><span>黑暗程度</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 02</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9728;</span> 日月 &amp; 星历</h3>
+                        <p>日出、日落、黄金时刻与蓝调时刻，以及从民用暮光到天文暮光的完整暮光阶梯。月相、照亮比例，以及月出月落，全部配有实时太阳轨迹弧线。</p>
+                        <div class="meta"><span>黄金时刻</span><span>暮光</span><span>月相</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 03</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> 银河 &amp; 暗夜 <span class="pro-tag">Pro</span></h3>
+                        <p>银河核心的升起、最高点和落下，附带从“较差”到“极佳”的质量评级，再加上无月暗夜窗口预报，让你确切知道哪些时段值得拍摄。</p>
+                        <div class="meta"><span>核心升落</span><span>暗夜窗口</span><span>质量评级</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 04</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9796;</span> 今晚的行星</h3>
+                        <p>此刻有哪些行星在天上、该往哪里看、有多亮，以及它们当前的相位，全部针对你的确切时间和地点在设备上计算。</p>
+                        <div class="meta"><span>可见性</span><span>亮度</span><span>相位</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 05</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8982;</span> 拍摄规划器 <span class="pro-tag">Pro</span></h3>
+                        <p>找出太阳或满月与你选定方向对齐的确切日期。方位角穿越和多日对齐搜索，帮你拍出那张大片，全程离线。</p>
+                        <div class="meta"><span>方位角搜索</span><span>对齐</span><span>多日</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 06</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8983;</span> 离线地图规划器 <span class="pro-tag">Pro</span></h3>
+                        <p>一张可交互的地图，会缓存你看过的图块，所以在野外没有信号时也能继续使用。放下一个图钉，即可看到它的方位、距离，以及太阳或月亮在它身后对齐的确切日期。</p>
+                        <div class="meta"><span>离线图块</span><span>方位 &amp; 距离</span><span>对齐日期</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 07</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9680;</span> 日月食</h3>
+                        <p>日食和月食依据真实星历在设备上计算，并按你的位置筛选，所以列表里只显示你真正能走到户外看到的那些。</p>
+                        <div class="meta"><span>日食 &amp; 月食</span><span>按位置筛选</span><span>设备端</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 08</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9729;</span> 实时天空状况</h3>
+                        <p>每个已保存地点的当前气温、云量和晴空清晰度评定，实时来自 Open-Meteo，免费，无需 API 密钥。详细的逐小时预报属于 Pro 升级内容。</p>
+                        <div class="meta"><span>云量</span><span>清晰度</span><span>按地点</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 09</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8779;</span> 极光预报 <span class="pro-tag">Pro</span></h3>
+                        <p>来自 NOAA 的实时 Kp 指数、你的地磁纬度，以及今晚的直观评定，外加 24 小时 Kp 条带，让你在活动达到峰值之前就能看到它逐渐增强。</p>
+                        <div class="meta"><span>实时 Kp 指数</span><span>地磁纬度</span><span>24 小时条带</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 10</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9954;</span> ISS 过境</h3>
+                        <p>国际空间站下一次经过你头顶的可见过境，根据实时轨道数据在设备上计算：升起时间、方向和最高仰角。</p>
+                        <div class="meta"><span>可见过境</span><span>方向</span><span>设备端</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 11</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8862;</span> 主屏幕小组件</h3>
+                        <p>小组件会在后台自动刷新，即使应用已关闭数小时，主屏幕上的天空信息依然保持最新。</p>
+                        <div class="meta"><span>自动刷新</span><span>后台</span><span>主屏幕</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 12</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9673;</span> 美观，且属于你</h3>
+                        <p>三种底色：浅色、深色和纯黑 AMOLED，颜色随你选，从精选强调色到你自己调出的专属色调。整个界面都会随之变色，而不只是某一处高亮。完整支持读屏，为星空图提供语音摘要，并全面支持动态字体。</p>
+                        <div class="meta"><span>浅色/深色/AMOLED</span><span>任意强调色</span><span>自定义颜色</span><span>读屏</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 13</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> 星座 &amp; 星图</h3>
+                        <p>全部 88 个星座和亮星，映射在你的天空之上，呈现为实时的免费星图，名称和计算全部在你的设备上完成，无需联网。对准即识别的 AR 寻星属于 Pro 升级内容。</p>
+                        <div class="meta"><span>88 个星座</span><span>星图</span><span>离线</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">No. 14</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9790;</span> 离线 &amp; 私密</h3>
+                        <p>天文引擎完全在你的设备上运行。无需注册，无需账号，没有广告，也不会收集位置。买一次，永久拥有，永远没有订阅。</p>
+                        <div class="meta"><span>设备端</span><span>无需账号</span><span>一次性</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plates / Screens -->
+    <section id="plates">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">图版</div>
+                <h2 class="sec-title">实际效果</h2>
+                <p class="sec-desc">每个页面都在你的设备上计算：深色、AMOLED 或浅色，强调色任你选。此处为 Android 截图；同一款应用也可在 iPhone、iPad、Mac 和 Windows 上运行。</p>
+            </div>
+            <div class="plates">
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox - 今晚评定分数" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>图 01</b> &middot; 今晚</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox - 银河与暗夜窗口" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>图 02</b> &middot; 银河</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox - 今天的日月星历" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>图 03</b> &middot; 星历</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/04_plan.jpg" alt="Almanox - 拍摄规划器" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>图 04</b> &middot; 规划器</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/05_locations.jpg" alt="Almanox - 已保存的暗夜地点" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>图 05</b> &middot; 地点</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/06_theme.jpg" alt="Almanox - 任意强调色" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>图 06</b> &middot; 任意颜色</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/07_features.jpg" alt="Almanox - 免费星图、今晚的行星和 ISS 过境" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>图 07</b> &middot; 免费附赠</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1170" height="2532" src="/almanox/screenshots/07_light.jpg" alt="Almanox - 浅色主题" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>图 07</b> &middot; 浅色</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- How / Method -->
+    <section id="how" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">原理</div>
+                <h2 class="sec-title">一切都在设备上，云端空无一物</h2>
+                <p class="sec-desc">Almanox 在本地运行完整的天文引擎。无需账号，无需注册，关掉信号也能用：不管有没有信号格，天空都是同一片天空。</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="n">1</div>
+                    <h3>选择你的拍摄地</h3>
+                    <p>使用当前位置，或保存你常去拍摄的地方。Almanox 会针对你所在的确切位置计算太阳、月亮和天空。</p>
+                </div>
+                <div class="step">
+                    <div class="n">2</div>
+                    <h3>查看评定</h3>
+                    <p>一个分数回答唯一重要的问题：今晚值不值得？看最佳暗夜窗口、银河核心，以及月亮会带来多大干扰。</p>
+                </div>
+                <div class="step">
+                    <div class="n">3</div>
+                    <h3>规划拍摄</h3>
+                    <p>找出太阳或满月与你的方向对齐的确切日期，抓住黄金时刻，并在天空准备就绪前收到提醒。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section id="glossary" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">词汇表</div>
+                <h2 class="sec-title">天空实用手册</h2>
+                <p class="sec-desc">整个应用围绕的这些词，以及为什么每一个都是你把 Almanox 放在口袋里的理由。</p>
+            </div>
+            <div class="gloss">
+                <div class="row"><div class="term"><span class="tag">天文年历</span>星历</div><div class="def">一份按天排列的天空表：太阳和月亮何时升落、月相如何，以及你能获得多少小时的真正黑暗。Almanox 是一本<b>为你所在位置而生的活星历</b>，会针对你的地点重新计算，而不是千篇一律的印刷版。</div></div>
+                <div class="row"><div class="term"><span class="tag">最佳光线</span>黄金时刻</div><div class="def">日出之后和日落之前的那段时间，太阳低垂，光线变得温暖柔和。这是大多数风光和人像摄影师苦苦等待的光线，而 <b>Almanox 会给出今天确切的开始和结束时间</b>，无论你身在何处。</div></div>
+                <div class="row"><div class="term"><span class="tag">蓝色光线</span>蓝调时刻</div><div class="def">日出之前和日落之后的短暂时段，太阳位于地平线以下，整片天空泛起深邃而均匀的蓝色。这是拍摄城市风光和氛围天空的黄金时机，来得快去得也快，所以<b>精确到分钟的把握至关重要</b>。</div></div>
+                <div class="row"><div class="term"><span class="tag">步入黑暗</span>暮光阶梯</div><div class="def">黑暗分三步到来：<b>民用暮光、航海暮光，然后是天文暮光</b>。天文暮光结束时，天空终于变黑，暗弱的星星才浮现出来。那一刻，观星者和天文摄影师才真正开始拍摄。</div></div>
+                <div class="row"><div class="term"><span class="tag">星系</span>银河核心</div><div class="def">明亮的银河系中心，也就是人人都在拍的那片璀璨、细节丰富的区域。它只在一年中的部分时节、一夜中的部分时段位于地平线之上。Almanox 会告诉你<b>核心何时升起、何时到达最高点、何时落下</b>，并评估它的观感如何。</div></div>
+                <div class="row"><div class="term"><span class="tag">窗口</span>暗夜窗口</div><div class="def">夜晚中<b>既没有太阳也没有月亮</b>来冲淡天空的那一段时间。只有此时，深空和银河的拍摄才真正可行，而且它每晚都在变化，这恰恰是手工推算最繁琐的地方。</div></div>
+                <div class="row"><div class="term"><span class="tag">月光</span>月相 &amp; 照亮比例</div><div class="def">月亮被照亮的比例，从新月到满月。明亮的月亮会<b>淹没天空，吞掉银河</b>；新月则让天空漆黑一片。对任何夜间拍摄来说，了解今晚的月亮就已成功一半。</div></div>
+                <div class="row"><div class="term"><span class="tag">答案</span>今晚评定</div><div class="def">Almanox 根据你正在规划的内容调整，银河、观星、月亮、夜景或极光，把黑暗时长、月光干扰、云量和光污染综合成<b>一个诚实的 0-100 评分</b>。你不必再交叉核对五项内容，只需瞥一眼一个数字，就知道今晚值不值得出门。</div></div>
+                <div class="row"><div class="term"><span class="tag">对齐</span>太阳 &amp; 月亮连线</div><div class="def">太阳或满月升起或落下时<b>与地标或罗盘方向对齐</b>的确切日期，也就是那些满月悬在桥后或山峰后的大片背后的规划。Almanox 会替你搜索未来的日子。</div></div>
+                <div class="row"><div class="term"><span class="tag">头顶</span>ISS 过境</div><div class="def">国际空间站飞过时，亮度足以用肉眼看见：一个稳定、快速移动的光点。Almanox 会告诉你<b>下一次可见的过境、方向，以及它升得有多高</b>。</div></div>
+                <div class="row"><div class="term"><span class="tag">星图</span>星座</div><div class="def">88 个有名字的星空图案：猎户座、北斗七星、银河之上的人马座。Almanox 会在星图以及 AR 寻星中，把它们和亮星全部绘制在<b>你真实的天空</b>上，让你对准就能叫出名字。</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">承诺</div>
+                <h2 class="sec-title">天生注重隐私</h2>
+                <p class="sec-desc">Almanox 的设计初衷就是不打扰你。无需账号，没有广告，不收集位置，只有在你设备上计算出的天空。</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4>离线可用</h4><p>天文引擎完全在你的手机上运行。太阳、月亮、暮光、银河和拍摄规划器，在完全没有网络的情况下都能工作。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4>永远不需要账号</h4><p>无需注册，无需邮箱，也没有 MiyaraHub 登录。下载、打开，即可开始规划，无需创建，无需记忆。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9738;</span><div><h4>你的位置属于你</h4><p>位置仅用于计算你的天空和获取本地状况，绝不出售，也绝不用于给你画像。天气数据匿名来自 Open-Meteo，无需账号或密钥。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4>一次性购买</h4><p>买一次，永久拥有。无订阅，无周期性扣费，更新不收费，与大多数摄影应用的定价方式截然相反。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4>无广告，不出售你的数据</h4><p>没有广告 SDK，没有广告网络，没有数据经纪商。Almanox 使用匿名的第一方统计来了解哪些功能被使用，并在出问题时上报崩溃信息，绝不与你的身份关联，绝不出售。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9789;</span><div><h4>一款应用，所有设备</h4><p>同样精美的离线规划器，覆盖 iPhone、iPad、Android、Mac 和 Windows，无论你在哪里拍摄。</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">旁注</div>
+                <h2 class="sec-title">常见问题</h2>
+                <p class="sec-desc">关于 Almanox 你需要知道的一切。</p>
+            </div>
+            <div class="faq">
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Almanox 是订阅制吗？<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in"><strong>不是。</strong>Almanox 是一次性购买，价格 $12.99。无订阅、无广告、更新不收费。买一次，即可在 App Store、Google Play 或 Microsoft Store 上永久拥有。</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">没有网络也能用吗？<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">核心星历功能完全在你的设备上运行：太阳、月亮、暮光、银河、暗夜窗口、星图和拍摄规划器都不需要联网。实时状况（天气、极光、ISS 过境和地图）在使用时需要联网。</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">哪些是免费的，哪些是 Pro？<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">免费版相当大方：完整的日月星历（日出/日落、黄金时刻与蓝调时刻、暮光阶梯、月相）、今晚评定分数、实时云量和光污染提示、极光预报、今晚的行星、ISS 过境、星座星图、流星雨和日月食日历、未来 7 个最佳夜晚、好夜晚暗夜提醒、三个已保存地点，以及任意颜色的所有主题。Pro（$12.99，一次性购买）则解锁银河核心预报、深空目标、驱车出行地图规划器和暗夜地点查找器、太阳和月亮拍摄规划器、摄影计算器、详细的逐小时预报、AR 寻星、主屏幕小组件、黄金时刻和自定义提醒、60 晚展望，以及无限数量的已保存地点。</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">支持哪些设备？<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">iPhone、iPad、Android、Mac 和 Windows，同一套精美一致的设计。它能适应浅色、深色和纯黑 AMOLED，强调色任你选：精选色调或自定义颜色。</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">需要账号吗？<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">不需要。无需注册、无需邮箱，也没有 MiyaraHub 登录。下载应用，立刻开始规划。你的位置仅用于计算你的天空，绝不会被出售、共享或追踪。</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">今晚评分是怎么计算的？<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">选择你要规划的内容：银河、观星、月亮、夜景或极光，Almanox 会综合真正的天文黑夜时长、月光干扰、云量以及你所在位置的光污染，给出 0-100 的评分。这是一份快速而诚实的参考，告诉你今晚值不值得出门。</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free vs Pro -->
+    <section id="pricing">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">免费版 &amp; Pro</div>
+                <h2 class="sec-title">大方的免费应用，加一次诚意十足的升级</h2>
+                <p class="sec-desc">回答“今晚值不值得”所需的一切都是免费的。Pro（$12.99，一次性购买，无需订阅）则增加了深度规划工具。每个锁定的功能都会先展示真实示例。</p>
+            </div>
+            <div class="cmp-wrap">
+                <table class="cmp">
+                    <thead>
+                        <tr><th scope="col">功能</th><th scope="col">免费</th><th scope="col">Pro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>日月星历 &amp; 黄金时刻/蓝调时刻、暮光、月相</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>今晚评定分数（银河、观星、月亮、极光）</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>实时云量 &amp; 光污染提示</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>暗夜窗口 &amp; 今晚最佳时段</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>极光预报 &amp; 今晚的行星</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>ISS 过境</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>星座星图（88 个星座）</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>流星雨 &amp; 日月食日历</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>好夜晚暗夜提醒</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>所有主题 &amp; 强调色，无广告，无需登录</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>银河核心预报 &amp; 深空目标</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>太阳 &amp; 月亮拍摄规划器</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>摄影计算器（500 / NPF / 景深）</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>驱车出行地图规划器 &amp; 暗夜地点查找器</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>详细的逐小时预报</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>AR 寻星</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>主屏幕小组件</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>黄金时刻 &amp; 自定义提醒</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>未来最佳夜晚</td><td>7 晚</td><td class="y">60 晚</td></tr>
+                        <tr><td>已保存的地点</td><td>3</td><td class="y">无限</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <style>
+        #pricing .cmp-wrap { overflow-x: auto; margin-top: 1.6rem; border: 1px solid var(--line); border-radius: 14px; }
+        #pricing table.cmp { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 460px; }
+        #pricing .cmp th, #pricing .cmp td { text-align: left; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+        #pricing .cmp thead th { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); background: var(--ink-2); }
+        #pricing .cmp thead th:nth-child(2), #pricing .cmp thead th:nth-child(3),
+        #pricing .cmp tbody td:nth-child(2), #pricing .cmp tbody td:nth-child(3) { text-align: center; width: 5.5rem; }
+        #pricing .cmp thead th:nth-child(3) { color: var(--brass); }
+        #pricing .cmp tbody tr:last-child td { border-bottom: none; }
+        #pricing .cmp td.y { color: var(--brass); font-weight: 600; }
+        #pricing .cmp td.n { color: var(--faint); }
+        #pricing .cmp tbody td:first-child { color: var(--star); }
+    </style>
+
+    <!-- Guide -->
+    <section id="guide" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">实地指南</div>
+                <h2 class="sec-title">学会读懂天空</h2>
+                <p class="sec-desc">一本完整的图文手册：今晚评定是如何构成的，如何规划银河核心，如何对齐太阳或月亮拍摄，如何进行摄影计算，以及如何找到真正的暗夜星空。</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4><a href="/zh-hans/almanox/tonight-verdict/">今晚评定</a></h4><p>0-100 评分如何融合黑暗程度、月亮、银河高度和云量，以及“良好”“一般”“较差”究竟意味着什么。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4><a href="/zh-hans/almanox/milky-way/">银河 &amp; 暗夜窗口</a></h4><p>银河核心升起时间、最高高度，以及拍摄它的无月精确时段，无论你身在何处。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9788;</span><div><h4><a href="/zh-hans/almanox/shot-planner/">拍摄规划器</a></h4><p>太阳或满月与你的方向对齐的日子，精确到天，规划出“拱门后日出”那样的画面。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/zh-hans/almanox/photo-calculators/">摄影计算器</a></h4><p>500 法则、更严格的 NPF 法则，以及带超焦距的景深，为你的器材量身计算。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4><a href="/zh-hans/almanox/dark-sky-finder/">暗夜查找器</a></h4><p>最近的国际暗夜认证地点，按距离排序，并附方向和大致车程。</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/zh-hans/almanox/settings/">设置、主题 &amp; 提醒</a></h4><p>浅色、深色和纯黑 AMOLED，任意强调色，可调整顺序的卡片，单文件备份，以及在光线出现之前就响起的提醒。</p></div></div>
+            </div>
+            <div class="cta-row" style="justify-content:center;margin-top:2.4rem">
+                <a class="btn store" href="/zh-hans/almanox/guide/">阅读完整指南</a>
+                <a class="btn" href="/zh-hans/almanox/help/">帮助 &amp; FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap fade">
+            <div class="kicker" style="display:block;margin-bottom:1rem">&#10022; 晴空在望</div>
+            <h2>规划你的下一个晴夜</h2>
+            <p>Almanox 即将登陆 iPhone、iPad、Android、Mac 和 Windows。一次性购买，无需订阅，完全离线。</p>
+            <div class="cta-row" style="justify-content:center">
+                <span class="btn store" style="cursor:default">App Store &middot; 敬请期待</span>
+                <span class="btn store" style="cursor:default">Google Play &middot; 敬请期待</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap foot">
+            <div class="c">
+                &copy; 2026 MiyaraHub Technologies LLC &middot; Van Alstyne, Texas。保留所有权利。<br> <b>Almanox</b> - 为摄影师和观星者打造的太阳、月亮与银河规划应用。<br> <span class="legal">Almanox 是 MiyaraHub Technologies LLC 出品的独立应用，与任何第三方均无关联，亦未获其认可或赞助。实时天气由 Open-Meteo 提供，地点查询由 OpenStreetMap 贡献者提供；暗夜指引源自公开的光污染数据集。文中提及的所有产品名称均为其各自所有者的商标。</span>
+            </div>
+            <ul>
+                <li><a href="/zh-hans/">MiyaraHub</a></li>
+                <li><a href="/zh-hans/privacy.html">隐私</a></li>
+                <li><a href="/zh-hans/terms.html">条款</a></li>
+                <li><a href="mailto:admin@miyarahub.com">支持</a></li>
+            </ul>
+        </div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHub 应用"><span class="fa-h">应用</span><a href="/zh-hans/avr-maestro/">AVR Maestro</a><a href="/zh-hans/synology-manager/">Syno Manager</a><a href="/zh-hans/upsight/">UPSight</a><a href="/zh-hans/fury-path/">FuryPath</a><a href="/zh-hans/uc-remote/">UC Remote</a><a href="/zh-hans/almanox/">Almanox</a><a href="/zh-hans/nexus-deck/">NexusDeck</a><a href="/zh-hans/avr-maestro-mc/">AVR Maestro MC</a><a href="/zh-hans/network-deck/">Network Deck</a><a href="/zh-hans/projector-pilot/">Projector Pilot</a><a href="/zh-hans/elan-audio-lab/">Elan Audio Lab</a><a href="/zh-hans/support/">支持</a></div>
+    <p class="foot-tm">MiyaraHub 应用均为独立产品，与其所适配的硬件及服务的制造商之间不存在关联、认可或赞助关系。所有商标均归其各自所有者所有。<a href="/zh-hans/#legal">商标声明</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.fade').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+        });
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade:not(.vis)').forEach(el => io.observe(el));
+
+        function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+        function closeNav() {
+            document.getElementById('nav-menu').classList.remove('open');
+            document.getElementById('nav-toggle').classList.remove('open');
+        }
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+    </script>
+  <script defer src="/almanox/search.js"></script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

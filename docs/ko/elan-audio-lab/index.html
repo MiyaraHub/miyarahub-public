@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elan Audio Lab: 진공관 앰프 이커머스 구축 - MiyaraHub</title>
+    <meta name="description" content="Elan Audio Lab은 MiyaraHub가 부티크 진공관 앰프 브랜드를 위해 만든 풀스택 이커머스 플랫폼이에요. 카탈로그, 맞춤 앰프 빌더, 결제, iOS와 Android를 갖췄어요.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Elan Audio Lab: 진공관 앰프 이커머스 구축">
+    <meta property="og:description" content="Elan Audio Lab은 MiyaraHub가 부티크 진공관 앰프 브랜드를 위해 만든 풀스택 이커머스 플랫폼이에요. 카탈로그, 맞춤 앰프 빌더, 결제, iOS와 Android를 갖췄어요.">
+    <meta property="og:url" content="https://miyarahub.com/ko/elan-audio-lab/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/elan-audio-lab.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Elan Audio Lab, a full-stack e-commerce platform for a boutique tube amplifier brand, built by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elan Audio Lab: 진공관 앰프 이커머스 구축">
+    <meta name="twitter:description" content="Elan Audio Lab은 MiyaraHub가 부티크 진공관 앰프 브랜드를 위해 만든 풀스택 이커머스 플랫폼이에요. 카탈로그, 맞춤 앰프 빌더, 결제, iOS와 Android를 갖췄어요.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/elan-audio-lab.png">
+    <meta name="twitter:image:alt" content="Elan Audio Lab, a full-stack e-commerce platform for a boutique tube amplifier brand, built by MiyaraHub Technologies.">
+    <meta name="keywords" content="Elan Audio Lab, tube amplifier shop, boutique tube amplifiers, hand-soldered tube amps, custom tube amplifier, tube amp builder, tube amp e-commerce, handmade amplifier, vacuum tube amplifier, hi-fi tube amp, audiophile tube amplifier, guitar tube amp, tube amp kit, vintage tube amplifier, tube amplifier for sale, buy tube amplifier online, audio equipment store, boutique audio equipment, handcrafted amplifiers, tube amp customization, amp builder custom order, audio lab Dallas Texas, premium audio equipment, hi-fi audio shop, audiophile equipment store, Elan Audio, tube amp artisan, Flutter e-commerce platform, MiyaraHub">
+    <link rel="canonical" href="https://miyarahub.com/ko/elan-audio-lab/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/elan-audio-lab/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/elan-audio-lab/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/elan-audio-lab/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/elan-audio-lab/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/elan-audio-lab/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/elan-audio-lab/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/elan-audio-lab/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/elan-audio-lab/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/elan-audio-lab/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/elan-audio-lab/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/elan-audio-lab/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/elan-audio-lab/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/elan-audio-lab/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/elan-audio-lab/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/elan-audio-lab/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/elan-audio-lab/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/elan-audio-lab/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/elan-audio-lab/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/elan-audio-lab/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/elan-audio-lab/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/elan-audio-lab/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/elan-audio-lab/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/elan-audio-lab/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/elan-audio-lab/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/elan-audio-lab/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/elan-audio-lab/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/elan-audio-lab/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/elan-audio-lab/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/elan-audio-lab/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/elan-audio-lab/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/elan-audio-lab/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/elan-audio-lab-icon.png">
+    <link rel="apple-touch-icon" href="/assets/elan-audio-lab-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#06b6d4; --accent-deep:#22d3ee; --accent-soft:rgba(6,182,212,.12); --accent-star:rgba(6,182,212,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .kicker .pill{font-family:'IBM Plex Mono',monospace; font-size:.58rem; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent-star); border-radius:2px; padding:.14rem .5rem; margin-left:.7rem; vertical-align:middle}
+        .tagline{display:inline-flex; align-items:center; gap:.6rem; margin:1.3rem 0 1.5rem; padding:.75rem 1.15rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft); font-family:'IBM Plex Mono',monospace; font-size:.74rem; letter-spacing:.03em; color:var(--muted)}
+        .tagline b{color:var(--accent); font-weight:500}
+        .store-row{display:flex; gap:.7rem; flex-wrap:wrap; margin-bottom:0}
+        .store-row .btn svg{fill:var(--accent)}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#0f1a2c,#0b1322); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .statband{display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:2.3rem 0}
+        .statband .st{text-align:center}
+        .statband .st .num{font-family:'Fraunces',Georgia,serif; font-size:clamp(2rem,4vw,2.9rem); font-weight:600; color:var(--accent); line-height:1}
+        .statband .st .lbl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-top:.55rem}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.p-hero{grid-template-columns:1fr; gap:2.4rem}.device{order:-1}}
+        @media(max-width:620px){.statband{grid-template-columns:repeat(2,1fr); gap:1.7rem}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "네이티브 앱, 풀스택 웹과 이커머스 플랫폼, 시스템 및 모니터링 도구, 기기 연동, DevOps 파이프라인을 만드는 작고 독립적인 소프트웨어 스튜디오입니다.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "ko", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/elan-audio-lab/#webpage", "url": "https://miyarahub.com/elan-audio-lab/", "name": "Elan Audio Lab: 진공관 앰프 이커머스 구축 - MiyaraHub", "description": "Elan Audio Lab은 MiyaraHub가 부티크 진공관 앰프 브랜드를 위해 만든 풀스택 이커머스 플랫폼이에요. 카탈로그, 맞춤 앰프 빌더, 결제, iOS와 Android를 갖췄어요.", "inLanguage": "ko", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/elan-audio-lab.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/elan-audio-lab/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/elan-audio-lab/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/elan-audio-lab/#app", "name": "Elan Audio Lab", "description": "제품 카탈로그, 맞춤 설정 빌더, 통합 결제를 갖춘, 수작업 납땜 부티크 진공관 앰프용 이커머스 플랫폼이에요.", "url": "https://miyarahub.com/elan-audio-lab/", "operatingSystem": "Web, iOS, Android", "applicationCategory": "ShoppingApplication", "image": "https://miyarahub.com/assets/elan-audio-lab-icon.png", "screenshot": ["https://miyarahub.com/elan-audio-lab/screenshots/home-page.png", "https://miyarahub.com/elan-audio-lab/screenshots/catalog.png", "https://miyarahub.com/elan-audio-lab/screenshots/customize-your-amp.png", "https://miyarahub.com/elan-audio-lab/screenshots/bundles.png", "https://miyarahub.com/elan-audio-lab/screenshots/artists.png", "https://miyarahub.com/elan-audio-lab/screenshots/our-story.png", "https://miyarahub.com/elan-audio-lab/screenshots/menu.png", "https://miyarahub.com/elan-audio-lab/screenshots/register-your-product.png"], "creator": {"@id": "https://miyarahub.com/#organization"}, "installUrl": ["https://play.google.com/store/apps/details?id=com.elanaudiolab.app", "https://apps.apple.com/us/app/elan-audio-lab/id6760269249"], "sameAs": ["https://play.google.com/store/apps/details?id=com.elanaudiolab.app", "https://apps.apple.com/us/app/elan-audio-lab/id6760269249", "https://elanaudiolab.com"]}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/elan-audio-lab/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "홈", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Elan Audio Lab", "item": "https://miyarahub.com/elan-audio-lab/"}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="확대한 Elan Audio Lab 스크린샷"></div>
+
+    <nav>
+        <a href="/ko/" class="nav-brand"><img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub 로고"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="메뉴"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="언어">
+            <li><a href="/ko/" onclick="closeNav()">홈</a></li>
+            <li><a href="#screens" onclick="closeNav()">화면</a></li>
+            <li><a href="#features" onclick="closeNav()">기능</a></li>
+            <li><a href="#tech" onclick="closeNav()">기술</a></li>
+            <li><a href="#admin" onclick="closeNav()">관리자</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/ko/">MiyaraHub</a> / Elan Audio Lab</div>
+            <div class="p-hero">
+                <div>
+                    <img decoding="async" width="192" height="192" class="ico" src="/assets/icons/elan-audio-lab-icon-192.png" alt="Elan Audio Lab 앱 아이콘">
+                    <h1 class="hk"><span class="kicker h1k">Elan Audio Lab<span class="pill">웹 플랫폼</span></span><span class="h1t">부티크 진공관 앰프를 처음부터 끝까지 판매해요.<span class="stargl">&#10022;</span></span></h1>
+                    <p class="hero-sub">35년이 넘는 역사를 지닌 부티크 진공관 앰프 브랜드를 위한 풀스택 이커머스 플랫폼이에요.</p>
+                    <p class="hero-lede">제품 카탈로그, 맞춤 앰프 빌더, 이중 결제 처리, 아티스트 쇼케이스, 20개가 넘는 화면의 완전한 관리자 포털을 갖췄어요.</p>
+                    <div class="tagline"><b>&#9670;</b> 부티크 이커머스 플랫폼 &middot; 35년이 넘는 앰프 제작의 전통</div>
+                    <div class="store-row">
+                        <a class="btn store" href="https://elanaudiolab.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-3a15.7 15.7 0 0 0-1.3-3.4A8 8 0 0 1 18.9 8zM12 4c.8 1.1 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.9 1.9-4zM4.3 14a7.9 7.9 0 0 1 0-4h3.4a17.6 17.6 0 0 0 0 4H4.3zm.8 2h3a15.7 15.7 0 0 0 1.3 3.4A8 8 0 0 1 5.1 16zm3-8h-3a8 8 0 0 1 4.3-3.4A15.7 15.7 0 0 0 8.1 8zM12 20c-.8-1.1-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.9-1.9 4zm2.3-6H9.7a15.6 15.6 0 0 1 0-4h4.6a15.6 15.6 0 0 1 0 4zm.6 5.4c.6-1 1-2.1 1.3-3.4h3a8 8 0 0 1-4.3 3.4zm1.7-5.4a17.6 17.6 0 0 0 0-4h3.4a7.9 7.9 0 0 1 0 4h-3.4z"/></svg>스토어 방문하기</a>
+                        <a class="btn store" href="https://play.google.com/store/apps/details?id=com.elanaudiolab.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>Google Play</a>
+                        <a class="btn store" href="https://apps.apple.com/us/app/elan-audio-lab/id6760269249" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>App Store</a>
+                    </div>
+                    <div class="platforms">
+                        <span class="pl-lbl">다운로드 가능한 플랫폼</span>
+                        <span class="pl">iPhone</span><span class="pl">iPad</span><span class="pl">Android</span><span class="pl">웹</span>
+                    </div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img fetchpriority="high" decoding="async" width="1344" height="2992" src="/elan-audio-lab/screenshots/home-page.png" alt="Elan Audio Lab 스토어프론트 홈 페이지" onclick="openLightbox(this)"></div>
+                    <div class="cap">스토어프론트 홈</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats -->
+    <section style="padding:0">
+        <div class="wrap">
+            <div class="statband">
+                <div class="st"><div class="num">3</div><div class="lbl">플랫폼(웹, iOS, Android)</div></div>
+                <div class="st"><div class="num">652</div><div class="lbl">통과한 테스트</div></div>
+                <div class="st"><div class="num">20+</div><div class="lbl">관리자 화면</div></div>
+                <div class="st"><div class="num">6</div><div class="lbl">CI/CD 파이프라인</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screens -->
+    <section id="screens" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">실제 작동 모습</div><h2 class="sec-title">다크 모드 우선, 진공관 작업실의 따뜻함.</h2><p class="sec-desc">Elan Audio Lab의 실제 화면이에요. 카탈로그, 앰프 빌더, 번들, 아티스트, 스토리, 보증 등록을 보여 드려요. 탭하면 확대돼요.</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/elan-audio-lab/screenshots/catalog.png" alt="필터링과 검색을 지원하는 Elan Audio Lab 제품 카탈로그" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/elan-audio-lab/screenshots/customize-your-amp.png" alt="실시간 가격이 표시되는 Elan Audio Lab 앰프 맞춤 설정 빌더" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/elan-audio-lab/screenshots/bundles.png" alt="절약 금액이 계산되는 Elan Audio Lab 제품 번들" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/elan-audio-lab/screenshots/artists.png" alt="Elan Audio Lab 아티스트 및 연주자 명예의 전당" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/elan-audio-lab/screenshots/our-story.png" alt="Elan Audio Lab 브랜드 역사 스토리 페이지" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/elan-audio-lab/screenshots/menu.png" alt="Elan Audio Lab 탐색 메뉴" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1344" height="2992" src="/elan-audio-lab/screenshots/register-your-product.png" alt="Elan Audio Lab 보증 등록 양식" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">스토어프론트 기능</div><h2 class="sec-title">완전한 이커머스 경험.</h2><p class="sec-desc">제품 탐색부터 맞춤 앰프 제작, 이중 결제 처리, 아티스트 커뮤니티까지 부티크 브랜드에 필요한 모든 기능을 갖췄어요.</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">No. 01</div><div class="body"><h3><span class="glyph">&#9635;</span> 제품 카탈로그</h3><p>헤드, 콤보, 캐비닛, 액세서리, 굿즈, 부품을 필터링, 검색, 제품 배지(신제품, 세일, 한정판), 할인 가격과 함께 제공해요.</p><div class="meta"><span>필터링</span><span>검색</span><span>배지</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 02</div><div class="body"><h3><span class="glyph">&#9881;</span> 앰프 맞춤 설정 빌더</h3><p>실시간 가격을 보며 맞춤 앰프 개조를 구성하세요. 추가 옵션을 선택하고, 누적 합계를 확인하고, 나중을 위해 구성을 저장하고, 공유할 수 있어요.</p><div class="meta"><span>실시간 가격</span><span>구성 저장</span><span>공유</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 03</div><div class="body"><h3><span class="glyph">&#9673;</span> 이중 결제 처리</h3><p>신용카드용 Square Web Payments SDK와 PayPal 연동을 제공해요. 세금 계산, USPS를 통한 주소 확인, 주문 추적도 지원해요.</p><div class="meta"><span>Square</span><span>PayPal</span><span>USPS</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 04</div><div class="body"><h3><span class="glyph">&#9670;</span> 아티스트 쇼케이스</h3><p>Elan 제품을 사용하는 아티스트와 연주자를 소개하는 명예의 전당이에요. 사회적 증거로서 후기, 인용문, YouTube 영상 링크를 담았어요.</p><div class="meta"><span>후기</span><span>YouTube</span><span>사회적 증거</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 05</div><div class="body"><h3><span class="glyph">&#9636;</span> 제품 번들</h3><p>절약 금액이 자동 계산되는 엄선한 번들 특가예요. 개별 구매와 번들 가격, 포함 항목을 보여 주고 원클릭으로 장바구니에 담을 수 있어요.</p><div class="meta"><span>절약 계산</span><span>번들 특가</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 06</div><div class="body"><h3><span class="glyph">&#9678;</span> 브랜드 스토리 &amp; 콘텐츠</h3><p>MetalHead Electronics의 35년이 넘는 역사를 담은 풍부한 "Our Story" 페이지예요. CMS 기반 콘텐츠의 블로그, 미디어 갤러리, 뉴스레터 가입도 있어요.</p><div class="meta"><span>블로그</span><span>갤러리</span><span>CMS</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 07</div><div class="body"><h3><span class="glyph">&#9634;</span> 보증 등록</h3><p>일련번호 조회, 구매일, 보증 활성화를 지원하는 제품 등록 양식이에요. 관리자 패널로 바로 전달되어 추적할 수 있어요.</p><div class="meta"><span>일련번호 조회</span><span>등록</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> 퀴즈 추천</h3><p>연주 스타일, 장르, 필요에 따라 알맞은 앰프를 찾도록 돕는 대화형 퀴즈예요. 맞춤형 제품 추천을 제공해요.</p><div class="meta"><span>대화형</span><span>맞춤형</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tech" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">기술 스택</div><h2 class="sec-title">최신 도구로 만들었어요.</h2><p class="sec-desc">Supabase 서버리스 인프라를 기반으로 하는 크로스 플랫폼 Flutter 앱이에요. 이중 결제 SDK와 포괄적인 CI/CD를 갖췄어요.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>Flutter + Dart</h4><p>웹, iOS, Android를 위한 단일 코드베이스</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>Supabase</h4><p>인증, 데이터베이스, 스토리지, 엣지 함수</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>Square SDK</h4><p>신용카드 처리(Web Payments)</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>PayPal</h4><p>대체 결제 수단</p></div></div>
+                <div class="p"><span class="g">&#9881;</span><div><h4>Riverpod + MVVM</h4><p>상태 관리 &amp; 아키텍처</p></div></div>
+                <div class="p"><span class="g">&#9636;</span><div><h4>Freezed + GoRouter</h4><p>불변 모델 &amp; 경로 기반 탐색</p></div></div>
+                <div class="p"><span class="g">&#9634;</span><div><h4>행 수준 보안</h4><p>데이터베이스 수준 접근 제어</p></div></div>
+                <div class="p"><span class="g">&#10022;</span><div><h4>CI/CD 파이프라인 6개</h4><p>웹 + Android + iOS x 스테이징 + 프로덕션</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Portal -->
+    <section id="admin">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">관리자 포털</div><h2 class="sec-title">20개가 넘는 관리 화면.</h2><p class="sec-desc">제품, 주문, 고객, 콘텐츠, 시스템 설정까지 스토어프론트의 모든 부분을 관리하는 완전한 백오피스예요.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>대시보드</h4><p>매출 개요, 최근 주문, 활동 로그</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>제품 &amp; 카테고리</h4><p>이미지, 가격, 배지를 포함한 전체 CRUD</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>주문 &amp; 고객</h4><p>주문 관리, 고객 프로필</p></div></div>
+                <div class="p"><span class="g">&#9881;</span><div><h4>맞춤 설정</h4><p>구성 요소, 옵션, 가격 규칙</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>번들 &amp; 배지</h4><p>번들 특가, 제품 배지 관리</p></div></div>
+                <div class="p"><span class="g">&#9636;</span><div><h4>블로그 &amp; 갤러리</h4><p>CMS 콘텐츠, 미디어 관리</p></div></div>
+                <div class="p"><span class="g">&#10022;</span><div><h4>퀴즈 &amp; 대기자 명단</h4><p>추천 퀴즈 설정, 대기자 명단 가입</p></div></div>
+                <div class="p"><span class="g">&#9634;</span><div><h4>이메일 &amp; 뉴스레터</h4><p>템플릿, 메시지, 구독자 관리</p></div></div>
+                <div class="p"><span class="g">&#9639;</span><div><h4>사이트 &amp; 시스템 설정</h4><p>기능 플래그, SEO, 콘텐츠 페이지</p></div></div>
+                <div class="p"><span class="g">&#9671;</span><div><h4>사용자 관리</h4><p>역할, 권한, 계정 설정</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>법적 고지 &amp; 상표 안내</h3>
+            <p>Elan Audio Lab은 MiyaraHub Technologies LLC가 개발하고 게시한 풀스택 이커머스 구축 사례예요. 스토어프론트, 컴패니언 앱, 관리자 포털은 독립적인 소프트웨어예요.</p>
+            <p>"Square"는 Block, Inc.의 상표입니다. "PayPal"은 PayPal Holdings, Inc.의 상표입니다. "Flutter"와 "Dart"는 Google LLC의 상표입니다. "Supabase"는 Supabase, Inc.의 상표입니다. 기타 모든 제품명, 로고, 브랜드는 각 소유자의 자산이며 식별과 호환성 안내 목적으로만 사용되었습니다.</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>직접 확인해 보세요.</h2>
+            <p>Elan Audio Lab은 웹, Google Play, App Store에서 운영 중이에요.</p>
+            <div class="store-row" style="justify-content:center">
+                <a class="btn primary" href="https://elanaudiolab.com" target="_blank" rel="noopener">elanaudiolab.com 방문하기</a>
+                <a class="btn" href="https://play.google.com/store/apps/details?id=com.elanaudiolab.app" target="_blank" rel="noopener">Google Play</a>
+                <a class="btn" href="https://apps.apple.com/us/app/elan-audio-lab/id6760269249" target="_blank" rel="noopener">App Store</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Van Alstyne, TX. 모든 권리 보유.</div>
+            <ul>
+                <li><a href="/ko/">홈</a></li>
+                <li><a href="/ko/support/">지원</a></li>
+                <li><a href="/ko/privacy.html">개인정보 보호</a></li>
+                <li><a href="/ko/terms.html">이용약관</a></li>
+            </ul>
+        </div></div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHub 앱"><span class="fa-h">앱</span><a href="/ko/avr-maestro/">AVR Maestro</a><a href="/ko/synology-manager/">Syno Manager</a><a href="/ko/upsight/">UPSight</a><a href="/ko/fury-path/">FuryPath</a><a href="/ko/uc-remote/">UC Remote</a><a href="/ko/almanox/">Almanox</a><a href="/ko/nexus-deck/">NexusDeck</a><a href="/ko/avr-maestro-mc/">AVR Maestro MC</a><a href="/ko/network-deck/">Network Deck</a><a href="/ko/projector-pilot/">Projector Pilot</a><a href="/ko/elan-audio-lab/">Elan Audio Lab</a><a href="/ko/support/">지원</a></div>
+    <p class="foot-tm">MiyaraHub 앱은 독립적으로 제작되었으며, 연동되는 하드웨어와 서비스의 제조사와 제휴, 보증, 후원 관계가 없습니다. 모든 상표는 해당 소유자에게 있습니다. <a href="/ko/#legal">상표 고지</a></p>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

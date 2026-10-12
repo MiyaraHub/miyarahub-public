@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanox: सूर्य, चंद्रमा &amp; आकाशगंगा प्लानर ऐप - MiyaraHub</title>
+    <meta name="description" content="Almanox iOS, Android, Mac और Windows के लिए ऑफ़लाइन सूर्य, चंद्रमा और आकाशगंगा प्लानर है: Tonight वर्डिक्ट, गोल्डन आवर, डार्क-स्काई विंडो और शॉट प्लानर।">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hi_IN">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Almanox: सूर्य, चंद्रमा &amp; आकाशगंगा प्लानर ऐप">
+    <meta property="og:description" content="Almanox iOS, Android, Mac और Windows के लिए ऑफ़लाइन सूर्य, चंद्रमा और आकाशगंगा प्लानर है: Tonight वर्डिक्ट, गोल्डन आवर, डार्क-स्काई विंडो और शॉट प्लानर।">
+    <meta property="og:url" content="https://miyarahub.com/hi/almanox/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Almanox: सूर्य, चंद्रमा &amp; आकाशगंगा प्लानर ऐप">
+    <meta name="twitter:description" content="Almanox iOS, Android, Mac और Windows के लिए ऑफ़लाइन सूर्य, चंद्रमा और आकाशगंगा प्लानर है: Tonight वर्डिक्ट, गोल्डन आवर, डार्क-स्काई विंडो और शॉट प्लानर।">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta name="twitter:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="keywords" content="astrophotography planner app, Milky Way planner, night sky planner, golden hour app, blue hour app, sun position app, moon phase app, moonrise moonset app, dark sky forecast app, stargazing app, astronomy planner, twilight calculator app, Milky Way core app, galactic core tracker, ISS pass app, ISS tracker, shot planner sun moon alignment, offline astronomy app, one-time purchase astronomy app, sun moon almanac app, night photography planner, offline map planner, eclipse forecast app, aurora forecast app, Kp index app, planets tonight app, home screen widgets, MiyaraHub, Almanox">
+    <link rel="canonical" href="https://miyarahub.com/hi/almanox/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/almanox/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/almanox/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/almanox/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/almanox/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/almanox/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/almanox/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/almanox/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/almanox/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/almanox/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/almanox/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/almanox/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/almanox/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/almanox/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/almanox/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/almanox/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/almanox/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/almanox/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/almanox/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/almanox/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/almanox/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/almanox/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/almanox/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/almanox/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/almanox/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/almanox/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/almanox/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/almanox/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/almanox/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/almanox/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/almanox/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/almanox/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/almanox-icon.png">
+    <link rel="apple-touch-icon" href="/assets/almanox-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root {
+            --ink: #070c16;
+            --ink-2: #0b1322;
+            --ink-3: #0f1a2c;
+            --star: #eef2f8;
+            --muted: #8fa0b8;
+            --faint: #607089;
+            --brass: #e6a552;
+            --brass-deep: #c9863a;
+            --brass-soft: rgba(230,165,82,0.12);
+            --line: rgba(176,198,232,0.11);
+            --line-strong: rgba(176,198,232,0.2);
+            /* twilight ladder - semantic, not the accent */
+            --tw-day: #f3b64d;
+            --tw-civil: #d98b46;
+            --tw-nautical: #3f6ea6;
+            --tw-astro: #26305a;
+            --tw-night: #0a1120;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: var(--ink);
+            color: var(--star);
+            line-height: 1.62;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* faint fixed star-field - no animated blobs */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background:
+                radial-gradient(1.2px 1.2px at 12% 22%, rgba(238,242,248,.35), transparent),
+                radial-gradient(1.2px 1.2px at 78% 14%, rgba(238,242,248,.28), transparent),
+                radial-gradient(1px 1px at 34% 62%, rgba(238,242,248,.22), transparent),
+                radial-gradient(1px 1px at 62% 78%, rgba(238,242,248,.20), transparent),
+                radial-gradient(1.4px 1.4px at 88% 54%, rgba(230,165,82,.30), transparent),
+                radial-gradient(1px 1px at 22% 84%, rgba(238,242,248,.18), transparent),
+                radial-gradient(1.1px 1.1px at 50% 8%, rgba(238,242,248,.24), transparent);
+            background-repeat: no-repeat;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(120% 80% at 50% -10%, rgba(63,110,166,.10) 0%, transparent 55%),
+                radial-gradient(90% 60% at 84% 8%, rgba(230,165,82,.05) 0%, transparent 50%);
+        }
+        a { color: inherit; }
+        ::selection { background: var(--brass-soft); color: var(--star); }
+
+        .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; }
+        .kicker {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            color: var(--brass);
+        }
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; }
+
+        /* rule */
+        .hr {
+            height: 1px;
+            background: var(--line);
+            border: 0;
+            width: 100%;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .85rem 1.75rem;
+            background: rgba(7,12,22,.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        .nav-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+        .nav-brand img { height: 30px; width: 30px; border-radius: 5px; }
+        .nav-brand-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 600;
+            letter-spacing: .01em;
+            color: var(--star);
+        }
+        .nav-links { display: flex; gap: 1.9rem; list-style: none; align-items: center; }
+        .nav-links a {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .74rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color .25s;
+        }
+        .nav-links a:hover { color: var(--brass); }
+        .nav-toggle {
+            display: none; background: none; border: none; cursor: pointer;
+            padding: .4rem; z-index: 101; flex-direction: column; gap: 5px;
+        }
+        .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--muted); transition: transform .3s, opacity .3s; }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+        /* HERO */
+        .hero { padding: 8.5rem 0 3.5rem; position: relative; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        .hero-coord {
+            margin-bottom: 1.5rem;
+            display: flex; gap: 1.2rem; flex-wrap: wrap;
+        }
+        .hero h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: clamp(3.4rem, 8vw, 6rem);
+            line-height: .95;
+            letter-spacing: -.02em;
+            margin: .4rem 0 .1rem;
+            display: flex; align-items: flex-start; gap: .1em;
+        }
+        .hero h1 .stargl { color: var(--brass); font-size: .34em; margin-top: .15em; line-height: 1; }
+        .hero-sub {
+            font-family: 'Fraunces', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+            color: var(--star);
+            opacity: .92;
+            margin: .1rem 0 1.4rem;
+            max-width: 30ch;
+        }
+        .hero-lede {
+            color: var(--muted);
+            font-size: 1.02rem;
+            max-width: 46ch;
+            margin-bottom: 1.8rem;
+        }
+        .cta-row { display: flex; gap: .9rem; flex-wrap: wrap; align-items: center; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+            padding: .8rem 1.3rem;
+            text-decoration: none;
+            border: 1px solid var(--line-strong);
+            border-radius: 3px;
+            color: var(--muted);
+            background: transparent;
+            transition: border-color .25s, color .25s, background .25s;
+        }
+        .btn.store { color: var(--star); border-color: rgba(230,165,82,.35); }
+        .btn.store svg { fill: var(--brass); }
+        .btn:hover { border-color: var(--brass); color: var(--brass); }
+        .btn.primary {
+            border-color: var(--brass);
+            color: var(--ink);
+            background: var(--brass);
+        }
+        .btn.primary:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--ink); }
+        .coming {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+            color: var(--faint); margin-top: 1.5rem;
+        }
+        .coming .dot { color: var(--brass); }
+
+        /* EPHEMERIS PANEL - the data-as-decoration anchor */
+        .ephem {
+            border: 1px solid var(--line-strong);
+            border-radius: 5px;
+            background: linear-gradient(180deg, rgba(15,26,44,.85), rgba(11,19,34,.85));
+            box-shadow: 0 24px 70px rgba(0,0,0,.45);
+            overflow: hidden;
+        }
+        .ephem-head {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(230,165,82,.05);
+        }
+        .ephem-head .t { font-family:'IBM Plex Mono',monospace; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+        .ephem-head .d { font-family:'IBM Plex Mono',monospace; font-size: .68rem; color: var(--faint); }
+        .ephem-body { display: grid; grid-template-columns: 1fr auto; }
+        .ephem-rows { padding: 1.1rem 1rem; display: flex; flex-direction: column; gap: .62rem; }
+        .erow { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-family:'IBM Plex Mono',monospace; }
+        .erow .lbl { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+        .erow .val { font-size: .86rem; color: var(--star); white-space: nowrap; }
+        .erow .val b { color: var(--brass); font-weight: 500; }
+        .erow.verdict { margin-top: .3rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+        .erow.verdict .lbl { color: var(--brass); }
+        .erow.verdict .score { font-family:'Fraunces',serif; font-size: 1.7rem; font-weight: 600; color: var(--star); line-height: 1; }
+        .erow.verdict .grade { font-size: .68rem; letter-spacing: .18em; color: var(--brass); }
+
+        /* twilight ladder */
+        .ladder { width: 74px; border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+        .ladder .seg { flex: 1; position: relative; display: flex; align-items: center; padding-left: .55rem; }
+        .ladder .seg span { font-family:'IBM Plex Mono',monospace; font-size: .56rem; letter-spacing: .06em; color: rgba(255,255,255,.82); text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+        .ladder .day { background: var(--tw-day); }
+        .ladder .civil { background: var(--tw-civil); }
+        .ladder .nautical { background: var(--tw-nautical); }
+        .ladder .astro { background: var(--tw-astro); }
+        .ladder .night { background: var(--tw-night); }
+        .ladder .night span, .ladder .nautical span, .ladder .astro span { color: rgba(238,242,248,.9); }
+
+        /* PLATES (screenshots) */
+        .plates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+            margin-top: 3.5rem;
+        }
+        .plate { text-align: center; }
+        .plate .frame {
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            padding: 5px;
+            background: rgba(15,26,44,.5);
+            transition: border-color .3s, transform .3s;
+        }
+        .plate .frame:hover { border-color: rgba(230,165,82,.5); transform: translateY(-4px); }
+        .plate img { width: 100%; display: block; border-radius: 3px; cursor: zoom-in; }
+        .plate .cap {
+            font-family:'IBM Plex Mono',monospace; font-size: .66rem; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--faint); margin-top: .7rem;
+        }
+        .plate .cap b { color: var(--brass); font-weight: 500; }
+
+        /* SECTIONS */
+        section { padding: 4.5rem 0; }
+        .sec-head { margin-bottom: 2.6rem; max-width: 40ch; }
+        .sec-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            line-height: 1.05;
+            letter-spacing: -.015em;
+            margin: .55rem 0 .8rem;
+            text-wrap: balance;
+        }
+        .sec-desc { color: var(--muted); font-size: 1.02rem; }
+        .sec-band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+        /* FEATURES - ledger entries */
+        .ledger { border-top: 1px solid var(--line); }
+        .entry {
+            display: grid;
+            grid-template-columns: 4.5rem 1fr;
+            gap: 1.5rem;
+            padding: 1.9rem 0;
+            border-bottom: 1px solid var(--line);
+            align-items: start;
+        }
+        .entry .no {
+            font-family:'IBM Plex Mono',monospace; font-size: .82rem; color: var(--brass);
+            letter-spacing: .05em; padding-top: .35rem;
+        }
+        .entry .body { }
+        .entry h3 {
+            font-family:'Fraunces',Georgia,serif; font-weight: 500; font-size: 1.4rem;
+            letter-spacing: -.01em; margin-bottom: .5rem; display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+        }
+        .entry h3 .glyph { color: var(--brass); flex-shrink: 0; }
+        .pro-tag {
+            font-family:'IBM Plex Mono',monospace; font-size: .6rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--brass);
+            border: 1px solid rgba(230,165,82,.4); border-radius: 2px; padding: .1rem .4rem;
+        }
+        .entry p { color: var(--muted); font-size: .98rem; max-width: 62ch; }
+        .entry .meta {
+            margin-top: .8rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
+            font-family:'IBM Plex Mono',monospace; font-size: .7rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint);
+        }
+        .entry .meta span::before { content: '+ '; color: var(--brass); }
+
+        /* HOW IT WORKS */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; }
+        .step .n {
+            font-family:'Fraunces',Georgia,serif; font-size: 3rem; font-weight: 400;
+            color: var(--brass); line-height: 1; margin-bottom: .6rem;
+            border-bottom: 1px solid var(--line); padding-bottom: .8rem;
+        }
+        .step h3 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.25rem; margin-bottom: .5rem; }
+        .step p { color: var(--muted); font-size: .95rem; }
+
+        /* PRIVACY - ruled list */
+        .priv { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+        .priv .p {
+            padding: 1.4rem 0; border-bottom: 1px solid var(--line);
+            display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start;
+        }
+        .priv .p .g { color: var(--brass); padding-top: .1rem; }
+        .priv .p h4 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.08rem; margin-bottom: .3rem; }
+        .priv .p h4 a { color: var(--star); text-decoration: none; transition: color .2s; }
+        .priv .p h4 a:hover { color: var(--brass); }
+        .priv .p p { color: var(--muted); font-size: .9rem; }
+
+        /* FAQ */
+        .faq { max-width: 800px; border-top: 1px solid var(--line); }
+        .qa { border-bottom: 1px solid var(--line); }
+        .q {
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            padding: 1.35rem 0; cursor: pointer; user-select: none;
+            font-family:'Fraunces',serif; font-weight: 500; font-size: 1.12rem;
+            transition: color .25s;
+        }
+        .q:hover { color: var(--brass); }
+        .q .arw { color: var(--brass); font-family:'IBM Plex Mono',monospace; font-size: .9rem; transition: transform .3s; flex-shrink: 0; }
+        .qa.open .q .arw { transform: rotate(45deg); }
+        .a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+        .qa.open .a { max-height: 460px; }
+        .a-in { padding: 0 0 1.35rem; color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 68ch; }
+        .a-in strong { color: var(--star); }
+
+        /* GLOSSARY */
+        .gloss { border-top: 1px solid var(--line); }
+        .gloss .row {
+            display: grid; grid-template-columns: 14rem 1fr; gap: 1.6rem;
+            padding: 1.3rem 0; border-bottom: 1px solid var(--line); align-items: baseline;
+        }
+        .gloss .term { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--star); }
+        .gloss .term .tag {
+            display: block; font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+            color: var(--brass); margin-bottom: .3rem; font-weight: 400;
+        }
+        .gloss .def { color: var(--muted); font-size: .96rem; max-width: 64ch; }
+        .gloss .def b { color: var(--star); font-weight: 500; }
+        @media (max-width: 720px) { .gloss .row { grid-template-columns: 1fr; gap: .4rem; } }
+
+        /* CTA */
+        .cta { text-align: center; padding: 5.5rem 0; }
+        .cta h2 { font-family:'Fraunces',serif; font-weight: 500; font-size: clamp(2rem,4.5vw,3rem); letter-spacing: -.02em; margin-bottom: .9rem; }
+        .cta p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; }
+
+        /* FOOTER */
+        footer { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+        .foot { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+        .foot .c { color: var(--faint); font-size: .82rem; line-height: 1.7; }
+        .foot .c b { font-family:'Fraunces',serif; color: var(--muted); font-weight: 500; }
+        .foot .c .legal { display:block; margin-top:.7rem; font-size:.72rem; line-height:1.6; color: var(--faint); opacity:.85; max-width: 62ch; }
+        .foot ul { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+        .foot a {
+            font-family:'IBM Plex Mono',monospace; font-size: .72rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color .25s;
+        }
+        .foot a:hover { color: var(--brass); }
+
+        /* fade-in */
+        .fade { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+        .fade.vis { opacity: 1; transform: none; }
+
+        /* lightbox */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(3,6,12,.94); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; backdrop-filter: blur(8px); }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.8); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+            .hero { padding-top: 7rem; }
+            .priv { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 720px) {
+            .nav-toggle { display: flex; }
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                flex-direction: column; gap: 0; align-items: stretch;
+                background: rgba(7,12,22,.97); backdrop-filter: blur(14px);
+                border-bottom: 1px solid var(--line); padding: .5rem 1.75rem;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+            .nav-links li:last-child { border-bottom: none; }
+            .plates { grid-template-columns: 1fr 1fr; }
+            .steps { grid-template-columns: 1fr; gap: 1.6rem; }
+            .entry { grid-template-columns: 1fr; gap: .5rem; }
+            .entry .no { padding-top: 0; }
+        }
+        @media (max-width: 460px) {
+            .plates { grid-template-columns: 1fr; }
+            .cta-row { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; }
+            .fade { transition: none; opacity: 1; transform: none; }
+        }
+        img{height:auto}
+        .foot-apps{max-width:1080px;margin:1.4rem auto 0;padding:1.1rem 1.75rem 0;border-top:1px solid rgba(176,198,232,.11);display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:baseline;font-size:.82rem;line-height:1.5}footer .foot-apps .fa-h{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0b8}footer .foot-apps a{color:#8fa0b8;text-decoration:none}footer .foot-apps a:hover{color:#eef2f8;text-decoration:underline}footer .foot-tm{max-width:1080px;margin:.7rem auto 0;padding:0 1.75rem 1.4rem;color:#607089;font-size:.76rem;line-height:1.6}footer .foot-tm a{color:#8fa0b8}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "एक छोटा, स्वतंत्र सॉफ़्टवेयर स्टूडियो, जो नेटिव ऐप्स, फ़ुल-स्टैक वेब और ई-कॉमर्स प्लैटफ़ॉर्म, सिस्टम और मॉनिटरिंग टूल, डिवाइस इंटीग्रेशन और DevOps पाइपलाइन बनाता है।", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "hi", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/almanox/#webpage", "url": "https://miyarahub.com/almanox/", "name": "Almanox: सूर्य, चंद्रमा & आकाशगंगा प्लानर ऐप - MiyaraHub", "description": "Almanox iOS, Android, Mac और Windows के लिए ऑफ़लाइन सूर्य, चंद्रमा और आकाशगंगा प्लानर है: Tonight वर्डिक्ट, गोल्डन आवर, डार्क-स्काई विंडो और शॉट प्लानर।", "inLanguage": "hi", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/almanox.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/almanox/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/almanox/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/almanox/#app", "name": "Almanox", "description": "ऑफ़लाइन सूर्य, चंद्रमा और एस्ट्रोफ़ोटोग्राफ़ी प्लानिंग ऐप। Tonight वर्डिक्ट स्कोर, गोल्डन और ब्लू आवर, ट्वाइलाइट लैडर, आकाशगंगा कोर का उदय और अस्त, डार्क-स्काई विंडो, चंद्रमा की दख़लअंदाज़ी, सूर्य और चंद्रमा शॉट प्लानर, लाइव मौसम और अगला दिखाई देने वाला ISS पास। जल्द आ रहा है।", "url": "https://miyarahub.com/almanox/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "LifestyleApplication", "image": "https://miyarahub.com/assets/almanox-icon.png", "screenshot": ["https://miyarahub.com/almanox/screenshots/01_tonight.jpg", "https://miyarahub.com/almanox/screenshots/03_today.jpg", "https://miyarahub.com/almanox/screenshots/02_milkyway.jpg", "https://miyarahub.com/almanox/screenshots/04_plan.jpg", "https://miyarahub.com/almanox/screenshots/05_locations.jpg", "https://miyarahub.com/almanox/screenshots/06_theme.jpg", "https://miyarahub.com/almanox/screenshots/07_features.jpg", "https://miyarahub.com/almanox/screenshots/07_light.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/almanox/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "होम", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Almanox", "item": "https://miyarahub.com/almanox/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/almanox/#faq", "url": "https://miyarahub.com/almanox/", "mainEntity": [{"@type": "Question", "name": "क्या Almanox सब्सक्रिप्शन है?", "acceptedAnswer": {"@type": "Answer", "text": "नहीं। Almanox $12.99 की एक बार की ख़रीदारी है। कोई सब्सक्रिप्शन नहीं, कोई विज्ञापन नहीं, अपडेट के लिए कोई अलग भुगतान नहीं। App Store, Google Play या Microsoft Store पर एक बार ख़रीदें और हमेशा के लिए अपना बनाएँ।"}}, {"@type": "Question", "name": "क्या यह बिना कनेक्शन के चलता है?", "acceptedAnswer": {"@type": "Answer", "text": "मुख्य पंचांग पूरी तरह आपके डिवाइस पर चलता है - सूर्य, चंद्रमा, ट्वाइलाइट, आकाशगंगा, डार्क-स्काई विंडो, तारा चार्ट और शॉट प्लानर सब बिना कनेक्शन के काम करते हैं। लाइव हालात (मौसम, ऑरोरा, ISS पास और नक्शे) इस्तेमाल करते समय कनेक्शन माँगते हैं।"}}, {"@type": "Question", "name": "मुफ़्त में क्या है, और Pro में क्या?", "acceptedAnswer": {"@type": "Answer", "text": "मुफ़्त वर्शन उदार है: पूरा सूर्य और चंद्रमा पंचांग (सूर्योदय/सूर्यास्त, गोल्डन और ब्लू आवर, ट्वाइलाइट लैडर, चंद्रमा की कला), Tonight वर्डिक्ट स्कोर, बादलों और लाइट-पॉल्यूशन की लाइव जानकारी, ऑरोरा पूर्वानुमान, आज रात के ग्रह, ISS पास, नक्षत्रों का तारा चार्ट, उल्का-वर्षा और ग्रहण कैलेंडर, अगली 7 सबसे अच्छी रातें, Good-night डार्क-स्काई अलर्ट, तीन सेव की गई लोकेशन और किसी भी रंग में हर थीम। Pro ($12.99, एक बार) आकाशगंगा कोर का पूर्वानुमान, डीप-स्काई टारगेट, ड्राइव-आउट मैप प्लानर और डार्क-स्काई साइट फ़ाइंडर, सूर्य और चंद्रमा शॉट प्लानर, फ़ोटो कैलकुलेटर, घंटे-दर-घंटे का विस्तृत पूर्वानुमान, AR स्काई फ़ाइंडर, होम-स्क्रीन विजेट, गोल्डन-आवर और कस्टम अलर्ट, 60 रातों का आउटलुक और असीमित सेव की गई लोकेशन अनलॉक करता है।"}}, {"@type": "Question", "name": "यह किन डिवाइस पर चलता है?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone, iPad, Android, Mac और Windows पर, एक ही खूबसूरत और एकरूप डिज़ाइन में। यह Light, Dark और असली-काले AMOLED में ढल जाता है, और आपकी पसंद के किसी भी एक्सेंट रंग में - चुने हुए शेड या आपका अपना कस्टम रंग।"}}, {"@type": "Question", "name": "क्या मुझे अकाउंट चाहिए?", "acceptedAnswer": {"@type": "Answer", "text": "नहीं। कोई साइन-अप नहीं, कोई ईमेल नहीं, कोई MiyaraHub लॉगिन नहीं। ऐप डाउनलोड करें और प्लानिंग शुरू करें। आपकी लोकेशन सिर्फ़ आपका आसमान निकालने के लिए इस्तेमाल होती है और कभी बेची, साझा या ट्रैक नहीं की जाती।"}}, {"@type": "Question", "name": "Tonight स्कोर कैसे निकाला जाता है?", "acceptedAnswer": {"@type": "Answer", "text": "चुनें कि आप क्या प्लान कर रहे हैं - आकाशगंगा, तारे देखना, चंद्रमा, नाइटस्केप या ऑरोरा - और Almanox सच्चे एस्ट्रोनॉमिकल अंधेरे के घंटों, चंद्रमा की दख़लअंदाज़ी, बादलों और आपकी जगह के लाइट पॉल्यूशन को तौलकर उसे 0-100 का स्कोर देता है। यह तेज़ और ईमानदार जवाब है कि आज रात बाहर निकलना सार्थक है या नहीं।"}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="Almanox का बड़ा किया हुआ स्क्रीनशॉट">
+    </div>
+
+    <!-- Nav -->
+    <nav>
+        <a href="/hi/" class="nav-brand"> <img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub लोगो"> <span class="nav-brand-text">MiyaraHub</span> </a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="मेन्यू">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="भाषा">
+            <li><a href="/hi/" onclick="closeNav()">होम</a></li>
+            <li><a href="#features" onclick="closeNav()">फ़ीचर</a></li>
+            <li><a href="#plates" onclick="closeNav()">स्क्रीन</a></li>
+            <li><a href="/hi/almanox/guide/" onclick="closeNav()">गाइड</a></li>
+            <li><a href="#how" onclick="closeNav()">तरीका</a></li>
+            <li><a href="#glossary" onclick="closeNav()">शब्दावली</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <div class="kicker">खगोलीय पंचांग &middot; फ़ील्ड एडिशन</div>
+                    <h1><span class="stargl">&#10022;</span>Almanox</h1>
+                    <p class="hero-sub">क्या आज रात तारों के लिए अच्छी है?</p>
+                    <p class="hero-lede">
+                        एक स्क्रीन जवाब देती है - Tonight वर्डिक्ट स्कोर, गोल्डन और ब्लू आवर, आकाशगंगा का कोर, डार्क-स्काई विंडो और सूर्य व चंद्रमा का शॉट प्लानर। सब कुछ आपके डिवाइस पर निकाला जाता है। कोई अकाउंट नहीं, कोई क्लाउड नहीं, कोई सब्सक्रिप्शन नहीं।
+                    </p>
+                    <div class="cta-row">
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </span>
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>
+                            Google Play
+                        </span>
+                        <a href="#plates" class="btn">स्क्रीन देखें</a>
+                    </div>
+                    <div class="coming"><span class="dot">&#9679;</span> जल्द आ रहा है - iPhone, iPad, Android, Mac &amp; Windows</div>
+                </div>
+
+                <!-- Ephemeris readout: data as decoration -->
+                <aside class="ephem" aria-label="पंचांग रीडआउट का नमूना">
+                    <div class="ephem-head">
+                        <span class="t">Tonight &middot; स्थानीय एफ़ेमेरिस</span>
+                        <span class="d">33.42&deg;N 96.58&deg;W</span>
+                    </div>
+                    <div class="ephem-body">
+                        <div class="ephem-rows">
+                            <div class="erow"><span class="lbl">सूर्यास्त</span><span class="val">20:14</span></div>
+                            <div class="erow"><span class="lbl">गोल्डन आवर</span><span class="val"><b>19:31 - 20:14</b></span></div>
+                            <div class="erow"><span class="lbl">एस्ट्रो डार्क</span><span class="val">21:44 - 05:02</span></div>
+                            <div class="erow"><span class="lbl">चंद्रमा</span><span class="val">अमावस्या &middot; 2%</span></div>
+                            <div class="erow"><span class="lbl">MW कोर &#8593;</span><span class="val"><b>22:58</b></span></div>
+                            <div class="erow verdict">
+                                <span class="lbl">वर्डिक्ट</span>
+                                <span style="text-align:right"><span class="score">87</span><span class="val" style="color:var(--faint)">/100</span><br><span class="grade">EXCELLENT</span></span>
+                            </div>
+                        </div>
+                        <div class="ladder" aria-hidden="true">
+                            <div class="seg day"><span>DAY</span></div>
+                            <div class="seg civil"><span>CIV 20:41</span></div>
+                            <div class="seg nautical"><span>NAU 21:12</span></div>
+                            <div class="seg astro"><span>AST 21:44</span></div>
+                            <div class="seg night"><span>NIGHT</span></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Plates -->
+            <div class="plates" id="plates-hero">
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox Tonight वर्डिक्ट - क्या आज रात तारों के लिए अच्छी है" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>चित्र I</b> &middot; Tonight</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox Today - सूर्य पथ, गोल्डन आवर और चंद्रमा पंचांग" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>चित्र II</b> &middot; पंचांग</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox आकाशगंगा कोर और डार्क-स्काई विंडो" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>चित्र III</b> &middot; आकाशगंगा</figcaption>
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">पंजिका</div>
+                <h2 class="sec-title">एक स्क्रीन, पूरा आसमान</h2>
+                <p class="sec-desc">खगोल विज्ञान, मौसम और एक प्लानिंग इंजन, सब मिलकर एक जवाब में। पंचांग और आसमान का गणित आपके डिवाइस पर चलता है; लाइव हालात खुले मौसम और नक्शा सेवाओं से आते हैं। कोई अकाउंट नहीं, कोई विज्ञापन नहीं, कोई सब्सक्रिप्शन नहीं।</p>
+            </div>
+            <div class="ledger">
+                <article class="entry">
+                    <div class="no">क्र. 01</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9737;</span> Tonight का वर्डिक्ट</h3>
+                        <p>आप जो प्लान कर रहे हैं - आकाशगंगा, तारे देखना, चंद्रमा, नाइटस्केप या ऑरोरा - उसके लिए 0-100 का एक स्कोर। यह सच्चे अंधेरे के घंटों, चंद्रमा की दख़लअंदाज़ी, बादलों और आपके आसमान के लाइट पॉल्यूशन को तौलकर एक ईमानदार जवाब देता है: क्या आज रात सचमुच अच्छी है?</p>
+                        <div class="meta"><span>स्कोर</span><span>सबसे अच्छी विंडो</span><span>अंधेरा</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 02</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9728;</span> सूर्य &amp; चंद्रमा पंचांग</h3>
+                        <p>सूर्योदय, सूर्यास्त, गोल्डन और ब्लू आवर, और सिविल से एस्ट्रोनॉमिकल तक पूरी ट्वाइलाइट लैडर। चंद्रमा की कला, रोशनी का अनुपात, उदय और अस्त - सब लाइव सूर्य-पथ आर्क के साथ।</p>
+                        <div class="meta"><span>गोल्डन आवर</span><span>ट्वाइलाइट</span><span>चंद्र कला</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 03</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> आकाशगंगा &amp; डार्क स्काई <span class="pro-tag">Pro</span></h3>
+                        <p>Poor से Excellent तक की गुणवत्ता ग्रेड के साथ गैलेक्टिक-कोर का उदय, चरम और अस्त, और चंद्रमा-रहित डार्क-स्काई विंडो का पूर्वानुमान, ताकि आपको शूटिंग के लायक सटीक घंटे पता हों।</p>
+                        <div class="meta"><span>कोर उदय/अस्त</span><span>डार्क विंडो</span><span>गुणवत्ता ग्रेड</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 04</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9796;</span> आज रात के ग्रह</h3>
+                        <p>अभी कौन-से ग्रह ऊपर हैं, कहाँ देखना है, वे कितने चमकीले हैं और उनकी मौजूदा कला क्या है - सब कुछ आपके सटीक समय और जगह के लिए डिवाइस पर निकाला गया।</p>
+                        <div class="meta"><span>दृश्यता</span><span>चमक</span><span>कला</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 05</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8982;</span> शॉट प्लानर <span class="pro-tag">Pro</span></h3>
+                        <p>वे सटीक दिन खोजें जब सूर्य या पूर्णिमा का चाँद आपकी चुनी दिशा में एलाइन होता है। उस शानदार शॉट के लिए एज़िमथ-क्रॉसिंग और कई दिनों की एलाइनमेंट खोज - सब ऑफ़लाइन।</p>
+                        <div class="meta"><span>एज़िमथ खोज</span><span>एलाइनमेंट</span><span>कई दिन</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 06</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8983;</span> ऑफ़लाइन मैप प्लानर <span class="pro-tag">Pro</span></h3>
+                        <p>एक इंटरैक्टिव नक्शा जो आपके देखे हुए टाइल कैश कर लेता है, ताकि मैदान में सिग्नल न होने पर भी चलता रहे। पिन लगाएँ और उसकी बेयरिंग, दूरी और वह सटीक तारीख़ देखें जब सूर्य या चंद्रमा उसके पीछे एलाइन होता है।</p>
+                        <div class="meta"><span>ऑफ़लाइन टाइल</span><span>बेयरिंग &amp; दूरी</span><span>एलाइनमेंट की तारीख़ें</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 07</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9680;</span> ग्रहण</h3>
+                        <p>सूर्य और चंद्र ग्रहण असली एफ़ेमेरिस से डिवाइस पर निकाले जाते हैं और आपकी लोकेशन के हिसाब से छाँटे जाते हैं, ताकि सूची में सिर्फ़ वही ग्रहण दिखें जिन्हें आप सचमुच बाहर निकलकर देख सकते हैं।</p>
+                        <div class="meta"><span>सूर्य &amp; चंद्र</span><span>लोकेशन के अनुसार</span><span>डिवाइस पर</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 08</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9729;</span> आसमान के लाइव हालात</h3>
+                        <p>हर सेव की गई लोकेशन के लिए मौजूदा तापमान, बादल और साफ़ आसमान की स्पष्टता का वर्डिक्ट, Open-Meteo से लाइव - मुफ़्त, किसी API कुंजी के बिना। घंटे-दर-घंटे का विस्तृत पूर्वानुमान Pro अपग्रेड है।</p>
+                        <div class="meta"><span>बादल</span><span>स्पष्टता</span><span>हर लोकेशन के लिए</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 09</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8779;</span> ऑरोरा पूर्वानुमान <span class="pro-tag">Pro</span></h3>
+                        <p>NOAA से लाइव Kp इंडेक्स, आपका भू-चुंबकीय अक्षांश और आज रात के लिए सीधा-सादा वर्डिक्ट - साथ में 24 घंटे की Kp पट्टी, ताकि आप चरम से पहले ही गतिविधि को बढ़ते देख सकें।</p>
+                        <div class="meta"><span>लाइव Kp इंडेक्स</span><span>भू-चुंबकीय अक्षांश</span><span>24 घंटे की पट्टी</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 10</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9954;</span> ISS फ़्लाईओवर</h3>
+                        <p>आपकी लोकेशन के ऊपर से इंटरनेशनल स्पेस स्टेशन का अगला दिखाई देने वाला पास, लाइव कक्षीय डेटा से डिवाइस पर निकाला गया - उदय का समय, दिशा और चरम ऊँचाई।</p>
+                        <div class="meta"><span>दिखाई देने वाला पास</span><span>दिशा</span><span>डिवाइस पर</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 11</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8862;</span> होम-स्क्रीन विजेट</h3>
+                        <p>ऐसे विजेट जो बैकग्राउंड में अपने आप रीफ़्रेश होते हैं, ताकि ऐप को घंटों बंद रखने के बाद भी आपकी होम स्क्रीन पर आसमान की जानकारी ताज़ा रहे।</p>
+                        <div class="meta"><span>ऑटो-रीफ़्रेश</span><span>बैकग्राउंड</span><span>होम स्क्रीन</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 12</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9673;</span> खूबसूरत, और आपका अपना</h3>
+                        <p>तीन सतहें - Light, Dark और असली-काला AMOLED - और आपकी पसंद का कोई भी रंग, चुने हुए एक्सेंट से लेकर आपके अपने सटीक कस्टम शेड तक। पूरा इंटरफ़ेस रंग बदलता है, सिर्फ़ एक हाइलाइट नहीं। आसमान के चार्ट के लिए बोले जाने वाले सारांश के साथ पूरा स्क्रीन-रीडर सपोर्ट, और हर जगह डायनामिक-टाइप सपोर्ट।</p>
+                        <div class="meta"><span>Light/Dark/AMOLED</span><span>कोई भी एक्सेंट</span><span>कस्टम रंग</span><span>स्क्रीन रीडर</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 13</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> नक्षत्र &amp; तारा चार्ट</h3>
+                        <p>सभी 88 नक्षत्र और चमकीले तारे, आपके आसमान पर एक लाइव, मुफ़्त तारा चार्ट में उकेरे गए - नाम सहित और पूरी तरह आपके डिवाइस पर निकाले गए, कनेक्शन की ज़रूरत नहीं। निशाना लगाकर पहचानने वाला AR स्काई फ़ाइंडर Pro अपग्रेड है।</p>
+                        <div class="meta"><span>88 आकृतियाँ</span><span>तारा चार्ट</span><span>ऑफ़लाइन</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">क्र. 14</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9790;</span> ऑफ़लाइन &amp; निजी</h3>
+                        <p>खगोल इंजन पूरी तरह आपके डिवाइस पर चलता है। कोई साइन-अप नहीं, कोई अकाउंट नहीं, कोई विज्ञापन नहीं, लोकेशन की कोई उगाही नहीं। एक बार ख़रीदें और अपना बनाएँ - कभी कोई सब्सक्रिप्शन नहीं।</p>
+                        <div class="meta"><span>डिवाइस पर</span><span>कोई अकाउंट नहीं</span><span>एक बार</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plates / Screens -->
+    <section id="plates">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">चित्र-संग्रह</div>
+                <h2 class="sec-title">इसे चलते देखें</h2>
+                <p class="sec-desc">हर स्क्रीन आपके डिवाइस पर निकाली जाती है - Dark, AMOLED या Light, आपके चुने किसी भी एक्सेंट रंग में। Android पर दिखाया गया है; वही ऐप iPhone, iPad, Mac और Windows पर भी चलता है।</p>
+            </div>
+            <div class="plates">
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox - Tonight वर्डिक्ट स्कोर" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>चित्र 01</b> &middot; Tonight</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox - आकाशगंगा और डार्क-स्काई विंडो" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>चित्र 02</b> &middot; आकाशगंगा</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox - Today सूर्य और चंद्रमा पंचांग" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>चित्र 03</b> &middot; पंचांग</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/04_plan.jpg" alt="Almanox - शॉट प्लानर" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>चित्र 04</b> &middot; प्लानर</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/05_locations.jpg" alt="Almanox - सेव की गई डार्क-स्काई लोकेशन" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>चित्र 05</b> &middot; लोकेशन</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/06_theme.jpg" alt="Almanox - कोई भी एक्सेंट रंग" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>चित्र 06</b> &middot; कोई भी रंग</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/07_features.jpg" alt="Almanox - मुफ़्त तारा चार्ट, आज रात के ग्रह और ISS पास" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>चित्र 07</b> &middot; मुफ़्त एक्स्ट्रा</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1170" height="2532" src="/almanox/screenshots/07_light.jpg" alt="Almanox - Light थीम" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>चित्र 07</b> &middot; Light</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- How / Method -->
+    <section id="how" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">तरीक़ा</div>
+                <h2 class="sec-title">सब कुछ आपके डिवाइस पर, क्लाउड में कुछ नहीं</h2>
+                <p class="sec-desc">Almanox एक पूरा खगोल इंजन स्थानीय रूप से चलाता है। कोई अकाउंट नहीं, कोई साइन-अप नहीं, और सिग्नल बंद होने पर भी यह चलता है - आसमान वही रहता है, चाहे आपके पास नेटवर्क हो या नहीं।</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="n">1</div>
+                    <h3>अपनी जगह चुनें</h3>
+                    <p>अपनी मौजूदा लोकेशन इस्तेमाल करें या वे जगहें सेव करें जहाँ से आप शूट करते हैं। Almanox सूर्य, चंद्रमा और आसमान ठीक उसी जगह के लिए निकालता है जहाँ आप खड़े हैं।</p>
+                </div>
+                <div class="step">
+                    <div class="n">2</div>
+                    <h3>वर्डिक्ट पढ़ें</h3>
+                    <p>एक स्कोर उस इकलौते सवाल का जवाब देता है जो मायने रखता है - क्या आज रात सार्थक है? सबसे अच्छी डार्क-स्काई विंडो, आकाशगंगा का कोर और चंद्रमा कितनी रुकावट डालता है, यह देखें।</p>
+                </div>
+                <div class="step">
+                    <div class="n">3</div>
+                    <h3>शॉट की प्लानिंग करें</h3>
+                    <p>वे सटीक दिन खोजें जब सूर्य या पूर्णिमा का चाँद आपकी दिशा में एलाइन होता है, गोल्डन आवर पकड़ें, और आसमान तैयार होने से पहले अलर्ट पाएँ।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section id="glossary" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">शब्दावली</div>
+                <h2 class="sec-title">आसमान की एक फ़ील्ड गाइड</h2>
+                <p class="sec-desc">वे शब्द जिनके इर्द-गिर्द पूरा ऐप बना है - और हर शब्द Almanox को आपकी जेब में रखने की एक वजह क्यों है।</p>
+            </div>
+            <div class="gloss">
+                <div class="row"><div class="term"><span class="tag">पंचांग</span>पंचांग</div><div class="def">आसमान की दिन-ब-दिन की तालिका - सूर्य और चंद्रमा कब उगते और अस्त होते हैं, चंद्रमा की कला, और आपको असली अंधेरे के कितने घंटे मिलते हैं। Almanox <b>ठीक आपकी जगह के लिए एक जीवंत पंचांग</b> है, जो आपकी जगह के हिसाब से दोबारा निकाला जाता है, किसी आम छपे पंचांग जैसा नहीं।</div></div>
+                <div class="row"><div class="term"><span class="tag">सबसे अच्छी रोशनी</span>गोल्डन आवर</div><div class="def">सूर्योदय के ठीक बाद और सूर्यास्त से ठीक पहले का वह समय जब सूरज नीचा होता है और रोशनी गर्म और नरम हो जाती है। ज़्यादातर लैंडस्केप और पोर्ट्रेट फ़ोटोग्राफ़र इसी रोशनी का इंतज़ार करते हैं - और <b>Almanox आपको आज की इसकी सटीक शुरुआत और अंत बताता है</b>, आप जहाँ भी हों।</div></div>
+                <div class="row"><div class="term"><span class="tag">नीली रोशनी</span>ब्लू आवर</div><div class="def">सूर्योदय से पहले और सूर्यास्त के बाद की वह छोटी विंडो, जब सूरज क्षितिज के नीचे होता है और पूरा आसमान गहरे, एकसार नीले रंग में चमकता है। शहरों के दृश्यों और मूडी आसमानों के लिए सबसे अच्छा समय - यह जल्दी आता और चला जाता है, इसलिए <b>मिनट तक सही समय जानना मायने रखता है</b>।</div></div>
+                <div class="row"><div class="term"><span class="tag">अंधेरे की ओर</span>ट्वाइलाइट लैडर</div><div class="def">अंधेरा तीन चरणों में आता है - <b>सिविल, नॉटिकल, फिर एस्ट्रोनॉमिकल</b> ट्वाइलाइट। जब एस्ट्रोनॉमिकल ट्वाइलाइट ख़त्म होती है, तब आसमान आख़िरकार काला हो जाता है और धुंधले तारे उभर आते हैं। तारे देखने वाले और एस्ट्रोफ़ोटोग्राफ़र असल में उसी पल से शूटिंग शुरू करते हैं।</div></div>
+                <div class="row"><div class="term"><span class="tag">आकाशगंगा</span>आकाशगंगा का कोर</div><div class="def">गैलेक्टिक केंद्र का चमकीला हिस्सा - दमकता, बारीकियों से भरा वह भाग जिसकी हर कोई तस्वीर लेता है। यह साल के कुछ हिस्से और रात के कुछ हिस्से में ही क्षितिज के ऊपर रहता है। Almanox आपको बताता है कि <b>कोर कब उगता है, कब चरम पर पहुँचता है और कब अस्त होता है</b>, और यह भी कि वह कितना अच्छा दिखेगा।</div></div>
+                <div class="row"><div class="term"><span class="tag">विंडो</span>डार्क-स्काई विंडो</div><div class="def">रात का वह हिस्सा जब आसमान को फीका करने वाला <b>न सूरज होता है, न चंद्रमा</b>। डीप-स्काई और आकाशगंगा के शॉट सिर्फ़ इसी समय सचमुच काम करते हैं, और यह हर रात खिसकता है - यही वह चीज़ है जिसे हाथ से निकालना उबाऊ है।</div></div>
+                <div class="row"><div class="term"><span class="tag">चाँदनी</span>कला &amp; रोशनी का अनुपात</div><div class="def">चंद्रमा का कितना हिस्सा रोशन है, अमावस्या से पूर्णिमा तक। चमकीला चाँद <b>आसमान को रोशनी से भर देता है और आकाशगंगा को डुबो देता है</b>; अमावस्या उसे घुप अंधेरे में छोड़ती है। आज रात का चाँद जानना किसी भी रात की शूटिंग की आधी लड़ाई है।</div></div>
+                <div class="row"><div class="term"><span class="tag">जवाब</span>Tonight वर्डिक्ट</div><div class="def">आप जो प्लान कर रहे हैं - आकाशगंगा, तारे देखना, चंद्रमा, नाइटस्केप या ऑरोरा - उसके हिसाब से ढला Almanox अंधेरे के घंटों, चंद्रमा की दख़लअंदाज़ी, बादलों और लाइट पॉल्यूशन को तौलकर <b>0-100 का एक ईमानदार स्कोर</b> देता है। पाँच चीज़ें मिलाकर देखने के बजाय आप एक संख्या देखते हैं और जान जाते हैं कि आज रात बाहर निकलना सार्थक है या नहीं।</div></div>
+                <div class="row"><div class="term"><span class="tag">एलाइनमेंट</span>सूर्य &amp; चंद्रमा की सीध</div><div class="def">वे सटीक दिन जब सूर्य या पूर्णिमा का चाँद <b>किसी लैंडमार्क या कम्पास दिशा के साथ एक सीध में</b> उगता या अस्त होता है - पुल या चोटी के पीछे पूर्णिमा वाले उन शानदार शॉट के पीछे की प्लानिंग। Almanox आपके लिए आने वाले दिनों में खोज करता है।</div></div>
+                <div class="row"><div class="term"><span class="tag">सिर के ऊपर</span>ISS पास</div><div class="def">जब इंटरनेशनल स्पेस स्टेशन इतना चमकीला होकर ऊपर से गुज़रता है कि नंगी आँखों से दिख सके - रोशनी का एक स्थिर, तेज़ी से चलता बिंदु। Almanox आपको <b>अगला दिखाई देने वाला पास, उसकी दिशा और वह कितनी ऊँचाई तक चढ़ता है</b> बताता है।</div></div>
+                <div class="row"><div class="term"><span class="tag">आकृतियाँ</span>नक्षत्र</div><div class="def">88 नामित तारा-आकृतियाँ - ओरायन, सप्तर्षि, आकाशगंगा के ऊपर धनु। Almanox उन सभी और चमकीले तारों को <b>आपके असली आसमान पर</b> एक तारा चार्ट में और AR फ़ाइंडर के ज़रिए उकेरता है, ताकि आप निशाना लगाकर पहचान सकें कि आप क्या देख रहे हैं।</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">शर्तें</div>
+                <h2 class="sec-title">डिज़ाइन से ही निजी</h2>
+                <p class="sec-desc">Almanox को अपने आप में सिमटकर रहने के लिए बनाया गया था। कोई अकाउंट नहीं, कोई विज्ञापन नहीं, लोकेशन की कोई उगाही नहीं - बस आसमान, जो आपके डिवाइस पर निकाला जाता है।</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4>ऑफ़लाइन चलता है</h4><p>खगोल इंजन पूरी तरह आपके फ़ोन पर चलता है। सूर्य, चंद्रमा, ट्वाइलाइट, आकाशगंगा और शॉट प्लानर सब बिना किसी कनेक्शन के काम करते हैं।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4>कभी कोई अकाउंट नहीं</h4><p>कोई साइन-अप नहीं, कोई ईमेल नहीं, कोई MiyaraHub लॉगिन नहीं। इसे डाउनलोड करें, खोलें और प्लानिंग शुरू करें - न कुछ बनाना, न कुछ याद रखना।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9738;</span><div><h4>आपकी लोकेशन आपकी ही रहती है</h4><p>लोकेशन सिर्फ़ आपका आसमान निकालने और स्थानीय हालात लाने के लिए इस्तेमाल होती है - कभी बेची नहीं जाती और आपकी प्रोफ़ाइल बनाने में कभी इस्तेमाल नहीं होती। मौसम Open-Meteo से गुमनाम तरीक़े से आता है, बिना किसी अकाउंट या कुंजी के।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4>एक बार की खरीद</h4><p>एक बार ख़रीदें और अपना बनाएँ। कोई सब्सक्रिप्शन नहीं, कोई बार-बार लगने वाला शुल्क नहीं, अपडेट के लिए कोई अलग भुगतान नहीं - ज़्यादातर फ़ोटो ऐप्स की क़ीमत के तरीक़े से बिल्कुल उलटा।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4>कोई विज्ञापन नहीं, आपका डेटा बिकता नहीं</h4><p>कोई विज्ञापन SDK नहीं, कोई विज्ञापन नेटवर्क नहीं, कोई डेटा ब्रोकर नहीं। Almanox यह देखने के लिए गुमनाम, फ़र्स्ट-पार्टी एनालिटिक्स इस्तेमाल करता है कि कौन-सी सुविधाएँ काम आती हैं, और कुछ बिगड़ने पर क्रैश रिपोर्टिंग - जो कभी आपकी पहचान से नहीं जुड़ती और कभी बेची नहीं जाती।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9789;</span><div><h4>एक ऐप, हर डिवाइस</h4><p>iPhone, iPad, Android, Mac और Windows पर वही खूबसूरत, ऑफ़लाइन प्लानर - आप जहाँ भी शूट करें।</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">हाशिये के नोट</div>
+                <h2 class="sec-title">अक्सर पूछे जाने वाले सवाल</h2>
+                <p class="sec-desc">Almanox के बारे में वह सब कुछ जो आपको जानना चाहिए।</p>
+            </div>
+            <div class="faq">
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">क्या Almanox सब्सक्रिप्शन है?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in"><strong>नहीं।</strong> Almanox $12.99 की एक बार की ख़रीदारी है। कोई सब्सक्रिप्शन नहीं, कोई विज्ञापन नहीं, अपडेट के लिए कोई अलग भुगतान नहीं। App Store, Google Play या Microsoft Store पर एक बार ख़रीदें और हमेशा के लिए अपना बनाएँ।</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">क्या यह बिना कनेक्शन के चलता है?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">मुख्य पंचांग पूरी तरह आपके डिवाइस पर चलता है - सूर्य, चंद्रमा, ट्वाइलाइट, आकाशगंगा, डार्क-स्काई विंडो, तारा चार्ट और शॉट प्लानर सब बिना कनेक्शन के काम करते हैं। लाइव हालात (मौसम, ऑरोरा, ISS पास और नक्शे) इस्तेमाल करते समय कनेक्शन माँगते हैं।</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">मुफ़्त में क्या है, और Pro में क्या?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">मुफ़्त वर्शन उदार है: पूरा सूर्य और चंद्रमा पंचांग (सूर्योदय/सूर्यास्त, गोल्डन और ब्लू आवर, ट्वाइलाइट लैडर, चंद्रमा की कला), Tonight वर्डिक्ट स्कोर, बादलों और लाइट-पॉल्यूशन की लाइव जानकारी, ऑरोरा पूर्वानुमान, आज रात के ग्रह, ISS पास, नक्षत्रों का तारा चार्ट, उल्का-वर्षा और ग्रहण कैलेंडर, अगली 7 सबसे अच्छी रातें, Good-night डार्क-स्काई अलर्ट, तीन सेव की गई लोकेशन और किसी भी रंग में हर थीम। Pro ($12.99, एक बार) आकाशगंगा कोर का पूर्वानुमान, डीप-स्काई टारगेट, ड्राइव-आउट मैप प्लानर और डार्क-स्काई साइट फ़ाइंडर, सूर्य और चंद्रमा शॉट प्लानर, फ़ोटो कैलकुलेटर, घंटे-दर-घंटे का विस्तृत पूर्वानुमान, AR स्काई फ़ाइंडर, होम-स्क्रीन विजेट, गोल्डन-आवर और कस्टम अलर्ट, 60 रातों का आउटलुक और असीमित सेव की गई लोकेशन अनलॉक करता है।</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">यह किन डिवाइस पर चलता है?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">iPhone, iPad, Android, Mac और Windows पर, एक ही खूबसूरत और एकरूप डिज़ाइन में। यह Light, Dark और असली-काले AMOLED में ढल जाता है, और आपकी पसंद के किसी भी एक्सेंट रंग में - चुने हुए शेड या आपका अपना कस्टम रंग।</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">क्या मुझे अकाउंट चाहिए?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">नहीं। कोई साइन-अप नहीं, कोई ईमेल नहीं, कोई MiyaraHub लॉगिन नहीं। ऐप डाउनलोड करें और प्लानिंग शुरू करें। आपकी लोकेशन सिर्फ़ आपका आसमान निकालने के लिए इस्तेमाल होती है और कभी बेची, साझा या ट्रैक नहीं की जाती।</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Tonight स्कोर कैसे निकाला जाता है?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">चुनें कि आप क्या प्लान कर रहे हैं - आकाशगंगा, तारे देखना, चंद्रमा, नाइटस्केप या ऑरोरा - और Almanox सच्चे एस्ट्रोनॉमिकल अंधेरे के घंटों, चंद्रमा की दख़लअंदाज़ी, बादलों और आपकी जगह के लाइट पॉल्यूशन को तौलकर उसे 0-100 का स्कोर देता है। यह तेज़ और ईमानदार जवाब है कि आज रात बाहर निकलना सार्थक है या नहीं।</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free vs Pro -->
+    <section id="pricing">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">मुफ़्त &amp; Pro</div>
+                <h2 class="sec-title">उदार मुफ़्त ऐप, और एक ईमानदार अपग्रेड</h2>
+                <p class="sec-desc">“क्या आज रात सार्थक है” का जवाब देने के लिए जो कुछ चाहिए वह मुफ़्त है। Pro ($12.99, एक बार - कोई सब्सक्रिप्शन नहीं) गहरे प्लानिंग टूल जोड़ता है। हर लॉक की गई सुविधा पहले असली नमूना दिखाती है।</p>
+            </div>
+            <div class="cmp-wrap">
+                <table class="cmp">
+                    <thead>
+                        <tr><th scope="col">सुविधा</th><th scope="col">मुफ़्त</th><th scope="col">Pro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>सूर्य &amp; चंद्रमा पंचांग (गोल्डन/ब्लू आवर, ट्वाइलाइट, कला)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Tonight वर्डिक्ट स्कोर (आकाशगंगा, तारे देखना, चंद्रमा, ऑरोरा)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>बादलों &amp; लाइट-पॉल्यूशन की लाइव जानकारी</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>डार्क-स्काई विंडो &amp; आज रात की सबसे अच्छी विंडो</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>ऑरोरा पूर्वानुमान &amp; आज रात के ग्रह</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>ISS फ़्लाईओवर पास</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>नक्षत्रों का तारा चार्ट (88 आकृतियाँ)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>उल्का-वर्षा &amp; ग्रहण कैलेंडर</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Good-night डार्क-स्काई अलर्ट</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>हर थीम &amp; एक्सेंट, कोई विज्ञापन नहीं, कोई साइन-इन नहीं</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>आकाशगंगा कोर पूर्वानुमान &amp; डीप-स्काई टारगेट</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>सूर्य &amp; चंद्रमा शॉट प्लानर</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>फ़ोटो कैलकुलेटर (500 / NPF / डेप्थ ऑफ़ फ़ील्ड)</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>ड्राइव-आउट मैप प्लानर &amp; डार्क-स्काई साइट फ़ाइंडर</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>घंटे-दर-घंटे का विस्तृत पूर्वानुमान</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>AR स्काई फ़ाइंडर</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>होम-स्क्रीन विजेट</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>गोल्डन-आवर &amp; कस्टम अलर्ट</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>आगे की सबसे अच्छी रातें</td><td>7 रातें</td><td class="y">60 रातें</td></tr>
+                        <tr><td>सेव की गई लोकेशन</td><td>3</td><td class="y">असीमित</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <style>
+        #pricing .cmp-wrap { overflow-x: auto; margin-top: 1.6rem; border: 1px solid var(--line); border-radius: 14px; }
+        #pricing table.cmp { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 460px; }
+        #pricing .cmp th, #pricing .cmp td { text-align: left; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+        #pricing .cmp thead th { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); background: var(--ink-2); }
+        #pricing .cmp thead th:nth-child(2), #pricing .cmp thead th:nth-child(3),
+        #pricing .cmp tbody td:nth-child(2), #pricing .cmp tbody td:nth-child(3) { text-align: center; width: 5.5rem; }
+        #pricing .cmp thead th:nth-child(3) { color: var(--brass); }
+        #pricing .cmp tbody tr:last-child td { border-bottom: none; }
+        #pricing .cmp td.y { color: var(--brass); font-weight: 600; }
+        #pricing .cmp td.n { color: var(--faint); }
+        #pricing .cmp tbody td:first-child { color: var(--star); }
+    </style>
+
+    <!-- Guide -->
+    <section id="guide" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">फ़ील्ड गाइड</div>
+                <h2 class="sec-title">आसमान पढ़ना सीखें</h2>
+                <p class="sec-desc">एक पूरा, चित्रों वाला मैनुअल - Tonight वर्डिक्ट कैसे बनता है, आकाशगंगा के कोर की प्लानिंग कैसे करें, सूर्य या चंद्रमा का शॉट कैसे सेट करें, फ़ोटो का गणित कैसे करें और सचमुच अंधेरे आसमान कैसे खोजें।</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4><a href="/hi/almanox/tonight-verdict/">Tonight वर्डिक्ट</a></h4><p>0-100 का स्कोर अंधेरे, चंद्रमा, आकाशगंगा की ऊँचाई और बादलों को कैसे मिलाता है - और Good, Fair और Poor का असली मतलब क्या है।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4><a href="/hi/almanox/milky-way/">आकाशगंगा &amp; डार्क-स्काई विंडो</a></h4><p>गैलेक्टिक कोर का उदय, चरम ऊँचाई और उसे शूट करने की सटीक चंद्रमा-रहित विंडो, आप जहाँ भी हों।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9788;</span><div><h4><a href="/hi/almanox/shot-planner/">शॉट प्लानर</a></h4><p>वे दिन जब सूर्य या पूर्णिमा का चाँद आपकी दिशा में एलाइन होता है - मेहराब के पीछे सूर्योदय वाला शॉट, दिन तक तय करके।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/hi/almanox/photo-calculators/">फ़ोटो कैलकुलेटर</a></h4><p>500 रूल, ज़्यादा सख़्त NPF रूल, और हाइपरफ़ोकल दूरी के साथ डेप्थ ऑफ़ फ़ील्ड, आपके अपने गियर के लिए।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4><a href="/hi/almanox/dark-sky-finder/">डार्क-स्काई फ़ाइंडर</a></h4><p>सबसे नज़दीकी प्रमाणित इंटरनेशनल डार्क-स्काई प्लेस, दूरी के क्रम में, दिशा और ड्राइव के मोटे अंदाज़े के साथ।</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/hi/almanox/settings/">सेटिंग, थीम &amp; अलर्ट</a></h4><p>Light, Dark और असली-काला AMOLED, कोई भी एक्सेंट रंग, फिर से क्रम में लगाने लायक कार्ड, एक फ़ाइल में बैकअप, और रोशनी आने से पहले अलर्ट।</p></div></div>
+            </div>
+            <div class="cta-row" style="justify-content:center;margin-top:2.4rem">
+                <a class="btn store" href="/hi/almanox/guide/">पूरी गाइड पढ़ें</a>
+                <a class="btn" href="/hi/almanox/help/">मदद &amp; FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap fade">
+            <div class="kicker" style="display:block;margin-bottom:1rem">&#10022; आगे साफ़ आसमान</div>
+            <h2>अपनी अगली साफ़ रात की प्लानिंग करें</h2>
+            <p>Almanox जल्द ही iPhone, iPad, Android, Mac और Windows पर आ रहा है। एक बार की ख़रीदारी, कोई सब्सक्रिप्शन नहीं, पूरी तरह ऑफ़लाइन।</p>
+            <div class="cta-row" style="justify-content:center">
+                <span class="btn store" style="cursor:default">App Store &middot; जल्द</span>
+                <span class="btn store" style="cursor:default">Google Play &middot; जल्द</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap foot">
+            <div class="c">
+                &copy; 2026 MiyaraHub Technologies LLC &middot; Van Alstyne, Texas। सर्वाधिकार सुरक्षित।<br> <b>Almanox</b> - फ़ोटोग्राफ़रों और तारे देखने वालों के लिए सूर्य, चंद्रमा और आकाशगंगा प्लानर।<br> <span class="legal">Almanox, MiyaraHub Technologies LLC का एक स्वतंत्र ऐप है और किसी भी तीसरे पक्ष से संबद्ध, उसके द्वारा समर्थित या प्रायोजित नहीं है। लाइव मौसम Open-Meteo द्वारा और जगहों की खोज OpenStreetMap योगदानकर्ताओं द्वारा उपलब्ध कराई जाती है; डार्क-स्काई मार्गदर्शन सार्वजनिक लाइट-पॉल्यूशन डेटासेट से लिया गया है। उल्लिखित सभी उत्पादों के नाम उनके संबंधित स्वामियों के ट्रेडमार्क हैं।</span>
+            </div>
+            <ul>
+                <li><a href="/hi/">MiyaraHub</a></li>
+                <li><a href="/hi/privacy.html">गोपनीयता</a></li>
+                <li><a href="/hi/terms.html">शर्तें</a></li>
+                <li><a href="mailto:admin@miyarahub.com">सपोर्ट</a></li>
+            </ul>
+        </div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHub ऐप्स"><span class="fa-h">ऐप्स</span><a href="/hi/avr-maestro/">AVR Maestro</a><a href="/hi/synology-manager/">Syno Manager</a><a href="/hi/upsight/">UPSight</a><a href="/hi/fury-path/">FuryPath</a><a href="/hi/uc-remote/">UC Remote</a><a href="/hi/almanox/">Almanox</a><a href="/hi/nexus-deck/">NexusDeck</a><a href="/hi/avr-maestro-mc/">AVR Maestro MC</a><a href="/hi/network-deck/">Network Deck</a><a href="/hi/projector-pilot/">Projector Pilot</a><a href="/hi/elan-audio-lab/">Elan Audio Lab</a><a href="/hi/support/">सपोर्ट</a></div>
+    <p class="foot-tm">MiyaraHub ऐप्स स्वतंत्र हैं और जिन हार्डवेयर और सेवाओं के साथ काम करते हैं, उनके निर्माताओं से संबद्ध, उनके द्वारा समर्थित या प्रायोजित नहीं हैं। सभी ट्रेडमार्क उनके संबंधित स्वामियों के हैं। <a href="/hi/#legal">ट्रेडमार्क सूचना</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.fade').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+        });
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade:not(.vis)').forEach(el => io.observe(el));
+
+        function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+        function closeNav() {
+            document.getElementById('nav-menu').classList.remove('open');
+            document.getElementById('nav-toggle').classList.remove('open');
+        }
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+    </script>
+  <script defer src="/almanox/search.js"></script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

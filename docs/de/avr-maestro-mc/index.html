@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVR Maestro MC: Fernbedienungs-App für Yamaha MusicCast - MiyaraHub</title>
+    <meta name="description" content="AVR Maestro MC ist eine unabhängige Fernbedienungs-App für Yamaha MusicCast AV-Receiver, in Entwicklung für iOS, Android, Mac und Windows. Zonen, Surround:AI, YPAO.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="AVR Maestro MC: Fernbedienungs-App für Yamaha MusicCast">
+    <meta property="og:description" content="AVR Maestro MC ist eine unabhängige Fernbedienungs-App für Yamaha MusicCast AV-Receiver, in Entwicklung für iOS, Android, Mac und Windows. Zonen, Surround:AI, YPAO.">
+    <meta property="og:url" content="https://miyarahub.com/de/avr-maestro-mc/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/avr-maestro-mc.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="AVR Maestro MC, an independent remote app for Yamaha MusicCast AV receivers, in development. Not affiliated with Yamaha.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AVR Maestro MC: Fernbedienungs-App für Yamaha MusicCast">
+    <meta name="twitter:description" content="AVR Maestro MC ist eine unabhängige Fernbedienungs-App für Yamaha MusicCast AV-Receiver, in Entwicklung für iOS, Android, Mac und Windows. Zonen, Surround:AI, YPAO.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/avr-maestro-mc.png">
+    <meta name="twitter:image:alt" content="AVR Maestro MC, an independent remote app for Yamaha MusicCast AV receivers, in development. Not affiliated with Yamaha.">
+    <meta name="keywords" content="Yamaha MusicCast app, Yamaha AV receiver remote, Yamaha receiver app, MusicCast controller app, MusicCast remote, Yamaha RX-V app, Yamaha RX-A app, Yamaha Aventage app, Yamaha AVENTAGE remote, Yamaha RX-A6A app, Yamaha RX-A8A app, Yamaha RX-V6A app, Yamaha CX-A5200 app, Yamaha pre-processor app, MusicCast multi-zone app, Yamaha zone 2 control, Surround AI app, Cinema DSP app, YPAO app, Yamaha YPAO remote, Yamaha sound bar app, MusicCast sound bar, Yamaha net radio app, Yamaha streaming control, third party Yamaha app, best Yamaha receiver app, Yamaha remote replacement, MusicCast 2016, Yamaha YXC protocol, AVR Maestro MC, AVR Maestro Yamaha, MiyaraHub">
+    <link rel="canonical" href="https://miyarahub.com/de/avr-maestro-mc/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/avr-maestro-mc/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/avr-maestro-mc/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/avr-maestro-mc/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/avr-maestro-mc/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/avr-maestro-mc/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/avr-maestro-mc/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/avr-maestro-mc/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/avr-maestro-mc/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/avr-maestro-mc/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/avr-maestro-mc/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/avr-maestro-mc/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/avr-maestro-mc/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/avr-maestro-mc/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/avr-maestro-mc/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/avr-maestro-mc/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/avr-maestro-mc/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/avr-maestro-mc/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/avr-maestro-mc/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/avr-maestro-mc/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/avr-maestro-mc/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/avr-maestro-mc/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/avr-maestro-mc/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/avr-maestro-mc/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/avr-maestro-mc/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/avr-maestro-mc/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/avr-maestro-mc/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/avr-maestro-mc/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/avr-maestro-mc/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/avr-maestro-mc/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/avr-maestro-mc/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/avr-maestro-mc/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/avr-maestro-mc-icon.png">
+    <link rel="apple-touch-icon" href="/assets/avr-maestro-mc-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#ff7a1a; --accent-deep:#ffab5e; --accent-soft:rgba(255,122,26,.13); --accent-star:rgba(255,122,26,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.05fr .95fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .price-hero{display:inline-flex; align-items:center; gap:.7rem; margin:1.4rem 0 .3rem; padding:.85rem 1.2rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft); font-family:'IBM Plex Mono',monospace; font-size:.76rem; letter-spacing:.05em; color:var(--star); line-height:1.4}
+        .price-hero .dot{color:var(--accent); font-size:.9rem; line-height:1}
+        .price-hero b{color:var(--accent); font-weight:500}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#1c1712,#12100c); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in; aspect-ratio:1080/2340; object-fit:cover; object-position:top}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.p-hero{grid-template-columns:1fr; gap:2.4rem}.device{order:-1}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .compat{display:grid; grid-template-columns:repeat(2,1fr); gap:1.4rem}
+        .compat .c{border:1px solid var(--line); border-radius:6px; padding:1.4rem 1.6rem; background:rgba(30,22,14,.4)}
+        .compat .c h4{font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:1.12rem; margin-bottom:.8rem; display:flex; align-items:center; gap:.6rem; color:var(--star)}
+        .compat .c h4 .g{color:var(--accent); flex-shrink:0}
+        .compat .c ul{list-style:none}
+        .compat .c li{color:var(--muted); font-size:.9rem; padding:.28rem 0; display:flex; gap:.55rem; align-items:baseline}
+        .compat .c li::before{content:'+'; color:var(--accent); font-family:'IBM Plex Mono',monospace; flex-shrink:0}
+        .compat-note{color:var(--faint); font-size:.86rem; line-height:1.7; margin-top:1.6rem; max-width:82ch}
+        .compat-note strong{color:var(--muted)}
+        @media(max-width:720px){.compat{grid-template-columns:1fr}}
+        .a-in code{font-family:'IBM Plex Mono',monospace; font-size:.86em; color:var(--accent); background:var(--accent-soft); padding:.05rem .32rem; border-radius:3px}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(20,16,12,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+        .legal p strong{color:var(--muted)}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Kleines, unabhängiges Softwarestudio für native Apps, Full-Stack-Web- und E-Commerce-Plattformen, System- und Monitoring-Tools, Geräteintegrationen und DevOps-Pipelines.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "de", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/avr-maestro-mc/#webpage", "url": "https://miyarahub.com/avr-maestro-mc/", "name": "AVR Maestro MC: Fernbedienungs-App für Yamaha MusicCast - MiyaraHub", "description": "AVR Maestro MC ist eine unabhängige Fernbedienungs-App für Yamaha MusicCast AV-Receiver, in Entwicklung für iOS, Android, Mac und Windows. Zonen, Surround:AI, YPAO.", "inLanguage": "de", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/avr-maestro-mc.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/avr-maestro-mc/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/avr-maestro-mc/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/avr-maestro-mc/#app", "name": "AVR Maestro MC", "description": "Eine unabhängige Fernbedienung für Yamaha MusicCast AV-Receiver, Vorstufen und Soundbars (ab 2016). Strom, Lautstärke, Eingänge, Cinema DSP und Surround:AI Klangprogramme, Multi-Zone-Steuerung, Musiksuche und eine YPAO-Oberfläche. Das Yamaha-Geschwister von AVR Maestro. In Entwicklung.", "url": "https://miyarahub.com/avr-maestro-mc/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "MultimediaApplication", "image": "https://miyarahub.com/assets/avr-maestro-mc-icon.png", "screenshot": ["https://miyarahub.com/avr-maestro-mc/screenshots/device.jpg", "https://miyarahub.com/avr-maestro-mc/screenshots/g1_dashboard.jpg", "https://miyarahub.com/avr-maestro-mc/screenshots/g2_sound.jpg", "https://miyarahub.com/avr-maestro-mc/screenshots/g3_zones.jpg", "https://miyarahub.com/avr-maestro-mc/screenshots/g4_ypao.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/avr-maestro-mc/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "AVR Maestro MC", "item": "https://miyarahub.com/avr-maestro-mc/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/avr-maestro-mc/#faq", "url": "https://miyarahub.com/avr-maestro-mc/", "mainEntity": [{"@type": "Question", "name": "Ist AVR Maestro MC dieselbe App wie AVR Maestro?", "acceptedAnswer": {"@type": "Answer", "text": "Nein - es ist eine eigene App. AVR Maestro steuert Denon- und Marantz-Receiver. AVR Maestro MC ist eine eigenständige App für Yamaha MusicCast Receiver, aufgebaut auf dem Protokoll von Yamaha. Sie teilen dieselbe Designsprache, denselben Feinschliff und dieselbe Bedienung, sind aber verschiedene Produkte für verschiedene Hardware und werden getrennt veröffentlicht."}}, {"@type": "Question", "name": "Welche Yamaha-Receiver werden unterstützt?", "acceptedAnswer": {"@type": "Answer", "text": "AVR Maestro MC funktioniert mit Yamaha AV-Geräten, die MusicCast unterstützen - in der Regel Modelle ab 2016, darunter RX-V und RX-A AVENTAGE Receiver, CX-A Vorstufen und MusicCast Soundbars. Die App passt sich den Eingängen, Zonen und Klangprogrammen an, die dein Modell bereitstellt. Die bestätigte Modellliste wird zum Start veröffentlicht, sobald die Validierung mit echter Hardware abgeschlossen ist."}}, {"@type": "Question", "name": "Ist die App mit Yamaha verbunden?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. AVR Maestro MC ist eine unabhängige Drittanbieter-App von MiyaraHub Technologies LLC. Sie wird nicht von Yamaha Corporation erstellt, unterstützt oder gesponsert und steht in keiner Verbindung zu ihr. „Yamaha“, „MusicCast“, „AVENTAGE“, „Cinema DSP“, „Surround:AI“ und „YPAO“ sind Marken der Yamaha Corporation und werden hier nur zur Beschreibung der Kompatibilität verwendet (nominative Verwendung)."}}, {"@type": "Question", "name": "Brauche ich ein Yamaha- oder MusicCast-Konto?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. AVR Maestro MC spricht über dein lokales WLAN direkt mit deinem Receiver, über das MusicCast-Protokoll. Du brauchst kein Konto, keinen Cloud-Login und keine MiyaraHub Registrierung, um deine eigene Hardware zu steuern."}}, {"@type": "Question", "name": "Wann erscheint sie?", "acceptedAnswer": {"@type": "Answer", "text": "AVR Maestro MC ist in aktiver Entwicklung. Sie erscheint im App Store, bei Google Play und im Microsoft Store, sobald die Validierung mit echter Hardware über die gesamte MusicCast-Palette abgeschlossen ist. Wir liefern sie lieber richtig als früh aus - verfolge den Stand oder lass dich zum Start über die Support-Seite benachrichtigen."}}, {"@type": "Question", "name": "Was wird sie kosten?", "acceptedAnswer": {"@type": "Answer", "text": "Der Preis wird kurz vor dem Start bestätigt. Wie der Rest der AVR Maestro Familie wird sie eine einfache Bezahl-App ohne Abo und ohne Werbung sein. Der endgültige Preis wird zur Veröffentlichung festgelegt."}}, {"@type": "Question", "name": "Welche Plattformen wird sie unterstützen?", "acceptedAnswer": {"@type": "Answer", "text": "AVR Maestro MC zielt auf iPhone, iPad, Android, Mac und Windows, mit Android-Widgets für den Home-Bildschirm. Sie erscheint im App Store, bei Google Play und im Microsoft Store."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="AVR Maestro MC Screenshot vergrößert"></div>
+
+    <nav>
+        <a href="/de/" class="nav-brand"><img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub Logo"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Menü"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Sprache">
+            <li><a href="/de/" onclick="closeNav()">Start</a></li>
+            <li><a href="#screens" onclick="closeNav()">Bildschirme</a></li>
+            <li><a href="#features" onclick="closeNav()">Funktionen</a></li>
+            <li><a href="#compatibility" onclick="closeNav()">Kompatibilität</a></li>
+            <li><a href="#security" onclick="closeNav()">Datenschutz</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/de/">MiyaraHub</a> / AVR Maestro MC</div>
+            <div class="p-hero">
+                <div>
+                    <img decoding="async" width="192" height="192" class="ico" src="/assets/icons/avr-maestro-mc-icon-192.png" alt="AVR Maestro MC App-Symbol">
+                    <h1 class="hk"><span class="kicker h1k">AVR Maestro MC &middot; für Yamaha MusicCast Receiver</span><span class="h1t">Die Premium-Fernbedienung für Yamaha MusicCast.<span class="stargl">&#10022;</span></span></h1>
+                    <p class="hero-sub">Derselbe Feinschliff wie AVR Maestro - gebaut für Yamaha.</p>
+                    <p class="hero-lede">Eine hochwertige, eigens gebaute Fernbedienung für Yamaha MusicCast AV-Receiver, Vorstufen und Soundbars. Das Geschwister von AVR Maestro, neu aufgebaut auf dem MusicCast-Protokoll von Yamaha - Strom, Lautstärke, Eingänge, Cinema DSP und Surround:AI Klangprogramme, Multi-Zone-Steuerung, Musiksuche und eine YPAO-Oberfläche, per WLAN direkt zu deinem Receiver.</p>
+                    <div class="price-hero"><span class="dot">&#9679;</span><span>In Entwicklung - <b>demnächst</b> im App Store, bei Google Play und im Microsoft Store</span></div>
+                    <div class="platforms">
+                        <span class="pl-lbl">Kommt für</span>
+                        <span class="pl">iPhone</span><span class="pl">iPad</span><span class="pl">Android</span><span class="pl">macOS</span><span class="pl">Windows</span></div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img fetchpriority="high" decoding="async" width="1080" height="2340" src="/avr-maestro-mc/screenshots/device.jpg" alt="AVR Maestro MC AV-Fernbedienungsbildschirm - Steuerkreuz, Menü und Farbtasten für einen Yamaha Receiver" onclick="openLightbox(this)"></div>
+                    <div class="cap">Die AV-Fernbedienung, ein Daumen</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Screens -->
+    <section id="screens" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Screenshots</div><h2 class="sec-title">Echte Bildschirme, echter Receiver.</h2><p class="sec-desc">Echte AVR Maestro MC Screenshots, aufgenommen an einem Yamaha CX-A5200 im Livebetrieb. Standardmäßig dunkel, Live-Gerätestatus und ein Layout für die Bedienung mit einer Hand. Tippe auf einen, um zu vergrößern.</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1080" height="2340" src="/avr-maestro-mc/screenshots/g1_dashboard.jpg" alt="AVR Maestro MC Dashboard - jeder Eingang und jede MusicCast-Quelle in einem Raster" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1080" height="2340" src="/avr-maestro-mc/screenshots/g2_sound.jpg" alt="AVR Maestro MC Klangbildschirm - DSP-Programm, Klangregelung, Dialogpegel, Subwoofer-Trim" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1080" height="2962" src="/avr-maestro-mc/screenshots/g3_zones.jpg" alt="AVR Maestro MC Zonen - eigener Strom, eigene Lautstärke und eigener Eingang für Main, Zone 2 und Zone 3" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="1080" height="2340" src="/avr-maestro-mc/screenshots/g4_ypao.jpg" alt="AVR Maestro MC YPAO-Panel - Status der Raumkorrektur und YPAO Volume" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Funktionen</div><h2 class="sec-title">Jede Yamaha-Steuerung, eine saubere App.</h2><p class="sec-desc">AVR Maestro MC ist das Yamaha-Gegenstück zu AVR Maestro - dieselbe Architektur, dasselbe Theming und dieselbe Einhand-Bedienung, angepasst an das MusicCast-Protokoll (YXC) von Yamaha. Das soll sie zum Start können.</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">Nr. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> Dashboard, Strom &amp; Lautstärke</h3><p>Ein Live-Dashboard für deinen Receiver - Strom, Hauptlautstärke in feinen Schritten, Stummschaltung sowie aktueller Eingang und Klangprogramm auf einen Blick. Alles spiegelt den echten Gerätestatus, nie eine optimistische Vermutung.</p><div class="meta"><span>Strom</span><span>Hauptlautstärke</span><span>Stumm</span><span>Live-Status</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> Eingänge &amp; Quellen</h3><p>Wechsle zwischen jedem Eingang, den dein Receiver bereitstellt - HDMI, AV, Audio, Tuner und die MusicCast-Netzwerkquellen. Saubere Namen, schnelle Auswahl und nur die Eingänge, die dein Modell wirklich hat.</p><div class="meta"><span>HDMI</span><span>Tuner</span><span>Netzwerk</span><span>Pro Modell</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 03</div><div class="body"><h3><span class="glyph">&#9678;</span> Cinema DSP, Surround:AI &amp; Klangprogramme</h3><p>Wähle aus der vollständigen Klangprogramm-Bibliothek von Yamaha - Cinema DSP 3D, Surround:AI, Straight, DSP-Modi für Film und Musik - plus Pure Direct, Extra Bass, Adaptive DRC und Dialogpegel. Die Yamaha-Klang-Engine, unter deinem Daumen.</p><div class="meta"><span>Cinema DSP</span><span>Surround:AI</span><span>Pure Direct</span><span>Dialog</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 04</div><div class="body"><h3><span class="glyph">&#9672;</span> Multi-Zone-Steuerung</h3><p>Unabhängige Steuerung der Hauptzone sowie von Zone 2, Zone 3 und Zone 4, sofern dein Receiver sie unterstützt - Strom, Lautstärke, Eingang und Stummschaltung pro Zone. Schicke verschiedene Quellen in verschiedene Räume, alles von einem Bildschirm aus.</p><div class="meta"><span>Main + Zonen</span><span>Eingang pro Zone</span><span>Lautstärke pro Zone</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 05</div><div class="body"><h3><span class="glyph">&#9670;</span> Musiksuche</h3><p>Durchsuche und spiele Inhalte aus den MusicCast-Quellen, die dein Receiver schon kennt - Internetradio, USB, DLNA-Server und die am Gerät verknüpften Streamingdienste - mit Metadaten zur Wiedergabe, Transportsteuerung und Presets.</p><div class="meta"><span>Internetradio</span><span>USB / DLNA</span><span>Streaming</span><span>Presets</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 06</div><div class="body"><h3><span class="glyph">&#9680;</span> YPAO &amp; Setup-Oberfläche</h3><p>Prüfe und schalte die Einstellungen um, die deinen Raum prägen - YPAO-Ergebnisse, Klangregler, Subwoofer-Trim und die Audio-Optionen, die MusicCast bereitstellt - ohne dich durch das Bildschirmmenü auf deinem Fernseher zu wühlen.</p><div class="meta"><span>YPAO</span><span>Klang</span><span>Subwoofer</span><span>Audio-Optionen</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 07</div><div class="body"><h3><span class="glyph">&#9636;</span> Android-Widgets für den Home-Bildschirm</h3><p>Dasselbe Widget-Framework wie bei AVR Maestro - Kacheln für Strom, Lautstärke und Eingang auf deinem Android-Home-Bildschirm, sodass die häufigsten Aktionen die App nie öffnen müssen.</p><div class="meta"><span>Strom-Kachel</span><span>Lautstärke-Kachel</span><span>Eingangs-Kachel</span></div></div></div>
+                <div class="entry fade"><div class="no">Nr. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> Wechsler für mehrere Receiver</h3><p>Du besitzt mehr als einen MusicCast Receiver? Wechsle mit einem Tap zwischen ihnen. Jeder behält seinen eigenen Namen, seine Eingänge, Zonen und sein Layout - die App passt sich dem Gerät an, auf das du sie richtest.</p><div class="meta"><span>Mehrere Geräte</span><span>Automatische Anpassung</span><span>Schneller Wechsel</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section id="compatibility" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Kompatibilität</div><h2 class="sec-title">Gebaut für Yamaha der MusicCast-Generation.</h2><p class="sec-desc">AVR Maestro MC spricht das MusicCast-Protokoll (YXC) von Yamaha, das Yamaha AV-Geräte ab 2016 abdeckt. Sie erkennt automatisch, was dein Modell bereitstellt, und passt die Oberfläche an - Zonen und Funktionen, die dein Receiver nicht hat, erscheinen einfach nicht.</p></div>
+            <div class="compat">
+                <div class="c">
+                    <h4><span class="g">&#9673;</span> AV-Receiver</h4>
+                    <ul>
+                        <li>RX-V Serie (ab 2016)</li>
+                        <li>RX-A AVENTAGE Serie</li>
+                        <li>TSR / RX-A x80, x70, x60 Linien</li>
+                        <li>Modelle mit MusicCast</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9635;</span> Vorstufen &amp; Soundbars</h4>
+                    <ul>
+                        <li>CX-A Serie AV-Vorverstärker</li>
+                        <li>MusicCast BAR Soundbars</li>
+                        <li>YAS / SR MusicCast Soundbars</li>
+                        <li>Audiogeräte mit MusicCast</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9678;</span> Verbindung</h4>
+                    <ul>
+                        <li>Lokales WLAN - direkt zum Receiver</li>
+                        <li>Yamaha YXC-Protokoll (REST / JSON)</li>
+                        <li>Kein Yamaha- / MusicCast-Konto nötig</li>
+                        <li>Kein Cloud-Relay</li>
+                    </ul>
+                </div>
+                <div class="c">
+                    <h4><span class="g">&#9670;</span> Plattformen</h4>
+                    <ul>
+                        <li>iPhone und iPad</li>
+                        <li>Android-Telefon und -Tablet</li>
+                        <li>Mac und Windows</li>
+                        <li>Helle und dunkle Designs</li>
+                        <li>Android-Widgets für den Home-Bildschirm</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="compat-note"><strong>MusicCast erforderlich:</strong> AVR Maestro MC steuert Yamaha-Geräte, die MusicCast unterstützen (in der Regel ab 2016). Yamaha-Receiver aus der Zeit vor der MusicCast-Generation nutzen ein anderes Protokoll und werden nicht unterstützt. Die genaue Modellliste wird zum Start bestätigt, sobald die Validierung mit echter Hardware abgeschlossen ist.</p>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">So funktioniert es</div><h2 class="sec-title">Direkt zu deinem Receiver. Kein Cloud-Relay.</h2><p class="sec-desc">AVR Maestro MC spricht über das MusicCast-Protokoll direkt mit deinem Yamaha Receiver in deinem lokalen Netzwerk. Deine Befehle berühren nie einen MiyaraHub Server.</p></div>
+            <div class="steps">
+                <div class="step fade"><div class="n">1</div><h3>Finde deinen Receiver</h3><p>Im selben WLAN findet AVR Maestro MC deinen MusicCast Receiver automatisch - oder du richtest die App direkt auf die IP-Adresse des Receivers. Keine Kopplungscodes, keine Kontoanmeldung.</p></div>
+                <div class="step fade"><div class="n">2</div><h3>Sie passt sich deinem Modell an</h3><p>Die App liest, was dein Receiver unterstützt - Zonen, Eingänge, Klangprogramme und Quellen - und baut die Oberfläche passend dazu auf. Du siehst nur Steuerungen, die deine Hardware wirklich hat.</p></div>
+                <div class="step fade"><div class="n">3</div><h3>Steuere alles</h3><p>Strom, Lautstärke, Eingänge, Klangprogramme, Zonen und Musik - jede Aktion geht zum Receiver und zurück und spiegelt den echten Gerätestatus. Füge ein Widget hinzu, wechsle eine Zone oder ändere den DSP-Modus aus der Hosentasche.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section id="security" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Sicherheit &amp; Datenschutz</div><h2 class="sec-title">Nur lokal. Kein Konto. Kein Cloud-Relay.</h2><p class="sec-desc">Wie jede MiyaraHub App ist AVR Maestro MC lokal zuerst gebaut. Kein MiyaraHub Konto, kein Cloud-Relay, keine Datenerhebung über Absturzberichte hinaus.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>Kein Cloud-Relay</h4><p>Jeder Befehl läuft direkt zwischen deinem Telefon und deinem Receiver über dein lokales WLAN. Nichts wird über externe Server geleitet.</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>Kein Konto nötig</h4><p>Keine Registrierung, keine E-Mail, kein MiyaraHub oder Yamaha Login nötig, um deinen eigenen Receiver zu steuern. Installieren, dein Gerät finden, und du bist drin.</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>Minimale Analysen</h4><p>Nur Absturzberichte, damit wir Fehler beheben und die Modellkompatibilität erweitern können. Kein Nutzungs-Tracking, keine Werbung, kein Datenverkauf.</p></div></div>
+                <div class="p"><span class="g">&#9672;</span><div><h4>Nur Netzwerkberechtigung</h4><p>Die einzige erforderliche Gerätefreigabe ist der Netzwerkzugriff, der ausschließlich dazu dient, deinen Yamaha Receiver in deinem lokalen Netzwerk zu erreichen.</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>Deine Daten bleiben deine</h4><p>Receiver-Namen, Zonen-Layouts und Presets liegen auf deinem Gerät. Wir sehen nie dein Setup, deine Räume oder was du hörst.</p></div></div>
+                <div class="p"><span class="g">&#9680;</span><div><h4>Ehrlich von Grund auf</h4><p>Die App täuscht nie einen Gerätestatus vor. Hat der Receiver eine Änderung nicht bestätigt, tut die App nicht so, als wäre sie passiert - du siehst, was die Hardware meldet.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">FAQ</div><h2 class="sec-title">Häufig gestellte Fragen.</h2><p class="sec-desc">Alles, was wir dir heute über AVR Maestro MC sagen können.</p></div>
+            <div class="faq">
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Ist AVR Maestro MC dieselbe App wie AVR Maestro? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Nein - es ist eine eigene App.</strong> AVR Maestro steuert <strong>Denon- und Marantz</strong>-Receiver. AVR Maestro MC ist eine eigenständige App für <strong>Yamaha MusicCast</strong> Receiver, aufgebaut auf dem Protokoll von Yamaha. Sie teilen dieselbe Designsprache, denselben Feinschliff und dieselbe Bedienung, sind aber verschiedene Produkte für verschiedene Hardware und werden getrennt veröffentlicht.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Welche Yamaha-Receiver werden unterstützt? <span class="arw">+</span></div><div class="a"><div class="a-in">AVR Maestro MC funktioniert mit Yamaha AV-Geräten, die <strong>MusicCast</strong> unterstützen - in der Regel Modelle ab 2016, darunter RX-V und RX-A AVENTAGE Receiver, CX-A Vorstufen und MusicCast Soundbars. Die App passt sich den Eingängen, Zonen und Klangprogrammen an, die dein Modell bereitstellt. Die bestätigte Modellliste wird zum Start veröffentlicht, sobald die Validierung mit echter Hardware abgeschlossen ist.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Ist die App mit Yamaha verbunden? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Nein.</strong> AVR Maestro MC ist eine unabhängige Drittanbieter-App von MiyaraHub Technologies LLC. Sie wird nicht von Yamaha Corporation erstellt, unterstützt oder gesponsert und steht in keiner Verbindung zu ihr. „Yamaha“, „MusicCast“, „AVENTAGE“, „Cinema DSP“, „Surround:AI“ und „YPAO“ sind Marken der Yamaha Corporation und werden hier nur zur Beschreibung der Kompatibilität verwendet (nominative Verwendung).</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Brauche ich ein Yamaha- oder MusicCast-Konto? <span class="arw">+</span></div><div class="a"><div class="a-in">Nein. AVR Maestro MC spricht über dein lokales WLAN direkt mit deinem Receiver, über das MusicCast-Protokoll. Du brauchst kein Konto, keinen Cloud-Login und keine MiyaraHub Registrierung, um deine eigene Hardware zu steuern.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Wann erscheint sie? <span class="arw">+</span></div><div class="a"><div class="a-in">AVR Maestro MC ist in aktiver Entwicklung. Sie erscheint im App Store, bei Google Play und im Microsoft Store, sobald die Validierung mit echter Hardware über die gesamte MusicCast-Palette abgeschlossen ist. Wir liefern sie lieber richtig als früh aus - verfolge den Stand oder lass dich zum Start über die Support-Seite benachrichtigen.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Was wird sie kosten? <span class="arw">+</span></div><div class="a"><div class="a-in">Der Preis wird kurz vor dem Start bestätigt. Wie der Rest der AVR Maestro Familie wird sie eine einfache Bezahl-App ohne Abo und ohne Werbung sein. Der endgültige Preis wird zur Veröffentlichung festgelegt.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Welche Plattformen wird sie unterstützen? <span class="arw">+</span></div><div class="a"><div class="a-in">AVR Maestro MC zielt auf <strong>iPhone, iPad, Android, Mac und Windows</strong> Telefone und Tablets, mit Android-Widgets für den Home-Bildschirm. Sie erscheint im App Store, bei Google Play und im Microsoft Store.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>Rechtlicher Haftungsausschluss &amp; Markenhinweis</h3>
+            <p>AVR Maestro MC ist eine <strong>unabhängige Drittanbieter-App</strong>, entwickelt und veröffentlicht von <strong>MiyaraHub Technologies LLC</strong>. Sie wird <strong>nicht von Yamaha Corporation erstellt, und es besteht weder eine Verbindung noch eine Unterstützung, ein Sponsoring oder irgendeine offizielle Beziehung</strong> zu ihr oder ihren Tochter- oder verbundenen Unternehmen.</p>
+            <p>„Yamaha“, „MusicCast“, „AVENTAGE“, „Cinema DSP“, „Surround:AI“, „YPAO“ und alle zugehörigen Produktnamen und Logos sind Marken oder eingetragene Marken der Yamaha Corporation, eingetragen in den Vereinigten Staaten und anderen Ländern. Alle anderen hier genannten Marken sind Eigentum ihrer jeweiligen Inhaber.</p>
+            <p>Verweise auf diese Produkte auf dieser Seite und in der App dienen ausschließlich dazu, die Kompatibilität zu kennzeichnen und die Funktionen der App zu beschreiben (nominative Verwendung). Die Markeninhaber stehen in keiner Verbindung zu MiyaraHub Technologies LLC und unterstützen dieses Produkt nicht.</p>
+            <p>AVR Maestro MC kommuniziert mit Yamaha-Receivern über deren dokumentiertes lokales Netzwerkprotokoll. Die Nutzung dieser App erfolgt auf eigenes Risiko. MiyaraHub Technologies LLC ist nicht verantwortlich für Fehlkonfigurationen von Geräten oder andere Probleme, die sich aus der Nutzung dieser Anwendung ergeben.</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>Eine bessere Fernbedienung für deinen Yamaha kommt.</h2>
+            <p>AVR Maestro MC ist in aktiver Entwicklung und erscheint im App Store, bei Google Play und im Microsoft Store. Lass dich zum Start benachrichtigen.</p>
+            <div class="cta-row" style="justify-content:center">
+                <a class="btn primary" href="/de/support/">Zum Start benachrichtigen lassen</a>
+                <a class="btn" href="/de/avr-maestro/">AVR Maestro für Denon &amp; Marantz ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Van Alstyne, TX. Alle Rechte vorbehalten.</div>
+            <ul>
+                <li><a href="/de/">Start</a></li>
+                <li><a href="/de/support/">Support</a></li>
+                <li><a href="/de/privacy.html">Datenschutz</a></li>
+                <li><a href="/de/terms.html">Nutzungsbedingungen</a></li>
+            </ul>
+        </div></div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHub Apps"><span class="fa-h">Apps</span><a href="/de/avr-maestro/">AVR Maestro</a><a href="/de/synology-manager/">Syno Manager</a><a href="/de/upsight/">UPSight</a><a href="/de/fury-path/">FuryPath</a><a href="/de/uc-remote/">UC Remote</a><a href="/de/almanox/">Almanox</a><a href="/de/nexus-deck/">NexusDeck</a><a href="/de/avr-maestro-mc/">AVR Maestro MC</a><a href="/de/network-deck/">Network Deck</a><a href="/de/projector-pilot/">Projector Pilot</a><a href="/de/elan-audio-lab/">Elan Audio Lab</a><a href="/de/support/">Support</a></div>
+    <p class="foot-tm">MiyaraHub Apps sind unabhängig und stehen in keiner Verbindung zu den Herstellern der Hardware und Dienste, mit denen sie arbeiten, und werden von ihnen weder unterstützt noch gesponsert. Alle Marken gehören ihren jeweiligen Inhabern. <a href="/de/#legal">Markenhinweis</a></p>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

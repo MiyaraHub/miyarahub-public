@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanox : application de planification soleil, lune &amp; Voie lactée - MiyaraHub</title>
+    <meta name="description" content="Almanox est un planificateur hors ligne du soleil, de la lune et de la Voie lactée pour iOS, Android, Mac et Windows : verdict Tonight, heure dorée, fenêtres de ciel sombre et planificateur de prises de vue.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Almanox : application de planification soleil, lune &amp; Voie lactée">
+    <meta property="og:description" content="Almanox est un planificateur hors ligne du soleil, de la lune et de la Voie lactée pour iOS, Android, Mac et Windows : verdict Tonight, heure dorée, fenêtres de ciel sombre et planificateur de prises de vue.">
+    <meta property="og:url" content="https://miyarahub.com/fr/almanox/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Almanox : application de planification soleil, lune &amp; Voie lactée">
+    <meta name="twitter:description" content="Almanox est un planificateur hors ligne du soleil, de la lune et de la Voie lactée pour iOS, Android, Mac et Windows : verdict Tonight, heure dorée, fenêtres de ciel sombre et planificateur de prises de vue.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta name="twitter:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="keywords" content="astrophotography planner app, Milky Way planner, night sky planner, golden hour app, blue hour app, sun position app, moon phase app, moonrise moonset app, dark sky forecast app, stargazing app, astronomy planner, twilight calculator app, Milky Way core app, galactic core tracker, ISS pass app, ISS tracker, shot planner sun moon alignment, offline astronomy app, one-time purchase astronomy app, sun moon almanac app, night photography planner, offline map planner, eclipse forecast app, aurora forecast app, Kp index app, planets tonight app, home screen widgets, MiyaraHub, Almanox">
+    <link rel="canonical" href="https://miyarahub.com/fr/almanox/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/almanox/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/almanox/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/almanox/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/almanox/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/almanox/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/almanox/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/almanox/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/almanox/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/almanox/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/almanox/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/almanox/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/almanox/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/almanox/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/almanox/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/almanox/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/almanox/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/almanox/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/almanox/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/almanox/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/almanox/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/almanox/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/almanox/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/almanox/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/almanox/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/almanox/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/almanox/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/almanox/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/almanox/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/almanox/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/almanox/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/almanox/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/almanox-icon.png">
+    <link rel="apple-touch-icon" href="/assets/almanox-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root {
+            --ink: #070c16;
+            --ink-2: #0b1322;
+            --ink-3: #0f1a2c;
+            --star: #eef2f8;
+            --muted: #8fa0b8;
+            --faint: #607089;
+            --brass: #e6a552;
+            --brass-deep: #c9863a;
+            --brass-soft: rgba(230,165,82,0.12);
+            --line: rgba(176,198,232,0.11);
+            --line-strong: rgba(176,198,232,0.2);
+            /* twilight ladder - semantic, not the accent */
+            --tw-day: #f3b64d;
+            --tw-civil: #d98b46;
+            --tw-nautical: #3f6ea6;
+            --tw-astro: #26305a;
+            --tw-night: #0a1120;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: var(--ink);
+            color: var(--star);
+            line-height: 1.62;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* faint fixed star-field - no animated blobs */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background:
+                radial-gradient(1.2px 1.2px at 12% 22%, rgba(238,242,248,.35), transparent),
+                radial-gradient(1.2px 1.2px at 78% 14%, rgba(238,242,248,.28), transparent),
+                radial-gradient(1px 1px at 34% 62%, rgba(238,242,248,.22), transparent),
+                radial-gradient(1px 1px at 62% 78%, rgba(238,242,248,.20), transparent),
+                radial-gradient(1.4px 1.4px at 88% 54%, rgba(230,165,82,.30), transparent),
+                radial-gradient(1px 1px at 22% 84%, rgba(238,242,248,.18), transparent),
+                radial-gradient(1.1px 1.1px at 50% 8%, rgba(238,242,248,.24), transparent);
+            background-repeat: no-repeat;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(120% 80% at 50% -10%, rgba(63,110,166,.10) 0%, transparent 55%),
+                radial-gradient(90% 60% at 84% 8%, rgba(230,165,82,.05) 0%, transparent 50%);
+        }
+        a { color: inherit; }
+        ::selection { background: var(--brass-soft); color: var(--star); }
+
+        .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; }
+        .kicker {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            color: var(--brass);
+        }
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; }
+
+        /* rule */
+        .hr {
+            height: 1px;
+            background: var(--line);
+            border: 0;
+            width: 100%;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .85rem 1.75rem;
+            background: rgba(7,12,22,.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        .nav-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+        .nav-brand img { height: 30px; width: 30px; border-radius: 5px; }
+        .nav-brand-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 600;
+            letter-spacing: .01em;
+            color: var(--star);
+        }
+        .nav-links { display: flex; gap: 1.9rem; list-style: none; align-items: center; }
+        .nav-links a {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .74rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color .25s;
+        }
+        .nav-links a:hover { color: var(--brass); }
+        .nav-toggle {
+            display: none; background: none; border: none; cursor: pointer;
+            padding: .4rem; z-index: 101; flex-direction: column; gap: 5px;
+        }
+        .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--muted); transition: transform .3s, opacity .3s; }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+        /* HERO */
+        .hero { padding: 8.5rem 0 3.5rem; position: relative; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        .hero-coord {
+            margin-bottom: 1.5rem;
+            display: flex; gap: 1.2rem; flex-wrap: wrap;
+        }
+        .hero h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: clamp(3.4rem, 8vw, 6rem);
+            line-height: .95;
+            letter-spacing: -.02em;
+            margin: .4rem 0 .1rem;
+            display: flex; align-items: flex-start; gap: .1em;
+        }
+        .hero h1 .stargl { color: var(--brass); font-size: .34em; margin-top: .15em; line-height: 1; }
+        .hero-sub {
+            font-family: 'Fraunces', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+            color: var(--star);
+            opacity: .92;
+            margin: .1rem 0 1.4rem;
+            max-width: 30ch;
+        }
+        .hero-lede {
+            color: var(--muted);
+            font-size: 1.02rem;
+            max-width: 46ch;
+            margin-bottom: 1.8rem;
+        }
+        .cta-row { display: flex; gap: .9rem; flex-wrap: wrap; align-items: center; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+            padding: .8rem 1.3rem;
+            text-decoration: none;
+            border: 1px solid var(--line-strong);
+            border-radius: 3px;
+            color: var(--muted);
+            background: transparent;
+            transition: border-color .25s, color .25s, background .25s;
+        }
+        .btn.store { color: var(--star); border-color: rgba(230,165,82,.35); }
+        .btn.store svg { fill: var(--brass); }
+        .btn:hover { border-color: var(--brass); color: var(--brass); }
+        .btn.primary {
+            border-color: var(--brass);
+            color: var(--ink);
+            background: var(--brass);
+        }
+        .btn.primary:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--ink); }
+        .coming {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+            color: var(--faint); margin-top: 1.5rem;
+        }
+        .coming .dot { color: var(--brass); }
+
+        /* EPHEMERIS PANEL - the data-as-decoration anchor */
+        .ephem {
+            border: 1px solid var(--line-strong);
+            border-radius: 5px;
+            background: linear-gradient(180deg, rgba(15,26,44,.85), rgba(11,19,34,.85));
+            box-shadow: 0 24px 70px rgba(0,0,0,.45);
+            overflow: hidden;
+        }
+        .ephem-head {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(230,165,82,.05);
+        }
+        .ephem-head .t { font-family:'IBM Plex Mono',monospace; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+        .ephem-head .d { font-family:'IBM Plex Mono',monospace; font-size: .68rem; color: var(--faint); }
+        .ephem-body { display: grid; grid-template-columns: 1fr auto; }
+        .ephem-rows { padding: 1.1rem 1rem; display: flex; flex-direction: column; gap: .62rem; }
+        .erow { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-family:'IBM Plex Mono',monospace; }
+        .erow .lbl { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+        .erow .val { font-size: .86rem; color: var(--star); white-space: nowrap; }
+        .erow .val b { color: var(--brass); font-weight: 500; }
+        .erow.verdict { margin-top: .3rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+        .erow.verdict .lbl { color: var(--brass); }
+        .erow.verdict .score { font-family:'Fraunces',serif; font-size: 1.7rem; font-weight: 600; color: var(--star); line-height: 1; }
+        .erow.verdict .grade { font-size: .68rem; letter-spacing: .18em; color: var(--brass); }
+
+        /* twilight ladder */
+        .ladder { width: 74px; border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+        .ladder .seg { flex: 1; position: relative; display: flex; align-items: center; padding-left: .55rem; }
+        .ladder .seg span { font-family:'IBM Plex Mono',monospace; font-size: .56rem; letter-spacing: .06em; color: rgba(255,255,255,.82); text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+        .ladder .day { background: var(--tw-day); }
+        .ladder .civil { background: var(--tw-civil); }
+        .ladder .nautical { background: var(--tw-nautical); }
+        .ladder .astro { background: var(--tw-astro); }
+        .ladder .night { background: var(--tw-night); }
+        .ladder .night span, .ladder .nautical span, .ladder .astro span { color: rgba(238,242,248,.9); }
+
+        /* PLATES (screenshots) */
+        .plates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+            margin-top: 3.5rem;
+        }
+        .plate { text-align: center; }
+        .plate .frame {
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            padding: 5px;
+            background: rgba(15,26,44,.5);
+            transition: border-color .3s, transform .3s;
+        }
+        .plate .frame:hover { border-color: rgba(230,165,82,.5); transform: translateY(-4px); }
+        .plate img { width: 100%; display: block; border-radius: 3px; cursor: zoom-in; }
+        .plate .cap {
+            font-family:'IBM Plex Mono',monospace; font-size: .66rem; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--faint); margin-top: .7rem;
+        }
+        .plate .cap b { color: var(--brass); font-weight: 500; }
+
+        /* SECTIONS */
+        section { padding: 4.5rem 0; }
+        .sec-head { margin-bottom: 2.6rem; max-width: 40ch; }
+        .sec-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            line-height: 1.05;
+            letter-spacing: -.015em;
+            margin: .55rem 0 .8rem;
+            text-wrap: balance;
+        }
+        .sec-desc { color: var(--muted); font-size: 1.02rem; }
+        .sec-band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+        /* FEATURES - ledger entries */
+        .ledger { border-top: 1px solid var(--line); }
+        .entry {
+            display: grid;
+            grid-template-columns: 4.5rem 1fr;
+            gap: 1.5rem;
+            padding: 1.9rem 0;
+            border-bottom: 1px solid var(--line);
+            align-items: start;
+        }
+        .entry .no {
+            font-family:'IBM Plex Mono',monospace; font-size: .82rem; color: var(--brass);
+            letter-spacing: .05em; padding-top: .35rem;
+        }
+        .entry .body { }
+        .entry h3 {
+            font-family:'Fraunces',Georgia,serif; font-weight: 500; font-size: 1.4rem;
+            letter-spacing: -.01em; margin-bottom: .5rem; display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+        }
+        .entry h3 .glyph { color: var(--brass); flex-shrink: 0; }
+        .pro-tag {
+            font-family:'IBM Plex Mono',monospace; font-size: .6rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--brass);
+            border: 1px solid rgba(230,165,82,.4); border-radius: 2px; padding: .1rem .4rem;
+        }
+        .entry p { color: var(--muted); font-size: .98rem; max-width: 62ch; }
+        .entry .meta {
+            margin-top: .8rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
+            font-family:'IBM Plex Mono',monospace; font-size: .7rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint);
+        }
+        .entry .meta span::before { content: '+ '; color: var(--brass); }
+
+        /* HOW IT WORKS */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; }
+        .step .n {
+            font-family:'Fraunces',Georgia,serif; font-size: 3rem; font-weight: 400;
+            color: var(--brass); line-height: 1; margin-bottom: .6rem;
+            border-bottom: 1px solid var(--line); padding-bottom: .8rem;
+        }
+        .step h3 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.25rem; margin-bottom: .5rem; }
+        .step p { color: var(--muted); font-size: .95rem; }
+
+        /* PRIVACY - ruled list */
+        .priv { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+        .priv .p {
+            padding: 1.4rem 0; border-bottom: 1px solid var(--line);
+            display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start;
+        }
+        .priv .p .g { color: var(--brass); padding-top: .1rem; }
+        .priv .p h4 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.08rem; margin-bottom: .3rem; }
+        .priv .p h4 a { color: var(--star); text-decoration: none; transition: color .2s; }
+        .priv .p h4 a:hover { color: var(--brass); }
+        .priv .p p { color: var(--muted); font-size: .9rem; }
+
+        /* FAQ */
+        .faq { max-width: 800px; border-top: 1px solid var(--line); }
+        .qa { border-bottom: 1px solid var(--line); }
+        .q {
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            padding: 1.35rem 0; cursor: pointer; user-select: none;
+            font-family:'Fraunces',serif; font-weight: 500; font-size: 1.12rem;
+            transition: color .25s;
+        }
+        .q:hover { color: var(--brass); }
+        .q .arw { color: var(--brass); font-family:'IBM Plex Mono',monospace; font-size: .9rem; transition: transform .3s; flex-shrink: 0; }
+        .qa.open .q .arw { transform: rotate(45deg); }
+        .a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+        .qa.open .a { max-height: 460px; }
+        .a-in { padding: 0 0 1.35rem; color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 68ch; }
+        .a-in strong { color: var(--star); }
+
+        /* GLOSSARY */
+        .gloss { border-top: 1px solid var(--line); }
+        .gloss .row {
+            display: grid; grid-template-columns: 14rem 1fr; gap: 1.6rem;
+            padding: 1.3rem 0; border-bottom: 1px solid var(--line); align-items: baseline;
+        }
+        .gloss .term { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--star); }
+        .gloss .term .tag {
+            display: block; font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+            color: var(--brass); margin-bottom: .3rem; font-weight: 400;
+        }
+        .gloss .def { color: var(--muted); font-size: .96rem; max-width: 64ch; }
+        .gloss .def b { color: var(--star); font-weight: 500; }
+        @media (max-width: 720px) { .gloss .row { grid-template-columns: 1fr; gap: .4rem; } }
+
+        /* CTA */
+        .cta { text-align: center; padding: 5.5rem 0; }
+        .cta h2 { font-family:'Fraunces',serif; font-weight: 500; font-size: clamp(2rem,4.5vw,3rem); letter-spacing: -.02em; margin-bottom: .9rem; }
+        .cta p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; }
+
+        /* FOOTER */
+        footer { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+        .foot { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+        .foot .c { color: var(--faint); font-size: .82rem; line-height: 1.7; }
+        .foot .c b { font-family:'Fraunces',serif; color: var(--muted); font-weight: 500; }
+        .foot .c .legal { display:block; margin-top:.7rem; font-size:.72rem; line-height:1.6; color: var(--faint); opacity:.85; max-width: 62ch; }
+        .foot ul { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+        .foot a {
+            font-family:'IBM Plex Mono',monospace; font-size: .72rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color .25s;
+        }
+        .foot a:hover { color: var(--brass); }
+
+        /* fade-in */
+        .fade { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+        .fade.vis { opacity: 1; transform: none; }
+
+        /* lightbox */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(3,6,12,.94); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; backdrop-filter: blur(8px); }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.8); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+            .hero { padding-top: 7rem; }
+            .priv { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 720px) {
+            .nav-toggle { display: flex; }
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                flex-direction: column; gap: 0; align-items: stretch;
+                background: rgba(7,12,22,.97); backdrop-filter: blur(14px);
+                border-bottom: 1px solid var(--line); padding: .5rem 1.75rem;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+            .nav-links li:last-child { border-bottom: none; }
+            .plates { grid-template-columns: 1fr 1fr; }
+            .steps { grid-template-columns: 1fr; gap: 1.6rem; }
+            .entry { grid-template-columns: 1fr; gap: .5rem; }
+            .entry .no { padding-top: 0; }
+        }
+        @media (max-width: 460px) {
+            .plates { grid-template-columns: 1fr; }
+            .cta-row { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; }
+            .fade { transition: none; opacity: 1; transform: none; }
+        }
+        img{height:auto}
+        .foot-apps{max-width:1080px;margin:1.4rem auto 0;padding:1.1rem 1.75rem 0;border-top:1px solid rgba(176,198,232,.11);display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:baseline;font-size:.82rem;line-height:1.5}footer .foot-apps .fa-h{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0b8}footer .foot-apps a{color:#8fa0b8;text-decoration:none}footer .foot-apps a:hover{color:#eef2f8;text-decoration:underline}footer .foot-tm{max-width:1080px;margin:.7rem auto 0;padding:0 1.75rem 1.4rem;color:#607089;font-size:.76rem;line-height:1.6}footer .foot-tm a{color:#8fa0b8}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Petit studio de logiciels indépendant qui conçoit des applications natives, des plateformes web et e-commerce complètes, des outils système et de supervision, des intégrations d'appareils et des pipelines DevOps.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "fr", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/almanox/#webpage", "url": "https://miyarahub.com/almanox/", "name": "Almanox : application de planification soleil, lune & Voie lactée - MiyaraHub", "description": "Almanox est un planificateur hors ligne du soleil, de la lune et de la Voie lactée pour iOS, Android, Mac et Windows : verdict Tonight, heure dorée, fenêtres de ciel sombre et planificateur de prises de vue.", "inLanguage": "fr", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/almanox.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/almanox/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/almanox/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/almanox/#app", "name": "Almanox", "description": "Application hors ligne de planification du soleil, de la lune et de l'astrophotographie. Note du verdict Tonight, heures dorée et bleue, échelle du crépuscule, lever et coucher du noyau de la Voie lactée, fenêtres de ciel sombre, gêne lunaire, planificateur de prises de vue soleil et lune, météo en direct et prochain passage visible de l'ISS. Bientôt disponible.", "url": "https://miyarahub.com/almanox/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "LifestyleApplication", "image": "https://miyarahub.com/assets/almanox-icon.png", "screenshot": ["https://miyarahub.com/almanox/screenshots/01_tonight.jpg", "https://miyarahub.com/almanox/screenshots/03_today.jpg", "https://miyarahub.com/almanox/screenshots/02_milkyway.jpg", "https://miyarahub.com/almanox/screenshots/04_plan.jpg", "https://miyarahub.com/almanox/screenshots/05_locations.jpg", "https://miyarahub.com/almanox/screenshots/06_theme.jpg", "https://miyarahub.com/almanox/screenshots/07_features.jpg", "https://miyarahub.com/almanox/screenshots/07_light.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/almanox/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Almanox", "item": "https://miyarahub.com/almanox/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/almanox/#faq", "url": "https://miyarahub.com/almanox/", "mainEntity": [{"@type": "Question", "name": "Almanox est-il un abonnement ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Almanox s'achète une seule fois à 12,99 $. Pas d'abonnement, pas de publicité, pas de mises à jour payantes. Achetez-le une fois et il est à vous sur l'App Store, Google Play ou le Microsoft Store."}}, {"@type": "Question", "name": "Fonctionne-t-il sans connexion ?", "acceptedAnswer": {"@type": "Answer", "text": "L'almanach de base fonctionne entièrement sur votre appareil - soleil, lune, crépuscule, Voie lactée, fenêtres de ciel sombre, carte du ciel et planificateur de prises de vue marchent sans aucune connexion. Les conditions en direct (météo, aurores, passages de l'ISS et cartes) nécessitent une connexion quand vous les utilisez."}}, {"@type": "Question", "name": "Qu'est-ce qui est gratuit, et qu'est-ce qui est Pro ?", "acceptedAnswer": {"@type": "Answer", "text": "La version gratuite est généreuse : l'almanach complet du soleil et de la lune (lever/coucher, heures dorée et bleue, échelle du crépuscule, phase de la lune), la note du verdict Tonight, la couverture nuageuse et la pollution lumineuse en direct, les prévisions d'aurores, les planètes de ce soir, les passages de l'ISS, la carte des constellations, le calendrier des pluies de météores et des éclipses, les 7 prochaines meilleures nuits, les alertes de bonne nuit de ciel sombre, trois lieux enregistrés et tous les thèmes dans toutes les couleurs. Pro (12,99 $, une seule fois) débloque les prévisions du noyau de la Voie lactée, les cibles du ciel profond, le planificateur de trajet sur carte et le Finder de sites dark-sky, le planificateur de prises de vue soleil et lune, les calculateurs photo, les prévisions horaires détaillées, le viseur de ciel en AR, les widgets d'écran d'accueil, les alertes heure dorée et personnalisées, des prévisions sur 60 nuits et un nombre illimité de lieux enregistrés."}}, {"@type": "Question", "name": "Sur quels appareils fonctionne-t-il ?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone, iPad, Android, Mac et Windows, avec un design superbe et cohérent partout. Il s'adapte au mode clair, sombre et au noir pur AMOLED, dans la couleur d'accent de votre choix - des nuances sélectionnées ou votre propre teinte."}}, {"@type": "Question", "name": "Ai-je besoin d'un compte ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. Pas d'inscription, pas d'e-mail, pas de connexion MiyaraHub. Téléchargez l'application et commencez à planifier. Votre position sert uniquement à calculer votre ciel et n'est jamais vendue, partagée ni suivie."}}, {"@type": "Question", "name": "Comment la note Tonight est-elle calculée ?", "acceptedAnswer": {"@type": "Answer", "text": "Choisissez ce que vous planifiez - Voie lactée, observation des étoiles, lune, paysage nocturne ou aurore - et Almanox le note de 0 à 100 en pesant les heures de véritable obscurité astronomique, la gêne lunaire, la couverture nuageuse et la pollution lumineuse de votre lieu. Un verdict rapide et honnête pour savoir si la soirée vaut la peine de sortir."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="Capture d'écran d'Almanox agrandie">
+    </div>
+
+    <!-- Nav -->
+    <nav>
+        <a href="/fr/" class="nav-brand"> <img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="Logo MiyaraHub"> <span class="nav-brand-text">MiyaraHub</span> </a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Langue">
+            <li><a href="/fr/" onclick="closeNav()">Accueil</a></li>
+            <li><a href="#features" onclick="closeNav()">Fonctionnalités</a></li>
+            <li><a href="#plates" onclick="closeNav()">Écrans</a></li>
+            <li><a href="/fr/almanox/guide/" onclick="closeNav()">Guide</a></li>
+            <li><a href="#how" onclick="closeNav()">Méthode</a></li>
+            <li><a href="#glossary" onclick="closeNav()">Glossaire</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <div class="kicker">Almanach céleste &middot; Édition terrain</div>
+                    <h1><span class="stargl">&#10022;</span>Almanox</h1>
+                    <p class="hero-sub">Le ciel est-il bon pour les étoiles ce soir ?</p>
+                    <p class="hero-lede">
+                        Un seul écran répond : une note de verdict Tonight, les heures dorée et bleue, le noyau de la Voie lactée, les fenêtres de ciel sombre et un planificateur de prises de vue soleil et lune. Calculé sur votre appareil. Sans compte, sans cloud, sans abonnement.
+                    </p>
+                    <div class="cta-row">
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </span>
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>
+                            Google Play
+                        </span>
+                        <a href="#plates" class="btn">Voir les écrans</a>
+                    </div>
+                    <div class="coming"><span class="dot">&#9679;</span> Bientôt disponible - iPhone, iPad, Android, Mac &amp; Windows</div>
+                </div>
+
+                <!-- Ephemeris readout: data as decoration -->
+                <aside class="ephem" aria-label="Exemple de relevé de l'almanach">
+                    <div class="ephem-head">
+                        <span class="t">Tonight &middot; Éphémérides locales</span>
+                        <span class="d">33.42&deg;N 96.58&deg;W</span>
+                    </div>
+                    <div class="ephem-body">
+                        <div class="ephem-rows">
+                            <div class="erow"><span class="lbl">Coucher du soleil</span><span class="val">20:14</span></div>
+                            <div class="erow"><span class="lbl">Heure dorée</span><span class="val"><b>19:31 - 20:14</b></span></div>
+                            <div class="erow"><span class="lbl">Nuit astro</span><span class="val">21:44 - 05:02</span></div>
+                            <div class="erow"><span class="lbl">Lune</span><span class="val">Nouvelle &middot; 2%</span></div>
+                            <div class="erow"><span class="lbl">Noyau MW &#8593;</span><span class="val"><b>22:58</b></span></div>
+                            <div class="erow verdict">
+                                <span class="lbl">Verdict</span>
+                                <span style="text-align:right"><span class="score">87</span><span class="val" style="color:var(--faint)">/100</span><br><span class="grade">EXCELLENT</span></span>
+                            </div>
+                        </div>
+                        <div class="ladder" aria-hidden="true">
+                            <div class="seg day"><span>DAY</span></div>
+                            <div class="seg civil"><span>CIV 20:41</span></div>
+                            <div class="seg nautical"><span>NAU 21:12</span></div>
+                            <div class="seg astro"><span>AST 21:44</span></div>
+                            <div class="seg night"><span>NIGHT</span></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Plates -->
+            <div class="plates" id="plates-hero">
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Verdict Tonight d'Almanox - le ciel est-il bon pour les étoiles ce soir" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. I</b> &middot; Tonight</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox Today - course du soleil, heure dorée et almanach de la lune" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. II</b> &middot; Almanach</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox : noyau de la Voie lactée et fenêtre de ciel sombre" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. III</b> &middot; Voie lactée</figcaption>
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Le registre</div>
+                <h2 class="sec-title">Un écran, tout le ciel</h2>
+                <p class="sec-desc">Astronomie, météo et moteur de planification fondus en une seule réponse. L'almanach et les calculs du ciel tournent sur votre appareil ; les conditions en direct proviennent de services météo et cartographiques ouverts. Sans compte, sans publicité, sans abonnement.</p>
+            </div>
+            <div class="ledger">
+                <article class="entry">
+                    <div class="no">N° 01</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9737;</span> Le verdict Tonight</h3>
+                        <p>Une note unique de 0 à 100 pour exactement ce que vous planifiez - Voie lactée, observation des étoiles, lune, paysage nocturne ou aurore. Elle pèse les heures de véritable obscurité, la gêne lunaire, la couverture nuageuse et la pollution lumineuse de votre ciel en une réponse honnête : la soirée est-elle vraiment bonne ?</p>
+                        <div class="meta"><span>Note</span><span>Meilleure fenêtre</span><span>Obscurité</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 02</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9728;</span> Almanach soleil &amp; lune</h3>
+                        <p>Lever et coucher du soleil, heures dorée et bleue, et toute l'échelle du crépuscule, du civil à l'astronomique. Phase de la lune, illumination, lever et coucher - le tout avec un arc de la course du soleil en direct.</p>
+                        <div class="meta"><span>Heure dorée</span><span>Crépuscule</span><span>Phase lunaire</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 03</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Voie lactée &amp; ciel sombre <span class="pro-tag">Pro</span></h3>
+                        <p>Lever, apogée et coucher du noyau galactique avec une note de qualité de Médiocre à Excellent, plus les prévisions de fenêtre de ciel sombre sans lune pour connaître les heures exactes où photographier.</p>
+                        <div class="meta"><span>Lever/coucher du noyau</span><span>Fenêtre sombre</span><span>Note de qualité</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 04</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9796;</span> Planètes ce soir</h3>
+                        <p>Quelles planètes sont visibles en ce moment, où regarder, leur éclat et leur phase actuelle - le tout calculé sur l'appareil pour votre heure et votre lieu exacts.</p>
+                        <div class="meta"><span>Visibilité</span><span>Luminosité</span><span>Phase</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 05</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8982;</span> Planificateur de prises de vue <span class="pro-tag">Pro</span></h3>
+                        <p>Trouvez les jours exacts où le soleil ou la pleine lune s'aligne avec la direction choisie. Recherche de passage d'azimut et d'alignements sur plusieurs jours pour la photo parfaite - le tout hors ligne.</p>
+                        <div class="meta"><span>Recherche d'azimut</span><span>Alignements</span><span>Multi-jours</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 06</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8983;</span> Planificateur de carte hors ligne <span class="pro-tag">Pro</span></h3>
+                        <p>Une carte interactive qui met en cache les tuiles consultées, pour continuer à fonctionner sans signal sur le terrain. Posez une épingle et voyez son cap, sa distance et la date exacte où le soleil ou la lune s'aligne derrière.</p>
+                        <div class="meta"><span>Tuiles hors ligne</span><span>Cap &amp; distance</span><span>Dates d'alignement</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 07</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9680;</span> Éclipses</h3>
+                        <p>Éclipses solaires et lunaires calculées sur l'appareil à partir des véritables éphémérides et filtrées selon votre position, pour que la liste ne montre que celles que vous pouvez réellement sortir observer.</p>
+                        <div class="meta"><span>Solaires &amp; lunaires</span><span>Filtrées par lieu</span><span>Sur l'appareil</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 08</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9729;</span> Conditions du ciel en direct</h3>
+                        <p>Température actuelle, couverture nuageuse et verdict de clarté du ciel pour chaque lieu enregistré, récupérés en direct auprès d'Open-Meteo - gratuit, sans clé API. Les prévisions détaillées heure par heure sont une amélioration Pro.</p>
+                        <div class="meta"><span>Couverture nuageuse</span><span>Clarté</span><span>Par lieu</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 09</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8779;</span> Prévisions d'aurores <span class="pro-tag">Pro</span></h3>
+                        <p>Un indice Kp en direct de la NOAA, votre latitude géomagnétique et un verdict clair pour ce soir - plus une bande Kp de 24 heures pour voir l'activité monter avant son pic.</p>
+                        <div class="meta"><span>Indice Kp en direct</span><span>Lat. géomagnétique</span><span>Bande de 24 h</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 10</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9954;</span> Survols de l'ISS</h3>
+                        <p>Le prochain passage visible de la Station spatiale internationale au-dessus de votre position, calculé sur l'appareil à partir de données orbitales en direct - heure de lever, direction et élévation maximale.</p>
+                        <div class="meta"><span>Passage visible</span><span>Direction</span><span>Sur l'appareil</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 11</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8862;</span> Widgets d'écran d'accueil</h3>
+                        <p>Des widgets qui se rafraîchissent seuls en arrière-plan, pour que le ciel reste à jour sur votre écran d'accueil même quand l'application est fermée depuis des heures.</p>
+                        <div class="meta"><span>Actualisation auto</span><span>Arrière-plan</span><span>Écran d'accueil</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 12</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9673;</span> Beau, et à vous</h3>
+                        <p>Trois surfaces - Clair, Sombre et noir pur AMOLED - et la couleur de votre choix, d'une sélection de teintes d'accent à votre propre nuance exacte. Toute l'interface change de couleur, pas seulement un détail. Prise en charge complète des lecteurs d'écran avec des résumés vocaux pour les cartes du ciel, ainsi que de la taille de texte dynamique partout.</p>
+                        <div class="meta"><span>Clair/Sombre/AMOLED</span><span>Toute couleur d'accent</span><span>Couleur personnalisée</span><span>Lecteur d'écran</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 13</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Constellations &amp; carte du ciel</h3>
+                        <p>Les 88 constellations et les étoiles brillantes, cartographiées sur votre ciel dans une carte du ciel gratuite et en direct - nommées et calculées entièrement sur votre appareil, sans connexion. Le viseur de ciel en AR pour pointer et identifier est une amélioration Pro.</p>
+                        <div class="meta"><span>88 figures</span><span>Carte du ciel</span><span>Hors ligne</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">N° 14</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9790;</span> Hors ligne &amp; privé</h3>
+                        <p>Le moteur d'astronomie tourne entièrement sur votre appareil. Pas d'inscription, pas de compte, pas de publicité, pas de collecte de position. Achetez-le une fois et il est à vous - jamais d'abonnement.</p>
+                        <div class="meta"><span>Sur l'appareil</span><span>Sans compte</span><span>Achat unique</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plates / Screens -->
+    <section id="plates">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Les planches</div>
+                <h2 class="sec-title">Voyez-le en action</h2>
+                <p class="sec-desc">Chaque écran est calculé sur votre appareil - sombre, AMOLED ou clair, dans la couleur d'accent de votre choix. Présenté sur Android ; la même application fonctionne sur iPhone, iPad, Mac et Windows.</p>
+            </div>
+            <div class="plates">
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox - note du verdict Tonight" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 01</b> &middot; Tonight</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox - Voie lactée et fenêtre de ciel sombre" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 02</b> &middot; Voie lactée</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox - almanach Today du soleil et de la lune" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 03</b> &middot; Almanach</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/04_plan.jpg" alt="Almanox - planificateur de prises de vue" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 04</b> &middot; Planificateur</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/05_locations.jpg" alt="Almanox - lieux de ciel sombre enregistrés" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 05</b> &middot; Lieux</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/06_theme.jpg" alt="Almanox - toute couleur d'accent" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 06</b> &middot; Toute couleur</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/07_features.jpg" alt="Almanox - carte du ciel gratuite, planètes de ce soir et passages de l'ISS" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 07</b> &middot; Extras gratuits</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1170" height="2532" src="/almanox/screenshots/07_light.jpg" alt="Almanox - thème clair" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 07</b> &middot; Clair</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- How / Method -->
+    <section id="how" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">La méthode</div>
+                <h2 class="sec-title">Tout sur votre appareil, rien dans le cloud</h2>
+                <p class="sec-desc">Almanox fait tourner localement un moteur d'astronomie complet. Pas de compte, pas d'inscription, et il fonctionne sans signal - le ciel est le même que vous ayez du réseau ou non.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="n">1</div>
+                    <h3>Choisissez votre lieu</h3>
+                    <p>Utilisez votre position actuelle ou enregistrez les lieux d'où vous photographiez. Almanox calcule le soleil, la lune et le ciel pour l'endroit exact où vous vous trouvez.</p>
+                </div>
+                <div class="step">
+                    <div class="n">2</div>
+                    <h3>Lisez le verdict</h3>
+                    <p>Une note répond à la seule question qui compte - la soirée vaut-elle la peine ? Voyez la meilleure fenêtre de ciel sombre, le noyau de la Voie lactée et à quel point la lune gêne.</p>
+                </div>
+                <div class="step">
+                    <div class="n">3</div>
+                    <h3>Planifiez la prise de vue</h3>
+                    <p>Trouvez les jours exacts où le soleil ou la pleine lune s'aligne avec votre direction, saisissez l'heure dorée et recevez une alerte avant que le ciel soit prêt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section id="glossary" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Le glossaire</div>
+                <h2 class="sec-title">Un guide de terrain du ciel</h2>
+                <p class="sec-desc">Les mots autour desquels toute l'application est construite - et pourquoi chacun est une raison de garder Almanox dans votre poche.</p>
+            </div>
+            <div class="gloss">
+                <div class="row"><div class="term"><span class="tag">L'almanach</span>Almanach</div><div class="def">Un tableau jour après jour du ciel - quand le soleil et la lune se lèvent et se couchent, la phase de la lune et combien d'heures de vraie obscurité vous aurez. Almanox est un <b>almanach vivant pour l'endroit exact où vous vous trouvez</b>, recalculé pour votre lieu, pas un almanach imprimé générique.</div></div>
+                <div class="row"><div class="term"><span class="tag">Meilleure lumière</span>Heure dorée</div><div class="def">Le moment juste après le lever et avant le coucher du soleil où il est bas et où la lumière devient chaude et douce. C'est la lumière qu'attendent la plupart des photographes de paysage et de portrait - et <b>Almanox vous donne le début et la fin exacts</b> pour aujourd'hui, où que vous soyez.</div></div>
+                <div class="row"><div class="term"><span class="tag">Lumière bleue</span>Heure bleue</div><div class="def">La courte fenêtre avant le lever et après le coucher du soleil, quand il est sous l'horizon et que tout le ciel s'illumine d'un bleu profond et uniforme. Moment idéal pour les paysages urbains et les ciels dramatiques - elle va et vient vite, donc <b>la minuter à la minute près compte</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Vers l'obscurité</span>Échelle du crépuscule</div><div class="def">L'obscurité arrive en trois étapes - crépuscule <b>civil, nautique, puis astronomique</b>. Quand le crépuscule astronomique prend fin, le ciel est enfin noir et les étoiles faibles apparaissent. C'est le moment où les observateurs d'étoiles et les astrophotographes commencent vraiment à photographier.</div></div>
+                <div class="row"><div class="term"><span class="tag">La galaxie</span>Noyau de la Voie lactée</div><div class="def">Le centre galactique brillant - la partie lumineuse et détaillée que tout le monde photographie. Il n'est au-dessus de l'horizon que pendant une partie de l'année et une partie de la nuit. Almanox vous dit <b>quand le noyau se lève, culmine et se couche</b>, et note la qualité attendue.</div></div>
+                <div class="row"><div class="term"><span class="tag">La fenêtre</span>Fenêtre de ciel sombre</div><div class="def">La portion de nuit <b>sans soleil ni lune</b> pour délaver le ciel. C'est le seul moment où les photos du ciel profond et de la Voie lactée fonctionnent vraiment, et elle change chaque nuit - ce qui est justement fastidieux à calculer à la main.</div></div>
+                <div class="row"><div class="term"><span class="tag">Clair de lune</span>Phase &amp; illumination</div><div class="def">La part éclairée de la lune, de la nouvelle à la pleine lune. Une lune brillante <b>inonde le ciel et noie la Voie lactée</b> ; une nouvelle lune le laisse noir d'encre. Connaître la lune de ce soir, c'est la moitié du travail pour toute prise de vue nocturne.</div></div>
+                <div class="row"><div class="term"><span class="tag">La réponse</span>Verdict Tonight</div><div class="def">Ajusté à ce que vous planifiez - Voie lactée, observation des étoiles, lune, paysage nocturne ou aurore - Almanox pèse les heures d'obscurité, la gêne lunaire, la couverture nuageuse et la pollution lumineuse en <b>une seule note honnête de 0 à 100</b>. Au lieu de recouper cinq choses, vous jetez un œil à un seul chiffre et savez si la soirée vaut la peine de sortir.</div></div>
+                <div class="row"><div class="term"><span class="tag">L'alignement</span>Alignement soleil &amp; lune</div><div class="def">Les jours exacts où le soleil ou la pleine lune se lève ou se couche <b>aligné avec un repère ou une direction de la boussole</b> - la planification derrière ces photos d'exception d'une pleine lune derrière un pont ou un sommet. Almanox cherche pour vous dans les jours à venir.</div></div>
+                <div class="row"><div class="term"><span class="tag">Au-dessus de vous</span>Passage de l'ISS</div><div class="def">Quand la Station spatiale internationale passe assez brillante pour être vue à l'œil nu - un point lumineux stable qui file vite. Almanox vous donne <b>le prochain passage visible, sa direction et la hauteur qu'il atteint</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Les figures</span>Constellations</div><div class="def">Les 88 figures d'étoiles nommées - Orion, la Grande Ourse, le Sagittaire sur la Voie lactée. Almanox les dessine toutes, ainsi que les étoiles brillantes, <b>sur votre ciel réel</b>, dans une carte du ciel et via le viseur AR, pour que vous puissiez pointer et nommer ce que vous regardez.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Les principes</div>
+                <h2 class="sec-title">Confidentiel par conception</h2>
+                <p class="sec-desc">Almanox a été conçu pour rester discret. Pas de compte, pas de publicité, pas de collecte de position - juste le ciel, calculé sur votre appareil.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4>Fonctionne hors ligne</h4><p>Le moteur d'astronomie tourne entièrement sur votre téléphone. Soleil, lune, crépuscule, Voie lactée et planificateur de prises de vue fonctionnent sans aucune connexion.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4>Jamais de compte</h4><p>Pas d'inscription, pas d'e-mail, pas de connexion MiyaraHub. Téléchargez, ouvrez, et vous planifiez - rien à créer, rien à retenir.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9738;</span><div><h4>Votre position reste à vous</h4><p>La position sert uniquement à calculer votre ciel et à récupérer les conditions locales - jamais vendue et jamais utilisée pour vous profiler. La météo provient anonymement d'Open-Meteo, sans compte ni clé.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4>Achat unique</h4><p>Achetez-le une fois et il est à vous. Pas d'abonnement, pas de frais récurrents, pas de mises à jour payantes - le contraire de la tarification de la plupart des applications photo.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4>Pas de publicité, pas de revente de vos données</h4><p>Pas de SDK publicitaire, pas de régies, pas de courtiers de données. Almanox utilise des statistiques anonymes, propres à l'éditeur, pour savoir quelles fonctionnalités sont utilisées, ainsi que des rapports de plantage en cas de problème - jamais liés à votre identité, jamais vendus.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9789;</span><div><h4>Une application, tous les appareils</h4><p>Le même superbe planificateur hors ligne sur iPhone, iPad, Android, Mac et Windows - où que vous photographiez.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Marginalia</div>
+                <h2 class="sec-title">Questions fréquentes</h2>
+                <p class="sec-desc">Tout ce qu'il faut savoir sur Almanox.</p>
+            </div>
+            <div class="faq">
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Almanox est-il un abonnement ?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in"><strong>Non.</strong> Almanox s'achète une seule fois à 12,99 $. Pas d'abonnement, pas de publicité, pas de mises à jour payantes. Achetez-le une fois et il est à vous sur l'App Store, Google Play ou le Microsoft Store.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Fonctionne-t-il sans connexion ?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">L'almanach de base fonctionne entièrement sur votre appareil - soleil, lune, crépuscule, Voie lactée, fenêtres de ciel sombre, carte du ciel et planificateur de prises de vue marchent sans aucune connexion. Les conditions en direct (météo, aurores, passages de l'ISS et cartes) nécessitent une connexion quand vous les utilisez.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Qu'est-ce qui est gratuit, et qu'est-ce qui est Pro ?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">La version gratuite est généreuse : l'almanach complet du soleil et de la lune (lever/coucher, heures dorée et bleue, échelle du crépuscule, phase de la lune), la note du verdict Tonight, la couverture nuageuse et la pollution lumineuse en direct, les prévisions d'aurores, les planètes de ce soir, les passages de l'ISS, la carte des constellations, le calendrier des pluies de météores et des éclipses, les 7 prochaines meilleures nuits, les alertes de bonne nuit de ciel sombre, trois lieux enregistrés et tous les thèmes dans toutes les couleurs. Pro (12,99 $, une seule fois) débloque les prévisions du noyau de la Voie lactée, les cibles du ciel profond, le planificateur de trajet sur carte et le Finder de sites dark-sky, le planificateur de prises de vue soleil et lune, les calculateurs photo, les prévisions horaires détaillées, le viseur de ciel en AR, les widgets d'écran d'accueil, les alertes heure dorée et personnalisées, des prévisions sur 60 nuits et un nombre illimité de lieux enregistrés.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Sur quels appareils fonctionne-t-il ?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">iPhone, iPad, Android, Mac et Windows, avec un design superbe et cohérent partout. Il s'adapte au mode clair, sombre et au noir pur AMOLED, dans la couleur d'accent de votre choix - des nuances sélectionnées ou votre propre teinte.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Ai-je besoin d'un compte ?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Non. Pas d'inscription, pas d'e-mail, pas de connexion MiyaraHub. Téléchargez l'application et commencez à planifier. Votre position sert uniquement à calculer votre ciel et n'est jamais vendue, partagée ni suivie.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Comment la note Tonight est-elle calculée ?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Choisissez ce que vous planifiez - Voie lactée, observation des étoiles, lune, paysage nocturne ou aurore - et Almanox le note de 0 à 100 en pesant les heures de véritable obscurité astronomique, la gêne lunaire, la couverture nuageuse et la pollution lumineuse de votre lieu. Un verdict rapide et honnête pour savoir si la soirée vaut la peine de sortir.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free vs Pro -->
+    <section id="pricing">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Gratuit &amp; Pro</div>
+                <h2 class="sec-title">Une application gratuite généreuse, avec une seule amélioration honnête</h2>
+                <p class="sec-desc">Tout ce qu'il faut pour répondre à « la soirée vaut-elle le coup ? » est gratuit. Pro (12,99 $, une seule fois - sans abonnement) ajoute les outils de planification avancés. Chaque fonctionnalité verrouillée montre d'abord un vrai aperçu.</p>
+            </div>
+            <div class="cmp-wrap">
+                <table class="cmp">
+                    <thead>
+                        <tr><th scope="col">Fonction</th><th scope="col">Gratuit</th><th scope="col">Pro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Almanach soleil &amp; lune (heure dorée/bleue, crépuscule, phase)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Note du verdict Tonight (Voie lactée, observation des étoiles, lune, aurore)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Nuages en direct &amp; pollution lumineuse</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Fenêtre de ciel sombre &amp; meilleure fenêtre ce soir</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Prévisions d'aurores &amp; planètes de ce soir</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Passages de l'ISS</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Carte des constellations (88 figures)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Calendrier des pluies de météores &amp; des éclipses</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Alertes de bonne nuit de ciel sombre</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Tous les thèmes &amp; couleurs d'accent, sans publicité, sans connexion</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Prévisions du noyau de la Voie lactée &amp; cibles du ciel profond</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Planificateur de prises de vue soleil &amp; lune</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Calculateurs photo (500 / NPF / profondeur de champ)</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Planificateur de trajet sur carte &amp; Finder de sites dark-sky</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Prévisions horaires détaillées</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Viseur de ciel AR</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Widgets d'écran d'accueil</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Alertes heure dorée &amp; personnalisées</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Meilleures nuits à venir</td><td>7 nuits</td><td class="y">60 nuits</td></tr>
+                        <tr><td>Lieux enregistrés</td><td>3</td><td class="y">Illimités</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <style>
+        #pricing .cmp-wrap { overflow-x: auto; margin-top: 1.6rem; border: 1px solid var(--line); border-radius: 14px; }
+        #pricing table.cmp { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 460px; }
+        #pricing .cmp th, #pricing .cmp td { text-align: left; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+        #pricing .cmp thead th { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); background: var(--ink-2); }
+        #pricing .cmp thead th:nth-child(2), #pricing .cmp thead th:nth-child(3),
+        #pricing .cmp tbody td:nth-child(2), #pricing .cmp tbody td:nth-child(3) { text-align: center; width: 5.5rem; }
+        #pricing .cmp thead th:nth-child(3) { color: var(--brass); }
+        #pricing .cmp tbody tr:last-child td { border-bottom: none; }
+        #pricing .cmp td.y { color: var(--brass); font-weight: 600; }
+        #pricing .cmp td.n { color: var(--faint); }
+        #pricing .cmp tbody td:first-child { color: var(--star); }
+    </style>
+
+    <!-- Guide -->
+    <section id="guide" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Le guide de terrain</div>
+                <h2 class="sec-title">Apprenez à lire le ciel</h2>
+                <p class="sec-desc">Un manuel complet et illustré - comment le verdict Tonight est construit, comment planifier le noyau de la Voie lactée, aligner une photo du soleil ou de la lune, faire les calculs photo et trouver des ciels vraiment sombres.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4><a href="/fr/almanox/tonight-verdict/">Le verdict Tonight</a></h4><p>Comment la note de 0 à 100 fond obscurité, lune, hauteur de la Voie lactée et nuages - et ce que Bon, Moyen et Mauvais signifient vraiment.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4><a href="/fr/almanox/milky-way/">Voie lactée &amp; fenêtres de ciel sombre</a></h4><p>Lever du noyau galactique, altitude maximale et fenêtre sans lune exacte pour le photographier, où que vous soyez.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9788;</span><div><h4><a href="/fr/almanox/shot-planner/">Le planificateur de prises de vue</a></h4><p>Les jours où le soleil ou la pleine lune s'aligne avec votre direction - la photo du lever de soleil derrière l'arche, planifiée au jour près.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/fr/almanox/photo-calculators/">Calculateurs photo</a></h4><p>La règle des 500, la règle NPF plus stricte, et la profondeur de champ avec la distance hyperfocale, pour votre équipement exact.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4><a href="/fr/almanox/dark-sky-finder/">Le Dark-Sky Finder</a></h4><p>Les International Dark-Sky Places certifiés les plus proches, classés par distance avec une direction et un trajet approximatif.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/fr/almanox/settings/">Réglages, thèmes &amp; alertes</a></h4><p>Clair, Sombre et noir pur AMOLED, toute couleur d'accent, cartes réorganisables, sauvegarde en un fichier et alertes avant que la lumière n'arrive.</p></div></div>
+            </div>
+            <div class="cta-row" style="justify-content:center;margin-top:2.4rem">
+                <a class="btn store" href="/fr/almanox/guide/">Lire le guide complet</a>
+                <a class="btn" href="/fr/almanox/help/">Aide &amp; FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap fade">
+            <div class="kicker" style="display:block;margin-bottom:1rem">&#10022; Ciels dégagés en vue</div>
+            <h2>Planifiez votre prochaine nuit dégagée</h2>
+            <p>Almanox arrive bientôt sur iPhone, iPad, Android, Mac et Windows. Achat unique, sans abonnement, entièrement hors ligne.</p>
+            <div class="cta-row" style="justify-content:center">
+                <span class="btn store" style="cursor:default">App Store &middot; bientôt</span>
+                <span class="btn store" style="cursor:default">Google Play &middot; bientôt</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap foot">
+            <div class="c">
+                &copy; 2026 MiyaraHub Technologies LLC &middot; Van Alstyne, Texas. Tous droits réservés.<br> <b>Almanox</b> - le planificateur du soleil, de la lune et de la Voie lactée pour photographes et observateurs d'étoiles.<br> <span class="legal">Almanox est une application indépendante de MiyaraHub Technologies LLC et n'est ni affiliée, ni approuvée, ni parrainée par aucun tiers. La météo en direct est fournie par Open-Meteo et la recherche de lieux par les contributeurs d'OpenStreetMap ; les indications de ciel sombre proviennent de jeux de données publics de pollution lumineuse. Tous les noms de produits mentionnés sont des marques de leurs propriétaires respectifs.</span>
+            </div>
+            <ul>
+                <li><a href="/fr/">MiyaraHub</a></li>
+                <li><a href="/fr/privacy.html">Confidentialité</a></li>
+                <li><a href="/fr/terms.html">Conditions</a></li>
+                <li><a href="mailto:admin@miyarahub.com">Assistance</a></li>
+            </ul>
+        </div>
+        <div class="foot-apps" role="navigation" aria-label="Applications MiyaraHub"><span class="fa-h">Applications</span><a href="/fr/avr-maestro/">AVR Maestro</a><a href="/fr/synology-manager/">Syno Manager</a><a href="/fr/upsight/">UPSight</a><a href="/fr/fury-path/">FuryPath</a><a href="/fr/uc-remote/">UC Remote</a><a href="/fr/almanox/">Almanox</a><a href="/fr/nexus-deck/">NexusDeck</a><a href="/fr/avr-maestro-mc/">AVR Maestro MC</a><a href="/fr/network-deck/">Network Deck</a><a href="/fr/projector-pilot/">Projector Pilot</a><a href="/fr/elan-audio-lab/">Elan Audio Lab</a><a href="/fr/support/">Assistance</a></div>
+    <p class="foot-tm">Les applications MiyaraHub sont indépendantes et ne sont ni affiliées, ni approuvées, ni parrainées par les fabricants des matériels et services avec lesquels elles fonctionnent. Toutes les marques appartiennent à leurs propriétaires respectifs. <a href="/fr/#legal">Mentions relatives aux marques</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.fade').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+        });
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade:not(.vis)').forEach(el => io.observe(el));
+
+        function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+        function closeNav() {
+            document.getElementById('nav-menu').classList.remove('open');
+            document.getElementById('nav-toggle').classList.remove('open');
+        }
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+    </script>
+  <script defer src="/almanox/search.js"></script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

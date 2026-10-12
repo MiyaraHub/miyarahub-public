@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusDeck: aplikace pro kalibrační soubory Audyssey - MiyaraHub</title>
+    <meta name="description" content="NexusDeck spravuje kalibrační soubory Audyssey a nahrává křivky .ady do přijímačů Denon a Marantz přes Wi-Fi. Předběžná verze pro iOS, Android, Mac a Windows.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="NexusDeck: aplikace pro kalibrační soubory Audyssey">
+    <meta property="og:description" content="NexusDeck spravuje kalibrační soubory Audyssey a nahrává křivky .ady do přijímačů Denon a Marantz přes Wi-Fi. Předběžná verze pro iOS, Android, Mac a Windows.">
+    <meta property="og:url" content="https://miyarahub.com/cs/nexus-deck/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/nexus-deck.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="NexusDeck, an independent manager for Audyssey calibration files for Denon and Marantz receivers, in pre-release. Not affiliated with Audyssey, Denon, Marantz or Sound United.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NexusDeck: aplikace pro kalibrační soubory Audyssey">
+    <meta name="twitter:description" content="NexusDeck spravuje kalibrační soubory Audyssey a nahrává křivky .ady do přijímačů Denon a Marantz přes Wi-Fi. Předběžná verze pro iOS, Android, Mac a Windows.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/nexus-deck.png">
+    <meta name="twitter:image:alt" content="NexusDeck, an independent manager for Audyssey calibration files for Denon and Marantz receivers, in pre-release. Not affiliated with Audyssey, Denon, Marantz or Sound United.">
+    <meta name="keywords" content="Audyssey calibration manager, Audyssey file manager, Audyssey curve upload, .ady file viewer, .oca file viewer, .mdat file viewer, REW measurement viewer, Audyssey file Android, Audyssey file iPhone, MultEQ Editor alternative, A1 Evo Acoustix library, ratbuddyssey alternative, Denon Audyssey upload app, Marantz Audyssey upload app, room correction file manager, AVR curve uploader, Cinema 30 calibration upload, Cinema 40 calibration upload, Cinema 50 calibration upload, X3800H calibration upload, X4800H calibration upload, X6800H calibration upload, Denon Speaker Preset upload, Marantz Speaker Preset upload, SPP1 SPP2 upload, Audyssey backup restore, .ady iPhone, .ady Android, .oca iPhone library, .oca Android library, REW MEQX import, FilterSet biquad coefficients, NexusDeck, MiyaraHub">
+    <link rel="canonical" href="https://miyarahub.com/cs/nexus-deck/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/nexus-deck/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/nexus-deck/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/nexus-deck/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/nexus-deck/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/nexus-deck/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/nexus-deck/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/nexus-deck/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/nexus-deck/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/nexus-deck/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/nexus-deck/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/nexus-deck/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/nexus-deck/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/nexus-deck/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/nexus-deck/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/nexus-deck/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/nexus-deck/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/nexus-deck/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/nexus-deck/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/nexus-deck/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/nexus-deck/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/nexus-deck/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/nexus-deck/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/nexus-deck/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/nexus-deck/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/nexus-deck/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/nexus-deck/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/nexus-deck/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/nexus-deck/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/nexus-deck/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/nexus-deck/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/nexus-deck/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/nexusdeck-icon.png">
+    <link rel="apple-touch-icon" href="/assets/nexusdeck-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+    <style>
+        :root{ --accent:#a78bfa; --accent-deep:#c4b5fd; --accent-soft:rgba(167,139,250,.12); --accent-star:rgba(167,139,250,.34); }
+        .crumb{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-bottom:1.4rem}
+        .crumb a{color:var(--faint); text-decoration:none} .crumb a:hover{color:var(--accent)}
+        .p-hero{display:grid; grid-template-columns:1.1fr .9fr; gap:3.5rem; align-items:center}
+        .p-hero .ico{width:66px; height:66px; border-radius:16px; border:1px solid var(--line); margin-bottom:1.2rem}
+        .status-hero{display:inline-flex; align-items:center; gap:.8rem; margin:1.4rem 0 .3rem; padding:.85rem 1.2rem; border:1px solid var(--line-strong); border-radius:8px; background:var(--accent-soft)}
+        .status-hero .dot{width:.6rem; height:.6rem; border-radius:50%; background:var(--accent); box-shadow:0 0 10px var(--accent); flex-shrink:0}
+        .status-hero .txt{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.04em; color:var(--star)}
+        .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
+        .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
+        .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
+        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#0f1a2c,#0b1322); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
+        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
+        .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
+        .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
+        .gallery img{width:100%; display:block; cursor:zoom-in}
+        @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:460px){.gallery{grid-template-columns:1fr}}
+        .device .cap{text-align:center; font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.14em; text-transform:uppercase; color:var(--faint); margin-top:.9rem}
+        .device .cap b{color:var(--accent); font-weight:500}
+        .legal{border:1px solid var(--line); border-radius:5px; background:rgba(11,19,34,.5); padding:1.6rem 1.8rem}
+        .legal h3{font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); margin-bottom:.7rem}
+        .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
+        @media(max-width:900px){.p-hero{grid-template-columns:1fr; gap:2.4rem}}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Malé nezávislé softwarové studio, které vytváří nativní aplikace, full-stack webové a e-commerce platformy, systémové a monitorovací nástroje, integrace zařízení a DevOps pipeline.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "cs", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/nexus-deck/#webpage", "url": "https://miyarahub.com/nexus-deck/", "name": "NexusDeck: aplikace pro kalibrační soubory Audyssey - MiyaraHub", "description": "NexusDeck spravuje kalibrační soubory Audyssey a nahrává křivky .ady do přijímačů Denon a Marantz přes Wi-Fi. Předběžná verze pro iOS, Android, Mac a Windows.", "inLanguage": "cs", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/nexus-deck.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/nexus-deck/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/nexus-deck/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/nexus-deck/#app", "name": "NexusDeck", "description": "Nezávislý správce kalibračních souborů Audyssey a nahrávač křivek pro AV přijímače Denon a Marantz. Importujte exporty .ady, .oca, .mdat, .frd a REW. Nahrávejte křivky .ady přímo do slotů předvoleb reproduktorů přes Wi-Fi. Předběžná verze.", "url": "https://miyarahub.com/nexus-deck/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "MultimediaApplication", "image": "https://miyarahub.com/assets/nexusdeck-icon.png", "screenshot": ["https://miyarahub.com/nexus-deck/screenshots/device.jpg", "https://miyarahub.com/nexus-deck/screenshots/g1_library.jpg", "https://miyarahub.com/nexus-deck/screenshots/g2_chart.jpg", "https://miyarahub.com/nexus-deck/screenshots/g3_detail.jpg", "https://miyarahub.com/nexus-deck/screenshots/g4_eval.jpg", "https://miyarahub.com/nexus-deck/screenshots/g5_send.jpg", "https://miyarahub.com/nexus-deck/screenshots/g6_channels.jpg", "https://miyarahub.com/nexus-deck/screenshots/g7_settings.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/nexus-deck/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "NexusDeck", "item": "https://miyarahub.com/nexus-deck/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/nexus-deck/#faq", "url": "https://miyarahub.com/nexus-deck/", "mainEntity": [{"@type": "Question", "name": "Je NexusDeck spojen se společností Audyssey, Denon nebo Marantz?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. NexusDeck je nezávislá aplikace třetí strany, kterou vyvinula společnost MiyaraHub Technologies LLC. Není vytvořena, schvalována ani sponzorována společnostmi Audyssey Laboratories, Denon, Marantz, Sound United, Masimo Corporation ani žádnou z jejich dceřiných společností a není s nimi spojena. „Audyssey“, „MultEQ“, „Denon“, „Marantz“ a „REW“ / „Room EQ Wizard“ jsou ochranné známky svých příslušných vlastníků. Tyto názvy používáme výhradně k popisu kompatibility."}}, {"@type": "Question", "name": "Do kterých přijímačů může NexusDeck nahrávat?", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck nahrává do síťových AV přijímačů Denon a Marantz, které podporují binární protokol pro nahrávání kalibrace na portu TCP 1256. To zahrnuje Cinema 30 / 40 / 50, AV10, X3800H, X4800H, X6800H a další šasi Audyssey MultEQ XT32 z posledních let. NexusDeck automaticky rozpozná model šasi a rozložení kanálů z přijímače i z nahrávaného kalibračního souboru."}}, {"@type": "Question", "name": "Jaké formáty souborů NexusDeck importuje?", "acceptedAnswer": {"@type": "Answer", "text": "Audyssey .ady (exporty z MultEQ Editor), A1 Evo Acoustix .oca, REW .mdat (export měření MEQX z Room EQ Wizard, s podporou více pozic), frekvenční křivky .frd a exporty REW PEQ .txt. Dnes se do přijímače nahrávají pouze soubory .ady; .oca / .mdat / .frd / .txt slouží jen k ukládání do knihovny a porovnávání. Import filtrů Dirac Live a nahrávání do šasi nejsou ve verzi v1 podporovány."}}, {"@type": "Question", "name": "Vytváří NexusDeck kalibrační křivky sám?", "acceptedAnswer": {"@type": "Answer", "text": "Ne - a je to záměr. NexusDeck ukládá, prochází, porovnává a nahrává kalibrační soubory vytvořené jinými nástroji (MultEQ Editor, A1 Evo Acoustix, REW, ratbuddyssey atd.). Samotné měření a tvorba křivek probíhá v těchto nástrojích; NexusDeck je správce a nástroj pro nahrávání přímo ze zařízení."}}, {"@type": "Question", "name": "Zůstane moje stávající předvolba reproduktorů v bezpečí?", "acceptedAnswer": {"@type": "Answer", "text": "Ano. Před každým nahráním NexusDeck přečte, co je aktuálně v cílovém slotu předvolby reproduktorů, a uloží to jako záložní záznam do vaší knihovny. Jedním klepnutím vrátíte libovolný slot k předchozí kalibraci. NexusDeck také po dokončení přenosu slot znovu přečte a ověří, že se nahrání povedlo čistě."}}, {"@type": "Question", "name": "Jak se NexusDeck spáruje s mým přijímačem?", "acceptedAnswer": {"@type": "Answer", "text": "Pokud máte nainstalovaný AVR Maestro spárovaný s vašimi přijímači, NexusDeck automaticky načte seznam spárovaných zařízení přes sdílený kontejner mezi aplikacemi - žádné druhé párování, žádné duplicitní zadávání IP. Pokud AVR Maestro nemáte, párování v NexusDeck vás provede zadáním IP adresy přijímače přímo."}}, {"@type": "Question", "name": "Kolik NexusDeck stojí?", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck je ke stažení zdarma. Bezplatná verze zahrnuje veškerý import do knihovny, procházení a vizualizaci jednotlivých křivek, plus až 5 nahrání za celou dobu do slotu 1 předvolby reproduktorů (SPP1), abyste si mohli vyzkoušet celý proces nahrávání na vlastním přijímači, než se rozhodnete. Odemčení neomezeného nahrávání, zápisů do SPP2, zálohování a obnovy slotů, porovnání více křivek, asistovaného průvodce a mostu pro předání zařízení z AVR Maestro je jednorázový nákup v aplikaci za $12.99. Bez předplatného, bez opakovaného placení, bez reklam. Cena se může před spuštěním změnit."}}, {"@type": "Question", "name": "Jaké verze Android a iOS jsou potřeba?", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck vyžaduje Android 7.0 (API 24) nebo novější a iOS 14 nebo novější. Obě platformy vyjdou při spuštění."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="NexusDeck - zvětšený snímek"></div>
+
+    <nav>
+        <a href="/cs/" class="nav-brand"><img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="Logo MiyaraHub"><span class="nav-brand-text">MiyaraHub</span></a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Nabídka"><span></span><span></span><span></span></button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Jazyk">
+            <li><a href="/cs/" onclick="closeNav()">Domů</a></li>
+            <li><a href="#screens" onclick="closeNav()">Obrazovky</a></li>
+            <li><a href="#features" onclick="closeNav()">Funkce</a></li>
+            <li><a href="#how" onclick="closeNav()">Jak to funguje</a></li>
+            <li><a href="#security" onclick="closeNav()">Soukromí</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="crumb"><a href="/cs/">MiyaraHub</a> / NexusDeck</div>
+            <div class="p-hero">
+                <div>
+                    <img decoding="async" width="192" height="192" class="ico" src="/assets/icons/nexusdeck-icon-192.png" alt="Ikona aplikace NexusDeck">
+                    <h1 class="hk"><span class="kicker h1k">NexusDeck &middot; pro kalibrační soubory Audyssey</span><span class="h1t">Každá kalibrace, jedno místo.<span class="stargl">&#10022;</span></span></h1>
+                    <p class="hero-sub">Specializovaný správce kalibračních souborů Audyssey a nahrávač křivek pro AV přijímače Denon a Marantz.</p>
+                    <p class="hero-lede">Nahrávejte kalibrace <strong>Audyssey .ady</strong> přímo do slotů předvoleb reproduktorů přes Wi-Fi. Importujte <strong>A1 Evo Acoustix .oca</strong>, <strong>REW .mdat</strong>, <strong>.frd</strong> a <strong>exporty PEQ</strong> do místní knihovny k procházení a porovnávání. Doplněk k aplikaci <a href="/cs/avr-maestro/" style="color:var(--accent)">AVR Maestro</a>.</p>
+                    <div class="status-hero"><span class="dot"></span><span class="txt">Předběžná verze - brzy v App Store, Google Play a Microsoft Store</span></div>
+                    <div class="platforms">
+                        <span class="pl-lbl">Přichází na</span>
+                        <span class="pl">iPhone</span><span class="pl">iPad</span><span class="pl">Android</span><span class="pl">macOS</span><span class="pl">Windows</span></div>
+                </div>
+                <div class="device fade">
+                    <div class="screen"><img fetchpriority="high" decoding="async" width="700" height="1244" src="/nexus-deck/screenshots/device.jpg" alt="Detail křivky v NexusDeck s úplným grafem frekvenční odezvy pro kalibraci Marantz Cinema 30" onclick="openLightbox(this)"></div>
+                    <div class="cap"><b>Předběžná verze</b> &middot; ve vývoji</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <!-- Screens -->
+    <section id="screens" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">První pohled</div><h2 class="sec-title">První pohled na NexusDeck.</h2><p class="sec-desc">První snímky obrazovky z předběžné verze - knihovna kalibrací, detail křivky s úplnými grafy frekvenční odezvy, srovnání A/B a nahrání do přijímače jedním klepnutím. Klepnutím cokoli zvětšíte.</p></div>
+            <div class="gallery">
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g1_library.jpg" alt="Knihovna kalibrací v NexusDeck s importovanou křivkou Cinema 30" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g2_chart.jpg" alt="Detail křivky v NexusDeck s úplným grafem frekvenční odezvy" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g3_detail.jpg" alt="Detail křivky v NexusDeck - formát, cíl a kanály" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g4_eval.jpg" alt="Konfigurace srovnání A/B v NexusDeck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g5_send.jpg" alt="Uspořádání a odeslání kalibrace do přijímače v NexusDeck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g6_channels.jpg" alt="Zobrazení křivek podle kanálů v NexusDeck" loading="lazy"></a>
+                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g7_settings.jpg" alt="Nastavení a motiv v NexusDeck" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Funkce</div><h2 class="sec-title">Každý formát kalibračního souboru v jedné aplikaci.</h2><p class="sec-desc">NexusDeck čte kalibrační soubory, které už vaše nástroje vytvářejí, umožňuje procházet knihovnu v telefonu a nahrává je přímo do přijímače - bez notebooku a bez nutnosti MultEQ Editor pro krok nahrávání.</p></div>
+            <div class="ledger">
+                <div class="entry fade"><div class="no">Č. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> Importujte všechny běžné formáty</h3><p>Nativní parsery pro Audyssey .ady, A1 Evo Acoustix .oca, REW .mdat (export MEQX), křivky .frd a exporty REW PEQ .txt. Jednou importované soubory zůstávají navždy uložené v místní knihovně.</p><div class="meta"><span>.ady</span><span>.oca</span><span>.mdat</span><span>.frd</span><span>PEQ .txt</span></div></div></div>
+                <div class="entry fade"><div class="no">Č. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> Místní knihovna křivek</h3><p>Vše, co jste kdy importovali, přímo v zařízení. Přejmenovávejte měření, seskupujte související soubory .mdat z více pozic a počítejte reference na sdílená data, takže smazání uvolní místo na disku, až když na ně neodkazuje žádný záznam. Místní úložiště SQLite přežije restart i aktualizace aplikace.</p><div class="meta"><span>SQLite</span><span>Počítání referencí</span><span>Přejmenování</span></div></div></div>
+                <div class="entry fade"><div class="no">Č. 03</div><div class="body"><h3><span class="glyph">&#9678;</span> Porovnávejte křivky vedle sebe</h3><p>Překryjte frekvenční křivky z libovolné kombinace importů Audyssey, A1 Evo Acoustix a REW. Logaritmická osa frekvence X, osa velikosti v dB Y, průměrování více pozic, ovládání vyhlazení. Uvidíte přesně, co se mezi kalibracemi změnilo.</p><div class="meta"><span>Překryv</span><span>Log. frekvence</span><span>Vyhlazení</span></div></div></div>
+                <div class="entry fade"><div class="no">Č. 04</div><div class="body"><h3><span class="glyph">&#9634;</span> Nahrávejte Audyssey přímo do přijímače</h3><p>Posílejte soubory <strong>Audyssey .ady</strong> přímo do slotu 1 nebo 2 předvolby reproduktorů na přijímači Denon / Marantz přes Wi-Fi. Šasi nahrání ověří; NexusDeck vám oznámí, zda se uložilo. Bez kabelu, bez notebooku a bez nutnosti MultEQ Editor pro krok nahrávání.</p><div class="meta"><span>Audyssey</span><span>Port 1256</span><span>SPP1 / SPP2</span><span>Ověřeno po bajtech</span></div></div></div>
+                <div class="entry fade"><div class="no">Č. 05</div><div class="body"><h3><span class="glyph">&#9670;</span> Záloha &amp; obnova slotů</h3><p>Před každým nahráním NexusDeck přečte, co je aktuálně v šasi, a uloží to jako záložní záznam do knihovny. Obnovení jedním klepnutím vrátí libovolný slot k předchozí kalibraci. Nikdy nepřijdete o fungující konfiguraci kvůli nepovedenému nahrání.</p><div class="meta"><span>Záloha před nahráním</span><span>Obnova jedním klepnutím</span></div></div></div>
+                <div class="entry fade"><div class="no">Č. 06</div><div class="body"><h3><span class="glyph">&#9881;</span> Asistovaný průvodce</h3><p>Projděte krok za krokem každý kanál importovaného měření a uvidíte odezvu kanálu, cílovou křivku, použitou sadu filtrů a výslednou korigovanou odezvu. Vytvořeno pro ty, kdo jsou posedlí kalibrací a chtějí pochopit, co čísla znamenají.</p><div class="meta"><span>Po kanálech</span><span>Cílová křivka</span><span>Sada filtrů</span></div></div></div>
+                <div class="entry fade"><div class="no">Č. 07</div><div class="body"><h3><span class="glyph">&#9672;</span> Spolupracuje s AVR Maestro</h3><p>Pokud máte nainstalovaný AVR Maestro, NexusDeck automaticky načte jeho seznam spárovaných přijímačů přes sdílený kontejner platformy - bez opětovného párování, bez druhého zadávání IP, bez duplicitního nastavení zařízení. Obě aplikace fungují jako jeden ekosystém.</p><div class="meta"><span>App Group (iOS)</span><span>Content Provider (Android)</span></div></div></div>
+                <div class="entry fade"><div class="no">Č. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> Sdílení více formátů</h3><p>Přijímejte soubory .ady / .oca / .mdat přes iOS Share Sheet, záměry Androidu nebo přímo výběrem souboru. Exportujte kalibrační záznam zpět a sdílejte ho s přáteli, zveřejněte na AVS Forum nebo zálohujte mimo zařízení.</p><div class="meta"><span>Rozšíření pro sdílení</span><span>Výběr souboru</span><span>Export</span></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Jak to funguje</div><h2 class="sec-title">Od měřicího souboru k přijímači ve třech krocích.</h2><p class="sec-desc">NexusDeck míří přesně na místo, kde vás stávající nástroje nechávají trčet: máte kalibrační soubor v notebooku a žádný snadný způsob, jak ho dostat do přijímače, aniž byste znovu spouštěli desktopovou aplikaci. NexusDeck tuto mezeru zaplňuje.</p></div>
+            <div class="steps">
+                <div class="step fade"><div class="n">1</div><h3>Importujte soubor</h3><p>Otevřete soubor Audyssey .ady z MultEQ Editor, .oca z A1 Evo Acoustix, .mdat z REW nebo jakýkoli jiný podporovaný soubor. NexusDeck ho zpracuje, vyčte frekvenční křivky a přidá ho do vaší knihovny.</p></div>
+                <div class="step fade"><div class="n">2</div><h3>Procházejte a porovnávejte</h3><p>Otevřete libovolný záznam v knihovně a uvidíte frekvenční odezvu kanál po kanálu. Překryjte dvě nebo více křivek a uvidíte, co korekce místnosti změnila. Záznamy přejmenovávejte, seskupujte nebo mažte, jak knihovna roste.</p></div>
+                <div class="step fade"><div class="n">3</div><h3>Nahrajte Audyssey do přijímače</h3><p>U souborů Audyssey .ady: vyberte slot předvolby reproduktorů (1 nebo 2), potvrďte a sledujte, jak NexusDeck přenáší kalibraci do vašeho přijímače Denon nebo Marantz přes Wi-Fi. Šasi nahrání ověří; NexusDeck oznámí, zda se uložilo. Importy .oca / .mdat / .frd / .txt zůstávají v knihovně k procházení a porovnávání; nahrávání těchto formátů do šasi přijde v budoucí verzi.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section id="security">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">Zabezpečení &amp; soukromí</div><h2 class="sec-title">Jen lokálně. Bez účtu. Bez cloudu.</h2><p class="sec-desc">NexusDeck je postaven na stejné architektuře zaměřené na soukromí jako AVR Maestro. Vaše kalibrační soubory zůstávají ve vašem zařízení, přijímač zůstává ve vaší místní síti a nic o vašem nastavení se neposílá do MiyaraHub.</p></div>
+            <div class="priv">
+                <div class="p"><span class="g">&#9673;</span><div><h4>Žádný cloudový přenos</h4><p>Nahrávání kalibrací probíhá přímo mezi telefonem a přijímačem přes místní Wi-Fi (TCP port 1256). Soubory nikdy neprocházejí serverem MiyaraHub.</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>Účet není potřeba</h4><p>Žádná registrace, žádný e-mail, žádné přihlášení do MiyaraHub. Otevřete aplikaci, vložte první kalibrační soubor a jste v knihovně.</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>Minimální diagnostika</h4><p>Firebase Crashlytics pouze pro zprávy o pádech a diagnostická data - abychom mohli opravit chyby, na které narazíte. Žádné sledování používání, žádné reklamy, žádná personalizace. Možnost odhlášení v Nastavení.</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>Knihovna zůstává lokální</h4><p>Vaše knihovna kalibrací je místní databáze SQLite a úložiště souborů v zařízení. Nic se nesynchronizuje ani nenahrává na server MiyaraHub.</p></div></div>
+                <div class="p"><span class="g">&#9679;</span><div><h4>Pouze nahrávání spuštěné uživatelem</h4><p>Křivka se dostane do přijímače, jen když výslovně klepnete na Nahrát a potvrdíte slot. Nic se neděje automaticky a šasi se přečte zpět, aby se ověřilo, co bylo skutečně zapsáno.</p></div></div>
+                <div class="p"><span class="g">&#9672;</span><div><h4>Pouze oprávnění k síti</h4><p>Jediné systémové oprávnění, které NexusDeck vyžaduje, je přístup k síti, používaný výhradně pro spojení s přijímačem ve vaší místní Wi-Fi.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap">
+            <div class="sec-head"><div class="kicker">FAQ</div><h2 class="sec-title">Často kladené otázky.</h2><p class="sec-desc">Vše, co potřebujete vědět o NexusDeck.</p></div>
+            <div class="faq">
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Je NexusDeck spojen se společností Audyssey, Denon nebo Marantz? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Ne.</strong> NexusDeck je nezávislá aplikace třetí strany, kterou vyvinula společnost MiyaraHub Technologies LLC. Není vytvořena, schvalována ani sponzorována společnostmi Audyssey Laboratories, Denon, Marantz, Sound United, Masimo Corporation ani žádnou z jejich dceřiných společností a není s nimi spojena. „Audyssey“, „MultEQ“, „Denon“, „Marantz“ a „REW“ / „Room EQ Wizard“ jsou ochranné známky svých příslušných vlastníků. Tyto názvy používáme výhradně k popisu kompatibility.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Do kterých přijímačů může NexusDeck nahrávat? <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck nahrává do síťových AV přijímačů Denon a Marantz, které podporují binární protokol pro nahrávání kalibrace na portu TCP 1256. To zahrnuje Cinema 30 / 40 / 50, AV10, X3800H, X4800H, X6800H a další šasi Audyssey MultEQ XT32 z posledních let. NexusDeck automaticky rozpozná model šasi a rozložení kanálů z přijímače i z nahrávaného kalibračního souboru.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Jaké formáty souborů NexusDeck importuje? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Audyssey .ady</strong> (exporty z MultEQ Editor), <strong>A1 Evo Acoustix .oca</strong>, <strong>REW .mdat</strong> (export měření MEQX z Room EQ Wizard, s podporou více pozic), frekvenční křivky <strong>.frd</strong> a exporty REW <strong>PEQ .txt</strong>. Dnes se do přijímače nahrávají pouze <strong>soubory .ady</strong>; .oca / .mdat / .frd / .txt slouží jen k ukládání do knihovny a porovnávání. Import filtrů Dirac Live a nahrávání do šasi nejsou ve verzi v1 podporovány.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Vytváří NexusDeck kalibrační křivky sám? <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Ne - a je to záměr.</strong> NexusDeck ukládá, prochází, porovnává a nahrává kalibrační soubory vytvořené jinými nástroji (MultEQ Editor, A1 Evo Acoustix, REW, ratbuddyssey atd.). Samotné měření a tvorba křivek probíhá v těchto nástrojích; NexusDeck je správce a nástroj pro nahrávání přímo ze zařízení.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Zůstane moje stávající předvolba reproduktorů v bezpečí? <span class="arw">+</span></div><div class="a"><div class="a-in">Ano. Před každým nahráním NexusDeck přečte, co je aktuálně v cílovém slotu předvolby reproduktorů, a uloží to jako záložní záznam do vaší knihovny. Jedním klepnutím vrátíte libovolný slot k předchozí kalibraci. NexusDeck také po dokončení přenosu slot znovu přečte a ověří, že se nahrání povedlo čistě.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Jak se NexusDeck spáruje s mým přijímačem? <span class="arw">+</span></div><div class="a"><div class="a-in">Pokud máte nainstalovaný AVR Maestro spárovaný s vašimi přijímači, NexusDeck automaticky načte seznam spárovaných zařízení přes sdílený kontejner mezi aplikacemi - žádné druhé párování, žádné duplicitní zadávání IP. Pokud AVR Maestro nemáte, párování v NexusDeck vás provede zadáním IP adresy přijímače přímo.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Kolik NexusDeck stojí? <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck je <strong>ke stažení zdarma</strong>. Bezplatná verze zahrnuje veškerý import do knihovny, procházení a vizualizaci jednotlivých křivek, plus <strong>až 5 nahrání za celou dobu do slotu 1 předvolby reproduktorů (SPP1)</strong>, abyste si mohli vyzkoušet celý proces nahrávání na vlastním přijímači, než se rozhodnete. Odemčení neomezeného nahrávání, zápisů do SPP2, zálohování a obnovy slotů, porovnání více křivek, asistovaného průvodce a mostu pro předání zařízení z AVR Maestro je <strong>jednorázový nákup v aplikaci za $12.99</strong>. Bez předplatného, bez opakovaného placení, bez reklam. Cena se může před spuštěním změnit.</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">Jaké verze Android a iOS jsou potřeba? <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck vyžaduje Android 7.0 (API 24) nebo novější a iOS 14 nebo novější. Obě platformy vyjdou při spuštění.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal -->
+    <section style="padding:2.5rem 0 1rem">
+        <div class="wrap"><div class="legal">
+            <h3>Právní upozornění &amp; informace o ochranných známkách</h3>
+            <p>NexusDeck je <strong>nezávislá aplikace třetí strany</strong>, kterou vyvinula a vydala společnost <strong>MiyaraHub Technologies LLC</strong>. <strong>Není vytvořena společnostmi Audyssey Laboratories, Denon, Marantz, Sound United, Masimo Corporation, REW (Room EQ Wizard) / John Mulcahy,</strong> ani žádnou z jejich dceřiných či přidružených společností, není s nimi spojena, schvalována, sponzorována ani s nimi nemá žádné oficiální spojení.</p>
+            <p>„Audyssey“, „MultEQ“, „Denon“, „Marantz“, „HEOS“, „Room EQ Wizard“, „REW“, „MEQX“ a všechny související názvy produktů a loga jsou ochranné známky nebo registrované ochranné známky svých příslušných vlastníků. Všechny ostatní zde uvedené ochranné známky jsou majetkem svých příslušných vlastníků.</p>
+            <p>Odkazy na tyto produkty na této stránce i v aplikaci slouží výhradně k označení kompatibility formátů souborů a popisu funkcí aplikace (nominativní fair use). Držitelé ochranných známek nejsou nijak spojeni se společností MiyaraHub Technologies LLC a tento produkt neschvalují.</p>
+            <p>NexusDeck komunikuje s přijímači Denon/Marantz prostřednictvím jejich síťových ovládacích rozhraní (HTTP, Telnet a binární protokol pro nahrávání kalibrace na portu TCP 1256). Aplikaci používáte na vlastní riziko. MiyaraHub Technologies LLC nenese odpovědnost za chybnou konfiguraci, potíže se zvukem, ztracené kalibrace ani jiné problémy vzniklé používáním této aplikace. Před použitím nové kalibrace si vždy ověřte zálohu stávající předvolby reproduktorů.</p>
+        </div></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap">
+            <h2>Připravte se na spuštění.</h2>
+            <p>NexusDeck je v závěrečném předběžném testování. Tato stránka se aktualizuje odkazy na App Store, Google Play a Microsoft Store ve chvíli, kdy bude sestavení schváleno.</p>
+            <div class="cta-row" style="justify-content:center">
+                <a class="btn primary" href="/cs/support/">Nechte se upozornit / Kontakt</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap"><div class="foot">
+            <div class="c">&copy; 2026 <b>MiyaraHub Technologies LLC</b> &middot; Van Alstyne, TX. Všechna práva vyhrazena.</div>
+            <ul>
+                <li><a href="/cs/">Domů</a></li>
+                <li><a href="/cs/support/">Podpora</a></li>
+                <li><a href="/cs/privacy.html">Soukromí</a></li>
+                <li><a href="/cs/terms.html">Podmínky</a></li>
+            </ul>
+        </div></div>
+        <div class="foot-apps" role="navigation" aria-label="Aplikace MiyaraHub"><span class="fa-h">Aplikace</span><a href="/cs/avr-maestro/">AVR Maestro</a><a href="/cs/synology-manager/">Syno Manager</a><a href="/cs/upsight/">UPSight</a><a href="/cs/fury-path/">FuryPath</a><a href="/cs/uc-remote/">UC Remote</a><a href="/cs/almanox/">Almanox</a><a href="/cs/nexus-deck/">NexusDeck</a><a href="/cs/avr-maestro-mc/">AVR Maestro MC</a><a href="/cs/network-deck/">Network Deck</a><a href="/cs/projector-pilot/">Projector Pilot</a><a href="/cs/elan-audio-lab/">Elan Audio Lab</a><a href="/cs/support/">Podpora</a></div>
+    <p class="foot-tm">Aplikace MiyaraHub jsou nezávislé a nejsou spojeny s výrobci hardwaru a služeb, s nimiž spolupracují, ani jimi schváleny či sponzorovány. Všechny ochranné známky patří jejich příslušným vlastníkům. <a href="/cs/#legal">Upozornění k ochranným známkám</a></p>
+    </footer>
+
+    <script>
+        function closeNav(){ document.getElementById('nav-menu').classList.remove('open'); document.getElementById('nav-toggle').classList.remove('open'); }
+        function openLightbox(img){ var lb=document.getElementById('lightbox'); document.getElementById('lightbox-img').src=img.src; lb.classList.add('active'); }
+        const io = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } }); }, { threshold:0.08 });
+        document.querySelectorAll('.fade').forEach(el=>{ const r = el.getBoundingClientRect(); if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); } else { io.observe(el); } });
+    </script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

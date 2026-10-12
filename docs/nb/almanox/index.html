@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanox: Planlegger for sol, måne &amp; Melkeveien - MiyaraHub</title>
+    <meta name="description" content="Almanox er en planleggingsapp for sol, måne og Melkeveien som fungerer uten nett, for iOS, Android, Mac og Windows: Tonight-vurdering, gylden time, mørkehimmelvinduer og bildeplanlegger.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nb_NO">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Almanox: Planlegger for sol, måne &amp; Melkeveien">
+    <meta property="og:description" content="Almanox er en planleggingsapp for sol, måne og Melkeveien som fungerer uten nett, for iOS, Android, Mac og Windows: Tonight-vurdering, gylden time, mørkehimmelvinduer og bildeplanlegger.">
+    <meta property="og:url" content="https://miyarahub.com/nb/almanox/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Almanox: Planlegger for sol, måne &amp; Melkeveien">
+    <meta name="twitter:description" content="Almanox er en planleggingsapp for sol, måne og Melkeveien som fungerer uten nett, for iOS, Android, Mac og Windows: Tonight-vurdering, gylden time, mørkehimmelvinduer og bildeplanlegger.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta name="twitter:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="keywords" content="astrophotography planner app, Milky Way planner, night sky planner, golden hour app, blue hour app, sun position app, moon phase app, moonrise moonset app, dark sky forecast app, stargazing app, astronomy planner, twilight calculator app, Milky Way core app, galactic core tracker, ISS pass app, ISS tracker, shot planner sun moon alignment, offline astronomy app, one-time purchase astronomy app, sun moon almanac app, night photography planner, offline map planner, eclipse forecast app, aurora forecast app, Kp index app, planets tonight app, home screen widgets, MiyaraHub, Almanox">
+    <link rel="canonical" href="https://miyarahub.com/nb/almanox/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/almanox/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/almanox/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/almanox/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/almanox/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/almanox/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/almanox/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/almanox/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/almanox/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/almanox/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/almanox/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/almanox/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/almanox/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/almanox/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/almanox/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/almanox/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/almanox/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/almanox/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/almanox/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/almanox/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/almanox/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/almanox/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/almanox/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/almanox/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/almanox/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/almanox/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/almanox/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/almanox/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/almanox/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/almanox/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/almanox/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/almanox/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/almanox-icon.png">
+    <link rel="apple-touch-icon" href="/assets/almanox-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root {
+            --ink: #070c16;
+            --ink-2: #0b1322;
+            --ink-3: #0f1a2c;
+            --star: #eef2f8;
+            --muted: #8fa0b8;
+            --faint: #607089;
+            --brass: #e6a552;
+            --brass-deep: #c9863a;
+            --brass-soft: rgba(230,165,82,0.12);
+            --line: rgba(176,198,232,0.11);
+            --line-strong: rgba(176,198,232,0.2);
+            /* twilight ladder - semantic, not the accent */
+            --tw-day: #f3b64d;
+            --tw-civil: #d98b46;
+            --tw-nautical: #3f6ea6;
+            --tw-astro: #26305a;
+            --tw-night: #0a1120;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: var(--ink);
+            color: var(--star);
+            line-height: 1.62;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* faint fixed star-field - no animated blobs */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background:
+                radial-gradient(1.2px 1.2px at 12% 22%, rgba(238,242,248,.35), transparent),
+                radial-gradient(1.2px 1.2px at 78% 14%, rgba(238,242,248,.28), transparent),
+                radial-gradient(1px 1px at 34% 62%, rgba(238,242,248,.22), transparent),
+                radial-gradient(1px 1px at 62% 78%, rgba(238,242,248,.20), transparent),
+                radial-gradient(1.4px 1.4px at 88% 54%, rgba(230,165,82,.30), transparent),
+                radial-gradient(1px 1px at 22% 84%, rgba(238,242,248,.18), transparent),
+                radial-gradient(1.1px 1.1px at 50% 8%, rgba(238,242,248,.24), transparent);
+            background-repeat: no-repeat;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(120% 80% at 50% -10%, rgba(63,110,166,.10) 0%, transparent 55%),
+                radial-gradient(90% 60% at 84% 8%, rgba(230,165,82,.05) 0%, transparent 50%);
+        }
+        a { color: inherit; }
+        ::selection { background: var(--brass-soft); color: var(--star); }
+
+        .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; }
+        .kicker {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            color: var(--brass);
+        }
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; }
+
+        /* rule */
+        .hr {
+            height: 1px;
+            background: var(--line);
+            border: 0;
+            width: 100%;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .85rem 1.75rem;
+            background: rgba(7,12,22,.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        .nav-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+        .nav-brand img { height: 30px; width: 30px; border-radius: 5px; }
+        .nav-brand-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 600;
+            letter-spacing: .01em;
+            color: var(--star);
+        }
+        .nav-links { display: flex; gap: 1.9rem; list-style: none; align-items: center; }
+        .nav-links a {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .74rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color .25s;
+        }
+        .nav-links a:hover { color: var(--brass); }
+        .nav-toggle {
+            display: none; background: none; border: none; cursor: pointer;
+            padding: .4rem; z-index: 101; flex-direction: column; gap: 5px;
+        }
+        .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--muted); transition: transform .3s, opacity .3s; }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+        /* HERO */
+        .hero { padding: 8.5rem 0 3.5rem; position: relative; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        .hero-coord {
+            margin-bottom: 1.5rem;
+            display: flex; gap: 1.2rem; flex-wrap: wrap;
+        }
+        .hero h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: clamp(3.4rem, 8vw, 6rem);
+            line-height: .95;
+            letter-spacing: -.02em;
+            margin: .4rem 0 .1rem;
+            display: flex; align-items: flex-start; gap: .1em;
+        }
+        .hero h1 .stargl { color: var(--brass); font-size: .34em; margin-top: .15em; line-height: 1; }
+        .hero-sub {
+            font-family: 'Fraunces', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+            color: var(--star);
+            opacity: .92;
+            margin: .1rem 0 1.4rem;
+            max-width: 30ch;
+        }
+        .hero-lede {
+            color: var(--muted);
+            font-size: 1.02rem;
+            max-width: 46ch;
+            margin-bottom: 1.8rem;
+        }
+        .cta-row { display: flex; gap: .9rem; flex-wrap: wrap; align-items: center; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+            padding: .8rem 1.3rem;
+            text-decoration: none;
+            border: 1px solid var(--line-strong);
+            border-radius: 3px;
+            color: var(--muted);
+            background: transparent;
+            transition: border-color .25s, color .25s, background .25s;
+        }
+        .btn.store { color: var(--star); border-color: rgba(230,165,82,.35); }
+        .btn.store svg { fill: var(--brass); }
+        .btn:hover { border-color: var(--brass); color: var(--brass); }
+        .btn.primary {
+            border-color: var(--brass);
+            color: var(--ink);
+            background: var(--brass);
+        }
+        .btn.primary:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--ink); }
+        .coming {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+            color: var(--faint); margin-top: 1.5rem;
+        }
+        .coming .dot { color: var(--brass); }
+
+        /* EPHEMERIS PANEL - the data-as-decoration anchor */
+        .ephem {
+            border: 1px solid var(--line-strong);
+            border-radius: 5px;
+            background: linear-gradient(180deg, rgba(15,26,44,.85), rgba(11,19,34,.85));
+            box-shadow: 0 24px 70px rgba(0,0,0,.45);
+            overflow: hidden;
+        }
+        .ephem-head {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(230,165,82,.05);
+        }
+        .ephem-head .t { font-family:'IBM Plex Mono',monospace; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+        .ephem-head .d { font-family:'IBM Plex Mono',monospace; font-size: .68rem; color: var(--faint); }
+        .ephem-body { display: grid; grid-template-columns: 1fr auto; }
+        .ephem-rows { padding: 1.1rem 1rem; display: flex; flex-direction: column; gap: .62rem; }
+        .erow { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-family:'IBM Plex Mono',monospace; }
+        .erow .lbl { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+        .erow .val { font-size: .86rem; color: var(--star); white-space: nowrap; }
+        .erow .val b { color: var(--brass); font-weight: 500; }
+        .erow.verdict { margin-top: .3rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+        .erow.verdict .lbl { color: var(--brass); }
+        .erow.verdict .score { font-family:'Fraunces',serif; font-size: 1.7rem; font-weight: 600; color: var(--star); line-height: 1; }
+        .erow.verdict .grade { font-size: .68rem; letter-spacing: .18em; color: var(--brass); }
+
+        /* twilight ladder */
+        .ladder { width: 74px; border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+        .ladder .seg { flex: 1; position: relative; display: flex; align-items: center; padding-left: .55rem; }
+        .ladder .seg span { font-family:'IBM Plex Mono',monospace; font-size: .56rem; letter-spacing: .06em; color: rgba(255,255,255,.82); text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+        .ladder .day { background: var(--tw-day); }
+        .ladder .civil { background: var(--tw-civil); }
+        .ladder .nautical { background: var(--tw-nautical); }
+        .ladder .astro { background: var(--tw-astro); }
+        .ladder .night { background: var(--tw-night); }
+        .ladder .night span, .ladder .nautical span, .ladder .astro span { color: rgba(238,242,248,.9); }
+
+        /* PLATES (screenshots) */
+        .plates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+            margin-top: 3.5rem;
+        }
+        .plate { text-align: center; }
+        .plate .frame {
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            padding: 5px;
+            background: rgba(15,26,44,.5);
+            transition: border-color .3s, transform .3s;
+        }
+        .plate .frame:hover { border-color: rgba(230,165,82,.5); transform: translateY(-4px); }
+        .plate img { width: 100%; display: block; border-radius: 3px; cursor: zoom-in; }
+        .plate .cap {
+            font-family:'IBM Plex Mono',monospace; font-size: .66rem; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--faint); margin-top: .7rem;
+        }
+        .plate .cap b { color: var(--brass); font-weight: 500; }
+
+        /* SECTIONS */
+        section { padding: 4.5rem 0; }
+        .sec-head { margin-bottom: 2.6rem; max-width: 40ch; }
+        .sec-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            line-height: 1.05;
+            letter-spacing: -.015em;
+            margin: .55rem 0 .8rem;
+            text-wrap: balance;
+        }
+        .sec-desc { color: var(--muted); font-size: 1.02rem; }
+        .sec-band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+        /* FEATURES - ledger entries */
+        .ledger { border-top: 1px solid var(--line); }
+        .entry {
+            display: grid;
+            grid-template-columns: 4.5rem 1fr;
+            gap: 1.5rem;
+            padding: 1.9rem 0;
+            border-bottom: 1px solid var(--line);
+            align-items: start;
+        }
+        .entry .no {
+            font-family:'IBM Plex Mono',monospace; font-size: .82rem; color: var(--brass);
+            letter-spacing: .05em; padding-top: .35rem;
+        }
+        .entry .body { }
+        .entry h3 {
+            font-family:'Fraunces',Georgia,serif; font-weight: 500; font-size: 1.4rem;
+            letter-spacing: -.01em; margin-bottom: .5rem; display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+        }
+        .entry h3 .glyph { color: var(--brass); flex-shrink: 0; }
+        .pro-tag {
+            font-family:'IBM Plex Mono',monospace; font-size: .6rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--brass);
+            border: 1px solid rgba(230,165,82,.4); border-radius: 2px; padding: .1rem .4rem;
+        }
+        .entry p { color: var(--muted); font-size: .98rem; max-width: 62ch; }
+        .entry .meta {
+            margin-top: .8rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
+            font-family:'IBM Plex Mono',monospace; font-size: .7rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint);
+        }
+        .entry .meta span::before { content: '+ '; color: var(--brass); }
+
+        /* HOW IT WORKS */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; }
+        .step .n {
+            font-family:'Fraunces',Georgia,serif; font-size: 3rem; font-weight: 400;
+            color: var(--brass); line-height: 1; margin-bottom: .6rem;
+            border-bottom: 1px solid var(--line); padding-bottom: .8rem;
+        }
+        .step h3 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.25rem; margin-bottom: .5rem; }
+        .step p { color: var(--muted); font-size: .95rem; }
+
+        /* PRIVACY - ruled list */
+        .priv { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+        .priv .p {
+            padding: 1.4rem 0; border-bottom: 1px solid var(--line);
+            display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start;
+        }
+        .priv .p .g { color: var(--brass); padding-top: .1rem; }
+        .priv .p h4 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.08rem; margin-bottom: .3rem; }
+        .priv .p h4 a { color: var(--star); text-decoration: none; transition: color .2s; }
+        .priv .p h4 a:hover { color: var(--brass); }
+        .priv .p p { color: var(--muted); font-size: .9rem; }
+
+        /* FAQ */
+        .faq { max-width: 800px; border-top: 1px solid var(--line); }
+        .qa { border-bottom: 1px solid var(--line); }
+        .q {
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            padding: 1.35rem 0; cursor: pointer; user-select: none;
+            font-family:'Fraunces',serif; font-weight: 500; font-size: 1.12rem;
+            transition: color .25s;
+        }
+        .q:hover { color: var(--brass); }
+        .q .arw { color: var(--brass); font-family:'IBM Plex Mono',monospace; font-size: .9rem; transition: transform .3s; flex-shrink: 0; }
+        .qa.open .q .arw { transform: rotate(45deg); }
+        .a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+        .qa.open .a { max-height: 460px; }
+        .a-in { padding: 0 0 1.35rem; color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 68ch; }
+        .a-in strong { color: var(--star); }
+
+        /* GLOSSARY */
+        .gloss { border-top: 1px solid var(--line); }
+        .gloss .row {
+            display: grid; grid-template-columns: 14rem 1fr; gap: 1.6rem;
+            padding: 1.3rem 0; border-bottom: 1px solid var(--line); align-items: baseline;
+        }
+        .gloss .term { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--star); }
+        .gloss .term .tag {
+            display: block; font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+            color: var(--brass); margin-bottom: .3rem; font-weight: 400;
+        }
+        .gloss .def { color: var(--muted); font-size: .96rem; max-width: 64ch; }
+        .gloss .def b { color: var(--star); font-weight: 500; }
+        @media (max-width: 720px) { .gloss .row { grid-template-columns: 1fr; gap: .4rem; } }
+
+        /* CTA */
+        .cta { text-align: center; padding: 5.5rem 0; }
+        .cta h2 { font-family:'Fraunces',serif; font-weight: 500; font-size: clamp(2rem,4.5vw,3rem); letter-spacing: -.02em; margin-bottom: .9rem; }
+        .cta p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; }
+
+        /* FOOTER */
+        footer { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+        .foot { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+        .foot .c { color: var(--faint); font-size: .82rem; line-height: 1.7; }
+        .foot .c b { font-family:'Fraunces',serif; color: var(--muted); font-weight: 500; }
+        .foot .c .legal { display:block; margin-top:.7rem; font-size:.72rem; line-height:1.6; color: var(--faint); opacity:.85; max-width: 62ch; }
+        .foot ul { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+        .foot a {
+            font-family:'IBM Plex Mono',monospace; font-size: .72rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color .25s;
+        }
+        .foot a:hover { color: var(--brass); }
+
+        /* fade-in */
+        .fade { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+        .fade.vis { opacity: 1; transform: none; }
+
+        /* lightbox */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(3,6,12,.94); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; backdrop-filter: blur(8px); }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.8); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+            .hero { padding-top: 7rem; }
+            .priv { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 720px) {
+            .nav-toggle { display: flex; }
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                flex-direction: column; gap: 0; align-items: stretch;
+                background: rgba(7,12,22,.97); backdrop-filter: blur(14px);
+                border-bottom: 1px solid var(--line); padding: .5rem 1.75rem;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+            .nav-links li:last-child { border-bottom: none; }
+            .plates { grid-template-columns: 1fr 1fr; }
+            .steps { grid-template-columns: 1fr; gap: 1.6rem; }
+            .entry { grid-template-columns: 1fr; gap: .5rem; }
+            .entry .no { padding-top: 0; }
+        }
+        @media (max-width: 460px) {
+            .plates { grid-template-columns: 1fr; }
+            .cta-row { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; }
+            .fade { transition: none; opacity: 1; transform: none; }
+        }
+        img{height:auto}
+        .foot-apps{max-width:1080px;margin:1.4rem auto 0;padding:1.1rem 1.75rem 0;border-top:1px solid rgba(176,198,232,.11);display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:baseline;font-size:.82rem;line-height:1.5}footer .foot-apps .fa-h{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0b8}footer .foot-apps a{color:#8fa0b8;text-decoration:none}footer .foot-apps a:hover{color:#eef2f8;text-decoration:underline}footer .foot-tm{max-width:1080px;margin:.7rem auto 0;padding:0 1.75rem 1.4rem;color:#607089;font-size:.76rem;line-height:1.6}footer .foot-tm a{color:#8fa0b8}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Et lite, uavhengig programvarestudio som bygger native apper, fullstack-nettløsninger og e-handelsplattformer, system- og overvåkingsverktøy, enhetsintegrasjoner og DevOps-pipelines.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "nb", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/almanox/#webpage", "url": "https://miyarahub.com/almanox/", "name": "Almanox: Planlegger for sol, måne & Melkeveien - MiyaraHub", "description": "Almanox er en planleggingsapp for sol, måne og Melkeveien som fungerer uten nett, for iOS, Android, Mac og Windows: Tonight-vurdering, gylden time, mørkehimmelvinduer og bildeplanlegger.", "inLanguage": "nb", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/almanox.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/almanox/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/almanox/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/almanox/#app", "name": "Almanox", "description": "Planleggingsapp for sol, måne og astrofotografering som fungerer uten nett. Tonight-poengsum, gylden og blå time, tusmørkestige, oppgang og nedgang for Melkeveiens kjerne, mørkehimmelvinduer, måneforstyrrelse, planlegger for sol- og månebilder, sanntidsvær og neste synlige ISS-passering. Kommer snart.", "url": "https://miyarahub.com/almanox/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "LifestyleApplication", "image": "https://miyarahub.com/assets/almanox-icon.png", "screenshot": ["https://miyarahub.com/almanox/screenshots/01_tonight.jpg", "https://miyarahub.com/almanox/screenshots/03_today.jpg", "https://miyarahub.com/almanox/screenshots/02_milkyway.jpg", "https://miyarahub.com/almanox/screenshots/04_plan.jpg", "https://miyarahub.com/almanox/screenshots/05_locations.jpg", "https://miyarahub.com/almanox/screenshots/06_theme.jpg", "https://miyarahub.com/almanox/screenshots/07_features.jpg", "https://miyarahub.com/almanox/screenshots/07_light.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/almanox/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Hjem", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Almanox", "item": "https://miyarahub.com/almanox/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/almanox/#faq", "url": "https://miyarahub.com/almanox/", "mainEntity": [{"@type": "Question", "name": "Er Almanox et abonnement?", "acceptedAnswer": {"@type": "Answer", "text": "Nei. Almanox er et engangskjøp til $12.99. Uten abonnement, reklame eller oppdateringer bak betalingsmur. Kjøp det én gang og eie det i App Store, Google Play eller Microsoft Store."}}, {"@type": "Question", "name": "Fungerer det uten tilkobling?", "acceptedAnswer": {"@type": "Answer", "text": "Kjernealmanakken kjører helt på enheten din - sol, måne, tusmørke, Melkeveien, mørkehimmelvinduer, stjernekartet og bildeplanleggeren fungerer alle uten tilkobling. Sanntidsforhold (vær, nordlys, ISS-passeringer og kart) trenger tilkobling når du bruker dem."}}, {"@type": "Question", "name": "Hva er gratis, og hva er Pro?", "acceptedAnswer": {"@type": "Answer", "text": "Gratisversjonen er raus: hele sol- og månealmanakken (soloppgang/solnedgang, gylden og blå time, tusmørkestigen, månefase), Tonight-poengsummen, sanntidsoversikt over skyer og lysforurensning, nordlysvarselet, kveldens planeter, ISS-passeringer, stjernekartet med stjernebilder, kalenderen for meteorsvermer og formørkelser, de neste 7 beste nettene, mørkehimmelvarsler for gode netter, tre lagrede steder og alle temaer i valgfri farge. Pro ($12.99, engangsbeløp) låser opp Melkeveiskjerne-prognosen, dypromsmål, kartplanleggeren for utflukter og finneren for mørkehimmelsteder, planleggeren for sol- og månebilder, fotokalkulatorer, den detaljerte timesprognosen, AR-himmelfinneren, widgets for startskjermen, varsler for gylden time og egendefinerte varsler, en 60-netters utsikt og ubegrenset antall lagrede steder."}}, {"@type": "Question", "name": "Hvilke enheter kjører den på?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone, iPad, Android, Mac og Windows, med ett vakkert og helhetlig design. Den tilpasser seg lys, mørk og ekte svart AMOLED, i den aksentfargen du vil ha - utvalgte nyanser eller din egen."}}, {"@type": "Question", "name": "Trenger jeg en konto?", "acceptedAnswer": {"@type": "Answer", "text": "Nei. Ingen registrering, ingen e-post og ingen MiyaraHub-innlogging. Last ned appen og begynn å planlegge. Posisjonen din brukes bare til å beregne himmelen din og blir aldri solgt, delt eller sporet."}}, {"@type": "Question", "name": "Hvordan beregnes Tonight-poengsummen?", "acceptedAnswer": {"@type": "Answer", "text": "Velg hva du planlegger - Melkeveien, stjernekikking, måne, nattlandskap eller nordlys - så gir Almanox en poengsum fra 0 til 100 ved å veie timer med ekte astronomisk mørke, måneforstyrrelse, skydekke og lysforurensningen der du er. Det er en rask og ærlig pekepinn på om det er verdt å dra ut i kveld."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="Forstørret skjermbilde av Almanox">
+    </div>
+
+    <!-- Nav -->
+    <nav>
+        <a href="/nb/" class="nav-brand"> <img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHub-logo"> <span class="nav-brand-text">MiyaraHub</span> </a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Meny">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Språk">
+            <li><a href="/nb/" onclick="closeNav()">Hjem</a></li>
+            <li><a href="#features" onclick="closeNav()">Funksjoner</a></li>
+            <li><a href="#plates" onclick="closeNav()">Skjermbilder</a></li>
+            <li><a href="/nb/almanox/guide/" onclick="closeNav()">Guide</a></li>
+            <li><a href="#how" onclick="closeNav()">Metode</a></li>
+            <li><a href="#glossary" onclick="closeNav()">Ordliste</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <div class="kicker">Himmelalmanakk &middot; Feltutgave</div>
+                    <h1><span class="stargl">&#10022;</span>Almanox</h1>
+                    <p class="hero-sub">Er det bra stjernevær i kveld?</p>
+                    <p class="hero-lede">
+                        Én skjerm svarer - en Tonight-poengsum, gylden og blå time, Melkeveiens kjerne, mørkehimmelvinduer og en planlegger for sol- og månebilder. Beregnet på enheten din. Ingen konto, ingen sky, intet abonnement.
+                    </p>
+                    <div class="cta-row">
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </span>
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>
+                            Google Play
+                        </span>
+                        <a href="#plates" class="btn">Se skjermbildene</a>
+                    </div>
+                    <div class="coming"><span class="dot">&#9679;</span> Kommer snart - iPhone, iPad, Android, Mac &amp; Windows</div>
+                </div>
+
+                <!-- Ephemeris readout: data as decoration -->
+                <aside class="ephem" aria-label="Eksempel på almanakkoversikt">
+                    <div class="ephem-head">
+                        <span class="t">Tonight &middot; Lokal efemeride</span>
+                        <span class="d">33.42&deg;N 96.58&deg;W</span>
+                    </div>
+                    <div class="ephem-body">
+                        <div class="ephem-rows">
+                            <div class="erow"><span class="lbl">Solnedgang</span><span class="val">20:14</span></div>
+                            <div class="erow"><span class="lbl">Gylden time</span><span class="val"><b>19:31 - 20:14</b></span></div>
+                            <div class="erow"><span class="lbl">Astro-mørkt</span><span class="val">21:44 - 05:02</span></div>
+                            <div class="erow"><span class="lbl">Måne</span><span class="val">Nymåne &middot; 2%</span></div>
+                            <div class="erow"><span class="lbl">MW-kjerne &#8593;</span><span class="val"><b>22:58</b></span></div>
+                            <div class="erow verdict">
+                                <span class="lbl">Vurdering</span>
+                                <span style="text-align:right"><span class="score">87</span><span class="val" style="color:var(--faint)">/100</span><br><span class="grade">UTMERKET</span></span>
+                            </div>
+                        </div>
+                        <div class="ladder" aria-hidden="true">
+                            <div class="seg day"><span>DAG</span></div>
+                            <div class="seg civil"><span>CIV 20:41</span></div>
+                            <div class="seg nautical"><span>NAU 21:12</span></div>
+                            <div class="seg astro"><span>AST 21:44</span></div>
+                            <div class="seg night"><span>NATT</span></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Plates -->
+            <div class="plates" id="plates-hero">
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox Tonight-vurdering - er det bra stjernevær i kveld" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. I</b> &middot; Tonight</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox Today - solbane, gylden time og månealmanakk" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. II</b> &middot; Almanakk</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox Melkeveiens kjerne og mørkehimmelvindu" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. III</b> &middot; Melkeveien</figcaption>
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Registeret</div>
+                <h2 class="sec-title">Én skjerm, hele himmelen</h2>
+                <p class="sec-desc">Astronomi, vær og en planleggingsmotor smeltet sammen til ett enkelt svar. Almanakken og himmelberegningene kjører på enheten din; sanntidsforhold kommer fra åpne vær- og karttjenester. Ingen konto, ingen reklame, intet abonnement.</p>
+            </div>
+            <div class="ledger">
+                <article class="entry">
+                    <div class="no">Nr. 01</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9737;</span> Kveldens vurdering</h3>
+                        <p>Én enkelt poengsum fra 0 til 100 for akkurat det du planlegger - Melkeveien, stjernekikking, månen, et nattlandskap eller nordlys. Den veier timer med ekte mørke, måneforstyrrelse, skydekke og lysforurensningen på din himmel til ett ærlig svar: er det faktisk bra i kveld?</p>
+                        <div class="meta"><span>Poengsum</span><span>Beste vindu</span><span>Mørke</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 02</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9728;</span> Sol- &amp; månealmanakk</h3>
+                        <p>Soloppgang, solnedgang, gylden og blå time og hele tusmørkestigen fra sivilt til astronomisk. Månefase, belysning, opp- og nedgang - alt med en sanntids solbane.</p>
+                        <div class="meta"><span>Gylden time</span><span>Tusmørke</span><span>Månefase</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 03</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Melkeveien &amp; mørk himmel <span class="pro-tag">Pro</span></h3>
+                        <p>Oppgang, høydepunkt og nedgang for den galaktiske kjernen med kvalitetsgrad fra Dårlig til Utmerket, pluss prognosen for månefritt mørkehimmelvindu, så du vet nøyaktig hvilke timer det er verdt å fotografere.</p>
+                        <div class="meta"><span>Kjerne opp/ned</span><span>Mørkt vindu</span><span>Kvalitetsgrad</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 04</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9796;</span> Kveldens planeter</h3>
+                        <p>Hvilke planeter som er oppe akkurat nå, hvor du skal se, hvor lyse de er og hvilken fase de har - alt beregnet på enheten for din nøyaktige tid og ditt sted.</p>
+                        <div class="meta"><span>Synlighet</span><span>Lysstyrke</span><span>Fase</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 05</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8982;</span> Bildeplanlegger <span class="pro-tag">Pro</span></h3>
+                        <p>Finn de nøyaktige dagene da sola eller fullmånen står på linje med retningen du har valgt. Søk etter asimutkryssing og justering over flere dager etter det perfekte bildet - alt uten nett.</p>
+                        <div class="meta"><span>Asimutsøk</span><span>Justeringer</span><span>Flere dager</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 06</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8983;</span> Kartplanlegger uten nett <span class="pro-tag">Pro</span></h3>
+                        <p>Et interaktivt kart som mellomlagrer rutene du har sett på, så det fortsetter å fungere uten signal ute i felten. Slipp en nål og se kurs, avstand og den nøyaktige datoen sola eller månen står på linje bak den.</p>
+                        <div class="meta"><span>Kartruter uten nett</span><span>Kurs &amp; avstand</span><span>Justeringsdatoer</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 07</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9680;</span> Formørkelser</h3>
+                        <p>Sol- og måneformørkelser beregnet på enheten ut fra de ekte efemeridene og filtrert til din posisjon, så listen bare viser dem du faktisk kan gå ut og se.</p>
+                        <div class="meta"><span>Sol &amp; måne</span><span>Filtrert etter sted</span><span>På enheten</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 08</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9729;</span> Sanntidsforhold på himmelen</h3>
+                        <p>Gjeldende temperatur, skydekke og en vurdering av hvor klar himmelen er for hvert lagrede sted, hentet i sanntid fra Open-Meteo - gratis, uten API-nøkkel. Den detaljerte time-for-time-prognosen er en Pro-oppgradering.</p>
+                        <div class="meta"><span>Skydekke</span><span>Klarhet</span><span>Per sted</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 09</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8779;</span> Nordlysvarsel <span class="pro-tag">Pro</span></h3>
+                        <p>En Kp-indeks i sanntid fra NOAA, din geomagnetiske breddegrad og en enkel vurdering for i kveld - pluss en 24-timers Kp-stripe så du ser aktiviteten bygge seg opp før den topper.</p>
+                        <div class="meta"><span>Kp-indeks i sanntid</span><span>Geomagnetisk breddegrad</span><span>24-timers stripe</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 10</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9954;</span> ISS-passeringer</h3>
+                        <p>Neste synlige passering av den internasjonale romstasjonen over posisjonen din, beregnet på enheten ut fra banedata i sanntid - tidspunkt for oppgang, retning og høyeste høyde.</p>
+                        <div class="meta"><span>Synlig passering</span><span>Retning</span><span>På enheten</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 11</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8862;</span> Widgets for startskjermen</h3>
+                        <p>Widgets som oppdaterer seg selv i bakgrunnen, så himmelen holder seg oppdatert på startskjermen selv når appen har vært lukket i timevis.</p>
+                        <div class="meta"><span>Auto-oppdatering</span><span>Bakgrunn</span><span>Startskjerm</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 12</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9673;</span> Vakker, og din egen</h3>
+                        <p>Tre flater - lys, mørk og ekte svart AMOLED - og hvilken farge du vil, fra et utvalg aksentfarger til din egen nøyaktige nyanse. Hele grensesnittet skifter farge, ikke bare én utheving. Full støtte for skjermleser med talte oppsummeringer av stjernekartene, pluss støtte for dynamisk tekststørrelse overalt.</p>
+                        <div class="meta"><span>Lys/mørk/AMOLED</span><span>Valgfri aksent</span><span>Egen farge</span><span>Skjermleser</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 13</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Stjernebilder &amp; stjernekart</h3>
+                        <p>Alle 88 stjernebilder og de lyse stjernene, kartlagt over himmelen din i et gratis stjernekart i sanntid - navngitt og beregnet helt på enheten din, uten behov for tilkobling. AR-himmelfinneren der du peker og identifiserer, er en Pro-oppgradering.</p>
+                        <div class="meta"><span>88 figurer</span><span>Stjernekart</span><span>Uten nett</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Nr. 14</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9790;</span> Uten nett &amp; privat</h3>
+                        <p>Astronomimotoren kjører helt på enheten din. Ingen registrering, ingen konto, ingen reklame, ingen innhøsting av posisjon. Kjøp det én gang og eie det - aldri noe abonnement.</p>
+                        <div class="meta"><span>På enheten</span><span>Ingen konto</span><span>Engangskjøp</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plates / Screens -->
+    <section id="plates">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Platene</div>
+                <h2 class="sec-title">Se den i aksjon</h2>
+                <p class="sec-desc">Hver skjerm beregnes på enheten din - mørk, AMOLED eller lys, i den aksentfargen du velger. Vist på Android; den samme appen kjører på iPhone, iPad, Mac og Windows.</p>
+            </div>
+            <div class="plates">
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox - Tonight-poengsum" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 01</b> &middot; Tonight</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox - Melkeveien og mørkehimmelvindu" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 02</b> &middot; Melkeveien</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox - Today sol- og månealmanakk" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 03</b> &middot; Almanakk</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/04_plan.jpg" alt="Almanox - Bildeplanlegger" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 04</b> &middot; Planlegger</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/05_locations.jpg" alt="Almanox - Lagrede mørkehimmelsteder" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 05</b> &middot; Steder</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/06_theme.jpg" alt="Almanox - Valgfri aksentfarge" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 06</b> &middot; Valgfri farge</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/07_features.jpg" alt="Almanox - gratis stjernekart, kveldens planeter og ISS-passeringer" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 07</b> &middot; Gratis ekstra</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1170" height="2532" src="/almanox/screenshots/07_light.jpg" alt="Almanox - Lyst tema" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 07</b> &middot; Lys</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- How / Method -->
+    <section id="how" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Metoden</div>
+                <h2 class="sec-title">Alt på enheten din, ingenting i skyen</h2>
+                <p class="sec-desc">Almanox kjører en hel astronomimotor lokalt. Ingen konto, ingen registrering, og den fungerer uten signal - himmelen er den samme enten du har dekning eller ikke.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="n">1</div>
+                    <h3>Velg stedet ditt</h3>
+                    <p>Bruk din nåværende posisjon eller lagre stedene du fotograferer fra. Almanox beregner sol, måne og himmel for akkurat der du står.</p>
+                </div>
+                <div class="step">
+                    <div class="n">2</div>
+                    <h3>Les vurderingen</h3>
+                    <p>Én poengsum svarer på det eneste spørsmålet som teller - er det verdt det i kveld? Se det beste mørkehimmelvinduet, Melkeveiens kjerne og hvor mye månen kommer i veien.</p>
+                </div>
+                <div class="step">
+                    <div class="n">3</div>
+                    <h3>Planlegg bildet</h3>
+                    <p>Finn de nøyaktige dagene da sola eller fullmånen står på linje med retningen din, fang den gylden timen og få et varsel før himmelen er klar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section id="glossary" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Ordlisten</div>
+                <h2 class="sec-title">En feltguide til himmelen</h2>
+                <p class="sec-desc">Ordene hele appen er bygget rundt - og hvorfor hvert enkelt er en grunn til å ha Almanox i lomma.</p>
+            </div>
+            <div class="gloss">
+                <div class="row"><div class="term"><span class="tag">Almanakken</span>Almanakk</div><div class="def">En dag-for-dag-tabell over himmelen - når sola og månen står opp og går ned, månens fase og hvor mange timer med ekte mørke du får. Almanox er en <b>levende almanakk for akkurat der du står</b>, beregnet på nytt for ditt sted, ikke en generell trykt en.</div></div>
+                <div class="row"><div class="term"><span class="tag">Beste lys</span>Gylden time</div><div class="def">Tiden rett etter soloppgang og før solnedgang når sola står lavt og lyset blir varmt og mykt. Det er lyset de fleste landskaps- og portrettfotografer venter på - og <b>Almanox gir deg nøyaktig start og slutt</b> for i dag, uansett hvor du er.</div></div>
+                <div class="row"><div class="term"><span class="tag">Blått lys</span>Blå time</div><div class="def">Det korte vinduet før soloppgang og etter solnedgang når sola står under horisonten og hele himmelen gløder i en dyp, jevn blåfarge. Beste tid for bybilder og stemningsfulle himler - den kommer og går raskt, så <b>det er viktig å time den på minuttet</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Inn i mørket</span>Tusmørkestigen</div><div class="def">Mørket kommer i tre trinn - <b>sivilt, nautisk og så astronomisk</b> tusmørke. Når det astronomiske tusmørket tar slutt, er himmelen endelig svart og de svake stjernene dukker opp. Det er da stjernekikkere og astrofotografer faktisk begynner å fotografere.</div></div>
+                <div class="row"><div class="term"><span class="tag">Galaksen</span>Melkeveiens kjerne</div><div class="def">Det lyse galaktiske sentrumet - den glødende, detaljrike delen alle fotograferer. Det er bare over horisonten en del av året og en del av natten. Almanox forteller deg <b>når kjernen står opp, topper og går ned</b>, og graderer hvor bra den vil se ut.</div></div>
+                <div class="row"><div class="term"><span class="tag">Vinduet</span>Mørkehimmelvindu</div><div class="def">Den delen av natten med <b>verken sol eller måne</b> som vasker ut himmelen. Det er den eneste tiden dypromsbilder og Melkeveisbilder virkelig fungerer, og den forskyver seg hver natt - noe som er akkurat det som er kjedelig å regne ut for hånd.</div></div>
+                <div class="row"><div class="term"><span class="tag">Måneskinn</span>Fase &amp; belysning</div><div class="def">Hvor mye av månen som er opplyst, fra nymåne til fullmåne. En sterk måne <b>oversvømmer himmelen og drukner Melkeveien</b>; en nymåne lar den ligge bekmørk. Å vite hvordan månen er i kveld er halve jobben for enhver nattfotografering.</div></div>
+                <div class="row"><div class="term"><span class="tag">Svaret</span>Tonight-vurdering</div><div class="def">Tilpasset det du planlegger - Melkeveien, stjernekikking, måne, nattlandskap eller nordlys - veier Almanox timer med mørke, måneforstyrrelse, skydekke og lysforurensning til <b>én ærlig poengsum fra 0 til 100</b>. I stedet for å krysssjekke fem ting ser du på ett tall og vet om det er verdt å dra ut i kveld.</div></div>
+                <div class="row"><div class="term"><span class="tag">Justeringen</span>Sol- &amp; månejustering</div><div class="def">De nøyaktige dagene sola eller fullmånen står opp eller går ned <b>på linje med et landemerke eller en kompassretning</b> - planleggingen bak de perfekte bildene av fullmånen bak en bro eller en topp. Almanox søker gjennom dagene framover for deg.</div></div>
+                <div class="row"><div class="term"><span class="tag">Rett overhead</span>ISS-passering</div><div class="def">Når den internasjonale romstasjonen flyr over og er lys nok til å sees med det blotte øye - et jevnt, raskt bevegelig lyspunkt. Almanox gir deg <b>neste synlige passering, retningen og hvor høyt den stiger</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Figurene</span>Stjernebilder</div><div class="def">De 88 navngitte stjernemønstrene - Orion, Karlsvogna, Skytten over Melkeveien. Almanox tegner dem alle, og de lyse stjernene, <b>over din faktiske himmel</b>, i et stjernekart og gjennom AR-finderen, så du kan peke og navngi det du ser på.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Vilkårene</div>
+                <h2 class="sec-title">Personvern fra grunnen av</h2>
+                <p class="sec-desc">Almanox er bygget for å holde seg for seg selv. Ingen konto, ingen reklame, ingen innhøsting av posisjon - bare himmelen, beregnet på enheten din.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4>Fungerer uten nett</h4><p>Astronomimotoren kjører helt på telefonen din. Sol, måne, tusmørke, Melkeveien og bildeplanleggeren fungerer alle helt uten tilkobling.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4>Aldri noen konto</h4><p>Ingen registrering, ingen e-post, ingen MiyaraHub-innlogging. Last den ned, åpne den, så er du i gang med å planlegge - ingenting å opprette, ingenting å huske.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9738;</span><div><h4>Posisjonen din forblir din</h4><p>Posisjonen brukes bare til å beregne himmelen din og hente lokale forhold - aldri solgt og aldri brukt til å profilere deg. Været kommer anonymt fra Open-Meteo, uten konto eller nøkkel.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4>Engangskjøp</h4><p>Kjøp det én gang og eie det. Uten abonnement, gjentakende betaling eller oppdateringer bak betalingsmur - det motsatte av hvordan de fleste fotoapper er priset.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4>Ingen reklame, ingen salg av dataene dine</h4><p>Ingen annonse-SDK, ingen annonsenettverk, ingen datameglere. Almanox bruker anonym førstepartsanalyse for å se hvilke funksjoner som brukes, pluss krasjrapportering når noe går galt - aldri knyttet til identiteten din, aldri solgt.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9789;</span><div><h4>Én app, alle enheter</h4><p>Den samme vakre planleggeren som fungerer uten nett, på iPhone, iPad, Android, Mac og Windows - uansett hvor du fotograferer.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Marginalia</div>
+                <h2 class="sec-title">Ofte stilte spørsmål</h2>
+                <p class="sec-desc">Alt du trenger å vite om Almanox.</p>
+            </div>
+            <div class="faq">
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Er Almanox et abonnement?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in"><strong>Nei.</strong> Almanox er et engangskjøp til $12.99. Uten abonnement, reklame eller oppdateringer bak betalingsmur. Kjøp det én gang og eie det i App Store, Google Play eller Microsoft Store.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Fungerer det uten tilkobling?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Kjernealmanakken kjører helt på enheten din - sol, måne, tusmørke, Melkeveien, mørkehimmelvinduer, stjernekartet og bildeplanleggeren fungerer alle uten tilkobling. Sanntidsforhold (vær, nordlys, ISS-passeringer og kart) trenger tilkobling når du bruker dem.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Hva er gratis, og hva er Pro?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Gratisversjonen er raus: hele sol- og månealmanakken (soloppgang/solnedgang, gylden og blå time, tusmørkestigen, månefase), Tonight-poengsummen, sanntidsoversikt over skyer og lysforurensning, nordlysvarselet, kveldens planeter, ISS-passeringer, stjernekartet med stjernebilder, kalenderen for meteorsvermer og formørkelser, de neste 7 beste nettene, mørkehimmelvarsler for gode netter, tre lagrede steder og alle temaer i valgfri farge. Pro ($12.99, engangsbeløp) låser opp Melkeveiskjerne-prognosen, dypromsmål, kartplanleggeren for utflukter og finneren for mørkehimmelsteder, planleggeren for sol- og månebilder, fotokalkulatorer, den detaljerte timesprognosen, AR-himmelfinneren, widgets for startskjermen, varsler for gylden time og egendefinerte varsler, en 60-netters utsikt og ubegrenset antall lagrede steder.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Hvilke enheter kjører den på?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">iPhone, iPad, Android, Mac og Windows, med ett vakkert og helhetlig design. Den tilpasser seg lys, mørk og ekte svart AMOLED, i den aksentfargen du vil ha - utvalgte nyanser eller din egen.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Trenger jeg en konto?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Nei. Ingen registrering, ingen e-post og ingen MiyaraHub-innlogging. Last ned appen og begynn å planlegge. Posisjonen din brukes bare til å beregne himmelen din og blir aldri solgt, delt eller sporet.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Hvordan beregnes Tonight-poengsummen?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Velg hva du planlegger - Melkeveien, stjernekikking, måne, nattlandskap eller nordlys - så gir Almanox en poengsum fra 0 til 100 ved å veie timer med ekte astronomisk mørke, måneforstyrrelse, skydekke og lysforurensningen der du er. Det er en rask og ærlig pekepinn på om det er verdt å dra ut i kveld.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free vs Pro -->
+    <section id="pricing">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Gratis &amp; Pro</div>
+                <h2 class="sec-title">En raus gratisapp, med én ærlig oppgradering</h2>
+                <p class="sec-desc">Alt du trenger for å svare på «er det verdt det i kveld» er gratis. Pro ($12.99, engangsbeløp - uten abonnement) legger til de dype planleggingsverktøyene. Hver låste funksjon viser et ekte eksempel først.</p>
+            </div>
+            <div class="cmp-wrap">
+                <table class="cmp">
+                    <thead>
+                        <tr><th scope="col">Funksjon</th><th scope="col">Gratis</th><th scope="col">Pro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sol- &amp; månealmanakk (gylden/blå time, tusmørke, fase)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Tonight-poengsum (Melkeveien, stjernekikking, måne, nordlys)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Oversikt over skyer &amp; lysforurensning i sanntid</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Mørkehimmelvindu &amp; beste vindu i kveld</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Nordlysvarsel &amp; kveldens planeter</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>ISS-passeringer</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Stjernekart med stjernebilder (88 figurer)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Kalender for meteorsvermer &amp; formørkelser</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Mørkehimmelvarsler for gode netter</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Alle temaer &amp; aksenter, ingen reklame, ingen innlogging</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Melkeveiskjerne-prognose &amp; dypromsmål</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Planlegger for sol- &amp; månebilder</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Fotokalkulatorer (500 / NPF / dybdeskarphet)</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Kartplanlegger for utflukter &amp; finner for mørkehimmelsteder</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Detaljert timesprognose</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>AR-himmelfinner</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Widgets for startskjermen</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Varsler for gylden time &amp; egendefinerte varsler</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Beste netter framover</td><td>7 netter</td><td class="y">60 netter</td></tr>
+                        <tr><td>Lagrede steder</td><td>3</td><td class="y">Ubegrenset</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <style>
+        #pricing .cmp-wrap { overflow-x: auto; margin-top: 1.6rem; border: 1px solid var(--line); border-radius: 14px; }
+        #pricing table.cmp { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 460px; }
+        #pricing .cmp th, #pricing .cmp td { text-align: left; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+        #pricing .cmp thead th { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); background: var(--ink-2); }
+        #pricing .cmp thead th:nth-child(2), #pricing .cmp thead th:nth-child(3),
+        #pricing .cmp tbody td:nth-child(2), #pricing .cmp tbody td:nth-child(3) { text-align: center; width: 5.5rem; }
+        #pricing .cmp thead th:nth-child(3) { color: var(--brass); }
+        #pricing .cmp tbody tr:last-child td { border-bottom: none; }
+        #pricing .cmp td.y { color: var(--brass); font-weight: 600; }
+        #pricing .cmp td.n { color: var(--faint); }
+        #pricing .cmp tbody td:first-child { color: var(--star); }
+    </style>
+
+    <!-- Guide -->
+    <section id="guide" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Feltguiden</div>
+                <h2 class="sec-title">Lær å lese himmelen</h2>
+                <p class="sec-desc">En komplett, illustrert manual - hvordan Tonight-vurderingen bygges opp, hvordan du planlegger Melkeveiens kjerne, stiller opp et sol- eller månebilde, regner ut fotomatematikken og finner virkelig mørk himmel.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4><a href="/nb/almanox/tonight-verdict/">Tonight-vurderingen</a></h4><p>Hvordan poengsummen fra 0 til 100 slår sammen mørke, måne, Melkeveiens høyde og skydekke - og hva Bra, Middels og Dårlig egentlig betyr.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4><a href="/nb/almanox/milky-way/">Melkeveien &amp; mørkehimmelvinduer</a></h4><p>Oppgang for den galaktiske kjernen, høyeste høyde og det nøyaktige månefrie vinduet for å fotografere den, uansett hvor du står.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9788;</span><div><h4><a href="/nb/almanox/shot-planner/">Bildeplanleggeren</a></h4><p>Dagene da sola eller fullmånen står på linje med retningen din - soloppgangen bak buen, planlagt helt ned til dagen.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/nb/almanox/photo-calculators/">Fotokalkulatorer</a></h4><p>500-regelen, den strengere NPF-regelen og dybdeskarphet med hyperfokalavstand, for akkurat ditt utstyr.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4><a href="/nb/almanox/dark-sky-finder/">Mørkehimmelfinneren</a></h4><p>De nærmeste sertifiserte International Dark-Sky Places, rangert etter avstand med retning og en grov kjøretid.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/nb/almanox/settings/">Innstillinger, temaer &amp; varsler</a></h4><p>Lys, mørk og ekte svart AMOLED, valgfri aksentfarge, kort i valgfri rekkefølge, sikkerhetskopi i én fil og varsler før lyset kommer.</p></div></div>
+            </div>
+            <div class="cta-row" style="justify-content:center;margin-top:2.4rem">
+                <a class="btn store" href="/nb/almanox/guide/">Les hele guiden</a>
+                <a class="btn" href="/nb/almanox/help/">Hjelp &amp; FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap fade">
+            <div class="kicker" style="display:block;margin-bottom:1rem">&#10022; Klar himmel i vente</div>
+            <h2>Planlegg din neste klare natt</h2>
+            <p>Almanox kommer snart til iPhone, iPad, Android, Mac og Windows. Engangskjøp, uten abonnement, fungerer helt uten nett.</p>
+            <div class="cta-row" style="justify-content:center">
+                <span class="btn store" style="cursor:default">App Store &middot; snart</span>
+                <span class="btn store" style="cursor:default">Google Play &middot; snart</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap foot">
+            <div class="c">
+                &copy; 2026 MiyaraHub Technologies LLC &middot; Van Alstyne, Texas. Med enerett.<br> <b>Almanox</b> - planleggeren for sol, måne og Melkeveien for fotografer og stjernekikkere.<br> <span class="legal">Almanox er en uavhengig app fra MiyaraHub Technologies LLC og er ikke tilknyttet, støttet eller sponset av noen tredjepart. Sanntidsvær leveres av Open-Meteo og stedsoppslag av OpenStreetMap-bidragsytere; veiledningen om mørk himmel bygger på offentlige datasett om lysforurensning. Alle nevnte produktnavn er varemerker som tilhører sine respektive eiere.</span>
+            </div>
+            <ul>
+                <li><a href="/nb/">MiyaraHub</a></li>
+                <li><a href="/nb/privacy.html">Personvern</a></li>
+                <li><a href="/nb/terms.html">Vilkår</a></li>
+                <li><a href="mailto:admin@miyarahub.com">Support</a></li>
+            </ul>
+        </div>
+        <div class="foot-apps" role="navigation" aria-label="MiyaraHub-apper"><span class="fa-h">Apper</span><a href="/nb/avr-maestro/">AVR Maestro</a><a href="/nb/synology-manager/">Syno Manager</a><a href="/nb/upsight/">UPSight</a><a href="/nb/fury-path/">FuryPath</a><a href="/nb/uc-remote/">UC Remote</a><a href="/nb/almanox/">Almanox</a><a href="/nb/nexus-deck/">NexusDeck</a><a href="/nb/avr-maestro-mc/">AVR Maestro MC</a><a href="/nb/network-deck/">Network Deck</a><a href="/nb/projector-pilot/">Projector Pilot</a><a href="/nb/elan-audio-lab/">Elan Audio Lab</a><a href="/nb/support/">Support</a></div>
+    <p class="foot-tm">MiyaraHub-apper er uavhengige og er ikke tilknyttet, støttet eller sponset av produsentene av maskinvaren og tjenestene de fungerer med. Alle varemerker tilhører sine respektive eiere. <a href="/nb/#legal">Varemerkeerklæring</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.fade').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+        });
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade:not(.vis)').forEach(el => io.observe(el));
+
+        function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+        function closeNav() {
+            document.getElementById('nav-menu').classList.remove('open');
+            document.getElementById('nav-toggle').classList.remove('open');
+        }
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+    </script>
+  <script defer src="/almanox/search.js"></script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今夜の判定 - Almanoxの0〜100の夜空スコア</title>
+    <meta name="description" content="Almanoxが&#x27;、暗さ、月の影響、天の川の高さ、雲から今夜の0〜100の空のスコアをどのように作るのか、そして「悪い」「普通」「良い」「最高」が何を意味するのかを解説します。">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="vi_VN" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="今夜の判定 - Almanoxの&#x27;0〜100の夜空スコア">
+    <meta property="og:description" content="Almanoxが&#x27;、暗さ、月の影響、天の川の高さ、雲から今夜の0〜100の空のスコアをどのように作るのか、そして「悪い」「普通」「良い」「最高」が何を意味するのかを解説します。">
+    <meta property="og:url" content="https://miyarahub.com/ja/almanox/tonight-verdict/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad and Android by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="今夜の判定 - Almanoxの&#x27;0〜100の夜空スコア">
+    <meta name="twitter:description" content="Almanoxが&#x27;、暗さ、月の影響、天の川の高さ、雲から今夜の0〜100の空のスコアをどのように作るのか、そして「悪い」「普通」「良い」「最高」が何を意味するのかを解説します。">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta name="twitter:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad and Android by MiyaraHub Technologies.">
+<meta name="keywords" content="tonight verdict, night sky quality score, is tonight good for stargazing, astrophotography forecast, milky way visibility tonight, moon interference astrophotography, astronomical darkness hours, stargazing conditions tonight, Almanox tonight verdict">
+<link rel="canonical" href="https://miyarahub.com/ja/almanox/tonight-verdict/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/almanox/tonight-verdict/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/almanox/tonight-verdict/" />
+<!--/hreflang-->
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/almanox-icon.png">
+<link rel="apple-touch-icon" href="/assets/almanox-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/almanox/manual.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "ネイティブアプリ、フルスタックのWebおよびEコマースプラットフォーム、システム・監視ツール、デバイス連携、DevOpsパイプラインを手がける、小さな独立系ソフトウェアスタジオです。", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "ja", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/almanox/tonight-verdict/#webpage", "url": "https://miyarahub.com/almanox/tonight-verdict/", "name": "今夜の判定 - Almanoxの0〜100の夜空スコア", "description": "Almanoxが、暗さ、月の影響、天の川の高さ、雲から今夜の0〜100の空のスコアをどのように作るのか、そして「悪い」「普通」「良い」「最高」が何を意味するのかを解説します。", "inLanguage": "ja", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/almanox.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/almanox/tonight-verdict/#breadcrumb"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/almanox/tonight-verdict/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Almanox", "item": "https://miyarahub.com/almanox/"}, {"@type": "ListItem", "position": 3, "name": "今夜の判定", "item": "https://miyarahub.com/almanox/tonight-verdict/"}]}]}</script>
+</head>
+<body>
+<div class="lightbox" id="lightbox" onclick="this.classList.remove('active')"><img id="lightbox-img" src="" alt="拡大表示したAlmanoxのスクリーンショット"></div>
+<nav>
+<a href="/ja/" class="nav-brand"><img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="MiyaraHubのロゴ"><span class="nav-brand-text">MiyaraHub</span></a>
+<button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="メニュー"><span></span><span></span><span></span></button>
+<ul class="nav-links" id="nav-menu" data-i18n-language="言語">
+<li><a href="/ja/almanox/">アプリ</a></li>
+<li><a href="/ja/almanox/guide/" class="on">ガイド</a></li>
+<li><a href="/ja/almanox/help/">ヘルプ</a></li>
+</ul>
+</nav>
+<div class="wrap">
+<nav class="crumb" aria-label="パンくずリスト"><ol><li><a href="/ja/">ホーム</a></li><li class="sep">/</li><li><a href="/ja/almanox/">Almanox</a></li><li class="sep">/</li><li><a href="/ja/almanox/guide/">ガイド</a></li><li class="sep">/</li><li>今夜の判定</li></ol></nav>
+<header class="phead fade">
+    <div class="kicker">第01章</div>
+    <h1>今夜の判定</h1>
+    <p class="lede">晴天を教えてくれるアプリは、どれも計算を自分でさせます。月はここ、暗さはあそこ、雲はまた別の場所で確認する、という具合です。Almanoxは計算を引き受けて、答えだけを渡します。今夜の0〜100のスコアに、ひと言の評価と、わかりやすい言葉の理由が添えられます。この章では、その数字がどこから来るのか、そしてどう活用するのかを説明します。</p>
+</header>
+
+<section class="fade">
+    <div class="sec-head"><div class="kicker">見出し</div><h2 class="sec-title">1つの数字、4つの入力</h2><p class="sec-desc">リング、評価、そしてわかりやすい言葉の理由で、夜の全体がひと目でわかります。</p></div>
+    <div class="prose">
+        <p>「今夜」タブを開くと、スコアが目標値まで数え上がるにつれてリングが伸びていきます。その横には<b>悪い</b>、<b>普通</b>、<b>良い</b>、<b>最高</b>のひと言の評価と、自分で言うような言葉で書かれた見出しが表示されます。「明るい月が深宇宙を洗い流しています」のように。数字は夜の良し悪しを、見出しは何がそれを決めているのかを伝えます。この2つがあれば、三脚を出すべきか、リモコンを手に取るべきか、3秒でわかります。</p>
+        <p>スコアは雰囲気で決まるものではありません。4つの独立した測定値を合わせたものです。真の天文学的な暗さの時間数、月がその暗さにどれだけ入り込むか、天の川の中心部がどこまで高く昇るか、そして暗いウィンドウそのものの雲の予報です。それぞれがあなたの正確な座標と画面上の日付に合わせて計算され、次のセクションでは1つずつ詳しく見ていきます。</p>
+        <p>リングの下にある<b>ローカルエフェメリス</b>カードには、評価の裏にある生の数値が表示されます。日の入り、ゴールデンアワー、天文学的な暗さの開始、月相と輝面比のパーセント、天の川の中心部の出の時刻<span class="pro-tag">Pro</span>です。その下には、昼、市民薄明、航海薄明、天文薄明、夜と段階的に進むトワイライトラダーが並び、日の入りの1時間半後に本当の暗さが訪れることを前提に推測するのではなく、空が段階的に暗くなる様子を見られます。</p>
+        <p class="note">この画面の空の計算は、アカウントなしで、お使いのデバイス上で、あなたの正確な場所に合わせて行われます。今夜の判定には、オンラインでリアルタイムの雲量も取得して反映されます。</p>
+    </div>
+    <div class="shot"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="0〜100の判定リング、ローカルエフェメリスカード、トワイライトラダーを表示したAlmanoxの「今夜」画面" onclick="lb(this.src)" loading="lazy"></div><div class="cap"><b>今夜</b> 判定</div></div>
+</section>
+
+<section class="sec-band fade">
+    <div class="sec-head"><div class="kicker">レシピ</div><h2 class="sec-title">スコアの中身</h2><p class="sec-desc">4つの測定値で、正直な数字が1つ。そのうちの1つが夜の評価を引き下げているときは、見出しがそれを名指しします。</p></div>
+    <div class="prose">
+        <p>1つのスコアは、何が入っているかがわかってはじめて信頼できます。判定は4つの要素を考慮し、それぞれ近似ではなく、きちんと測定されています。</p>
+        <ul>
+            <li><b>天文学的な暗さ。</b>太陽が地平線より18度以上下にある時間で、空が本当に真っ黒になるのは夜のうちこの時間だけです。高緯度の真夏の夜には、ほとんどないこともあり、無駄足になる前にスコアがそれを反映します。</li>
+            <li><b>月の影響。</b>月相だけではありません。暗いウィンドウのうち、月が実際に地平線の上にある時間の長さと、出ているときの明るさです。暗くなる前に沈む90%の月は、何の影響もありません。ウィンドウの真ん中に居座る40%の月は、大きな影響があります。</li>
+            <li><b>天の川の中心部の高さ。</b>あなたのいる場所から、銀河の中心部がどこまで高く昇るかです。中心部は深宇宙の夜の主役で、地平線近くの濁りを越えて昇らないなら、スコアは正直にそう伝えます。</li>
+            <li><b>雲量。</b>昼間の平均ではなく、暗いウィンドウそのものの雲の予報です。正午は晴れでも午前2時に曇りなら、悪い夜であり、そのようにスコアが付きます。</li>
+        </ul>
+        <p>内部では入力が別々に保たれているので、見出しは原因を指し示せます。同じ中程度のスコアでも、月のない空に薄い雲がかかっている場合と、晴れた空に大きな凸月がある場合があります。この2つの夜は、計画がまったく異なります。判定は、どちらを見ているのかを教えてくれます。</p>
+    </div>
+</section>
+
+<section class="fade">
+    <div class="sec-head"><div class="kicker">現場での使い方</div><h2 class="sec-title">評価の読み方</h2><p class="sec-desc">「最高」「良い」「普通」「悪い」が実際に何を意味し、それぞれにどう対応すべきか。</p></div>
+    <div class="prose">
+        <p>評価は現場での推奨であり、命令ではありません。次のように活用してください。</p>
+    </div>
+    <table class="ctable">
+        <thead><tr><th>評価</th><th>意味</th><th>対応</th></tr></thead>
+        <tbody>
+            <tr><td>最高</td><td>真の暗さが長く続き、ウィンドウ内に月がほとんどまたはまったくなく、空が晴れている</td><td>出かけましょう。このような夜は稀なので、ドライブに出る価値があります。</td></tr>
+            <tr><td>良い</td><td>しっかりとした暗いウィンドウで、影響は小さい</td><td>出かけましょう。ウィンドウの中で最も暗い時間帯を撮り、残りは工夫でしのぎましょう。</td></tr>
+            <tr><td>普通</td><td>何かが夜を引き下げている。たいていは月</td><td>場合によります。決める前に、見出しとエフェメリスで原因を確認しましょう。</td></tr>
+            <tr><td>悪い</td><td>光に洗い流されているか、雲に覆われている</td><td>家にいるか、月そのものにレンズを向けましょう。「悪い」夜でもよく映える唯一の被写体です。</td></tr>
+        </tbody>
+    </table>
+    <div class="prose">
+        <p>判定は今夜に固定されていません。任意の日付までスクラブすると、リングはその夜のあなたの場所に合わせて再計算されます。悪い予報も計画に変わります。今夜が「悪い」なら、次の「良い」夜は数タップ先にあることが多く、毎晩空を確認して祈る代わりに、それを軸に1週間を組み立てられます。</p>
+        <p class="note">夜の評価が「普通」のときは、まずエフェメリスの月の行を見てください。原因はたいてい月で、雲と違って完全に予測できます。日没の1時間後に月が沈めば、「普通」の宵が「良い」夜更けに変わります。</p>
+    </div>
+</section>
+
+<div class="cta fade">
+    <h2>荷造りの前に、空に聞こう</h2>
+    <p>Almanoxは$12.99の買い切りです。サブスクリプションも広告もアカウントも不要です。判定、エフェメリス、その裏側のすべてが、お使いのデバイス上で動作します。</p>
+    <div class="cta-row"><a class="btn primary" href="/ja/almanox/">アプリを見る</a><a class="btn" href="/ja/almanox/guide/">ガイドに戻る</a></div>
+</div>
+</div>
+<footer><div class="wrap"><div class="foot"><div class="c"><b>Almanox</b> by MiyaraHub Technologies LLC<br>独立系アプリです。第三者との提携関係はありません。</div><ul><li><a href="/ja/almanox/">アプリ</a></li><li><a href="/ja/almanox/guide/">ガイド</a></li><li><a href="/ja/privacy.html">プライバシー</a></li><li><a href="/ja/terms.html">利用規約</a></li><li><a href="/ja/support/">サポート</a></li></ul></div></div>    <div class="foot-apps" role="navigation" aria-label="MiyaraHubのアプリ"><span class="fa-h">アプリ</span><a href="/ja/avr-maestro/">AVR Maestro</a><a href="/ja/synology-manager/">Syno Manager</a><a href="/ja/upsight/">UPSight</a><a href="/ja/fury-path/">FuryPath</a><a href="/ja/uc-remote/">UC Remote</a><a href="/ja/almanox/">Almanox</a><a href="/ja/nexus-deck/">NexusDeck</a><a href="/ja/avr-maestro-mc/">AVR Maestro MC</a><a href="/ja/network-deck/">Network Deck</a><a href="/ja/projector-pilot/">Projector Pilot</a><a href="/ja/elan-audio-lab/">Elan Audio Lab</a><a href="/ja/support/">サポート</a></div>
+    <p class="foot-tm">MiyaraHubのアプリは独立したものであり、連携するハードウェアやサービスの提供元とは提携しておらず、その承認やスポンサーを受けているものでもありません。すべての商標は各所有者に帰属します。<a href="/ja/#legal">商標について</a></p>
+    </footer>
+<script>
+function lb(src){var l=document.getElementById('lightbox');document.getElementById('lightbox-img').src=src;l.classList.add('active');}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.fade').forEach(function(el){io.observe(el);});
+document.querySelectorAll('.qa .q').forEach(function(q){q.addEventListener('click',function(){q.parentElement.classList.toggle('open');});});
+</script>
+  <script defer src="/almanox/search.js"></script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

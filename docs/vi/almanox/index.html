@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanox: Ứng dụng lập kế hoạch Mặt trời, Mặt trăng &amp; Ngân Hà - MiyaraHub</title>
+    <meta name="description" content="Almanox là ứng dụng lập kế hoạch mặt trời, mặt trăng và Ngân Hà ngoại tuyến cho iOS, Android, Mac và Windows: nhận định Tonight, giờ vàng, khung bầu trời tối và bộ lập kế hoạch cảnh chụp.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:site_name" content="MiyaraHub">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale:alternate" content="ar_AR" />
+<meta property="og:locale:alternate" content="cs_CZ" />
+<meta property="og:locale:alternate" content="da_DK" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="el_GR" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="fi_FI" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="he_IL" />
+<meta property="og:locale:alternate" content="hi_IN" />
+<meta property="og:locale:alternate" content="hu_HU" />
+<meta property="og:locale:alternate" content="id_ID" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="ja_JP" />
+<meta property="og:locale:alternate" content="ko_KR" />
+<meta property="og:locale:alternate" content="nb_NO" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="pl_PL" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:locale:alternate" content="th_TH" />
+<meta property="og:locale:alternate" content="tr_TR" />
+<meta property="og:locale:alternate" content="uk_UA" />
+<meta property="og:locale:alternate" content="zh_CN" />
+<meta property="og:locale:alternate" content="zh_TW" />
+    <meta property="og:title" content="Almanox: Ứng dụng lập kế hoạch Mặt trời, Mặt trăng &amp; Ngân Hà">
+    <meta property="og:description" content="Almanox là ứng dụng lập kế hoạch mặt trời, mặt trăng và Ngân Hà ngoại tuyến cho iOS, Android, Mac và Windows: nhận định Tonight, giờ vàng, khung bầu trời tối và bộ lập kế hoạch cảnh chụp.">
+    <meta property="og:url" content="https://miyarahub.com/vi/almanox/">
+    <meta property="og:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Almanox: Ứng dụng lập kế hoạch Mặt trời, Mặt trăng &amp; Ngân Hà">
+    <meta name="twitter:description" content="Almanox là ứng dụng lập kế hoạch mặt trời, mặt trăng và Ngân Hà ngoại tuyến cho iOS, Android, Mac và Windows: nhận định Tonight, giờ vàng, khung bầu trời tối và bộ lập kế hoạch cảnh chụp.">
+    <meta name="twitter:image" content="https://miyarahub.com/assets/og/almanox.png">
+    <meta name="twitter:image:alt" content="Almanox, a sun, moon and Milky Way planner for iPhone, iPad, Android, Mac and Windows by MiyaraHub Technologies.">
+    <meta name="keywords" content="astrophotography planner app, Milky Way planner, night sky planner, golden hour app, blue hour app, sun position app, moon phase app, moonrise moonset app, dark sky forecast app, stargazing app, astronomy planner, twilight calculator app, Milky Way core app, galactic core tracker, ISS pass app, ISS tracker, shot planner sun moon alignment, offline astronomy app, one-time purchase astronomy app, sun moon almanac app, night photography planner, offline map planner, eclipse forecast app, aurora forecast app, Kp index app, planets tonight app, home screen widgets, MiyaraHub, Almanox">
+    <link rel="canonical" href="https://miyarahub.com/vi/almanox/">
+<!--hreflang-->
+<link rel="alternate" hreflang="en" href="https://miyarahub.com/almanox/" />
+<link rel="alternate" hreflang="ar" href="https://miyarahub.com/ar/almanox/" />
+<link rel="alternate" hreflang="cs" href="https://miyarahub.com/cs/almanox/" />
+<link rel="alternate" hreflang="da" href="https://miyarahub.com/da/almanox/" />
+<link rel="alternate" hreflang="de" href="https://miyarahub.com/de/almanox/" />
+<link rel="alternate" hreflang="el" href="https://miyarahub.com/el/almanox/" />
+<link rel="alternate" hreflang="es" href="https://miyarahub.com/es/almanox/" />
+<link rel="alternate" hreflang="fi" href="https://miyarahub.com/fi/almanox/" />
+<link rel="alternate" hreflang="fr" href="https://miyarahub.com/fr/almanox/" />
+<link rel="alternate" hreflang="he" href="https://miyarahub.com/he/almanox/" />
+<link rel="alternate" hreflang="hi" href="https://miyarahub.com/hi/almanox/" />
+<link rel="alternate" hreflang="hu" href="https://miyarahub.com/hu/almanox/" />
+<link rel="alternate" hreflang="id" href="https://miyarahub.com/id/almanox/" />
+<link rel="alternate" hreflang="it" href="https://miyarahub.com/it/almanox/" />
+<link rel="alternate" hreflang="ja" href="https://miyarahub.com/ja/almanox/" />
+<link rel="alternate" hreflang="ko" href="https://miyarahub.com/ko/almanox/" />
+<link rel="alternate" hreflang="nb" href="https://miyarahub.com/nb/almanox/" />
+<link rel="alternate" hreflang="nl" href="https://miyarahub.com/nl/almanox/" />
+<link rel="alternate" hreflang="pl" href="https://miyarahub.com/pl/almanox/" />
+<link rel="alternate" hreflang="pt" href="https://miyarahub.com/pt/almanox/" />
+<link rel="alternate" hreflang="pt-BR" href="https://miyarahub.com/pt-br/almanox/" />
+<link rel="alternate" hreflang="ro" href="https://miyarahub.com/ro/almanox/" />
+<link rel="alternate" hreflang="ru" href="https://miyarahub.com/ru/almanox/" />
+<link rel="alternate" hreflang="sv" href="https://miyarahub.com/sv/almanox/" />
+<link rel="alternate" hreflang="th" href="https://miyarahub.com/th/almanox/" />
+<link rel="alternate" hreflang="tr" href="https://miyarahub.com/tr/almanox/" />
+<link rel="alternate" hreflang="uk" href="https://miyarahub.com/uk/almanox/" />
+<link rel="alternate" hreflang="vi" href="https://miyarahub.com/vi/almanox/" />
+<link rel="alternate" hreflang="zh-Hans" href="https://miyarahub.com/zh-hans/almanox/" />
+<link rel="alternate" hreflang="zh-Hant" href="https://miyarahub.com/zh-hant/almanox/" />
+<link rel="alternate" hreflang="x-default" href="https://miyarahub.com/almanox/" />
+<!--/hreflang-->
+    <meta name="author" content="MiyaraHub Technologies LLC">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/almanox-icon.png">
+    <link rel="apple-touch-icon" href="/assets/almanox-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root {
+            --ink: #070c16;
+            --ink-2: #0b1322;
+            --ink-3: #0f1a2c;
+            --star: #eef2f8;
+            --muted: #8fa0b8;
+            --faint: #607089;
+            --brass: #e6a552;
+            --brass-deep: #c9863a;
+            --brass-soft: rgba(230,165,82,0.12);
+            --line: rgba(176,198,232,0.11);
+            --line-strong: rgba(176,198,232,0.2);
+            /* twilight ladder - semantic, not the accent */
+            --tw-day: #f3b64d;
+            --tw-civil: #d98b46;
+            --tw-nautical: #3f6ea6;
+            --tw-astro: #26305a;
+            --tw-night: #0a1120;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            background: var(--ink);
+            color: var(--star);
+            line-height: 1.62;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* faint fixed star-field - no animated blobs */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background:
+                radial-gradient(1.2px 1.2px at 12% 22%, rgba(238,242,248,.35), transparent),
+                radial-gradient(1.2px 1.2px at 78% 14%, rgba(238,242,248,.28), transparent),
+                radial-gradient(1px 1px at 34% 62%, rgba(238,242,248,.22), transparent),
+                radial-gradient(1px 1px at 62% 78%, rgba(238,242,248,.20), transparent),
+                radial-gradient(1.4px 1.4px at 88% 54%, rgba(230,165,82,.30), transparent),
+                radial-gradient(1px 1px at 22% 84%, rgba(238,242,248,.18), transparent),
+                radial-gradient(1.1px 1.1px at 50% 8%, rgba(238,242,248,.24), transparent);
+            background-repeat: no-repeat;
+        }
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background:
+                radial-gradient(120% 80% at 50% -10%, rgba(63,110,166,.10) 0%, transparent 55%),
+                radial-gradient(90% 60% at 84% 8%, rgba(230,165,82,.05) 0%, transparent 50%);
+        }
+        a { color: inherit; }
+        ::selection { background: var(--brass-soft); color: var(--star); }
+
+        .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace; }
+        .kicker {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            color: var(--brass);
+        }
+        .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.75rem; }
+
+        /* rule */
+        .hr {
+            height: 1px;
+            background: var(--line);
+            border: 0;
+            width: 100%;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .85rem 1.75rem;
+            background: rgba(7,12,22,.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        .nav-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+        .nav-brand img { height: 30px; width: 30px; border-radius: 5px; }
+        .nav-brand-text {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.12rem;
+            font-weight: 600;
+            letter-spacing: .01em;
+            color: var(--star);
+        }
+        .nav-links { display: flex; gap: 1.9rem; list-style: none; align-items: center; }
+        .nav-links a {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .74rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color .25s;
+        }
+        .nav-links a:hover { color: var(--brass); }
+        .nav-toggle {
+            display: none; background: none; border: none; cursor: pointer;
+            padding: .4rem; z-index: 101; flex-direction: column; gap: 5px;
+        }
+        .nav-toggle span { display: block; width: 22px; height: 1.5px; background: var(--muted); transition: transform .3s, opacity .3s; }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+        /* HERO */
+        .hero { padding: 8.5rem 0 3.5rem; position: relative; }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        .hero-coord {
+            margin-bottom: 1.5rem;
+            display: flex; gap: 1.2rem; flex-wrap: wrap;
+        }
+        .hero h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-size: clamp(3.4rem, 8vw, 6rem);
+            line-height: .95;
+            letter-spacing: -.02em;
+            margin: .4rem 0 .1rem;
+            display: flex; align-items: flex-start; gap: .1em;
+        }
+        .hero h1 .stargl { color: var(--brass); font-size: .34em; margin-top: .15em; line-height: 1; }
+        .hero-sub {
+            font-family: 'Fraunces', Georgia, serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+            color: var(--star);
+            opacity: .92;
+            margin: .1rem 0 1.4rem;
+            max-width: 30ch;
+        }
+        .hero-lede {
+            color: var(--muted);
+            font-size: 1.02rem;
+            max-width: 46ch;
+            margin-bottom: 1.8rem;
+        }
+        .cta-row { display: flex; gap: .9rem; flex-wrap: wrap; align-items: center; }
+        .btn {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+            padding: .8rem 1.3rem;
+            text-decoration: none;
+            border: 1px solid var(--line-strong);
+            border-radius: 3px;
+            color: var(--muted);
+            background: transparent;
+            transition: border-color .25s, color .25s, background .25s;
+        }
+        .btn.store { color: var(--star); border-color: rgba(230,165,82,.35); }
+        .btn.store svg { fill: var(--brass); }
+        .btn:hover { border-color: var(--brass); color: var(--brass); }
+        .btn.primary {
+            border-color: var(--brass);
+            color: var(--ink);
+            background: var(--brass);
+        }
+        .btn.primary:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--ink); }
+        .coming {
+            font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+            color: var(--faint); margin-top: 1.5rem;
+        }
+        .coming .dot { color: var(--brass); }
+
+        /* EPHEMERIS PANEL - the data-as-decoration anchor */
+        .ephem {
+            border: 1px solid var(--line-strong);
+            border-radius: 5px;
+            background: linear-gradient(180deg, rgba(15,26,44,.85), rgba(11,19,34,.85));
+            box-shadow: 0 24px 70px rgba(0,0,0,.45);
+            overflow: hidden;
+        }
+        .ephem-head {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: .7rem 1rem;
+            border-bottom: 1px solid var(--line);
+            background: rgba(230,165,82,.05);
+        }
+        .ephem-head .t { font-family:'IBM Plex Mono',monospace; font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); }
+        .ephem-head .d { font-family:'IBM Plex Mono',monospace; font-size: .68rem; color: var(--faint); }
+        .ephem-body { display: grid; grid-template-columns: 1fr auto; }
+        .ephem-rows { padding: 1.1rem 1rem; display: flex; flex-direction: column; gap: .62rem; }
+        .erow { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-family:'IBM Plex Mono',monospace; }
+        .erow .lbl { font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+        .erow .val { font-size: .86rem; color: var(--star); white-space: nowrap; }
+        .erow .val b { color: var(--brass); font-weight: 500; }
+        .erow.verdict { margin-top: .3rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+        .erow.verdict .lbl { color: var(--brass); }
+        .erow.verdict .score { font-family:'Fraunces',serif; font-size: 1.7rem; font-weight: 600; color: var(--star); line-height: 1; }
+        .erow.verdict .grade { font-size: .68rem; letter-spacing: .18em; color: var(--brass); }
+
+        /* twilight ladder */
+        .ladder { width: 74px; border-left: 1px solid var(--line); display: flex; flex-direction: column; }
+        .ladder .seg { flex: 1; position: relative; display: flex; align-items: center; padding-left: .55rem; }
+        .ladder .seg span { font-family:'IBM Plex Mono',monospace; font-size: .56rem; letter-spacing: .06em; color: rgba(255,255,255,.82); text-shadow: 0 1px 2px rgba(0,0,0,.5); }
+        .ladder .day { background: var(--tw-day); }
+        .ladder .civil { background: var(--tw-civil); }
+        .ladder .nautical { background: var(--tw-nautical); }
+        .ladder .astro { background: var(--tw-astro); }
+        .ladder .night { background: var(--tw-night); }
+        .ladder .night span, .ladder .nautical span, .ladder .astro span { color: rgba(238,242,248,.9); }
+
+        /* PLATES (screenshots) */
+        .plates {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+            margin-top: 3.5rem;
+        }
+        .plate { text-align: center; }
+        .plate .frame {
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            padding: 5px;
+            background: rgba(15,26,44,.5);
+            transition: border-color .3s, transform .3s;
+        }
+        .plate .frame:hover { border-color: rgba(230,165,82,.5); transform: translateY(-4px); }
+        .plate img { width: 100%; display: block; border-radius: 3px; cursor: zoom-in; }
+        .plate .cap {
+            font-family:'IBM Plex Mono',monospace; font-size: .66rem; letter-spacing: .14em;
+            text-transform: uppercase; color: var(--faint); margin-top: .7rem;
+        }
+        .plate .cap b { color: var(--brass); font-weight: 500; }
+
+        /* SECTIONS */
+        section { padding: 4.5rem 0; }
+        .sec-head { margin-bottom: 2.6rem; max-width: 40ch; }
+        .sec-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(1.9rem, 4vw, 2.7rem);
+            line-height: 1.05;
+            letter-spacing: -.015em;
+            margin: .55rem 0 .8rem;
+            text-wrap: balance;
+        }
+        .sec-desc { color: var(--muted); font-size: 1.02rem; }
+        .sec-band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+        /* FEATURES - ledger entries */
+        .ledger { border-top: 1px solid var(--line); }
+        .entry {
+            display: grid;
+            grid-template-columns: 4.5rem 1fr;
+            gap: 1.5rem;
+            padding: 1.9rem 0;
+            border-bottom: 1px solid var(--line);
+            align-items: start;
+        }
+        .entry .no {
+            font-family:'IBM Plex Mono',monospace; font-size: .82rem; color: var(--brass);
+            letter-spacing: .05em; padding-top: .35rem;
+        }
+        .entry .body { }
+        .entry h3 {
+            font-family:'Fraunces',Georgia,serif; font-weight: 500; font-size: 1.4rem;
+            letter-spacing: -.01em; margin-bottom: .5rem; display: flex; align-items: center; gap: .7rem; flex-wrap: wrap;
+        }
+        .entry h3 .glyph { color: var(--brass); flex-shrink: 0; }
+        .pro-tag {
+            font-family:'IBM Plex Mono',monospace; font-size: .6rem; letter-spacing: .2em;
+            text-transform: uppercase; color: var(--brass);
+            border: 1px solid rgba(230,165,82,.4); border-radius: 2px; padding: .1rem .4rem;
+        }
+        .entry p { color: var(--muted); font-size: .98rem; max-width: 62ch; }
+        .entry .meta {
+            margin-top: .8rem; display: flex; gap: 1.2rem; flex-wrap: wrap;
+            font-family:'IBM Plex Mono',monospace; font-size: .7rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint);
+        }
+        .entry .meta span::before { content: '+ '; color: var(--brass); }
+
+        /* HOW IT WORKS */
+        .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.2rem; }
+        .step .n {
+            font-family:'Fraunces',Georgia,serif; font-size: 3rem; font-weight: 400;
+            color: var(--brass); line-height: 1; margin-bottom: .6rem;
+            border-bottom: 1px solid var(--line); padding-bottom: .8rem;
+        }
+        .step h3 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.25rem; margin-bottom: .5rem; }
+        .step p { color: var(--muted); font-size: .95rem; }
+
+        /* PRIVACY - ruled list */
+        .priv { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 3rem; }
+        .priv .p {
+            padding: 1.4rem 0; border-bottom: 1px solid var(--line);
+            display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start;
+        }
+        .priv .p .g { color: var(--brass); padding-top: .1rem; }
+        .priv .p h4 { font-family:'Fraunces',serif; font-weight: 500; font-size: 1.08rem; margin-bottom: .3rem; }
+        .priv .p h4 a { color: var(--star); text-decoration: none; transition: color .2s; }
+        .priv .p h4 a:hover { color: var(--brass); }
+        .priv .p p { color: var(--muted); font-size: .9rem; }
+
+        /* FAQ */
+        .faq { max-width: 800px; border-top: 1px solid var(--line); }
+        .qa { border-bottom: 1px solid var(--line); }
+        .q {
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+            padding: 1.35rem 0; cursor: pointer; user-select: none;
+            font-family:'Fraunces',serif; font-weight: 500; font-size: 1.12rem;
+            transition: color .25s;
+        }
+        .q:hover { color: var(--brass); }
+        .q .arw { color: var(--brass); font-family:'IBM Plex Mono',monospace; font-size: .9rem; transition: transform .3s; flex-shrink: 0; }
+        .qa.open .q .arw { transform: rotate(45deg); }
+        .a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+        .qa.open .a { max-height: 460px; }
+        .a-in { padding: 0 0 1.35rem; color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 68ch; }
+        .a-in strong { color: var(--star); }
+
+        /* GLOSSARY */
+        .gloss { border-top: 1px solid var(--line); }
+        .gloss .row {
+            display: grid; grid-template-columns: 14rem 1fr; gap: 1.6rem;
+            padding: 1.3rem 0; border-bottom: 1px solid var(--line); align-items: baseline;
+        }
+        .gloss .term { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-size: 1.15rem; color: var(--star); }
+        .gloss .term .tag {
+            display: block; font-family: 'IBM Plex Mono', ui-monospace, monospace;
+            font-size: .6rem; letter-spacing: .18em; text-transform: uppercase;
+            color: var(--brass); margin-bottom: .3rem; font-weight: 400;
+        }
+        .gloss .def { color: var(--muted); font-size: .96rem; max-width: 64ch; }
+        .gloss .def b { color: var(--star); font-weight: 500; }
+        @media (max-width: 720px) { .gloss .row { grid-template-columns: 1fr; gap: .4rem; } }
+
+        /* CTA */
+        .cta { text-align: center; padding: 5.5rem 0; }
+        .cta h2 { font-family:'Fraunces',serif; font-weight: 500; font-size: clamp(2rem,4.5vw,3rem); letter-spacing: -.02em; margin-bottom: .9rem; }
+        .cta p { color: var(--muted); max-width: 52ch; margin: 0 auto 2rem; }
+
+        /* FOOTER */
+        footer { border-top: 1px solid var(--line); padding: 2.5rem 0; }
+        .foot { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; flex-wrap: wrap; }
+        .foot .c { color: var(--faint); font-size: .82rem; line-height: 1.7; }
+        .foot .c b { font-family:'Fraunces',serif; color: var(--muted); font-weight: 500; }
+        .foot .c .legal { display:block; margin-top:.7rem; font-size:.72rem; line-height:1.6; color: var(--faint); opacity:.85; max-width: 62ch; }
+        .foot ul { display: flex; gap: 1.5rem; list-style: none; flex-wrap: wrap; }
+        .foot a {
+            font-family:'IBM Plex Mono',monospace; font-size: .72rem; letter-spacing: .08em;
+            text-transform: uppercase; color: var(--faint); text-decoration: none; transition: color .25s;
+        }
+        .foot a:hover { color: var(--brass); }
+
+        /* fade-in */
+        .fade { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+        .fade.vis { opacity: 1; transform: none; }
+
+        /* lightbox */
+        .lightbox { display: none; position: fixed; inset: 0; background: rgba(3,6,12,.94); z-index: 1000; justify-content: center; align-items: center; cursor: zoom-out; backdrop-filter: blur(8px); }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 8px; border: 1px solid var(--line-strong); box-shadow: 0 20px 60px rgba(0,0,0,.8); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 2.4rem; }
+            .hero { padding-top: 7rem; }
+            .priv { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 720px) {
+            .nav-toggle { display: flex; }
+            .nav-links {
+                display: none; position: absolute; top: 100%; left: 0; right: 0;
+                flex-direction: column; gap: 0; align-items: stretch;
+                background: rgba(7,12,22,.97); backdrop-filter: blur(14px);
+                border-bottom: 1px solid var(--line); padding: .5rem 1.75rem;
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { padding: .85rem 0; border-bottom: 1px solid var(--line); }
+            .nav-links li:last-child { border-bottom: none; }
+            .plates { grid-template-columns: 1fr 1fr; }
+            .steps { grid-template-columns: 1fr; gap: 1.6rem; }
+            .entry { grid-template-columns: 1fr; gap: .5rem; }
+            .entry .no { padding-top: 0; }
+        }
+        @media (max-width: 460px) {
+            .plates { grid-template-columns: 1fr; }
+            .cta-row { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; }
+            .fade { transition: none; opacity: 1; transform: none; }
+        }
+        img{height:auto}
+        .foot-apps{max-width:1080px;margin:1.4rem auto 0;padding:1.1rem 1.75rem 0;border-top:1px solid rgba(176,198,232,.11);display:flex;flex-wrap:wrap;gap:.45rem 1.1rem;align-items:baseline;font-size:.82rem;line-height:1.5}footer .foot-apps .fa-h{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:#8fa0b8}footer .foot-apps a{color:#8fa0b8;text-decoration:none}footer .foot-apps a:hover{color:#eef2f8;text-decoration:underline}footer .foot-tm{max-width:1080px;margin:.7rem auto 0;padding:0 1.75rem 1.4rem;color:#607089;font-size:.76rem;line-height:1.6}footer .foot-tm a{color:#8fa0b8}
+    </style>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "Studio phần mềm độc lập nhỏ, chuyên xây dựng ứng dụng gốc, nền tảng web và thương mại điện tử full-stack, công cụ hệ thống và giám sát, tích hợp thiết bị cùng quy trình DevOps.", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "vi", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/almanox/#webpage", "url": "https://miyarahub.com/almanox/", "name": "Almanox: Ứng dụng lập kế hoạch Mặt trời, Mặt trăng & Ngân Hà - MiyaraHub", "description": "Almanox là ứng dụng lập kế hoạch mặt trời, mặt trăng và Ngân Hà ngoại tuyến cho iOS, Android, Mac và Windows: nhận định Tonight, giờ vàng, khung bầu trời tối và bộ lập kế hoạch cảnh chụp.", "inLanguage": "vi", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/almanox.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/almanox/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/almanox/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/almanox/#app", "name": "Almanox", "description": "Ứng dụng lập kế hoạch mặt trời, mặt trăng và chụp ảnh thiên văn ngoại tuyến. Điểm nhận định Tonight, giờ vàng và giờ xanh, thang hoàng hôn, giờ lõi Ngân Hà mọc và lặn, khung bầu trời tối, nhiễu từ mặt trăng, bộ lập kế hoạch cảnh chụp mặt trời và mặt trăng, thời tiết trực tiếp và lần ISS bay qua có thể nhìn thấy tiếp theo. Sắp ra mắt.", "url": "https://miyarahub.com/almanox/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "LifestyleApplication", "image": "https://miyarahub.com/assets/almanox-icon.png", "screenshot": ["https://miyarahub.com/almanox/screenshots/01_tonight.jpg", "https://miyarahub.com/almanox/screenshots/03_today.jpg", "https://miyarahub.com/almanox/screenshots/02_milkyway.jpg", "https://miyarahub.com/almanox/screenshots/04_plan.jpg", "https://miyarahub.com/almanox/screenshots/05_locations.jpg", "https://miyarahub.com/almanox/screenshots/06_theme.jpg", "https://miyarahub.com/almanox/screenshots/07_features.jpg", "https://miyarahub.com/almanox/screenshots/07_light.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/almanox/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "Almanox", "item": "https://miyarahub.com/almanox/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/almanox/#faq", "url": "https://miyarahub.com/almanox/", "mainEntity": [{"@type": "Question", "name": "Almanox có phải gói đăng ký không?", "acceptedAnswer": {"@type": "Answer", "text": "Không. Almanox là giao dịch mua một lần với giá $12.99. Không đăng ký, không quảng cáo, không thu phí cập nhật. Mua một lần và sở hữu trên App Store, Google Play hoặc Microsoft Store."}}, {"@type": "Question", "name": "Ứng dụng có hoạt động khi không có kết nối không?", "acceptedAnswer": {"@type": "Answer", "text": "Niên giám cốt lõi chạy hoàn toàn trên thiết bị của bạn - mặt trời, mặt trăng, hoàng hôn, Ngân Hà, khung bầu trời tối, bản đồ sao và bộ lập kế hoạch cảnh chụp đều hoạt động mà không cần kết nối. Điều kiện trực tiếp (thời tiết, cực quang, các lần ISS bay qua và bản đồ) cần kết nối khi bạn dùng."}}, {"@type": "Question", "name": "Gì là miễn phí, gì là Pro?", "acceptedAnswer": {"@type": "Answer", "text": "Bản miễn phí rất hào phóng: toàn bộ niên giám mặt trời và mặt trăng (bình minh/hoàng hôn, giờ vàng và giờ xanh, thang hoàng hôn, pha mặt trăng), điểm nhận định Tonight, nhận biết mây và ô nhiễm ánh sáng trực tiếp, dự báo cực quang, các hành tinh tối nay, các lần ISS bay qua, bản đồ sao các chòm sao, lịch mưa sao băng và nhật nguyệt thực, 7 đêm đẹp nhất sắp tới, cảnh báo bầu trời tối cho đêm tốt, ba địa điểm đã lưu và mọi giao diện với bất kỳ màu nào. Pro ($12.99, mua một lần) mở khóa dự báo lõi Ngân Hà, mục tiêu bầu trời sâu, bộ lập kế hoạch bản đồ đường đi và công cụ tìm địa điểm bầu trời tối, bộ lập kế hoạch cảnh chụp mặt trời và mặt trăng, máy tính nhiếp ảnh, dự báo theo giờ chi tiết, công cụ tìm bầu trời AR, tiện ích màn hình chính, cảnh báo giờ vàng và cảnh báo tùy chỉnh, dự báo 60 đêm và số địa điểm đã lưu không giới hạn."}}, {"@type": "Question", "name": "Ứng dụng chạy trên thiết bị nào?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone, iPad, Android, Mac và Windows, từ một thiết kế nhất quán và đẹp mắt. Nó thích ứng với nền sáng, tối và AMOLED đen thật, với bất kỳ màu nhấn nào bạn muốn - các sắc thái được tuyển chọn hoặc màu tùy chọn của riêng bạn."}}, {"@type": "Question", "name": "Tôi có cần tài khoản không?", "acceptedAnswer": {"@type": "Answer", "text": "Không. Không cần đăng ký, không email, không đăng nhập MiyaraHub. Tải ứng dụng và bắt đầu lên kế hoạch. Vị trí của bạn chỉ dùng để tính bầu trời của bạn và không bao giờ bị bán, chia sẻ hay theo dõi."}}, {"@type": "Question", "name": "Điểm Tonight được tính như thế nào?", "acceptedAnswer": {"@type": "Answer", "text": "Chọn việc bạn định làm - Ngân Hà, ngắm sao, mặt trăng, chụp phong cảnh đêm hoặc cực quang - và Almanox chấm điểm 0-100 bằng cách cân nhắc số giờ tối thiên văn thực sự, nhiễu từ mặt trăng, độ phủ mây và ô nhiễm ánh sáng tại vị trí của bạn. Đó là một cách đọc nhanh và trung thực xem tối nay có đáng ra ngoài không."}}]}]}</script>
+</head>
+<body>
+
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="Ảnh chụp màn hình Almanox được phóng to">
+    </div>
+
+    <!-- Nav -->
+    <nav>
+        <a href="/vi/" class="nav-brand"> <img decoding="async" width="96" height="96" src="/assets/icons/logo-96.png" alt="Logo MiyaraHub"> <span class="nav-brand-text">MiyaraHub</span> </a>
+        <button class="nav-toggle" id="nav-toggle" onclick="document.getElementById('nav-menu').classList.toggle('open'); this.classList.toggle('open')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-menu" data-i18n-language="Ngôn ngữ">
+            <li><a href="/vi/" onclick="closeNav()">Trang chủ</a></li>
+            <li><a href="#features" onclick="closeNav()">Tính năng</a></li>
+            <li><a href="#plates" onclick="closeNav()">Màn hình</a></li>
+            <li><a href="/vi/almanox/guide/" onclick="closeNav()">Hướng dẫn</a></li>
+            <li><a href="#how" onclick="closeNav()">Phương pháp</a></li>
+            <li><a href="#glossary" onclick="closeNav()">Thuật ngữ</a></li>
+            <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="wrap">
+            <div class="hero-grid">
+                <div>
+                    <div class="kicker">Niên giám thiên văn &middot; Ấn bản thực địa</div>
+                    <h1><span class="stargl">&#10022;</span>Almanox</h1>
+                    <p class="hero-sub">Tối nay có hợp để ngắm sao không?</p>
+                    <p class="hero-lede">
+                        Một màn hình trả lời tất cả - điểm nhận định Tonight, giờ vàng và giờ xanh, lõi Ngân Hà, khung bầu trời tối và bộ lập kế hoạch cảnh chụp mặt trời và mặt trăng. Tính toán trên thiết bị của bạn. Không tài khoản, không đám mây, không đăng ký.
+                    </p>
+                    <div class="cta-row">
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </span>
+                        <span class="btn store" style="cursor:default">
+                            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3.6 2.3 13.5 12 3.6 21.7a1.2 1.2 0 0 1-.6-1V3.3c0-.44.24-.82.6-1zM14.7 13l2.6 2.6-9.4 5.3L14.7 13zM14.7 11 7.9 3.1l9.4 5.3L14.7 11zM16.1 12l3-3 2.4 1.35c.66.38.66 1.32 0 1.7L19.1 15l-3-3z"/></svg>
+                            Google Play
+                        </span>
+                        <a href="#plates" class="btn">Xem các màn hình</a>
+                    </div>
+                    <div class="coming"><span class="dot">&#9679;</span> Sắp ra mắt - iPhone, iPad, Android, Mac &amp; Windows</div>
+                </div>
+
+                <!-- Ephemeris readout: data as decoration -->
+                <aside class="ephem" aria-label="Bảng niên giám mẫu">
+                    <div class="ephem-head">
+                        <span class="t">Tonight &middot; Lịch thiên văn địa phương</span>
+                        <span class="d">33.42&deg;N 96.58&deg;W</span>
+                    </div>
+                    <div class="ephem-body">
+                        <div class="ephem-rows">
+                            <div class="erow"><span class="lbl">Hoàng hôn</span><span class="val">20:14</span></div>
+                            <div class="erow"><span class="lbl">Giờ vàng</span><span class="val"><b>19:31 - 20:14</b></span></div>
+                            <div class="erow"><span class="lbl">Tối thiên văn</span><span class="val">21:44 - 05:02</span></div>
+                            <div class="erow"><span class="lbl">Mặt trăng</span><span class="val">Trăng mới &middot; 2%</span></div>
+                            <div class="erow"><span class="lbl">Lõi MW &#8593;</span><span class="val"><b>22:58</b></span></div>
+                            <div class="erow verdict">
+                                <span class="lbl">Nhận định</span>
+                                <span style="text-align:right"><span class="score">87</span><span class="val" style="color:var(--faint)">/100</span><br><span class="grade">XUẤT SẮC</span></span>
+                            </div>
+                        </div>
+                        <div class="ladder" aria-hidden="true">
+                            <div class="seg day"><span>NGÀY</span></div>
+                            <div class="seg civil"><span>CIV 20:41</span></div>
+                            <div class="seg nautical"><span>NAU 21:12</span></div>
+                            <div class="seg astro"><span>AST 21:44</span></div>
+                            <div class="seg night"><span>ĐÊM</span></div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Plates -->
+            <div class="plates" id="plates-hero">
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Nhận định Tonight của Almanox - tối nay có hợp để ngắm sao không" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. I</b> &middot; Tonight</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox Today - đường đi của mặt trời, giờ vàng và niên giám mặt trăng" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. II</b> &middot; Niên giám</figcaption>
+                </figure>
+                <figure class="plate">
+                    <div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Lõi Ngân Hà và khung bầu trời tối của Almanox" onclick="openLightbox(this)" loading="lazy"></div>
+                    <figcaption class="cap"><b>Pl. III</b> &middot; Ngân Hà</figcaption>
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section id="features" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Sổ đăng ký</div>
+                <h2 class="sec-title">Một màn hình, cả bầu trời</h2>
+                <p class="sec-desc">Thiên văn, thời tiết và một công cụ lập kế hoạch hợp nhất thành một câu trả lời duy nhất. Niên giám và các phép tính bầu trời chạy trên thiết bị của bạn; điều kiện trực tiếp đến từ các dịch vụ thời tiết và bản đồ mở. Không tài khoản, không quảng cáo, không đăng ký.</p>
+            </div>
+            <div class="ledger">
+                <article class="entry">
+                    <div class="no">Số 01</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9737;</span> Nhận định Tonight</h3>
+                        <p>Một điểm 0-100 duy nhất cho đúng việc bạn định làm - Ngân Hà, ngắm sao, mặt trăng, chụp phong cảnh đêm hoặc cực quang. Nó cân nhắc số giờ tối thực sự, nhiễu từ mặt trăng, độ phủ mây và ô nhiễm ánh sáng của bầu trời bạn thành một câu trả lời trung thực: tối nay có thực sự tốt không?</p>
+                        <div class="meta"><span>Điểm</span><span>Khung tốt nhất</span><span>Độ tối</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 02</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9728;</span> Niên giám Mặt trời &amp; Mặt trăng</h3>
+                        <p>Bình minh, hoàng hôn, giờ vàng và giờ xanh, cùng toàn bộ thang hoàng hôn từ dân dụng đến thiên văn. Pha mặt trăng, độ sáng và giờ mọc lặn - tất cả đi kèm cung đường đi mặt trời trực tiếp.</p>
+                        <div class="meta"><span>Giờ vàng</span><span>Hoàng hôn</span><span>Pha mặt trăng</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 03</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Ngân Hà &amp; Bầu trời tối <span class="pro-tag">Pro</span></h3>
+                        <p>Giờ lõi thiên hà mọc, đạt đỉnh và lặn kèm xếp hạng chất lượng từ Kém đến Xuất sắc, cộng với dự báo khung bầu trời tối không trăng để bạn biết chính xác những giờ đáng chụp.</p>
+                        <div class="meta"><span>Lõi mọc/lặn</span><span>Khung tối</span><span>Hạng chất lượng</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 04</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9796;</span> Hành tinh tối nay</h3>
+                        <p>Những hành tinh nào đang ở trên bầu trời ngay lúc này, nhìn ở đâu, chúng sáng đến mức nào và pha hiện tại của chúng - tất cả được tính ngay trên thiết bị cho đúng thời gian và địa điểm của bạn.</p>
+                        <div class="meta"><span>Khả năng quan sát</span><span>Độ sáng</span><span>Pha</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 05</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8982;</span> Shot Planner <span class="pro-tag">Pro</span></h3>
+                        <p>Tìm chính xác những ngày mặt trời hoặc trăng tròn thẳng hàng với hướng bạn chọn. Tìm kiếm điểm cắt phương vị và thế thẳng hàng nhiều ngày cho bức ảnh để đời - tất cả ngoại tuyến.</p>
+                        <div class="meta"><span>Tìm theo phương vị</span><span>Thế thẳng hàng</span><span>Nhiều ngày</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 06</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8983;</span> Bộ lập kế hoạch bản đồ ngoại tuyến <span class="pro-tag">Pro</span></h3>
+                        <p>Một bản đồ tương tác lưu lại các ô bản đồ bạn đã xem, để nó vẫn hoạt động khi không có tín hiệu ngoài thực địa. Thả một ghim và xem phương vị, khoảng cách của nó cùng ngày chính xác mà mặt trời hoặc mặt trăng thẳng hàng phía sau nó.</p>
+                        <div class="meta"><span>Ô bản đồ ngoại tuyến</span><span>Phương vị &amp; khoảng cách</span><span>Ngày thẳng hàng</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 07</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9680;</span> Nhật thực và nguyệt thực</h3>
+                        <p>Nhật thực và nguyệt thực được tính trên thiết bị từ lịch thiên văn thực và lọc theo vị trí của bạn, nên danh sách chỉ hiện những lần bạn thực sự có thể bước ra ngoài và nhìn thấy.</p>
+                        <div class="meta"><span>Nhật thực &amp; nguyệt thực</span><span>Lọc theo vị trí</span><span>Trên thiết bị</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 08</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9729;</span> Điều kiện bầu trời trực tiếp</h3>
+                        <p>Nhiệt độ hiện tại, độ phủ mây và nhận định độ trong của bầu trời quang cho từng địa điểm đã lưu, lấy trực tiếp từ Open-Meteo - miễn phí, không cần khóa API. Dự báo từng giờ chi tiết là bản nâng cấp Pro.</p>
+                        <div class="meta"><span>Độ phủ mây</span><span>Độ trong</span><span>Theo địa điểm</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 09</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8779;</span> Dự báo cực quang <span class="pro-tag">Pro</span></h3>
+                        <p>Chỉ số Kp trực tiếp từ NOAA, vĩ độ địa từ của bạn và một nhận định đơn giản cho tối nay - cùng dải Kp 24 giờ để bạn thấy hoạt động tăng dần trước khi đạt đỉnh.</p>
+                        <div class="meta"><span>Chỉ số Kp trực tiếp</span><span>Vĩ độ địa từ</span><span>Dải 24 giờ</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 10</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9954;</span> ISS bay qua</h3>
+                        <p>Lần Trạm Vũ trụ Quốc tế bay qua có thể nhìn thấy tiếp theo phía trên vị trí của bạn, tính trên thiết bị từ dữ liệu quỹ đạo trực tiếp - giờ mọc, hướng và độ cao đỉnh.</p>
+                        <div class="meta"><span>Lần bay qua nhìn thấy được</span><span>Hướng</span><span>Trên thiết bị</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 11</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#8862;</span> Tiện ích màn hình chính</h3>
+                        <p>Các tiện ích tự làm mới ở chế độ nền, nên bầu trời luôn được cập nhật trên màn hình chính ngay cả khi ứng dụng đã đóng hàng giờ.</p>
+                        <div class="meta"><span>Tự làm mới</span><span>Chế độ nền</span><span>Màn hình chính</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 12</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9673;</span> Đẹp, và là của riêng bạn</h3>
+                        <p>Ba bề mặt - Sáng, Tối và AMOLED đen thật - cùng bất kỳ màu nào bạn muốn, từ bộ màu nhấn được tuyển chọn đến sắc thái tùy chỉnh chính xác của riêng bạn. Toàn bộ giao diện đổi màu, không chỉ một điểm nhấn. Hỗ trợ trình đọc màn hình đầy đủ với phần tóm tắt bằng giọng nói cho các biểu đồ bầu trời, cùng hỗ trợ cỡ chữ động trên toàn bộ ứng dụng.</p>
+                        <div class="meta"><span>Sáng/Tối/AMOLED</span><span>Mọi màu nhấn</span><span>Màu tùy chỉnh</span><span>Trình đọc màn hình</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 13</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#10022;</span> Chòm sao &amp; Bản đồ sao</h3>
+                        <p>Tất cả 88 chòm sao và những ngôi sao sáng, vẽ trên bầu trời của bạn trong một bản đồ sao trực tiếp, miễn phí - được đặt tên và tính toán hoàn toàn trên thiết bị của bạn, không cần kết nối. Công cụ tìm bầu trời AR chỉ-và-nhận-diện là bản nâng cấp Pro.</p>
+                        <div class="meta"><span>88 hình</span><span>Bản đồ sao</span><span>Ngoại tuyến</span></div>
+                    </div>
+                </article>
+                <article class="entry">
+                    <div class="no">Số 14</div>
+                    <div class="body">
+                        <h3><span class="glyph" aria-hidden="true">&#9790;</span> Ngoại tuyến &amp; Riêng tư</h3>
+                        <p>Công cụ thiên văn chạy hoàn toàn trên thiết bị của bạn. Không đăng ký, không tài khoản, không quảng cáo, không thu thập vị trí. Mua một lần và sở hữu - không bao giờ có gói đăng ký.</p>
+                        <div class="meta"><span>Trên thiết bị</span><span>Không tài khoản</span><span>Mua một lần</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plates / Screens -->
+    <section id="plates">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Các tấm ảnh</div>
+                <h2 class="sec-title">Xem ứng dụng hoạt động</h2>
+                <p class="sec-desc">Mọi màn hình đều được tính toán trên thiết bị của bạn - tối, AMOLED hoặc sáng, với bất kỳ màu nhấn nào bạn chọn. Hiển thị trên Android; cùng một ứng dụng chạy trên iPhone, iPad, Mac và Windows.</p>
+            </div>
+            <div class="plates">
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/01_tonight.jpg" alt="Almanox - Điểm nhận định Tonight" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 01</b> &middot; Tonight</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/02_milkyway.jpg" alt="Almanox - Ngân Hà và khung bầu trời tối" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 02</b> &middot; Ngân Hà</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/03_today.jpg" alt="Almanox - Niên giám mặt trời và mặt trăng Today" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 03</b> &middot; Niên giám</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/04_plan.jpg" alt="Almanox - Shot planner" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 04</b> &middot; Lập kế hoạch</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/05_locations.jpg" alt="Almanox - Các địa điểm bầu trời tối đã lưu" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 05</b> &middot; Địa điểm</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/06_theme.jpg" alt="Almanox - Mọi màu nhấn" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 06</b> &middot; Mọi màu</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1080" height="2304" src="/almanox/screenshots/07_features.jpg" alt="Almanox - bản đồ sao miễn phí, hành tinh tối nay và các lần ISS bay qua" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 07</b> &middot; Tiện ích miễn phí</figcaption></figure>
+                <figure class="plate"><div class="frame"><img decoding="async" width="1170" height="2532" src="/almanox/screenshots/07_light.jpg" alt="Almanox - Giao diện sáng" onclick="openLightbox(this)" loading="lazy"></div><figcaption class="cap"><b>Pl. 07</b> &middot; Sáng</figcaption></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- How / Method -->
+    <section id="how" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Phương pháp</div>
+                <h2 class="sec-title">Mọi thứ trên thiết bị của bạn, không gì trên đám mây</h2>
+                <p class="sec-desc">Almanox chạy một công cụ thiên văn đầy đủ ngay trên máy. Không tài khoản, không đăng ký, và hoạt động khi tắt tín hiệu - bầu trời vẫn như vậy dù bạn có sóng hay không.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="n">1</div>
+                    <h3>Chọn địa điểm của bạn</h3>
+                    <p>Dùng vị trí hiện tại hoặc lưu những nơi bạn chụp. Almanox tính mặt trời, mặt trăng và bầu trời cho đúng nơi bạn đang đứng.</p>
+                </div>
+                <div class="step">
+                    <div class="n">2</div>
+                    <h3>Đọc nhận định</h3>
+                    <p>Một điểm số trả lời câu hỏi duy nhất quan trọng - tối nay có đáng không? Xem khung bầu trời tối tốt nhất, lõi Ngân Hà và mức độ mặt trăng gây cản trở.</p>
+                </div>
+                <div class="step">
+                    <div class="n">3</div>
+                    <h3>Lên kế hoạch cho cảnh chụp</h3>
+                    <p>Tìm chính xác những ngày mặt trời hoặc trăng tròn thẳng hàng với hướng của bạn, bắt trọn giờ vàng, và nhận cảnh báo trước khi bầu trời sẵn sàng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Glossary -->
+    <section id="glossary" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Thuật ngữ</div>
+                <h2 class="sec-title">Cẩm nang về bầu trời</h2>
+                <p class="sec-desc">Những từ mà cả ứng dụng được xây dựng xung quanh - và vì sao mỗi từ là một lý do để giữ Almanox trong túi bạn.</p>
+            </div>
+            <div class="gloss">
+                <div class="row"><div class="term"><span class="tag">Niên giám</span>Niên giám</div><div class="def">Một bảng theo từng ngày về bầu trời - khi nào mặt trời và mặt trăng mọc và lặn, pha của mặt trăng và bạn có bao nhiêu giờ tối thật sự. Almanox là một <b>niên giám sống cho đúng nơi bạn đang đứng</b>, được tính lại cho vị trí của bạn, không phải một bản in chung chung.</div></div>
+                <div class="row"><div class="term"><span class="tag">Ánh sáng đẹp nhất</span>Giờ vàng</div><div class="def">Khoảng thời gian ngay sau bình minh và trước hoàng hôn khi mặt trời thấp và ánh sáng chuyển sang ấm và mềm. Đó là thứ ánh sáng mà hầu hết nhiếp ảnh gia phong cảnh và chân dung chờ đợi - và <b>Almanox cho bạn biết chính xác lúc bắt đầu và kết thúc</b> trong hôm nay, dù bạn ở đâu.</div></div>
+                <div class="row"><div class="term"><span class="tag">Ánh sáng xanh</span>Giờ xanh</div><div class="def">Khoảng thời gian ngắn trước bình minh và sau hoàng hôn khi mặt trời nằm dưới đường chân trời và cả bầu trời ánh lên màu xanh thẫm, đều. Thời điểm vàng cho cảnh thành phố và bầu trời đầy cảm xúc - nó đến và đi rất nhanh, nên <b>canh giờ chính xác đến từng phút là điều quan trọng</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Vào bóng tối</span>Thang hoàng hôn</div><div class="def">Bóng tối đến theo ba bước - hoàng hôn <b>dân dụng, hàng hải, rồi thiên văn</b>. Khi hoàng hôn thiên văn kết thúc, bầu trời cuối cùng cũng đen và những ngôi sao mờ hiện ra. Đó là khoảnh khắc những người ngắm sao và chụp ảnh thiên văn thực sự bắt đầu chụp.</div></div>
+                <div class="row"><div class="term"><span class="tag">Thiên hà</span>Lõi Ngân Hà</div><div class="def">Tâm thiên hà sáng - phần phát sáng, nhiều chi tiết mà ai cũng muốn chụp. Nó chỉ nằm trên đường chân trời trong một phần của năm và một phần của đêm. Almanox cho bạn biết <b>khi nào lõi mọc, đạt đỉnh và lặn</b>, và chấm điểm nó sẽ trông đẹp đến đâu.</div></div>
+                <div class="row"><div class="term"><span class="tag">Khung giờ</span>Khung bầu trời tối</div><div class="def">Khoảng đêm <b>không có mặt trời và không có mặt trăng</b> làm lu mờ bầu trời. Đó là lúc duy nhất những cảnh bầu trời sâu và Ngân Hà thực sự khả thi, và nó dịch chuyển mỗi đêm - đúng là thứ rất phiền phức nếu phải tự tính bằng tay.</div></div>
+                <div class="row"><div class="term"><span class="tag">Ánh trăng</span>Pha &amp; độ sáng</div><div class="def">Bao nhiêu phần mặt trăng được chiếu sáng, từ trăng mới đến trăng tròn. Trăng sáng <b>làm ngập bầu trời và nhấn chìm Ngân Hà</b>; trăng mới để nó tối đen như mực. Biết mặt trăng tối nay là đã nắm được nửa trận với bất kỳ buổi chụp đêm nào.</div></div>
+                <div class="row"><div class="term"><span class="tag">Câu trả lời</span>Nhận định Tonight</div><div class="def">Được điều chỉnh theo việc bạn định làm - Ngân Hà, ngắm sao, mặt trăng, phong cảnh đêm hoặc cực quang - Almanox cân nhắc số giờ tối, nhiễu từ mặt trăng, độ phủ mây và ô nhiễm ánh sáng thành <b>một điểm 0-100 trung thực</b>. Thay vì phải đối chiếu năm thứ, bạn chỉ liếc một con số và biết tối nay có đáng ra ngoài không.</div></div>
+                <div class="row"><div class="term"><span class="tag">Thế thẳng hàng</span>Mặt trời &amp; mặt trăng thẳng hàng</div><div class="def">Những ngày chính xác mặt trời hoặc trăng tròn mọc hay lặn <b>thẳng hàng với một địa danh hoặc một hướng la bàn</b> - phần lên kế hoạch đằng sau những bức ảnh để đời về trăng tròn sau một cây cầu hay đỉnh núi. Almanox tìm các ngày sắp tới giúp bạn.</div></div>
+                <div class="row"><div class="term"><span class="tag">Trên đầu</span>ISS bay qua</div><div class="def">Khi Trạm Vũ trụ Quốc tế bay qua đủ sáng để nhìn thấy bằng mắt thường - một điểm sáng ổn định, di chuyển nhanh. Almanox cho bạn biết <b>lần bay qua nhìn thấy được tiếp theo, hướng của nó và độ cao nó leo tới</b>.</div></div>
+                <div class="row"><div class="term"><span class="tag">Các hình</span>Chòm sao</div><div class="def">88 hình sao có tên - Orion, Chòm Gấu Lớn, Sagittarius phía trên Ngân Hà. Almanox vẽ tất cả chúng cùng các ngôi sao sáng <b>trên đúng bầu trời của bạn</b>, trong bản đồ sao và qua công cụ tìm AR, để bạn chỉ vào và gọi tên những gì mình đang nhìn.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section id="privacy">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Điều khoản</div>
+                <h2 class="sec-title">Riêng tư từ thiết kế</h2>
+                <p class="sec-desc">Almanox được xây dựng để giữ kín riêng tư. Không tài khoản, không quảng cáo, không thu thập vị trí - chỉ có bầu trời, được tính ngay trên thiết bị của bạn.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4>Hoạt động ngoại tuyến</h4><p>Công cụ thiên văn chạy hoàn toàn trên điện thoại của bạn. Mặt trời, mặt trăng, hoàng hôn, Ngân Hà và bộ lập kế hoạch cảnh chụp đều hoạt động mà không cần kết nối nào.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4>Không tài khoản, bao giờ cũng vậy</h4><p>Không đăng ký, không email, không đăng nhập MiyaraHub. Tải về, mở ra là bạn đã có thể lên kế hoạch - không có gì để tạo, không có gì để nhớ.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9738;</span><div><h4>Vị trí của bạn vẫn là của bạn</h4><p>Vị trí chỉ được dùng để tính bầu trời của bạn và lấy điều kiện tại chỗ - không bao giờ bị bán và không bao giờ dùng để lập hồ sơ về bạn. Thời tiết đến ẩn danh từ Open-Meteo, không cần tài khoản hay khóa.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4>Mua một lần</h4><p>Mua một lần và sở hữu. Không đăng ký, không phí định kỳ, không thu phí cập nhật - trái ngược với cách hầu hết ứng dụng ảnh định giá.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4>Không quảng cáo, không bán dữ liệu của bạn</h4><p>Không SDK quảng cáo, không mạng quảng cáo, không môi giới dữ liệu. Almanox dùng phân tích ẩn danh của chính chúng tôi để biết tính năng nào được dùng, cộng với báo cáo sự cố khi có gì hỏng - không bao giờ gắn với danh tính của bạn, không bao giờ bị bán.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9789;</span><div><h4>Một ứng dụng, mọi thiết bị</h4><p>Cùng một bộ lập kế hoạch đẹp mắt, ngoại tuyến trên iPhone, iPad, Android, Mac và Windows - dù bạn chụp ở đâu.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Ghi chú bên lề</div>
+                <h2 class="sec-title">Câu hỏi thường gặp</h2>
+                <p class="sec-desc">Mọi điều bạn cần biết về Almanox.</p>
+            </div>
+            <div class="faq">
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Almanox có phải gói đăng ký không?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in"><strong>Không.</strong> Almanox là giao dịch mua một lần với giá $12.99. Không đăng ký, không quảng cáo, không thu phí cập nhật. Mua một lần và sở hữu trên App Store, Google Play hoặc Microsoft Store.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Ứng dụng có hoạt động khi không có kết nối không?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Niên giám cốt lõi chạy hoàn toàn trên thiết bị của bạn - mặt trời, mặt trăng, hoàng hôn, Ngân Hà, khung bầu trời tối, bản đồ sao và bộ lập kế hoạch cảnh chụp đều hoạt động mà không cần kết nối. Điều kiện trực tiếp (thời tiết, cực quang, các lần ISS bay qua và bản đồ) cần kết nối khi bạn dùng.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Gì là miễn phí, gì là Pro?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Bản miễn phí rất hào phóng: toàn bộ niên giám mặt trời và mặt trăng (bình minh/hoàng hôn, giờ vàng và giờ xanh, thang hoàng hôn, pha mặt trăng), điểm nhận định Tonight, nhận biết mây và ô nhiễm ánh sáng trực tiếp, dự báo cực quang, các hành tinh tối nay, các lần ISS bay qua, bản đồ sao các chòm sao, lịch mưa sao băng và nhật nguyệt thực, 7 đêm đẹp nhất sắp tới, cảnh báo bầu trời tối cho đêm tốt, ba địa điểm đã lưu và mọi giao diện với bất kỳ màu nào. Pro ($12.99, mua một lần) mở khóa dự báo lõi Ngân Hà, mục tiêu bầu trời sâu, bộ lập kế hoạch bản đồ đường đi và công cụ tìm địa điểm bầu trời tối, bộ lập kế hoạch cảnh chụp mặt trời và mặt trăng, máy tính nhiếp ảnh, dự báo theo giờ chi tiết, công cụ tìm bầu trời AR, tiện ích màn hình chính, cảnh báo giờ vàng và cảnh báo tùy chỉnh, dự báo 60 đêm và số địa điểm đã lưu không giới hạn.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Ứng dụng chạy trên thiết bị nào?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">iPhone, iPad, Android, Mac và Windows, từ một thiết kế nhất quán và đẹp mắt. Nó thích ứng với nền sáng, tối và AMOLED đen thật, với bất kỳ màu nhấn nào bạn muốn - các sắc thái được tuyển chọn hoặc màu tùy chọn của riêng bạn.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Tôi có cần tài khoản không?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Không. Không cần đăng ký, không email, không đăng nhập MiyaraHub. Tải ứng dụng và bắt đầu lên kế hoạch. Vị trí của bạn chỉ dùng để tính bầu trời của bạn và không bao giờ bị bán, chia sẻ hay theo dõi.</div></div>
+                </div>
+                <div class="qa">
+                    <div class="q" onclick="toggleFaq(this)">Điểm Tonight được tính như thế nào?<span class="arw">&#43;</span></div>
+                    <div class="a"><div class="a-in">Chọn việc bạn định làm - Ngân Hà, ngắm sao, mặt trăng, chụp phong cảnh đêm hoặc cực quang - và Almanox chấm điểm 0-100 bằng cách cân nhắc số giờ tối thiên văn thực sự, nhiễu từ mặt trăng, độ phủ mây và ô nhiễm ánh sáng tại vị trí của bạn. Đó là một cách đọc nhanh và trung thực xem tối nay có đáng ra ngoài không.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free vs Pro -->
+    <section id="pricing">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Miễn phí &amp; Pro</div>
+                <h2 class="sec-title">Một ứng dụng miễn phí hào phóng, với một bản nâng cấp trung thực</h2>
+                <p class="sec-desc">Mọi thứ bạn cần để trả lời "tối nay có đáng không" đều miễn phí. Pro ($12.99, mua một lần - không đăng ký) bổ sung các công cụ lập kế hoạch chuyên sâu. Mỗi tính năng bị khóa đều hiển thị một mẫu thật trước.</p>
+            </div>
+            <div class="cmp-wrap">
+                <table class="cmp">
+                    <thead>
+                        <tr><th scope="col">Tính năng</th><th scope="col">Miễn phí</th><th scope="col">Pro</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Niên giám mặt trời &amp; mặt trăng (giờ vàng/xanh, hoàng hôn, pha)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Điểm nhận định Tonight (Ngân Hà, ngắm sao, mặt trăng, cực quang)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Nhận biết mây &amp; ô nhiễm ánh sáng trực tiếp</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Khung bầu trời tối &amp; khung tốt nhất tối nay</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Dự báo cực quang &amp; hành tinh tối nay</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Các lần ISS bay qua</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Bản đồ sao các chòm sao (88 hình)</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Lịch mưa sao băng &amp; nhật nguyệt thực</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Cảnh báo bầu trời tối cho đêm tốt</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Mọi giao diện &amp; màu nhấn, không quảng cáo, không đăng nhập</td><td class="y">&#10003;</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Dự báo lõi Ngân Hà &amp; mục tiêu bầu trời sâu</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Bộ lập kế hoạch cảnh chụp mặt trời &amp; mặt trăng</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Máy tính nhiếp ảnh (500 / NPF / độ sâu trường ảnh)</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Bộ lập kế hoạch bản đồ đường đi &amp; công cụ tìm địa điểm bầu trời tối</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Dự báo theo giờ chi tiết</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Công cụ tìm bầu trời AR</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Widget màn hình chính</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Cảnh báo giờ vàng &amp; cảnh báo tùy chỉnh</td><td class="n">-</td><td class="y">&#10003;</td></tr>
+                        <tr><td>Những đêm đẹp nhất sắp tới</td><td>7 đêm</td><td class="y">60 đêm</td></tr>
+                        <tr><td>Địa điểm đã lưu</td><td>3</td><td class="y">Không giới hạn</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <style>
+        #pricing .cmp-wrap { overflow-x: auto; margin-top: 1.6rem; border: 1px solid var(--line); border-radius: 14px; }
+        #pricing table.cmp { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 460px; }
+        #pricing .cmp th, #pricing .cmp td { text-align: left; padding: .85rem 1.1rem; border-bottom: 1px solid var(--line); }
+        #pricing .cmp thead th { font-family: 'IBM Plex Mono', monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); background: var(--ink-2); }
+        #pricing .cmp thead th:nth-child(2), #pricing .cmp thead th:nth-child(3),
+        #pricing .cmp tbody td:nth-child(2), #pricing .cmp tbody td:nth-child(3) { text-align: center; width: 5.5rem; }
+        #pricing .cmp thead th:nth-child(3) { color: var(--brass); }
+        #pricing .cmp tbody tr:last-child td { border-bottom: none; }
+        #pricing .cmp td.y { color: var(--brass); font-weight: 600; }
+        #pricing .cmp td.n { color: var(--faint); }
+        #pricing .cmp tbody td:first-child { color: var(--star); }
+    </style>
+
+    <!-- Guide -->
+    <section id="guide" class="sec-band">
+        <div class="wrap fade">
+            <div class="sec-head">
+                <div class="kicker">Cẩm nang thực địa</div>
+                <h2 class="sec-title">Học cách đọc bầu trời</h2>
+                <p class="sec-desc">Một cuốn cẩm nang đầy đủ, có minh họa - cách tạo nên nhận định Tonight, cách lên kế hoạch cho lõi Ngân Hà, căn chỉnh một cảnh chụp mặt trời hoặc mặt trăng, tính các phép toán nhiếp ảnh và tìm những bầu trời thực sự tối.</p>
+            </div>
+            <div class="priv">
+                <div class="p"><span class="g" aria-hidden="true">&#9737;</span><div><h4><a href="/vi/almanox/tonight-verdict/">Nhận định Tonight</a></h4><p>Cách điểm 0-100 gộp độ tối, mặt trăng, độ cao Ngân Hà và mây - cùng ý nghĩa thực sự của Tốt, Khá và Kém.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#10022;</span><div><h4><a href="/vi/almanox/milky-way/">Ngân Hà &amp; khung bầu trời tối</a></h4><p>Giờ lõi thiên hà mọc, độ cao đỉnh và khung giờ không trăng chính xác để chụp nó, dù bạn đứng ở đâu.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9788;</span><div><h4><a href="/vi/almanox/shot-planner/">Bộ lập kế hoạch cảnh chụp</a></h4><p>Những ngày mặt trời hoặc trăng tròn thẳng hàng với hướng của bạn - cảnh bình minh sau vòm đá, được lên kế hoạch đến từng ngày.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/vi/almanox/photo-calculators/">Máy tính nhiếp ảnh</a></h4><p>Quy tắc 500, quy tắc NPF nghiêm ngặt hơn, và độ sâu trường ảnh với khoảng cách siêu tiêu, cho đúng bộ thiết bị của bạn.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9790;</span><div><h4><a href="/vi/almanox/dark-sky-finder/">Dark-sky finder</a></h4><p>Các Khu vực Bầu trời Tối Quốc tế được chứng nhận gần nhất, xếp hạng theo khoảng cách kèm hướng đi và quãng lái xe ước chừng.</p></div></div>
+                <div class="p"><span class="g" aria-hidden="true">&#9673;</span><div><h4><a href="/vi/almanox/settings/">Cài đặt, giao diện &amp; cảnh báo</a></h4><p>Sáng, Tối và AMOLED đen thật, mọi màu nhấn, thẻ sắp xếp lại được, sao lưu một tệp và cảnh báo trước khi ánh sáng đến.</p></div></div>
+            </div>
+            <div class="cta-row" style="justify-content:center;margin-top:2.4rem">
+                <a class="btn store" href="/vi/almanox/guide/">Đọc hướng dẫn đầy đủ</a>
+                <a class="btn" href="/vi/almanox/help/">Trợ giúp &amp; FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="wrap fade">
+            <div class="kicker" style="display:block;margin-bottom:1rem">&#10022; Trời quang phía trước</div>
+            <h2>Lên kế hoạch cho đêm trời quang tiếp theo</h2>
+            <p>Almanox sắp ra mắt trên iPhone, iPad, Android, Mac và Windows. Mua một lần, không đăng ký, hoàn toàn ngoại tuyến.</p>
+            <div class="cta-row" style="justify-content:center">
+                <span class="btn store" style="cursor:default">App Store &middot; sắp có</span>
+                <span class="btn store" style="cursor:default">Google Play &middot; sắp có</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrap foot">
+            <div class="c">
+                &copy; 2026 MiyaraHub Technologies LLC &middot; Van Alstyne, Texas. Bảo lưu mọi quyền.<br> <b>Almanox</b> - ứng dụng lập kế hoạch mặt trời, mặt trăng và Ngân Hà dành cho nhiếp ảnh gia và người ngắm sao.<br> <span class="legal">Almanox là một ứng dụng độc lập của MiyaraHub Technologies LLC và không liên kết với, không được chứng thực hay tài trợ bởi bất kỳ bên thứ ba nào. Thời tiết trực tiếp do Open-Meteo cung cấp và tra cứu địa điểm do những người đóng góp OpenStreetMap; hướng dẫn về bầu trời tối được rút ra từ các bộ dữ liệu ô nhiễm ánh sáng công khai. Mọi tên sản phẩm được nhắc đến là thương hiệu của chủ sở hữu tương ứng.</span>
+            </div>
+            <ul>
+                <li><a href="/vi/">MiyaraHub</a></li>
+                <li><a href="/vi/privacy.html">Quyền riêng tư</a></li>
+                <li><a href="/vi/terms.html">Điều khoản</a></li>
+                <li><a href="mailto:admin@miyarahub.com">Hỗ trợ</a></li>
+            </ul>
+        </div>
+        <div class="foot-apps" role="navigation" aria-label="Ứng dụng MiyaraHub"><span class="fa-h">Ứng dụng</span><a href="/vi/avr-maestro/">AVR Maestro</a><a href="/vi/synology-manager/">Syno Manager</a><a href="/vi/upsight/">UPSight</a><a href="/vi/fury-path/">FuryPath</a><a href="/vi/uc-remote/">UC Remote</a><a href="/vi/almanox/">Almanox</a><a href="/vi/nexus-deck/">NexusDeck</a><a href="/vi/avr-maestro-mc/">AVR Maestro MC</a><a href="/vi/network-deck/">Network Deck</a><a href="/vi/projector-pilot/">Projector Pilot</a><a href="/vi/elan-audio-lab/">Elan Audio Lab</a><a href="/vi/support/">Hỗ trợ</a></div>
+    <p class="foot-tm">Các ứng dụng MiyaraHub là độc lập và không liên kết với, không được chứng thực hay tài trợ bởi các nhà sản xuất phần cứng và dịch vụ mà chúng làm việc cùng. Mọi thương hiệu đều thuộc về chủ sở hữu tương ứng. <a href="/vi/#legal">Thông báo về thương hiệu</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.fade').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+        });
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade:not(.vis)').forEach(el => io.observe(el));
+
+        function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+        function closeNav() {
+            document.getElementById('nav-menu').classList.remove('open');
+            document.getElementById('nav-toggle').classList.remove('open');
+        }
+        function openLightbox(img) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+    </script>
+  <script defer src="/almanox/search.js"></script>
+<script src="/assets/lang.js" defer></script>
+</body>
+</html>

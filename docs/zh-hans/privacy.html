@@ -424,6 +424,11 @@
                     <td style="padding:0.75rem;">仅限本地网络</td>
                     <td style="padding:0.75rem;">Firebase Crashlytics、Firebase Analytics（需主动开启）</td>
                 </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                    <td style="padding:0.75rem;"><strong>Projector Pilot D-ILA</strong></td>
+                    <td style="padding:0.75rem;">仅限本地网络</td>
+                    <td style="padding:0.75rem;">Firebase Crashlytics（可在设置中关闭）、Firebase Analytics（需选择开启）</td>
+                </tr>
                 <tr>
                     <td style="padding:0.75rem;"><strong>NexusDeck</strong></td>
                     <td style="padding:0.75rem;">仅限本地网络</td>
@@ -440,6 +445,8 @@
         <p><strong>Almanox 具体披露：</strong>Almanox 是一款独立的日月与天文规划应用。如果你授予位置权限，设备位置仅在你的设备上用于计算你所在位置的日月和天空数据；它绝不会传输到 MiyaraHub 服务器，也不会存储在设备以外的任何地方。你也可以拒绝该权限，改为手动输入坐标。已保存的位置和设置都留在你的设备上。云端通信仅限于通过 Firebase Crashlytics 发送的匿名崩溃报告，以及通过 Firebase Analytics 发送的匿名汇总使用情况分析，二者均不包含个人身份信息或你保存的位置。Almanox Pro 的一次性升级由 Apple 或 Google 处理，我们不会看到或存储你的付款信息。</p>
 
         <p><strong>Projector Pilot 具体披露：</strong>Projector Pilot 控制你本地网络中的 Epson 投影机；设备凭据、投影机设置和任何 Home Assistant 配置都只存储在你的设备上，绝不会传输到 MiyaraHub 服务器。通过 Firebase Analytics 进行的使用情况分析<strong>需主动开启，默认关闭</strong>：除非你接受首次启动时显示的提示，否则不会收集任何内容，并且你可以随时在“设置”中再次关闭。开启后，它只会报告匿名的汇总事件，例如应用打开次数和使用了哪些界面；绝不会包含你的投影机地址、序列号、凭据或 Home Assistant 信息。Pro 和家庭自动化购买由 Apple 或 Google 处理，我们不会看到或存储你的付款信息。</p>
+
+        <p><strong>Projector Pilot D-ILA 专项披露：</strong>Projector Pilot D-ILA 通过本地网络控制 JVC D-ILA 投影机。投影机网络密码保存在您设备的安全存储中，绝不会传输到 MiyaraHub 的服务器。通过 Firebase Crashlytics 发送的崩溃报告<strong>默认开启</strong>，可在设置中关闭；关闭后，尚未发送的报告也会被删除。崩溃报告可能包含导致应用停止运行的错误文本，在极少数情况下，该文本会包含某个网络地址。通过 Firebase Analytics 收集的使用分析<strong>需主动选择开启，默认关闭</strong>：除非您接受提示，否则不会收集任何数据，您也可以随时在设置中将其关闭。如果您关联 Hubitat 集线器，集线器地址、应用 ID 和访问令牌会保存在您的设备上，应用会向该集线器发送投影机的电源和输入源命令。如果您关联 Home Assistant，应用会将您投影机的名称、电源状态、输入源、型号、网络硬件地址、光源使用时间、已报告的设置和连接状态发送到您自己的 Home Assistant；当您在其中添加投影机时，还会发送其地址、端口和网络密码；这些数据只会发送到您所选择的 Home Assistant，绝不会发送给 MiyaraHub。自动化触发器在您使用时，会向您输入的网址发送请求。设置中的重置所有应用数据会从应用中删除已保存的密码、集线器关联和触发器；在 iOS 上，保存在 Keychain 中的项目在卸载后可能仍会保留，因此请先重置应用。Pro 和家庭自动化的购买由 Apple、Google 或 Microsoft 处理；我们不会看到或存储您的付款信息。Projector Pilot D-ILA 与 JVCKENWOOD Corporation 没有关联，也未获得其授权、赞助或认可。</p>
 
     <footer>
         <div class="footer-content">

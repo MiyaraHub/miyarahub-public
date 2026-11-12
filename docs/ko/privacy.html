@@ -424,6 +424,11 @@
                     <td style="padding:0.75rem;">로컬 네트워크 전용</td>
                     <td style="padding:0.75rem;">Firebase Crashlytics, Firebase Analytics (선택 사항)</td>
                 </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                    <td style="padding:0.75rem;"><strong>Projector Pilot D-ILA</strong></td>
+                    <td style="padding:0.75rem;">로컬 네트워크 전용</td>
+                    <td style="padding:0.75rem;">Firebase Crashlytics (설정에서 끌 수 있음), Firebase Analytics (옵트인)</td>
+                </tr>
                 <tr>
                     <td style="padding:0.75rem;"><strong>NexusDeck</strong></td>
                     <td style="padding:0.75rem;">로컬 네트워크 전용</td>
@@ -440,6 +445,8 @@
         <p><strong>Almanox 개별 고지:</strong> Almanox는 태양, 달, 천문 관측 계획을 위한 독립형 앱입니다. 위치 권한을 허용하면 기기의 위치는 해당 위치의 태양, 달, 하늘 데이터를 계산하는 데에만 기기 내에서 사용되며, MiyaraHub 서버로 전송되거나 기기 밖 어디에도 저장되지 않습니다. 권한을 거부하고 좌표를 직접 입력하셔도 됩니다. 저장한 위치와 설정은 기기에 남습니다. 클라우드 통신은 Firebase Crashlytics를 통한 익명 충돌 보고와 Firebase Analytics를 통한 익명 통계성 사용 분석으로 제한되며, 둘 다 개인 식별 정보나 저장한 위치를 포함하지 않습니다. 일회성 Almanox Pro 업그레이드는 Apple 또는 Google이 처리하며, 당사는 결제 정보를 보거나 저장하지 않습니다.</p>
 
         <p><strong>Projector Pilot 개별 고지:</strong> Projector Pilot은 로컬 네트워크의 Epson 프로젝터를 제어합니다. 기기 인증 정보, 프로젝터 설정, Home Assistant 설정은 사용자의 기기에만 저장되며 MiyaraHub 서버로 전송되지 않습니다. Firebase Analytics를 통한 사용 분석은 <strong>선택 사항이며 기본적으로 꺼져 있습니다.</strong> 처음 실행할 때 표시되는 안내를 수락하지 않으면 아무것도 수집되지 않으며, 설정에서 언제든 다시 끌 수 있습니다. 켜져 있어도 앱 실행, 사용한 화면 같은 익명의 통계성 이벤트만 보고하며, 프로젝터 주소, 일련번호, 인증 정보, Home Assistant 정보는 포함하지 않습니다. Pro 및 Home Automation 구매는 Apple 또는 Google이 처리하며, 당사는 결제 정보를 보거나 저장하지 않습니다.</p>
+
+        <p><strong>Projector Pilot D-ILA 관련 고지 사항:</strong> Projector Pilot D-ILA 앱은 로컬 네트워크에서 JVC D-ILA 프로젝터를 제어합니다. 프로젝터 네트워크 비밀번호는 사용자 기기의 보안 저장소에 보관되며 MiyaraHub 서버로 전송되지 않습니다. Firebase Crashlytics를 통한 충돌 보고서는 <strong>기본적으로 켜져 있으며</strong> 설정에서 끌 수 있고, 끄면 아직 전송되지 않은 보고서도 삭제됩니다. 충돌 보고서에는 앱을 중단시킨 오류의 텍스트가 포함될 수 있으며, 드물게 그 텍스트에 네트워크 주소가 들어 있는 경우가 있습니다. Firebase Analytics를 통한 사용 분석은 <strong>옵트인 방식이며 기본적으로 꺼져 있습니다</strong>. 안내 메시지에서 동의하지 않으면 아무것도 수집되지 않으며, 설정에서 언제든지 끌 수 있습니다. Hubitat 허브를 연동하면 허브 주소, 앱 ID, 액세스 토큰이 사용자 기기에 저장되며, 앱은 프로젝터 전원 및 입력 명령을 해당 허브로 보냅니다. Home Assistant를 연동하면 앱은 프로젝터의 이름, 전원 상태, 입력, 모델, 네트워크 하드웨어 주소, 광원 사용 시간, 보고된 설정, 연결 상태를 사용자 본인의 Home Assistant 서버로 보내며, 그곳에 프로젝터를 추가할 때는 프로젝터의 주소, 포트, 네트워크 비밀번호도 보냅니다. 이 정보는 사용자가 선택한 Home Assistant 서버로만 전송되며 MiyaraHub로는 전송되지 않습니다. 자동화 트리거는 사용 시 사용자가 입력한 웹 주소로 요청을 보냅니다. 설정의 모든 앱 데이터 초기화를 실행하면 저장된 비밀번호, 허브 연동, 트리거가 앱에서 삭제됩니다. iOS에서는 Keychain 저장소에 보관된 항목이 앱을 삭제한 뒤에도 남을 수 있으므로, 먼저 앱을 초기화해야 합니다. Pro 및 홈 오토메이션 구매는 Apple, Google 또는 Microsoft에서 처리하며, 저희는 결제 정보를 보거나 저장하지 않습니다. Projector Pilot D-ILA 앱은 JVCKENWOOD Corporation과 제휴, 승인, 후원 또는 보증 관계가 없습니다.</p>
 
     <footer>
         <div class="footer-content">

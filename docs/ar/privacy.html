@@ -382,7 +382,7 @@
                 <tr style="border-bottom:1px solid var(--border);">
                     <td style="padding:0.75rem;"><strong>Elan Audio Lab</strong></td>
                     <td style="padding:0.75rem;">قائم على السحابة (تجارة إلكترونية)</td>
-                    <td style="padding:0.75rem;">Supabase, Square, PayPal, Firebase Crashlytics, Firebase Analytics</td>
+                    <td style="padding:0.75rem;">Supabase وSquare وPayPal وFirebase Crashlytics وFirebase Analytics</td>
                 </tr>
                 <tr style="border-bottom:1px solid var(--border);">
                     <td style="padding:0.75rem;"><strong>UC-Remote Integration Hub</strong></td>
@@ -424,6 +424,11 @@
                     <td style="padding:0.75rem;">الشبكة المحلية فقط</td>
                     <td style="padding:0.75rem;">Firebase Crashlytics وFirebase Analytics (اختياري بالاشتراك)</td>
                 </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                    <td style="padding:0.75rem;"><strong>Projector Pilot D-ILA</strong></td>
+                    <td style="padding:0.75rem;">الشبكة المحلية فقط</td>
+                    <td style="padding:0.75rem;">Firebase Crashlytics (يمكن إيقافه من الإعدادات)، Firebase Analytics (بموافقتك فقط)</td>
+                </tr>
                 <tr>
                     <td style="padding:0.75rem;"><strong>NexusDeck</strong></td>
                     <td style="padding:0.75rem;">الشبكة المحلية فقط</td>
@@ -440,6 +445,8 @@
         <p><strong>إفصاحات خاصة بـ Almanox:</strong> Almanox تطبيق مستقل لتخطيط الشمس والقمر وعلم الفلك. إذا منحت إذن الموقع، يُستخدم موقع جهازك على جهازك فقط لحساب بيانات الشمس والقمر والسماء لموضعك؛ ولا يُرسل أبدًا إلى خوادم MiyaraHub ولا يُخزَّن في أي مكان خارج جهازك، ويمكنك رفض الإذن وإدخال الإحداثيات يدويًا بدلًا من ذلك. وتبقى المواقع المحفوظة والإعدادات على جهازك. ويقتصر الاتصال السحابي على الإبلاغ المجهول عن الأعطال عبر Firebase Crashlytics وتحليلات الاستخدام المجهولة والمجمّعة عبر Firebase Analytics؛ وكلاهما لا يحتوي على معلومات تحدد هويتك أو مواقعك المحفوظة. وتتم معالجة الترقية لمرة واحدة إلى Almanox Pro عبر Apple أو Google؛ ولا نرى بيانات الدفع الخاصة بك ولا نخزّنها.</p>
 
         <p><strong>إفصاحات خاصة بـ Projector Pilot:</strong> يتحكم Projector Pilot في أجهزة عرض Epson على شبكتك المحلية؛ وتُخزَّن بيانات اعتماد الأجهزة وإعدادات جهاز العرض وأي إعدادات لـ Home Assistant على جهازك فقط، ولا تُرسل إلى خوادم MiyaraHub أبدًا. وتحليلات الاستخدام عبر Firebase Analytics <strong>اختيارية بالاشتراك ومعطّلة افتراضيًا</strong>: لا يُجمع شيء ما لم تقبل الرسالة التي تظهر عند أول تشغيل، ويمكنك إيقافها في أي وقت من الإعدادات. وعند تفعيلها، تُبلِغ فقط عن أحداث مجهولة ومجمّعة مثل مرات فتح التطبيق والشاشات المستخدمة؛ ولا تتضمن أبدًا عنوان جهاز العرض أو رقمه التسلسلي أو بيانات اعتماده أو تفاصيل Home Assistant. وتتم معالجة مشتريات Pro وHome Automation عبر Apple أو Google؛ ولا نرى بيانات الدفع الخاصة بك ولا نخزّنها.</p>
+
+        <p><strong>إفصاحات خاصة بـ Projector Pilot D-ILA:</strong> يتحكم Projector Pilot D-ILA في أجهزة عرض JVC D-ILA على شبكتك المحلية. تُحفظ كلمات مرور شبكة جهاز العرض في مساحة التخزين الآمنة بجهازك ولا تُرسَل أبدًا إلى خوادم MiyaraHub. تقارير الأعطال عبر Firebase Crashlytics <strong>مفعّلة افتراضيًا</strong> ويمكن إيقافها من الإعدادات؛ ويؤدي إيقافها أيضًا إلى حذف التقارير التي لم تُرسَل بعد. قد يتضمن تقرير العطل نص الخطأ الذي أوقف التطبيق، وفي حالات نادرة يذكر هذا النص عنوان شبكة. تحليلات الاستخدام عبر Firebase Analytics <strong>اختيارية ومعطّلة افتراضيًا</strong>: لا يُجمع شيء ما لم توافق على الرسالة المعروضة، ويمكنك إيقافها في أي وقت من الإعدادات. إذا ربطت مركز Hubitat، يُخزَّن عنوان المركز ومعرّف التطبيق ورمز الوصول على جهازك، ويرسل التطبيق أوامر تشغيل جهاز العرض والمدخل إلى ذلك المركز. وإذا ربطت Home Assistant، يرسل التطبيق اسم جهاز العرض وحالة التشغيل والمدخل والطراز وعنوان عتاد الشبكة وساعات مصدر الضوء والإعدادات المبلغ عنها وحالة الاتصال إلى Home Assistant الخاص بك، وعند إضافة جهاز عرض هناك يرسل عنوانه ومنفذه وكلمة مرور شبكته؛ وتذهب هذه البيانات إلى Home Assistant الذي اخترته، ولا تذهب أبدًا إلى MiyaraHub. ترسل مشغّلات الأتمتة طلبًا إلى عنوان الويب الذي تدخله، عند استخدامها. تحذف إعادة تعيين كل بيانات التطبيق في الإعدادات كلمات المرور المخزنة وروابط المراكز والمشغّلات من التطبيق؛ وعلى iOS، قد تبقى العناصر المحفوظة في Keychain بعد إلغاء التثبيت ما لم تُعِد تعيين التطبيق أولًا. تتم معالجة مشتريات Pro وأتمتة المنزل بواسطة Apple أو Google أو Microsoft؛ ولا نرى بيانات الدفع الخاصة بك ولا نخزنها أبدًا. Projector Pilot D-ILA غير تابع لـ JVCKENWOOD Corporation ولم تأذن به أو ترعَه أو تؤيده.</p>
 
     <footer>
         <div class="footer-content">

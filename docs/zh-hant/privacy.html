@@ -382,7 +382,7 @@
                 <tr style="border-bottom:1px solid var(--border);">
                     <td style="padding:0.75rem;"><strong>Elan Audio Lab</strong></td>
                     <td style="padding:0.75rem;">雲端（電子商務）</td>
-                    <td style="padding:0.75rem;">Supabase、Square、PayPal、Firebase Crashlytics、Firebase Analytics</td>
+                    <td style="padding:0.75rem;">Supabase, Square, PayPal, Firebase Crashlytics, Firebase Analytics</td>
                 </tr>
                 <tr style="border-bottom:1px solid var(--border);">
                     <td style="padding:0.75rem;"><strong>UC-Remote Integration Hub</strong></td>
@@ -424,6 +424,11 @@
                     <td style="padding:0.75rem;">僅限區域網路</td>
                     <td style="padding:0.75rem;">Firebase Crashlytics、Firebase Analytics（需自行選擇啟用）</td>
                 </tr>
+                <tr style="border-bottom:1px solid var(--border);">
+                    <td style="padding:0.75rem;"><strong>Projector Pilot D-ILA</strong></td>
+                    <td style="padding:0.75rem;">僅限區域網路</td>
+                    <td style="padding:0.75rem;">Firebase Crashlytics（可在設定中關閉）、Firebase Analytics（需選擇加入）</td>
+                </tr>
                 <tr>
                     <td style="padding:0.75rem;"><strong>NexusDeck</strong></td>
                     <td style="padding:0.75rem;">僅限區域網路</td>
@@ -440,6 +445,8 @@
         <p><strong>Almanox 特別揭露事項：</strong>Almanox 是獨立的太陽、月亮與天文規劃應用程式。如果您授予位置權限，您的裝置位置僅會在您的裝置上用於計算所在位置的太陽、月亮與天空資料，絕不會傳送到 MiyaraHub 伺服器，也不會儲存在裝置以外的任何地方；您也可以拒絕授權，改為手動輸入座標。已儲存的地點與設定會保留在您的裝置上。雲端通訊僅限於透過 Firebase Crashlytics 回報匿名當機報告，以及透過 Firebase Analytics 進行匿名彙總使用分析，兩者皆不包含可識別個人身分的資訊或您儲存的地點。一次性的 Almanox Pro 升級由 Apple 或 Google 處理，我們不會看到或儲存您的付款資料。</p>
 
         <p><strong>Projector Pilot 特別揭露事項：</strong>Projector Pilot 控制您區域網路上的 Epson 投影機；裝置憑證、投影機設定與任何 Home Assistant 設定僅儲存在您的裝置上，絕不會傳送到 MiyaraHub 伺服器。透過 Firebase Analytics 進行的使用分析<strong>需自行選擇啟用，預設為關閉</strong>：除非您接受首次啟動時顯示的提示，否則不會收集任何資料，且您可隨時在「設定」中再次關閉。啟用後，僅會回報匿名的彙總事件，例如開啟應用程式與使用了哪些畫面；絕不會包含您投影機的位址、序號、憑證或 Home Assistant 詳細資料。Pro 與居家自動化的購買由 Apple 或 Google 處理，我們不會看到或儲存您的付款資料。</p>
+
+        <p><strong>Projector Pilot D-ILA 專屬揭露事項：</strong>Projector Pilot D-ILA 可在您的本機網路上控制 JVC D-ILA 投影機。投影機的網路密碼會保存在您裝置的安全儲存空間中，絕不會傳送至 MiyaraHub 的伺服器。透過 Firebase Crashlytics 傳送的當機報告<strong>預設為開啟</strong>，可在設定中關閉；關閉時也會刪除尚未傳送的報告。當機報告可能包含導致應用程式停止運作的錯誤訊息文字，在少數情況下，該文字會出現網路位址。透過 Firebase Analytics 進行的使用分析<strong>需選擇加入且預設為關閉</strong>：除非您接受提示，否則不會收集任何資料，您也可以隨時在設定中將其關閉。若您連結 Hubitat hub，hub 位址、App ID 與存取權杖會儲存在您的裝置上，應用程式會向該 hub 傳送投影機電源與輸入指令。若您連結 Home Assistant，應用程式會將您投影機的名稱、電源狀態、輸入、型號、網路硬體位址、光源使用時數、已回報的設定與連線狀態傳送至您自己的 Home Assistant；當您在該處新增投影機時，也會傳送其位址、連接埠與網路密碼。這些資料只會傳送至您所選擇的 Home Assistant，絕不會傳送至 MiyaraHub。自動化觸發器在您使用時，會向您輸入的網址傳送請求。在設定中執行「重設所有應用程式資料」會從應用程式中刪除已儲存的密碼、hub 連結與觸發器；在 iOS 上，保存於 Keychain 的項目在解除安裝後可能仍會保留，除非您事先重設應用程式。Pro 與居家自動化的購買項目由 Apple、Google 或 Microsoft 處理；我們不會看到或儲存您的付款資料。Projector Pilot D-ILA 與 JVCKENWOOD Corporation 無關聯，亦未獲其授權、贊助或背書。</p>
 
     <footer>
         <div class="footer-content">

@@ -14,7 +14,8 @@ MiyaraHub apps are independent. They are not affiliated with, endorsed by, or sp
 - [FuryPath: App for HDFury on iPhone, Android, Mac](https://miyarahub.com/fury-path/): App for HDFury VRRooM, VERTEX2, DIVA, Maestro and more on iPhone, Android, Mac and Windows. Wi-Fi or GO2 Bluetooth. EDID, HDR, Dolby Vision. $9.99.
 - [Network Deck: App for UniFi Network Controllers](https://miyarahub.com/network-deck/): Network Deck is an independent app for UniFi controllers: live dashboards, clients, WiFi, VLANs, firewall, multi-site. Coming to iOS, Android, Mac and Windows.
 - [NexusDeck: App for Audyssey Calibration Files](https://miyarahub.com/nexus-deck/): NexusDeck manages Audyssey calibration files and uploads .ady curves to Denon and Marantz receivers over Wi-Fi. Pre-release for iOS, Android, Mac and Windows.
-- [Projector Pilot: App for Epson Projectors](https://miyarahub.com/projector-pilot/): Projector Pilot is an independent app for Epson projectors: power, picture, HDR, lens memory and keystone over Wi-Fi. Live on Google Play.
+- [Epson Projector App - Projector Pilot PJLink & VP21](https://miyarahub.com/projector-pilot/): An independent app for Epson projectors: power, picture, HDR, lens memory and keystone over your network. On iPhone, iPad, Android, Mac and Windows.
+- [Projector Pilot D-ILA: JVC D-ILA Projector App](https://miyarahub.com/projector-pilot-d-ila/): Projector Pilot D-ILA, coming soon: an independent network remote for JVC D-ILA projectors on iPhone, iPad, Android, Mac and Windows. No account, no cloud.
 - [Syno Manager: Monitoring App for Synology NAS](https://miyarahub.com/synology-manager/): Syno Manager is an independent app for Synology NAS on iPhone, iPad, Android, Mac and Windows. Storage, system health, Docker, cameras and files. $9.99.
 - [UC Remote: App for Unfolded Circle Remotes](https://miyarahub.com/uc-remote/): UC Remote is a free, independent Android app for the Unfolded Circle Remote Two and Remote 3. Activities, entities, now playing and widgets. No ads.
 - [UPSight: APC, CyberPower & Eaton UPS Monitor](https://miyarahub.com/upsight/): Monitor your network UPS from iPhone, Android, Mac or Windows. UPSight reads APC, CyberPower and Eaton network cards over SNMP, or NUT. Alerts included. $9.99.
@@ -35,6 +36,8 @@ MiyaraHub apps are independent. They are not affiliated with, endorsed by, or sp
 ## Company
 
 - [Home Theater, NAS and Network Apps](https://miyarahub.com/): MiyaraHub Technologies is an independent studio in Van Alstyne, Texas, making native apps for AV receivers, NAS, UPS, HDMI processors and networks.
-- [Privacy Policy](https://miyarahub.com/privacy.html): How MiyaraHub Technologies LLC apps handle your data: data minimization, what we collect, third-party services, storage, your rights, and per-app details.
+- [Accessibility Statement](https://miyarahub.com/accessibility.html): How accessible miyarahub.com is today: our WCAG 2.2 AA aim, what we measured, the known limitations, and how to tell us about a barrier.
+- [Legal Notice](https://miyarahub.com/legal-notice.html): Legal notice for miyarahub.com: the company behind the site, its legal form, managing member, location and contact email.
+- [Privacy Policy](https://miyarahub.com/privacy.html): What MiyaraHub apps and the Elan Audio Lab store collect, why, who receives it, how long it is kept, your rights, and the details for each app.
 - [App Support and Contact](https://miyarahub.com/support/): Get help with MiyaraHub apps such as AVR Maestro, Syno Manager, UPSight and FuryPath: email and Discord contact, what to include, refunds and common fixes.
-- [Terms of Service](https://miyarahub.com/terms.html): The terms for using MiyaraHub Technologies LLC apps and services: purchases, third-party integrations, local network access, warranties and liability.
+- [Terms of Service](https://miyarahub.com/terms.html): The terms for using MiyaraHub apps, the Elan Audio Lab store and this website: license, purchases, device safety, liability and governing law.

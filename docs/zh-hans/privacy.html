@@ -282,7 +282,7 @@
             <tbody>
                 <tr><td><strong>Almanox</strong></td><td>在您选择启用之前保持关闭</td><td>Firebase Analytics，在您选择启用之前保持关闭</td></tr>
                 <tr><td><strong>Elan Audio Lab</strong></td><td>在这些应用中默认开启</td><td>Firebase Analytics，在这些应用中默认开启</td></tr>
-                <tr><td><strong>UC Remote</strong></td><td>始终开启</td><td>Firebase Analytics，默认开启</td></tr>
+                <tr><td><strong>UC Remote</strong></td><td>在您选择启用之前保持关闭</td><td>Firebase Analytics，在您选择启用之前保持关闭</td></tr>
                 <tr><td><strong>UC-Remote Integration Hub</strong></td><td>无</td><td>无</td></tr>
                 <tr><td><strong>Syno Manager</strong></td><td>始终开启</td><td>无</td></tr>
                 <tr><td><strong>UPSight</strong></td><td>始终开启</td><td>无</td></tr>
@@ -475,17 +475,17 @@
 <section class="app-block" id="app-uc-remote">
 <h3>UC Remote</h3>
 <dl>
-<dt>名称和平台</dt><dd>UC Remote，一款适用于 Android 的 Unfolded Circle 遥控器控制器。已在 Google Play 上线。</dd>
-<dt>数据模型</dt><dd>应用通过您的本地网络与您的 Unfolded Circle 遥控器通信。没有账户，也没有 MiyaraHub 服务器。崩溃报告和分析数据发送到 Google Firebase。</dd>
-<dt>网络目的地</dt><dd>您本地网络上的遥控器，包括 Wake-on-LAN。专辑封面从遥控器报告的任意网址加载，通常是流媒体服务的图片服务器，该服务器随后会看到您的 IP 地址。还有 Google Firebase、Google Play 计费和评价，以及您点按的链接。</dd>
-<dt>崩溃报告</dt><dd><strong>默认值：</strong>开启，并且每次启动时都会重新开启。<strong>开关：</strong>无。<strong>发送的内容：</strong>错误消息和堆栈、应用版本和版本代码、Crashlytics 安装 ID、设备型号和操作系统版本，并且 Google 会看到您的 IP 地址。<strong>脱敏：</strong>崩溃路径上没有；错误文本可能包含您遥控器的 IP 地址或主机名。</dd>
-<dt>分析</dt><dd>默认开启。应用中没有开关。标识符：应用实例 ID、Firebase 安装 ID 和广告 ID，因为应用声明了 AD_ID。事件：仅有 Firebase 自动事件，例如 first_open、session_start、user_engagement、screen_view、app_update、os_update 和应用内购买事件。</dd>
-<dt>权限</dt><dd>互联网、网络和 Wi-Fi 状态、更改 Wi-Fi 状态、附近的 Wi-Fi 设备和大致位置（用于发现遥控器）、唤醒锁、振动、前台媒体播放服务和广告 ID。生物识别解锁是可选的。没有麦克风、相机或联系人。</dd>
-<dt>购买</dt><dd>通过 Google Play 提供三档可选的支持打赏。它们在购买后即被消耗，不解锁任何内容。</dd>
-<dt>本地存储和卸载</dt><dd>遥控器（名称、主机、端口、API 令牌、用户名、密码、MAC 地址）保存在加密存储中。设置、主题、天气选择和缓存保存在普通应用存储中。Android 自动备份包含除加密遥控器和应用锁数据之外的所有内容。卸载会移除应用数据，但 Google Drive 备份保留的内容除外。</dd>
-<dt>向您所选服务的出站数据</dt><dd>“Export config”会创建一个文件，其中以明文包含每个遥控器的 API 令牌、用户名和密码，并打开分享面板。收到该文件的任何人都可以读取这些凭据。</dd>
-<dt>支持电子邮件内容</dt><dd>应用没有向 MiyaraHub 发送电子邮件的内置功能。开发者选项可以通过分享面板分享日志文件。令牌和密码会被移除，但本地主机名、IP 地址和实体名称仍然保留。</dd>
-<dt>已知限制</dt><dd>崩溃错误文本未经脱敏。配置导出包含明文密码。设置会被 Android 自动备份复制到 Google Drive。</dd>
+<dt>名称和平台</dt><dd>UC Remote，Unfolded Circle 遥控器的控制器，适用于 Android。已在 Google Play 上架。</dd>
+<dt>数据模型</dt><dd>应用在您的本地网络中与您的 Unfolded Circle 遥控器通信。没有账号，也没有 MiyaraHub 服务器。崩溃报告和分析仅在您允许时才会发送到 Google Firebase。</dd>
+<dt>网络目的地</dt><dd>您本地网络中的遥控器，包括 Wake-on-LAN。专辑封面和图标从遥控器报告的网址加载，通常是流媒体服务的图片服务器，它会看到您的 IP 地址；设置 &gt; 媒体设置 &gt; 从互联网加载封面图 可关闭此功能，并让所有图片请求都留在您的本地网络内。当您从网址安装集成时，该网址的服务器会看到您的 IP 地址。Google Firebase 仅在您允许时才会联系，另有 Google Play 的计费与审核，以及您点击的链接。应用拒绝通过普通 HTTP 把遥控器的凭据发送到本地网络之外的地址。通过 HTTPS 时，它只信任系统的证书颁发机构，并且从 4.1.0 版本起，信任您为该遥控器批准的证书；4.0.0 版本未经检查就接受遥控器的证书。</dd>
+<dt>崩溃报告</dt><dd><strong>默认值：</strong>在您选择启用之前保持关闭。应用在首次启动时询问一次（允许或不允许），在您回答之前不会发送任何内容。<strong>开关：</strong>设置 &gt; 隐私 &gt; 共享崩溃报告和使用统计信息；一个答案同时适用于崩溃报告和分析。选择不允许会删除尚未发送的报告。<strong>发送的内容：</strong>错误类型、经脱敏的错误消息和堆栈、应用版本和版本号、Crashlytics 安装 ID、设备型号和操作系统版本，并且 Google 会看到您的 IP 地址。<strong>脱敏：</strong>上传前，IP 和 MAC 地址、网址、.local 名称、令牌、密码、PIN 以及结构化数据中的实体或媒体名称都会被遮蔽。以普通句子写出的名称可能会保留。</dd>
+<dt>分析</dt><dd>在您选择启用之前保持关闭。与崩溃报告相同的答案控制它，在首次启动时以及设置 &gt; 隐私中。选择不允许会重置手机上的分析数据。标识符：应用实例 ID 和 Firebase 安装 ID；不会收集广告 ID，因为应用移除了广告 ID 权限并关闭了广告 ID 收集。事件：仅限 Firebase 自动事件，例如 first_open、session_start、user_engagement、screen_view、app_update、os_update 以及应用内购买事件。</dd>
+<dt>权限</dt><dd>互联网、网络和 Wi-Fi 状态、更改 Wi-Fi 状态、附近的 Wi-Fi 设备和大致位置（用于发现遥控器）、唤醒锁、振动、前台媒体播放服务、重启后运行计划任务（主屏幕小组件）、Google Play 计费，以及 Play install referrer（Firebase Analytics 仅在您允许后才会读取）。生物识别解锁是可选的。不使用麦克风、相机或联系人。</dd>
+<dt>购买</dt><dd>通过 Google Play 提供三种金额的可选支持小费。它们在购买后即被消耗，不会解锁任何内容。</dd>
+<dt>本地存储和卸载</dt><dd>遥控器（名称、主机、端口、API 令牌、用户名、密码、MAC 地址）和您信任的证书保存在加密存储中。设置、主题、天气选择、小组件数据、自定义图标和缓存保存在应用的普通存储中。Android 备份不包括遥控器及其凭据、应用锁、受信任的证书、您对崩溃报告和分析的回答、天气选择、小组件数据、安全备份和自定义图标；常规设置、主题、导航标签页和按钮偏好会被备份。设置 &gt; 隐私 &gt; 删除我的所有数据 在两次确认后会清除应用保存在手机上的一切；在您的遥控器上注册的令牌会一直留在那里，直到您在遥控器上将其删除。卸载会删除应用数据，但 Android 备份保留的内容除外。</dd>
+<dt>向您所选服务的出站数据</dt><dd>导出配置和备份会创建一个文件并打开分享面板。该文件包含遥控器名称、地址、端口和 MAC 地址、设置和自定义图标，但不包含 API 令牌、用户名或密码。</dd>
+<dt>支持电子邮件内容</dt><dd>应用没有发往 MiyaraHub 的内置电子邮件。开发者选项可以通过分享面板分享日志文件。IP 和 MAC 地址、网址、.local 名称、令牌、密码以及结构化数据中的实体名称会被遮蔽；以普通句子写出的名称可能会保留，应用会在分享前发出警告。</dd>
+<dt>已知限制</dt><dd>崩溃报告和分享的日志仍可能包含以普通句子写出的名称。在您的本地网络中，除非您将遥控器设为 HTTPS，否则通过普通 HTTP 访问。常规设置会被 Android 备份复制。</dd>
 </dl>
 </section>
 <section class="app-block" id="app-uc-remote-integration-hub">

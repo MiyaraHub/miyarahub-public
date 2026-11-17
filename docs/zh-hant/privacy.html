@@ -475,17 +475,17 @@
 <section class="app-block" id="app-uc-remote">
 <h3>UC Remote</h3>
 <dl>
-<dt>名稱與平台</dt><dd>UC Remote，Unfolded Circle 遙控器的控制器，適用於 Android。已在 Google Play 上架。</dd>
-<dt>資料模型</dt><dd>應用程式在您的本機網路中與您的 Unfolded Circle 遙控器通訊。沒有帳號，也沒有 MiyaraHub 伺服器。當機報告與分析僅在您允許時才會傳送至 Google Firebase。</dd>
-<dt>網路目的地</dt><dd>您本機網路中的遙控器，包括 Wake-on-LAN。專輯封面與圖示從遙控器回報的網址載入，通常是串流服務的圖片伺服器，它會看到您的 IP 位址；設定 &gt; 媒體設定 &gt; 從網際網路載入封面圖 可關閉此功能，並讓所有圖片請求都留在您的本機網路內。當您從網址安裝整合時，該網址的伺服器會看到您的 IP 位址。Google Firebase 僅在您允許時才會連線，另有 Google Play 的計費與審查，以及您點選的連結。應用程式拒絕透過一般 HTTP 把遙控器的憑證傳送到本機網路以外的位址。透過 HTTPS 時，它只信任系統的憑證授權單位，並且從 4.1.0 版起，信任您為該遙控器核准的憑證；4.0.0 版未經檢查就接受遙控器的憑證。</dd>
-<dt>當機報告</dt><dd><strong>預設值：</strong>在您選擇加入之前保持關閉。應用程式在首次啟動時詢問一次（允許或不允許），在您回答之前不會傳送任何內容。<strong>開關：</strong>設定 &gt; 隱私權 &gt; 分享當機報告和使用統計資料；一個答案同時適用於當機報告與分析。選擇不允許會刪除尚未傳送的報告。<strong>傳送的內容：</strong>錯誤類型、經遮蔽的錯誤訊息與堆疊、應用程式版本與版本碼、Crashlytics 安裝 ID、裝置型號與作業系統版本，且 Google 會看到您的 IP 位址。<strong>資料遮蔽：</strong>上傳前，IP 與 MAC 位址、網址、.local 名稱、權杖、密碼、PIN 以及結構化資料中的實體或媒體名稱都會被遮蔽。以一般句子寫出的名稱可能會保留。</dd>
-<dt>分析</dt><dd>在您選擇加入之前保持關閉。與當機報告相同的答案控制此功能，在首次啟動時以及設定 &gt; 隱私中。選擇不允許會重設手機上的分析資料。識別碼：應用程式執行個體 ID 與 Firebase 安裝 ID；不會蒐集廣告 ID，因為應用程式移除了廣告 ID 權限並關閉了廣告 ID 蒐集。事件：僅限 Firebase 自動事件，例如 first_open、session_start、user_engagement、screen_view、app_update、os_update 以及應用程式內購買事件。</dd>
-<dt>權限</dt><dd>網際網路、網路與 Wi-Fi 狀態、變更 Wi-Fi 狀態、附近的 Wi-Fi 裝置與大致位置（用於探索遙控器）、喚醒鎖定、震動、前景媒體播放服務、重新啟動後執行排程工作（主畫面小工具）、Google Play 計費，以及 Play install referrer（Firebase Analytics 僅在您允許後才會讀取）。生物辨識解鎖為選用。不使用麥克風、相機或聯絡人。</dd>
-<dt>購買項目</dt><dd>透過 Google Play 提供三種金額的選用支持小費。它們在購買後即被消耗，不會解鎖任何內容。</dd>
-<dt>本機儲存與解除安裝</dt><dd>遙控器（名稱、主機、連接埠、API 權杖、使用者名稱、密碼、MAC 位址）與您信任的憑證保存在加密儲存空間中。設定、主題、天氣選擇、小工具資料、自訂圖示與快取保存在應用程式的一般儲存空間中。Android 備份不包括遙控器及其憑證、應用程式鎖、受信任的憑證、您對當機報告與分析的回答、天氣選擇、小工具資料、安全備份與自訂圖示；一般設定、主題、導覽分頁與按鈕偏好會被備份。設定 &gt; 隱私權 &gt; 刪除我的所有資料 在兩次確認後會清除應用程式保存在手機上的一切；在您的遙控器上註冊的權杖會一直留在那裡，直到您在遙控器上將其移除。解除安裝會刪除應用程式資料，但 Android 備份保留的內容除外。</dd>
-<dt>傳送至您所選服務的資料</dt><dd>匯出設定與備份會建立一個檔案並開啟分享面板。該檔案包含遙控器名稱、位址、連接埠與 MAC 位址、設定與自訂圖示，但不包含 API 權杖、使用者名稱或密碼。</dd>
-<dt>支援電子郵件的內容</dt><dd>應用程式沒有寄給 MiyaraHub 的內建電子郵件。開發者選項可以透過分享面板分享記錄檔。IP 與 MAC 位址、網址、.local 名稱、權杖、密碼以及結構化資料中的實體名稱會被遮蔽；以一般句子寫出的名稱可能會保留，應用程式會在分享前發出警告。</dd>
-<dt>已知限制</dt><dd>當機報告與分享的記錄檔仍可能包含以一般句子寫出的名稱。在您的本機網路中，除非您將遙控器設為 HTTPS，否則透過一般 HTTP 存取。一般設定會被 Android 備份複製。</dd>
+<dt>名稱與平台</dt><dd>UC Remote，一款適用於 Unfolded Circle 遙控器的 Android 控制應用程式。已在 Google Play 上線。</dd>
+<dt>資料模型</dt><dd>此應用程式透過區域網路與您的 Unfolded Circle 遙控器通訊。沒有帳號，也沒有 MiyaraHub 伺服器。當機報告與分析資料僅在您允許後才會傳送到 Google Firebase。</dd>
+<dt>網路目的地</dt><dd>區域網路上的遙控器，包括 Wake-on-LAN。專輯封面與圖示會從遙控器回報的任何網址載入，通常是串流服務的圖片伺服器，該伺服器隨後會看到您的 IP 位址；Settings &gt; Media Settings &gt; Load artwork from the internet 可關閉此功能，讓所有圖片請求都留在區域網路內。當您從網址安裝整合功能時，該網址的伺服器會看到您的 IP 位址。僅在您允許時才會用到 Google Firebase，此外還有 Google Play 計費與評論，以及您點選的連結。應用程式拒絕透過一般 HTTP 將遙控器的憑證傳送到區域網路以外的位址。透過 HTTPS 時，它只信任系統的憑證授權單位，並且從 4.1.0 版起還信任您為該遙控器核准的憑證；4.0.0 版會不經檢查就接受遙控器的憑證。</dd>
+<dt>當機報告</dt><dd><strong>預設：</strong>在您同意前保持關閉。應用程式在首次啟動時詢問一次（允許或不允許），在您回答之前不會傳送任何內容。<strong>開關：</strong>Settings &gt; Privacy &gt; Share crash reports and usage statistics；一個回答同時適用於當機報告與分析資料。選擇不允許會刪除尚未傳送的報告。<strong>傳送內容：</strong>錯誤類型、已遮蔽敏感資訊的錯誤訊息與堆疊追蹤、應用程式版本與版本代碼、Crashlytics 安裝 ID、裝置型號與作業系統版本，而且 Google 會看到您的 IP 位址。<strong>遮蔽處理：</strong>上傳前，IP 位址與 MAC 位址、網址、.local 名稱、權杖、密碼、PIN，以及結構化資料中的實體名稱或媒體名稱都會被遮蔽。以一般句子寫出的名稱可能會保留。</dd>
+<dt>分析</dt><dd>在您同意前保持關閉。由與當機報告相同的回答控制，可在首次啟動時以及 Settings &gt; Privacy 中設定。選擇不允許會重設手機上的分析資料。識別碼：應用程式執行個體 ID 與 Firebase 安裝 ID；不會收集廣告 ID，因為應用程式移除了廣告 ID 權限並關閉廣告 ID 收集。事件：僅限 Firebase 的自動事件，例如 first_open、session_start、user_engagement、screen_view、app_update、os_update 以及應用程式內購買事件。</dd>
+<dt>權限</dt><dd>網際網路、網路與 Wi-Fi 狀態、變更 Wi-Fi 狀態、附近的 Wi-Fi 裝置與大概位置（用於探索遙控器）、喚醒鎖定、震動、前景媒體播放服務、重新啟動後執行排程工作（主畫面小工具）、Google Play 計費，以及 Play 安裝推薦者，Firebase Analytics 僅在您允許後才會讀取。生物辨識解鎖為選用。不使用麥克風、相機或聯絡人。</dd>
+<dt>購買項目</dt><dd>透過 Google Play 提供三種金額的選用支援小費。這些項目在購買後即被消耗，且不解鎖任何內容。</dd>
+<dt>本機儲存與解除安裝</dt><dd>遙控器（名稱、主機、連接埠、API 權杖、使用者名稱、密碼、MAC 位址）與您信任的憑證存放在加密儲存空間中。設定、主題、天氣選擇、小工具資料、自訂圖示與快取存放在一般應用程式儲存空間中。Android 備份不包含遙控器及其憑證、應用程式鎖定、受信任的憑證、您對當機報告與分析資料的回答、天氣選擇、小工具資料、安全備份與自訂圖示；一般設定、主題、導覽分頁與按鈕偏好會被備份。Settings &gt; Privacy &gt; Delete all my data 在兩次確認後會清除應用程式存放在手機上的所有內容；在遙控器上註冊的權杖會留在那裡，直到您在遙控器上將其移除。解除安裝會刪除應用程式資料，但 Android 備份保留的內容除外。</dd>
+<dt>傳送至您所選服務的資料</dt><dd>Export Configuration 與 Backup 會建立一個檔案並開啟分享面板。檔案包含遙控器名稱、位址、連接埠與 MAC 位址、設定以及自訂圖示，但不含 API 權杖、使用者名稱或密碼。</dd>
+<dt>支援電子郵件的內容</dt><dd>應用程式沒有寄給 MiyaraHub 的內建電子郵件功能。Developer Options 可以透過分享面板分享記錄檔。IP 位址與 MAC 位址、網址、.local 名稱、權杖、密碼，以及結構化資料中的實體名稱都會被遮蔽；以一般句子寫出的名稱可能會保留，應用程式會在分享前提出警告。</dd>
+<dt>已知限制</dt><dd>當機報告與分享的記錄仍可能包含以一般句子寫出的名稱。在您的區域網路中，除非您將其設為 HTTPS，否則透過一般 HTTP 連線遙控器。一般設定會被 Android 備份複製。</dd>
 </dl>
 </section>
 <section class="app-block" id="app-uc-remote-integration-hub">
@@ -622,14 +622,14 @@
 <dt>名稱與平台</dt><dd>Projector Pilot D-ILA，一款適用於 JVC D-ILA 投影機的控制應用程式，支援 Android、iOS、macOS 與 Windows。尚未發行。</dd>
 <dt>資料模型</dt><dd>應用程式在您的區域網路上與您的投影機通訊。沒有帳號，也沒有 MiyaraHub 伺服器。當機報告，以及在您選擇加入後的分析資料，僅在 Android 與 iOS 上傳送至 Google Firebase。</dd>
 <dt>網路目的地</dt><dd>您的投影機，透過 TCP 連接埠 20554。為了尋找投影機，應用程式會連線至您的裝置所回報的每個私人 /24 網路中的每個位址。此外還有 Google Firebase、商店計費與評論，以及您點選的連結；沒有更新檢查。</dd>
-<dt>當機報告</dt><dd><strong>預設值：</strong>開啟。<strong>開關：</strong>Settings &gt; About，「Send crash reports」；關閉後會刪除尚未傳送的報告。<strong>傳送的內容：</strong>錯誤文字、情境與堆疊、Crashlytics 安裝 ID、裝置型號、作業系統版本、應用程式版本以及記憶體與磁碟狀態，且 Google 會看到您的 IP 位址。<strong>資料遮蔽：</strong>在當機報告離開您的裝置之前，應用程式會從其攜帶的錯誤文字中移除 IP、MAC 與網址、已儲存的投影機主機名稱與存取權杖。投影機名稱、型號名稱與序號不會被移除。</dd>
+<dt>當機報告</dt><dd><strong>預設：</strong>開啟。<strong>開關：</strong>設定 &gt; 關於中的「傳送當機報告」；關閉後，尚未傳送的報告會被刪除。<strong>傳送的內容：</strong>錯誤文字、上下文與堆疊、一個 Crashlytics 安裝識別碼、裝置型號、作業系統版本、應用程式版本，以及記憶體與磁碟狀態，且 Google 會看到您的 IP 位址。<strong>遮蔽處理：</strong>當機報告離開您的裝置之前，應用程式會從其攜帶的錯誤文字中移除 IP 位址、MAC 位址、網址、已儲存的投影機主機名稱、已儲存的投影機名稱與存取權杖。型號名稱與序號不會被移除。</dd>
 <dt>分析</dt><dd>在您選擇加入之前保持關閉。首次啟動的提示提供「No thanks」或「Share analytics」，開關位於 Settings &gt; About。識別碼：應用程式執行個體 ID 與 Firebase 安裝 ID；不蒐集廣告 ID。事件：app_open、scan_started、scan_finished、connection_tested、device_added、projector_connected、command_sent、paywall_view、paywall_unlock_tap、purchase_result 與 restore_tap，以及包含 in_app_purchase 在內的 Firebase 自動事件。</dd>
 <dt>權限</dt><dd>Android：網際網路與通知（本機維護提醒）。iOS：區域網路；相片、相機與位置的字串僅因外掛程式引用而存在，且它們已如此說明。不要求位置權限。</dd>
 <dt>購買項目</dt><dd>三項選用的一次性購買項目：Pro、Home Automation，以及兩者合一的組合包，透過 App Store、Google Play 或 Microsoft Store 提供。購買項目僅在您的裝置上檢查。在 Android 上，包含訂單 ID 與購買權杖的 Google Play 購買記錄保存在應用程式儲存空間中。</dd>
-<dt>本機儲存與解除安裝</dt><dd>已儲存的投影機（名稱、IP 位址、連接埠、型號、MAC 位址）與設定位於應用程式儲存空間中，而投影機密碼、Home Assistant 與 Hubitat 連結以及自動化觸發器位於安全儲存空間中。Android 自動備份包含應用程式儲存空間，以及 Google Play 購買記錄（訂單 ID、購買權杖）。在 iOS 與 macOS 上，Keychain 項目在解除安裝後可能仍然存在，且下次安裝時會於首次啟動時將其刪除。Reset All App Data 會刪除密碼、中樞連結、觸發器與小工具資料，並將當機報告恢復為預設值（開啟）。免費方向鍵使用計數器是三個數字（累計使用的按壓次數、最後使用的日期以及該日的次數），不含個人資料，在 iOS 與 macOS 上保存在系統 Keychain 中，使重新安裝不會重新補滿免費額度。它絕不會傳送給我們，在您解除安裝應用程式後仍保留在 Keychain 中，且不會被 Reset All App Data 移除。在 Android 上，該計數器保存在應用程式儲存空間中，Android 自動備份包含該空間。</dd>
+<dt>本機儲存與解除安裝</dt><dd>已儲存的投影機（名稱、IP 位址、連接埠、型號、MAC 位址）與設定存放在應用程式儲存空間中，投影機密碼、Home Assistant 與 Hubitat 連結，以及自動化觸發條件存放在安全儲存空間中。Android Auto Backup 與裝置轉移不會將已儲存的投影機清單、設定或 Google Play 購買記錄複製到您的 Google 帳戶；購買項目可透過 Google Play 還原找回。在 iOS 與 macOS 上，Keychain 中的項目可能在解除安裝後仍然保留，下次安裝時會在首次啟動時將其刪除。「重設所有應用程式資料」會刪除密碼、中樞連結、觸發條件、小工具資料、記錄與其他設定，並保留購買記錄、免費方向鍵計數器，以及您對當機報告的選擇。免費方向鍵使用計數器由三個數字組成（累計按鍵次數、最後使用的日期，以及當天的次數），不含個人資料，在 iOS 與 macOS 上儲存於系統 Keychain 中，因此重新安裝不會重新補滿免費額度。它絕不會傳送給我們，解除安裝應用程式後仍保留在 Keychain 中，也不會被「重設所有應用程式資料」刪除。在 Android 上，計數器儲存在不會被備份的應用程式儲存空間中，因此重新安裝會重新補滿免費額度。</dd>
 <dt>傳送至您所選服務的資料</dt><dd>您輸入的位址上的 Home Assistant 會將每台投影機視為一個裝置，收到其名稱、型號與作業系統詳細資料，接著是其狀態（電源、輸入、MAC 位址、光源使用時數、設定），以及您在該處新增時的位址、連接埠與密碼。Hubitat 會收到電源與輸入指令。您輸入的任何位址上的 Webhook 會收到事件、投影機名稱、輸入、場景與時間。</dd>
 <dt>支援電子郵件的內容</dt><dd>意見回饋與錯誤報告僅在您透過郵件應用程式或分享選單選擇時才傳送，會送至 admin@miyarahub.com。其中包含應用程式版本、裝置製造商與型號、作業系統、地區設定、已儲存的投影機名稱與型號，以及經遮蔽的診斷記錄。</dd>
-<dt>已知限制</dt><dd>當機報告在徵詢您之前即已開啟。當機報告中不會移除投影機名稱與型號。Android 的購買記錄會由 Android 自動備份複製到 Google Drive。</dd>
+<dt>已知限制</dt><dd>當機報告在詢問您之前就已開啟。型號名稱與序號不會從當機報告中移除。iOS 上的設定實際上是否會進入 iCloud 備份，尚未經過測試。</dd>
 </dl>
 </section>
 <section class="app-block" id="app-nexus-deck">

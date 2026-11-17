@@ -269,7 +269,7 @@
 
     <div class="content">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Effective date: November 15, 2026. Version 3.2.</p>
+        <p class="last-updated">Effective date: November 17, 2026. Version 3.3.</p>
 
         <p>This policy says what personal data MiyaraHub Technologies LLC handles, why, who receives it, how long it is kept and what you can ask us to do. It covers every app listed in <a href="#appendix-a">Appendix A</a>, the Elan Audio Lab store, this website and email you send us. Appendix A gives the details for each app. If this page and an app's in-app text differ, write to us and we will correct the one that is wrong.</p>
 
@@ -293,7 +293,7 @@
                 <tr><td><strong>Syno Manager</strong></td><td>Always on</td><td>None</td></tr>
                 <tr><td><strong>UPSight</strong></td><td>Always on</td><td>None</td></tr>
                 <tr><td><strong>FuryPath</strong></td><td>On by default</td><td>None</td></tr>
-                <tr><td><strong>AVR Maestro</strong></td><td>On by default</td><td>Firebase Analytics, on by default</td></tr>
+                <tr><td><strong>AVR Maestro</strong></td><td>On by default, with a switch in About</td><td>Firebase Analytics, off until you opt in</td></tr>
                 <tr><td><strong>AVR Maestro for Onkyo Pioneer</strong></td><td>On by default</td><td>Firebase Analytics, on by default</td></tr>
                 <tr><td><strong>AVR Maestro MC</strong></td><td>Always on</td><td>None</td></tr>
                 <tr><td><strong>Projector Pilot PJLink &amp; VP21</strong></td><td>Always on</td><td>Firebase Analytics, off until you opt in</td></tr>
@@ -434,6 +434,7 @@
         <h2 id="changes">15. Changes to this policy</h2>
         <p>When we change this policy, we update the effective date and add an entry below. If a change affects how we use data you already gave us, we will tell you in the app or by email where we can.</p>
         <ul>
+            <li><strong>Version 3.3, November 17, 2026:</strong> the AVR Maestro block in Appendix A describes version 5.8.0: analytics are opt-in, crash reports have a visible switch and mask receiver addresses, tokens are in secure storage, Android no longer backs the app up, and a new action erases all app data.</li>
             <li><strong>Version 3.2, November 15, 2026:</strong> section 2 gives our full postal address.</li>
             <li><strong>Version 3.1, November 15, 2026:</strong> the website serves its fonts from miyarahub.com itself, so Google no longer receives your IP address when you load a page.</li>
             <li><strong>Version 3.0, November 15, 2026:</strong> rewritten from a code audit of every app. Adds the legal bases, the retention table, the recipients, transfers, rights by region, the Elan Audio Lab store section and one block per app in Appendix A.</li>
@@ -561,16 +562,16 @@
 <h3>AVR Maestro</h3>
 <dl>
 <dt>Name and platforms</dt><dd>AVR Maestro, a controller for Denon and Marantz receivers, for Android, iOS and desktop (Windows, macOS, Linux). Released on the App Store, live on Google Play and live on the Microsoft Store.</dd>
-<dt>Data model</dt><dd>The app talks to your receiver on your local network. There is no account and no MiyaraHub server. Crash reports and analytics go to Google Firebase on Android and iOS only.</dd>
-<dt>Network destinations</dt><dd>Your receiver on the local network (HTTP, telnet, HEOS, discovery and Wake-on-LAN). An automatic update check to avrmaestro.com/version.json, which sees your IP address. Google Firebase, store billing and review, the on-device AI model download from Google or Apple, and the phone's speech recognizer, which may be a Google or Apple cloud service.</dd>
-<dt>Crash reports</dt><dd><strong>Default:</strong> on. <strong>Switch:</strong> only in a hidden Developer section, unlocked by tapping the version 7 times. <strong>What is sent:</strong> the error message and stack, a Crashlytics installation ID, Firebase installation ID, device model, OS version, memory and disk state and app version, and Google sees your IP address. <strong>Redaction:</strong> none; network error text can include the receiver's IP address.</dd>
-<dt>Analytics</dt><dd>On by default. There is no switch in the app. Identifiers: app instance ID, Firebase installation ID and, on iOS, the vendor ID; the Advertising ID is not collected. Events: only the automatic Firebase events first_open, session_start, user_engagement, app_update, os_update, app_remove and in_app_purchase, and Google derives approximate location from your IP address.</dd>
+<dt>Data model</dt><dd>The app talks to your receiver on your local network. There is no account and no MiyaraHub server. Crash reports go to Google Firebase on Android and iOS only, and analytics go there only if you say yes.</dd>
+<dt>Network destinations</dt><dd>Your receiver on the local network (HTTP, telnet, HEOS, discovery and Wake-on-LAN). An automatic update check, a plain request for avrmaestro.com/version.json with no parameters, which sees your IP address and your app and device type as any web request does. Google Firebase, store billing and review, and the on-device AI model download from Google or Apple. Voice input is recognized on your device.</dd>
+<dt>Crash reports</dt><dd><strong>Default:</strong> on. <strong>Switch:</strong> Settings, About, Crash reporting; off means nothing is sent. <strong>What is sent:</strong> the error message and stack, a Crashlytics installation ID, Firebase installation ID, device model, OS version, memory and disk state and app version, and Google sees your IP address. <strong>Redaction:</strong> receiver addresses, MAC addresses, serial numbers and host names are masked before a report is sent.</dd>
+<dt>Analytics</dt><dd>Off until you opt in. The app asks once, before any event is sent, and Settings, About, Legal reverses the answer at any time. If you agree: app instance ID, Firebase installation ID and, on iOS, the vendor ID; the Advertising ID is not collected. Events: the automatic Firebase events first_open, session_start, user_engagement, app_update, os_update, app_remove and in_app_purchase, and Google derives approximate location from your IP address.</dd>
 <dt>Permissions</dt><dd>Android: internet, network and Wi-Fi state, multicast (discovery), billing and microphone (voice, asked when you tap). iOS: local network, microphone and speech recognition; camera, location and photo strings are declared but never requested.</dd>
 <dt>Purchases</dt><dd>One optional one-time integrations add-on through Google Play, the App Store or the Microsoft Store. It is checked on your device only, and the store record (order ID, purchase token, purchase time) is kept on your device.</dd>
-<dt>Local storage and uninstall</dt><dd>Saved receivers (name, IP address, model, serial number, firmware, MAC address) are in app storage. Home Assistant access and refresh tokens, Hubitat settings and webhook addresses are also in app storage without encryption; only the purchase record is in secure storage. Android Auto Backup copies app storage, Home Assistant tokens included, to Google Drive, and the iOS Keychain purchase record survives uninstall. There is no single delete-all action.</dd>
-<dt>Egress to services you choose</dt><dd>Home Assistant, Hubitat and webhooks at addresses you enter receive receiver state and scene events. On Android, the NexusDeck app can read your saved receivers. The backup export includes saved receivers with IP, MAC and serial number.</dd>
-<dt>Support email contents</dt><dd>"All relevant logs", sent only when you choose, emails a ZIP to admin@miyarahub.com or opens the share sheet. It contains device information with the receiver MAC address and raw receiver data, probe files with the receiver IP, and the debug log, with app version and device label in the email. Tokens are masked, but IP and MAC addresses are masked only in some lines.</dd>
-<dt>Known limits</dt><dd>Crash reports are not redacted and the switch is hidden. Home Assistant tokens are stored without encryption and included in Android Auto Backup.</dd>
+<dt>Local storage and uninstall</dt><dd>Saved receivers (name, IP address, model, serial number, firmware, MAC address) are in app storage. Home Assistant and Hubitat access tokens are in the Android Keystore or the iOS Keychain. Android does not back the app up to Google Drive. The iOS Keychain purchase record survives uninstall, and so can other Keychain items from an earlier install; a fresh install clears them. Settings, About, Erase all app data deletes saved receivers, settings, tokens, Scenes, widget data and files after two confirmations, turns collection off and returns the app to its welcome screen. It keeps the store purchase record, which the store can restore anyway.</dd>
+<dt>Egress to services you choose</dt><dd>Home Assistant, Hubitat and webhooks at addresses you enter receive receiver state and scene events. The app warns you when such an address is a public http:// address; it does not block it. On Android, only an app signed with our key, such as NexusDeck, can read your saved receivers. The backup export includes saved receivers with IP, MAC and serial number.</dd>
+<dt>Support email contents</dt><dd>"All relevant logs", sent only when you choose, emails a ZIP to admin@miyarahub.com or opens the share sheet. It contains device information, probe files, and the debug log, with app version and device label in the email. Receiver addresses are hidden unless you ask for them, and tokens are masked.</dd>
+<dt>Known limits</dt><dd>Crash reports are on until you switch them off. An address you type into a Home Assistant, Hubitat or webhook field is kept as you typed it. The update check cannot be switched off.</dd>
 </dl>
 </section>
 <section class="app-block" id="app-avr-maestro-onkyo-pioneer">

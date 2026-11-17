@@ -263,7 +263,7 @@
 
     <div class="content">
         <h1>隱私權政策</h1>
-        <p class="last-updated">生效日期：2026 年 11 月 15 日。版本 3.2。</p>
+        <p class="last-updated">生效日期：2026年11月17日。版本 3.3。</p>
 
         <p>本政策說明 MiyaraHub Technologies LLC 處理哪些個人資料、處理原因、接收者、保存期限，以及您可以要求我們採取哪些行動。本政策涵蓋<a href="#appendix-a">附錄 A</a> 所列的每一款應用程式、Elan Audio Lab 商店、本網站，以及您寄給我們的電子郵件。附錄 A 提供各應用程式的詳細資訊。如果本頁面與應用程式內的文字有所不同，請來信告知，我們將更正有誤的一方。</p>
 
@@ -287,7 +287,7 @@
                 <tr><td><strong>Syno Manager</strong></td><td>一律開啟</td><td>無</td></tr>
                 <tr><td><strong>UPSight</strong></td><td>一律開啟</td><td>無</td></tr>
                 <tr><td><strong>FuryPath</strong></td><td>預設為開啟</td><td>無</td></tr>
-                <tr><td><strong>AVR Maestro</strong></td><td>預設為開啟</td><td>Firebase Analytics，預設為開啟</td></tr>
+                <tr><td><strong>AVR Maestro</strong></td><td>預設為開啟，可在「關於」中切換</td><td>Firebase Analytics，在您選擇加入之前保持關閉</td></tr>
                 <tr><td><strong>AVR Maestro for Onkyo Pioneer</strong></td><td>預設為開啟</td><td>Firebase Analytics，預設為開啟</td></tr>
                 <tr><td><strong>AVR Maestro MC</strong></td><td>一律開啟</td><td>無</td></tr>
                 <tr><td><strong>Projector Pilot PJLink &amp; VP21</strong></td><td>一律開啟</td><td>Firebase Analytics，在您選擇加入之前保持關閉</td></tr>
@@ -428,6 +428,7 @@
         <h2 id="changes">15. 本政策的變更</h2>
         <p>當我們變更本政策時，我們會更新生效日期並在下方新增一則記錄。如果變更影響我們使用您已提供之資料的方式，我們會在可行的情況下透過應用程式或電子郵件告知您。</p>
         <ul>
+            <li><strong>版本 3.3，2026年11月17日：</strong>附錄 A 中的 AVR Maestro 區塊說明版本 5.8.0：分析功能改為需選擇加入，當機回報設有可見的開關並會遮蔽接收器位址，權杖存放於安全儲存空間，Android 不再備份此應用程式，並新增可清除所有應用程式資料的動作。</li>
             <li><strong>版本 3.2，2026 年 11 月 15 日：</strong>第 2 節提供我們完整的郵寄地址。</li>
             <li><strong>版本 3.1，2026 年 11 月 15 日：</strong>網站現在從 miyarahub.com 本身提供字型，因此載入頁面時 Google 不再收到您的 IP 位址。</li>
             <li><strong>版本 3.0，2026 年 11 月 15 日：</strong>依據對每款應用程式的程式碼稽核重新撰寫。新增法律依據、保存期間表、接收者、傳輸、依地區劃分的權利、Elan Audio Lab 商店章節，以及附錄 A 中每款應用程式各一個區塊。</li>
@@ -555,16 +556,16 @@
 <h3>AVR Maestro</h3>
 <dl>
 <dt>名稱與平台</dt><dd>AVR Maestro，一款適用於 Denon 與 Marantz 接收器的控制應用程式，支援 Android、iOS 與桌面平台（Windows、macOS、Linux）。已在 App Store 發行，並已在 Google Play 與 Microsoft Store 上線。</dd>
-<dt>資料模型</dt><dd>應用程式在您的區域網路上與您的接收器通訊。沒有帳號，也沒有 MiyaraHub 伺服器。當機報告與分析資料僅在 Android 與 iOS 上傳送至 Google Firebase。</dd>
-<dt>網路目的地</dt><dd>您區域網路上的接收器（HTTP、telnet、HEOS、探索與 Wake-on-LAN）。對 avrmaestro.com/version.json 的自動更新檢查，該網站會看到您的 IP 位址。此外還有 Google Firebase、商店計費與評論、從 Google 或 Apple 下載裝置端 AI 模型，以及手機的語音辨識器，其可能是 Google 或 Apple 的雲端服務。</dd>
-<dt>當機報告</dt><dd><strong>預設值：</strong>開啟。<strong>開關：</strong>僅位於隱藏的開發人員區段，須點選版本 7 次才會解鎖。<strong>傳送的內容：</strong>錯誤訊息與堆疊、Crashlytics 安裝 ID、Firebase 安裝 ID、裝置型號、作業系統版本、記憶體與磁碟狀態以及應用程式版本，且 Google 會看到您的 IP 位址。<strong>資料遮蔽：</strong>無；網路錯誤文字可能包含接收器的 IP 位址。</dd>
-<dt>分析</dt><dd>預設為開啟。應用程式中沒有開關。識別碼：應用程式執行個體 ID、Firebase 安裝 ID，以及在 iOS 上的供應商 ID；不蒐集廣告 ID。事件：僅有 Firebase 自動事件 first_open、session_start、user_engagement、app_update、os_update、app_remove 與 in_app_purchase，且 Google 會根據您的 IP 位址推得大致位置。</dd>
+<dt>資料模型</dt><dd>此應用程式透過您的區域網路與接收器通訊，不需要帳號，也沒有任何 MiyaraHub 伺服器。當機回報僅在 Android 與 iOS 上傳送至 Google Firebase，而使用分析僅在您同意後才會傳送至該處。</dd>
+<dt>網路目的地</dt><dd>您區域網路上的接收器（HTTP、telnet、HEOS、探索與 Wake-on-LAN）。自動檢查更新，即對 avrmaestro.com/version.json 發出不帶任何參數的單純請求，與一般網路請求相同，對方會看到您的 IP 位址以及您的應用程式與裝置類型。Google Firebase、商店計費與評論，以及從 Google 或 Apple 下載裝置端 AI 模型。語音輸入在您的裝置上辨識。</dd>
+<dt>當機報告</dt><dd><strong>預設：</strong>開啟。<strong>開關：</strong>設定、關於、當機回報；關閉表示不會傳送任何內容。<strong>傳送內容：</strong>錯誤訊息與堆疊、Crashlytics 安裝 ID、Firebase 安裝 ID、裝置型號、作業系統版本、記憶體與磁碟狀態以及應用程式版本，且 Google 會看到您的 IP 位址。<strong>遮蔽處理：</strong>接收器位址、MAC 位址、序號與主機名稱會在報告傳送前遮蔽。</dd>
+<dt>分析</dt><dd>在您選擇加入前維持關閉。應用程式會在傳送任何事件之前詢問一次，之後可隨時在設定、關於、法律資訊中變更答覆。若您同意：應用程式執行個體 ID、Firebase 安裝 ID，以及在 iOS 上的供應商 ID；不會收集廣告 ID。事件：Firebase 自動事件 first_open、session_start、user_engagement、app_update、os_update、app_remove 與 in_app_purchase，且 Google 會根據您的 IP 位址推算大約位置。</dd>
 <dt>權限</dt><dd>Android：網際網路、網路與 Wi-Fi 狀態、多點傳送（探索）、計費與麥克風（語音，於您點選時詢問）。iOS：區域網路、麥克風與語音辨識；相機、位置與相片的字串已宣告但從未被要求。</dd>
 <dt>購買項目</dt><dd>一項選用的一次性整合附加元件，透過 Google Play、App Store 或 Microsoft Store 提供。其僅在您的裝置上檢查，且商店記錄（訂單 ID、購買權杖、購買時間）保存在您的裝置上。</dd>
-<dt>本機儲存與解除安裝</dt><dd>已儲存的接收器（名稱、IP 位址、型號、序號、韌體、MAC 位址）位於應用程式儲存空間中。Home Assistant 的存取與更新權杖、Hubitat 設定與 webhook 位址也未加密地位於應用程式儲存空間中；只有購買記錄位於安全儲存空間中。Android 自動備份會將應用程式儲存空間（包括 Home Assistant 權杖）複製到 Google Drive，且 iOS Keychain 的購買記錄在解除安裝後仍然存在。沒有單一的全部刪除動作。</dd>
-<dt>傳送至您所選服務的資料</dt><dd>您輸入的位址上的 Home Assistant、Hubitat 與 webhook 會收到接收器狀態與場景事件。在 Android 上，NexusDeck 應用程式可以讀取您已儲存的接收器。備份匯出包含已儲存的接收器，及其 IP、MAC 與序號。</dd>
-<dt>支援電子郵件的內容</dt><dd>「All relevant logs」僅在您選擇時才傳送，會將一個 ZIP 以電子郵件寄送至 admin@miyarahub.com，或開啟分享選單。其中包含帶有接收器 MAC 位址與原始接收器資料的裝置資訊、帶有接收器 IP 的探測檔案，以及偵錯記錄，電子郵件中則附有應用程式版本與裝置標籤。權杖會被遮蔽，但 IP 與 MAC 位址僅在部分行中被遮蔽。</dd>
-<dt>已知限制</dt><dd>當機報告未經遮蔽，且開關被隱藏。Home Assistant 權杖未加密儲存，並包含在 Android 自動備份中。</dd>
+<dt>本機儲存與解除安裝</dt><dd>已儲存的接收器（名稱、IP 位址、型號、序號、韌體、MAC 位址）存放於應用程式儲存空間。Home Assistant 與 Hubitat 存取權杖存放於 Android Keystore 或 iOS 鑰匙圈。Android 不會將此應用程式備份至 Google Drive。iOS 鑰匙圈中的購買記錄在解除安裝後仍會保留，先前安裝留下的其他鑰匙圈項目也可能保留；全新安裝會將其清除。設定、關於、清除所有應用程式資料，經過兩次確認後會刪除已儲存的接收器、設定、權杖、場景、小工具資料與檔案，關閉資料收集，並讓應用程式回到歡迎畫面。此動作會保留商店購買記錄，商店本來就能還原該記錄。</dd>
+<dt>傳送至您所選服務的資料</dt><dd>您輸入位址的 Home Assistant、Hubitat 與 Webhook 會收到接收器狀態與場景事件。當此類位址是公開的 http:// 位址時，應用程式會警告您，但不會加以封鎖。在 Android 上，只有以我們的金鑰簽署的應用程式（例如 NexusDeck）才能讀取您已儲存的接收器。備份匯出內容包含已儲存的接收器及其 IP、MAC 與序號。</dd>
+<dt>支援電子郵件的內容</dt><dd>「All relevant logs」僅在您選擇時傳送，會將 ZIP 檔以電子郵件寄至 admin@miyarahub.com，或開啟分享表單。內容包含裝置資訊、探測檔案與除錯記錄，電子郵件中會附上應用程式版本與裝置標籤。接收器位址除非您要求，否則會隱藏，權杖也會遮蔽。</dd>
+<dt>已知限制</dt><dd>當機回報在您關閉前一律開啟。您在 Home Assistant、Hubitat 或 Webhook 欄位中輸入的位址會依您輸入的原樣保留。更新檢查無法關閉。</dd>
 </dl>
 </section>
 <section class="app-block" id="app-avr-maestro-onkyo-pioneer">

@@ -263,7 +263,7 @@
 
     <div class="content">
         <h1>개인정보 처리방침</h1>
-        <p class="last-updated">시행일: 2026년 11월 15일. 버전 3.2.</p>
+        <p class="last-updated">시행일: 2026년 11월 17일. 버전 3.3.</p>
 
         <p>이 방침은 MiyaraHub Technologies LLC(당사)가 처리하는 개인정보의 종류, 처리 이유, 수신자, 보관 기간, 이용자가 요청할 수 있는 사항을 설명합니다. <a href="#appendix-a">부록 A</a>에 나열된 모든 앱, Elan Audio Lab 스토어, 이 웹사이트, 이용자가 보내는 이메일에 적용됩니다. 부록 A에는 앱별 세부 사항이 있습니다. 이 페이지와 앱 내 문구가 다를 경우 당사에 알려 주시면 잘못된 쪽을 바로잡겠습니다.</p>
 
@@ -287,7 +287,7 @@
                 <tr><td><strong>Syno Manager</strong></td><td>항상 켜짐</td><td>없음</td></tr>
                 <tr><td><strong>UPSight</strong></td><td>항상 켜짐</td><td>없음</td></tr>
                 <tr><td><strong>FuryPath</strong></td><td>기본적으로 켜짐</td><td>없음</td></tr>
-                <tr><td><strong>AVR Maestro</strong></td><td>기본적으로 켜짐</td><td>Firebase Analytics, 기본적으로 켜짐</td></tr>
+                <tr><td><strong>AVR Maestro</strong></td><td>기본값은 켜짐이며, 정보 화면에 스위치가 있습니다</td><td>Firebase Analytics, 동의하기 전까지 꺼짐</td></tr>
                 <tr><td><strong>AVR Maestro for Onkyo Pioneer</strong></td><td>기본적으로 켜짐</td><td>Firebase Analytics, 기본적으로 켜짐</td></tr>
                 <tr><td><strong>AVR Maestro MC</strong></td><td>항상 켜짐</td><td>없음</td></tr>
                 <tr><td><strong>Projector Pilot PJLink &amp; VP21</strong></td><td>항상 켜짐</td><td>Firebase Analytics, 동의하기 전까지 꺼짐</td></tr>
@@ -428,6 +428,7 @@
         <h2 id="changes">15. 이 방침의 변경</h2>
         <p>이 방침을 변경하면 시행일을 갱신하고 아래에 항목을 추가합니다. 변경이 이미 제공하신 데이터의 사용 방식에 영향을 미치는 경우, 가능한 경우 앱 또는 이메일로 알려 드립니다.</p>
         <ul>
+            <li><strong>버전 3.3, 2026년 11월 17일:</strong> 부록 A의 AVR Maestro 항목은 버전 5.8.0을 설명합니다. 분석은 동의한 경우에만 수집되고, 충돌 보고에는 눈에 보이는 스위치가 있으며 리시버 주소를 가립니다. 토큰은 보안 저장소에 보관되고, Android는 더 이상 앱을 백업하지 않으며, 모든 앱 데이터를 삭제하는 새 동작이 추가되었습니다.</li>
             <li><strong>버전 3.2, 2026년 11월 15일:</strong> 2항에 당사의 전체 우편 주소를 기재했습니다.</li>
             <li><strong>버전 3.1, 2026년 11월 15일:</strong> 웹사이트가 글꼴을 miyarahub.com 자체에서 제공하므로 페이지를 불러올 때 Google이 더 이상 이용자의 IP 주소를 받지 않습니다.</li>
             <li><strong>버전 3.0, 2026년 11월 15일:</strong> 모든 앱의 코드 감사를 바탕으로 다시 작성했습니다. 법적 근거, 보관 기간 표, 수신자, 국제 전송, 지역별 권리, Elan Audio Lab 스토어 섹션, 부록 A의 앱별 블록이 추가되었습니다.</li>
@@ -555,16 +556,16 @@
 <h3>AVR Maestro</h3>
 <dl>
 <dt>이름 및 플랫폼</dt><dd>AVR Maestro, Denon 및 Marantz 리시버 컨트롤러 (Android, iOS, 데스크톱(Windows, macOS, Linux)). App Store 출시 완료, Google Play 및 Microsoft Store 서비스 중.</dd>
-<dt>데이터 모델</dt><dd>앱은 로컬 네트워크에서 리시버와 통신합니다. 계정과 MiyaraHub 서버는 없습니다. 충돌 보고서와 분석 데이터는 Android 및 iOS 기기에서만 Google Firebase로 전송됩니다.</dd>
-<dt>네트워크 대상</dt><dd>로컬 네트워크의 리시버(HTTP, telnet, HEOS, 검색, Wake-on-LAN). avrmaestro.com/version.json 주소로의 자동 업데이트 확인이 있으며, 해당 서버는 이용자의 IP 주소를 확인합니다. Google Firebase, 스토어 결제 및 리뷰, Google 또는 Apple의 기기 내 AI 모델 다운로드, 휴대폰의 음성 인식기(Google 또는 Apple 클라우드 서비스일 수 있음).</dd>
-<dt>충돌 보고서</dt><dd><strong>기본값:</strong> 켜짐. <strong>스위치:</strong> 버전을 7번 눌러 잠금 해제하는 숨겨진 개발자 섹션에만 있음. <strong>전송 내용:</strong> 오류 메시지와 스택, Crashlytics 설치 ID, Firebase 설치 ID, 기기 모델, OS 버전, 메모리 및 디스크 상태, 앱 버전이며 Google은 이용자의 IP 주소를 확인합니다. <strong>정보 제거:</strong> 없음. 네트워크 오류 텍스트에 리시버의 IP 주소가 포함될 수 있음.</dd>
-<dt>분석</dt><dd>기본적으로 켜짐. 앱에는 스위치가 없습니다. 식별자: 앱 인스턴스 ID, Firebase 설치 ID, iOS 기기에서는 공급업체 ID이며 광고 ID는 수집하지 않습니다. 이벤트: Firebase 자동 이벤트 first_open, session_start, user_engagement, app_update, os_update, app_remove, in_app_purchase만 해당하며, Google은 이용자의 IP 주소에서 대략적인 위치를 추정합니다.</dd>
+<dt>데이터 모델</dt><dd>앱은 로컬 네트워크에서 사용자의 리시버와 통신합니다. 계정도 없고 MiyaraHub 서버도 없습니다. 충돌 보고는 Android와 iOS에서만 Google Firebase로 전송되며, 분석은 사용자가 동의한 경우에만 전송됩니다.</dd>
+<dt>네트워크 대상</dt><dd>로컬 네트워크의 리시버(HTTP, telnet, HEOS, 검색 및 Wake-on-LAN). 매개변수 없이 avrmaestro.com/version.json을 요청하는 자동 업데이트 확인으로, 모든 웹 요청과 마찬가지로 IP 주소와 앱 및 기기 유형이 서버에 보입니다. Google Firebase, 스토어 결제 및 리뷰, 그리고 Google 또는 Apple에서 내려받는 온디바이스 AI 모델. 음성 입력은 사용자의 기기에서 인식됩니다.</dd>
+<dt>충돌 보고서</dt><dd><strong>기본값:</strong> 켜짐. <strong>스위치:</strong> 설정, 정보, 충돌 보고. 끄면 아무것도 전송되지 않습니다. <strong>전송되는 내용:</strong> 오류 메시지와 스택, Crashlytics 설치 ID, Firebase 설치 ID, 기기 모델, OS 버전, 메모리 및 디스크 상태, 앱 버전이며, Google은 사용자의 IP 주소를 확인합니다. <strong>가림 처리:</strong> 리시버 주소, MAC 주소, 일련 번호, 호스트 이름은 보고서가 전송되기 전에 가려집니다.</dd>
+<dt>분석</dt><dd>동의하기 전까지는 꺼져 있습니다. 앱은 이벤트가 전송되기 전에 한 번 물어보며, 설정, 정보, 법적 고지에서 언제든지 답변을 바꿀 수 있습니다. 동의하면 앱 인스턴스 ID, Firebase 설치 ID, 그리고 iOS에서는 공급업체 ID가 수집되며, 광고 ID는 수집하지 않습니다. 이벤트: 자동 Firebase 이벤트인 first_open, session_start, user_engagement, app_update, os_update, app_remove, in_app_purchase가 먼저 수집되고, Google은 IP 주소로 대략적인 위치를 추정합니다.</dd>
 <dt>권한</dt><dd>Android: 인터넷, 네트워크 및 Wi-Fi 상태, 멀티캐스트(검색), 결제, 마이크(음성, 탭할 때 요청). iOS: 로컬 네트워크, 마이크, 음성 인식. 카메라, 위치, 사진 문구는 선언되어 있으나 요청되지는 않습니다.</dd>
 <dt>구매</dt><dd>선택 사항인 일회성 통합 부가 기능이 하나 있으며 각 스토어(Google Play, App Store, Microsoft Store)를 통해 제공됩니다. 이는 이용자의 기기에서만 확인되며, 스토어 기록(주문 ID, 구매 토큰, 구매 시간)은 기기에 보관됩니다.</dd>
-<dt>로컬 저장소 및 제거</dt><dd>저장된 리시버(이름, IP 주소, 모델, 일련번호, 펌웨어, MAC 주소)는 앱 저장소에 있습니다. Home Assistant 액세스 및 갱신 토큰, Hubitat 설정과 웹훅 주소도 암호화 없이 앱 저장소에 있으며, 구매 기록만 보안 저장소에 있습니다. Android 자동 백업은 Home Assistant 토큰을 포함한 앱 저장소를 Google Drive로 복사하며, iOS 키체인의 구매 기록은 앱을 제거해도 남습니다. 모두 삭제하는 단일 기능은 없습니다.</dd>
-<dt>이용자가 선택하는 서비스로의 전송</dt><dd>이용자가 입력한 주소의 Home Assistant, Hubitat, 웹훅은 리시버 상태와 장면 이벤트를 받습니다. Android 기기에서는 NexusDeck 앱이 저장된 리시버를 읽을 수 있습니다. 백업 내보내기에는 IP, MAC, 일련번호가 포함된 저장된 리시버가 들어 있습니다.</dd>
-<dt>지원 이메일 내용</dt><dd>"모든 관련 로그"는 이용자가 선택할 때만 전송되며 ZIP을 admin@miyarahub.com 주소로 이메일로 보내거나 공유 시트를 엽니다. 여기에는 리시버 MAC 주소와 원시 리시버 데이터가 포함된 기기 정보, 리시버 IP가 포함된 프로브 파일, 디버그 로그가 들어 있으며, 이메일에 앱 버전과 기기 라벨이 포함됩니다. 토큰은 마스킹되지만 IP와 MAC 주소는 일부 행에서만 마스킹됩니다.</dd>
-<dt>알려진 한계</dt><dd>충돌 보고서는 정보가 제거되지 않으며 스위치는 숨겨져 있습니다. Home Assistant 토큰은 암호화 없이 저장되며 Android 자동 백업에 포함됩니다.</dd>
+<dt>로컬 저장소 및 제거</dt><dd>저장된 리시버(이름, IP 주소, 모델, 일련 번호, 펌웨어, MAC 주소)는 앱 저장소에 있습니다. Home Assistant와 Hubitat 액세스 토큰은 Android Keystore 또는 iOS Keychain에 있습니다. Android는 앱을 Google Drive에 백업하지 않습니다. iOS Keychain의 구매 기록은 앱을 삭제해도 남으며, 이전 설치의 다른 Keychain 항목도 남을 수 있지만 새로 설치하면 지워집니다. 설정, 정보, 모든 앱 데이터 삭제는 두 번 확인한 뒤 저장된 리시버, 설정, 토큰, 장면, 위젯 데이터, 파일을 삭제하고 수집을 끄며 앱을 시작 화면으로 되돌립니다. 스토어 구매 기록은 유지되며, 이는 스토어에서 어차피 복원할 수 있습니다.</dd>
+<dt>이용자가 선택하는 서비스로의 전송</dt><dd>사용자가 입력한 주소의 Home Assistant, Hubitat, 웹훅은 리시버 상태와 장면 이벤트를 수신합니다. 앱은 그러한 주소가 공개 http:// 주소일 때 경고하지만 차단하지는 않습니다. Android에서는 NexusDeck처럼 당사의 키로 서명된 앱만 저장된 리시버를 읽을 수 있습니다. 백업 내보내기에는 IP, MAC, 일련 번호를 포함한 저장된 리시버가 들어 있습니다.</dd>
+<dt>지원 이메일 내용</dt><dd>사용자가 선택할 때만 전송되는 "모든 관련 로그"는 ZIP 파일을 admin@miyarahub.com으로 이메일로 보내거나 공유 시트를 엽니다. 여기에는 기기 정보, 프로브 파일, 디버그 로그가 들어 있으며, 이메일에는 앱 버전과 기기 레이블이 포함됩니다. 리시버 주소는 사용자가 요청하지 않는 한 숨겨지고, 토큰은 가려집니다.</dd>
+<dt>알려진 한계</dt><dd>충돌 보고는 사용자가 끄기 전까지 켜져 있습니다. Home Assistant, Hubitat 또는 웹훅 입력란에 입력한 주소는 입력한 그대로 보관됩니다. 업데이트 확인은 끌 수 없습니다.</dd>
 </dl>
 </section>
 <section class="app-block" id="app-avr-maestro-onkyo-pioneer">

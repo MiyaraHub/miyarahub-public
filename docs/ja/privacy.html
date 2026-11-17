@@ -263,7 +263,7 @@
 
     <div class="content">
         <h1>プライバシーポリシー</h1>
-        <p class="last-updated">施行日: 2026年11月15日。バージョン3.2。</p>
+        <p class="last-updated">施行日: 2026年11月17日。バージョン3.3。</p>
 
         <p>本ポリシーは、MiyaraHub Technologies LLCがどのような個人データを取り扱うか、その目的、受領者、保存期間、およびお客様が当社に求めることができる事項を定めるものです。本ポリシーは、<a href="#appendix-a">付録A</a>に記載されたすべてのアプリ、Elan Audio Labストア、本ウェブサイト、およびお客様が当社に送信するメールを対象とします。付録Aには各アプリの詳細を記載しています。本ページとアプリ内の文章が異なる場合は、ご連絡ください。誤っている方を訂正します。</p>
 
@@ -287,7 +287,7 @@
                 <tr><td><strong>Syno Manager</strong></td><td>常にオン</td><td>なし</td></tr>
                 <tr><td><strong>UPSight</strong></td><td>常にオン</td><td>なし</td></tr>
                 <tr><td><strong>FuryPath</strong></td><td>既定でオン</td><td>なし</td></tr>
-                <tr><td><strong>AVR Maestro</strong></td><td>既定でオン</td><td>Firebase Analytics、既定でオン</td></tr>
+                <tr><td><strong>AVR Maestro</strong></td><td>初期設定でオン。「バージョン情報」にスイッチがあります</td><td>Firebase Analytics、オプトインするまでオフ</td></tr>
                 <tr><td><strong>AVR Maestro for Onkyo Pioneer</strong></td><td>既定でオン</td><td>Firebase Analytics、既定でオン</td></tr>
                 <tr><td><strong>AVR Maestro MC</strong></td><td>常にオン</td><td>なし</td></tr>
                 <tr><td><strong>Projector Pilot PJLink &amp; VP21</strong></td><td>常にオン</td><td>Firebase Analytics、オプトインするまでオフ</td></tr>
@@ -428,6 +428,7 @@
         <h2 id="changes">15. 本ポリシーの変更</h2>
         <p>本ポリシーを変更する場合、当社は施行日を更新し、下に記載を追加します。変更が、お客様がすでに提供したデータの利用方法に影響する場合は、可能な限り、アプリ内またはメールでお知らせします。</p>
         <ul>
+            <li><strong>バージョン3.3、2026年11月17日:</strong> 付録Aの AVR Maestro のブロックはバージョン5.8.0について説明しています。分析はオプトイン方式になり、クラッシュレポートには見えるスイッチが付いてレシーバーのアドレスをマスクします。トークンは安全なストレージに保存され、Android はアプリをバックアップしなくなり、新しい操作ですべてのアプリデータを消去できます。</li>
             <li><strong>バージョン3.2、2026年11月15日:</strong> 第2条に当社の完全な郵送先住所を記載しました。</li>
             <li><strong>バージョン3.1、2026年11月15日:</strong>ウェブサイトはフォントをmiyarahub.com自体から配信するようになったため、ページの読み込み時にGoogleがお客様のIPアドレスを受け取ることはなくなりました。</li>
             <li><strong>バージョン3.0、2026年11月15日:</strong>すべてのアプリのコード監査に基づいて書き直しました。法的根拠、保存期間の表、受領者、移転、地域別の権利、Elan Audio Labストアの条、および付録Aのアプリごとのブロックを追加しています。</li>
@@ -555,16 +556,16 @@
 <h3>AVR Maestro</h3>
 <dl>
 <dt>名称とプラットフォーム</dt><dd>AVR Maestro、DenonおよびMarantzのレシーバー用のコントローラー、Android、iOS、デスクトップ(Windows、macOS、Linux)向け。App Storeでリリースされ、Google Playで公開中、Microsoft Storeで公開中。</dd>
-<dt>データモデル</dt><dd>アプリは、ローカルネットワーク上のお客様のレシーバーと通信します。アカウントはなく、MiyaraHubのサーバーもありません。クラッシュレポートと分析は、AndroidとiOSでのみGoogle Firebaseに送信されます。</dd>
-<dt>ネットワーク接続先</dt><dd>ローカルネットワーク上のお客様のレシーバー(HTTP、telnet、HEOS、検出、Wake-on-LAN)。avrmaestro.com/version.jsonへの自動アップデート確認(お客様のIPアドレスを確認します)。Google Firebase、ストアの課金とレビュー、GoogleまたはAppleからのオンデバイスAIモデルのダウンロード、およびスマートフォンの音声認識(GoogleまたはAppleのクラウドサービスの場合があります)。</dd>
-<dt>クラッシュレポート</dt><dd><strong>既定:</strong>オン。<strong>スイッチ:</strong>バージョンを7回タップするとロック解除される非表示の開発者セクションのみ。<strong>送信される内容:</strong>エラーメッセージとスタック、Crashlyticsインストール ID、FirebaseインストールID、デバイスのモデル、OSのバージョン、メモリとディスクの状態、アプリのバージョン。Googleはお客様のIPアドレスを確認します。<strong>削除処理:</strong>なし。ネットワークエラーのテキストに、レシーバーのIPアドレスが含まれることがあります。</dd>
-<dt>分析</dt><dd>既定でオン。アプリ内にスイッチはありません。識別子: アプリインスタンスID、FirebaseインストールID、およびiOSではベンダーID。広告IDは収集されません。イベント: Firebaseの自動イベントであるfirst_open、session_start、user_engagement、app_update、os_update、app_remove、in_app_purchaseのみ。Googleはお客様のIPアドレスからおおよその位置を推定します。</dd>
+<dt>データモデル</dt><dd>アプリはローカルネットワーク上のレシーバーと通信します。アカウントはなく、MiyaraHub のサーバーもありません。クラッシュレポートは Android と iOS でのみ Google Firebase に送信され、分析はあなたが同意した場合にのみ送信されます。</dd>
+<dt>ネットワーク接続先</dt><dd>ローカルネットワーク上のレシーバー(HTTP、telnet、HEOS、検出、Wake-on-LAN)。自動更新チェック(パラメーターなしの avrmaestro.com/version.json への単純なリクエスト)。一般的なウェブリクエストと同様に、IPアドレスとアプリおよびデバイスの種類が相手に見えます。Google Firebase、ストアの課金とレビュー、そして Google または Apple からのオンデバイスAIモデルのダウンロード。音声入力はお使いのデバイス上で認識されます。</dd>
+<dt>クラッシュレポート</dt><dd><strong>初期設定:</strong> オン。<strong>スイッチ:</strong> 設定、バージョン情報、クラッシュレポート。オフにすると何も送信されません。<strong>送信される内容:</strong> エラーメッセージとスタック、Crashlytics のインストールID、Firebase のインストールID、デバイスモデル、OSバージョン、メモリとディスクの状態、アプリバージョン。Google にはあなたのIPアドレスが見えます。<strong>伏せ字処理:</strong> レポートを送信する前に、レシーバーのアドレス、MACアドレス、シリアル番号、ホスト名がマスクされます。</dd>
+<dt>分析</dt><dd>オプトインするまではオフです。アプリはイベントを送信する前に一度だけ確認し、設定、バージョン情報、法的情報からいつでも回答を変更できます。同意した場合に収集されるのは、アプリインスタンスID、Firebase のインストールID、そして iOS ではベンダーIDです。広告IDは収集されません。イベントは、Firebase の自動イベントである first_open、session_start、user_engagement、app_update、os_update、app_remove、in_app_purchase で、Google はあなたのIPアドレスからおおよその位置情報を推定します。</dd>
 <dt>権限</dt><dd>Android: インターネット、ネットワークとWi-Fiの状態、マルチキャスト(検出)、課金、マイク(音声。タップしたときに要求されます)。iOS: ローカルネットワーク、マイク、音声認識。カメラ、位置情報、写真の文字列は宣言されていますが、要求されることはありません。</dd>
 <dt>購入</dt><dd>Google Play、App Store、またはMicrosoft Storeを通じた、任意の1回限りの連携アドオンが1つ。確認はお使いのデバイス上でのみ行われ、ストアの記録(注文ID、購入トークン、購入日時)はお使いのデバイスに保存されます。</dd>
-<dt>ローカルストレージとアンインストール</dt><dd>保存したレシーバー(名前、IPアドレス、モデル、シリアル番号、ファームウェア、MACアドレス)は、アプリのストレージに保存されます。Home Assistantのアクセストークンと更新トークン、Hubitatの設定、Webhookのアドレスも、暗号化されずにアプリのストレージに保存されます。セキュアストレージに保存されるのは、購入の記録のみです。Androidの自動バックアップは、Home Assistantのトークンを含むアプリのストレージをGoogleドライブにコピーし、iOSのキーチェーンの購入の記録は、アンインストール後も残ります。すべてを削除する単一の操作はありません。</dd>
-<dt>お客様が選択するサービスへの送信</dt><dd>お客様が入力したアドレスのHome Assistant、Hubitat、Webhookは、レシーバーの状態とシーンのイベントを受け取ります。Androidでは、NexusDeckアプリがお客様の保存したレシーバーを読み取ることができます。バックアップのエクスポートには、IPアドレス、MACアドレス、シリアル番号を含む、保存したレシーバーが含まれます。</dd>
-<dt>サポートメールの内容</dt><dd>「All relevant logs」は、お客様が選択した場合にのみ送信され、admin@miyarahub.com宛てにZIPをメールで送信するか、共有シートを開きます。これには、レシーバーのMACアドレスとレシーバーの生データを含むデバイス情報、レシーバーのIPアドレスを含むプローブファイル、およびデバッグログが含まれ、メールにはアプリのバージョンとデバイスのラベルが記載されます。トークンはマスクされますが、IPアドレスとMACアドレスは一部の行でのみマスクされます。</dd>
-<dt>既知の制限</dt><dd>クラッシュレポートは削除処理されず、スイッチは非表示です。Home Assistantのトークンは暗号化されずに保存され、Androidの自動バックアップに含まれます。</dd>
+<dt>ローカルストレージとアンインストール</dt><dd>保存したレシーバー(名前、IPアドレス、モデル、シリアル番号、ファームウェア、MACアドレス)はアプリのストレージに保存されます。Home Assistant と Hubitat のアクセストークンは Android Keystore または iOS キーチェーンに保存されます。Android はアプリを Google ドライブにバックアップしません。iOS キーチェーンの購入記録はアンインストール後も残り、以前のインストールの他のキーチェーン項目も残ることがあります。新規インストールでそれらは消去されます。設定、バージョン情報、すべてのアプリデータを消去を実行すると、2回の確認の後、保存したレシーバー、設定、トークン、シーン、ウィジェットのデータ、ファイルが削除され、データ収集がオフになり、アプリはウェルカム画面に戻ります。ストアの購入記録は残りますが、これはストア側でも復元できます。</dd>
+<dt>お客様が選択するサービスへの送信</dt><dd>入力したアドレスの Home Assistant、Hubitat、Webhook は、レシーバーの状態とシーンのイベントを受け取ります。そのアドレスが公開された http:// アドレスの場合、アプリは警告しますが、ブロックはしません。Android では、NexusDeck のように私たちの鍵で署名されたアプリだけが、保存したレシーバーを読み取れます。バックアップのエクスポートには、IPアドレス、MACアドレス、シリアル番号を含む保存したレシーバーが含まれます。</dd>
+<dt>サポートメールの内容</dt><dd>「すべての関連ログ」は、あなたが選んだときにのみ送信され、ZIPを admin@miyarahub.com にメールで送るか、共有シートを開きます。内容はデバイス情報、プローブファイル、デバッグログで、メールにはアプリバージョンとデバイス名が含まれます。レシーバーのアドレスは、あなたが求めない限り隠され、トークンはマスクされます。</dd>
+<dt>既知の制限</dt><dd>クラッシュレポートは、あなたがオフにするまでオンです。Home Assistant、Hubitat、Webhook の欄に入力したアドレスは、入力したとおりに保持されます。更新チェックはオフにできません。</dd>
 </dl>
 </section>
 <section class="app-block" id="app-avr-maestro-onkyo-pioneer">

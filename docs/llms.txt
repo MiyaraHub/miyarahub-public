@@ -1,24 +1,40 @@
 # MiyaraHub Technologies
 
-> MiyaraHub Technologies LLC is a small, independent software studio owned and run by Meir Miyara. It builds native apps for iPhone, iPad, Android, macOS and Windows that control and monitor hardware people already own: AV receivers, NAS units, UPS systems, HDMI processors, projectors, network controllers and universal remotes, plus full-stack web and e-commerce builds. The apps talk to the hardware directly on the local network, are mostly one-time purchases, and carry no ads.
+> MiyaraHub Technologies is an independent studio in Van Alstyne, Texas, making native apps for AV receivers, NAS, UPS, HDMI processors and networks.
 
-MiyaraHub apps are independent. They are not affiliated with, endorsed by, or sponsored by the makers of the hardware and services they work with, and every trademark named on this site belongs to its owner.
+## Key facts
+
+- Studio: MiyaraHub Technologies LLC, founded by Meir Miyara, based in Van Alstyne, TX, US.
+- What it does: Small, independent software studio building native apps, full-stack web and e-commerce platforms, systems and monitoring tools, device integrations, and DevOps pipelines.
+- Platforms the apps are built for: iOS, iPadOS, Android, macOS, Windows, Web.
+- Apps on this site: 13; 7 have a live store listing (measured 2026-11-15).
+- Developer store pages: <https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892>, <https://play.google.com/store/apps/dev?id=5430508146048197775>.
+- Contact: admin@miyarahub.com
+- Independence: MiyaraHub Technologies LLC builds independent, third-party applications. Our apps are not created by, affiliated with, endorsed by, sponsored by, or officially connected with the manufacturers whose hardware they work with.
 
 ## Apps
 
-- [Almanox: Sun, Moon & Milky Way Planner App](https://miyarahub.com/almanox/): Almanox is an offline sun, moon and Milky Way planner for iOS, Android, Mac and Windows: Tonight verdict, golden hour, dark-sky windows and a shot planner.
-- [AVR Maestro: App for Denon & Marantz Receivers](https://miyarahub.com/avr-maestro/): AVR Maestro is an independent app for Denon and Marantz AV receivers on iPhone, iPad, Android, Mac and Windows. Zones, sound modes, Audyssey, HEOS.
-- [AVR Maestro MC: Remote App for Yamaha MusicCast](https://miyarahub.com/avr-maestro-mc/): AVR Maestro MC is an independent remote app for Yamaha MusicCast AV receivers, in development for iOS, Android, Mac and Windows. Zones, Surround:AI, YPAO.
-- [AVR Maestro for Onkyo Pioneer: Receiver Remote](https://miyarahub.com/avr-maestro-onkyo-pioneer/): An independent remote for Onkyo, Pioneer and Integra AV receivers: Dirac Live, AccuEQ, zones and scenes over your local network. Pre-release.
-- [Elan Audio Lab: Tube Amp E-Commerce Build](https://miyarahub.com/elan-audio-lab/): Elan Audio Lab is a full-stack e-commerce platform MiyaraHub built for a boutique tube amp brand: catalog, custom amp builder, checkout, iOS and Android.
-- [FuryPath: App for HDFury on iPhone, Android, Mac](https://miyarahub.com/fury-path/): App for HDFury VRRooM, VERTEX2, DIVA, Maestro and more on iPhone, Android, Mac and Windows. Wi-Fi or GO2 Bluetooth. EDID, HDR, Dolby Vision. $9.99.
-- [Network Deck: App for UniFi Network Controllers](https://miyarahub.com/network-deck/): Network Deck is an independent app for UniFi controllers: live dashboards, clients, WiFi, VLANs, firewall, multi-site. Coming to iOS, Android, Mac and Windows.
-- [NexusDeck: App for Audyssey Calibration Files](https://miyarahub.com/nexus-deck/): NexusDeck manages Audyssey calibration files and uploads .ady curves to Denon and Marantz receivers over Wi-Fi. Pre-release for iOS, Android, Mac and Windows.
-- [Epson Projector App - Projector Pilot PJLink & VP21](https://miyarahub.com/projector-pilot/): An independent app for Epson projectors: power, picture, HDR, lens memory and keystone over your network. On iPhone, iPad, Android, Mac and Windows.
-- [Projector Pilot D-ILA: JVC D-ILA Projector App](https://miyarahub.com/projector-pilot-d-ila/): Projector Pilot D-ILA, coming soon: an independent network remote for JVC D-ILA projectors on iPhone, iPad, Android, Mac and Windows. No account, no cloud.
-- [Syno Manager: Monitoring App for Synology NAS](https://miyarahub.com/synology-manager/): Syno Manager is an independent app for Synology NAS on iPhone, iPad, Android, Mac and Windows. Storage, system health, Docker, cameras and files. $9.99.
-- [UC Remote: App for Unfolded Circle Remotes](https://miyarahub.com/uc-remote/): UC Remote is a free, independent Android app for the Unfolded Circle Remote Two and Remote 3. Activities, entities, now playing and widgets. No ads.
-- [UPSight: APC, CyberPower & Eaton UPS Monitor](https://miyarahub.com/upsight/): Monitor your network UPS from iPhone, Android, Mac or Windows. UPSight reads APC, CyberPower and Eaton network cards over SNMP, or NUT. Alerts included. $9.99.
+### AVR Maestro family
+
+- [AVR Maestro (for Denon & Marantz AV receivers)](https://miyarahub.com/avr-maestro/): AVR Maestro is an independent app for Denon and Marantz AV receivers on iPhone, iPad, Android, Mac and Windows. Zones, sound modes, Audyssey, HEOS. Status: released, in [App Store](https://apps.apple.com/us/app/avr-maestro/id6762881597), [Google Play](https://play.google.com/store/apps/details?id=com.miyarahub.avr_maestro&referrer=utm_source%3Dmiyarahub.com%26utm_medium%3Davr-maestro), [Microsoft Store](https://apps.microsoft.com/detail/9P4M7W4J5106). Rating: 4.96 average from 289 store ratings (October 2026). Dedicated site: <https://avrmaestro.com>.
+- [AVR Maestro for Onkyo Pioneer (Integra AV Receiver Remote)](https://miyarahub.com/avr-maestro-onkyo-pioneer/): An independent remote for Onkyo, Pioneer and Integra AV receivers: Dirac Live, AccuEQ, zones and scenes over your local network. Pre-release. Status: not in any store yet; the site marks it "Coming soon".
+- [AVR Maestro MC (for Yamaha MusicCast receivers)](https://miyarahub.com/avr-maestro-mc/): AVR Maestro MC is an independent remote app for Yamaha MusicCast AV receivers, in development for iOS, Android, Mac and Windows. Zones, Surround:AI, YPAO. Status: not in any store yet; the site marks it "In development".
+
+### Projector Pilot family
+
+- [Projector Pilot PJLink & VP21 (for Epson projectors)](https://miyarahub.com/projector-pilot/): An independent app for Epson projectors: power, picture, HDR, lens memory and keystone over your network. On iPhone, iPad, Android, Mac and Windows. Status: released, in [App Store](https://apps.apple.com/us/app/projector-pilot-pjlink-vp21/id6805125447), [Google Play](https://play.google.com/store/apps/details?id=com.miyarahub.projectorpilot&referrer=utm_source%3Dmiyarahub.com%26utm_medium%3Dprojector-pilot), [Microsoft Store](https://apps.microsoft.com/detail/9NG7C8T3SB93). Dedicated site: <https://projectorpilot.com>.
+- [Projector Pilot D-ILA (for JVC D-ILA projectors)](https://miyarahub.com/projector-pilot-d-ila/): Projector Pilot D-ILA, coming soon: an independent network remote for JVC D-ILA projectors on iPhone, iPad, Android, Mac and Windows. No account, no cloud. Status: not in any store yet; the site marks it "Coming soon". Dedicated site: <https://projectorpilot.com/jvc/>.
+
+### Other apps
+
+- [Syno Manager (for Synology NAS)](https://miyarahub.com/synology-manager/): Syno Manager is an independent app for Synology NAS on iPhone, iPad, Android, Mac and Windows. Storage, system health, Docker, cameras and files. $9.99. Status: released, in [App Store](https://apps.apple.com/us/app/syno-manager/id6763011668), [Google Play](https://play.google.com/store/apps/details?id=com.synomanager&referrer=utm_source%3Dmiyarahub.com%26utm_medium%3Dsynology-manager), [Microsoft Store](https://apps.microsoft.com/store/detail/9P19N2B54N1R). Rating: 4.67 average from 9 store ratings (October 2026). Dedicated site: <https://synomanager.com>.
+- [UPSight (UPS monitoring over SNMP & NUT)](https://miyarahub.com/upsight/): Monitor your network UPS from iPhone, Android, Mac or Windows. UPSight reads APC, CyberPower and Eaton network cards over SNMP, or NUT. Alerts included. $9.99. Status: released, in [App Store](https://apps.apple.com/us/app/upsight-for-cyberpower-eaton/id6762854779), [Google Play](https://play.google.com/store/apps/details?id=com.miyarahub.upsight&referrer=utm_source%3Dmiyarahub.com%26utm_medium%3Dupsight), [Microsoft Store](https://apps.microsoft.com/detail/9PCH5VFVQSGH).
+- [FuryPath (for HDFury HDMI processors)](https://miyarahub.com/fury-path/): App for HDFury VRRooM, VERTEX2, DIVA, Maestro and more on iPhone, Android, Mac and Windows. Wi-Fi or GO2 Bluetooth. EDID, HDR, Dolby Vision. $9.99. Status: released, in [App Store](https://apps.apple.com/us/app/furypath-for-hdfury-devices/id6763290302), [Google Play](https://play.google.com/store/apps/details?id=com.miyarahub.furypath&referrer=utm_source%3Dmiyarahub.com%26utm_medium%3Dfury-path), [Microsoft Store](https://apps.microsoft.com/detail/9N1C30TLW0TB).
+- [UC Remote (for Unfolded Circle remotes)](https://miyarahub.com/uc-remote/): UC Remote is a free, independent Android app for the Unfolded Circle Remote Two and Remote 3. Activities, entities, now playing and widgets. No ads. Status: released, in [Google Play](https://play.google.com/store/apps/details?id=com.ucremote.android&referrer=utm_source%3Dmiyarahub.com%26utm_medium%3Duc-remote). Rating: 5.0 average from 40 store ratings (October 2026).
+- [Elan Audio Lab](https://miyarahub.com/elan-audio-lab/): Elan Audio Lab is a full-stack e-commerce platform MiyaraHub built for a boutique tube amp brand: catalog, custom amp builder, checkout, iOS and Android. Status: released, in [App Store](https://apps.apple.com/us/app/elan-audio-lab/id6760269249), [Google Play](https://play.google.com/store/apps/details?id=com.elanaudiolab.app&referrer=utm_source%3Dmiyarahub.com%26utm_medium%3Delan-audio-lab).
+- [Almanox](https://miyarahub.com/almanox/): Almanox is an offline sun, moon and Milky Way planner for iOS, Android, Mac and Windows: Tonight verdict, golden hour, dark-sky windows and a shot planner. Status: not in any store yet; the site marks it "Coming soon".
+- [NexusDeck (for Audyssey calibration files)](https://miyarahub.com/nexus-deck/): NexusDeck manages Audyssey calibration files and uploads .ady curves to Denon and Marantz receivers over Wi-Fi. Pre-release for iOS, Android, Mac and Windows. Status: not in any store yet; the site marks it "Pre-release".
+- [Network Deck (for UniFi network controllers)](https://miyarahub.com/network-deck/): Network Deck is an independent app for UniFi controllers: live dashboards, clients, WiFi, VLANs, firewall, multi-site. Coming to iOS, Android, Mac and Windows. Status: not in any store yet; the site marks it "In development".
 
 ## Almanox manual
 
@@ -33,11 +49,16 @@ MiyaraHub apps are independent. They are not affiliated with, endorsed by, or sp
 - [The Today Tab - Almanox's Sun & Moon Almanac](https://miyarahub.com/almanox/today/): How to read Almanox's Today tab: the sun-path arc, the twilight ladder, day length, the moon card with phase and moonrise/set, for your exact location.
 - [The Tonight Verdict - Almanox's 0-100 Night Sky Score](https://miyarahub.com/almanox/tonight-verdict/): How Almanox builds tonight's 0-100 sky score from darkness, moon interference, Milky Way height and cloud, and what Poor, Fair, Good and Excellent mean.
 
-## Company
+## Company and legal
 
 - [Home Theater, NAS and Network Apps](https://miyarahub.com/): MiyaraHub Technologies is an independent studio in Van Alstyne, Texas, making native apps for AV receivers, NAS, UPS, HDMI processors and networks.
+- [App Support and Contact](https://miyarahub.com/support/): Get help with MiyaraHub apps such as AVR Maestro, Syno Manager, UPSight and FuryPath: email and Discord contact, what to include, refunds and common fixes.
 - [Accessibility Statement](https://miyarahub.com/accessibility.html): How accessible miyarahub.com is today: our WCAG 2.2 AA aim, what we measured, the known limitations, and how to tell us about a barrier.
 - [Legal Notice](https://miyarahub.com/legal-notice.html): Legal notice for miyarahub.com: the company behind the site, its legal form, managing member, location and contact email.
 - [Privacy Policy](https://miyarahub.com/privacy.html): What MiyaraHub apps and the Elan Audio Lab store collect, why, who receives it, how long it is kept, your rights, and the details for each app.
-- [App Support and Contact](https://miyarahub.com/support/): Get help with MiyaraHub apps such as AVR Maestro, Syno Manager, UPSight and FuryPath: email and Discord contact, what to include, refunds and common fixes.
 - [Terms of Service](https://miyarahub.com/terms.html): The terms for using MiyaraHub apps, the Elan Audio Lab store and this website: license, purchases, device safety, liability and governing law.
+
+## Optional
+
+- Localized pages: every English page above is also published in 29 languages, at the same path behind a lowercase language prefix (ar, cs, da, de, el, es, fi, fr, he, hi, hu, id, it, ja, ko, nb, nl, pl, pt, pt-br, ro, ru, sv, th, tr, uk, vi, zh-hans, zh-hant). The English URLs above are canonical.
+- [Raz Chalak Memorial (Web · Custom)](https://razchalak.com): A memorial site honoring Raz Chalak - a life timeline, photo galleries, voice memories, and a guestbook, on a lightweight admin system.

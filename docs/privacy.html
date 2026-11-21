@@ -269,7 +269,7 @@
 
     <div class="content">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Effective date: November 17, 2026. Version 3.3.</p>
+        <p class="last-updated">Effective date: November 20, 2026. Version 3.5.</p>
 
         <p>This policy says what personal data MiyaraHub Technologies LLC handles, why, who receives it, how long it is kept and what you can ask us to do. It covers every app listed in <a href="#appendix-a">Appendix A</a>, the Elan Audio Lab store, this website and email you send us. Appendix A gives the details for each app. If this page and an app's in-app text differ, write to us and we will correct the one that is wrong.</p>
 
@@ -292,7 +292,7 @@
                 <tr><td><strong>UC-Remote Integration Hub</strong></td><td>None</td><td>None</td></tr>
                 <tr><td><strong>Syno Manager</strong></td><td>Always on</td><td>None</td></tr>
                 <tr><td><strong>UPSight</strong></td><td>Always on</td><td>None</td></tr>
-                <tr><td><strong>FuryPath</strong></td><td>On by default</td><td>None</td></tr>
+                <tr><td><strong>FuryPath</strong></td><td>Off until you opt in</td><td>None</td></tr>
                 <tr><td><strong>AVR Maestro</strong></td><td>On by default, with a switch in About</td><td>Firebase Analytics, off until you opt in</td></tr>
                 <tr><td><strong>AVR Maestro for Onkyo Pioneer</strong></td><td>On by default</td><td>Firebase Analytics, on by default</td></tr>
                 <tr><td><strong>AVR Maestro MC</strong></td><td>Always on</td><td>None</td></tr>
@@ -386,6 +386,7 @@
                 <tr><td>United States Postal Service</td><td>Checking Elan Audio Lab shipping addresses</td><td>Independent</td></tr>
                 <tr><td>MochaHost</td><td>Elan Audio Lab email sending and file hosting</td><td>Processor</td></tr>
                 <tr><td>Google Analytics, Meta and Tawk.to</td><td>Elan Audio Lab website analytics, advertising measurement and live chat, only when switched on in the store's settings</td><td>See section 14</td></tr>
+                <tr><td>Synology Inc.</td><td>Syno Manager: QuickConnect lookups and relays, and the DSM update check</td><td>Independent</td></tr>
                 <tr><td>Other services an app contacts</td><td>Weather, maps, update checks and similar; listed per app in Appendix A</td><td>Independent</td></tr>
             </tbody>
         </table>
@@ -434,6 +435,8 @@
         <h2 id="changes">15. Changes to this policy</h2>
         <p>When we change this policy, we update the effective date and add an entry below. If a change affects how we use data you already gave us, we will tell you in the app or by email where we can.</p>
         <ul>
+            <li><strong>Version 3.5, November 20, 2026:</strong> the Syno Manager block in Appendix A names every Synology server the app contacts: QuickConnect servers, including ones under quickconnect.cn, the relay, and from version 3.6.0 a DSM update check that sends only your NAS model to www.synology.com. Section 7 lists Synology.</li>
+            <li><strong>Version 3.4, November 18, 2026:</strong> the FuryPath block in Appendix A describes version 2.6.0: crash reports are off until you opt in and have a switch in Settings, they mask IP and MAC addresses, saved host names and serial numbers, Android no longer backs the app up, and the diagnostic ZIP says what it contains before it is sent.</li>
             <li><strong>Version 3.3, November 17, 2026:</strong> the AVR Maestro block in Appendix A describes version 5.8.0: analytics are opt-in, crash reports have a visible switch and mask receiver addresses, tokens are in secure storage, Android no longer backs the app up, and a new action erases all app data.</li>
             <li><strong>Version 3.2, November 15, 2026:</strong> section 2 gives our full postal address.</li>
             <li><strong>Version 3.1, November 15, 2026:</strong> the website serves its fonts from miyarahub.com itself, so Google no longer receives your IP address when you load a page.</li>
@@ -515,7 +518,7 @@
 <dl>
 <dt>Name and platforms</dt><dd>Syno Manager, a Synology NAS manager for Android, iOS, macOS and Windows. Released on the App Store, live on Google Play and live on the Microsoft Store. It is a paid download with no in-app purchases.</dd>
 <dt>Data model</dt><dd>The app talks to your Synology NAS directly or through Synology QuickConnect. There is no account and no MiyaraHub server. Crash reports go to Google Firebase on Android and iOS only.</dd>
-<dt>Network destinations</dt><dd>Your NAS on the local network, or your DDNS or WAN address if you set one. If you use QuickConnect, your QuickConnect ID goes to Synology (global.quickconnect.to), and the app may connect through a Synology relay, so your NAS sign-in and traffic, encrypted to the NAS, pass through Synology servers. Google Firebase, the app stores, and links you tap.</dd>
+<dt>Network destinations</dt><dd>Your NAS on the local network, or your DDNS or WAN address if you set one. If you use QuickConnect, your QuickConnect ID goes to Synology's QuickConnect server (global.quickconnect.to), which can hand the lookup to another Synology QuickConnect server, such as one under quickconnect.cn. The app also tries a Synology relay and may connect through it, so your NAS sign-in and traffic, encrypted to the NAS, pass through Synology servers. From version 3.6.0, a DSM update check sends only your NAS model to Synology (www.synology.com), with no account, address or name, and Synology sees your IP address. It is on by default and has a switch in Settings; off, nothing is sent. Google Firebase, the app stores, and links you tap.</dd>
 <dt>Crash reports</dt><dd><strong>Default:</strong> on. <strong>Switch:</strong> only in a hidden developer menu, and crash reporting is turned back on at every launch, so turning it off does not last. <strong>What is sent:</strong> the error message and stack, an "App started" note, a Crashlytics installation ID, device model and OS version, and Google sees your IP address. <strong>Redaction:</strong> none on the crash path; error text can include your NAS IP address, host name or QuickConnect host.</dd>
 <dt>Analytics</dt><dd>Sends no analytics. There is no analytics library and no switch. Whether the Android build declares the Advertising ID permission has not been confirmed, and no code uses it.</dd>
 <dt>Permissions</dt><dd>Android: internet, microphone (assistant voice) and biometrics (app lock). iOS: local network, Face ID, microphone, speech recognition and photo library (to pick a file to upload). Speech recognition runs on the device only and the mic stops working rather than using a cloud service.</dd>
@@ -545,17 +548,17 @@
 <section class="app-block" id="app-fury-path">
 <h3>FuryPath</h3>
 <dl>
-<dt>Name and platforms</dt><dd>FuryPath, a controller for HDFury devices, for Android, iOS, macOS and Windows. Released on the App Store, live on Google Play and live on the Microsoft Store. It is a paid download with no in-app purchases.</dd>
-<dt>Data model</dt><dd>The app talks to your HDFury devices on your local network or over Bluetooth through an HDFury GO2 adapter. There is no account and no MiyaraHub server. Crash reports go to Google Firebase on Android and iOS only.</dd>
+<dt>Name and platforms</dt><dd>FuryPath, a controller for HDFury devices, for Android, iOS, macOS and Windows. Released on the App Store, live on Google Play and live on the Microsoft Store. It is a paid download with no in-app purchases. This block describes version 2.6.0.</dd>
+<dt>Data model</dt><dd>The app talks to your HDFury devices on your local network or over Bluetooth through an HDFury GO2 adapter. There is no account and no MiyaraHub server. Crash reports go to Google Firebase on Android and iOS only, and only if you say yes.</dd>
 <dt>Network destinations</dt><dd>Your HDFury devices over the local network and Bluetooth. On iOS and macOS, an update check you start asks Apple (itunes.apple.com), which sees your IP address and the app ID. Google Firebase, the app stores, and links you tap.</dd>
-<dt>Crash reports</dt><dd><strong>Default:</strong> on. <strong>Switch:</strong> only in a hidden Developer Mode; once off it stays off. <strong>What is sent:</strong> the error message and stack, a Crashlytics installation ID, device model and OS version, and Google sees your IP address. <strong>Redaction:</strong> IP addresses keep only their first two parts and MAC addresses keep only their first three parts; serial numbers and host names are not masked.</dd>
+<dt>Crash reports</dt><dd><strong>Default:</strong> off until you opt in. The app asks once on first run; nothing is collected before you answer, and if you say no, unsent reports are deleted. <strong>Switch:</strong> Settings, crash reports, at any time. <strong>What is sent:</strong> the error message and stack, a Crashlytics installation ID, device model, OS version and app version, and Google sees your IP address. <strong>Redaction:</strong> before a report is recorded, IP addresses and MAC addresses are masked in full, the host names of your saved devices and local network names (.local, .lan, home.arpa) are hidden, and the serial numbers of your saved devices hide their last four characters.</dd>
 <dt>Analytics</dt><dd>Sends no analytics. There is no analytics library and no switch.</dd>
-<dt>Permissions</dt><dd>Android: internet, network and Wi-Fi state, Bluetooth scan and connect, and on Android 11 and older, location, because Bluetooth scanning needs it there. iOS: Bluetooth, local network and photo library (to restore a backup); camera and location strings are present and say the app does not use them.</dd>
+<dt>Permissions</dt><dd>Android: internet, network and Wi-Fi state, and Bluetooth scan (never used to find your location) and connect for the GO2 adapter; on Android 11 and older, the older Bluetooth permissions and location, because Bluetooth scanning needs location there. iOS: Bluetooth, local network and photo library (only for a file you pick, such as a backup to restore); camera and location strings are present because a linked component needs them, and say the app does not use them. macOS: Bluetooth and local network.</dd>
 <dt>Purchases</dt><dd>Paid upfront through the store. The app has no in-app purchases, and MiyaraHub receives no payment data.</dd>
-<dt>Local storage and uninstall</dt><dd>Saved devices (name, IP address, port, model, host name, firmware, serial number) are kept in app storage, and the app stores no device passwords. Android Auto Backup and iCloud backup include the device list. The backup export file includes saved devices.</dd>
+<dt>Local storage and uninstall</dt><dd>Saved devices (name, IP address, port, model, host name, firmware, serial number) and settings are kept in app storage, and the app stores no device passwords. Home screen widget data is kept in app storage, on iOS in an app group shared only with the app's own widgets. Android Auto Backup and device transfer exclude the app's data, so uninstalling removes the device list. On iOS and macOS, the device list and settings are part of your iCloud or local backup and come back when you restore it. The backup export file includes saved devices.</dd>
 <dt>Egress to services you choose</dt><dd>The backup file you export, and links and email you open.</dd>
-<dt>Support email contents</dt><dd>The diagnostic ZIP, sent only when you choose, goes to admin@miyarahub.com or wherever you share it. It is masked the same way as crash reports, and full network addresses are included only if you turn that on. Device model, firmware and capabilities are not masked.</dd>
-<dt>Known limits</dt><dd>The crash switch is hidden from ordinary users. Serial numbers and host names are not masked in crash reports.</dd>
+<dt>Support email contents</dt><dd>The diagnostic ZIP is prepared only when you tap download, share or email, after a dialog that says what it contains and where it goes; email goes to admin@miyarahub.com. Serial numbers hide their last four characters and saved host names are hidden; IP addresses keep only their first two parts and MAC addresses their first three, and full network addresses are included only if you turn that on. Device model, firmware and capabilities are not masked. The feedback email from the review prompt is a draft in your mail app with the app version, phone model and OS version, sent only if you send it.</dd>
+<dt>Known limits</dt><dd>Serial numbers keep all but their last four characters. Device model, firmware and capabilities in the diagnostic ZIP are not masked. On iOS and macOS, backups include the device list.</dd>
 </dl>
 </section>
 <section class="app-block" id="app-avr-maestro">

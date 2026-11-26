@@ -263,7 +263,7 @@
 
     <div class="content">
         <h1>隐私政策</h1>
-        <p class="last-updated">生效日期：2026年11月20日。版本 3.5。</p>
+        <p class="last-updated">生效日期：2026年11月25日。版本 3.6。</p>
 
         <p>本政策说明 MiyaraHub Technologies LLC 处理哪些个人数据、为什么处理、谁会接收、保留多久，以及您可以要求我们做什么。本政策涵盖<a href="#appendix-a">附录 A</a> 中列出的每款应用、Elan Audio Lab 商店、本网站以及您发送给我们的电子邮件。附录 A 提供了每款应用的详细信息。如果本页面与应用内的文字不一致，请写信告知我们，我们将更正有误的一方。</p>
 
@@ -284,7 +284,7 @@
                 <tr><td><strong>Elan Audio Lab</strong></td><td>在这些应用中默认开启</td><td>Firebase Analytics，在这些应用中默认开启</td></tr>
                 <tr><td><strong>UC Remote</strong></td><td>在您选择启用之前保持关闭</td><td>Firebase Analytics，在您选择启用之前保持关闭</td></tr>
                 <tr><td><strong>UC-Remote Integration Hub</strong></td><td>无</td><td>无</td></tr>
-                <tr><td><strong>Syno Manager</strong></td><td>始终开启</td><td>无</td></tr>
+                <tr><td><strong>Syno Manager</strong></td><td>默认开启，可在“关于”中关闭</td><td>Firebase Analytics，在您选择启用之前保持关闭</td></tr>
                 <tr><td><strong>UPSight</strong></td><td>始终开启</td><td>无</td></tr>
                 <tr><td><strong>FuryPath</strong></td><td>在您选择启用之前保持关闭</td><td>无</td></tr>
                 <tr><td><strong>AVR Maestro</strong></td><td>默认开启，可在“关于”中关闭</td><td>Firebase Analytics，在您选择启用之前保持关闭</td></tr>
@@ -429,6 +429,7 @@
         <h2 id="changes">15. 本政策的变更</h2>
         <p>当我们更改本政策时，我们会更新生效日期，并在下方添加一条记录。如果某项更改影响到我们使用您已提供的数据的方式，我们会尽可能在应用中或通过电子邮件告知您。</p>
         <ul>
+            <li><strong>版本 3.6，2026年11月25日：</strong>附录 A 中的 Syno Manager 部分和汇总表描述的是 3.7.0 版：崩溃报告默认开启，并在设置、关于中提供开关，应用错误在发送前会被屏蔽；使用分析仅在您选择加入后才会发送到 Firebase Analytics；清除所有应用数据会清空应用存储的内容；诊断导出会屏蔽标识符，除非您选择包含它们。</li>
             <li><strong>版本 3.5，2026年11月20日：</strong>附录 A 中的 Syno Manager 部分列出了应用联系的每台 Synology 服务器：QuickConnect 服务器（包括 quickconnect.cn 下的服务器）、中继，以及自 3.6.0 版起的 DSM 更新检查，该检查只会将您的 NAS 型号发送到 www.synology.com。第 7 节列出了 Synology。</li>
             <li><strong>版本 3.4，2026年11月18日：</strong>附录 A 中的 FuryPath 部分描述的是 2.6.0 版：崩溃报告在您选择加入之前保持关闭，并在设置中有开关，会屏蔽 IP 和 MAC 地址、已保存的主机名和序列号，Android 不再备份该应用，诊断 ZIP 会在发送之前说明其包含的内容。</li>
             <li><strong>版本 3.3，2026年11月17日：</strong>附录 A 中的 AVR Maestro 部分描述的是 5.8.0 版：分析为选择加入，崩溃报告有可见的开关并会屏蔽接收机地址，令牌存放在安全存储中，Android 不再备份该应用，并新增了清除所有应用数据的操作。</li>
@@ -511,16 +512,16 @@
 <h3>Syno Manager</h3>
 <dl>
 <dt>名称和平台</dt><dd>Syno Manager，一款适用于 Android、iOS、macOS 和 Windows 的 Synology NAS 管理应用。已在 App Store 发布，已在 Google Play 上线，并已在 Microsoft Store 上线。它是付费下载，没有应用内购买。</dd>
-<dt>数据模型</dt><dd>应用直接或通过 Synology QuickConnect 与您的 Synology NAS 通信。没有账户，也没有 MiyaraHub 服务器。崩溃报告仅在 Android 和 iOS 上发送到 Google Firebase。</dd>
+<dt>数据模型</dt><dd>应用直接或通过 Synology QuickConnect 与您的 Synology NAS 通信。没有账户，也没有 MiyaraHub 服务器。仅在 Android 和 iOS 上，崩溃报告会发送到 Google Firebase，如果您选择加入，使用分析也会发送到那里。macOS 和 Windows 应用从不启动 Firebase。</dd>
 <dt>网络目的地</dt><dd>您本地网络上的 NAS，或者如果您设置了 DDNS 或 WAN 地址，则为该地址。如果您使用 QuickConnect，您的 QuickConnect ID 会发送给 Synology 的 QuickConnect 服务器 (global.quickconnect.to)，该服务器可能把查询转交给另一台 Synology QuickConnect 服务器，例如 quickconnect.cn 下的服务器。应用还会尝试 Synology 中继并可能通过它连接，因此您的 NAS 登录和流量（对 NAS 加密）会经过 Synology 服务器。自 3.6.0 版起，DSM 更新检查只会将您的 NAS 型号发送给 Synology (www.synology.com)，不含账户、地址或名称，且 Synology 会看到您的 IP 地址。该功能默认开启，并在设置中有开关；关闭后不会发送任何内容。还有 Google Firebase、应用商店，以及您点按的链接。</dd>
-<dt>崩溃报告</dt><dd><strong>默认值：</strong>开启。<strong>开关：</strong>仅在隐藏的开发者菜单中，并且崩溃报告在每次启动时都会重新开启，因此关闭它并不能持久生效。<strong>发送的内容：</strong>错误消息和堆栈、一条“App started”记录、Crashlytics 安装 ID、设备型号和操作系统版本，并且 Google 会看到您的 IP 地址。<strong>脱敏：</strong>崩溃路径上没有；错误文本可能包含您的 NAS IP 地址、主机名或 QuickConnect 主机。</dd>
-<dt>分析</dt><dd>不发送分析数据。没有分析库，也没有开关。Android 版本是否声明了广告 ID 权限尚未确认，且没有任何代码使用它。</dd>
+<dt>崩溃报告</dt><dd><strong>默认值：</strong>开启，不会提示，适用于 Android 和 iOS 应用；macOS 和 Windows 应用不发送任何内容。<strong>开关：</strong>设置、关于，位于“法律信息”下。关闭会停止收集，仍在等待发送的报告会在下次启动时被删除而不是发送。关闭设置在应用重启后是否保持尚未确认。<strong>发送的内容：</strong>未捕获的应用错误及其消息、原因和堆栈，一条“App started”记录，以及 Crashlytics 自行添加的字段，Google 文档称其包括安装 ID、设备型号、操作系统和应用版本；确切字段尚未通过样本确认。Google 会看到您的 IP 地址。<strong>脱敏：</strong>应用错误发送前，网址、QuickConnect ID 和主机、序列号和设备 ID 值、MAC 地址、IP 地址以及本地网络名称（如 .local、.lan 和 .home）都会被屏蔽。Android 和 iOS 的原生崩溃不经过此屏蔽，它们是否可能携带地址或文件路径尚未确认。</dd>
+<dt>分析</dt><dd>在您选择加入之前为关闭状态。在 Android 和 iOS 应用中，会在任何分析事件之前弹出一次对话框，需要回答是或否；在您回答之前以及选择否之后，不会收集任何内容。设置、关于中“法律信息”下的开关可随时更改您的回答。开启后，Firebase Analytics (Google) 每次应用启动时会收到一个应用事件 app_open，以及 Firebase 自行收集的事件，其确切列表尚未确认。macOS 和 Windows 应用没有分析功能，也不显示开关。Android 应用移除了广告 ID 权限；Android 12 及更早版本在您选择加入后是否仍会发送广告 ID 尚未确认。应用从不向 iOS 请求跟踪权限；iOS 版本是否包含广告 ID 支持尚未确认。关闭分析会停止收集；清除所有应用数据还会清除设备上的分析数据并重置其分析 ID。</dd>
 <dt>权限</dt><dd>Android：互联网、麦克风（助手语音）和生物识别（应用锁）。iOS：本地网络、Face ID、麦克风、语音识别和照片库（用于选择要上传的文件）。语音识别仅在设备上运行，麦克风会停止工作，而不会使用云服务。</dd>
 <dt>购买</dt><dd>通过商店预先付费。应用没有应用内购买，MiyaraHub 不会收到任何付款数据。</dd>
-<dt>本地存储和卸载</dt><dd>NAS 地址、用户名、密码、两步验证信任令牌和会话令牌保存在安全存储中。设置和主屏幕小组件数据（NAS 名称、CPU、内存、温度、健康状况）位于普通应用存储中，Android 备份会包含这些数据。在 iOS 上，钥匙串项目在卸载后仍然保留，并在重新安装时恢复。没有一键全部删除的操作；删除某台 NAS 会移除其凭据。</dd>
+<dt>本地存储和卸载</dt><dd>NAS 地址、用户名、密码、两步验证信任令牌和会话令牌保存在安全存储中。设置和主屏幕小组件数据（NAS 名称、健康状况、CPU、内存、温度、运行时间和存储卷用量）位于普通应用存储中。Android 备份已关闭，其规则排除了应用数据。iOS 或 macOS 备份是否会恢复这些项目尚未确认。设置、关于中的“清除所有应用数据”会关闭分析、删除未发送的崩溃报告、清除凭据、设置、小组件数据和应用的文件，并保持崩溃报告开启，即首次运行的默认状态。全新安装如果没有找到任何设置，会清除之前安装遗留在安全存储中的任何凭据。</dd>
 <dt>向您所选服务的出站数据</dt><dd>Synology QuickConnect 和中继，以及您的 DDNS 或 WAN 主机。助手使用设备端模型（Android 上为 Google Gemini Nano，iOS 和 macOS 上为 Apple 的模型），Google 是否从 Android 模型服务接收使用数据尚未确认。</dd>
-<dt>支持电子邮件内容</dt><dd>诊断 ZIP 仅在您选择时才会发送，发送到 admin@miyarahub.com 或您分享的任何地方。它包含带有您的 NAS 用户名和主机的调试日志、手机制造商、型号、操作系统和区域设置，以及带有 NAS 序列号、型号、主机名、IP 和 MAC 地址以及磁盘序列号的原始 NAS 读数。只有令牌和密码被屏蔽。</dd>
-<dt>已知限制</dt><dd>崩溃报告无法保持关闭。崩溃文本和诊断 ZIP 未对 IP 地址、主机名或序列号进行脱敏。iOS 钥匙串凭据在卸载后仍然保留。</dd>
+<dt>支持电子邮件内容</dt><dd>诊断 ZIP 仅在您选择时才会发送，发送到 admin@miyarahub.com 或您分享的任何地方。它包含调试日志、手机制造商、型号、操作系统和区域设置、诊断信息和原始 NAS 读数，其中可能包括 NAS 序列号、型号、主机名、IP 和 MAC 地址、磁盘序列号以及您的 NAS 用户名。令牌、会话 ID、密码和设备 ID 始终会被屏蔽。除非您在发送前勾选包含标识符的选项（默认关闭），否则网址、主机名、QuickConnect ID、序列号、MAC 和 IP 地址也会被屏蔽，邮件正文同样如此。用户名不在屏蔽列表中。</dd>
+<dt>已知限制</dt><dd>崩溃报告在您关闭之前保持开启，该开关在重启后是否保持尚未确认。原生崩溃报告不会被屏蔽。应用日志在导出时被屏蔽，而不是在写入时。除非您为某台 NAS 开启证书验证，否则会跳过证书检查，对 QuickConnect 查询则始终跳过。尚未确认的有：Firebase Analytics 自行收集的事件、Crashlytics 的确切设备字段、崩溃报告和分析都关闭时 Firebase 是否会联系 Google，以及设备端助手模型是否曾将数据发送到设备之外。</dd>
 </dl>
 </section>
 <section class="app-block" id="app-upsight">

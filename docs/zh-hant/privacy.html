@@ -263,7 +263,7 @@
 
     <div class="content">
         <h1>隱私權政策</h1>
-        <p class="last-updated">生效日期：2026年11月20日。版本 3.5。</p>
+        <p class="last-updated">生效日期：2026年11月25日。版本 3.6。</p>
 
         <p>本政策說明 MiyaraHub Technologies LLC 處理哪些個人資料、處理原因、接收者、保存期限，以及您可以要求我們採取哪些行動。本政策涵蓋<a href="#appendix-a">附錄 A</a> 所列的每一款應用程式、Elan Audio Lab 商店、本網站，以及您寄給我們的電子郵件。附錄 A 提供各應用程式的詳細資訊。如果本頁面與應用程式內的文字有所不同，請來信告知，我們將更正有誤的一方。</p>
 
@@ -284,7 +284,7 @@
                 <tr><td><strong>Elan Audio Lab</strong></td><td>在應用程式中預設為開啟</td><td>Firebase Analytics，在應用程式中預設為開啟</td></tr>
                 <tr><td><strong>UC Remote</strong></td><td>在您選擇加入之前保持關閉</td><td>Firebase Analytics，在您選擇加入之前保持關閉</td></tr>
                 <tr><td><strong>UC-Remote Integration Hub</strong></td><td>無</td><td>無</td></tr>
-                <tr><td><strong>Syno Manager</strong></td><td>一律開啟</td><td>無</td></tr>
+                <tr><td><strong>Syno Manager</strong></td><td>預設為開啟，可在「關於」中切換</td><td>Firebase Analytics，在您選擇加入之前保持關閉</td></tr>
                 <tr><td><strong>UPSight</strong></td><td>一律開啟</td><td>無</td></tr>
                 <tr><td><strong>FuryPath</strong></td><td>在您選擇加入之前保持關閉</td><td>無</td></tr>
                 <tr><td><strong>AVR Maestro</strong></td><td>預設為開啟，可在「關於」中切換</td><td>Firebase Analytics，在您選擇加入之前保持關閉</td></tr>
@@ -429,7 +429,8 @@
         <h2 id="changes">15. 本政策的變更</h2>
         <p>當我們變更本政策時，我們會更新生效日期並在下方新增一則記錄。如果變更影響我們使用您已提供之資料的方式，我們會在可行的情況下透過應用程式或電子郵件告知您。</p>
         <ul>
-            <li><strong>版本 3.5，2026年11月20日：</strong>附錄 A 中的 Syno Manager 區塊列出應用程式聯繫的每一台 Synology 伺服器：QuickConnect 伺服器（包括 quickconnect.cn 下的伺服器）、中繼，以及自 3.6.0 版起的 DSM 更新檢查，該檢查只會將您的 NAS 型號傳送至 www.synology.com。第 7 節列出 Synology。</li>
+            <li><strong>版本 3.6，2026年11月25日：</strong>附錄 A 中的 Syno Manager 部分與彙總表描述的是 3.7.0 版：當機回報預設開啟，並在設定、關於中提供開關，應用程式錯誤在傳送前會被遮蔽；使用分析僅在您選擇加入後才會傳送至 Firebase Analytics；清除所有 App 資料會清空應用程式儲存的內容；診斷匯出會遮蔽識別碼，除非您選擇包含它們。</li>
+            <li><strong>版本 3.5，2026年11月20日：</strong>附錄 A 中的 Syno Manager 部分列出了應用程式聯繫的每台 Synology 伺服器：QuickConnect 伺服器（包括 quickconnect.cn 下的伺服器）、中繼，以及自 3.6.0 版起的 DSM 更新檢查，該檢查只會將您的 NAS 型號傳送至 www.synology.com。第 7 節列出了 Synology。</li>
             <li><strong>版本 3.4，2026年11月18日：</strong>附錄 A 中的 FuryPath 區塊說明版本 2.6.0：當機報告在您選擇加入之前保持關閉，並在設定中設有開關，會遮蔽 IP 與 MAC 位址、已儲存的主機名稱與序號，Android 不再備份此應用程式，診斷 ZIP 會在傳送之前說明其包含的內容。</li>
             <li><strong>版本 3.3，2026年11月17日：</strong>附錄 A 中的 AVR Maestro 區塊說明版本 5.8.0：分析功能改為需選擇加入，當機回報設有可見的開關並會遮蔽接收器位址，權杖存放於安全儲存空間，Android 不再備份此應用程式，並新增可清除所有應用程式資料的動作。</li>
             <li><strong>版本 3.2，2026 年 11 月 15 日：</strong>第 2 節提供我們完整的郵寄地址。</li>
@@ -511,16 +512,16 @@
 <h3>Syno Manager</h3>
 <dl>
 <dt>名稱與平台</dt><dd>Syno Manager，一款適用於 Android、iOS、macOS 與 Windows 的 Synology NAS 管理應用程式。已在 App Store 發行，並已在 Google Play 與 Microsoft Store 上線。為付費下載，沒有應用程式內購買。</dd>
-<dt>資料模型</dt><dd>應用程式直接或透過 Synology QuickConnect 與您的 Synology NAS 通訊。沒有帳號，也沒有 MiyaraHub 伺服器。當機報告僅在 Android 與 iOS 上傳送至 Google Firebase。</dd>
+<dt>資料模型</dt><dd>應用程式直接或透過 Synology QuickConnect 與您的 Synology NAS 通訊。沒有帳號，也沒有 MiyaraHub 伺服器。僅在 Android 與 iOS 上，當機回報會傳送至 Google Firebase，如果您選擇加入，使用分析也會傳送到那裡。macOS 與 Windows 應用程式從不啟動 Firebase。</dd>
 <dt>網路目的地</dt><dd>您區域網路上的 NAS，或您設定的 DDNS 或 WAN 位址。如果您使用 QuickConnect，您的 QuickConnect ID 會傳送至 Synology 的 QuickConnect 伺服器（global.quickconnect.to），該伺服器可能把查詢轉交給另一台 Synology QuickConnect 伺服器，例如 quickconnect.cn 下的伺服器。應用程式也會嘗試 Synology 中繼並可能透過它連線，因此您的 NAS 登入與流量（對 NAS 加密）會經過 Synology 的伺服器。自 3.6.0 版起，DSM 更新檢查只會將您的 NAS 型號傳送至 Synology（www.synology.com），不含帳戶、位址或名稱，且 Synology 會看到您的 IP 位址。此功能預設開啟，並在設定中設有開關；關閉後不會傳送任何內容。此外還有 Google Firebase、應用程式商店，以及您點選的連結。</dd>
-<dt>當機報告</dt><dd><strong>預設值：</strong>開啟。<strong>開關：</strong>僅位於隱藏的開發人員選單中，且當機回報會在每次啟動時重新開啟，因此關閉並不持久。<strong>傳送的內容：</strong>錯誤訊息與堆疊、「App started」備註、Crashlytics 安裝 ID、裝置型號與作業系統版本，且 Google 會看到您的 IP 位址。<strong>資料遮蔽：</strong>當機路徑上沒有；錯誤文字可能包含您的 NAS IP 位址、主機名稱或 QuickConnect 主機。</dd>
-<dt>分析</dt><dd>不傳送分析資料。沒有分析程式庫，也沒有開關。Android 版本是否宣告廣告 ID 權限尚未確認，且沒有任何程式碼使用它。</dd>
+<dt>當機報告</dt><dd><strong>預設值：</strong>開啟，不會提示，適用於 Android 與 iOS 應用程式；macOS 與 Windows 應用程式不傳送任何內容。<strong>開關：</strong>設定、關於，位於「法律資訊」下。關閉會停止收集，仍在等待傳送的回報會在下次啟動時被刪除而不是傳送。關閉設定在應用程式重新啟動後是否保持尚未確認。<strong>傳送的內容：</strong>未捕捉的應用程式錯誤及其訊息、原因與堆疊、「App started」備註，以及 Crashlytics 自行加入的欄位，Google 文件指其包括安裝 ID、裝置型號、作業系統與應用程式版本；確切欄位尚未透過樣本確認。Google 會看到您的 IP 位址。<strong>資料遮蔽：</strong>應用程式錯誤傳送前，網址、QuickConnect ID 與主機、序號與裝置 ID 值、MAC 位址、IP 位址以及區域網路名稱（如 .local、.lan 與 .home）都會被遮蔽。Android 與 iOS 的原生當機不經過此遮蔽，它們是否可能攜帶位址或檔案路徑尚未確認。</dd>
+<dt>分析</dt><dd>在您選擇加入之前為關閉。在 Android 與 iOS 應用程式中，會在任何分析事件之前彈出一次對話框，需要回答是或否；在您回答之前以及選擇否之後，不會收集任何資料。設定、關於中「法律資訊」下的開關可隨時更改您的回答。開啟後，Firebase Analytics (Google) 每次應用程式啟動時會收到一個應用程式事件 app_open，以及 Firebase 自行收集的事件，其確切清單尚未確認。macOS 與 Windows 應用程式沒有分析功能，也不顯示開關。Android 應用程式移除了廣告 ID 權限；Android 12 及更早版本在您選擇加入後是否仍會傳送廣告 ID 尚未確認。應用程式從不向 iOS 要求追蹤權限；iOS 版本是否包含廣告 ID 支援尚未確認。關閉分析會停止收集；清除所有 App 資料還會清除裝置上的分析資料並重設其分析 ID。</dd>
 <dt>權限</dt><dd>Android：網際網路、麥克風（助理語音）與生物辨識（應用程式鎖）。iOS：區域網路、Face ID、麥克風、語音辨識與相片庫（用於挑選要上傳的檔案）。語音辨識僅在裝置上執行，麥克風會停止運作而不會改用雲端服務。</dd>
 <dt>購買項目</dt><dd>透過商店預先付費。應用程式沒有應用程式內購買，且 MiyaraHub 不會收到任何付款資料。</dd>
-<dt>本機儲存與解除安裝</dt><dd>NAS 位址、使用者名稱、密碼、兩步驟信任權杖與工作階段權杖保存在安全儲存空間中。設定與主畫面小工具資料（NAS 名稱、CPU、記憶體、溫度、健康狀態）位於一般的應用程式儲存空間中，Android 備份會包含這些資料。在 iOS 上，Keychain 項目在解除安裝後仍然存在，並在重新安裝時恢復。沒有單一的全部刪除動作；刪除 NAS 會移除其憑證。</dd>
+<dt>本機儲存與解除安裝</dt><dd>NAS 位址、使用者名稱、密碼、兩步驟信任權杖與工作階段權杖保存在安全儲存空間中。設定與主畫面小工具資料（NAS 名稱、健康狀態、CPU、記憶體、溫度、運作時間與儲存空間使用量）位於一般的應用程式儲存空間中。Android 備份已關閉，其規則排除了應用程式資料。iOS 或 macOS 備份是否會恢復這些項目尚未確認。設定、關於中的「清除所有 App 資料」會關閉分析、刪除尚未傳送的當機回報、清除憑證、設定、小工具資料與應用程式的檔案，並保持當機回報開啟，即首次執行的預設狀態。全新安裝如果找不到任何設定，會清除先前安裝遺留在安全儲存空間中的任何憑證。</dd>
 <dt>傳送至您所選服務的資料</dt><dd>Synology QuickConnect 與中繼，以及您的 DDNS 或 WAN 主機。助理使用裝置端模型（Android 上為 Google Gemini Nano，iOS 與 macOS 上為 Apple 的模型），而 Google 是否從 Android 模型服務收到使用資料尚未確認。</dd>
-<dt>支援電子郵件的內容</dt><dd>診斷用 ZIP 僅在您選擇時才傳送，會送至 admin@miyarahub.com 或您分享的任何對象。其中包含帶有您 NAS 使用者名稱與主機的偵錯記錄、手機製造商、型號、作業系統與地區設定，以及帶有 NAS 序號、型號、主機名稱、IP 與 MAC 位址和磁碟序號的原始 NAS 讀數。僅有權杖與密碼會被遮蔽。</dd>
-<dt>已知限制</dt><dd>當機回報無法保持關閉。當機文字與診斷用 ZIP 中的 IP 位址、主機名稱或序號未經遮蔽。iOS Keychain 憑證在解除安裝後仍然存在。</dd>
+<dt>支援電子郵件的內容</dt><dd>診斷用 ZIP 僅在您選擇時才傳送，會送至 admin@miyarahub.com 或您分享的任何對象。其中包含偵錯記錄、手機製造商、型號、作業系統與地區設定、診斷資訊與原始 NAS 讀數，其中可能包括 NAS 序號、型號、主機名稱、IP 與 MAC 位址、磁碟序號以及您的 NAS 使用者名稱。權杖、工作階段 ID、密碼與裝置 ID 一律會被遮蔽。除非您在傳送前勾選包含識別碼的選項（預設關閉），否則網址、主機名稱、QuickConnect ID、序號、MAC 與 IP 位址也會被遮蔽，郵件內文同樣如此。使用者名稱不在遮蔽清單中。</dd>
+<dt>已知限制</dt><dd>當機回報在您關閉之前保持開啟，該開關在重新啟動後是否保持尚未確認。原生當機回報不會被遮蔽。應用程式記錄在匯出時被遮蔽，而不是在寫入時。除非您為某台 NAS 開啟憑證驗證，否則會略過憑證檢查，對 QuickConnect 查詢則一律略過。尚未確認的有：Firebase Analytics 自行收集的事件、Crashlytics 的確切裝置欄位、當機回報與分析都關閉時 Firebase 是否會聯繫 Google，以及裝置端助理模型是否曾將資料傳送到裝置之外。</dd>
 </dl>
 </section>
 <section class="app-block" id="app-upsight">

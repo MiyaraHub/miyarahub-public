@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexusDeck：Audyssey 校正檔案應用程式 - MiyaraHub</title>
-    <meta name="description" content="NexusDeck 可管理 Audyssey 校正檔案，並透過 Wi-Fi 將 .ady 曲線上傳到 Denon 與 Marantz 接收器。iOS、Android、Mac 與 Windows 預覽版。">
+    <meta name="description" content="NexusDeck 保存您的 .ady 和 .oca 校準檔案，對它們進行比較，並將其中一個傳送到 Denon 或 Marantz 接收器。它還能重播您的 Dirac Live 傳送。">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta property="og:site_name" content="MiyaraHub">
     <meta property="og:type" content="website">
@@ -39,19 +39,19 @@
 <meta property="og:locale:alternate" content="vi_VN" />
 <meta property="og:locale:alternate" content="zh_CN" />
     <meta property="og:title" content="NexusDeck：Audyssey 校正檔案應用程式">
-    <meta property="og:description" content="NexusDeck 可管理 Audyssey 校正檔案，並透過 Wi-Fi 將 .ady 曲線上傳到 Denon 與 Marantz 接收器。iOS、Android、Mac 與 Windows 預覽版。">
+    <meta property="og:description" content="NexusDeck 保存您的 .ady 和 .oca 校準檔案，對它們進行比較，並將其中一個傳送到 Denon 或 Marantz 接收器。它還能重播您的 Dirac Live 傳送。">
     <meta property="og:url" content="https://miyarahub.com/zh-hant/nexus-deck/">
     <meta property="og:image" content="https://miyarahub.com/assets/og/nexus-deck.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="NexusDeck, an independent manager for Audyssey calibration files for Denon and Marantz receivers, in pre-release. Not affiliated with Audyssey, Denon, Marantz or Sound United.">
+    <meta property="og:image:alt" content="NexusDeck app icon beside its curve detail screen. Keep, compare, edit and send Audyssey .ady and .oca curves to Denon and Marantz receivers. Coming soon.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NexusDeck：Audyssey 校正檔案應用程式">
-    <meta name="twitter:description" content="NexusDeck 可管理 Audyssey 校正檔案，並透過 Wi-Fi 將 .ady 曲線上傳到 Denon 與 Marantz 接收器。iOS、Android、Mac 與 Windows 預覽版。">
+    <meta name="twitter:description" content="NexusDeck 保存您的 .ady 和 .oca 校準檔案，對它們進行比較，並將其中一個傳送到 Denon 或 Marantz 接收器。它還能重播您的 Dirac Live 傳送。">
     <meta name="twitter:image" content="https://miyarahub.com/assets/og/nexus-deck.png">
-    <meta name="twitter:image:alt" content="NexusDeck, an independent manager for Audyssey calibration files for Denon and Marantz receivers, in pre-release. Not affiliated with Audyssey, Denon, Marantz or Sound United.">
-    <meta name="keywords" content="Audyssey calibration manager, Audyssey file manager, Audyssey curve upload, .ady file viewer, .oca file viewer, .mdat file viewer, REW measurement viewer, Audyssey file Android, Audyssey file iPhone, MultEQ Editor alternative, A1 Evo Acoustix library, ratbuddyssey alternative, Denon Audyssey upload app, Marantz Audyssey upload app, room correction file manager, AVR curve uploader, Cinema 30 calibration upload, Cinema 40 calibration upload, Cinema 50 calibration upload, X3800H calibration upload, X4800H calibration upload, X6800H calibration upload, Denon Speaker Preset upload, Marantz Speaker Preset upload, SPP1 SPP2 upload, Audyssey backup restore, .ady iPhone, .ady Android, .oca iPhone library, .oca Android library, REW MEQX import, FilterSet biquad coefficients, NexusDeck, MiyaraHub">
+    <meta name="twitter:image:alt" content="NexusDeck app icon beside its curve detail screen. Keep, compare, edit and send Audyssey .ady and .oca curves to Denon and Marantz receivers. Coming soon.">
+    <meta name="keywords" content="NexusDeck, Audyssey calibration library, .ady file, .oca file, MultEQ Editor files, A1 Evo, AcoustiX, Denon Speaker Preset, Marantz Speaker Preset, Dirac Live slots, MultEQ-X .mqx viewer, REW measurement viewer, Marantz Cinema 30, MiyaraHub">
     <link rel="canonical" href="https://miyarahub.com/zh-hant/nexus-deck/">
 <!--hreflang-->
 <link rel="alternate" hreflang="en" href="https://miyarahub.com/nexus-deck/" />
@@ -87,8 +87,8 @@
 <link rel="alternate" hreflang="x-default" href="https://miyarahub.com/nexus-deck/" />
 <!--/hreflang-->
     <meta name="author" content="MiyaraHub Technologies LLC">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/nexusdeck-icon.png">
-    <link rel="apple-touch-icon" href="/assets/nexusdeck-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/nexusdeck-favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/nexusdeck-apple-touch-icon.png">
     <link rel="preload" href="/assets/fonts/archivo-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/fonts/fonts.css">
@@ -105,8 +105,15 @@
         .platforms{display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin-top:1.1rem}
         .platforms .pl-lbl{font-family:'IBM Plex Mono',monospace; font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--faint)}
         .platforms .pl{font-family:'IBM Plex Mono',monospace; font-size:.68rem; letter-spacing:.04em; color:var(--muted); border:1px solid var(--line-strong); border-radius:3px; padding:.22rem .6rem}
-        .device .screen{border:1px solid var(--line-strong); border-radius:32px; padding:9px; background:linear-gradient(180deg,#0f1a2c,#0b1322); box-shadow:0 30px 85px rgba(0,0,0,.55); max-width:315px; margin:0 auto}
-        .device .screen img{width:100%; display:block; border-radius:24px; cursor:zoom-in}
+        .manual-cta{display:flex; align-items:center; gap:1rem; margin-top:1.4rem; padding:1rem 1.2rem; border:1px solid var(--accent-star); border-radius:8px; text-decoration:none; background:var(--accent-soft); transition:border-color .25s, background .25s}
+        .manual-cta:hover{border-color:var(--accent)}
+        .manual-cta .mi{color:var(--accent); font-size:1.4rem; line-height:1}
+        .manual-cta .tx b{font-family:'Fraunces',Georgia,serif; font-weight:500; color:var(--star); display:block; font-size:1.02rem}
+        .manual-cta .tx span{font-family:'IBM Plex Mono',monospace; font-size:.7rem; letter-spacing:.04em; color:var(--faint)}
+        .manual-cta .ar{margin-left:auto; color:var(--accent); font-family:'IBM Plex Mono',monospace}
+        .device .shot{display:block; max-width:340px; margin:0 auto; border:1px solid var(--line-strong); border-radius:18px; overflow:hidden; box-shadow:0 30px 85px rgba(0,0,0,.55)}
+        .device .shot img{width:100%; height:auto; display:block; cursor:zoom-in}
+        .gallery picture{display:block}
         .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem}
         .gallery a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; transition:border-color .3s, transform .3s}
         .gallery a:hover{border-color:var(--accent-star); transform:translateY(-4px)}
@@ -120,7 +127,7 @@
         .legal p{color:var(--faint); font-size:.84rem; line-height:1.7} .legal p+p{margin-top:.7rem}
         @media(max-width:900px){.p-hero{grid-template-columns:1fr; gap:2.4rem}}
     </style>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "小而獨立的軟體工作室，專注於原生應用程式、全端網站與電商平台、系統與監控工具、裝置整合，以及 DevOps 流程。", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "zh-Hant", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/nexus-deck/#webpage", "url": "https://miyarahub.com/nexus-deck/", "name": "NexusDeck：Audyssey 校正檔案應用程式 - MiyaraHub", "description": "NexusDeck 可管理 Audyssey 校正檔案，並透過 Wi-Fi 將 .ady 曲線上傳到 Denon 與 Marantz 接收器。iOS、Android、Mac 與 Windows 預覽版。", "inLanguage": "zh-Hant", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/nexus-deck.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/nexus-deck/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/nexus-deck/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/nexus-deck/#app", "name": "NexusDeck", "description": "專為 Denon 與 Marantz AV 接收器打造的獨立 Audyssey 校正檔案管理與曲線上傳工具。可匯入 .ady、.oca、.mdat、.frd 與 REW 匯出檔，並透過 Wi-Fi 將 .ady 曲線直接上傳到喇叭預設欄位。預覽版。", "url": "https://miyarahub.com/nexus-deck/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "MultimediaApplication", "image": "https://miyarahub.com/assets/nexusdeck-icon.png", "screenshot": ["https://miyarahub.com/nexus-deck/screenshots/device.jpg", "https://miyarahub.com/nexus-deck/screenshots/g1_library.jpg", "https://miyarahub.com/nexus-deck/screenshots/g2_chart.jpg", "https://miyarahub.com/nexus-deck/screenshots/g3_detail.jpg", "https://miyarahub.com/nexus-deck/screenshots/g4_eval.jpg", "https://miyarahub.com/nexus-deck/screenshots/g5_send.jpg", "https://miyarahub.com/nexus-deck/screenshots/g6_channels.jpg", "https://miyarahub.com/nexus-deck/screenshots/g7_settings.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/nexus-deck/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "NexusDeck", "item": "https://miyarahub.com/nexus-deck/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/nexus-deck/#faq", "url": "https://miyarahub.com/nexus-deck/", "mainEntity": [{"@type": "Question", "name": "NexusDeck 與 Audyssey、Denon 或 Marantz 有關係嗎？", "acceptedAnswer": {"@type": "Answer", "text": "沒有。NexusDeck 是由 MiyaraHub Technologies LLC 開發的獨立第三方應用程式，與 Audyssey Laboratories、Denon、Marantz、Sound United、Masimo Corporation 或其任何子公司都沒有開發、背書、贊助或隸屬關係。「Audyssey」、「MultEQ」、「Denon」、「Marantz」以及「REW」/「Room EQ Wizard」均為其各自所有者的商標。我們使用這些名稱純粹是為了說明相容性。"}}, {"@type": "Question", "name": "NexusDeck 可以上傳到哪些接收器？", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck 可上傳到支援 TCP 連接埠 1256 二進位校正上傳協定的連網 Denon 與 Marantz AV 接收器，涵蓋近幾年的 Cinema 30 / 40 / 50、AV10、X3800H、X4800H、X6800H 以及其他 Audyssey MultEQ XT32 機種。NexusDeck 會從接收器與您要上傳的校正檔案中，自動偵測機種型號與聲道配置。"}}, {"@type": "Question", "name": "NexusDeck 可以匯入哪些檔案格式？", "acceptedAnswer": {"@type": "Answer", "text": "Audyssey .ady（MultEQ Editor 匯出檔）、A1 Evo Acoustix .oca、REW .mdat（Room EQ Wizard 的 MEQX 量測匯出檔，支援多位置）、.frd 響應曲線，以及 REW PEQ .txt 匯出檔。目前只有 .ady 檔案可以上傳到接收器；.oca / .mdat / .frd / .txt 僅供資料庫收藏與比較。v1 不支援 Dirac Live 濾波器匯入與機身上傳。"}}, {"@type": "Question", "name": "NexusDeck 會自己產生校正曲線嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不會，而且這是刻意的設計。NexusDeck 負責儲存、瀏覽、比較並上傳由其他工具（MultEQ Editor、A1 Evo Acoustix、REW、ratbuddyssey 等）產生的校正檔案。實際的量測與曲線產生是在那些工具中完成；NexusDeck 是管理工具，也是裝置端的上傳管道。"}}, {"@type": "Question", "name": "我現有的喇叭預設會安全嗎？", "acceptedAnswer": {"@type": "Answer", "text": "會。每次上傳前，NexusDeck 都會讀回目標喇叭預設欄位目前的內容，並在您的資料庫中儲存為備份項目。只要輕點一下，就能將任何欄位還原成先前的校正。傳輸完成後，NexusDeck 也會重新讀取該欄位，確認上傳確實無誤。"}}, {"@type": "Question", "name": "NexusDeck 如何與我的接收器配對？", "acceptedAnswer": {"@type": "Answer", "text": "如果您已安裝 AVR Maestro 並與接收器配對，NexusDeck 會透過共用的跨應用程式容器自動讀取已配對的裝置清單，不必再次配對，也不必重複輸入 IP。如果您沒有 AVR Maestro，NexusDeck 的配對流程會引導您直接輸入接收器的 IP。"}}, {"@type": "Question", "name": "NexusDeck 的價格是多少？", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck 可免費下載。免費版涵蓋所有資料庫匯入、瀏覽與單一曲線視覺化，並提供最多 5 次終身上傳到喇叭預設欄位 1（SPP1），讓您在決定購買前，先在自己的接收器上完整體驗上傳流程。解鎖無限次上傳、SPP2 寫入、欄位備份與還原、多曲線比較檢視、引導式導覽，以及 AVR Maestro 裝置交接橋接功能，只需一次性的 $12.99 應用程式內購買。沒有訂閱、沒有定期扣款、沒有廣告。正式推出前價格可能會調整。"}}, {"@type": "Question", "name": "需要哪些 Android 與 iOS 版本？", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck 需要 Android 7.0（API 24）或更高版本，以及 iOS 14 或更高版本。兩個平台將於上市時同步推出。"}}]}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://miyarahub.com/#organization", "name": "MiyaraHub Technologies LLC", "alternateName": "MiyaraHub", "url": "https://miyarahub.com/", "logo": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/logo-square.jpg", "width": 2048, "height": 2048}, "image": "https://miyarahub.com/assets/og/miyarahub.png", "description": "小而獨立的軟體工作室，專注於原生應用程式、全端網站與電商平台、系統與監控工具、裝置整合，以及 DevOps 流程。", "email": "admin@miyarahub.com", "founder": {"@type": "Person", "name": "Meir Miyara", "sameAs": ["https://github.com/mase1981"]}, "address": {"@type": "PostalAddress", "addressLocality": "Van Alstyne", "addressRegion": "TX", "addressCountry": "US"}, "sameAs": ["https://github.com/MiyaraHub", "https://apps.apple.com/us/developer/miyarahub-technologies-llc/id1883545892", "https://play.google.com/store/apps/dev?id=5430508146048197775"]}, {"@type": "WebSite", "@id": "https://miyarahub.com/#website", "name": "MiyaraHub", "alternateName": "MiyaraHub Technologies", "url": "https://miyarahub.com/", "inLanguage": "zh-Hant", "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "WebPage", "@id": "https://miyarahub.com/nexus-deck/#webpage", "url": "https://miyarahub.com/nexus-deck/", "name": "NexusDeck：Audyssey 校正檔案應用程式 - MiyaraHub", "description": "NexusDeck 保存您的 .ady 和 .oca 校準檔案，對它們進行比較，並將其中一個傳送到 Denon 或 Marantz 接收器。它還能重播您的 Dirac Live 傳送。", "inLanguage": "zh-Hant", "isPartOf": {"@id": "https://miyarahub.com/#website"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://miyarahub.com/assets/og/nexus-deck.png", "width": 1200, "height": 630}, "breadcrumb": {"@id": "https://miyarahub.com/nexus-deck/#breadcrumb"}, "mainEntity": {"@id": "https://miyarahub.com/nexus-deck/#app"}}, {"@type": "SoftwareApplication", "@id": "https://miyarahub.com/nexus-deck/#app", "name": "NexusDeck", "description": "適用於配備 Audyssey MultEQ XT 或 XT32 的 Denon 和 Marantz AV 接收器的獨立校準檔案庫。保存、比較 .ady 和 .oca 曲線並傳送到喇叭預設，還能重播您錄製的 Dirac Live 傳送。預發行版。", "url": "https://miyarahub.com/nexus-deck/", "operatingSystem": "iOS, iPadOS, Android, macOS, Windows", "applicationCategory": "MultimediaApplication", "image": "https://miyarahub.com/assets/nexusdeck-icon.png", "screenshot": ["https://miyarahub.com/nexus-deck/screenshots/store/01_library.jpg", "https://miyarahub.com/nexus-deck/screenshots/store/02_curve.jpg", "https://miyarahub.com/nexus-deck/screenshots/store/03_compare.jpg", "https://miyarahub.com/nexus-deck/screenshots/store/04_edit.jpg", "https://miyarahub.com/nexus-deck/screenshots/store/05_send.jpg", "https://miyarahub.com/nexus-deck/screenshots/store/06_presets.jpg", "https://miyarahub.com/nexus-deck/screenshots/store/07_speakers.jpg", "https://miyarahub.com/nexus-deck/screenshots/store/08_measurements.jpg"], "author": {"@id": "https://miyarahub.com/#organization"}, "publisher": {"@id": "https://miyarahub.com/#organization"}}, {"@type": "BreadcrumbList", "@id": "https://miyarahub.com/nexus-deck/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://miyarahub.com/"}, {"@type": "ListItem", "position": 2, "name": "NexusDeck", "item": "https://miyarahub.com/nexus-deck/"}]}, {"@type": "FAQPage", "@id": "https://miyarahub.com/nexus-deck/#faq", "url": "https://miyarahub.com/nexus-deck/", "mainEntity": [{"@type": "Question", "name": "NexusDeck 與 Audyssey、Dirac、Denon 或 Marantz 有關聯嗎？", "acceptedAnswer": {"@type": "Answer", "text": "沒有。NexusDeck 是 MiyaraHub Technologies LLC 開發的獨立應用程式，與 Denon、Marantz、Audyssey 或 Dirac 無關聯，也未獲得它們的認可。所有商標均歸其各自擁有者所有。"}}, {"@type": "Question", "name": "哪些接收器可以使用？", "acceptedAnswer": {"@type": "Answer", "text": "對於 .ady 和 .oca：支援連網、配備 Audyssey MultEQ XT 或 XT32 且已開啟網路待機的 Denon 和 Marantz 型號。.ady 傳送已在 Marantz Cinema 30 上測試；.oca 傳送及其他型號依檔案格式支援，不作保證。"}}, {"@type": "Question", "name": "NexusDeck 能讀取哪些檔案？", "acceptedAnswer": {"@type": "Answer", "text": "曲線（可傳送）：來自 Audyssey MultEQ Editor 的 .ady，以及來自 A1 Evo 和 AcoustiX 的 .oca。量測（僅供檢視，絕不傳送）：.frd、REW 文字、Dirac Live .liveproject 和 MultEQ-X .mqx。不讀取 REW .mdat。"}}, {"@type": "Question", "name": "NexusDeck 會取代 MultEQ Editor 或 A1 Evo 嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不會。NexusDeck 不量測您的房間，也不建立曲線。它保存、比較並傳送這些工具產生的檔案。其增益編輯只會削減已儲存檔案中原有的濾波器，結果保存在該檔案旁邊。"}}, {"@type": "Question", "name": "它支援 Dirac Live 嗎？", "acceptedAnswer": {"@type": "Answer", "text": "會，用於讀取和切換 Dirac Live 插槽，以及重播您自己錄製的 Dirac Live 傳送，而不是產生濾波器。重播的傳送只是暫存在接收器上，並未儲存，當喇叭預設切換時，接收器會將其捨棄。Dirac Live 傳送已在 Marantz Cinema 30 上測試；其他型號受支援，不作保證。"}}, {"@type": "Question", "name": "NexusDeck 會檢查它傳送的內容嗎？", "acceptedAnswer": {"@type": "Answer", "text": "傳送前，它會檢查接收器和檔案，並在兩者不相符時提示。傳送後它不會回讀濾波器，因此從不把一次傳送稱為已驗證。"}}, {"@type": "Question", "name": "NexusDeck 的價格是多少？", "acceptedAnswer": {"@type": "Answer", "text": "NexusDeck 可免費下載。沒有 Pro 時，它可配對一台接收器加示範接收器，保存三個匯入的曲線檔案加範例檔案，並傳送到喇叭預設 1，總共 15 次傳送，包括 Dirac Live 傳送。Pro 是一次應用程式內購買，在美國為 $19.99，可增加：傳送到任何預設不限次數、接收器和曲線檔案不限數量、多曲線比較、頂端列中的喇叭預設切換、Quick / Smart Select、Batch Map 以及資料庫備份檔案。每次傳送前或透過 Back up now 建立的預設備份是免費的。"}}, {"@type": "Question", "name": "有使用指南嗎？", "acceptedAnswer": {"@type": "Answer", "text": "有。NexusDeck 使用指南位於 nexusdeck.app。"}}]}]}</script>
 </head>
 <body>
 
@@ -136,6 +143,7 @@
             <li><a href="#how" onclick="closeNav()">運作方式</a></li>
             <li><a href="#security" onclick="closeNav()">隱私權</a></li>
             <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+            <li><a href="https://nexusdeck.app" target="_blank" rel="noopener" onclick="closeNav()">手冊</a></li>
         </ul>
     </nav>
 
@@ -147,16 +155,17 @@
                 <div>
                     <img decoding="async" width="192" height="192" class="ico" src="/assets/icons/nexusdeck-icon-192.png" alt="NexusDeck 應用程式圖示">
                     <h1 class="hk"><span class="kicker h1k">NexusDeck &middot; 專為 Audyssey 校正檔案打造</span><span class="h1t">所有校正，一個應用程式搞定。<span class="stargl">&#10022;</span></span></h1>
-                    <p class="hero-sub">專為 Denon 與 Marantz AV 接收器打造的 Audyssey 校正檔案管理與曲線上傳專用工具。</p>
-                    <p class="hero-lede">透過 Wi-Fi 將 <strong>Audyssey .ady</strong> 校正直接上傳到喇叭預設欄位。將 <strong>A1 Evo Acoustix .oca</strong>、<strong>REW .mdat</strong>、<strong>.frd</strong> 與 <strong>PEQ 匯出檔</strong>匯入本機資料庫，以便瀏覽與比較。是 <a href="/zh-hant/avr-maestro/" style="color:var(--accent)">AVR Maestro</a> 的最佳搭檔。</p>
+                    <p class="hero-sub">適用於配備 Audyssey MultEQ XT 或 XT32 的 Denon 和 Marantz AV 接收器的校準檔案庫。</p>
+                    <p class="hero-lede">將您的 <strong>.ady</strong> 和 <strong>.oca</strong> 曲線檔案保存在同一個資料庫中，進行比較，並透過家用網路將您選擇的檔案傳送到喇叭預設。在 Dirac Live 接收器上，它還能重播您錄製的 Dirac Live 傳送。NexusDeck 不量測您的房間，也不建立曲線。</p>
                     <div class="status-hero"><span class="dot"></span><span class="txt">預覽版 - 即將登陸 App Store、Google Play 與 Microsoft Store</span></div>
                     <div class="platforms">
                         <span class="pl-lbl">即將推出於</span>
                         <span class="pl">iPhone</span><span class="pl">iPad</span><span class="pl">Android</span><span class="pl">macOS</span><span class="pl">Windows</span></div>
+                    <a class="manual-cta" href="https://nexusdeck.app" target="_blank" rel="noopener"> <span class="mi">&#128214;</span> <span class="tx"><b>NexusDeck 有自己的完整手冊</b><span>nexusdeck.app &middot; 完整指南、設定以及每項功能的說明</span></span> <span class="ar">&rarr;</span> </a>
                 </div>
                 <div class="device fade">
-                    <div class="screen"><img fetchpriority="high" decoding="async" width="700" height="1244" src="/nexus-deck/screenshots/device.jpg" alt="NexusDeck 曲線詳細頁面，顯示 Marantz Cinema 30 校正的完整頻率響應圖表" onclick="openLightbox(this)"></div>
-                    <div class="cap"><b>預覽版</b> &middot; 開發中</div>
+                    <picture class="shot"><source type="image/webp" srcset="screenshots/store/02_curve.webp"><img fetchpriority="high" decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/02_curve.jpg" alt="NexusDeck 曲線詳情，在同一張圖表上顯示 Audyssey 曲線的所有聲道" onclick="openLightbox(this)"></picture>
+                    <div class="cap"><b>曲線詳情</b> &middot; 示範接收器</div>
                 </div>
             </div>
         </div>
@@ -166,31 +175,34 @@
     <!-- Screens -->
     <section id="screens" class="sec-band">
         <div class="wrap">
-            <div class="sec-head"><div class="kicker">搶先看</div><h2 class="sec-title">先睹為快 NexusDeck。</h2><p class="sec-desc">來自預覽版的早期截圖：校正資料庫、含完整頻率響應圖表的曲線詳細頁面、A/B 評估，以及一鍵上傳到接收器。輕點任一張即可放大。</p></div>
+            <div class="sec-head"><div class="kicker">畫面</div><h2 class="sec-title">發行之前，先睹為快。</h2><p class="sec-desc">商店截圖，在應用程式內使用內建示範接收器擷取。點一下任一張即可放大。</p></div>
             <div class="gallery">
-                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g1_library.jpg" alt="NexusDeck 校正資料庫，其中有一條已匯入的 Cinema 30 曲線" loading="lazy"></a>
-                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g2_chart.jpg" alt="NexusDeck 曲線詳細頁面，含完整頻率響應圖表" loading="lazy"></a>
-                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g3_detail.jpg" alt="NexusDeck 曲線詳細頁面 - 格式、目標與聲道" loading="lazy"></a>
-                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g4_eval.jpg" alt="NexusDeck A/B 評估設定" loading="lazy"></a>
-                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g5_send.jpg" alt="NexusDeck 整理並傳送校正到接收器" loading="lazy"></a>
-                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g6_channels.jpg" alt="NexusDeck 逐聲道曲線檢視" loading="lazy"></a>
-                <a onclick="openLightbox(this.querySelector('img'))"><img decoding="async" width="760" height="1351" src="/nexus-deck/screenshots/g7_settings.jpg" alt="NexusDeck 設定與主題" loading="lazy"></a>
+                <a href="/nexus-deck/screenshots/store/01_library.jpg" onclick="event.preventDefault(); openLightbox(this.querySelector('img'))"><picture><source type="image/webp" srcset="screenshots/store/01_library.webp"><img decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/01_library.jpg" alt="NexusDeck 資料庫，.ady 和 .oca 校準檔案已排序並評分" loading="lazy"></picture></a>
+                <a href="/nexus-deck/screenshots/store/02_curve.jpg" onclick="event.preventDefault(); openLightbox(this.querySelector('img'))"><picture><source type="image/webp" srcset="screenshots/store/02_curve.webp"><img decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/02_curve.jpg" alt="NexusDeck 曲線詳情，在同一張圖表上顯示 Audyssey 曲線的所有聲道" loading="lazy"></picture></a>
+                <a href="/nexus-deck/screenshots/store/03_compare.jpg" onclick="event.preventDefault(); openLightbox(this.querySelector('img'))"><picture><source type="image/webp" srcset="screenshots/store/03_compare.webp"><img decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/03_compare.jpg" alt="NexusDeck 在同一張圖表上比較兩條曲線，這是 Pro 功能" loading="lazy"></picture></a>
+                <a href="/nexus-deck/screenshots/store/04_edit.jpg" onclick="event.preventDefault(); openLightbox(this.querySelector('img'))"><picture><source type="image/webp" srcset="screenshots/store/04_edit.webp"><img decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/04_edit.jpg" alt="NexusDeck 在曲線的一個聲道上設定增益削減" loading="lazy"></picture></a>
+                <a href="/nexus-deck/screenshots/store/05_send.jpg" onclick="event.preventDefault(); openLightbox(this.querySelector('img'))"><picture><source type="image/webp" srcset="screenshots/store/05_send.webp"><img decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/05_send.jpg" alt="NexusDeck 將曲線傳送到示範版 Marantz Cinema 30 的喇叭預設" loading="lazy"></picture></a>
+                <a href="/nexus-deck/screenshots/store/06_presets.jpg" onclick="event.preventDefault(); openLightbox(this.querySelector('img'))"><picture><source type="image/webp" srcset="screenshots/store/06_presets.webp"><img decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/06_presets.jpg" alt="NexusDeck 顯示接收器的兩個喇叭預設" loading="lazy"></picture></a>
+                <a href="/nexus-deck/screenshots/store/07_speakers.jpg" onclick="event.preventDefault(); openLightbox(this.querySelector('img'))"><picture><source type="image/webp" srcset="screenshots/store/07_speakers.webp"><img decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/07_speakers.jpg" alt="NexusDeck 讀取每個喇叭的距離和位準，唯讀" loading="lazy"></picture></a>
+                <a href="/nexus-deck/screenshots/store/08_measurements.jpg" onclick="event.preventDefault(); openLightbox(this.querySelector('img'))"><picture><source type="image/webp" srcset="screenshots/store/08_measurements.webp"><img decoding="async" width="1000" height="1778" src="/nexus-deck/screenshots/store/08_measurements.jpg" alt="NexusDeck 開啟 MultEQ-X 量測檔案，僅供檢視" loading="lazy"></picture></a>
             </div>
         </div>
     </section>
 
     <section id="features">
         <div class="wrap">
-            <div class="sec-head"><div class="kicker">功能</div><h2 class="sec-title">所有校正檔案格式，一個應用程式搞定。</h2><p class="sec-desc">NexusDeck 能讀取您現有工具已產生的校正檔案，讓您在手機上瀏覽資料庫，並直接上傳到接收器。上傳這一步不需要筆電，也不需要 MultEQ Editor。</p></div>
+            <div class="sec-head"><div class="kicker">功能</div><h2 class="sec-title">保存、比較、傳送。</h2><p class="sec-desc">NexusDeck 保存您已在使用的工具產生的檔案：Audyssey MultEQ Editor、A1 Evo 和 AcoustiX。它不量測您的房間，也不建立曲線。</p></div>
             <div class="ledger">
-                <div class="entry fade"><div class="no">No. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> 匯入所有常見格式</h3><p>原生支援解析 Audyssey .ady、A1 Evo Acoustix .oca、REW .mdat（MEQX 匯出）、.frd 響應曲線，以及 REW PEQ .txt 匯出檔。匯入過一次的檔案會永久快取在您的本機資料庫中。</p><div class="meta"><span>.ady</span><span>.oca</span><span>.mdat</span><span>.frd</span><span>PEQ .txt</span></div></div></div>
-                <div class="entry fade"><div class="no">No. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> 本機曲線資料庫</h3><p>您匯入過的所有內容都存放在裝置上。可重新命名量測、將多位置 .mdat 同組檔案歸為一組，並以參照計數管理共用的檔案位元組，只有在沒有任何項目參照時，刪除才會釋放磁碟空間。採用本機 SQLite 儲存，重新啟動與更新應用程式後依然保留。</p><div class="meta"><span>SQLite</span><span>參照計數</span><span>重新命名</span></div></div></div>
-                <div class="entry fade"><div class="no">No. 03</div><div class="body"><h3><span class="glyph">&#9678;</span> 並排比較曲線</h3><p>可疊加 Audyssey、A1 Evo Acoustix 與 REW 匯入的任意組合的頻率響應曲線。X 軸為對數頻率，Y 軸為 dB 量值，並提供多位置平均與平滑化控制。清楚看見每次校正之間究竟改變了什麼。</p><div class="meta"><span>疊加</span><span>對數頻率</span><span>平滑化</span></div></div></div>
-                <div class="entry fade"><div class="no">No. 04</div><div class="body"><h3><span class="glyph">&#9634;</span> 將 Audyssey 直接上傳到接收器</h3><p>透過 Wi-Fi 將 <strong>Audyssey .ady</strong> 檔案直接傳送到 Denon / Marantz 接收器的喇叭預設欄位 1 或欄位 2。機身會驗證上傳內容，NexusDeck 也會回報是否成功寫入。上傳這一步不需要連接線、筆電或 MultEQ Editor。</p><div class="meta"><span>Audyssey</span><span>連接埠 1256</span><span>SPP1 / SPP2</span><span>位元組驗證</span></div></div></div>
-                <div class="entry fade"><div class="no">No. 05</div><div class="body"><h3><span class="glyph">&#9670;</span> 欄位備份 &amp; 還原</h3><p>每次上傳前，NexusDeck 都會讀回機身目前的內容，並在您的資料庫中儲存為備份項目。一鍵還原即可將任何欄位恢復成先前的校正。再也不用擔心上傳出錯而失去運作良好的設定。</p><div class="meta"><span>上傳前備份</span><span>一鍵還原</span></div></div></div>
-                <div class="entry fade"><div class="no">No. 06</div><div class="body"><h3><span class="glyph">&#9881;</span> 引導式導覽</h3><p>逐一檢視匯入量測的每個聲道，查看各聲道的響應、目標曲線、套用的濾波器組，以及最終修正後的響應。專為想真正理解數字意義的校正愛好者而設計。</p><div class="meta"><span>逐聲道</span><span>目標曲線</span><span>濾波器組</span></div></div></div>
-                <div class="entry fade"><div class="no">No. 07</div><div class="body"><h3><span class="glyph">&#9672;</span> 與 AVR Maestro 搭配使用</h3><p>如果您已安裝 AVR Maestro，NexusDeck 會透過平台的共用容器自動讀取其已配對的接收器清單，不必重新配對、不必再輸入 IP，也不必重複設定裝置。兩款應用程式就像同一個生態系。</p><div class="meta"><span>App Group (iOS)</span><span>Content Provider (Android)</span></div></div></div>
-                <div class="entry fade"><div class="no">No. 08</div><div class="body"><h3><span class="glyph">&#10022;</span> 多格式分享</h3><p>可透過 iOS 分享表單、Android intent 或直接開啟檔案選擇器，接收 .ady / .oca / .mdat 檔案。也可以將校正項目匯出，與朋友分享、發佈到 AVS Forum，或備份到裝置之外。</p><div class="meta"><span>分享擴充功能</span><span>檔案選擇器</span><span>匯出</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 01</div><div class="body"><h3><span class="glyph">&#9673;</span> 所有曲線檔案集中在一個資料庫</h3><p>匯入來自 Audyssey MultEQ Editor 的 .ady 檔案，以及來自 A1 Evo 和 AcoustiX 的 .oca 檔案。新增資料夾、標籤、評分和備註，並依檔案名稱、工具、接收器型號、備註或標籤搜尋。可從曲線檔案頁面分享該檔案。</p><div class="meta"><span>.ady</span><span>.oca</span><span>資料夾</span><span>標籤</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 02</div><div class="body"><h3><span class="glyph">&#9635;</span> 量測，僅供檢視</h3><p>開啟 .frd、REW 文字、Dirac Live .liveproject 和 MultEQ-X .mqx 檔案進行檢視。量測絕不會傳送到接收器。不讀取 REW .mdat。</p><div class="meta"><span>.frd</span><span>REW .txt</span><span>.liveproject</span><span>.mqx</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 03</div><div class="body"><h3><span class="glyph">&#9678;</span> 檢視與比較</h3><p>在同一張圖表上檢視每個聲道，並附脈衝響應和群延遲。可匯出影像或 CSV。使用 Pro，可透過差值表比較曲線。</p><div class="meta"><span>所有聲道</span><span>CSV</span><span>Pro 比較</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 04</div><div class="body"><h3><span class="glyph">&#9634;</span> 增益編輯</h3><p>在聲道上設定 0 至 -12 dB 的增益削減，並可先檢視結果。編輯後的 .ady 或 .oca 只能傳送到喇叭預設 1，作為計算得出而非量測得到的濾波器。已儲存的檔案絕不會被變更。</p><div class="meta"><span>0 至 -12 dB</span><span>預設 1</span><span>保留原檔案</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 05</div><div class="body"><h3><span class="glyph">&#9670;</span> 傳送到您的接收器</h3><p>在網路中找到您的接收器，選擇喇叭預設並傳送。NexusDeck 會先檢查接收器和檔案，並在兩者不相符時提示。傳送後它不會回讀濾波器。.ady 傳送已在 Marantz Cinema 30 上測試；.oca 傳送及其他型號依檔案格式支援，不作保證。</p><div class="meta"><span>喇叭預設</span><span>先檢查</span><span>Cinema 30</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 06</div><div class="body"><h3><span class="glyph">&#9881;</span> Dirac Live 插槽</h3><p>讀取 Dirac Live 插槽並在其間切換。將您自己錄製的 Dirac Live 傳送重播到某個插槽。該傳送只是暫存在接收器上，並未儲存，當喇叭預設切換時，接收器會將其捨棄。NexusDeck 不建構、編輯或轉換任何 Dirac 濾波器。</p><div class="meta"><span>讀取</span><span>切換</span><span>重播</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 07</div><div class="body"><h3><span class="glyph">&#9672;</span> 預設與喇叭，唯讀</h3><p>檢視目前啟用的喇叭預設，以及每個喇叭的距離和微調。NexusDeck 只讀取它們，絕不變更位準、距離或分頻點。</p><div class="meta"><span>目前預設</span><span>距離</span><span>微調</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 08</div><div class="body"><h3><span class="glyph">&#9635;</span> 預設備份</h3><p>每次傳送前，NexusDeck 會在您的裝置上保存目標喇叭預設的設定，讓您看到傳送取代了什麼。Back up now 會在不傳送任何內容的情況下保存目前預設的設定。兩者均免費。</p><div class="meta"><span>每次傳送前</span><span>Back up now</span><span>免費</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 09</div><div class="body"><h3><span class="glyph">&#9670;</span> Pro 工具</h3><p>將整個資料庫（含資料夾、標籤、備註、編輯和量測）備份到 .ndbackup 檔案，並在另一台裝置上還原。Batch Map 一次將一條曲線傳送到每個喇叭預設，Quick / Smart Select 則可保存任意數量的接收器設定。</p><div class="meta"><span>.ndbackup</span><span>Batch Map</span><span>Quick / Smart Select</span></div></div></div>
+                <div class="entry fade"><div class="no">No. 10</div><div class="body"><h3><span class="glyph">&#10022;</span> 先試用</h3><p>示範接收器是應用程式內建的 Marantz Cinema 30，無需硬體即可展示完整流程，且從不消耗傳送次數。</p><div class="meta"><span>示範接收器</span><span>無需硬體</span></div></div></div>
             </div>
         </div>
     </section>
@@ -198,11 +210,11 @@
     <!-- How it works -->
     <section id="how" class="sec-band">
         <div class="wrap">
-            <div class="sec-head"><div class="kicker">運作方式</div><h2 class="sec-title">從量測檔案到接收器，只要三個步驟。</h2><p class="sec-desc">NexusDeck 瞄準的正是現有工具讓您卡關的地方：校正檔案在筆電裡，卻沒有簡單的方法把它送到接收器，除非重新開啟桌面應用程式。NexusDeck 補上了這個缺口。</p></div>
+            <div class="sec-head"><div class="kicker">運作方式</div><h2 class="sec-title">從曲線檔案到接收器，只需三步。</h2><p class="sec-desc">帶入曲線檔案，檢視它，傳送它。可先在應用程式內的示範接收器上試用整個流程。</p></div>
             <div class="steps">
-                <div class="step fade"><div class="n">1</div><h3>匯入您的檔案</h3><p>開啟 MultEQ Editor 的 Audyssey .ady、A1 Evo Acoustix 的 .oca、REW 的 .mdat，或任何其他支援的檔案。NexusDeck 會解析檔案、擷取響應曲線，並加入您的資料庫。</p></div>
-                <div class="step fade"><div class="n">2</div><h3>瀏覽與比較</h3><p>開啟任一資料庫項目，即可查看逐聲道的頻率響應。疊加兩條或更多曲線，看看房間校正改變了什麼。隨著資料庫成長，可重新命名、分組或刪除項目。</p></div>
-                <div class="step fade"><div class="n">3</div><h3>將 Audyssey 上傳到接收器</h3><p>對於 Audyssey .ady 檔案：選擇喇叭預設欄位（1 或 2）、確認後，看著 NexusDeck 透過 Wi-Fi 將校正串流到您的 Denon 或 Marantz 接收器。機身會驗證上傳內容，NexusDeck 也會回報是否成功寫入。匯入的 .oca / .mdat / .frd / .txt 會留在資料庫中供瀏覽與比較；這些格式的機身上傳將在未來版本推出。</p></div>
+                <div class="step fade"><div class="n">1</div><h3>匯入您的檔案</h3><p>匯入來自 Audyssey MultEQ Editor 的 .ady，或來自 A1 Evo 或 AcoustiX 的 .oca。它連同聲道、目標曲線和備註一起加入您的資料庫。</p></div>
+                <div class="step fade"><div class="n">2</div><h3>檢視、比較、編輯</h3><p>開啟曲線，在同一張圖表上檢視每個聲道。使用 Pro 可將其與另一條曲線比較，或設定增益削減。已儲存的檔案絕不會被變更。</p></div>
+                <div class="step fade"><div class="n">3</div><h3>傳送到揚聲器預設組</h3><p>找到您的接收器，選擇喇叭預設並傳送。沒有 Pro 時，傳送到喇叭預設 1。應用程式在傳送後不會回讀濾波器。</p></div>
             </div>
         </div>
     </section>
@@ -210,14 +222,14 @@
     <!-- Security & Privacy -->
     <section id="security">
         <div class="wrap">
-            <div class="sec-head"><div class="kicker">安全與隱私</div><h2 class="sec-title">僅限本機。沒有帳號。沒有雲端。</h2><p class="sec-desc">NexusDeck 採用與 AVR Maestro 相同的隱私優先架構。您的校正檔案保留在您的裝置上，您的接收器保留在您的區域網路上，除非您自行以電子郵件寄給我們，否則關於您設定的任何資訊都不會傳送給 MiyaraHub。</p></div>
+            <div class="sec-head"><div class="kicker">安全與隱私</div><h2 class="sec-title">僅限本機。沒有帳號。沒有雲端。</h2><p class="sec-desc">您的校準檔案保留在您的裝置上，您的接收器保留在本地網路中。除非您傳送給我們，否則關於您設定的任何資訊都不會到達 MiyaraHub。</p></div>
             <div class="priv">
-                <div class="p"><span class="g">&#9673;</span><div><h4>沒有雲端中繼</h4><p>校正上傳是透過本機 Wi-Fi（TCP 連接埠 1256），直接在您的手機與接收器之間進行。檔案絕不會經過 MiyaraHub 伺服器。</p></div></div>
-                <div class="p"><span class="g">&#9635;</span><div><h4>不需要帳號</h4><p>不需註冊、不需電子郵件、不需 MiyaraHub 登入。開啟應用程式、放入第一個校正檔案，就能進入資料庫。</p></div></div>
-                <div class="p"><span class="g">&#9678;</span><div><h4>診斷資料</h4><p>當機報告會傳送至 Firebase，並連結至隨機 ID 而非您的姓名，用於協助修復錯誤。網路位址會先被移除。沒有使用分析，沒有廣告。當機回報可在應用程式中關閉。</p></div></div>
-                <div class="p"><span class="g">&#9670;</span><div><h4>資料庫存放於本機</h4><p>您的校正資料庫是本機 SQLite 資料庫，加上裝置上的檔案儲存。沒有任何內容會同步或上傳到 MiyaraHub 伺服器。</p></div></div>
-                <div class="p"><span class="g">&#9679;</span><div><h4>僅限使用者主動上傳</h4><p>只有當您明確輕點「上傳」並確認欄位後，曲線才會傳送到接收器。不會有任何自動動作，並且會讀回機身內容，確認實際寫入了什麼。</p></div></div>
-                <div class="p"><span class="g">&#9672;</span><div><h4>僅需網路權限</h4><p>NexusDeck 唯一需要的系統權限是網路存取，僅用於連線到您本機 Wi-Fi 上的接收器。</p></div></div>
+                <div class="p"><span class="g">&#9673;</span><div><h4>沒有帳號</h4><p>無需註冊，也沒有 MiyaraHub 登入。MiyaraHub 不運行應用程式所連接的任何伺服器。</p></div></div>
+                <div class="p"><span class="g">&#9635;</span><div><h4>檔案保留在您的裝置上</h4><p>您的資料庫、編輯和設定保存在您的裝置上。不會同步到 MiyaraHub。</p></div></div>
+                <div class="p"><span class="g">&#9678;</span><div><h4>僅限您的家用網路</h4><p>NexusDeck 在本地網路中直接與您的接收器通訊。校準檔案絕不會經過 MiyaraHub 伺服器。</p></div></div>
+                <div class="p"><span class="g">&#9670;</span><div><h4>僅在您允許時才傳送當機報告</h4><p>在 Android 和 iOS 上，只有在您於首次執行提示中允許後，當機報告才會傳送到 Firebase Crashlytics。可在設定 &gt; 關於中關閉。Mac 和 Windows 應用程式不傳送任何報告。</p></div></div>
+                <div class="p"><span class="g">&#9679;</span><div><h4>無分析，無廣告</h4><p>沒有分析函式庫，沒有廣告，也沒有廣告識別碼。</p></div></div>
+                <div class="p"><span class="g">&#9672;</span><div><h4>僅在您傳送時才提供記錄檔</h4><p>設定 &gt; 關於 會將應用程式記錄檔打包為一個 zip 檔案供支援使用，僅在您選擇傳送時才會分享。</p></div></div>
             </div>
         </div>
     </section>
@@ -227,14 +239,14 @@
         <div class="wrap">
             <div class="sec-head"><div class="kicker">FAQ</div><h2 class="sec-title">常見問題。</h2><p class="sec-desc">關於 NexusDeck，您需要知道的一切。</p></div>
             <div class="faq">
-                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 與 Audyssey、Denon 或 Marantz 有關係嗎？ <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>沒有。</strong>NexusDeck 是由 MiyaraHub Technologies LLC 開發的獨立第三方應用程式，與 Audyssey Laboratories、Denon、Marantz、Sound United、Masimo Corporation 或其任何子公司都沒有開發、背書、贊助或隸屬關係。「Audyssey」、「MultEQ」、「Denon」、「Marantz」以及「REW」/「Room EQ Wizard」均為其各自所有者的商標。我們使用這些名稱純粹是為了說明相容性。</div></div></div>
-                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 可以上傳到哪些接收器？ <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck 可上傳到支援 TCP 連接埠 1256 二進位校正上傳協定的連網 Denon 與 Marantz AV 接收器，涵蓋近幾年的 Cinema 30 / 40 / 50、AV10、X3800H、X4800H、X6800H 以及其他 Audyssey MultEQ XT32 機種。NexusDeck 會從接收器與您要上傳的校正檔案中，自動偵測機種型號與聲道配置。</div></div></div>
-                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 可以匯入哪些檔案格式？ <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>Audyssey .ady</strong>（MultEQ Editor 匯出檔）、<strong>A1 Evo Acoustix .oca</strong>、<strong>REW .mdat</strong>（Room EQ Wizard 的 MEQX 量測匯出檔，支援多位置）、<strong>.frd</strong> 響應曲線，以及 REW <strong>PEQ .txt</strong> 匯出檔。目前只有 <strong>.ady 檔案可以上傳到接收器</strong>；.oca / .mdat / .frd / .txt 僅供資料庫收藏與比較。v1 不支援 Dirac Live 濾波器匯入與機身上傳。</div></div></div>
-                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 會自己產生校正曲線嗎？ <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>不會，而且這是刻意的設計。</strong>NexusDeck 負責儲存、瀏覽、比較並上傳由其他工具（MultEQ Editor、A1 Evo Acoustix、REW、ratbuddyssey 等）產生的校正檔案。實際的量測與曲線產生是在那些工具中完成；NexusDeck 是管理工具，也是裝置端的上傳管道。</div></div></div>
-                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">我現有的喇叭預設會安全嗎？ <span class="arw">+</span></div><div class="a"><div class="a-in">會。每次上傳前，NexusDeck 都會讀回目標喇叭預設欄位目前的內容，並在您的資料庫中儲存為備份項目。只要輕點一下，就能將任何欄位還原成先前的校正。傳輸完成後，NexusDeck 也會重新讀取該欄位，確認上傳確實無誤。</div></div></div>
-                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 如何與我的接收器配對？ <span class="arw">+</span></div><div class="a"><div class="a-in">如果您已安裝 AVR Maestro 並與接收器配對，NexusDeck 會透過共用的跨應用程式容器自動讀取已配對的裝置清單，不必再次配對，也不必重複輸入 IP。如果您沒有 AVR Maestro，NexusDeck 的配對流程會引導您直接輸入接收器的 IP。</div></div></div>
-                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 的價格是多少？ <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck <strong>可免費下載</strong>。免費版涵蓋所有資料庫匯入、瀏覽與單一曲線視覺化，並提供<strong>最多 5 次終身上傳到喇叭預設欄位 1（SPP1）</strong>，讓您在決定購買前，先在自己的接收器上完整體驗上傳流程。解鎖無限次上傳、SPP2 寫入、欄位備份與還原、多曲線比較檢視、引導式導覽，以及 AVR Maestro 裝置交接橋接功能，只需<strong>一次性的 $12.99 應用程式內購買</strong>。沒有訂閱、沒有定期扣款、沒有廣告。正式推出前價格可能會調整。</div></div></div>
-                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">需要哪些 Android 與 iOS 版本？ <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck 需要 Android 7.0（API 24）或更高版本，以及 iOS 14 或更高版本。兩個平台將於上市時同步推出。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 與 Audyssey、Dirac、Denon 或 Marantz 有關聯嗎？ <span class="arw">+</span></div><div class="a"><div class="a-in"><strong>沒有。</strong>NexusDeck 是 MiyaraHub Technologies LLC 開發的獨立應用程式，與 Denon、Marantz、Audyssey 或 Dirac 無關聯，也未獲得它們的認可。所有商標均歸其各自擁有者所有。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">哪些接收器可用？ <span class="arw">+</span></div><div class="a"><div class="a-in">對於 .ady 和 .oca：支援連網、配備 Audyssey MultEQ XT 或 XT32 且已開啟網路待機的 Denon 和 Marantz 型號。.ady 傳送已在 Marantz Cinema 30 上測試；.oca 傳送及其他型號依檔案格式支援，不作保證。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 能讀取哪些檔案？ <span class="arw">+</span></div><div class="a"><div class="a-in">曲線（可傳送）：來自 Audyssey MultEQ Editor 的 .ady，以及來自 A1 Evo 和 AcoustiX 的 .oca。量測（僅供檢視，絕不傳送）：.frd、REW 文字、Dirac Live .liveproject 和 MultEQ-X .mqx。不讀取 REW .mdat。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 會取代 MultEQ Editor 或 A1 Evo 嗎？ <span class="arw">+</span></div><div class="a"><div class="a-in">不會。NexusDeck 不量測您的房間，也不建立曲線。它保存、比較並傳送這些工具產生的檔案。其增益編輯只會削減已儲存檔案中原有的濾波器，結果保存在該檔案旁邊。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">它支援 Dirac Live 嗎？ <span class="arw">+</span></div><div class="a"><div class="a-in">會，用於讀取和切換 Dirac Live 插槽，以及重播您自己錄製的 Dirac Live 傳送，而不是產生濾波器。重播的傳送只是暫存在接收器上，並未儲存，當喇叭預設切換時，接收器會將其捨棄。Dirac Live 傳送已在 Marantz Cinema 30 上測試；其他型號受支援，不作保證。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 會檢查它傳送的內容嗎？ <span class="arw">+</span></div><div class="a"><div class="a-in">傳送前，它會檢查接收器和檔案，並在兩者不相符時提示。傳送後它不會回讀濾波器，因此從不把一次傳送稱為已驗證。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">NexusDeck 的價格是多少？ <span class="arw">+</span></div><div class="a"><div class="a-in">NexusDeck 可免費下載。沒有 Pro 時，它可配對一台接收器加示範接收器，保存三個匯入的曲線檔案加範例檔案，並傳送到喇叭預設 1，總共 15 次傳送，包括 Dirac Live 傳送。Pro 是一次應用程式內購買，在美國為 $19.99，可增加：傳送到任何預設不限次數、接收器和曲線檔案不限數量、多曲線比較、頂端列中的喇叭預設切換、Quick / Smart Select、Batch Map 以及資料庫備份檔案。每次傳送前或透過 Back up now 建立的預設備份是免費的。</div></div></div>
+                <div class="qa"><div class="q" onclick="this.parentElement.classList.toggle('open')">有使用指南嗎？ <span class="arw">+</span></div><div class="a"><div class="a-in">有。NexusDeck 使用指南位於 <a href="https://nexusdeck.app" style="color:var(--accent)">nexusdeck.app</a>。</div></div></div>
             </div>
         </div>
     </section>
@@ -243,10 +255,10 @@
     <section style="padding:2.5rem 0 1rem">
         <div class="wrap"><div class="legal">
             <h3>法律免責聲明 &amp; 商標聲明</h3>
-            <p>NexusDeck 是由 <strong>MiyaraHub Technologies LLC</strong> 開發並發行的<strong>獨立第三方應用程式</strong>。<strong>它並非由 Audyssey Laboratories、Denon、Marantz、Sound United、Masimo Corporation、REW (Room EQ Wizard) / John Mulcahy 所開發，也與上述任何一方或其任何子公司、關係企業沒有任何隸屬、背書、贊助或官方關係。</strong></p>
-            <p>「Audyssey」、「MultEQ」、「Denon」、「Marantz」、「HEOS」、「Room EQ Wizard」、「REW」、「MEQX」及所有相關產品名稱與標誌，均為其各自所有者的商標或註冊商標。本文提及的所有其他商標均屬其各自所有者的財產。</p>
+            <p>NexusDeck 是由 <strong>MiyaraHub Technologies LLC</strong> 開發並發行的<strong>獨立第三方應用程式</strong>。它<strong>並非由與其搭配使用的接收器、校準軟體或檔案格式的製造商建立，與其無關聯，未獲其認可或贊助，也沒有任何官方關係</strong>。</p>
+            <p>"Audyssey"、"MultEQ"、"Dirac"、"Dirac Live"、"Denon"、"Marantz"、"HEOS"、"Room EQ Wizard"、"REW"、"MEQX" 以及所有相關產品名稱和標誌均為其各自擁有者的商標或註冊商標。此處提及的所有其他商標均為其各自擁有者的財產。</p>
             <p>本頁面與應用程式內提及這些產品，僅用於識別檔案格式相容性及說明應用程式的功能（指示性合理使用）。商標持有人與 MiyaraHub Technologies LLC 沒有任何隸屬關係，也未為本產品背書。</p>
-            <p>NexusDeck 使用 Denon/Marantz 接收器的網路控制介面（HTTP、Telnet，以及 TCP 連接埠 1256 上的二進位校正上傳協定）與其通訊。使用本應用程式的風險由您自行承擔。對於因使用本應用程式而造成的任何設定錯誤、音訊問題、校正遺失或其他問題，MiyaraHub Technologies LLC 概不負責。套用新校正之前，請務必先確認已備份現有的喇叭預設。</p>
+            <p>NexusDeck 透過 Denon/Marantz 接收器的網路控制介面與其通訊（HTTP、Telnet、TCP 連接埠 1256 上的二進位校準上傳協定，以及 Dirac Live 所用的、由接收器公告的連接埠）。使用本應用程式的風險由您自行承擔。MiyaraHub Technologies LLC 對因使用本應用程式而產生的任何設定錯誤、音訊問題、校準遺失或其他問題概不負責。套用新校準之前，請務必確認已備份現有的喇叭預設。</p>
         </div></div>
     </section>
 
@@ -254,9 +266,10 @@
     <section class="cta">
         <div class="wrap">
             <h2>準備好迎接上市。</h2>
-            <p>NexusDeck 正處於最後的預覽測試階段。建置版本一經核准，本頁面就會更新 App Store、Google Play 與 Microsoft Store 的連結。</p>
+            <p>NexusDeck 正處於最後的預發行測試階段。組建版本一經核准，本頁面將立即更新 App Store、Google Play 和 Microsoft Store 連結。手冊現已可供閱讀。</p>
             <div class="cta-row" style="justify-content:center">
-                <a class="btn primary" href="/zh-hant/support/">訂閱通知 / 聯絡我們</a>
+                <a class="btn primary" href="https://nexusdeck.app" target="_blank" rel="noopener">閱讀手冊 &rarr;</a>
+                <a class="btn" href="/zh-hant/support/">取得通知 / 聯絡我們</a>
             </div>
         </div>
     </section>
